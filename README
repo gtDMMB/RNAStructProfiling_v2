@@ -1,0 +1,61 @@
+RNAStructProfiling
+
+Compiler dependencies: To compile and install RNAStructProfiling, you will need
+--a C/C++ compiler
+--autotools
+--GMP (version 6.0.0 from gmplib.org)
+Parallelization requirements: For parallelization, the compiler needs to implement the OpenMP API.
+(GNU gcc 4.7, for example, implements the OpenMP API. See http://openmp.org/wp/openmp-compilers for details.)
+
+To download source code, click on "zip" link on the RNAStructProfiling github
+page (https://github.com/gtfold/RNAStructProfiling/zipball/master).
+
+To compile on a Mac OSX machine, make sure your dependencies are satisfied.
+(The easiest way to satisfy dependencies is to install Xcode command line tools,
+the gcc compiler 4.7 or higher using MacPorts, and possibly GMP 6.0.0 if needed.)
+Rename
+libgtfold_osx.a -> libgtfold.a
+and follow the rest of directions.
+
+To compile on a Unix/Linux machine, make sure the following files are in the
+same directory:
+--main.c
+--profile.h
+--profile.c
+--summaryGraph.c
+--summaryGraph.h
+--hashtbl.c
+--hashtbl.h
+--Makefile
+--graph.c
+--graph.h
+--memoryDFS.c
+--memoryDFS.h
+--libgtfold.a
+--include folder with header files
+
+Open a terminal window, navigate to the directory that contains
+the above files, and type 'make' to compile the program.
+
+To run, you will need to input a sequence file, and optionally a
+structure file either in sfold (using -sfold option) or in gtboltzmann 
+(using -e option) format.
+
+Usage (from within that same directory): 
+./RNAprofile [options] [seq file] 
+
+./RNAprofile -o output/[output file] [seq file]
+dot -T jpeg -o output/[graph file].jpeg output/[output file]
+
+Common options:
+-v = verbose output that gives all helix classes and profiles with frequencies
+-h [percent] = filter out all helix classes that occur in less than [h] percent
+ of the input sample structures
+-p [percent] = filter out all profiles that occur less than [p] percent of the
+ input sample structures
+-g = disable graph making component of program (if only interested in helix and
+ profile stats)
+-o [file name] = produces the output graphviz dot file called [file name];
+ 'profile.dot' used by default
+-e [file] gtboltzmann style structure file as input
+-sfold [file] Sfold style structure file as input

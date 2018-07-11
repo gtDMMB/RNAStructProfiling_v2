@@ -1,0 +1,228 @@
+seq in ../../seq/TPP/Photorhabdus_lumines.2.txt is GCCAUCUCAACGGGGUGCUGGCUGUUUAAAACAGCCUUGCUGAGAGUAAACCCGCCGAACCUGAUCCGGCUAAUACCGGCGUAGGGAUUUGAGCUGCUAACUAUU with length 105
+Helix 1 is 66 79 4 (66.0 79.0 3.9) with freq 998
+Helix 2 is 20 36 7 (20.0 36.0 6.3) with freq 995
+Helix 3 is 6 93 5 (6.0 93.0 4.5) with freq 966
+Helix 4 is 60 85 4 (60.0 85.0 3.9) with freq 912
+Helix 5 is 1 97 2 (1.0 97.0 1.8) with freq 630
+Helix 6 is 3 96 2 (3.3 95.7 1.7) with freq 567
+Helix 7 is 37 49 5 (37.8 48.2 3.6) with freq 528
+Helix 8 is 11 54 4 (11.2 53.8 3.7) with freq 437
+Helix 9 is 13 53 4 (13.2 52.8 3.8) with freq 411
+Helix 10 is 17 40 2 (17.0 40.0 2.0) with freq 301
+Helix 11 is 11 57 3 (11.1 56.9 2.8) with freq 196
+Helix 12 is 16 48 4 (16.5 47.5 3.5) with freq 139
+Helix 13 is 14 53 2 (14.0 53.0 2.0) with freq 106
+Helix 14 is 60 86 3 (60.0 86.0 2.8) with freq 87
+Helix 15 is 64 82 2 (64.0 82.0 2.0) with freq 38
+Helix 16 is 57 88 1 (57.0 88.0 1.0) with freq 31
+Helix 17 is 12 55 1 (12.0 55.0 1.0) with freq 27
+Helix 18 is 14 56 4 (14.0 56.0 4.0) with freq 25
+Helix 19 is 41 46 1 (41.0 46.0 1.0) with freq 23
+Helix 20 is 17 51 1 (17.0 51.0 1.0) with freq 22
+Helix 21 is 1 94 2 (1.0 94.0 2.0) with freq 21
+Helix 22 is 1 98 1 (1.0 98.0 1.0) with freq 20
+Helix 23 is 3 91 2 (3.0 91.0 1.6) with freq 18
+Helix 24 is 15 53 1 (15.0 53.0 1.0) with freq 17
+Helix 25 is 56 91 4 (56.8 90.2 2.9) with freq 13
+Helix 26 is 57 89 2 (57.2 88.8 1.7) with freq 13
+Helix 27 is 16 49 1 (16.0 49.0 1.0) with freq 6
+Helix 28 is 7 58 2 (7.0 58.0 2.0) with freq 6
+Helix 29 is 54 94 2 (54.0 94.0 2.0) with freq 5
+Helix 30 is 4 88 5 (4.4 87.6 4.2) with freq 5
+Helix 31 is 7 87 2 (7.0 87.0 2.0) with freq 5
+Helix 32 is 5 92 2 (5.0 92.0 2.0) with freq 5
+Helix 33 is 10 82 3 (10.0 82.0 3.0) with freq 4
+Helix 34 is 19 57 4 (19.5 56.5 3.5) with freq 4
+Helix 35 is 24 51 5 (24.0 51.0 5.0) with freq 4
+Helix 36 is 32 42 4 (32.0 42.0 3.8) with freq 4
+Helix 37 is 46 51 1 (46.0 51.0 1.0) with freq 4
+Helix 38 is 56 86 1 (56.0 86.0 1.0) with freq 3
+Helix 39 is 5 45 5 (5.3 44.7 4.7) with freq 3
+Helix 40 is 41 48 2 (42.0 47.0 1.0) with freq 3
+Helix 41 is 14 41 4 (14.3 40.7 3.3) with freq 3
+Helix 42 is 12 52 2 (12.0 52.0 2.0) with freq 3
+Helix 43 is 13 62 4 (13.3 61.7 3.7) with freq 3
+Helix 44 is 36 44 3 (36.5 43.5 2.0) with freq 2
+Helix 45 is 18 44 2 (18.0 44.0 1.5) with freq 2
+Helix 46 is 44 53 1 (44.0 53.0 1.0) with freq 2
+Helix 47 is 41 49 1 (41.0 49.0 1.0) with freq 2
+Helix 48 is 11 86 1 (11.0 86.0 1.0) with freq 2
+Helix 49 is 55 86 2 (55.0 86.0 1.5) with freq 2
+Helix 50 is 9 89 2 (9.0 89.0 2.0) with freq 2
+Helix 51 is 16 42 2 (16.0 42.0 1.0) with freq 1
+Helix 52 is 3 46 1 (3.0 46.0 1.0) with freq 1
+Helix 53 is 40 44 1 (40.0 44.0 1.0) with freq 1
+Helix 54 is 20 37 2 (20.0 37.0 1.0) with freq 1
+Helix 55 is 54 70 4 (54.0 70.0 4.0) with freq 1
+Helix 56 is 59 65 1 (59.0 65.0 1.0) with freq 1
+Helix 57 is 44 51 1 (44.0 51.0 1.0) with freq 1
+Helix 58 is 26 31 1 (26.0 31.0 1.0) with freq 1
+Helix 59 is 15 41 1 (15.0 41.0 1.0) with freq 1
+Helix 60 is 17 35 4 (17.0 35.0 4.0) with freq 1
+Helix 61 is 23 30 1 (23.0 30.0 1.0) with freq 1
+Helix 62 is 41 54 2 (42.0 53.0 1.0) with freq 1
+Helix 63 is 1 101 1 (1.0 101.0 1.0) with freq 1
+Helix 64 is 1 47 2 (1.0 47.0 2.0) with freq 1
+Helix 65 is 11 39 6 (11.0 39.0 2.0) with freq 1
+Helix 66 is 14 19 1 (14.0 19.0 1.0) with freq 1
+Helix 67 is 19 48 2 (19.0 48.0 1.0) with freq 1
+Helix 68 is 37 44 2 (37.0 44.0 2.0) with freq 1
+Helix 69 is 17 52 1 (17.0 52.0 1.0) with freq 1
+Helix 70 is 25 30 1 (25.0 30.0 1.0) with freq 1
+Helix 71 is 11 63 4 (11.0 63.0 4.0) with freq 1
+Helix 72 is 63 89 5 (64.0 88.0 4.0) with freq 1
+Helix 73 is 69 80 3 (69.0 80.0 3.0) with freq 1
+Helix 74 is 8 93 1 (8.0 93.0 1.0) with freq 1
+Helix 75 is 44 52 1 (44.0 52.0 1.0) with freq 1
+Helix 76 is 46 53 1 (46.0 53.0 1.0) with freq 1
+0.50 coverage of helices after first 4 HC
+Total number of helix classes: 76
+Threshold to find frequent helices: 19.6%
+Number of structures processed: 1000
+Featured helix 1: 66 79 4 with freq 998
+Featured helix 2: 20 36 7 with freq 995
+Featured helix 3: 6 93 5 with freq 966
+Featured helix 4: 60 85 4 with freq 912
+Featured helix 5: 1 97 2 with freq 630
+Featured helix 6: 3 96 2 with freq 567
+Featured helix 7: 37 49 5 with freq 528
+Featured helix 8: 11 54 4 with freq 437
+Featured helix 9: 13 53 4 with freq 411
+Featured helix 10: 17 40 2 with freq 301
+Featured helix 11: 11 57 3 with freq 196
+Coverage by featured helix classes: 0.907
+Total number of featured helix classes: 11
+Ave number of HC per structure: 7.7
+Ave structure coverage by fhc: 0.91
+Ave structure coverage by fbp: 0.94
+Total number of profiles: 109
+Profile 1 2 3 4 5 7 9  with freq 67 (140)
+Profile 1 2 3 4 5 7 8  with freq 53 (103)
+Profile 1 2 3 4 5 6 7 9  with freq 53 (60)
+Profile 1 2 3 4 5 6 7 8  with freq 50 (50)
+Profile 1 2 3 4 6 7 8  with freq 48 (101)
+Profile 1 2 3 4 5 8 10  with freq 47 (85)
+Profile 1 2 3 4 6 7 9  with freq 43 (119)
+Profile 1 2 3 4 5 6 8 10  with freq 38 (38)
+Profile 1 2 3 4 5 7 11  with freq 36 (80)
+Profile 1 2 3 4 6 9 10  with freq 35 (77)
+Profile 1 2 3 4 6 8 10  with freq 35 (74)
+Profile 1 2 3 4 5 9 10  with freq 31 (70)
+Profile 1 2 3 4 5 6 8  with freq 30 (118)
+Profile 1 2 3 4 5 8  with freq 28 (246)
+Profile 1 2 3 4 5 6 9 10  with freq 28 (33)
+Profile 1 2 3 4 6 8  with freq 28 (233)
+Profile 1 2 3 4 5 6 7 11  with freq 23 (30)
+Profile 1 2 3 4 6 7 11  with freq 17 (60)
+Profile 1 2 3 4 6 7 9 11  with freq 13 (20)
+Profile 1 2 3 4 5 7 9 11  with freq 13 (20)
+Profile 1 2 3 4 6 7  with freq 12 (275)
+Profile 1 2 3 4 5 9  with freq 11 (230)
+Profile 1 2 3 4 6 9  with freq 9 (214)
+Profile 1 2 3 4 8 10  with freq 9 (131)
+Profile 1 2 3 4 7 8  with freq 8 (164)
+Profile 1 2 3 4 6 9 10 11  with freq 8 (13)
+Profile 1 2 3 5 8 10  with freq 7 (95)
+Profile 1 2 3 4 7 9  with freq 7 (212)
+Profile 1 2 3 4 6 11  with freq 7 (94)
+Profile 1 2 3 4 5 6 7 9 11  with freq 7 (7)
+Profile 1 2 3 4 8  with freq 6 (387)
+Profile 1 2 3 4 5 10 11  with freq 6 (22)
+Profile 1 2 3 4 5 7  with freq 6 (315)
+Profile 1 2 3 4 5 6 7  with freq 6 (139)
+Profile 1 2 3 4 5 9 10 11  with freq 6 (11)
+Profile 1 2 3 5 7 9  with freq 6 (149)
+Profile 1 2 3 4 9 10  with freq 5 (121)
+Profile 1 2 3 4 5 6 9  with freq 5 (100)
+Profile 1 2 3 4 5 11  with freq 5 (115)
+Profile 1 2 3 6 7 8  with freq 5 (110)
+Profile 1 2 3 4 5 6 11  with freq 5 (46)
+Profile 1 2 3 4 7 11  with freq 5 (119)
+Profile 1 2 3 4 5 6 9 10 11  with freq 5 (5)
+Profile 1 2 4 7 9  with freq 4 (219)
+Profile 1 2 3 6 9 10  with freq 4 (85)
+Profile 1 2 3 4 5 6 10 11  with freq 4 (9)
+Profile 1 2 4 7 8  with freq 4 (169)
+Profile 1 2 3 4 7 9 11  with freq 4 (37)
+Profile 1 2 3 5 6 7 8  with freq 4 (54)
+Profile 1 2 3 5 6 9 10  with freq 4 (37)
+Profile 1 2 3 6 8 10  with freq 4 (81)
+Profile 1 2 3 5 7 8  with freq 4 (111)
+Profile 1 2 3 5 7 11  with freq 3 (87)
+Profile 1 2 5 8  with freq 3 (274)
+Profile 1 2 4 9 10  with freq 3 (126)
+Profile 1 2 3 5 8  with freq 3 (270)
+Profile 1 2 3 5 6 8 10  with freq 3 (41)
+Profile 1 2 3 5 6 8  with freq 3 (128)
+Profile 1 2 3 4 6  with freq 3 (521)
+Profile 1 2 3 6 8  with freq 3 (255)
+Profile 1  with freq 3 (998)
+Profile 1 2 3 6 7 9 11  with freq 3 (24)
+Profile 1 2 3 4 6 7 8 9  with freq 3 (3)
+Profile 1 2 3 4 7 8 9  with freq 2 (5)
+Profile 1 2 3 4 5 6 9 11  with freq 2 (14)
+Profile 1 2 3 4 9  with freq 2 (366)
+Profile 1 2 3 5 6 7 11  with freq 2 (33)
+Profile 1 2 3 5 6 9  with freq 2 (108)
+Profile 1 2 4 5 7 9  with freq 2 (142)
+Profile 1 2 3 4 10 11  with freq 2 (34)
+Profile 1 2 3 6 7 9  with freq 2 (126)
+Profile 1 2 3 4 5 9 11  with freq 2 (35)
+Profile 1 2 3 5 9 10  with freq 2 (76)
+Profile 1 2 4 8  with freq 2 (395)
+Profile 1 2 3 4 6 9 11  with freq 2 (37)
+Profile 1 2 5 7 9  with freq 2 (153)
+Profile 1 2 5 10  with freq 1 (186)
+Profile 1 2 3 4 8 9 10  with freq 1 (2)
+Profile 2 9 10  with freq 1 (139)
+Profile 1 2 4 8 10  with freq 1 (132)
+Profile 1 2 3 6 11  with freq 1 (103)
+Profile 1 3 4 6 7 8  with freq 1 (102)
+Profile 1 2 3 5 10 11  with freq 1 (23)
+Profile 1 2 4 5 9 10  with freq 1 (71)
+Profile 1 2 4 9 10 11  with freq 1 (21)
+Profile 1 2 3 9 10 11  with freq 1 (21)
+Profile 1 2 3 4 5  with freq 1 (569)
+Profile 1 2 3 4 9 10 11  with freq 1 (20)
+Profile 1 2 4 7 9 11  with freq 1 (38)
+Profile 1 2 3 4 6 8 9 10  with freq 1 (1)
+Profile 1 2 3 5 6 7 9  with freq 1 (62)
+Profile 1 2 3 4 6 10 11  with freq 1 (18)
+Profile 1 2 3 4 5 7 10 11  with freq 1 (1)
+Profile 1 2 3 5 9 11  with freq 1 (38)
+Profile 1 2 4  with freq 1 (911)
+Profile 1 2 3 5 6 7 9 11  with freq 1 (8)
+Profile 1 2 3 7 11  with freq 1 (131)
+Profile 1 2 3 5 7 9 11  with freq 1 (22)
+Profile 1 2 3 6 7 11  with freq 1 (67)
+Profile 1 2 4 5 7 8  with freq 1 (104)
+Profile 1 2 3 7 8  with freq 1 (178)
+Profile 3 5 6  with freq 1 (277)
+Profile 1 2 3 4 11  with freq 1 (176)
+Profile 1 2 3 6 10 11  with freq 1 (19)
+Profile 1 2 4 5 7 11  with freq 1 (81)
+Profile 1 2 3 9 10  with freq 1 (133)
+Profile 1 2 4 5 10  with freq 1 (168)
+Profile 1 2 4 9  with freq 1 (379)
+Profile 1 2 3 8  with freq 1 (424)
+setting p to 2.3
+Selected profile 1 2 3 4 5 7 9 with freq 67 (140)
+Selected profile 1 2 3 4 5 7 8 with freq 53 (103)
+Selected profile 1 2 3 4 5 6 7 9 with freq 53 (60)
+Selected profile 1 2 3 4 5 6 7 8 with freq 50 (50)
+Selected profile 1 2 3 4 6 7 8 with freq 48 (101)
+Selected profile 1 2 3 4 5 8 10 with freq 47 (85)
+Selected profile 1 2 3 4 6 7 9 with freq 43 (119)
+Selected profile 1 2 3 4 5 6 8 10 with freq 38 (38)
+Selected profile 1 2 3 4 5 7 11 with freq 36 (80)
+Selected profile 1 2 3 4 6 9 10 with freq 35 (77)
+Selected profile 1 2 3 4 6 8 10 with freq 35 (74)
+Selected profile 1 2 3 4 5 9 10 with freq 31 (70)
+Selected profile 1 2 3 4 5 6 8 with freq 30 (118)
+Selected profile 1 2 3 4 5 8 with freq 28 (246)
+Selected profile 1 2 3 4 5 6 9 10 with freq 28 (33)
+Selected profile 1 2 3 4 6 8 with freq 28 (233)
+Selected profile 1 2 3 4 5 6 7 11 with freq 23 (30)
+Coverage by selected profiles: 0.673
+Number of profiles needed to get 0.50 coverage: 11
+Total number of selected profiles: 17

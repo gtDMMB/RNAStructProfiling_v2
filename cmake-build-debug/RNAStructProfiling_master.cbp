@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="RNAStructProfiling_master"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/hwilco/Documents/RNA\ Research/RNAStructProfiling-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/hwilco/Documents/RNA\ Research/RNAStructProfiling-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/hwilco/Documents/RNA\ Research/RNAStructProfiling-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/hwilco/Documents/RNA\ Research/RNAStructProfiling-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/hwilco/Documents/RNA\ Research/RNAStructProfiling-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/hwilco/Documents/RNA\ Research/RNAStructProfiling-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/hwilco/Documents/RNA\ Research/RNAStructProfiling-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/hwilco/Documents/RNA\ Research/RNAStructProfiling-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/hwilco/Documents/RNA\ Research/RNAStructProfiling-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/hwilco/Documents/RNA\ Research/RNAStructProfiling-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/hwilco/Documents/RNA\ Research/RNAStructProfiling-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/hwilco/Documents/RNA\ Research/RNAStructProfiling-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="RNAStructProfiling_master">
+				<Option output="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/cmake-build-debug/RNAStructProfiling_master" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/."/>
+					<Add directory="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/hwilco/Documents/RNA\ Research/RNAStructProfiling-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 RNAStructProfiling_master"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/hwilco/Documents/RNA\ Research/RNAStructProfiling-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/hwilco/Documents/RNA\ Research/RNAStructProfiling-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/hwilco/Documents/RNA\ Research/RNAStructProfiling-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="RNAStructProfiling_master/fast">
+				<Option output="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/cmake-build-debug/RNAStructProfiling_master" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/."/>
+					<Add directory="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/hwilco/Documents/RNA\ Research/RNAStructProfiling-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 RNAStructProfiling_master/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/hwilco/Documents/RNA\ Research/RNAStructProfiling-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/hwilco/Documents/RNA\ Research/RNAStructProfiling-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/hwilco/Documents/RNA\ Research/RNAStructProfiling-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Options.c">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Options.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Profile.c">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Profile.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Profnode.c">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Profnode.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Set.c">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Set.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/array_list.c">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/array_list.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/graph.c">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/graph.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/hashtbl.c">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/hashtbl.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/helix_class.c">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/helix_class.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/include/AdvancedDouble.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/include/algorithms-partition.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/include/algorithms.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/include/boltzmann_main.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/include/constants.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/include/constraints.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/include/data.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/include/energy.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/include/global.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/include/gtfold_config.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/include/key.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/include/loader.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/include/main-c.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/include/main.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/include/mfe_main.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/include/options.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/include/partition-dangle.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/include/partition-func-d2.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/include/partition-func.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/include/pf-shel-check.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/include/random-sample.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/include/shapereader.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/include/stochastic-sampling-d2.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/include/stochastic-sampling.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/include/subopt_main.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/include/subopt_traceback.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/include/traceback.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/include/utils-c.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/include/utils.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/list.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/main.c">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/memoryDFS.c">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/memoryDFS.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/stem.c">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/stem.h">
+			<Option target="RNAStructProfiling_master"/>
+		</Unit>
+		<Unit filename="/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

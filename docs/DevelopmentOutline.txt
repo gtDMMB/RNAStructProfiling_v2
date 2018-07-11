@@ -1,0 +1,28 @@
+Outline of existing system:
+1.  Sampling
+2.  Create helices (more specifically, helix classes) from samples
+        a) compute frequencies for helix classes
+3.  Find threshold for featured helices using entropy method
+4.   Define structures from sampling in terms of helix classes
+5.  Use featured helix classes to create profiles from structures
+        a) computer frequencies for profiles
+6.  Select profiles based on entropy method and find coverage by selected profiles
+7.  [New system for consolidation through stems here]
+8.  Graphing of relationships between selected profiles
+
+New system:
+1.  Assign all helix classes into size 1 stems
+2.  Consolidate stems -> combine stems which are extensions of each other
+        a) continue until no more consolidation is possible
+3.  Find functionally similar stems
+        a) find frequency by subtracting the number of structures with either stem from the number of structures with both stems
+4.  Consolidate stems again while checking for new extensions which include a functionally similar pair
+5.  Re-index using alphabetical id (sorting by frequency of stems as well)
+        a) generate key for translating stems back to their component helices
+6.  Find threshold for featured stems using entropy method
+7.  Redefine structures in terms of stems
+8.  Use featured stems to create profiles from structures
+        a) generate structure file with stem structures and stem profiles
+        b) compute frequencies of profiles
+9.  Select profiles based on entropy method
+10. Graphing of relationships between newly consolidated profiles

@@ -1,0 +1,158 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/boltzmann_main.h
+
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Options.c
+stdlib.h
+-
+stdio.h
+-
+Options.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Options.h
+
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Options.h
+
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Profile.c
+stdlib.h
+-
+Profile.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Profile.h
+
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Profile.h
+stdio.h
+-
+
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Profnode.c
+stdlib.h
+-
+Profnode.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Profnode.h
+
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Profnode.h
+Profile.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Profile.h
+
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Set.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+Set.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Set.h
+hashtbl.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/hashtbl.h
+Options.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Options.h
+helix_class.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/helix_class.h
+Profile.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Profile.h
+Profnode.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Profnode.h
+math.h
+-
+float.h
+-
+
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Set.h
+helix_class.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/helix_class.h
+Profile.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Profile.h
+hashtbl.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/hashtbl.h
+Options.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Options.h
+Profnode.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Profnode.h
+
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/graph.c
+graph.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/graph.h
+hashtbl.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/hashtbl.h
+Set.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Set.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/graph.h
+Set.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Set.h
+
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/hashtbl.c
+hashtbl.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/hashtbl.h
+string.h
+-
+stdio.h
+-
+
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/hashtbl.h
+stdlib.h
+-
+
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/helix_class.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+helix_class.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/helix_class.h
+Set.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Set.h
+
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/helix_class.h
+
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/main.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+hashtbl.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/hashtbl.h
+Set.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Set.h
+Options.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/Options.h
+memoryDFS.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/memoryDFS.h
+boltzmann_main.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/boltzmann_main.h
+
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/memoryDFS.c
+memoryDFS.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/memoryDFS.h
+graph.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/graph.h
+hashtbl.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/hashtbl.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/memoryDFS.h
+graph.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/graph.h
+hashtbl.h
+/home/hwilco/Documents/RNA Research/RNAStructProfiling-master/hashtbl.h
+
