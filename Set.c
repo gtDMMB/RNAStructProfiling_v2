@@ -1445,14 +1445,14 @@ void add_stems_to_set(Set* set) {
  */
 bool combine_stems(Set* set) {
     bool combined = false;
-    bool combining = false;
+    bool combining;
     array_list_t* stems = set->stems;
     Stem** stem_list = (Stem**) stems->entries;
     int size = stems->size;
     for (int i = 0; i < size; i++) {
         for (int j = i + 1; j < size; j++) {
-            Stem* stem1 = (Stem*) stem_list[i];
-            Stem* stem2 = (Stem*) stem_list[j];
+            Stem* stem1 = stem_list[i];
+            Stem* stem2 = stem_list[j];
             // check that the stems occur at similar enough frequencies to be considered
             if (!validate_stems(stem1, stem2)) {
                 continue;
@@ -1487,7 +1487,7 @@ bool combine_stems(Set* set) {
                     merge_stems(stem2, stem1);
                     remove_from_array_list(stems, i, old_stem);
                 }
-                free_stem(*(Stem**) old_stem);
+                //free_stem(*(Stem**) old_stem);
                 size--;
             }
         }
@@ -1517,7 +1517,7 @@ void merge_stems(Stem* stem1, Stem* stem2) {
     for (int i = 0; i < stem2->components->size; i++) {
         add_to_array_list(stem1->components, stem1->components->size + i, stem2->components->entries[i]);
     }
-    stem_reset_id(stem1);
+    //stem_reset_id(stem1);
 }
 
 // TODO: figure out fix for having functionally similar helices occur in a stem and thus have different freq from other helices in stem, while likely being a stem. This may simply be determinign functionally similar before determining stems as well
@@ -1810,38 +1810,45 @@ bool validate_stem_and_func_similar(FSStemGroup* stem_pair, Stem* stem) {
 }
 
 /**
- * Gets the frequency of a given stem, calculated by the number of sampled structures including all helices in the stem,
+ * Recursively determine if a stem occurs in a given structure. This is true if all helices occur in the structure, and for each
+ * functionally similar stem group, exactly one component stem appears in the structure
  *
- * @param stem the stem to find frequency of. stem->freq is updated during call
- * @param struct_file FILE pointer to structure.out
- * @return the frequency of the stem
+ * @param stem the stem to check
+ * @param structure the structure to check, formatted as a single line of helices dilineated by spaces
+ * @return true if the stem occurs, false if it does not
  */
-int get_freq_of_stem(Stem* stem, FILE* struct_file) {
-    int freq = 0;
-    char* id = (char*) malloc(sizeof(char) * STRING_BUFFER);
-    char line[MAX_SAMPLE_FILE_LINE_LEN];
-    while(fgets(line, MAX_SAMPLE_FILE_LINE_LEN, struct_file) != NULL) {
-        if(line[0] == 'S') {
-            //checking all stem helices in structure
-            for (int i = 0; i < stem->num_helices; i++) {
-                sprintf(id, " %s ", (*(HC*)stem->helices->entries[i]).id);
-                if (strstr(line, id) == NULL) {
-                    break;
-                } else {
-                    freq++;
+bool stem_is_in_structure(Stem *stem, char *structure) {
+    char* hc_id_string = (char*) malloc(sizeof(char) * STRING_BUFFER);
+    for (int i = 0; i < stem->components->size; i++) {
+        DataNode* component = (DataNode*) stem->components->entries[i];
+        if (component->node_type == fs_stem_group_type) {
+            FSStemGroup* stem_group = (FSStemGroup*) component->data;
+            int count = 0;
+            for (int j = 0; j < stem_group->stems->size; j++) {
+                if(stem_is_in_structure((Stem *) stem_group->stems->entries[j], structure)) {
+                    count++;
+                    if (count > 1) {
+                        return false;
+                    }
                 }
+            }
+            if (count != 1) {
+                return false;
+            }
+        } else {
+            sprintf(hc_id_string, " %s ", ((HC*)(component->data))->id);
+            if (strstr(structure, hc_id_string) == NULL) {
+                return false;
             }
         }
     }
-    free(id);
-    stem->freq = freq;
-    return freq;
+    return true;
 }
 
 /**
- * Updates the frequency of all Stems in set
+ * Updates the frequency of all Stems in set->stems
  *
- * @param set the set to update Stem in
+ * @param set the set to update Stems in
  */
 void update_freq_stems(Set* set) {
     FILE* struct_file = fopen("structure.out", "r");
@@ -1850,13 +1857,29 @@ void update_freq_stems(Set* set) {
         exit(EXIT_FAILURE);
     }
     Stem** stem_list = (Stem**) set->stems->entries;
+
+    //Reset all stems with more than 1 helix to freq 0
     for (int i = 0; i < set->stems->size; i++) {
-        Stem* stem = stem_list[i];
-        if (stem->num_helices == 1) {
+        Stem *stem = stem_list[i];
+        if (stem->helices->size == 1) {
             continue;
         }
-        // recalculate frequency if stem has more than one helix
-        get_freq_of_stem(stem, struct_file);
+        stem->freq = 0;
+    }
+
+    char line[MAX_SAMPLE_FILE_LINE_LEN];
+    while(fgets(line, MAX_SAMPLE_FILE_LINE_LEN, struct_file) != NULL) {
+        if (line[0] == 'S') {
+            for (int i = 0; i < set->stems->size; i++) {
+                Stem *stem = stem_list[i];
+                if (stem->helices->size == 1) {
+                    continue;
+                }
+                if (stem_is_in_structure(stem, line)) {
+                    stem->freq++;
+                }
+            }
+        }
     }
     fclose(struct_file);
 }

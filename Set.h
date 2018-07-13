@@ -131,7 +131,7 @@ bool combine_stems_using_func_similar(Set* set);
 bool validate_stem_and_func_similar(FSStemGroup* stem_group, Stem* stem);
 void merge_stem_and_fs_stem_group(Stem* stem, FSStemGroup* stem_group, int outer_stem);
 
-int get_freq_of_stem(Stem* stem, FILE* struct_file);
+bool stem_is_in_structure(Stem *stem, char *structure);
 void update_freq_stems(Set* set);
 
 #endif
