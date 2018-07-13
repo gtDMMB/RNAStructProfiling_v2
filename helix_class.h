@@ -9,16 +9,19 @@ typedef struct helix_class {
     int int_max_quad[4];
     // string with above info
     char* max_quad;
+    //TODO: implement ave_quad
+    /*
     // quadruplet, using avetrip instead of maxtrip
-    int avg_quad[4];
+    int int_ave_quad[4];
     // a string with the above info
     char* ave_quad;
+     */
     int freq;
     int isfreq;
     unsigned long binary;
 } HC;
 
 HC* create_HC(int id,char *max);
-int free_hc(HC* hc);
+int free_HC(HC* hc);
 
 #endif

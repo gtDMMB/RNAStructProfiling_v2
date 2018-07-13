@@ -1,7 +1,7 @@
 //
 // Created by hwilco on 5/26/18.
 //
-// stems, or groups of helices which almost always occur together and are encapsulated (ie. [5[4[1]]] )
+// stems, or groups of helices which almost always occur together and are extensions (ie. [5[4[1]]] )
 //
 
 #include "stem.h"
@@ -92,7 +92,7 @@ int free_data_node(DataNode *node) {
             return 1;
         }
     } else if (node->node_type == hc_type) {
-        if (free_hc((HC*)node->data) != 0) {
+        if (free_HC((HC*)node->data) != 0) {
             return 1;
         }
     }
@@ -112,7 +112,14 @@ Stem* create_stem(HC* initial_helix) {
         free(stem);
         return NULL;
     }
+    stem->components = create_array_list();
+    if (stem->components == NULL) {
+        free(stem->helices);
+        free(stem);
+        return NULL;
+    }
     add_to_array_list(stem->helices, 0, initial_helix);
+    add_to_array_list(stem->components, 0, create_data_node(hc_type, initial_helix));
     stem->int_max_quad[0] = initial_helix->int_max_quad[0];
     stem->int_max_quad[1] = initial_helix->int_max_quad[1];
     stem->int_max_quad[2] = initial_helix->int_max_quad[2];
@@ -134,6 +141,7 @@ void stem_reset_id(Stem* stem) {
 int free_stem(Stem* stem) {
     // TODO: fix to use free_hc
     destroy_array_list(stem->helices, &free);
+    destroy_array_list(stem->components, &free);
     free(stem->max_quad);
     free(stem);
     return 0;
@@ -150,8 +158,17 @@ FSStemGroup* create_fs_stem_group() {
         return NULL;
     }
     stem_group->stems = create_array_list();
-    // TODO: use proper free func
-    if (stem_group->stems == NULL) {
+    stem_group->max_quad = (char*) malloc(sizeof(*stem_group->max_quad) * STRING_BUFFER);
+    if (stem_group->stems == NULL || stem_group->max_quad == NULL) {
+        // TODO: use proper free func
+        destroy_array_list(stem_group->helices, &free);
+        free(stem_group);
+        return NULL;
+    }
+    stem_group->id = (char*) malloc(sizeof(*stem_group->id) * STRING_BUFFER);
+    if (stem_group->id == NULL) {
+        // TODO: use proper free funcs
+        destroy_array_list(stem_group->stems, &free);
         destroy_array_list(stem_group->helices, &free);
         free(stem_group);
         return NULL;
@@ -180,13 +197,52 @@ int add_to_fs_stem_group(FSStemGroup *stem_group, Stem *stem) {
         add_to_array_list(stem_group->helices, stem_group->num_helices, stem->helices->entries[i]);
         stem_group->num_helices++;
     }
+    if (stem_group->num_stems == 1) {
+        sprintf(stem_group->id, "%d", stem->id);
+        memcpy(stem_group->int_max_quad, stem->int_max_quad, sizeof(stem->int_max_quad));
+        strcpy(stem_group->max_quad, stem->max_quad);
+    } else {
+        int* temp_id = (int*) malloc(sizeof(int));
+        sscanf(stem_group->id, "%d", temp_id);
+        if (stem->id < *temp_id) {
+            sprintf(stem_group->id, "%d", stem->id);
+        }
+        free(temp_id);
+        stem_group->int_max_quad[0] = min(stem_group->int_max_quad[0], stem->int_max_quad[0]);
+        stem_group->int_max_quad[1] = max(stem_group->int_max_quad[1], stem->int_max_quad[1]);
+        stem_group->int_max_quad[2] = min(stem_group->int_max_quad[2], stem->int_max_quad[2]);
+        stem_group->int_max_quad[3] = max(stem_group->int_max_quad[3], stem->int_max_quad[3]);
+        sprintf(stem_group->max_quad, "%d %d %d %d", stem_group->int_max_quad[0], stem_group->int_max_quad[1],
+                stem_group->int_max_quad[2], stem_group->int_max_quad[3]);
+    }
     return 0;
+}
+
+/**
+ * Return the max of two ints
+ * @param a first int
+ * @param b second int
+ * @return the max of a and b
+ */
+int max(int a, int b) {
+    return (a >= b)? a : b;
+}
+
+/**
+ * Return the min of two ints
+ * @param a first int
+ * @param b second int
+ * @return the min of a and b
+ */
+int min(int a, int b) {
+    return (a <= b)? a : b;
 }
 
 // TODO: use proper free funcs
 int free_fs_stem_group(FSStemGroup *stem_group) {
     destroy_array_list(stem_group->stems, &free);
     destroy_array_list(stem_group->helices, &free);
+    free(stem_group->max_quad);
     free(stem_group);
     return 0;
 }

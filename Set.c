@@ -1565,8 +1565,11 @@ void merge_stems(Stem* stem1, Stem* stem2) {
     stem1->int_max_quad[2] = stem2->int_max_quad[2];
     sprintf(stem1->max_quad, "%d %d %d %d", stem1->int_max_quad[0], stem1->int_max_quad[1], stem1->int_max_quad[2],
             stem1->int_max_quad[3]);
-    for (int i = 0; i<stem2->num_helices; i++) {
+    for (int i = 0; i < stem2->num_helices; i++) {
         add_to_array_list(stem1->helices, insert_index + i, stem2->helices->entries[i]);
+    }
+    for (int i = 0; i < stem2->components->size; i++) {
+        add_to_array_list(stem1->components, stem1->components->size + i, stem2->components->entries[i]);
     }
     stem_reset_id(stem1);
 }
@@ -1635,21 +1638,25 @@ void find_func_similar_stems(Set* set) {
  */
 bool check_func_similar_stems(Set* set, Stem* stem1, Stem* stem2, int* freq) {
     // Check overlap (or close to, determined by FUCN_SIMILAR_END_DELTA) of the front portions of a stem
-    int front = stem1->int_max_quad[0];
-    int back  = stem1->int_max_quad[1];
-    if (!(stem2->int_max_quad[0] < back + FUNC_SIMILAR_END_DELTA &&
-         stem2->int_max_quad[0] > front - FUNC_SIMILAR_END_DELTA) ||
-        !(stem2->int_max_quad[1] < back + FUNC_SIMILAR_END_DELTA &&
-         stem2->int_max_quad[1] > front - FUNC_SIMILAR_END_DELTA)) {
+    int front1 = stem1->int_max_quad[0];
+    int back1  = stem1->int_max_quad[1];
+    int front2 = stem2->int_max_quad[0];
+    int back2 = stem2->int_max_quad[1];
+    if (!(front2 < back1 + FUNC_SIMILAR_END_DELTA &&
+          front2 > front1 - FUNC_SIMILAR_END_DELTA) ||
+        !(back2 < back1 + FUNC_SIMILAR_END_DELTA &&
+          back2 > front1 - FUNC_SIMILAR_END_DELTA)) {
         return false;
     }
     // check for back portions
-    front = stem1->int_max_quad[2];
-    back  = stem1->int_max_quad[3];
-    if (!(stem2->int_max_quad[2] < back + FUNC_SIMILAR_END_DELTA &&
-         stem2->int_max_quad[2] > front - FUNC_SIMILAR_END_DELTA) ||
-        !(stem2->int_max_quad[3] < back + FUNC_SIMILAR_END_DELTA &&
-         stem2->int_max_quad[3] > front - FUNC_SIMILAR_END_DELTA)) {
+    front1 = stem1->int_max_quad[2];
+    back1  = stem1->int_max_quad[3];
+    front2 = stem2->int_max_quad[2];
+    back2  = stem2->int_max_quad[3];
+    if (!(front2 < back1 + FUNC_SIMILAR_END_DELTA &&
+          front2 > front1 - FUNC_SIMILAR_END_DELTA) ||
+        !(back2 < back1 + FUNC_SIMILAR_END_DELTA &&
+          back2 > front1 - FUNC_SIMILAR_END_DELTA)) {
         return false;
     }
     if (set->opt->VERBOSE) {
@@ -1751,12 +1758,51 @@ bool combine_stems_using_func_similar(Set* set) {
             }
             // combine if all stems in functionally similar group were within FUNC_SIMILAR_END_DELTA to the stem
             if (combining) {
-
+                if (set->opt->VERBOSE) {
+                    printf("Joining stem %d and functionally similar group %s\n", stem_list[j]->id, stem_pair->id);
+                }
+                combined = true;
+                merge_stem_and_fs_stem_group(stem_list[j], stem_pair, *outer_stem);
             }
         }
     }
     free(outer_stem);
     return combined;
+}
+
+/**
+ *
+ * Merges a stem and a functionally similar stem group, placing the outer one first in the stem's list of components.
+ * Does not update frequency
+ *
+ * @param stem the stem to merge
+ * @param stem_group the functionally similar stem group to merge
+ * @param outer_stem 1 if stem encompasses stem_group, 2 if stem_group encompasses stem
+ */
+void merge_stem_and_fs_stem_group(Stem* stem, FSStemGroup* stem_group, int outer_stem) {
+    if (outer_stem != 1 && outer_stem != 2) {
+        printf("Error in merging stems and functionally similar stems. No valid outer_stem number");
+        exit(EXIT_FAILURE);
+    }
+    stem->int_max_quad[0] = min(stem_group->int_max_quad[0], stem->int_max_quad[0]);
+    stem->int_max_quad[1] = max(stem_group->int_max_quad[1], stem->int_max_quad[1]);
+    stem->int_max_quad[2] = min(stem_group->int_max_quad[2], stem->int_max_quad[2]);
+    stem->int_max_quad[3] = max(stem_group->int_max_quad[3], stem->int_max_quad[3]);
+    sprintf(stem->max_quad, "%d %d %d %d", stem->int_max_quad[0], stem->int_max_quad[1],
+            stem->int_max_quad[2], stem->int_max_quad[3]);
+    // if stem encompasses stem_group
+    if(outer_stem == 1) {
+        add_to_array_list(stem->components, stem->components->size, create_data_node(fs_stem_group_type, stem_group));
+        for (int i = 0; i < stem_group->helices->size; i++) {
+            add_to_array_list(stem->helices, stem->helices->size + i, stem_group->helices->entries[i]);
+        }
+    } else if (outer_stem == 2) {
+        add_to_array_list(stem->components, 0, create_data_node(fs_stem_group_type, stem_group));
+        for (int i = 0; i < stem_group->helices->size; i++) {
+            add_to_array_list(stem->helices, i, stem_group->helices->entries[i]);
+        }
+    }
+    stem->num_helices += stem_group->num_helices;
 }
 
 
@@ -1814,10 +1860,6 @@ bool validate_stem_and_func_similar(FSStemGroup* stem_pair, Stem* stem) {
 int get_freq_of_stem(Stem* stem, FILE* struct_file) {
     int freq = 0;
     char* id = (char*) malloc(200 * sizeof(char));
-    if (struct_file == NULL) {
-        fprintf(stderr,"Error: could not open structure file");
-        exit(EXIT_FAILURE);
-    }
     char line[MAX_SAMPLE_FILE_LINE_LEN];
     while(fgets(line, MAX_SAMPLE_FILE_LINE_LEN, struct_file) != NULL) {
         if(line[0] == 'S') {

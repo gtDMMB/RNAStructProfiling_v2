@@ -47,25 +47,32 @@ typedef struct {
     // a string with the above info
     char* max_quad;
     // TODO: implement ave_quad
+    /*
     // quadruplet, using avetrip instead of maxtrip
-    int avg_quad[4];
+    int ave_quad[4];
     // a string with the above info
     char* ave_quad;
+     */
     // TODO: ensure this is ordered correctly when stems are merged
     // an array list of the component helices
     array_list_t* helices;
-    // an ordered array list of the component stems, ordered such that the outermost helix is first,
-    // then the one inside, et cetera
-    array_list_t* stems;
+    // an ordered array list of the components (helices or functionally similar stem groups), ordered such that the
+    // outermost helix is first, then the one inside, et cetera
+    array_list_t* components;
     // the number of times every component helix occurs in the same structure (in the case of functionally equivalent,
     // either but not both of the feq helices)
     int freq;
 } Stem;
 
 typedef struct {
+    char* id;
     int num_stems;
     int num_helices;
     int combined_freq;
+    // quadruplet, defined by the start and end nucleotides of each of the outermost ends of the component stems
+    int int_max_quad[4];
+    // string with the above info
+    char* max_quad;
     array_list_t* helices;
     array_list_t* stems;
 } FSStemGroup;
@@ -85,5 +92,8 @@ int free_stem(Stem* stem);
 FSStemGroup* create_fs_stem_group();
 int add_to_fs_stem_group(FSStemGroup *stem_group, Stem *stem);
 int free_fs_stem_group(FSStemGroup *stem_group);
+
+int max(int a, int b);
+int min(int a, int b);
 
 #endif //STEM_H

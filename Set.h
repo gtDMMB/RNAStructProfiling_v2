@@ -17,6 +17,7 @@
 #define HASHSIZE 31
 #define ARRAYSIZE 20
 #define INIT_SIZE 2
+#define STRING_BUFFER 256
 
 // Max length of a line in the smaple file TODO: make into an option
 #define MAX_SAMPLE_FILE_LINE_LEN 150
@@ -130,6 +131,8 @@ bool validate_func_similar_stems(Set* set, Stem* stem1, Stem* stem2, int* freq);
 
 bool combine_stems_using_func_similar(Set* set);
 bool validate_stem_and_func_similar(FSStemGroup* stem_group, Stem* stem);
+void merge_stem_and_fs_stem_group(Stem* stem, FSStemGroup* stem_group, int outer_stem);
+
 
 
 #endif

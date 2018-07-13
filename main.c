@@ -280,6 +280,10 @@ GTBOLTZMANN OPTIONS
     }
     // find frequencies of all combined stems
     FILE* struct_file = fopen("structure.out", "r");
+    if (struct_file == NULL) {
+        fprintf(stderr,"Error: could not open structure file (structure.out)");
+        exit(EXIT_FAILURE);
+    }
     DataNode** stem_node_list = (DataNode**) set->stems->entries;
     for (int i = 0; i < set->stems->size; i++) {
         Stem* stem = (Stem*) stem_node_list[i]->data;
@@ -292,7 +296,6 @@ GTBOLTZMANN OPTIONS
     fclose(struct_file);
     find_func_similar_stems(set);
     combine_stems_using_func_similar(set);
-
 
     if (set->opt->GRAPH) {
         fp = fopen(set->opt->OUTPUT,"w");

@@ -26,7 +26,7 @@ HC* create_HC(int id, char* max) {
     hc->int_max_quad[1] = i + k - 1;
     hc->int_max_quad[2] = j - k +1;
     hc->int_max_quad[3] = j;
-    hc->max_quad = (char*) malloc(sizeof(char*));
+    hc->max_quad = (char*) malloc(sizeof(*hc->max_quad) * STRING_BUFFER);
     if (hc->max_quad == NULL) {
       free(key);
       free(hc);
