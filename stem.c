@@ -47,7 +47,7 @@ DataNode* create_stem_node(HC* initial_helix) {
         return NULL;
     }
     node->node_type = stem_type;
-    node->data = create_stem(initial_helix);
+    node->data = create_stem_from_HC(initial_helix);
     if (node->data == NULL) {
         free(node);
         return NULL;
@@ -109,13 +109,17 @@ int free_data_node(DataNode *node) {
     return 0;
 }
 
-// creates a stem with one helix, initial_helix, and returns a pointer to it. Returns NULL if memory allocation fails
-Stem* create_stem(HC* initial_helix) {
+
+/**
+ * Creates am empty Stem
+ * @return a pointer to the new Stem
+ */
+Stem* create_stem() {
     Stem* stem = (Stem*) malloc(sizeof(Stem));
     if (stem == NULL) {
         return NULL;
     }
-    stem->num_helices = 1;
+    stem->num_helices = 0;
     stem->helices = create_array_list();
     if (stem->helices == NULL) {
         free(stem);
@@ -127,13 +131,23 @@ Stem* create_stem(HC* initial_helix) {
         free(stem);
         return NULL;
     }
+    stem->max_quad = (char*) malloc(sizeof(char) * STRING_BUFFER);
+    return stem;
+}
+
+// creates a stem with one helix, initial_helix, and returns a pointer to it. Returns NULL if memory allocation fails
+Stem* create_stem_from_HC(HC *initial_helix) {
+    Stem* stem = create_stem();
+    if (stem == NULL) {
+        return NULL;
+    }
+    stem->num_helices = 1;
     add_to_array_list(stem->helices, 0, initial_helix);
     add_to_array_list(stem->components, 0, create_data_node(hc_type, initial_helix));
     stem->int_max_quad[0] = initial_helix->int_max_quad[0];
     stem->int_max_quad[1] = initial_helix->int_max_quad[1];
     stem->int_max_quad[2] = initial_helix->int_max_quad[2];
     stem->int_max_quad[3] = initial_helix->int_max_quad[3];
-    stem->max_quad = (char*) malloc(sizeof(char) * (1 + strlen(initial_helix->max_quad)));
     strcpy(stem->max_quad, initial_helix->max_quad);
     stem->freq = initial_helix->freq;
     char* endptr;

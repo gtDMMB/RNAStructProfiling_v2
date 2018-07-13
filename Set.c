@@ -452,7 +452,7 @@ int match(int i,int j,char *seq) {
 }
 
 void addHC(Set *set, HC *hc, int idcount) {
-    int i,k;
+    int k;
 
     if (idcount > ARRAYSIZE*set->hc_size) {
         set->hc_size++;
@@ -1497,8 +1497,8 @@ int print_consensus(Set *set) {
 void add_stems_to_set(Set* set) {
     // populate array_list of single helix stems
     for (int i_hc = 0; i_hc < STEM_NUM_CUTOFF; i_hc++) {
-        add_to_array_list(set->original_hc_stems, i_hc, create_stem_node(set->helices[i_hc]));
-        add_to_array_list(set->stems, i_hc, create_stem_node(set->helices[i_hc]));
+        add_to_array_list(set->original_hc_stems, i_hc, create_stem_from_HC(set->helices[i_hc]));
+        add_to_array_list(set->stems, i_hc, create_stem_from_HC(set->helices[i_hc]));
     }
 }
 
@@ -1512,12 +1512,12 @@ bool combine_stems(Set* set) {
     bool combined = false;
     bool combining = false;
     array_list_t* stems = set->stems;
-    DataNode** stem_node_list = (DataNode**) stems->entries;
+    Stem** stem_list = (Stem**) stems->entries;
     int size = stems->size;
     for (int i = 0; i < size; i++) {
         for (int j = i + 1; j < size; j++) {
-            Stem* stem1 = (Stem*) stem_node_list[i]->data;
-            Stem* stem2 = (Stem*) stem_node_list[j]->data;
+            Stem* stem1 = (Stem*) stem_list[i];
+            Stem* stem2 = (Stem*) stem_list[j];
             // check that the stems occur at similar enough frequencies to be considered
             if (!validate_stems(stem1, stem2)) {
                 continue;
@@ -1552,7 +1552,7 @@ bool combine_stems(Set* set) {
                     merge_stems(stem2, stem1);
                     remove_from_array_list(stems, i, old_stem);
                 }
-                free_data_node((DataNode*) old_stem);
+                free_stem(*(Stem**) old_stem);
                 size--;
             }
         }
@@ -1602,6 +1602,7 @@ bool validate_stems(Stem* stem1, Stem* stem2) {
     return error <= STEM_VALID_PERCENT_ERROR;
 }
 
+
 // TODO: determine if this can be done within the loop in combine_stems
 // TODO: determine if we can have more than just 2 functionally similar stems, or only pairs
 /**
@@ -1610,27 +1611,45 @@ bool validate_stems(Stem* stem1, Stem* stem2) {
  * @param set the set to find functionally similar stems in
  */
 void find_func_similar_stems(Set* set) {
-    int count = 0;
     DataNode* fs_stem_group_node;
     int* freq = (int*) malloc(sizeof(int));
-    DataNode** stem_node_list = (DataNode**) set->stems->entries;
+    Stem** stem_list = (Stem**) set->stems->entries;
     // only used for removals from array lists
     void** data_out = (void**) malloc(sizeof(void**));
 
     for (int i = 0; i < set->stems->size; i++) {
         for (int j = i + 1; j < set->stems->size; j++) {
-            Stem* stem1 = (Stem*) stem_node_list[i]->data;
-            Stem* stem2 = (Stem*) stem_node_list[j]->data;
+            Stem* stem1 = stem_list[i];
+            Stem* stem2 = stem_list[j];
             if (check_func_similar_stems(set, stem1, stem2, freq)) {
                 fs_stem_group_node = create_fs_stem_group_node();
                 add_to_fs_stem_group((FSStemGroup*)fs_stem_group_node->data, stem1);
                 add_to_fs_stem_group((FSStemGroup*)fs_stem_group_node->data, stem2);
-                ((FSStemGroup*)(fs_stem_group_node->data))->freq = *freq;
+                FSStemGroup* stem_group = (FSStemGroup*) fs_stem_group_node->data;
+                stem_group->freq = *freq;
+                fs_stem_group_node->freq = *freq;
                 remove_from_array_list(set->stems, i, data_out);
-                remove_from_array_list(set->stems, j, data_out);
-                add_to_array_list(set->stems, i, fs_stem_group_node);
-                add_to_array_list(set->func_similar_stems, count, fs_stem_group_node);
-                count++;
+                remove_from_array_list(set->stems, j-1, data_out);
+
+                // Create and empty Stem DataNode to hold the FSStemGroup
+                DataNode* node = create_data_node(stem_type, create_stem());
+                Stem* stem = (Stem*) node->data;
+                add_to_array_list(stem->components, 0, fs_stem_group_node);
+                stem->freq = *freq;
+                memcpy(stem->int_max_quad, stem_group->int_max_quad,
+                       sizeof(stem->int_max_quad));
+                stem->num_helices = stem_group->num_helices;
+                strcpy(stem->max_quad, stem_group->max_quad);
+                memcpy(stem->helices, stem_group->int_max_quad,
+                       sizeof(stem->int_max_quad));
+                for (int k = 0; i < stem_group->helices->size; k++) {
+                    add_to_array_list(stem->helices, k, stem_group->helices->entries[k]);
+                }
+                char* endptr;
+                stem->id = (int) strtol(stem_group->id, &endptr, 10);
+
+                add_to_array_list(set->stems, i, stem);
+                add_to_array_list(set->func_similar_stems, set->func_similar_stems->size, stem);
             }
         }
     }
@@ -1743,10 +1762,10 @@ bool combine_stems_using_func_similar(Set* set) {
     bool combined = false;
     bool combining = false;
     Stem** stem_list = (Stem**)set->stems->entries;
-    FSStemGroup** func_similar_list = (FSStemGroup**) set->func_similar_stems->entries;
+    Stem** func_similar_list = (Stem**) set->func_similar_stems->entries;
     int* outer_stem = (int*) malloc(sizeof(int));
     for (int i = 0; i < set->func_similar_stems->size; i++) {
-        FSStemGroup* stem_pair = func_similar_list[i];
+        FSStemGroup* stem_pair = (FSStemGroup*) ((DataNode*) func_similar_list[i]->components->entries[0])->data;
         for (int j = 0; j < set->stems->size; j++) {
             //check if func similar stem group and stem occur together often enough to be a possible stem
             if (!validate_stem_and_func_similar(stem_pair, stem_list[j])) {
@@ -1895,9 +1914,9 @@ void update_freq_stems(Set* set) {
         fprintf(stderr,"Error: could not open structure file (structure.out)");
         exit(EXIT_FAILURE);
     }
-    DataNode** stem_node_list = (DataNode**) set->stems->entries;
+    Stem** stem_list = (Stem**) set->stems->entries;
     for (int i = 0; i < set->stems->size; i++) {
-        Stem* stem = (Stem*) stem_node_list[i]->data;
+        Stem* stem = stem_list[i];
         if (stem->num_helices == 1) {
             continue;
         }

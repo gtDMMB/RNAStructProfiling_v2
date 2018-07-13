@@ -83,8 +83,9 @@ DataNode* create_stem_node(HC* initial_helix);
 DataNode* create_fs_stem_group_node();
 int free_data_node(DataNode *node);
 
+Stem* create_stem();
 // creates a stem with one helix, initial_helix, and returns a pointer to it. Returns NULL if memory allocation fails
-Stem* create_stem(HC* initial_helix);
+Stem* create_stem_from_HC(HC *initial_helix);
 // recreate the id for a stem using its helix set
 void stem_reset_id(Stem* stem);
 // destroys a Stem, freeing allocated memory. Returns 0 if successful, non-zero otherwise
