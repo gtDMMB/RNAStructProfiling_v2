@@ -133,6 +133,4 @@ bool combine_stems_using_func_similar(Set* set);
 bool validate_stem_and_func_similar(FSStemGroup* stem_group, Stem* stem);
 void merge_stem_and_fs_stem_group(Stem* stem, FSStemGroup* stem_group, int outer_stem);
 
-
-
 #endif

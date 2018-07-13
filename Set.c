@@ -66,6 +66,17 @@ Set* make_Set(char *name) {
     return set;
 }
 
+// TODO: use proper free function for stems
+void free_Set(Set* set) {
+    free(set->helices);
+    free(set->profiles);
+    free(set->proftree);
+    free(set->treeindex);
+    destroy_array_list(set->stems, &free);
+    destroy_array_list(set->func_similar_stems, &free);
+    free(set);
+}
+
 void input_seq(Set *set,char *seqfile) {
     FILE * fp;
     int size = 5,fasta = 0;
@@ -1874,15 +1885,4 @@ int get_freq_of_stem(Stem* stem, FILE* struct_file) {
     free(id);
     stem->freq = freq;
     return freq;
-}
-
-// TODO: use proper free function for stems
-void free_Set(Set* set) {
-    free(set->helices);
-    free(set->profiles);
-    free(set->proftree);
-    free(set->treeindex);
-    destroy_array_list(set->stems, &free);
-    destroy_array_list(set->func_similar_stems, &free);
-    free(set);
 }
