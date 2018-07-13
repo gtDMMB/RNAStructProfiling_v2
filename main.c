@@ -279,23 +279,10 @@ GTBOLTZMANN OPTIONS
         combined_stems = combine_stems(set);
     }
     // find frequencies of all combined stems
-    FILE* struct_file = fopen("structure.out", "r");
-    if (struct_file == NULL) {
-        fprintf(stderr,"Error: could not open structure file (structure.out)");
-        exit(EXIT_FAILURE);
-    }
-    DataNode** stem_node_list = (DataNode**) set->stems->entries;
-    for (int i = 0; i < set->stems->size; i++) {
-        Stem* stem = (Stem*) stem_node_list[i]->data;
-        if (stem->num_helices == 1) {
-            continue;
-        }
-        // recalculate frequency if stem has more than one helix
-        get_freq_of_stem(stem, struct_file);
-    }
-    fclose(struct_file);
+    update_freq_of_stems(set);
     find_func_similar_stems(set);
     combine_stems_using_func_similar(set);
+    update_freq_of_stems(set);
 
     if (set->opt->GRAPH) {
         fp = fopen(set->opt->OUTPUT,"w");

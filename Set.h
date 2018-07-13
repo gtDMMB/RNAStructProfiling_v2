@@ -121,7 +121,6 @@ void add_stems_to_set(Set* set);
 bool combine_stems(Set* set);
 void merge_stems(Stem* stem1, Stem* stem2);
 bool validate_stems(Stem* stem1, Stem* stem2);
-int get_freq_of_stem(Stem* stem, FILE* struct_file);
 bool check_ends_to_combine_stems(Stem* stem1, Stem* stem2, int end_delta, int* outer_stem);
 
 // Concerning functionally similar stems
@@ -132,5 +131,9 @@ bool validate_func_similar_stems(Set* set, Stem* stem1, Stem* stem2, int* freq);
 bool combine_stems_using_func_similar(Set* set);
 bool validate_stem_and_func_similar(FSStemGroup* stem_group, Stem* stem);
 void merge_stem_and_fs_stem_group(Stem* stem, FSStemGroup* stem_group, int outer_stem);
+
+int get_freq_of_stem(Stem* stem, FILE* struct_file);
+void update_freq_of_stems(Set* set);
+
 
 #endif

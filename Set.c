@@ -1886,3 +1886,25 @@ int get_freq_of_stem(Stem* stem, FILE* struct_file) {
     stem->freq = freq;
     return freq;
 }
+
+/**
+ * Updates the frequency of all stems in set
+ * @param set the set to update stems in
+ */
+void update_freq_of_stems(Set* set) {
+    FILE* struct_file = fopen("structure.out", "r");
+    if (struct_file == NULL) {
+        fprintf(stderr,"Error: could not open structure file (structure.out)");
+        exit(EXIT_FAILURE);
+    }
+    DataNode** stem_node_list = (DataNode**) set->stems->entries;
+    for (int i = 0; i < set->stems->size; i++) {
+        Stem* stem = (Stem*) stem_node_list[i]->data;
+        if (stem->num_helices == 1) {
+            continue;
+        }
+        // recalculate frequency if stem has more than one helix
+        get_freq_of_stem(stem, struct_file);
+    }
+    fclose(struct_file);
+}
