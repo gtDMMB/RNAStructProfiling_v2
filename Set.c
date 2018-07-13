@@ -1645,14 +1645,6 @@ bool check_func_similar_stems(Set* set, Stem* stem1, Stem* stem2, int* freq) {
     if (abs(front1 - front2) > FUNC_SIMILAR_END_DELTA || abs(back1-back2) > FUNC_SIMILAR_END_DELTA) {
         return false;
     }
-    /*
-    if (!(front2 < back1 + FUNC_SIMILAR_END_DELTA &&
-          front2 > front1 - FUNC_SIMILAR_END_DELTA) ||
-        !(back2 < back1 + FUNC_SIMILAR_END_DELTA &&
-          back2 > front1 - FUNC_SIMILAR_END_DELTA)) {
-        return false;
-    }
-     */
     // check for back portions
     front1 = stem1->int_max_quad[2];
     back1  = stem1->int_max_quad[3];
@@ -1661,14 +1653,6 @@ bool check_func_similar_stems(Set* set, Stem* stem1, Stem* stem2, int* freq) {
     if (abs(front1 - front2) > FUNC_SIMILAR_END_DELTA || abs(back1-back2) > FUNC_SIMILAR_END_DELTA) {
         return false;
     }
-    /*
-    if (!(front2 < back1 + FUNC_SIMILAR_END_DELTA &&
-          front2 > front1 - FUNC_SIMILAR_END_DELTA) ||
-        !(back2 < back1 + FUNC_SIMILAR_END_DELTA &&
-          back2 > front1 - FUNC_SIMILAR_END_DELTA)) {
-        return false;
-    }
-     */
     if (set->opt->VERBOSE) {
         printf("Do stem %d and stem %d occur infrequently enough to be functionally similar: ", stem1->id,
                stem2->id);
