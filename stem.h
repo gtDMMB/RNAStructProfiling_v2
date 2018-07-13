@@ -33,6 +33,7 @@ typedef enum {
 typedef struct {
     NodeType node_type;
     void* data;
+    int freq;
 } DataNode;
 
 typedef struct {
@@ -68,7 +69,7 @@ typedef struct {
     char* id;
     int num_stems;
     int num_helices;
-    int combined_freq;
+    int freq;
     // quadruplet, defined by the start and end nucleotides of each of the outermost ends of the component stems
     int int_max_quad[4];
     // string with the above info

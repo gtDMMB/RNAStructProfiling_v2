@@ -25,6 +25,13 @@ DataNode* create_data_node(NodeType node_type, void *data) {
     }
     node->node_type = node_type;
     node->data = data;
+    if (node->node_type == stem_type) {
+        node->freq = ((Stem*) data)->freq;
+    } else if (node->node_type == fs_stem_group_type) {
+        node->freq = ((FSStemGroup*) data)->freq;
+    } else if (node->node_type == hc_type) {
+        node->freq = ((HC*) data)->freq;
+    }
     return node;
 }
 
@@ -45,6 +52,7 @@ DataNode* create_stem_node(HC* initial_helix) {
         free(node);
         return NULL;
     }
+    node->freq = ((Stem*)node->data)->freq;
     return node;
 }
 
@@ -65,6 +73,7 @@ DataNode* create_fs_stem_group_node() {
         free(node);
         return NULL;
     }
+    node->freq = ((FSStemGroup*)node->data)->freq;
     return node;
 }
 
@@ -175,7 +184,7 @@ FSStemGroup* create_fs_stem_group() {
     }
     stem_group->num_helices = 0;
     stem_group->num_stems = 0;
-    stem_group->combined_freq = 0;
+    stem_group->freq = 0;
     return stem_group;
 }
 

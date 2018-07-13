@@ -1625,7 +1625,7 @@ void find_func_similar_stems(Set* set) {
                 fs_stem_group_node = create_fs_stem_group_node();
                 add_to_fs_stem_group((FSStemGroup*)fs_stem_group_node->data, stem1);
                 add_to_fs_stem_group((FSStemGroup*)fs_stem_group_node->data, stem2);
-                ((FSStemGroup*)(fs_stem_group_node->data))->combined_freq = *freq;
+                ((FSStemGroup*)(fs_stem_group_node->data))->freq = *freq;
                 remove_from_array_list(set->stems, i, data_out);
                 remove_from_array_list(set->stems, j, data_out);
                 add_to_array_list(set->stems, i, fs_stem_group_node);
@@ -1847,7 +1847,7 @@ bool check_ends_to_combine_stems(Stem* stem1, Stem* stem2, int end_delta, int* o
  * @return true if they occur within % error bound, false otherwise
  */
 bool validate_stem_and_func_similar(FSStemGroup* stem_pair, Stem* stem) {
-    double f1 = stem_pair->combined_freq;
+    double f1 = stem_pair->freq;
     double f2 = stem->freq;
     // TODO: check if we should divide by min or max
     double max = (f1 >= f2)? f1 : f2;
@@ -1864,21 +1864,18 @@ bool validate_stem_and_func_similar(FSStemGroup* stem_pair, Stem* stem) {
  */
 int get_freq_of_stem(Stem* stem, FILE* struct_file) {
     int freq = 0;
-    char* id = (char*) malloc(200 * sizeof(char));
+    char* id = (char*) malloc(sizeof(char) * STRING_BUFFER);
     char line[MAX_SAMPLE_FILE_LINE_LEN];
     while(fgets(line, MAX_SAMPLE_FILE_LINE_LEN, struct_file) != NULL) {
         if(line[0] == 'S') {
-            bool stem_found = true;
             //checking all stem helices in structure
             for (int i = 0; i < stem->num_helices; i++) {
                 sprintf(id, " %s ", (*(HC*)stem->helices->entries[i]).id);
                 if (strstr(line, id) == NULL) {
-                    stem_found = false;
                     break;
+                } else {
+                    freq++;
                 }
-            }
-            if (stem_found) {
-                freq++;
             }
         }
     }
@@ -1888,10 +1885,11 @@ int get_freq_of_stem(Stem* stem, FILE* struct_file) {
 }
 
 /**
- * Updates the frequency of all stems in set
- * @param set the set to update stems in
+ * Updates the frequency of all Stems in set
+ *
+ * @param set the set to update Stem in
  */
-void update_freq_of_stems(Set* set) {
+void update_freq_stems(Set* set) {
     FILE* struct_file = fopen("structure.out", "r");
     if (struct_file == NULL) {
         fprintf(stderr,"Error: could not open structure file (structure.out)");

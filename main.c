@@ -279,10 +279,10 @@ GTBOLTZMANN OPTIONS
         combined_stems = combine_stems(set);
     }
     // find frequencies of all combined stems
-    update_freq_of_stems(set);
+    update_freq_stems(set);
     find_func_similar_stems(set);
     combine_stems_using_func_similar(set);
-    update_freq_of_stems(set);
+    update_freq_stems(set);
 
     if (set->opt->GRAPH) {
         fp = fopen(set->opt->OUTPUT,"w");
