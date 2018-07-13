@@ -108,7 +108,6 @@ double set_p_threshold_entropy(Set *set);
 void find_general_freq(Set *set);
 int subset(Set *set,char *one, char *two);
 unsigned long binary_rep(Set *set,char *profile);
-double set_p_threshold(Set *set, int start);
 void select_profiles(Set *set);
 void process_one_input(Set *set);
 int* process_native(Set *set,int i, int j, int k);
