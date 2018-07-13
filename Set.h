@@ -73,7 +73,7 @@ char* longest_possible(int id,int i,int j,int k,char *seq);
 int match(int i,int j,char *seq);
 void addHC(Set *set, HC *hc, int idcount);
 void reorder_helices(Set *set);
-int freqcompare(const void *v1, const void *v2);
+int HC_freq_compare(const void *v1, const void *v2);
 double set_threshold_entropy(Set *set);
 void init_joint(Set *set);
 double set_threshold(Set *set, int start);
@@ -133,5 +133,9 @@ void merge_stem_and_fs_stem_group(Stem* stem, FSStemGroup* stem_group, int outer
 
 bool stem_is_in_structure(Stem *stem, char *structure);
 void update_freq_stems(Set* set);
+
+void reindex_stems(Set *set);
+int stem_freq_compare(const void* s1, const void* s2);
+size_t int2size_t(int val);
 
 #endif

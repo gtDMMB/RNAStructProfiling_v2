@@ -283,6 +283,7 @@ GTBOLTZMANN OPTIONS
     find_func_similar_stems(set);
     combine_stems_using_func_similar(set);
     update_freq_stems(set);
+    reindex_stems(set);
 
     if (set->opt->GRAPH) {
         fp = fopen(set->opt->OUTPUT,"w");

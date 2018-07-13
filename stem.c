@@ -89,7 +89,7 @@ int free_data_node(DataNode *node) {
     } else if (node->data == NULL) {
         free(node);
         return 0;
-    } else if (node->node_type == NULL) {
+    } else if (node->node_type == 0) {
         return 1;
     }
     if (node->node_type == stem_type) {

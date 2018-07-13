@@ -480,7 +480,7 @@ void reorder_helices(Set *set) {
         exit(EXIT_FAILURE);
     }
 
-    qsort(helices,total,sizeof(HC*),freqcompare);
+    qsort(helices, total, sizeof(HC *), HC_freq_compare);
     for (i = 0; i < total; i++) {
         old = helices[i]->id;
         nw = (int*) malloc(sizeof(int)*ARRAYSIZE);
@@ -493,7 +493,7 @@ void reorder_helices(Set *set) {
 }
 
 //will sort to have descending freq
-int freqcompare(const void *v1, const void *v2) {
+int HC_freq_compare(const void *v1, const void *v2) {
     HC *h1,*h2;
     h1 = *((HC**)v1);
     int i1 = h1->freq;
@@ -1882,4 +1882,43 @@ void update_freq_stems(Set* set) {
         }
     }
     fclose(struct_file);
+}
+
+/**
+ * Reindexes set->stems to use alphabetical indices. Stems are sorted by frequency first. Also creates a key mapping
+ * stems to their component helices.
+ *
+ * @param set the set to reindex Stems of
+ */
+void reindex_stems(Set *set) {
+    qsort(set->stems->entries, int2size_t(set->stems->size), sizeof(set->stems->entries[0]), stem_freq_compare);
+}
+
+/**
+ *
+ *
+ */
+
+/**
+ * Comparator function for qsort on Stems, sorting in descending order by frequency.
+ *
+ * @param s1 the first stem to compare
+ * @param s2  the second stem to compare
+ * @return 0 if two are equivalent in order, <0 if s1 goes before s2, >0 if s1 goes after s2
+ */
+int stem_freq_compare(const void* s1, const void* s2) {
+    Stem *stem1 = *(Stem **) s1;
+    Stem *stem2 = *(Stem **) s2;
+    return (stem2->freq - stem1->freq);
+}
+
+/**
+ * Safely convert an int to a size_t
+ * source: https://stackoverflow.com/questions/27490762/how-can-i-convert-to-size-t-from-int-safely
+ *
+ * @param val int value to convert
+ * @return converted value
+ */
+size_t int2size_t(int val) {
+    return (val < 0) ? __SIZE_MAX__ : (size_t)((unsigned)val);
 }
