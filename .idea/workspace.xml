@@ -16,17 +16,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59e78569-df8a-446d-a198-0278e52b1146" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Set.c" beforeDir="false" afterPath="$PROJECT_DIR$/Set.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Set.h" beforeDir="false" afterPath="$PROJECT_DIR$/Set.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/DevelopmentOutline.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/DevelopmentOutline.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helix_class.c" beforeDir="false" afterPath="$PROJECT_DIR$/helix_class.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helix_class.h" beforeDir="false" afterPath="$PROJECT_DIR$/helix_class.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile.dot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stem.c" beforeDir="false" afterPath="$PROJECT_DIR$/stem.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stem.h" beforeDir="false" afterPath="$PROJECT_DIR$/stem.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,8 +53,8 @@
       <file leaf-file-name="Set.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Set.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="1650" column="30" lean-forward="true" selection-start-line="1650" selection-start-column="30" selection-end-line="1650" selection-end-column="30" />
+            <state relative-caret-position="356">
+              <caret line="1662" column="5" selection-start-line="1662" selection-start-column="5" selection-end-line="1662" selection-end-column="5" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -97,8 +87,8 @@
       <file leaf-file-name="stem.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stem.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="223" column="22" selection-start-line="223" selection-start-column="22" selection-end-line="223" selection-end-column="22" />
+            <state relative-caret-position="386">
+              <caret line="238" column="1" selection-start-line="238" selection-start-column="1" selection-end-line="238" selection-end-column="1" />
               <folding>
                 <element signature="e#147#164#0" expanded="true" />
               </folding>
@@ -203,8 +193,8 @@
         <option value="$PROJECT_DIR$/stem.h" />
         <option value="$PROJECT_DIR$/Set.h" />
         <option value="$PROJECT_DIR$/helix_class.c" />
-        <option value="$PROJECT_DIR$/stem.c" />
         <option value="$PROJECT_DIR$/main.c" />
+        <option value="$PROJECT_DIR$/stem.c" />
         <option value="$PROJECT_DIR$/Set.c" />
       </list>
     </option>
@@ -285,12 +275,12 @@
       <workItem from="1527363163800" duration="7078000" />
       <workItem from="1527703826961" duration="83345000" />
       <workItem from="1529942443856" duration="37062000" />
-      <workItem from="1531362379267" duration="18763000" />
+      <workItem from="1531362379267" duration="19542000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148041000" />
+    <option name="totallyTimeSpent" value="148820000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1922" height="1029" extended-state="6" />
@@ -645,20 +635,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stem.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="223" column="22" selection-start-line="223" selection-start-column="22" selection-end-line="223" selection-end-column="22" />
-          <folding>
-            <element signature="e#147#164#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="591">
           <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stem.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="238" column="1" selection-start-line="238" selection-start-column="1" selection-end-line="238" selection-end-column="1" />
+          <folding>
+            <element signature="e#147#164#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -674,8 +664,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Set.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="1650" column="30" lean-forward="true" selection-start-line="1650" selection-start-column="30" selection-end-line="1650" selection-end-column="30" />
+        <state relative-caret-position="356">
+          <caret line="1662" column="5" selection-start-line="1662" selection-start-column="5" selection-end-line="1662" selection-end-column="5" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
