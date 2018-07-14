@@ -1,14 +1,14 @@
-RNAStructProfiling
+RNAStructProfilingConsolidation
 
-Compiler dependencies: To compile and install RNAStructProfiling, you will need
+Compiler dependencies: To compile and install RNAStructProfilingConsolidation, you will need
 --a C/C++ compiler
 --autotools
 --GMP (version 6.0.0 from gmplib.org)
 Parallelization requirements: For parallelization, the compiler needs to implement the OpenMP API.
 (GNU gcc 4.7, for example, implements the OpenMP API. See http://openmp.org/wp/openmp-compilers for details.)
 
-To download source code, click on "zip" link on the RNAStructProfiling github
-page (https://github.com/gtfold/RNAStructProfiling/zipball/master).
+To download source code, click on "zip" link on the RNAStructProfilingConsolidation github
+page (https://github.gatech.edu/hwilco6/RNAStructProfilingConsolidation).
 
 To compile on a Mac OSX machine, make sure your dependencies are satisfied.
 (The easiest way to satisfy dependencies is to install Xcode command line tools,
@@ -44,8 +44,8 @@ structure file either in sfold (using -sfold option) or in gtboltzmann
 Usage (from within that same directory): 
 ./RNAprofile [options] [seq file] 
 
-./RNAprofile -o output/[output file] [seq file]
-dot -T jpeg -o output/[graph file].jpeg output/[output file]
+To generate a jpeg from the graphviz dot file made using -o [file name]
+dot -T jpeg -o [graph file].jpeg [file name]
 
 Common options:
 -v = verbose output that gives all helix classes and profiles with frequencies
