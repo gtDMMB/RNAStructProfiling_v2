@@ -131,6 +131,7 @@ Stem* create_stem() {
         free(stem);
         return NULL;
     }
+    stem->id = (char*) malloc(sizeof(char) * STRING_BUFFER);
     stem->max_quad = (char*) malloc(sizeof(char) * STRING_BUFFER);
     return stem;
 }
@@ -150,14 +151,8 @@ Stem* create_stem_from_HC(HC *initial_helix) {
     stem->int_max_quad[3] = initial_helix->int_max_quad[3];
     strcpy(stem->max_quad, initial_helix->max_quad);
     stem->freq = initial_helix->freq;
-    char* endptr;
-    stem->id = (int) strtol(initial_helix->id, &endptr, 10);
+    strcpy(stem->id, initial_helix->id);
     return stem;
-}
-
-void stem_reset_id(Stem* stem) {
-    char* endptr;
-    stem->id = (int) strtol(((HC*)stem->helices->entries[0])->id, &endptr, 10);
 }
 
 // destroys a Stem, freeing allocated memory. Returns 0 if successful, non-zero otherwise
@@ -221,16 +216,13 @@ int add_to_fs_stem_group(FSStemGroup *stem_group, Stem *stem) {
         stem_group->num_helices++;
     }
     if (stem_group->num_stems == 1) {
-        sprintf(stem_group->id, "%d", stem->id);
+        strcpy(stem_group->id, stem->id);
         memcpy(stem_group->int_max_quad, stem->int_max_quad, sizeof(stem->int_max_quad));
         strcpy(stem_group->max_quad, stem->max_quad);
     } else {
-        int* temp_id = (int*) malloc(sizeof(int));
-        sscanf(stem_group->id, "%d", temp_id);
-        if (stem->id < *temp_id) {
-            sprintf(stem_group->id, "%d", stem->id);
+        if (strcmp(stem->id, stem_group->id) > 0) {
+            strcpy(stem_group->id, stem->id);
         }
-        free(temp_id);
         stem_group->int_max_quad[0] = min(stem_group->int_max_quad[0], stem->int_max_quad[0]);
         stem_group->int_max_quad[1] = max(stem_group->int_max_quad[1], stem->int_max_quad[1]);
         stem_group->int_max_quad[2] = min(stem_group->int_max_quad[2], stem->int_max_quad[2]);

@@ -1580,8 +1580,7 @@ void find_func_similar_stems(Set* set) {
                 for (int k = 0; i < stem_group->helices->size; k++) {
                     add_to_array_list(stem->helices, k, stem_group->helices->entries[k]);
                 }
-                char* endptr;
-                stem->id = (int) strtol(stem_group->id, &endptr, 10);
+                strcpy(stem->id, stem_group->id);
 
                 add_to_array_list(set->stems, i, stem);
                 add_to_array_list(set->func_similar_stems, set->func_similar_stems->size, stem);
@@ -1619,7 +1618,7 @@ bool check_func_similar_stems(Set* set, Stem* stem1, Stem* stem2, int* freq) {
         return false;
     }
     if (set->opt->VERBOSE) {
-        printf("Do stem %d and stem %d occur infrequently enough to be functionally similar: ", stem1->id,
+        printf("Do stem %s and stem %s occur infrequently enough to be functionally similar: ", stem1->id,
                stem2->id);
     }
     bool func_similar = validate_func_similar_stems(set, stem1, stem2, freq);
@@ -1718,7 +1717,7 @@ bool combine_stems_using_func_similar(Set* set) {
             // combine if all stems in functionally similar group were within FUNC_SIMILAR_END_DELTA to the stem
             if (combining) {
                 if (set->opt->VERBOSE) {
-                    printf("Joining stem %d and functionally similar group %s\n", stem_list[j]->id, stem_pair->id);
+                    printf("Joining stem %s and functionally similar group %s\n", stem_list[j]->id, stem_pair->id);
                 }
                 combined = true;
                 merge_stem_and_fs_stem_group(stem_list[j], stem_pair, *outer_stem);
@@ -1885,19 +1884,20 @@ void update_freq_stems(Set* set) {
 }
 
 /**
- * Reindexes set->stems to use alphabetical indices. Stems are sorted by frequency first. Also creates a key mapping
- * stems to their component helices.
+ * Reindexes set->stems to use alphabetical indices. Stems are sorted by frequency first.
  *
  * @param set the set to reindex Stems of
  */
 void reindex_stems(Set *set) {
+    // Sort based on frequency in descending order
     qsort(set->stems->entries, int2size_t(set->stems->size), sizeof(set->stems->entries[0]), stem_freq_compare);
-}
 
-/**
- *
- *
- */
+    Stem* stem;
+    for (int i = 0; i< set->stems->size; i++) {
+        stem = (Stem*) set->stems->entries[i];
+        get_alpha_id(i+1, stem->id);
+    }
+}
 
 /**
  * Comparator function for qsort on Stems, sorting in descending order by frequency.
@@ -1907,8 +1907,8 @@ void reindex_stems(Set *set) {
  * @return 0 if two are equivalent in order, <0 if s1 goes before s2, >0 if s1 goes after s2
  */
 int stem_freq_compare(const void* s1, const void* s2) {
-    Stem *stem1 = *(Stem **) s1;
-    Stem *stem2 = *(Stem **) s2;
+    Stem *stem1 = *(Stem**) s1;
+    Stem *stem2 = *(Stem**) s2;
     return (stem2->freq - stem1->freq);
 }
 
@@ -1921,4 +1921,31 @@ int stem_freq_compare(const void* s1, const void* s2) {
  */
 size_t int2size_t(int val) {
     return (val < 0) ? __SIZE_MAX__ : (size_t)((unsigned)val);
+}
+
+/**
+ * Converts an integer (representing a helix class id)to its corresponding alphabetic id.
+ * 1 -> A, 2 -> B, ..., 27 -> AA, 28 -> AB, ...
+ *
+ * @param int_id the int id to convert
+ * @param alpha_id the new id field
+ * @return the new alphabetical id for a stem
+ */
+void get_alpha_id(int int_id, char* alpha_id) {
+    if (int_id <= 0) {
+        printf("Error: Unknown ID encountered during Stem reindexing (id <= 0)");
+        exit(EXIT_FAILURE);
+    }
+    alpha_id[0] = '\0';
+    char lookup_table[27] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    char* temp = (char*) malloc(sizeof(char) * STRING_BUFFER);
+    while(--int_id >= 0) {
+        temp[0] = lookup_table[int_id%26];
+        temp[1] = '\0';
+        strcat(temp, alpha_id);
+        strcpy(alpha_id, temp);
+        temp[0] = '\0';
+        int_id /= 26;
+    }
+    free(temp);
 }

@@ -137,5 +137,6 @@ void update_freq_stems(Set* set);
 void reindex_stems(Set *set);
 int stem_freq_compare(const void* s1, const void* s2);
 size_t int2size_t(int val);
+void get_alpha_id(int int_id, char* alpha_id);
 
 #endif

@@ -39,7 +39,7 @@ typedef struct {
 typedef struct {
     // TODO: decide on id notation
     // stem id, using first helix id
-    int id;
+    char* id;
     // number of helices in the stem
     int num_helices;
     // quadruplet, defined by the start and end nucleotides of each end of the stem (and thus of the outermost helix)
@@ -86,8 +86,6 @@ int free_data_node(DataNode *node);
 Stem* create_stem();
 // creates a stem with one helix, initial_helix, and returns a pointer to it. Returns NULL if memory allocation fails
 Stem* create_stem_from_HC(HC *initial_helix);
-// recreate the id for a stem using its helix set
-void stem_reset_id(Stem* stem);
 // destroys a Stem, freeing allocated memory. Returns 0 if successful, non-zero otherwise
 int free_stem(Stem* stem);
 
