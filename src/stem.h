@@ -17,7 +17,7 @@
 #define STEM_VALID_PERCENT_ERROR 5
 // TODO: better way to determine # helices to consider
 // max number of helices to consider for stems
-#define STEM_NUM_CUTOFF 15
+#define STEM_NUM_CUTOFF 25
 // max allowable % of structures containing two stems for them to be considered functionally similar
 #define FUNC_SIMILAR_PERCENT_ERROR 1
 // max difference between ends of two functionally similar stems

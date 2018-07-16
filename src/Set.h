@@ -143,5 +143,6 @@ void get_alpha_id(int int_id, char* alpha_id);
 void generate_stem_key(Set* set);
 
 double set_threshold_entropy_stems(Set *set);
+double set_num_fstems(Set *set);
 
 #endif

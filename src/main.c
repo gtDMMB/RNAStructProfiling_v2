@@ -310,9 +310,8 @@ GTBOLTZMANN OPTIONS
     reindex_stems(set);
     // TODO: implement
     generate_stem_key(set);
-    set_threshold_entropy_stems(set);
     if (set->opt->NUM_FSTEMS)
-        set->opt->STEM_FREQ = set_num_fhc(set);
+        set->opt->STEM_FREQ = set_num_fstems(set);
     else if (set->opt->STEM_FREQ==-1)
         set->opt->STEM_FREQ = set_threshold_entropy_stems(set);
 

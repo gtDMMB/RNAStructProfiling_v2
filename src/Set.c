@@ -1553,9 +1553,9 @@ void find_func_similar_stems(Set* set) {
                        sizeof(stem->int_max_quad));
                 stem->num_helices = stem_group->num_helices;
                 strcpy(stem->max_quad, stem_group->max_quad);
-                memcpy(stem->helices, stem_group->int_max_quad,
+                memcpy(stem->int_max_quad, stem_group->int_max_quad,
                        sizeof(stem->int_max_quad));
-                for (int k = 0; i < stem_group->helices->size; k++) {
+                for (int k = 0; k < stem_group->helices->size; k++) {
                     add_to_array_list(stem->helices, k, stem_group->helices->entries[k]);
                 }
                 strcpy(stem->id, stem_group->id);
@@ -1982,7 +1982,7 @@ double set_num_fstems(Set *set) {
     if (set->opt->NUM_FSTEMS > 63)
         printf("Warning: requested num featured stems %d exceeds limit of 63\n",set->opt->NUM_FSTEMS);
 
-    marg = (Stem*) (set->stems[set->opt->NUM_FSTEMS-1])->freq;
+    marg = ((Stem*) (set->stems->entries[set->opt->NUM_FSTEMS-1]))->freq;
     percent = ((double) marg)*100.0/((double)set->opt->NUMSTRUCTS);
     return percent;
 }
