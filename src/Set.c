@@ -574,6 +574,7 @@ int print_all_helices(Set *set) {
             k = i;
         }
     }
+    fclose(helix_file);
     printf("%.2f coverage of helices after first %d HC\n",set->opt->COVERAGE,k+1);
     return k+1;
 }
@@ -2042,5 +2043,6 @@ void find_featured_stems(Set* set) {
  * @param set
  */
 void make_stem_structures(Set* set) {
+    FILE* struct_file = fopen("structure.out", "r");
 
 }
