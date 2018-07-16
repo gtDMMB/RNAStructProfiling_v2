@@ -1,6 +1,7 @@
 *.o
 .idea/
 cmake-build-debug/
-CMakeLists.txt
 RNAprofile
-structure.out
+src/*.out
+src/*.txt
+output/development/runondev.sh
