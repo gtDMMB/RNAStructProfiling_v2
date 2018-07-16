@@ -1969,3 +1969,20 @@ double set_threshold_entropy_stems(Set *set) {
     printf("Error: No threshold entropy found for stems\n");
     return 0;
 }
+
+
+double set_num_fstems(Set *set) {
+    int marg;
+    double percent;
+
+    if (set->opt->NUM_FSTEMS > set->stems->size) {
+        printf("Number of requested featured stems %d greater than total number of stems %d\n",set->opt->NUM_FSTEMS, set->stems->size);
+        set->opt->NUM_FSTEMS = set->stems->size;
+    }
+    if (set->opt->NUM_FSTEMS > 63)
+        printf("Warning: requested num featured stems %d exceeds limit of 63\n",set->opt->NUM_FSTEMS);
+
+    marg = (Stem*) (set->stems[set->opt->NUM_FSTEMS-1])->freq;
+    percent = ((double) marg)*100.0/((double)set->opt->NUMSTRUCTS);
+    return percent;
+}

@@ -70,8 +70,19 @@ int main(int argc, char *argv[]) {
             if ((i + 1 <= argc - 2) && sscanf(argv[i+1],"%lf",&(opt->HC_FREQ))) {
                 opt->HC_FREQ = atof(argv[i+1]);
                 if (opt->HC_FREQ < 0 || opt->HC_FREQ > 100) {
-                    fprintf(stderr,"Error: invalid input %f for frequency threshold\n",opt->HC_FREQ);
+                    fprintf(stderr,"Error: invalid input %f for hc frequency threshold\n",opt->HC_FREQ);
                     opt->HC_FREQ = -1;
+                }
+                i++;
+            }
+        }
+
+        else if (!strcmp(argv[i],"-hs")) {
+            if ((i + 1 <= argc - 2) && sscanf(argv[i+1],"%lf",&(opt->STEM_FREQ))) {
+                opt->STEM_FREQ = atof(argv[i+1]);
+                if (opt->STEM_FREQ < 0 || opt->STEM_FREQ > 100) {
+                    fprintf(stderr,"Error: invalid input %f for hc frequency threshold\n",opt->STEM_FREQ);
+                    opt->STEM_FREQ = -1;
                 }
                 i++;
             }
@@ -98,9 +109,21 @@ int main(int argc, char *argv[]) {
                 i++;
             }
         }
+        else if (!strcmp(argv[i],"-fs")) {
+            if ((i + 1 <= argc - 2) && sscanf(argv[i+1],"%d",&(opt->NUM_FSTEMS))) {
+                opt->NUM_FSTEMS = atoi(argv[i+1]);
+                i++;
+            }
+        }
         else if (!strcmp(argv[i],"-s")) {
             if ((i + 1 <= argc - 2) && sscanf(argv[i+1],"%d",&(opt->NUM_SPROF))) {
                 opt->NUM_SPROF = atoi(argv[i+1]);
+                i++;
+            }
+        }
+        else if (!strcmp(argv[i],"-ss")) {
+            if ((i + 1 <= argc - 2) && sscanf(argv[i+1],"%d",&(opt->NUM_S_STEM_PROF))) {
+                opt->NUM_S_STEM_PROF = atoi(argv[i+1]);
                 i++;
             }
         }
@@ -288,6 +311,10 @@ GTBOLTZMANN OPTIONS
     // TODO: implement
     generate_stem_key(set);
     set_threshold_entropy_stems(set);
+    if (set->opt->NUM_FSTEMS)
+        set->opt->STEM_FREQ = set_num_fhc(set);
+    else if (set->opt->STEM_FREQ==-1)
+        set->opt->STEM_FREQ = set_threshold_entropy_stems(set);
 
 
     if (set->opt->GRAPH) {

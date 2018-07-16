@@ -44,25 +44,28 @@ extern int REP_STRUCT;
 #define DEF_OUTPUT "profile.dot"
 
 typedef struct options {
-   /*all the options*/
-  char *OUTPUT;
-  char *INPUT;
-  char *NATIVE;
-  int VERBOSE;
-  int SFOLD;
-  int MIN_HEL_LEN;
-  int NUM_FHC;
-  int NUM_SPROF;
-  double HC_FREQ;
-  double PROF_FREQ;
-  double COVERAGE;
-  int NUMSTRUCTS;
-  int PNOISE;
-  int CYCLES;
-  int GRAPH;
-  int REP_STRUCT;
-  int TOPDOWN;
-  int ALTTHRESH;
+    /*all the options*/
+    char *OUTPUT;
+    char *INPUT;
+    char *NATIVE;
+    int VERBOSE;
+    int SFOLD;
+    int MIN_HEL_LEN;
+    int NUM_FHC;
+    int NUM_SPROF;
+    double HC_FREQ;
+    double PROF_FREQ;
+    double COVERAGE;
+    int NUMSTRUCTS;
+    int PNOISE;
+    int CYCLES;
+    int GRAPH;
+    int REP_STRUCT;
+    int TOPDOWN;
+    int ALTTHRESH;
+    int NUM_FSTEMS;
+    int NUM_S_STEM_PROF;
+    double STEM_FREQ;
 } Options;
 
 Options* make_options();

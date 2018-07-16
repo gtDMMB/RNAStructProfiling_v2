@@ -22,6 +22,9 @@ Options* make_options() {
   opt->REP_STRUCT = 0;
   opt->TOPDOWN = 0;
   opt->ALTTHRESH = 1;
+  opt->NUM_FSTEMS = 0;
+  opt->NUM_S_STEM_PROF = 0;
+  opt->STEM_FREQ = -1;
   return opt;
 }
 
@@ -29,11 +32,14 @@ void print_options() {
   puts("OPTIONS");
   puts("-e [FILE]\tExternal structure as input, following gtboltzmann format (dot bracket, energy, set of triplets on same line)");
   puts("-sfold [FILE]\tExternal structure as input, following Sfold format ('Structure xx' followed by a triplet per line");
-  puts("-h DBL\t\tSet frequency threshold for features(in percentage, e.g. 10.5 for 10.5% threshold)");
+  puts("-h DBL\t\tSet frequency threshold for hc features(in percentage, e.g. 10.5 for 10.5% threshold)");
+  puts("-hs DBL\t\tSet frequency threshold for stem features(in percentage, e.g. 10.5 for 10.5% threshold)");
   puts("-p DBL\t\tSet frequency threshold for selected profiles (in percentage, e.g. 10.5 for 10.5% threshold)");
   puts("-c DBL\t\tSet minimum coverage requirement for featured helix classes and selected profiles (in percentage)");
   puts("-f INT\t\tSet number of featured helix classes");
+  puts("-fs INT\t\tSet number of featured stems");
   puts("-s INT\t\tSet number of selected profiles");
+  puts("-ss INT\t\tSet number of selected stem profiles");
   puts("-l INT\t\tSet minimum helix length");
   puts("-u INT\t\tSet number of structures to profile");
   /*puts("-m INT\t\tSet PNOISE");*/
