@@ -314,6 +314,12 @@ GTBOLTZMANN OPTIONS
         set->opt->STEM_FREQ = set_num_fstems(set);
     else if (set->opt->STEM_FREQ==-1)
         set->opt->STEM_FREQ = set_threshold_entropy_stems(set);
+    if (set->opt->VERBOSE) {
+        printf("Threshold to find featured stems: %.1lf%%\n",set->opt->STEM_FREQ);
+        printf("Number of structures processed: %d\n",set->opt->NUMSTRUCTS);
+    }
+    find_featured_stems(set);
+    printf("Total number of featured stems: %d\n",set->num_fstems);
 
 
     if (set->opt->GRAPH) {

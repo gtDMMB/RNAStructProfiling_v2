@@ -133,6 +133,8 @@ Stem* create_stem() {
     }
     stem->id = (char*) malloc(sizeof(char) * STRING_BUFFER);
     stem->max_quad = (char*) malloc(sizeof(char) * STRING_BUFFER);
+    stem->is_featured = false;
+    stem->binary = 0;
     return stem;
 }
 

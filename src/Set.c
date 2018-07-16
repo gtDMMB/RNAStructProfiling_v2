@@ -66,6 +66,8 @@ Set* make_Set(char *name) {
     set->func_similar_stems = create_array_list();
 
     set->num_fstems = 0;
+    set->stem_prof_num = 0;
+    set->num_stem_sprof = 0;
     return set;
 }
 
@@ -1534,7 +1536,8 @@ void find_func_similar_stems(Set* set) {
         for (int j = i + 1; j < set->stems->size; j++) {
             Stem* stem1 = stem_list[i];
             Stem* stem2 = stem_list[j];
-            if (check_func_similar_stems(set, stem1, stem2, freq)) {
+            if (check_func_similar_stems(set, stem1, stem2, freq)) {void find_featured_stems(Set* set);
+
                 fs_stem_group_node = create_fs_stem_group_node();
                 add_to_fs_stem_group((FSStemGroup*)fs_stem_group_node->data, stem1);
                 add_to_fs_stem_group((FSStemGroup*)fs_stem_group_node->data, stem2);
@@ -1985,4 +1988,45 @@ double set_num_fstems(Set *set) {
     marg = ((Stem*) (set->stems->entries[set->opt->NUM_FSTEMS-1]))->freq;
     percent = ((double) marg)*100.0/((double)set->opt->NUMSTRUCTS);
     return percent;
+}
+
+/**
+ * Finds which stems meet frequency threshold to be featured. Assumes threshold already found
+ *
+ * @param set the set to find featured stems in
+ */
+void find_featured_stems(Set* set) {
+    int marg,i,total;
+    double percent,cov=0;
+    Stem* stem;
+
+    total = set->stems->size;
+    set->num_fstems = set->stems->size;
+    for (i = 0; i < total; i++) {
+        stem = (Stem*) set->stems->entries[i];
+        marg = stem->freq;
+        percent = ((double) marg*100.0)/((double)set->opt->NUMSTRUCTS);
+        if (percent >= set->opt->STEM_FREQ) {
+            if (set->opt->VERBOSE)
+                printf("Featured stem %s with freq %d\n", stem->id, marg);
+            stem->is_featured = 1;
+            stem->binary = 1<<i;
+            // TODO: find equivalent of helsum for stems and implement coverage tracking for this function
+            //cov += (double)marg/(double)set->helsum;;
+        }
+        else {
+            set->num_fstems = i;
+            i = total;
+        }
+    }
+    //TODO: fix cov in this case (when featured stems are capped)
+    if (set->num_fstems > 63) {
+        //fprintf(stderr,"number of helices greater than allowed in find_freq()\n");
+        set->num_fstems = 63;
+        marg = ((Stem*)set->stems->entries[62])->freq;
+        printf("Capping at 63 featured stems with freq %d\n",marg);
+        set->opt->STEM_FREQ = ((double) marg)*100.0/((double)set->opt->NUMSTRUCTS);
+    }
+    // TODO: find equivalent of helsum for stems and implement coverage tracking for this function
+    //printf("Coverage by featured helix classes: %.3f\n",cov);
 }

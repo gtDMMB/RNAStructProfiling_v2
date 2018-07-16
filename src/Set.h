@@ -64,6 +64,8 @@ typedef struct {
     array_list_t* func_similar_stems;
 
     int num_fstems;
+    int num_stem_sprof;
+    int stem_prof_num;
 } Set;
 
 node* createNode(char *name);
@@ -144,5 +146,6 @@ void generate_stem_key(Set* set);
 
 double set_threshold_entropy_stems(Set *set);
 double set_num_fstems(Set *set);
+void find_featured_stems(Set* set);
 
 #endif

@@ -63,6 +63,8 @@ typedef struct {
     // the number of times every component helix occurs in the same structure (in the case of functionally equivalent,
     // either but not both of the feq helices)
     int freq;
+    bool is_featured;
+    unsigned long binary;
 } Stem;
 
 typedef struct {
