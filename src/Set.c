@@ -60,9 +60,12 @@ Set* make_Set(char *name) {
     set->opt = make_options();
     set->inputnode = NULL;
     set->graph = NULL;
+
     set->original_hc_stems = create_array_list();
     set->stems = create_array_list();
     set->func_similar_stems = create_array_list();
+
+    set->num_fstems = 0;
     return set;
 }
 
@@ -506,31 +509,6 @@ double set_threshold_entropy(Set *set) {
     int i=0;
     double ent =0,frac,last=0,ave,norm;
     HC **list = set->helices;
-
-    norm = (double)list[i]->freq;
-    for (i=0; i < set->hc_num; i++) {
-        frac = (double)list[i]->freq/norm;
-        ent -= frac*log(frac);
-        if (frac != 1)
-            ent -= (1-frac)*log(1-frac);
-        ave = ent/(double)(i+1);
-        if ((ave > last) || (fabs(ave-last) < FLT_EPSILON*2)) {
-            last = ave;
-        }
-        else {
-            //printf("%f is lower than %f\n",ent/(i+1), last);
-            set->num_fhc = i;
-            //init_joint(set);
-            return (100*(double) list[i-1]->freq/(double) set->opt->NUMSTRUCTS);
-        }
-    }
-    return 0;
-}
-
-double set_threshold_entropy_stems(Set *set) {
-    int i=0;
-    double ent =0,frac,last=0,ave,norm;
-    Stem** list = (Stem**) set->stems->entries;
 
     norm = (double)list[i]->freq;
     for (i=0; i < set->hc_num; i++) {
@@ -1948,4 +1926,46 @@ void get_alpha_id(int int_id, char* alpha_id) {
         int_id /= 26;
     }
     free(temp);
+}
+
+// TODO: implement
+/**
+ * Generates a file, key.txt, which indicates the helices that make up each stem
+ *
+ * @param set the set to make a key for
+ */
+void generate_stem_key(Set* set) {
+
+}
+
+/**
+ * Finds the threshold for featured stems using entropy method
+ *
+ * @param set the set to find threshold in
+ * @return percentage of structs a stem must be found in to be featured
+ */
+double set_threshold_entropy_stems(Set *set) {
+    int i=0;
+    double ent =0,frac,last=0,ave,norm;
+    Stem** list = (Stem**) set->stems->entries;
+
+    norm = (double)list[i]->freq;
+    for (i=0; i < set->stems->size; i++) {
+        frac = (double)list[i]->freq/norm;
+        ent -= frac*log(frac);
+        if (frac != 1)
+            ent -= (1-frac)*log(1-frac);
+        ave = ent/(double)(i+1);
+        if ((ave > last) || (fabs(ave-last) < FLT_EPSILON*2)) {
+            last = ave;
+        }
+        else {
+            //printf("%f is lower than %f\n",ent/(i+1), last);
+            set->num_fstems = i;
+            //init_joint(set);
+            return (100*(double) list[i-1]->freq/(double) set->opt->NUMSTRUCTS);
+        }
+    }
+    printf("Error: No threshold entropy found for stems\n");
+    return 0;
 }

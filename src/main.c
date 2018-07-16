@@ -274,16 +274,21 @@ GTBOLTZMANN OPTIONS
     //simplify set using stems
     add_stems_to_set(set);
     bool combined_stems = true;
-    // loop and combine stems until no more combinations can be made TODO: better logic for loop terminatinq?
+    // loop and combine stems until no more combinations can be made
     while(combined_stems) {
         combined_stems = combine_stems(set);
+        // find frequencies of all combined stems
+        update_freq_stems(set);
     }
-    // find frequencies of all combined stems
-    update_freq_stems(set);
     find_func_similar_stems(set);
+    // TODO: determine if this should also be in a loop
     combine_stems_using_func_similar(set);
     update_freq_stems(set);
     reindex_stems(set);
+    // TODO: implement
+    generate_stem_key(set);
+    set_threshold_entropy_stems(set);
+
 
     if (set->opt->GRAPH) {
         fp = fopen(set->opt->OUTPUT,"w");

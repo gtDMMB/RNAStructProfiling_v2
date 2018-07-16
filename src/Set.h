@@ -62,6 +62,8 @@ typedef struct {
     array_list_t* original_hc_stems;
     array_list_t* stems;
     array_list_t* func_similar_stems;
+
+    int num_fstems;
 } Set;
 
 node* createNode(char *name);
@@ -138,5 +140,8 @@ void reindex_stems(Set *set);
 int stem_freq_compare(const void* s1, const void* s2);
 size_t int2size_t(int val);
 void get_alpha_id(int int_id, char* alpha_id);
+void generate_stem_key(Set* set);
+
+double set_threshold_entropy_stems(Set *set);
 
 #endif
