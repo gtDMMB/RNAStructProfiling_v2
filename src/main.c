@@ -320,6 +320,7 @@ GTBOLTZMANN OPTIONS
     }
     find_featured_stems(set);
     printf("Total number of featured stems: %d\n",set->num_fstems);
+    make_stem_structures(set);
 
 
     if (set->opt->GRAPH) {

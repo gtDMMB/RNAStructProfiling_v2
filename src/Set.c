@@ -555,16 +555,18 @@ int print_all_helices(Set *set) {
     HC **helices = set->helices;
     char *val,*trip;
     int i,k,m,total = set->hc_num,target=0,cov=0;
+    FILE* helix_file = fopen("helices.txt", "w");
 
     target = set->opt->COVERAGE*set->helsum;
     for (i = 0; i < total; i++) {
         val = helices[i]->maxtrip;
         m = helices[i]->freq;
         trip = helices[i]->avetrip;
+        fprintf(helix_file, "Helix %d is %s (%s) with freq %d\n", i + 1, val, trip, m);
         if (set->opt->VERBOSE) {
-            if (val != NULL)
-                printf("Helix %d is %s (%s) with freq %d\n",i+1,val,trip,m);
-            else
+            if (val != NULL) {
+                printf("Helix %d is %s (%s) with freq %d\n", i + 1, val, trip, m);
+            } else
                 printf("No entry for %d\n",i);
         }
         if (cov < target) {
@@ -2008,7 +2010,11 @@ void find_featured_stems(Set* set) {
         percent = ((double) marg*100.0)/((double)set->opt->NUMSTRUCTS);
         if (percent >= set->opt->STEM_FREQ) {
             if (set->opt->VERBOSE)
-                printf("Featured stem %s with freq %d\n", stem->id, marg);
+                if (stem->helices->size == 1 && stem->components->size == 1) {
+                    printf("Featured helix %s with freq %d\n", ((HC*)stem->helices->entries[0])->id, stem->freq);
+            } else {
+                    printf("Featured stem %s with freq %d\n", stem->id, marg);
+                }
             stem->is_featured = 1;
             stem->binary = 1<<i;
             // TODO: find equivalent of helsum for stems and implement coverage tracking for this function
@@ -2029,4 +2035,12 @@ void find_featured_stems(Set* set) {
     }
     // TODO: find equivalent of helsum for stems and implement coverage tracking for this function
     //printf("Coverage by featured helix classes: %.3f\n",cov);
+}
+
+/**
+ * Redefine structures in terms of stems
+ * @param set
+ */
+void make_stem_structures(Set* set) {
+
 }

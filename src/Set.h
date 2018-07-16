@@ -148,4 +148,7 @@ double set_threshold_entropy_stems(Set *set);
 double set_num_fstems(Set *set);
 void find_featured_stems(Set* set);
 
+void make_stem_structures(Set* set);
+
+
 #endif

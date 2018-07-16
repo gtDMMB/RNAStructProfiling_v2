@@ -38,8 +38,10 @@ typedef struct {
 
 typedef struct {
     // TODO: decide on id notation
-    // stem id, using first helix id
+    // stem id
     char* id;
+    // stem defined in terms of its component helices and functionally similar stem groups
+    char * hc_id;
     // number of helices in the stem
     int num_helices;
     // quadruplet, defined by the start and end nucleotides of each end of the stem (and thus of the outermost helix)
