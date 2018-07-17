@@ -1799,11 +1799,9 @@ bool validate_stem_and_func_similar(FSStemGroup* stem_pair, Stem* stem) {
  *
  * @param stem the stem to check
  * @param structure the structure to check, formatted as a single line of helices dilineated by spaces
- * @return index of first helix of stem in structure if the stem occurs, -1 if it does not occur
+ * @return true if the stem occurs, false if it does not
  */
-int find_stem_in_structure(Stem *stem, char *structure) {
-    int index = -2;
-    char* result;
+bool stem_is_in_structure(Stem *stem, char *structure) {
     char* hc_id_string = (char*) malloc(sizeof(char) * STRING_BUFFER);
     for (int i = 0; i < stem->components->size; i++) {
         DataNode* component = (DataNode*) stem->components->entries[i];
@@ -1811,30 +1809,26 @@ int find_stem_in_structure(Stem *stem, char *structure) {
             FSStemGroup* stem_group = (FSStemGroup*) component->data;
             int count = 0;
             for (int j = 0; j < stem_group->stems->size; j++) {
-                int temp_index = find_stem_in_structure((Stem *) stem_group->stems->entries[j], structure);
-                if(temp_index != -1) {
-                    index = temp_index;
+                if(stem_is_in_structure((Stem *) stem_group->stems->entries[j], structure)) {
                     count++;
                     if (count > 1) {
-                        return -1;
+                        return false;
                     }
                 }
             }
             if (count != 1) {
-                return -1;
+                return false;
             }
         } else {
             sprintf(hc_id_string, " %s ", ((HC*)(component->data))->id);
-            result = strstr(structure, hc_id_string);
-            if (result == NULL) {
-                return -1;
-            } else if (i == 0){
-                index = result - structure;
+            if (strstr(structure, hc_id_string) == NULL) {
+                return false;
             }
         }
     }
-    return index + 1;
+    return true;
 }
+
 
 /**
  * Updates the frequency of all Stems in set->stems
@@ -1866,7 +1860,7 @@ void update_freq_stems(Set* set) {
                 if (stem->helices->size == 1) {
                     continue;
                 }
-                if (find_stem_in_structure(stem, line) != -1) {
+                if (stem_is_in_structure(stem, line)) {
                     stem->freq++;
                 }
             }
@@ -2069,7 +2063,7 @@ void make_stem_profiles(Set* set) {
         if(line[0] == 'S') {
             for (int i = 0; i < set->num_fstems; i++) {
                 Stem* stem = (Stem*) set->stems->entries[i];
-
+                
             }
         }
     }
@@ -2079,8 +2073,8 @@ void make_stem_profiles(Set* set) {
 /**
  * Insert one string into another string
  *
- * @param sentence the string to have word inserted into
- * @param word the string to insert into sentence
+ * @param pointer to sentence the string to have word inserted into
+ * @param pointer to word the string to insert into sentence
  * @param index the index of sentence to insert before
  * @return new string if successful, NULL otherwise
  */
@@ -2099,9 +2093,35 @@ char* strinsrt(char* sentence, char* word, int index) {
     } else {
         temp = (char*) malloc(sizeof(char) * STRING_BUFFER);
     }
-    strncpy(temp, sentence, index);
+    strncpy(temp, sentence, int2size_t(index));
     temp[index] = '\0';
     strcat(temp, word);
     strcat(temp, sentence + index);
     return temp;
+}
+
+/**
+ * Cut a substring out of a string
+ *
+ * @param str a pointer to the string to cut out of
+ * @param index the index at which to start cutting
+ * @param n the number of characters to remove
+ * @return a pointer to the removed substring if successful, NULL otherwise
+ */
+char* strcut(char** str, int index, int n) {
+    if (str == NULL || *str == NULL) {
+        return NULL;
+    }
+    size_t  str_len = strlen(*str);
+    if (index < 0 || index > str_len - 1) {
+        return NULL;
+    }
+    char* removed = (char*) malloc(sizeof(char) * (n+1));
+    if (removed == NULL) {
+        return NULL;
+    }
+    strncpy(removed, *str + index, int2size_t(n));
+    removed[n] = '\0';
+    memmove(*str + index, *str + index + n, str_len - n);
+    return removed;
 }

@@ -136,7 +136,7 @@ bool combine_stems_using_func_similar(Set* set);
 bool validate_stem_and_func_similar(FSStemGroup* stem_group, Stem* stem);
 void merge_stem_and_fs_stem_group(Stem* stem, FSStemGroup* stem_group, int outer_stem);
 
-int find_stem_in_structure(Stem *stem, char *structure);
+bool stem_is_in_structure(Stem *stem, char *structure);
 void update_freq_stems(Set* set);
 
 void reindex_stems(Set *set);
@@ -150,6 +150,7 @@ double set_num_fstems(Set *set);
 void find_featured_stems(Set* set);
 
 void make_stem_profiles(Set* set);
-
+char* strinsrt(char* sentence, char* word, int index);
+char* strcut(char** str, int index, int n);
 
 #endif
