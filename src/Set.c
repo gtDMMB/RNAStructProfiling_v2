@@ -1812,7 +1812,7 @@ int find_stem_in_structure(Stem *stem, char *structure) {
             int count = 0;
             for (int j = 0; j < stem_group->stems->size; j++) {
                 int temp_index = find_stem_in_structure((Stem *) stem_group->stems->entries[j], structure);
-                if(index != -1) {
+                if(temp_index != -1) {
                     index = temp_index;
                     count++;
                     if (count > 1) {
