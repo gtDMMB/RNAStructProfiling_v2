@@ -1,0 +1,26 @@
+Agrobacterium_tumefa.1_sfold
+
+Expected stems: 
+[4[3]]
+possibly [8[9[11]]]
+
+
+Observed stems:
+[4[3]]
+[8[9[11]]]
+stems including non featured helices
+
+Results of stems:
+Results match expected
+
+Expected functionally similar groups:
+5/6
+
+Observed functionally similar groups:
+5/6
+functionally similar groups including non featured helices
+
+Results of functionally similar groups:
+Results match expected
+
+

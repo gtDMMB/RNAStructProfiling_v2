@@ -1,0 +1,22 @@
+C.diphtheriae.3_sfold
+
+Expected stems: 
+possibly [5[4]]
+
+Observed stems:
+stems including non featured helices
+
+Results of stems:
+Missing [5[4]], however due to their differnece in ends, 4 does not extend 5 in 85 structures where they both exist (there is a helix between them). Expectation was incorrect, [5[4]] should not be a stem
+
+
+Expected functionally similar groups:
+None   
+
+Observed functionally similar groups:
+functionally similar groups including non featured helices
+
+Results of functionally similar groups:
+Results match expected
+
+

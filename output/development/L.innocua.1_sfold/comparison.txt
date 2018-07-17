@@ -1,0 +1,25 @@
+L.innocua.1_sfold
+
+Expected stems: 
+Possibly [(5/9)[2]]
+
+Observed stems:
+stems including non featured helices
+
+Results of stems:
+[(5/9)[2]] not observed. 2 occurs without 5 or 9 9.4% of its occurences. Reasonable to exclude this stem
+Results match expected.
+
+Expected functionally similar groups:
+possibly 5/9
+
+Observed functionally similar groups:
+5/9
+functionally similar groups including non featured helices
+including: (20/10)/(20/10) -> created due to duplicate of FSStemGroup in stems and func_similar_stems. 
+    Must be adressed
+
+Results of functionally similar groups:
+Results match expected, other than 20/10 issue
+
+

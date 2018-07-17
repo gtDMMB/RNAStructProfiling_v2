@@ -152,5 +152,6 @@ void find_featured_stems(Set* set);
 void make_stem_profiles(Set* set);
 char* strinsrt(char* sentence, char* word, int index);
 char* strcut(char** str, int index, int n);
+void find_stem_in_structure(Stem* stem, char* structure, int* start_i, int* end_i);
 
 #endif

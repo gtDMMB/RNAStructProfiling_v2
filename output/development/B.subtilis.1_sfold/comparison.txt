@@ -1,0 +1,29 @@
+B.subtilis.1_sfold
+
+Expected stems: 
+[6[5[1]]]
+
+Observed stems:
+[([6[5]]/[11])[1]]* - matches expected when accounting for functionally similar group 
+    (order of nesting must be checked, output indicates 1 is on outside, should be on inside)
+stems including non featured helices
+
+Results of stems:
+stems found are as expected
+
+
+Expected functionally similar groups:
+possibly 6/11 or [6[5]]/11 ->in which case, predicted stem is changed to [(6/11)[5[1]]] or [([6[5]]/[11])[1]]* 
+7/8 considered but ruled out on basis of occuring together too frequently
+
+Observed functionally similar groups:
+[6[5]]/11
+7/8 
+functionally similar groups including non featured helices
+
+Results of functionally similar groups:
+7/8 should have been ruled out based on frequency of common occurence, must be looked at
+Otherwise matched expectations
+
+*notation needs work for functionally similar groups including stems
+

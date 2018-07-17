@@ -2063,7 +2063,10 @@ void make_stem_profiles(Set* set) {
         if(line[0] == 'S') {
             for (int i = 0; i < set->num_fstems; i++) {
                 Stem* stem = (Stem*) set->stems->entries[i];
-                
+                int* first_i = (int*) malloc(sizeof(int));
+                int* len = (int*) malloc(sizeof(int));
+                find_stem_in_structure(stem, line, first_i, len);
+                continue;
             }
         }
     }
@@ -2073,8 +2076,8 @@ void make_stem_profiles(Set* set) {
 /**
  * Insert one string into another string
  *
- * @param pointer to sentence the string to have word inserted into
- * @param pointer to word the string to insert into sentence
+ * @param sentence the string to have word inserted into
+ * @param word the string to insert into sentence
  * @param index the index of sentence to insert before
  * @return new string if successful, NULL otherwise
  */
@@ -2124,4 +2127,39 @@ char* strcut(char** str, int index, int n) {
     removed[n] = '\0';
     memmove(*str + index, *str + index + n, str_len - n);
     return removed;
+}
+
+/**
+ * Find the start and end of a stem in
+ *
+ * @param stem the stem to find
+ * @param structure the structure to search in
+ * @param start_i the first index of the stem in structure, -1 if stem does not occur
+ * @param len the length of the stem found in structure (including leading and trailing space)
+ */
+void find_stem_in_structure(Stem* stem, char* structure, int* start_i, int* len) {
+    DataNode* component = (DataNode*) stem->components->entries[0];
+    if (component->node_type == fs_stem_group_type) {
+        FSStemGroup* stem_group = (FSStemGroup*) component->data;
+        for(int i = 0; i < stem_group->stems->size; i++) {
+
+            find_stem_in_structure((Stem*) stem_group->stems->entries[i], structure, start_i, len);
+        }
+    } else {
+        char* hc_id_string = (char*) malloc(sizeof(char) * STRING_BUFFER);
+        sprintf(hc_id_string, " %s ", ((HC*)(component->data))->id);
+        char* found = strstr(structure, hc_id_string);
+        *start_i = (int) (found - structure);
+    }
+    component = (DataNode*) stem->components->entries[stem->components->size - 1];
+    if (component->node_type == fs_stem_group_type) {
+
+    } else {
+        char* hc_id_string = (char*) malloc(sizeof(char) * STRING_BUFFER);
+        sprintf(hc_id_string, " %s ", ((HC*)(component->data))->id);
+        char* found = strstr(structure, hc_id_string);
+        *len = (int) (found - structure);
+        *len += strlen(hc_id_string);
+        *len -= *start_i;
+    }
 }
