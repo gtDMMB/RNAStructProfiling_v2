@@ -132,6 +132,7 @@ Stem* create_stem() {
         return NULL;
     }
     stem->id = (char*) malloc(sizeof(char) * STRING_BUFFER);
+    stem->hc_str = (char*) malloc(sizeof(char) * STRING_BUFFER);
     stem->max_quad = (char*) malloc(sizeof(char) * STRING_BUFFER);
     stem->is_featured = false;
     stem->binary = 0;
@@ -154,6 +155,7 @@ Stem* create_stem_from_HC(HC *initial_helix) {
     strcpy(stem->max_quad, initial_helix->max_quad);
     stem->freq = initial_helix->freq;
     strcpy(stem->id, initial_helix->id);
+    strcpy(stem->hc_str, initial_helix->id);
     return stem;
 }
 

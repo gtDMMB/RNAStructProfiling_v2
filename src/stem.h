@@ -41,7 +41,7 @@ typedef struct {
     // stem id
     char* id;
     // stem defined in terms of its component helices and functionally similar stem groups
-    char * hc_id;
+    char * hc_str;
     // number of helices in the stem
     int num_helices;
     // quadruplet, defined by the start and end nucleotides of each end of the stem (and thus of the outermost helix)

@@ -19,8 +19,8 @@
 #define INIT_SIZE 2
 #define STRING_BUFFER 256
 
-// Max length of a line in the smaple file TODO: make into an option
-#define MAX_SAMPLE_FILE_LINE_LEN 150
+// Max length of a line in the structure file TODO: make into an option
+#define MAX_STRUCT_FILE_LINE_LEN 512
 
 typedef struct node
 {
@@ -66,6 +66,7 @@ typedef struct {
     int num_fstems;
     int num_stem_sprof;
     int stem_prof_num;
+    Profile** stem_profiles;
 } Set;
 
 node* createNode(char *name);
@@ -135,7 +136,7 @@ bool combine_stems_using_func_similar(Set* set);
 bool validate_stem_and_func_similar(FSStemGroup* stem_group, Stem* stem);
 void merge_stem_and_fs_stem_group(Stem* stem, FSStemGroup* stem_group, int outer_stem);
 
-bool stem_is_in_structure(Stem *stem, char *structure);
+int find_stem_in_structure(Stem *stem, char *structure);
 void update_freq_stems(Set* set);
 
 void reindex_stems(Set *set);
@@ -148,7 +149,7 @@ double set_threshold_entropy_stems(Set *set);
 double set_num_fstems(Set *set);
 void find_featured_stems(Set* set);
 
-void make_stem_structures(Set* set);
+void make_stem_profiles(Set* set);
 
 
 #endif

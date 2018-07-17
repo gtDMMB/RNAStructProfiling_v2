@@ -42,7 +42,7 @@ Set* make_Set(char *name) {
     set->hc_num = 0;
     set->helsum = 0;
     set->num_fhc = 0;
-    set->helices = (HC**) malloc(sizeof(HC*)*ARRAYSIZE*5);
+    set->helices = (HC**) malloc(sizeof(HC*)*ARRAYSIZE*10);
 /*
   set->joint = (HASHTBL**) malloc(sizeof(HASHTBL*)*ARRAYSIZE*5);
   for (i=0; i < ARRAYSIZE*5; i++)
@@ -51,7 +51,7 @@ Set* make_Set(char *name) {
     set->prof_size = 5;
     set->prof_num = 0;
     set->num_sprof = 0;
-    set->profiles = (Profile**) malloc(sizeof(Profile*)*ARRAYSIZE*5);
+    set->profiles = (Profile**) malloc(sizeof(Profile*)*ARRAYSIZE*10);
     set->proftree = (Profnode***) malloc(sizeof(Profnode**)*ARRAYSIZE*2);
     set->treeindex = (int*) malloc(sizeof(int)*ARRAYSIZE*2);
     set->treesize = 2;
@@ -68,6 +68,7 @@ Set* make_Set(char *name) {
     set->num_fstems = 0;
     set->stem_prof_num = 0;
     set->num_stem_sprof = 0;
+    set->stem_profiles = (Profile**) malloc(sizeof(Profile*) * ARRAYSIZE * 10);
     return set;
 }
 
@@ -1637,8 +1638,8 @@ bool validate_func_similar_stems(Set* set, Stem* stem1, Stem* stem2, int* freq) 
         fprintf(stderr,"Error: could not open structure file");
         exit(EXIT_FAILURE);
     }
-    char line[MAX_SAMPLE_FILE_LINE_LEN];
-    while(fgets(line, MAX_SAMPLE_FILE_LINE_LEN, struct_file) != NULL) {
+    char line[MAX_STRUCT_FILE_LINE_LEN];
+    while(fgets(line, MAX_STRUCT_FILE_LINE_LEN, struct_file) != NULL) {
         if(line[0] == 'S') {
             bool stem1_found = true;
             bool stem2_found = true;
@@ -1798,9 +1799,11 @@ bool validate_stem_and_func_similar(FSStemGroup* stem_pair, Stem* stem) {
  *
  * @param stem the stem to check
  * @param structure the structure to check, formatted as a single line of helices dilineated by spaces
- * @return true if the stem occurs, false if it does not
+ * @return index of first helix of stem in structure if the stem occurs, -1 if it does not occur
  */
-bool stem_is_in_structure(Stem *stem, char *structure) {
+int find_stem_in_structure(Stem *stem, char *structure) {
+    int index = -2;
+    char* result;
     char* hc_id_string = (char*) malloc(sizeof(char) * STRING_BUFFER);
     for (int i = 0; i < stem->components->size; i++) {
         DataNode* component = (DataNode*) stem->components->entries[i];
@@ -1808,24 +1811,29 @@ bool stem_is_in_structure(Stem *stem, char *structure) {
             FSStemGroup* stem_group = (FSStemGroup*) component->data;
             int count = 0;
             for (int j = 0; j < stem_group->stems->size; j++) {
-                if(stem_is_in_structure((Stem *) stem_group->stems->entries[j], structure)) {
+                int temp_index = find_stem_in_structure((Stem *) stem_group->stems->entries[j], structure);
+                if(index != -1) {
+                    index = temp_index;
                     count++;
                     if (count > 1) {
-                        return false;
+                        return -1;
                     }
                 }
             }
             if (count != 1) {
-                return false;
+                return -1;
             }
         } else {
             sprintf(hc_id_string, " %s ", ((HC*)(component->data))->id);
-            if (strstr(structure, hc_id_string) == NULL) {
-                return false;
+            result = strstr(structure, hc_id_string);
+            if (result == NULL) {
+                return -1;
+            } else if (i == 0){
+                index = result - structure;
             }
         }
     }
-    return true;
+    return index + 1;
 }
 
 /**
@@ -1850,15 +1858,15 @@ void update_freq_stems(Set* set) {
         stem->freq = 0;
     }
 
-    char line[MAX_SAMPLE_FILE_LINE_LEN];
-    while(fgets(line, MAX_SAMPLE_FILE_LINE_LEN, struct_file) != NULL) {
+    char line[MAX_STRUCT_FILE_LINE_LEN];
+    while(fgets(line, MAX_STRUCT_FILE_LINE_LEN, struct_file) != NULL) {
         if (line[0] == 'S') {
             for (int i = 0; i < set->stems->size; i++) {
                 Stem *stem = stem_list[i];
                 if (stem->helices->size == 1) {
                     continue;
                 }
-                if (stem_is_in_structure(stem, line)) {
+                if (find_stem_in_structure(stem, line) != -1) {
                     stem->freq++;
                 }
             }
@@ -1875,11 +1883,16 @@ void update_freq_stems(Set* set) {
 void reindex_stems(Set *set) {
     // Sort based on frequency in descending order
     qsort(set->stems->entries, int2size_t(set->stems->size), sizeof(set->stems->entries[0]), stem_freq_compare);
-
+    int count = 0;
     Stem* stem;
     for (int i = 0; i< set->stems->size; i++) {
         stem = (Stem*) set->stems->entries[i];
-        get_alpha_id(i+1, stem->id);
+        if (stem->helices->size == 1 && stem->components->size == 1) {
+            continue;
+        } else {
+            count++;
+            get_alpha_id(count, stem->id);
+        }
     }
 }
 
@@ -2012,7 +2025,7 @@ void find_featured_stems(Set* set) {
         if (percent >= set->opt->STEM_FREQ) {
             if (set->opt->VERBOSE)
                 if (stem->helices->size == 1 && stem->components->size == 1) {
-                    printf("Featured helix %s with freq %d\n", ((HC*)stem->helices->entries[0])->id, stem->freq);
+                    printf("Featured helix %s with freq %d\n", stem->id, stem->freq);
             } else {
                     printf("Featured stem %s with freq %d\n", stem->id, marg);
                 }
@@ -2038,11 +2051,57 @@ void find_featured_stems(Set* set) {
     //printf("Coverage by featured helix classes: %.3f\n",cov);
 }
 
+// TODO: put structures into memory during initial creation of structure.out, then use that for finding freq of stems and for this function
 /**
- * Redefine structures in terms of stems
- * @param set
+ * Determines profiles in terms of stems
+ *
+ * @param set the set to redefine structures in
  */
-void make_stem_structures(Set* set) {
+void make_stem_profiles(Set* set) {
     FILE* struct_file = fopen("structure.out", "r");
+    if (struct_file == NULL) {
+        fprintf(stderr,"Error: could not open structure file (structure.out)");
+        exit(EXIT_FAILURE);
+    }
+    char line[MAX_STRUCT_FILE_LINE_LEN];
+    int index;
+    while(fgets(line, MAX_STRUCT_FILE_LINE_LEN, struct_file) != NULL) {
+        if(line[0] == 'S') {
+            for (int i = 0; i < set->num_fstems; i++) {
+                Stem* stem = (Stem*) set->stems->entries[i];
 
+            }
+        }
+    }
+    fclose(struct_file);
+}
+
+/**
+ * Insert one string into another string
+ *
+ * @param sentence the string to have word inserted into
+ * @param word the string to insert into sentence
+ * @param index the index of sentence to insert before
+ * @return new string if successful, NULL otherwise
+ */
+char* strinsrt(char* sentence, char* word, int index) {
+    if (sentence == NULL || word == NULL) {
+        return NULL;
+    }
+    size_t snt_len = strlen(sentence);
+    size_t wrd_len = strlen(word);
+    if (index < 0 || index > snt_len) {
+        return NULL;
+    }
+    char* temp;
+    if (snt_len + wrd_len > (sizeof(char) * STRING_BUFFER) - 1) {
+        temp = (char*) malloc(sizeof(char) * snt_len + wrd_len + STRING_BUFFER);
+    } else {
+        temp = (char*) malloc(sizeof(char) * STRING_BUFFER);
+    }
+    strncpy(temp, sentence, index);
+    temp[index] = '\0';
+    strcat(temp, word);
+    strcat(temp, sentence + index);
+    return temp;
 }
