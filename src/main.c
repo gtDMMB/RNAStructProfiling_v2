@@ -341,5 +341,5 @@ GTBOLTZMANN OPTIONS
         fclose(fp);
         hashtbl_destroy(deleteHash);
     }
-    return 0;
+    exit(EXIT_SUCCESS);
 }

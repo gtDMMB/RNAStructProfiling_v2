@@ -1680,6 +1680,7 @@ bool validate_func_similar_stems(Set* set, Stem* stem1, Stem* stem2, int* freq) 
 bool combine_stems_using_func_similar(Set* set) {
     bool combined = false;
     bool combining = false;
+    bool same_stem_group = false;
     Stem** stem_list = (Stem**)set->stems->entries;
     Stem** func_similar_list = (Stem**) set->func_similar_stems->entries;
     int* outer_stem = (int*) malloc(sizeof(int));
@@ -1688,6 +1689,17 @@ bool combine_stems_using_func_similar(Set* set) {
         for (int j = 0; j < set->stems->size; j++) {
             //check if func similar stem group and stem occur together often enough to be a possible stem
             if (!validate_stem_and_func_similar(stem_pair, stem_list[j])) {
+                continue;
+            }
+            for (int i = 0; i < stem_list[j]->components->size; i++) {
+                DataNode* node = (DataNode*)stem_list[j]->components->entries[i];
+                same_stem_group = (((FSStemGroup*)node->data)->stems == stem_pair->stems);
+                if (same_stem_group) {
+                    break;
+                }
+            }
+            if (same_stem_group) {
+                same_stem_group = false;
                 continue;
             }
             //check that the two are close enough on ends, for each stem in the functionally similar group
