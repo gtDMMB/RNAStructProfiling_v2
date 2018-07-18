@@ -1805,42 +1805,6 @@ bool validate_stem_and_func_similar(FSStemGroup* stem_pair, Stem* stem) {
     return error <= STEM_VALID_PERCENT_ERROR;
 }
 
-/**
- * Recursively determine if a stem occurs in a given structure. This is true if all helices occur in the structure, and for each
- * functionally similar stem group, exactly one component stem appears in the structure
- *
- * @param stem the stem to check
- * @param structure the structure to check, formatted as a single line of helices dilineated by spaces
- * @return true if the stem occurs, false if it does not
- */
-bool stem_is_in_structure(Stem *stem, char *structure) {
-    char* hc_id_string = (char*) malloc(sizeof(char) * STRING_BUFFER);
-    for (int i = 0; i < stem->components->size; i++) {
-        DataNode* component = (DataNode*) stem->components->entries[i];
-        if (component->node_type == fs_stem_group_type) {
-            FSStemGroup* stem_group = (FSStemGroup*) component->data;
-            int count = 0;
-            for (int j = 0; j < stem_group->stems->size; j++) {
-                if(stem_is_in_structure((Stem *) stem_group->stems->entries[j], structure)) {
-                    count++;
-                    if (count > 1) {
-                        return false;
-                    }
-                }
-            }
-            if (count != 1) {
-                return false;
-            }
-        } else {
-            sprintf(hc_id_string, " %s ", ((HC*)(component->data))->id);
-            if (strstr(structure, hc_id_string) == NULL) {
-                return false;
-            }
-        }
-    }
-    return true;
-}
-
 
 /**
  * Updates the frequency of all Stems in set->stems
@@ -1872,9 +1836,11 @@ void update_freq_stems(Set* set) {
                 if (stem->helices->size == 1) {
                     continue;
                 }
-                if (stem_is_in_structure(stem, line)) {
+                int* temp = (int*) malloc(sizeof(int));
+                if (stem_start_i(stem, line, temp) != -1) {
                     stem->freq++;
                 }
+                free(temp);
             }
         }
     }
@@ -1959,9 +1925,7 @@ void get_alpha_id(int int_id, char* alpha_id) {
  *
  * @param set the set to make a key for
  */
-void generate_stem_key(Set* set) {
-
-}
+void generate_stem_key(Set* set, char* seqfile) {}
 
 /**
  * Finds the threshold for featured stems using entropy method
@@ -2075,10 +2039,6 @@ void make_stem_profiles(Set* set) {
         if(line[0] == 'S') {
             for (int i = 0; i < set->num_fstems; i++) {
                 Stem* stem = (Stem*) set->stems->entries[i];
-                int* first_i = (int*) malloc(sizeof(int));
-                int* len = (int*) malloc(sizeof(int));
-                find_stem_in_structure(stem, line, first_i, len);
-                continue;
             }
         }
     }
@@ -2142,36 +2102,78 @@ char* strcut(char** str, int index, int n) {
 }
 
 /**
- * Find the start and end of a stem in
+ * Find the start of a component in a structure
+ *
+ * @param component the component to find
+ * @param structure the structure to search in
+ * @param hc_id_len returns the length of the first hc's id
+ * @return he index of the components's first appearance in structure (leading space before fist char),
+ * -1 if it does not appear
+ */
+ int component_start_i(DataNode *component, char *structure, int *hc_id_len) {
+     while (component->node_type == stem_type){
+         component = (DataNode*) ((Stem*) component)->components->entries[0];
+     }
+     if (component->node_type == fs_stem_group_type) {
+         FSStemGroup* stem_group = (FSStemGroup*) component->data;
+         int temp;
+         int count = 0;
+         int index = -1;
+         for(int i = 0; i < stem_group->stems->size; i++) {
+             temp = stem_start_i((Stem *) stem_group->stems->entries[i], structure, hc_id_len);
+             if (temp != -1) {
+                 count++;
+                 if (count > 1) {
+                     return -1;
+                 }
+                 index = temp;
+             }
+         }
+         return index;
+     } else if (component->node_type == hc_type){
+         char* hc_id_string = (char*) malloc(sizeof(char) * STRING_BUFFER);
+         sprintf(hc_id_string, " %s ", ((HC*)(component->data))->id);
+         char* found = strstr(structure, hc_id_string);
+         if (found == NULL) {
+             return -1;
+         }
+         *hc_id_len = (int) strlen(hc_id_string);
+         return (int) (found - structure) + 1;
+     } else {
+         printf("Error: non recognized DataNode* type");
+         exit(EXIT_FAILURE);
+     }
+ }
+
+/**
+ * Find the start of a stem in a structure
  *
  * @param stem the stem to find
  * @param structure the structure to search in
- * @param start_i the first index of the stem in structure, -1 if stem does not occur
- * @param len the length of the stem found in structure (including leading and trailing space)
+ * @param returns the length of the first hc's id
+ * @return the index of the stem's first appearance in structure (leading space before fist char),
+ * -1 if it does not appear
  */
-void find_stem_in_structure(Stem* stem, char* structure, int* start_i, int* len) {
+int stem_start_i(Stem *stem, char *structure, int *hc_id_len) {
     DataNode* component = (DataNode*) stem->components->entries[0];
-    if (component->node_type == fs_stem_group_type) {
-        FSStemGroup* stem_group = (FSStemGroup*) component->data;
-        for(int i = 0; i < stem_group->stems->size; i++) {
-
-            find_stem_in_structure((Stem*) stem_group->stems->entries[i], structure, start_i, len);
-        }
-    } else {
-        char* hc_id_string = (char*) malloc(sizeof(char) * STRING_BUFFER);
-        sprintf(hc_id_string, " %s ", ((HC*)(component->data))->id);
-        char* found = strstr(structure, hc_id_string);
-        *start_i = (int) (found - structure);
-    }
-    component = (DataNode*) stem->components->entries[stem->components->size - 1];
-    if (component->node_type == fs_stem_group_type) {
-
-    } else {
-        char* hc_id_string = (char*) malloc(sizeof(char) * STRING_BUFFER);
-        sprintf(hc_id_string, " %s ", ((HC*)(component->data))->id);
-        char* found = strstr(structure, hc_id_string);
-        *len = (int) (found - structure);
-        *len += strlen(hc_id_string);
-        *len -= *start_i;
-    }
+    return component_start_i(component, structure, hc_id_len);
 }
+
+/**
+ * Find the end of a stem in a structure
+ *
+ * @param stem the stem to find
+ * @param structure the structure to search in
+ * @param returns the length of the first hc's id
+ * @return the index of the stem's last appearance in structure (last char of last hc's id, not trailing space),
+ * -1 if it does not appear
+ */
+int stem_end_i(Stem *stem, char *structure, int *hc_id_len) {
+    DataNode* component = (DataNode*) stem->components->entries[stem->components->size];
+    int index = component_start_i(component, structure, hc_id_len);
+    if (index == -1) {
+        return index;
+    }
+    return index + *hc_id_len;
+}
+
