@@ -200,8 +200,8 @@ Do stem 9 and stem 12 occur infrequently enough to be functionally similar: Yes
 Joining stem 1 and functionally similar group 6
 Threshold to find featured stems: 9.5%
 Number of structures processed: 1000
-Featured stem A with freq 961
-Featured stem B with freq 961
+Featured stem A with freq 967
+Featured stem B with freq 967
 Featured helix 2 with freq 919
 Featured helix 3 with freq 903
 Featured helix 4 with freq 891

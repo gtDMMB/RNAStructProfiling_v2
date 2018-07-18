@@ -211,10 +211,10 @@ Number of structures processed: 1000
 Featured helix 1 with freq 979
 Featured stem A with freq 979
 Featured stem B with freq 955
-Featured stem C with freq 640
+Featured stem C with freq 642
 Featured stem D with freq 418
+Featured stem E with freq 321
 Featured helix 10 with freq 315
-Featured stem E with freq 305
 Featured stem F with freq 299
 Featured helix 12 with freq 268
 Featured helix 14 with freq 225

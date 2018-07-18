@@ -1925,7 +1925,45 @@ void get_alpha_id(int int_id, char* alpha_id) {
  *
  * @param set the set to make a key for
  */
-void generate_stem_key(Set* set, char* seqfile) {}
+void generate_stem_key(Set* set, char* seqfile) {
+    FILE* key_file = fopen("key.txt", "w");
+    fprintf(key_file, "seq is in %s\n", seqfile);
+    for (int i = 0; i < set->stems->size; i++) {
+        Stem* stem = (Stem*) set->stems->entries[i];
+        if (stem->helices->size == 1 && stem->components->size == 1) {
+            continue;
+        }
+        fprintf(key_file, "%s: ", stem->id);
+        print_stem_to_file(key_file, stem);
+        fprintf(key_file, "\n");
+    }
+    fclose(key_file);
+}
+
+void print_stem_to_file(FILE* fp, Stem* stem) {
+    for (int i = 0; i < stem->components->size; i++) {
+        DataNode* component = (DataNode*) stem->components->entries[i];
+        if (component->node_type == hc_type) {
+            fprintf(fp, "%s ", ((HC*) (component->data))->id);
+        } else if (component->node_type == fs_stem_group_type) {
+            FSStemGroup* stem_group = (FSStemGroup*) (component->data);
+            for (int j = 0; j < stem_group->stems->size; j++) {
+                if (j == 0){
+                    fprintf(fp, "( ");
+                } else if (j < stem_group->stems->size - 1 || (stem_group->stems->size == 2 && j == 1)) {
+                    fprintf(fp, "/ ");
+                }
+                print_stem_to_file(fp, (Stem*) stem_group->stems->entries[j]);
+                if (j == stem_group->stems->size - 1) {
+                    fprintf(fp, ") ");
+                }
+            }
+        } else {
+            printf("Error: component in stem %s does not contain an HC or FSStemGroup", stem->id);
+            exit(EXIT_FAILURE);
+        }
+    }
+}
 
 /**
  * Finds the threshold for featured stems using entropy method

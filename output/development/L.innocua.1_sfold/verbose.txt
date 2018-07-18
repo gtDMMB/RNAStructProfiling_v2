@@ -169,7 +169,6 @@ Do stem 8 and stem 18 occur infrequently enough to be functionally similar: Yes
 Do stem 10 and stem 20 occur infrequently enough to be functionally similar: Yes
 Do stem 11 and stem 16 occur infrequently enough to be functionally similar: Yes
 Do stem 17 and stem 24 occur infrequently enough to be functionally similar: Yes
-Joining stem 20 and functionally similar group 20
 Threshold to find featured stems: 24.7%
 Number of structures processed: 1000
 Featured helix 1 with freq 1000

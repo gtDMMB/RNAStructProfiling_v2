@@ -24,7 +24,7 @@ def update_seq(seq_dir, src_dir):
    old_path = seq_dir + '/old'
    if not os.path.exists(old_path):
       os.makedirs(old_path)
-   out_file_names = ['/out','/verbose.txt','/structure.out','/helices.txt']
+   out_file_names = ['/out','/verbose.txt','/structure.out','/helices.txt','/key.txt']
    for f in out_file_names + ['/out.png', '/comparison.txt']:
       if os.path.isfile(seq_dir + f):
          os.rename(seq_dir + f, old_path + f)
