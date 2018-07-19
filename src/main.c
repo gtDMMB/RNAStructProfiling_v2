@@ -294,6 +294,10 @@ GTBOLTZMANN OPTIONS
         print_consensus(set);
     }
 
+
+    set->structures = (array_list_t**) malloc(sizeof(array_list_t*) * set->opt->NUMSTRUCTS);
+    set->stem_structures = (array_list_t**) malloc(sizeof(array_list_t*) * set->opt->NUMSTRUCTS);
+    add_structures_to_set(set);
     //simplify set using stems
     add_stems_to_set(set);
     bool combined_stems = true;
@@ -341,5 +345,6 @@ GTBOLTZMANN OPTIONS
         fclose(fp);
         hashtbl_destroy(deleteHash);
     }
+    free_Set(set);
     exit(EXIT_SUCCESS);
 }

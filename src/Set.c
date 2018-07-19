@@ -80,6 +80,10 @@ void free_Set(Set* set) {
     free(set->treeindex);
     destroy_array_list(set->stems, &free);
     destroy_array_list(set->func_similar_stems, &free);
+    for (int i = 0; i < set->opt->NUMSTRUCTS; i++) {
+        destroy_array_list(set->structures[i], &free);
+        destroy_array_list(set->stem_structures[i], &free);
+    }
     free(set);
 }
 
@@ -840,6 +844,7 @@ void make_profiles_sfold(Set *set) {
         fprintf(stderr,"Error: can't open structure.out\n");
     fprintf(file,"Processing %s\n",name);
     while (fgets(temp,100,fp) != NULL) {
+
         if (sscanf(temp,"Structure %d",&num) == 1) {
             if (last == -1) {
                 fprintf(file,"Structure %d: ",num);
@@ -1406,6 +1411,50 @@ int print_consensus(Set *set) {
     }
     hashtbl_destroy(consensus);
     return 0;
+}
+
+/**
+ * Store the structures defined in structure.out into memory
+ *
+ * @param set the set to store strucures in
+ */
+void add_structures_to_set(Set* set) {
+    FILE* struct_file = fopen("structure.out", "r");
+    if (struct_file == NULL) {
+        fprintf(stderr,"Error: could not open structure file");
+        exit(EXIT_FAILURE);
+    }
+    char *token;
+    const char delim[2] = " ";
+    char line[MAX_STRUCT_FILE_LINE_LEN];
+    int struct_i = 0;
+    while(fgets(line, MAX_STRUCT_FILE_LINE_LEN, struct_file) != NULL) {
+        if (line[0] == 'S') {
+            set->structures[struct_i] = create_array_list();
+
+            token = strtok(line, delim);
+            int token_i = 0;
+            int helix_i = 0;
+
+            while( token != NULL ) {
+                if(token_i >= 2) {
+                    if (strcmp(token, "\n") == 0) {
+                        token = strtok(NULL, delim);
+                        token_i++;
+                        continue;
+                    }
+                    char* temp = (char*) malloc(sizeof(char) * strlen(token));
+                    strcpy(temp, token);
+                    add_to_array_list(set->structures[struct_i], helix_i, temp);
+                    helix_i++;
+                }
+                token = strtok(NULL, delim);
+                token_i++;
+            }
+            struct_i++;
+        }
+    }
+    fclose(struct_file);
 }
 
 /**

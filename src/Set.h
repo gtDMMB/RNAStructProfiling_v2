@@ -67,6 +67,8 @@ typedef struct {
     int num_stem_sprof;
     int stem_prof_num;
     Profile** stem_profiles;
+    array_list_t** structures;
+    array_list_t** stem_structures;
 } Set;
 
 node* createNode(char *name);
@@ -119,6 +121,8 @@ int* process_native(Set *set,int i, int j, int k);
 void find_consensus(Set *set);
 int print_consensus(Set *set);
 void free_Set(Set *set);
+
+void add_structures_to_set(Set* ste);
 
 // Concerning stems
 void add_stems_to_set(Set* set);
