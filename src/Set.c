@@ -1540,8 +1540,7 @@ void find_func_similar_stems(Set* set) {
         for (int j = i + 1; j < set->stems->size; j++) {
             Stem* stem1 = stem_list[i];
             Stem* stem2 = stem_list[j];
-            if (check_func_similar_stems(set, stem1, stem2, freq)) {void find_featured_stems(Set* set);
-
+            if (check_func_similar_stems(set, stem1, stem2, freq)) {
                 fs_stem_group_node = create_fs_stem_group_node();
                 add_to_fs_stem_group((FSStemGroup*)fs_stem_group_node->data, stem1);
                 add_to_fs_stem_group((FSStemGroup*)fs_stem_group_node->data, stem2);
@@ -1674,7 +1673,7 @@ bool validate_func_similar_stems(Set* set, Stem* stem1, Stem* stem2, int* freq) 
     free(id);
     fclose(struct_file);
     int min_count = (stem1_count <= stem2_count)? stem1_count : stem2_count;
-    return ((float) both_count / min_count) <= FUNC_SIMILAR_PERCENT_ERROR;
+    return (100 * ((float) both_count / min_count)) <= FUNC_SIMILAR_PERCENT_ERROR;
 }
 
 bool combine_stems_using_func_similar(Set* set) {

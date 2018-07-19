@@ -144,6 +144,7 @@ int stem_freq_compare(const void* s1, const void* s2);
 size_t int2size_t(int val);
 void get_alpha_id(int int_id, char* alpha_id);
 void generate_stem_key(Set* set, char* seqfile);
+void print_stem_to_file(FILE* fp, Stem* stem);
 
 double set_threshold_entropy_stems(Set *set);
 double set_num_fstems(Set *set);
