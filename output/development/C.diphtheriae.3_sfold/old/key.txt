@@ -1,5 +1,7 @@
 seq is in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/development/C.diphtheriae.3_sfold/input/C.diphtheriae.3_sfold.txt
-A: ( 8 / 18 ) 
-B: ( 9 / 23 ) 
-C: ( 10 / 22 ) 
-D: ( 16 / 24 ) 
+A: ( 7 / 14 ) 
+B: ( 8 / 18 ) 
+C: ( 6 / 12 ) 
+D: ( 9 / 23 ) 
+E: ( 17 / 22 ) 
+F: ( 10 / 16 ) 

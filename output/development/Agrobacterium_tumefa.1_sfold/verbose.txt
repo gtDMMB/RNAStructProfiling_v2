@@ -202,7 +202,7 @@ Joining helices 8 and 9
 Joining stems 8 and 11
 Joining helices 22 and 23
 Joining helices 24 and 25
-Do stem 2 and stem 17 occur infrequently enough to be functionally similar: Yes
+Do stem 2 and stem 17 occur infrequently enough to be functionally similar: No
 Do stem 5 and stem 6 occur infrequently enough to be functionally similar: Yes
 Do stem 7 and stem 20 occur infrequently enough to be functionally similar: Yes
 Do stem 13 and stem 18 occur infrequently enough to be functionally similar: Yes
@@ -210,12 +210,12 @@ Threshold to find featured stems: 19.6%
 Number of structures processed: 1000
 Featured helix 1 with freq 979
 Featured stem A with freq 979
-Featured stem B with freq 955
-Featured stem C with freq 642
-Featured stem D with freq 418
-Featured stem E with freq 321
+Featured helix 2 with freq 821
+Featured stem B with freq 642
+Featured stem C with freq 418
+Featured stem D with freq 321
 Featured helix 10 with freq 315
-Featured stem F with freq 299
+Featured stem E with freq 299
 Featured helix 12 with freq 268
 Featured helix 14 with freq 225
 Featured helix 15 with freq 196

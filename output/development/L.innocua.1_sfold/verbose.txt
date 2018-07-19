@@ -160,28 +160,30 @@ Selected profile 1 2 5 7 8 11 with freq 52 (83)
 Coverage by selected profiles: 0.604
 Number of profiles needed to get 0.50 coverage: 5
 Total number of selected profiles: 6
-Do stem 4 and stem 12 occur infrequently enough to be functionally similar: Yes
+Do stem 4 and stem 12 occur infrequently enough to be functionally similar: No
 Do stem 4 and stem 14 occur infrequently enough to be functionally similar: Yes
 Do stem 4 and stem 19 occur infrequently enough to be functionally similar: No
-Do stem 5 and stem 9 occur infrequently enough to be functionally similar: Yes
+Do stem 5 and stem 9 occur infrequently enough to be functionally similar: No
 Do stem 7 and stem 21 occur infrequently enough to be functionally similar: Yes
-Do stem 8 and stem 18 occur infrequently enough to be functionally similar: Yes
+Do stem 8 and stem 18 occur infrequently enough to be functionally similar: No
 Do stem 10 and stem 20 occur infrequently enough to be functionally similar: Yes
 Do stem 11 and stem 16 occur infrequently enough to be functionally similar: Yes
+Do stem 12 and stem 15 occur infrequently enough to be functionally similar: Yes
 Do stem 17 and stem 24 occur infrequently enough to be functionally similar: Yes
 Threshold to find featured stems: 24.7%
 Number of structures processed: 1000
 Featured helix 1 with freq 1000
 Featured helix 2 with freq 989
-Featured stem A with freq 935
-Featured stem B with freq 907
+Featured stem A with freq 812
 Featured helix 3 with freq 750
+Featured helix 5 with freq 677
 Featured helix 6 with freq 615
-Featured stem C with freq 403
-Featured stem D with freq 339
-Featured stem E with freq 248
-Featured stem F with freq 247
-Total number of featured stems: 10
+Featured stem B with freq 403
+Featured helix 8 with freq 360
+Featured helix 9 with freq 266
+Featured stem C with freq 248
+Featured stem D with freq 247
+Total number of featured stems: 11
 Total number of vertices: 15
 node: '1 2 3 4 5 6 '
 node: '1 2 3 4 6 9 '
