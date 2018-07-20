@@ -194,22 +194,23 @@ Selected profile 1 2 3 6 with freq 65 (70)
 Coverage by selected profiles: 0.777
 Number of profiles needed to get 0.50 coverage: 2
 Total number of selected profiles: 4
-Do stem 6 and stem 12 occur infrequently enough to be functionally similar: Yes
-Do stem 7 and stem 14 occur infrequently enough to be functionally similar: Yes
+Do stem 6 and stem 12 occur infrequently enough to be functionally similar: No
+Do stem 7 and stem 14 occur infrequently enough to be functionally similar: No
 Do stem 8 and stem 18 occur infrequently enough to be functionally similar: Yes
 Do stem 9 and stem 23 occur infrequently enough to be functionally similar: Yes
-Do stem 10 and stem 16 occur infrequently enough to be functionally similar: Yes
-Do stem 17 and stem 22 occur infrequently enough to be functionally similar: Yes
-Threshold to find featured stems: 32.1%
+Do stem 10 and stem 16 occur infrequently enough to be functionally similar: No
+Do stem 10 and stem 22 occur infrequently enough to be functionally similar: Yes
+Do stem 16 and stem 24 occur infrequently enough to be functionally similar: Yes
+Threshold to find featured stems: 34.6%
 Number of structures processed: 1000
 Featured helix 1 with freq 1000
 Featured helix 2 with freq 997
 Featured helix 3 with freq 511
 Featured helix 4 with freq 478
 Featured helix 5 with freq 467
-Featured stem A with freq 447
-Featured stem B with freq 361
-Featured stem C with freq 321
+Featured helix 6 with freq 373
+Featured stem A with freq 361
+Featured helix 7 with freq 346
 Total number of featured stems: 8
 Total number of vertices: 7
 node: '1 2 3 '
