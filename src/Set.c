@@ -1710,44 +1710,40 @@ bool validate_func_similar_stems(Set* set, Stem* stem1, Stem* stem2, int* freq) 
 bool combine_stems_using_func_similar(Set* set) {
     bool combined = false;
     bool combining = false;
-    bool same_stem_group = false;
     Stem** stem_list = (Stem**)set->stems->entries;
-    Stem** func_similar_list = (Stem**) set->func_similar_stems->entries;
     int* outer_stem = (int*) malloc(sizeof(int));
-    for (int i = 0; i < set->func_similar_stems->size; i++) {
-        FSStemGroup* stem_pair = (FSStemGroup*) ((DataNode*) func_similar_list[i]->components->entries[0])->data;
-        for (int j = 0; j < set->stems->size; j++) {
-            //check if func similar stem group and stem occur together often enough to be a possible stem
-            if (!validate_stem_and_func_similar(stem_pair, stem_list[j])) {
-                continue;
-            }
-            for (int i = 0; i < stem_list[j]->components->size; i++) {
-                DataNode* node = (DataNode*)stem_list[j]->components->entries[i];
-                same_stem_group = (((FSStemGroup*)node->data)->stems == stem_pair->stems);
-                if (same_stem_group) {
-                    break;
+    for (int i = 0; i < set->stems->size; i++) {
+        if (((Stem*)set->stems->entries[i])->components->size == 1
+            && ((DataNode*)(stem_list[i])->components->entries[0])->node_type == fs_stem_group_type) {
+            FSStemGroup* stem_group = (FSStemGroup*) ((DataNode*) (stem_list[i])->components->entries[0])->data;
+            for (int j = 0; j < set->stems->size; j++) {
+                if (i == j) {
+                    continue;
                 }
-            }
-            if (same_stem_group) {
-                same_stem_group = false;
-                continue;
-            }
-            //check that the two are close enough on ends, for each stem in the functionally similar group
-            for (int k = 0; k < stem_pair->stems->size; k++) {
-                Stem* stem1 = stem_list[j];
-                Stem* stem2 = (Stem*) stem_pair->stems->entries[k];
-                combining = check_ends_to_combine_stems(stem1, stem2, FUNC_SIMILAR_END_DELTA, outer_stem);
-                if (!combining) {
-                    break;
+                Stem* stem = stem_list[j];
+                if (!validate_stem_and_func_similar(stem_group, stem)) {
+                    continue;
                 }
-            }
-            // combine if all stems in functionally similar group were within FUNC_SIMILAR_END_DELTA to the stem
-            if (combining) {
-                if (set->opt->VERBOSE) {
-                    printf("Joining stem %s and functionally similar group %s\n", stem_list[j]->id, stem_pair->id);
+                for (int k = 0; k < stem_group->stems->size; k++) {
+                    Stem* stem1 = stem;
+                    Stem* stem2 = (Stem*) stem_group->stems->entries[k];
+                    combining = check_ends_to_combine_stems(stem1, stem2, FUNC_SIMILAR_END_DELTA, outer_stem);
+                    if (!combining) {
+                        break;
+                    }
                 }
-                combined = true;
-                merge_stem_and_fs_stem_group(stem_list[j], stem_pair, *outer_stem);
+                // combine if all stems in functionally similar group were within FUNC_SIMILAR_END_DELTA to the stem
+                if (combining) {
+                    if (set->opt->VERBOSE) {
+                        printf("Joining stem %s and functionally similar group %s\n", stem_list[j]->id, stem_group->id);
+                    }
+                    combined = true;
+                    merge_stem_and_fs_stem_group(stem, stem_group, *outer_stem);
+                    void** data_out = (void**) malloc(sizeof(void*));
+                    remove_from_array_list(set->stems, i, data_out);
+                    i--;
+                    free(data_out);
+                }
             }
         }
     }
@@ -2091,7 +2087,8 @@ double set_num_fstems(Set *set) {
  */
 void find_featured_stems(Set* set) {
     int marg,i,total;
-    double percent,cov=0;
+    double percent;
+    //double cov=0;
     Stem* stem;
 
     total = set->stems->size;
@@ -2101,9 +2098,10 @@ void find_featured_stems(Set* set) {
         marg = stem->freq;
         percent = ((double) marg*100.0)/((double)set->opt->NUMSTRUCTS);
         if (percent >= set->opt->STEM_FREQ) {
-            if (set->opt->VERBOSE)
+            if (set->opt->VERBOSE) {
                 if (stem->helices->size == 1 && stem->components->size == 1) {
                     printf("Featured helix %s with freq %d\n", stem->id, stem->freq);
+            }
             } else {
                     printf("Featured stem %s with freq %d\n", stem->id, marg);
                 }
@@ -2167,7 +2165,7 @@ char* strinsrt(char* sentence, char* word, int index) {
     }
     size_t snt_len = strlen(sentence);
     size_t wrd_len = strlen(word);
-    if (index < 0 || index > snt_len) {
+    if (index < 0 || int2size_t(index) > snt_len) {
         return NULL;
     }
     char* temp;
@@ -2196,7 +2194,7 @@ char* strcut(char** str, int index, int n) {
         return NULL;
     }
     size_t  str_len = strlen(*str);
-    if (index < 0 || index > str_len - 1) {
+    if (index < 0 || int2size_t(index) > str_len - 1) {
         return NULL;
     }
     char* removed = (char*) malloc(sizeof(char) * (n+1));
