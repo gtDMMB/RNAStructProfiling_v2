@@ -209,8 +209,13 @@ Do stem 13 and stem 18 occur infrequently enough to be functionally similar: Yes
 Threshold to find featured stems: 19.6%
 Number of structures processed: 1000
 Featured helix 1 with freq 979
+Featured stem A with freq 979
 Featured helix 2 with freq 821
+Featured stem B with freq 640
+Featured stem C with freq 418
 Featured helix 10 with freq 315
+Featured stem D with freq 305
+Featured stem E with freq 299
 Featured helix 12 with freq 268
 Featured helix 14 with freq 225
 Featured helix 15 with freq 196
