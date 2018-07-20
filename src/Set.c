@@ -74,15 +74,20 @@ Set* make_Set(char *name) {
 // TODO: use proper free function for stems
 void free_Set(Set* set) {
     free(set->helices);
+    set->helices = NULL;
     free(set->profiles);
+    set->profiles = NULL;
     free(set->proftree);
+    set->proftree = NULL;
     free(set->treeindex);
+    set->treeindex = NULL;
     destroy_array_list(set->stems, &free);
     for (int i = 0; i < set->opt->NUMSTRUCTS; i++) {
         destroy_array_list(set->structures[i], &free);
         destroy_array_list(set->stem_structures[i], &free);
     }
     free(set);
+    set = NULL;
 }
 
 void input_seq(Set *set,char *seqfile) {
@@ -786,6 +791,7 @@ void make_profiles(Set *set) {
         printf("Ave structure coverage by fbp: %.2f\n",bpcov/(double)set->opt->NUMSTRUCTS);
     }
     free(profile);
+    profile = NULL;
     fclose(fp);
     fclose(file);
 }
@@ -909,6 +915,7 @@ void make_profiles_sfold(Set *set) {
     printf("Ave structure coverage by fhc: %.2f\n",coverage/(double)set->opt->NUMSTRUCTS);
     printf("Ave structure coverage by fbp: %.2f\n",bpcov/(double)set->opt->NUMSTRUCTS);
     free(profile);
+    profile = NULL;
     fclose(fp);
     fclose(file);
 }
@@ -978,6 +985,7 @@ void make_bracket_rep(HASHTBL *brac,Profile *prof) {
     prof->bracket = profile;
     //free(val);
     free(array);
+    array = NULL;
 }
 
 //inserts bracket representation for i,j into a hash
@@ -1148,6 +1156,7 @@ unsigned long binary_rep(Set *set,char *profile) {
         sum += set->helices[i]->binary;
     }
     free(copy);
+    copy = NULL;
     return sum;
 }
 
@@ -1453,6 +1462,7 @@ void add_structures_to_set(Set* set) {
         }
     }
     free(token);
+    token = NULL;
     fclose(struct_file);
 }
 
@@ -1552,7 +1562,6 @@ void merge_stems(Stem* stem1, Stem* stem2) {
     //stem_reset_id(stem1);
 }
 
-// TODO: figure out fix for having functionally similar helices occur in a stem and thus have different freq from other helices in stem, while likely being a stem. This may simply be determinign functionally similar before determining stems as well
 /**
  * Determine if two stems should be considered one based on how different their frequencies are
  *
@@ -1571,7 +1580,6 @@ bool validate_stems(Stem* stem1, Stem* stem2) {
 
 
 // TODO: determine if this can be done within the loop in combine_stems
-// TODO: determine if we can have more than just 2 functionally similar stems, or only pairs
 /**
  * Find which stems are functionally similar and can be interchanged
  *
@@ -1641,7 +1649,9 @@ void find_func_similar_stems(Set* set) {
         }
     }
     free(data_out);
+    data_out = NULL;
     free(freq);
+    freq = NULL;
 }
 
 /**
@@ -1722,6 +1732,7 @@ bool validate_func_similar_stems(Set* set, Stem* stem1, Stem* stem2, int* freq) 
         }
     }
     free(hc_id);
+    hc_id = NULL;
     int min_count = (stem1_count <= stem2_count)? stem1_count : stem2_count;
     return (100 * ((float) both_count / min_count)) <= FUNC_SIMILAR_PERCENT_ERROR;
 }
@@ -1729,6 +1740,7 @@ bool validate_func_similar_stems(Set* set, Stem* stem1, Stem* stem2, int* freq) 
 bool combine_stems_using_func_similar(Set* set) {
     bool combined = false;
     bool combining = false;
+    void** data_out = (void**) malloc(sizeof(void*));
     Stem** stem_list = (Stem**)set->stems->entries;
     int* outer_stem = (int*) malloc(sizeof(int));
     for (int i = 0; i < set->stems->size; i++) {
@@ -1758,15 +1770,16 @@ bool combine_stems_using_func_similar(Set* set) {
                     }
                     combined = true;
                     merge_stem_and_fs_stem_group(stem, stem_group, *outer_stem);
-                    void** data_out = (void**) malloc(sizeof(void*));
                     remove_from_array_list(set->stems, i, data_out);
                     i--;
-                    free(data_out);
                 }
             }
         }
     }
+    free(data_out);
+    data_out = NULL;
     free(outer_stem);
+    outer_stem = NULL;
     return combined;
 }
 
@@ -1913,7 +1926,7 @@ void update_freq_stems(Set* set) {
     //Reset all stems with more than 1 helix to freq 0
     for (int i = 0; i < set->stems->size; i++) {
         Stem *stem = stem_list[i];
-        if (stem->helices->size == 1 && stem->components->size == 1) {
+        if (stem_is_hc(stem)) {
             continue;
         }
         stem->freq = 0;
@@ -1922,7 +1935,7 @@ void update_freq_stems(Set* set) {
         structure = set->structures[i];
         for (int j = 0; j < set->stems->size; j++) {
             Stem *stem = stem_list[j];
-            if (stem->helices->size == 1) {
+            if (stem_is_hc(stem)) {
                 continue;
             }
             if (stem_in_structure(stem, structure)) {
@@ -1944,7 +1957,7 @@ void reindex_stems(Set *set) {
     Stem* stem;
     for (int i = 0; i< set->stems->size; i++) {
         stem = (Stem*) set->stems->entries[i];
-        if (stem->helices->size == 1 && stem->components->size == 1) {
+        if (stem_is_hc(stem)) {
             continue;
         } else {
             count++;
@@ -2002,9 +2015,9 @@ void get_alpha_id(int int_id, char* alpha_id) {
         int_id /= 26;
     }
     free(temp);
+    temp = NULL;
 }
 
-// TODO: implement
 /**
  * Generates a file, key.txt, which indicates the helices that make up each stem
  *
@@ -2015,7 +2028,7 @@ void generate_stem_key(Set* set, char* seqfile) {
     fprintf(key_file, "seq is in %s\n", seqfile);
     for (int i = 0; i < set->stems->size; i++) {
         Stem* stem = (Stem*) set->stems->entries[i];
-        if (stem->helices->size == 1 && stem->components->size == 1) {
+        if (stem_is_hc(stem)) {
             continue;
         }
         fprintf(key_file, "%s: ", stem->id);
@@ -2118,7 +2131,7 @@ void find_featured_stems(Set* set) {
         percent = ((double) marg*100.0)/((double)set->opt->NUMSTRUCTS);
         if (percent >= set->opt->STEM_FREQ) {
             if (set->opt->VERBOSE) {
-                if (stem->helices->size == 1 && stem->components->size == 1) {
+                if (stem_is_hc(stem)) {
                     printf("Featured helix %s with freq %d\n", stem->id, stem->freq);
                 } else {
                     printf("Featured stem %s with freq %d\n", stem->id, stem->freq);
@@ -2146,28 +2159,50 @@ void find_featured_stems(Set* set) {
     //printf("Coverage by featured helix classes: %.3f\n",cov);
 }
 
-// TODO: put structures into memory during initial creation of structure.out, then use that for finding freq of stems and for this function
 /**
- * Determines profiles in terms of stems
+ * Determines profiles in terms of stems. Also creates stem_structure.out containing structures in terms of
  *
  * @param set the set to redefine structures in
  */
 void make_stem_profiles(Set* set) {
-    FILE* struct_file = fopen("structure.out", "r");
-    if (struct_file == NULL) {
-        fprintf(stderr,"Error: could not open structure file (structure.out)");
-        exit(EXIT_FAILURE);
-    }
-    char line[MAX_STRUCT_FILE_LINE_LEN];
-    int index;
-    while(fgets(line, MAX_STRUCT_FILE_LINE_LEN, struct_file) != NULL) {
-        if(line[0] == 'S') {
-            for (int i = 0; i < set->num_fstems; i++) {
-                Stem* stem = (Stem*) set->stems->entries[i];
-            }
+    FILE* stem_struct_file = fopen("stem_structure.out", "w");
+    fprintf(stem_struct_file, "Processing: %s\n", set->structfile);
+    char* stem_structure_str = (char*) malloc(sizeof(char) * MAX_STRUCT_FILE_LINE_LEN);
+    void** data_out = (void**) malloc(sizeof(void*));
+    for (int i = 0; i < set->opt->NUMSTRUCTS; i++) {
+        array_list_t* structure = set->structures[i];
+        set->stem_structures[i] = create_array_list();
+        array_list_t* stem_structure = set->stem_structures[i];
+        // TODO: implement array_list_deep_copy and use in place of this loop to duplicate structure
+        for (int j = 0; j < structure->size; j++) {
+            char* hc_id = (char*) malloc(sizeof(char) * (strlen((char*) structure->entries[j]) + 1));
+            strcpy(hc_id,(char*) structure->entries[j]);
+            add_to_array_list(stem_structure, j, hc_id);
         }
+        for (int stem_i = 0; stem_i < set->num_fstems; stem_i++) {
+            Stem* stem = (Stem*) set->stems->entries[stem_i];
+            if (stem_is_hc(stem) || !stem_in_structure(stem, stem_structure)) {
+                continue;
+            }
+            // TODO: modify stem_in_structure to find start_i and end_i (or len) and use that instead
+            int start_i = stem_start_i(stem, stem_structure);
+            int end_i = stem_end_i(stem, stem_structure);
+            int len = end_i - start_i + 1;
+            for(int k = 0; k < len; k++) {
+                remove_from_array_list(stem_structure, start_i, data_out);
+            }
+            char* stem_id_str = (char*) malloc(sizeof(char) * (strlen(stem->id) + 1));
+            strcpy(stem_id_str, stem->id);
+            add_to_array_list(stem_structure, start_i, stem_id_str);
+        }
+        join(stem_structure_str, (char**) stem_structure->entries, " ", stem_structure->size);
+        fprintf(stem_struct_file, "Structure %d: %s\n", i+1, stem_structure_str);
     }
-    fclose(struct_file);
+    free(data_out);
+    data_out = NULL;
+    free(stem_structure_str);
+    stem_structure_str = NULL;
+    fclose(stem_struct_file);
 }
 
 /**
@@ -2231,8 +2266,7 @@ char* strcut(char** str, int index, int n) {
  *
  * @param component the component to find
  * @param structure the structure to search in
- * @return he index of the components's first appearance in structure (leading space before fist char),
- * -1 if it does not appear
+ * @return the index of the components's first appearance in structure, -1 if it does not appear
  */
  int component_start_i(DataNode *component, array_list_t *structure) {
      while (component->node_type == stem_type){
@@ -2245,7 +2279,11 @@ char* strcut(char** str, int index, int n) {
          for(int i = 0; i < stem_group->stems->size; i++) {
              temp = stem_start_i((Stem *) stem_group->stems->entries[i], structure);
              if (temp != -1) {
-                 index = (index == -1 || index < temp)? index : temp;
+                 if (index == -1) {
+                     index = temp;
+                 } else {
+                     index = min(index, temp);
+                 }
              }
          }
          return index;
@@ -2253,9 +2291,8 @@ char* strcut(char** str, int index, int n) {
          char* hc_id_string = (char*) malloc(sizeof(char) * STRING_BUFFER);
          sprintf(hc_id_string, "%s", ((HC*)(component->data))->id);
          for (int i = 0; i < structure->size; i++) {
-             if ((char*) structure->entries[i] == hc_id_string) {
-                 index = i;
-                 break;
+             if (strcmp((char*) structure->entries[i], hc_id_string) == 0) {
+                 return i;
              }
          }
          return index;
@@ -2266,13 +2303,53 @@ char* strcut(char** str, int index, int n) {
  }
 
 /**
+* Find the end of a component in a structure
+*
+* @param component the component to find
+* @param structure the structure to search in
+* @return the index of the components's last appearance in structure, -1 if it does not appear
+*/
+int component_end_i(DataNode *component, array_list_t *structure) {
+    while (component->node_type == stem_type){
+        Stem* stem = (Stem*) component;
+        component = (DataNode*) (stem->components->entries[stem->components->size - 1]);
+    }
+    int index = -1;
+    if (component->node_type == fs_stem_group_type) {
+        FSStemGroup* stem_group = (FSStemGroup*) component->data;
+        int temp;
+        for(int i = 0; i < stem_group->stems->size; i++) {
+            temp = stem_end_i((Stem *) stem_group->stems->entries[i], structure);
+            if (temp != -1) {
+                if (index == -1) {
+                    index = temp;
+                } else {
+                    index = max(index, temp);
+                }
+            }
+        }
+        return index;
+    } else if (component->node_type == hc_type){
+        char* hc_id_string = (char*) malloc(sizeof(char) * STRING_BUFFER);
+        sprintf(hc_id_string, "%s", ((HC*)(component->data))->id);
+        for (int i = 0; i < structure->size; i++) {
+            if (strcmp((char*) structure->entries[i], hc_id_string) == 0) {
+                return i;
+            }
+        }
+        return index;
+    } else {
+        printf("Error: non recognized DataNode* type");
+        exit(EXIT_FAILURE);
+    }
+}
+
+/**
  * Find the start of a stem in a structure
  *
  * @param stem the stem to find
  * @param structure the structure to search in
- * @param returns the length of the first hc's id
- * @return the index of the stem's first appearance in structure (leading space before fist char),
- * -1 if it does not appear
+ * @return the index of the stem's first appearance in structure -1 if it does not appear
  */
 int stem_start_i(Stem *stem, array_list_t *structure) {
     DataNode* component = (DataNode*) stem->components->entries[0];
@@ -2284,16 +2361,38 @@ int stem_start_i(Stem *stem, array_list_t *structure) {
  *
  * @param stem the stem to find
  * @param structure the structure to search in
- * @param returns the length of the first hc's id
- * @return the index of the stem's last appearance in structure (last char of last hc's id, not trailing space),
- * -1 if it does not appear
+ * @return the index of the stem's last appearance in structure -1 if it does not appear
  */
 int stem_end_i(Stem *stem, array_list_t *structure) {
-    DataNode* component = (DataNode*) stem->components->entries[stem->components->size];
-    int index = component_start_i(component, structure);
-    if (index == -1) {
-        return index;
-    }
-    return index;
+    DataNode* component = (DataNode*) stem->components->entries[stem->components->size - 1];
+    return component_end_i(component, structure);
 }
 
+/**
+ * Joins an array of strings into one string, with each original string separated by delim
+ *
+ * @param dest the string to joing src into, NULL if join fails or n <= 0
+ * @param src the array of strings to join
+ * @param delim string used to seperate each value from src
+ * @param n number of elements in src
+ */
+void join(char* dest, char** src, const char* delim, int n) {
+    if (n <= 0 || delim == NULL || src == NULL || dest == NULL) {
+        dest = NULL;
+        return;
+    }
+    strcpy(dest, src[0]);
+    for (int i = 1; i < n; i++) {
+        strcat(dest, delim);
+        strcat(dest, src[i]);
+    }
+}
+
+/**
+ * Determine if a stem is simply a wrapper for a single HC
+ * @param stem the stem to check
+ * @return true if stem contains a single HC, false otherwise
+ */
+bool stem_is_hc(Stem* stem) {
+    return (stem->helices->size == 1 && stem->components->size == 1);
+}

@@ -158,7 +158,11 @@ void make_stem_profiles(Set* set);
 char* strinsrt(char* sentence, char* word, int index);
 char* strcut(char** str, int index, int n);
 int component_start_i(DataNode *component, array_list_t *structure);
+int component_end_i(DataNode *component, array_list_t *structure);
 int stem_start_i(Stem *stem, array_list_t *structure);
 int stem_end_i(Stem *stem, array_list_t *structure);
+void join(char* dest, char** src, const char* delim, int n);
+
+bool stem_is_hc(Stem* stem);
 
 #endif

@@ -60,9 +60,12 @@ int destroy_array_list(array_list_t* arr, list_op free_func)
     }
     for (int i = 0; i < arr->size; i++) {
         free_func(arr->entries[i]);
+        arr->entries[i] = NULL;
     }
     free(arr->entries);
+    arr->entries = NULL;
     free(arr);
+    arr = NULL;
     return 0;
 }
 

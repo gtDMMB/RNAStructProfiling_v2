@@ -312,7 +312,6 @@ GTBOLTZMANN OPTIONS
     combine_stems_using_func_similar(set);
     update_freq_stems(set);
     reindex_stems(set);
-    // TODO: implement
     generate_stem_key(set, argv[argc-1]);
     if (set->opt->NUM_FSTEMS)
         set->opt->STEM_FREQ = set_num_fstems(set);
