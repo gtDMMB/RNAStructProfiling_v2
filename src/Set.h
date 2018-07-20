@@ -140,7 +140,8 @@ bool combine_stems_using_func_similar(Set* set);
 bool validate_stem_and_func_similar(FSStemGroup* stem_group, Stem* stem);
 void merge_stem_and_fs_stem_group(Stem* stem, FSStemGroup* stem_group, int outer_stem);
 
-bool stem_is_in_structure(Stem *stem, char *structure);
+bool stem_in_structure(Stem *stem, array_list_t* structure);
+bool component_in_structure(DataNode* component, array_list_t* structure);
 void update_freq_stems(Set* set);
 
 void reindex_stems(Set *set);
@@ -157,8 +158,8 @@ void find_featured_stems(Set* set);
 void make_stem_profiles(Set* set);
 char* strinsrt(char* sentence, char* word, int index);
 char* strcut(char** str, int index, int n);
-int component_start_i(DataNode *component, char *structure, int *hc_id_len);
-int stem_start_i(Stem *stem, char *structure, int *hc_id_len);
-int stem_end_i(Stem *stem, char *structure, int *hc_id_len);
+int component_start_i(DataNode *component, array_list_t *structure);
+int stem_start_i(Stem *stem, array_list_t *structure);
+int stem_end_i(Stem *stem, array_list_t *structure);
 
 #endif

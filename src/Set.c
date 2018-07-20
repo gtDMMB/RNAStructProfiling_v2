@@ -1424,7 +1424,7 @@ void add_structures_to_set(Set* set) {
         fprintf(stderr,"Error: could not open structure file");
         exit(EXIT_FAILURE);
     }
-    char *token;
+    char *token = (char*) malloc(sizeof(char) * STRING_BUFFER);
     const char delim[2] = " ";
     char line[MAX_STRUCT_FILE_LINE_LEN];
     int struct_i = 0;
@@ -1454,6 +1454,7 @@ void add_structures_to_set(Set* set) {
             struct_i++;
         }
     }
+    free(token);
     fclose(struct_file);
 }
 
@@ -1672,55 +1673,36 @@ bool check_func_similar_stems(Set* set, Stem* stem1, Stem* stem2, int* freq) {
  *
  * @param stem1 the first stem to check
  * @param stem2 the second stem to check
- * @param freq pointer to the frequency of the fs stem group (if the stems should be merged). This times stem1 occurs
- * plus times stem2 occurs minus times they occur together
+ * @param freq pointer to the frequency of the fs stem group (if the stems should be merged). This is defined as the
+ * number structures stem1 or stem2 occur in
  * @return true if the two occur
  */
 bool validate_func_similar_stems(Set* set, Stem* stem1, Stem* stem2, int* freq) {
     int stem1_count = 0;
     int stem2_count  = 0;
     int both_count = 0;
-    char* id = (char*) malloc(200 * sizeof(char));
-    FILE* struct_file = fopen("structure.out", "r");
-    if (struct_file == NULL) {
-        fprintf(stderr,"Error: could not open structure file");
-        exit(EXIT_FAILURE);
-    }
-    char line[MAX_STRUCT_FILE_LINE_LEN];
-    while(fgets(line, MAX_STRUCT_FILE_LINE_LEN, struct_file) != NULL) {
-        if(line[0] == 'S') {
-            bool stem1_found = true;
-            bool stem2_found = true;
-            //checking all stem1 helices in structure
-            for (int i = 0; i < stem1->num_helices; i++) {
-                sprintf(id, " %s ", (*(HC*)stem1->helices->entries[i]).id);
-                if (strstr(line, id) == NULL) {
-                    stem1_found = false;
-                    break;
-                }
-            }
-            //same for stem2
-            for (int i = 0; i < stem2->num_helices; i++) {
-                sprintf(id, " %s ", (*(HC*)stem2->helices->entries[i]).id);
-                if (strstr(line, id) == NULL) {
-                    stem2_found = false;
-                    break;
-                }
-            }
-            if (stem1_found) {
-                stem1_count++;
-            }
-            if (stem2_found) {
-                stem2_count++;
-            }
-            if (stem1_found && stem2_found) {
-                both_count++;
-            }
+    bool stem1_found;
+    bool stem2_found;
+    *freq = 0;
+    char* hc_id = (char*) malloc(sizeof(char) * STRING_BUFFER);
+    for (int i = 0; i < set->opt->NUMSTRUCTS; i++) {
+        array_list_t* structure = set->structures[i];
+        stem1_found = stem_in_structure(stem1, structure);
+        stem2_found = stem_in_structure(stem2, structure);
+        if (stem1_found || stem2_found) {
+            (*freq)++;
+        }
+        if (stem1_found) {
+            stem1_count++;
+        }
+        if (stem2_found) {
+            stem2_count++;
+        }
+        if (stem1_found && stem2_found) {
+            both_count++;
         }
     }
-    *freq = stem1_count + stem2_count - both_count;
-    free(id);
-    fclose(struct_file);
+    free(hc_id);
     int min_count = (stem1_count <= stem2_count)? stem1_count : stem2_count;
     return (100 * ((float) both_count / min_count)) <= FUNC_SIMILAR_PERCENT_ERROR;
 }
@@ -1853,6 +1835,57 @@ bool validate_stem_and_func_similar(FSStemGroup* stem_pair, Stem* stem) {
     return error <= STEM_VALID_PERCENT_ERROR;
 }
 
+/**
+ * Determines if a stem exists in a given structure
+ *
+ * @param stem the stem to search for
+ * @param structure the structure to search in
+ * @return true if stem is in structure, false otherwise
+ */
+bool stem_in_structure(Stem* stem, array_list_t* structure) {
+    DataNode* component;
+    for (int i = 0; i < stem->components->size; i++) {
+        component = (DataNode*) stem->components->entries[i];
+        if (!component_in_structure(component, structure)) {
+            return false;
+        }
+    }
+    return true;
+}
+
+/**
+ * Determines if a component (held in a DataNode) exists in a given structure
+ *
+ * @param component the component to search for
+ * @param structure the structure to search in
+ * @return true if component is in structure, false otherwise
+ */
+bool component_in_structure(DataNode* component, array_list_t* structure) {
+    if (component->node_type == stem_type){
+        return stem_in_structure((Stem*) component, structure);
+    } else if (component->node_type == fs_stem_group_type) {
+        FSStemGroup* stem_group = (FSStemGroup*) component->data;
+        for(int i = 0; i < stem_group->stems->size; i++) {
+            Stem *stem = (Stem *) stem_group->stems->entries[i];
+            if (stem_in_structure(stem, structure)) {
+                return true;
+            }
+        }
+        return false;
+    } else if (component->node_type == hc_type){
+        char* hc_id_string = (char*) malloc(sizeof(char) * STRING_BUFFER);
+        sprintf(hc_id_string, "%s", ((HC*)(component->data))->id);
+        for (int i = 0; i < structure->size; i++) {
+            if (strcmp((char*) structure->entries[i], hc_id_string) == 0) {
+                return true;
+            }
+        }
+        return false;
+    } else {
+        printf("Error: non recognized DataNode* type");
+        exit(EXIT_FAILURE);
+    }
+}
 
 /**
  * Updates the frequency of all Stems in set->stems
@@ -1860,39 +1893,28 @@ bool validate_stem_and_func_similar(FSStemGroup* stem_pair, Stem* stem) {
  * @param set the set to update Stems in
  */
 void update_freq_stems(Set* set) {
-    FILE* struct_file = fopen("structure.out", "r");
-    if (struct_file == NULL) {
-        fprintf(stderr,"Error: could not open structure file (structure.out)");
-        exit(EXIT_FAILURE);
-    }
+    array_list_t* structure;
     Stem** stem_list = (Stem**) set->stems->entries;
-
     //Reset all stems with more than 1 helix to freq 0
     for (int i = 0; i < set->stems->size; i++) {
         Stem *stem = stem_list[i];
-        if (stem->helices->size == 1) {
+        if (stem->helices->size == 1 && stem->components->size == 1) {
             continue;
         }
         stem->freq = 0;
     }
-
-    char line[MAX_STRUCT_FILE_LINE_LEN];
-    while(fgets(line, MAX_STRUCT_FILE_LINE_LEN, struct_file) != NULL) {
-        if (line[0] == 'S') {
-            for (int i = 0; i < set->stems->size; i++) {
-                Stem *stem = stem_list[i];
-                if (stem->helices->size == 1) {
-                    continue;
-                }
-                int* temp = (int*) malloc(sizeof(int));
-                if (stem_start_i(stem, line, temp) != -1) {
-                    stem->freq++;
-                }
-                free(temp);
+    for (int i = 0; i < set->opt->NUMSTRUCTS; i++) {
+        structure = set->structures[i];
+        for (int j = 0; j < set->stems->size; j++) {
+            Stem *stem = stem_list[j];
+            if (stem->helices->size == 1) {
+                continue;
+            }
+            if (stem_in_structure(stem, structure)) {
+                stem->freq++;
             }
         }
     }
-    fclose(struct_file);
 }
 
 /**
@@ -2192,39 +2214,34 @@ char* strcut(char** str, int index, int n) {
  *
  * @param component the component to find
  * @param structure the structure to search in
- * @param hc_id_len returns the length of the first hc's id
  * @return he index of the components's first appearance in structure (leading space before fist char),
  * -1 if it does not appear
  */
- int component_start_i(DataNode *component, char *structure, int *hc_id_len) {
+ int component_start_i(DataNode *component, array_list_t *structure) {
      while (component->node_type == stem_type){
          component = (DataNode*) ((Stem*) component)->components->entries[0];
      }
+     int index = -1;
      if (component->node_type == fs_stem_group_type) {
          FSStemGroup* stem_group = (FSStemGroup*) component->data;
          int temp;
-         int count = 0;
-         int index = -1;
          for(int i = 0; i < stem_group->stems->size; i++) {
-             temp = stem_start_i((Stem *) stem_group->stems->entries[i], structure, hc_id_len);
+             temp = stem_start_i((Stem *) stem_group->stems->entries[i], structure);
              if (temp != -1) {
-                 count++;
-                 if (count > 1) {
-                     return -1;
-                 }
-                 index = temp;
+                 index = (index == -1 || index < temp)? index : temp;
              }
          }
          return index;
      } else if (component->node_type == hc_type){
          char* hc_id_string = (char*) malloc(sizeof(char) * STRING_BUFFER);
-         sprintf(hc_id_string, " %s ", ((HC*)(component->data))->id);
-         char* found = strstr(structure, hc_id_string);
-         if (found == NULL) {
-             return -1;
+         sprintf(hc_id_string, "%s", ((HC*)(component->data))->id);
+         for (int i = 0; i < structure->size; i++) {
+             if ((char*) structure->entries[i] == hc_id_string) {
+                 index = i;
+                 break;
+             }
          }
-         *hc_id_len = (int) strlen(hc_id_string);
-         return (int) (found - structure) + 1;
+         return index;
      } else {
          printf("Error: non recognized DataNode* type");
          exit(EXIT_FAILURE);
@@ -2240,9 +2257,9 @@ char* strcut(char** str, int index, int n) {
  * @return the index of the stem's first appearance in structure (leading space before fist char),
  * -1 if it does not appear
  */
-int stem_start_i(Stem *stem, char *structure, int *hc_id_len) {
+int stem_start_i(Stem *stem, array_list_t *structure) {
     DataNode* component = (DataNode*) stem->components->entries[0];
-    return component_start_i(component, structure, hc_id_len);
+    return component_start_i(component, structure);
 }
 
 /**
@@ -2254,12 +2271,12 @@ int stem_start_i(Stem *stem, char *structure, int *hc_id_len) {
  * @return the index of the stem's last appearance in structure (last char of last hc's id, not trailing space),
  * -1 if it does not appear
  */
-int stem_end_i(Stem *stem, char *structure, int *hc_id_len) {
+int stem_end_i(Stem *stem, array_list_t *structure) {
     DataNode* component = (DataNode*) stem->components->entries[stem->components->size];
-    int index = component_start_i(component, structure, hc_id_len);
+    int index = component_start_i(component, structure);
     if (index == -1) {
         return index;
     }
-    return index + *hc_id_len;
+    return index;
 }
 
