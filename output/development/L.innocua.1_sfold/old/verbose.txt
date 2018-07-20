@@ -174,15 +174,11 @@ Threshold to find featured stems: 24.7%
 Number of structures processed: 1000
 Featured helix 1 with freq 1000
 Featured helix 2 with freq 989
-Featured stem A with freq 836
 Featured helix 3 with freq 750
 Featured helix 5 with freq 677
 Featured helix 6 with freq 615
-Featured stem B with freq 403
 Featured helix 8 with freq 360
 Featured helix 9 with freq 266
-Featured stem C with freq 248
-Featured stem D with freq 247
 Total number of featured stems: 11
 Total number of vertices: 15
 node: '1 2 3 4 5 6 '
