@@ -63,7 +63,6 @@ Set* make_Set(char *name) {
 
     set->original_hc_stems = create_array_list();
     set->stems = create_array_list();
-    create_array_list();
 
     set->num_fstems = 0;
     set->stem_prof_num = 0;
@@ -1634,7 +1633,6 @@ void find_func_similar_stems(Set* set) {
                         add_to_array_list(stem->helices, k, stem_group->helices->entries[k]);
                     }
                     strcpy(stem->id, stem_group->id);
-
                     add_to_array_list(set->stems, i, stem);
                 }
             }
@@ -2105,14 +2103,14 @@ double set_num_fstems(Set *set) {
  * @param set the set to find featured stems in
  */
 void find_featured_stems(Set* set) {
-    int marg,i,total;
+    int marg;
     double percent;
     //double cov=0;
     Stem* stem;
 
-    total = set->stems->size;
+    int total = set->stems->size;
     set->num_fstems = set->stems->size;
-    for (i = 0; i < total; i++) {
+    for (int i = 0; i < total; i++) {
         stem = (Stem*) set->stems->entries[i];
         marg = stem->freq;
         percent = ((double) marg*100.0)/((double)set->opt->NUMSTRUCTS);
@@ -2120,10 +2118,10 @@ void find_featured_stems(Set* set) {
             if (set->opt->VERBOSE) {
                 if (stem->helices->size == 1 && stem->components->size == 1) {
                     printf("Featured helix %s with freq %d\n", stem->id, stem->freq);
-            }
-            } else {
-                    printf("Featured stem %s with freq %d\n", stem->id, marg);
+                } else {
+                    printf("Featured stem %s with freq %d\n", stem->id, stem->freq);
                 }
+            }
             stem->is_featured = 1;
             stem->binary = 1<<i;
             // TODO: find equivalent of helsum for stems and implement coverage tracking for this function
