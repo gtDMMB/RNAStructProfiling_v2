@@ -209,7 +209,6 @@ Featured helix 3 with freq 511
 Featured helix 4 with freq 478
 Featured helix 5 with freq 467
 Featured helix 6 with freq 373
-Featured stem A with freq 361
 Featured helix 7 with freq 346
 Total number of featured stems: 8
 Total number of vertices: 7
