@@ -63,7 +63,7 @@ Set* make_Set(char *name) {
 
     set->original_hc_stems = create_array_list();
     set->stems = create_array_list();
-    set->func_similar_stems = create_array_list();
+    create_array_list();
 
     set->num_fstems = 0;
     set->stem_prof_num = 0;
@@ -79,7 +79,6 @@ void free_Set(Set* set) {
     free(set->proftree);
     free(set->treeindex);
     destroy_array_list(set->stems, &free);
-    destroy_array_list(set->func_similar_stems, &free);
     for (int i = 0; i < set->opt->NUMSTRUCTS; i++) {
         destroy_array_list(set->structures[i], &free);
         destroy_array_list(set->stem_structures[i], &free);
@@ -1591,33 +1590,53 @@ void find_func_similar_stems(Set* set) {
             Stem* stem1 = stem_list[i];
             Stem* stem2 = stem_list[j];
             if (check_func_similar_stems(set, stem1, stem2, freq)) {
-                fs_stem_group_node = create_fs_stem_group_node();
-                add_to_fs_stem_group((FSStemGroup*)fs_stem_group_node->data, stem1);
-                add_to_fs_stem_group((FSStemGroup*)fs_stem_group_node->data, stem2);
-                FSStemGroup* stem_group = (FSStemGroup*) fs_stem_group_node->data;
-                stem_group->freq = *freq;
-                fs_stem_group_node->freq = *freq;
-                remove_from_array_list(set->stems, i, data_out);
-                remove_from_array_list(set->stems, j-1, data_out);
+                if (stem1->components->size == 1
+                    && ((DataNode*)(stem1->components->entries[0]))->node_type == fs_stem_group_type) {
+                    FSStemGroup* stem_group = (FSStemGroup*) ((DataNode*)(stem1->components->entries[0]))->data;
+                    add_to_fs_stem_group(stem_group, stem2);
+                    stem_group->freq = *freq;
+                    stem1->freq = *freq;
+                    ((DataNode*)stem1->components->entries[0])->freq = *freq;
+                    memcpy(stem1->int_max_quad, stem_group->int_max_quad,
+                           sizeof(stem1->int_max_quad));
+                    stem1->num_helices = stem_group->num_helices;
+                    strcpy(stem1->max_quad, stem_group->max_quad);
+                    memcpy(stem1->int_max_quad, stem_group->int_max_quad,
+                           sizeof(stem1->int_max_quad));
+                    for (int k = 0; k < stem_group->helices->size; k++) {
+                        add_to_array_list(stem1->helices, k, stem_group->helices->entries[k]);
+                    }
+                    strcpy(stem1->id, stem_group->id);
+                    remove_from_array_list(set->stems, j, data_out);
+                } else {
+                    fs_stem_group_node = create_fs_stem_group_node();
+                    add_to_fs_stem_group((FSStemGroup*)fs_stem_group_node->data, stem1);
+                    add_to_fs_stem_group((FSStemGroup*)fs_stem_group_node->data, stem2);
+                    FSStemGroup* stem_group = (FSStemGroup*) fs_stem_group_node->data;
+                    stem_group->freq = *freq;
+                    fs_stem_group_node->freq = *freq;
+                    remove_from_array_list(set->stems, i, data_out);
+                    remove_from_array_list(set->stems, j-1, data_out);
 
-                // Create and empty Stem DataNode to hold the FSStemGroup
-                DataNode* node = create_data_node(stem_type, create_stem());
-                Stem* stem = (Stem*) node->data;
-                add_to_array_list(stem->components, 0, fs_stem_group_node);
-                stem->freq = *freq;
-                memcpy(stem->int_max_quad, stem_group->int_max_quad,
-                       sizeof(stem->int_max_quad));
-                stem->num_helices = stem_group->num_helices;
-                strcpy(stem->max_quad, stem_group->max_quad);
-                memcpy(stem->int_max_quad, stem_group->int_max_quad,
-                       sizeof(stem->int_max_quad));
-                for (int k = 0; k < stem_group->helices->size; k++) {
-                    add_to_array_list(stem->helices, k, stem_group->helices->entries[k]);
+                    // Create and empty Stem DataNode to hold the FSStemGroup
+                    DataNode* node = create_data_node(stem_type, create_stem());
+                    Stem* stem = (Stem*) node->data;
+                    add_to_array_list(stem->components, 0, fs_stem_group_node);
+                    stem->freq = *freq;
+                    node->freq = *freq;
+                    memcpy(stem->int_max_quad, stem_group->int_max_quad,
+                           sizeof(stem->int_max_quad));
+                    stem->num_helices = stem_group->num_helices;
+                    strcpy(stem->max_quad, stem_group->max_quad);
+                    memcpy(stem->int_max_quad, stem_group->int_max_quad,
+                           sizeof(stem->int_max_quad));
+                    for (int k = 0; k < stem_group->helices->size; k++) {
+                        add_to_array_list(stem->helices, k, stem_group->helices->entries[k]);
+                    }
+                    strcpy(stem->id, stem_group->id);
+
+                    add_to_array_list(set->stems, i, stem);
                 }
-                strcpy(stem->id, stem_group->id);
-
-                add_to_array_list(set->stems, i, stem);
-                add_to_array_list(set->func_similar_stems, set->func_similar_stems->size, stem);
             }
         }
     }
@@ -2016,7 +2035,7 @@ void print_stem_to_file(FILE* fp, Stem* stem) {
             for (int j = 0; j < stem_group->stems->size; j++) {
                 if (j == 0){
                     fprintf(fp, "( ");
-                } else if (j < stem_group->stems->size - 1 || (stem_group->stems->size == 2 && j == 1)) {
+                } else if (j <= stem_group->stems->size - 1) {
                     fprintf(fp, "/ ");
                 }
                 print_stem_to_file(fp, (Stem*) stem_group->stems->entries[j]);

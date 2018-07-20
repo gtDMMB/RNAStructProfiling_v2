@@ -61,7 +61,6 @@ typedef struct {
     node *graph;
     array_list_t* original_hc_stems;
     array_list_t* stems;
-    array_list_t* func_similar_stems;
 
     int num_fstems;
     int num_stem_sprof;
