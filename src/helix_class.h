@@ -22,6 +22,6 @@ typedef struct helix_class {
 } HC;
 
 HC* create_HC(int id,char *max);
-int free_HC(HC* hc);
+void free_hc(void *ptr);
 
 #endif

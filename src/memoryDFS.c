@@ -14,8 +14,8 @@ HASHTBL* MemoryDFS(node* root) {
   node* myroot;
   currentPath = (node**)malloc(sizeof(node*)*GRAPHSIZE);
   position = 0;
-  if (!(deleteHash = hashtbl_create(31,NULL))) {
-    fprintf(stderr, "ERROR: hashtbl_create() for deleteHash failed");
+  if (!(deleteHash = create_hashtbl(31, NULL))) {
+    fprintf(stderr, "ERROR: create_hashtbl() for deleteHash failed");
     exit(EXIT_FAILURE);
   }
   /*myroot = root->neighbors[0];*/

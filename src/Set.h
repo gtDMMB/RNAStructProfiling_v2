@@ -18,6 +18,7 @@
 #define ARRAYSIZE 20
 #define INIT_SIZE 2
 #define STRING_BUFFER 256
+#define BASE_PROF_NUM 300
 
 // Max length of a line in the structure file TODO: make into an option
 #define MAX_STRUCT_FILE_LINE_LEN 512
@@ -61,6 +62,7 @@ typedef struct {
     node *graph;
     array_list_t* original_hc_stems;
     array_list_t* stems;
+    array_list_t* featured_stems;
 
     int num_fstems;
     int num_stem_sprof;
@@ -155,6 +157,7 @@ double set_num_fstems(Set *set);
 void find_featured_stems(Set* set);
 
 void make_stem_profiles(Set* set);
+char* stem_profile_from_stem_structure(Set* set, array_list_t* structure);
 char* strinsrt(char* sentence, char* word, int index);
 char* strcut(char** str, int index, int n);
 int component_start_i(DataNode *component, array_list_t *structure);

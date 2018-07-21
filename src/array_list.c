@@ -47,16 +47,13 @@ array_list_t* create_array_list(void)
  * Destroys an array list
  * - all memory allocated to the array list should be freed
  * - all memory allocated to each data entry in the array should be freed
- * - return non-zero if either parameter is NULL
  *
- * @param arr array list that you're destroying
+ * @param ptr array list that you're destroying
  * @param free_func function that frees a data pointer
- * @return 0 if operation succeeded, non-zero otherwise
  */
-int destroy_array_list(array_list_t* arr, list_op free_func)
-{
+void free_array_list(array_list_t *arr, list_op free_func) {
     if(arr == NULL || free_func == NULL) {
-        return 1;
+        return;
     }
     for (int i = 0; i < arr->size; i++) {
         free_func(arr->entries[i]);
@@ -66,7 +63,6 @@ int destroy_array_list(array_list_t* arr, list_op free_func)
     arr->entries = NULL;
     free(arr);
     arr = NULL;
-    return 0;
 }
 
 /**

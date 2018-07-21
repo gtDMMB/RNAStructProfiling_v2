@@ -85,17 +85,17 @@ typedef struct {
 DataNode* create_data_node(NodeType node_type, void *data);
 DataNode* create_stem_node(HC* initial_helix);
 DataNode* create_fs_stem_group_node();
-int free_data_node(DataNode *node);
+void free_data_node(void* ptr);
 
 Stem* create_stem();
 // creates a stem with one helix, initial_helix, and returns a pointer to it. Returns NULL if memory allocation fails
 Stem* create_stem_from_HC(HC *initial_helix);
 // destroys a Stem, freeing allocated memory. Returns 0 if successful, non-zero otherwise
-int free_stem(Stem* stem);
+void free_stem(void* ptr);
 
 FSStemGroup* create_fs_stem_group();
 int add_to_fs_stem_group(FSStemGroup *stem_group, Stem *stem);
-int free_fs_stem_group(FSStemGroup *stem_group);
+void free_fs_stem_group(void* ptr);
 
 int max(int a, int b);
 int min(int a, int b);

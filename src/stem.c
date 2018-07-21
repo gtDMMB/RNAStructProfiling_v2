@@ -83,30 +83,25 @@ DataNode* create_fs_stem_group_node() {
  * @param node the node to free
  * @return 0 if successful, non-zero otherwise
  */
-int free_data_node(DataNode *node) {
-    if (node == NULL) {
-        return 1;
-    } else if (node->data == NULL) {
-        free(node);
-        return 0;
-    } else if (node->node_type == 0) {
-        return 1;
+void free_data_node(void* ptr) {
+    if(ptr == NULL) {
+        return;
     }
+    DataNode* node = (DataNode*) ptr;
     if (node->node_type == stem_type) {
-        if (free_stem((Stem*) node->data) != 0) {
-            return 1;
-        }
+        free_stem(node->data);
     } else if (node->node_type == fs_stem_group_type) {
-        if (free_fs_stem_group((FSStemGroup*)node->data) != 0) {
-            return 1;
-        }
+        free_fs_stem_group(node->data);
     } else if (node->node_type == hc_type) {
-        if (free_HC((HC*)node->data) != 0) {
-            return 1;
-        }
+        free_hc(node->data);
+    } else {
+        printf("Error: free_data_node called on non-DataNode");
+        exit(EXIT_FAILURE);
     }
+    free(node->data);
+    node->data = NULL;
     free(node);
-    return 0;
+    node = NULL;
 }
 
 
@@ -160,13 +155,23 @@ Stem* create_stem_from_HC(HC *initial_helix) {
 }
 
 // destroys a Stem, freeing allocated memory. Returns 0 if successful, non-zero otherwise
-int free_stem(Stem* stem) {
-    // TODO: fix to use free_hc
-    destroy_array_list(stem->helices, &free);
-    destroy_array_list(stem->components, &free);
+void free_stem(void* ptr) {
+    if(ptr == NULL) {
+        return;
+    }
+    Stem* stem = (Stem*) ptr;
+    free_array_list(stem->helices, &free_hc);
+    stem->helices = NULL;
+    free_array_list(stem->components, &free_data_node);
+    stem->components = NULL;
+    free(stem->id);
+    stem->id = NULL;
+    free(stem->hc_str);
+    stem->hc_str = NULL;
     free(stem->max_quad);
+    stem->max_quad = NULL;
     free(stem);
-    return 0;
+    stem = NULL;
 }
 
 FSStemGroup* create_fs_stem_group() {
@@ -183,15 +188,15 @@ FSStemGroup* create_fs_stem_group() {
     stem_group->max_quad = (char*) malloc(sizeof(*stem_group->max_quad) * STRING_BUFFER);
     if (stem_group->stems == NULL || stem_group->max_quad == NULL) {
         // TODO: use proper free func
-        destroy_array_list(stem_group->helices, &free);
+        free_array_list(stem_group->helices, &free);
         free(stem_group);
         return NULL;
     }
     stem_group->id = (char*) malloc(sizeof(*stem_group->id) * STRING_BUFFER);
     if (stem_group->id == NULL) {
         // TODO: use proper free funcs
-        destroy_array_list(stem_group->stems, &free);
-        destroy_array_list(stem_group->helices, &free);
+        free_array_list(stem_group->stems, &free);
+        free_array_list(stem_group->helices, &free);
         free(stem_group);
         return NULL;
     }
@@ -257,11 +262,19 @@ int min(int a, int b) {
     return (a <= b)? a : b;
 }
 
-// TODO: use proper free funcs
-int free_fs_stem_group(FSStemGroup *stem_group) {
-    destroy_array_list(stem_group->stems, &free);
-    destroy_array_list(stem_group->helices, &free);
+void free_fs_stem_group(void* ptr) {
+    if(ptr == NULL) {
+        return;
+    }
+    FSStemGroup* stem_group = (FSStemGroup*) ptr;
+    free_array_list(stem_group->stems, &free_stem);
+    stem_group->stems = NULL;
+    free_array_list(stem_group->helices, &free_hc);
+    stem_group->helices = NULL;
     free(stem_group->max_quad);
+    stem_group->max_quad = NULL;
+    free(stem_group->id);
+    stem_group->id = NULL;
     free(stem_group);
-    return 0;
+    stem_group = NULL;
 }

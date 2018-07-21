@@ -41,10 +41,18 @@ HC* create_HC(int id, char* max) {
     return hc;
 }
 
-int free_HC(HC* hc) {
+void free_hc(void *ptr) {
+    HC* hc = (HC*) ptr;
+    free(hc->id);
+    hc->id = NULL;
+    free(hc->avetrip);
+    hc->avetrip = NULL;
+    free(hc->maxtrip);
+    hc->maxtrip = NULL;
     free(hc->max_quad);
+    hc->max_quad = NULL;
     free(hc);
-    return 0;
+    hc = NULL;
 }
 
 

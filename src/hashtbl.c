@@ -49,7 +49,7 @@ static hash_size def_hashfunc(char *key)
 
 
 
-HASHTBL *hashtbl_create(hash_size size, hash_size (*hashfunc)(char *))
+HASHTBL *create_hashtbl(hash_size size, hash_size (*hashfunc)(char *))
 {
 	HASHTBL *hashtbl;
 
@@ -71,8 +71,12 @@ HASHTBL *hashtbl_create(hash_size size, hash_size (*hashfunc)(char *))
 }
 
 
-void hashtbl_destroy(HASHTBL *hashtbl)
+void free_hashtbl(void *ptr)
 {
+	if(ptr == NULL){
+		return;
+	}
+	HASHTBL* hashtbl = (HASHTBL*) ptr;
 	hash_size n;
 	struct hashnode_s *node, *oldnode;
 	KEY *next,*last;
@@ -91,7 +95,7 @@ void hashtbl_destroy(HASHTBL *hashtbl)
 	  }
 	}
 	free(hashtbl->nodes);
-	free(hashtbl);
+	free(ptr);
 }
 
 

@@ -51,15 +51,14 @@ typedef struct hashtbl {
 } HASHTBL;
 
 char *mystrdup(char *s);
-HASHTBL *hashtbl_create(hash_size size, hash_size (*hashfunc)(char *));
-void hashtbl_destroy(HASHTBL *hashtbl);
+HASHTBL *create_hashtbl(hash_size size, hash_size (*hashfunc)(char *));
+void free_hashtbl(void *ptr);
 int hashtbl_insert(HASHTBL *hashtbl, char *key, void *data);
 int hashtbl_remove(HASHTBL *hashtbl, char *key);
 void *hashtbl_get(HASHTBL *hashtbl, char *key);
 KEY* hashtbl_getkeys(HASHTBL *hashtbl);
 int hashtbl_numkeys(HASHTBL *hashtbl);
 int hashtbl_resize(HASHTBL *hashtbl, hash_size size);
-
 
 #endif
 

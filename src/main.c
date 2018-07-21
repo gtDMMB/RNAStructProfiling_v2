@@ -342,7 +342,7 @@ GTBOLTZMANN OPTIONS
         print_edges(fp,set);
         fputs("}",fp);
         fclose(fp);
-        hashtbl_destroy(deleteHash);
+        free_hashtbl(deleteHash);
     }
     free_Set(set);
     exit(EXIT_SUCCESS);

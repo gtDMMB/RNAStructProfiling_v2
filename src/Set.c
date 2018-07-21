@@ -51,7 +51,7 @@ Set* make_Set(char *name) {
     set->prof_size = 5;
     set->prof_num = 0;
     set->num_sprof = 0;
-    set->profiles = (Profile**) malloc(sizeof(Profile*)*ARRAYSIZE*10);
+    set->profiles = (Profile**) malloc(sizeof(Profile*)*BASE_PROF_NUM);
     set->proftree = (Profnode***) malloc(sizeof(Profnode**)*ARRAYSIZE*2);
     set->treeindex = (int*) malloc(sizeof(int)*ARRAYSIZE*2);
     set->treesize = 2;
@@ -63,11 +63,12 @@ Set* make_Set(char *name) {
 
     set->original_hc_stems = create_array_list();
     set->stems = create_array_list();
+    set->featured_stems = create_array_list();
 
     set->num_fstems = 0;
     set->stem_prof_num = 0;
     set->num_stem_sprof = 0;
-    set->stem_profiles = (Profile**) malloc(sizeof(Profile*) * ARRAYSIZE * 10);
+    set->stem_profiles = (Profile**) malloc(sizeof(Profile*) * BASE_PROF_NUM);
     return set;
 }
 
@@ -81,10 +82,11 @@ void free_Set(Set* set) {
     set->proftree = NULL;
     free(set->treeindex);
     set->treeindex = NULL;
-    destroy_array_list(set->stems, &free);
+    free_array_list(set->stems, &free);
+    free_array_list(set->featured_stems, &free);
     for (int i = 0; i < set->opt->NUMSTRUCTS; i++) {
-        destroy_array_list(set->structures[i], &free);
-        destroy_array_list(set->stem_structures[i], &free);
+        free_array_list(set->structures[i], &free);
+        free_array_list(set->stem_structures[i], &free);
     }
     free(set);
     set = NULL;
@@ -140,20 +142,20 @@ void process_structs(Set *set) {
     if (fp == NULL) {
         fprintf(stderr, "can't open %s\n",set->structfile);
     }
-    if (!(bp = hashtbl_create(HASHSIZE,NULL))) {
-        fprintf(stderr, "ERROR: hashtbl_create() for bp failed");
+    if (!(bp = create_hashtbl(HASHSIZE, NULL))) {
+        fprintf(stderr, "ERROR: create_hashtbl() for bp failed");
         exit(EXIT_FAILURE);
     }
-    if (!(avetrip = hashtbl_create(HASHSIZE,NULL))) {
-        fprintf(stderr, "ERROR: hashtbl_create() for avetrip failed");
+    if (!(avetrip = create_hashtbl(HASHSIZE, NULL))) {
+        fprintf(stderr, "ERROR: create_hashtbl() for avetrip failed");
         exit(EXIT_FAILURE);
     }
-    if (!(extra = hashtbl_create(HASHSIZE,NULL))) {
-        fprintf(stderr, "ERROR: hashtbl_create() for extra failed");
+    if (!(extra = create_hashtbl(HASHSIZE, NULL))) {
+        fprintf(stderr, "ERROR: create_hashtbl() for extra failed");
         exit(EXIT_FAILURE);
     }
-    if (!(halfbrac = hashtbl_create(HASHSIZE,NULL))) {
-        fprintf(stderr, "ERROR: hashtbl_create() for halfbrac failed");
+    if (!(halfbrac = create_hashtbl(HASHSIZE, NULL))) {
+        fprintf(stderr, "ERROR: create_hashtbl() for halfbrac failed");
         exit(EXIT_FAILURE);
     }
     profile = (int*) malloc(sizeof(int)*ARRAYSIZE);
@@ -242,8 +244,8 @@ void process_structs(Set *set) {
     }
     if (fclose(fp))
         fprintf(stderr, "File %s not closed successfully\n",set->structfile);
-    hashtbl_destroy(extra);
-    hashtbl_destroy(avetrip);
+    free_hashtbl(extra);
+    free_hashtbl(avetrip);
 }
 
 
@@ -255,7 +257,7 @@ void calc_joint(Set *set, int *prof, int num) {
   HASHTBL *hash;
 
   if (!set->joint[prof[num-1]-1])
-    set->joint[prof[num-1]-1] = hashtbl_create(HASHSIZE,NULL);
+    set->joint[prof[num-1]-1] = create_hashtbl(HASHSIZE,NULL);
   if (num < 2)
     return;
   for (k = 0; k < num-1; k++) {
@@ -302,20 +304,20 @@ void process_structs_sfold(Set *set) {
     if (fp == NULL) {
         fprintf(stderr, "can't open %s\n",set->structfile);
     }
-    if (!(bp = hashtbl_create(HASHSIZE,NULL))) {
-        fprintf(stderr, "ERROR: hashtbl_create() for bp failed");
+    if (!(bp = create_hashtbl(HASHSIZE, NULL))) {
+        fprintf(stderr, "ERROR: create_hashtbl() for bp failed");
         exit(EXIT_FAILURE);
     }
-    if (!(avetrip = hashtbl_create(HASHSIZE,NULL))) {
-        fprintf(stderr, "ERROR: hashtbl_create() for avetrip failed");
+    if (!(avetrip = create_hashtbl(HASHSIZE, NULL))) {
+        fprintf(stderr, "ERROR: create_hashtbl() for avetrip failed");
         exit(EXIT_FAILURE);
     }
-    if (!(extra = hashtbl_create(HASHSIZE,NULL))) {
-        fprintf(stderr, "ERROR: hashtbl_create() for extra failed");
+    if (!(extra = create_hashtbl(HASHSIZE, NULL))) {
+        fprintf(stderr, "ERROR: create_hashtbl() for extra failed");
         exit(EXIT_FAILURE);
     }
-    if (!(halfbrac = hashtbl_create(HASHSIZE,NULL))) {
-        fprintf(stderr, "ERROR: hashtbl_create() for halfbrac failed");
+    if (!(halfbrac = create_hashtbl(HASHSIZE, NULL))) {
+        fprintf(stderr, "ERROR: create_hashtbl() for halfbrac failed");
         exit(EXIT_FAILURE);
     }
     key = (char*) malloc(sizeof(char)*ARRAYSIZE);
@@ -385,8 +387,8 @@ void process_structs_sfold(Set *set) {
             if (set->opt->TOPDOWN) {
                 if (profile) {
                     process_profile(halfbrac,profile,numhelix,set);
-                    if (!(halfbrac = hashtbl_create(HASHSIZE,NULL))) {
-                        fprintf(stderr, "ERROR: hashtbl_create() for halfbrac failed");
+                    if (!(halfbrac = create_hashtbl(HASHSIZE, NULL))) {
+                        fprintf(stderr, "ERROR: create_hashtbl() for halfbrac failed");
                         exit(EXIT_FAILURE);
                     }
                 } else
@@ -412,8 +414,8 @@ void process_structs_sfold(Set *set) {
     }
     if (fclose(fp))
         fprintf(stderr, "File %s not closed successfully\n",set->structfile);
-    hashtbl_destroy(extra);
-    hashtbl_destroy(avetrip);
+    free_hashtbl(extra);
+    free_hashtbl(avetrip);
 }
 
 char* longest_possible(int id,int i,int j,int k,char *seq) {
@@ -488,8 +490,8 @@ void reorder_helices(Set *set) {
     HC **helices = set->helices;
 
     total = set->hc_num;
-    if (!(translate_hc = hashtbl_create(HASHSIZE,NULL))) {
-        fprintf(stderr, "ERROR: hashtbl_create() for translate_hc failed");
+    if (!(translate_hc = create_hashtbl(HASHSIZE, NULL))) {
+        fprintf(stderr, "ERROR: create_hashtbl() for translate_hc failed");
         exit(EXIT_FAILURE);
     }
 
@@ -695,13 +697,13 @@ void make_profiles(Set *set) {
     name = set->structfile;
     profile = (int*) malloc(sizeof(int)*ARRAYSIZE);
 
-    if (!(halfbrac = hashtbl_create(HASHSIZE,NULL))) {
-        fprintf(stderr, "ERROR: hashtbl_create() for halfbrac failed");
+    if (!(halfbrac = create_hashtbl(HASHSIZE, NULL))) {
+        fprintf(stderr, "ERROR: create_hashtbl() for halfbrac failed");
         exit(EXIT_FAILURE);
     }
     if (set->opt->REP_STRUCT) {
-        if (!(consensus = hashtbl_create(HASHSIZE,NULL))) {
-            fprintf(stderr, "ERROR: hashtbl_create() for consensus failed");
+        if (!(consensus = create_hashtbl(HASHSIZE, NULL))) {
+            fprintf(stderr, "ERROR: create_hashtbl() for consensus failed");
             exit(EXIT_FAILURE);
         }
         trips = (char*) malloc(sizeof(char)*tripsize*ARRAYSIZE);
@@ -772,8 +774,8 @@ void make_profiles(Set *set) {
             make_rep_struct(consensus,prof,trips);
         }
 
-        if (!(halfbrac = hashtbl_create(HASHSIZE,NULL))) {
-            fprintf(stderr, "ERROR: hashtbl_create() for halfbrac failed");
+        if (!(halfbrac = create_hashtbl(HASHSIZE, NULL))) {
+            fprintf(stderr, "ERROR: create_hashtbl() for halfbrac failed");
             exit(EXIT_FAILURE);
         }
         last = 0;
@@ -826,13 +828,13 @@ void make_profiles_sfold(Set *set) {
     name = set->structfile;
     profile = (int*) malloc(sizeof(int)*ARRAYSIZE);
 
-    if (!(halfbrac = hashtbl_create(HASHSIZE,NULL))) {
-        fprintf(stderr, "ERROR: hashtbl_create() for halfbrac failed");
+    if (!(halfbrac = create_hashtbl(HASHSIZE, NULL))) {
+        fprintf(stderr, "ERROR: create_hashtbl() for halfbrac failed");
         exit(EXIT_FAILURE);
     }
     if (set->opt->REP_STRUCT) {
-        if (!(consensus = hashtbl_create(HASHSIZE,NULL))) {
-            fprintf(stderr, "ERROR: hashtbl_create() for consensus failed");
+        if (!(consensus = create_hashtbl(HASHSIZE, NULL))) {
+            fprintf(stderr, "ERROR: create_hashtbl() for consensus failed");
             exit(EXIT_FAILURE);
         }
         trips = (char*) malloc(sizeof(char)*tripsize*ARRAYSIZE);
@@ -862,8 +864,8 @@ void make_profiles_sfold(Set *set) {
                 make_rep_struct(consensus,prof,trips);
             }
 
-            if (!(halfbrac = hashtbl_create(HASHSIZE,NULL))) {
-                fprintf(stderr, "ERROR: hashtbl_create() for halfbrac failed");
+            if (!(halfbrac = create_hashtbl(HASHSIZE, NULL))) {
+                fprintf(stderr, "ERROR: create_hashtbl() for halfbrac failed");
                 exit(EXIT_FAILURE);
             }
             last = 0;
@@ -954,7 +956,7 @@ char* process_profile(HASHTBL *halfbrac,int *profile,int numhelix,Set *set) {
         set->prof_num++;
         make_bracket_rep(halfbrac,profiles[i]);
     }
-    hashtbl_destroy(halfbrac);
+    free_hashtbl(halfbrac);
     return dup;
 }
 
@@ -1011,8 +1013,8 @@ void make_rep_struct(HASHTBL *consensus,char *profile, char* trips) {
 
     ij = (HASHTBL*) hashtbl_get(consensus,profile);
     if (!ij) {
-        if (!(ij = hashtbl_create(HASHSIZE,NULL))) {
-            fprintf(stderr, "ERROR: hashtbl_create() for ij failed");
+        if (!(ij = create_hashtbl(HASHSIZE, NULL))) {
+            fprintf(stderr, "ERROR: create_hashtbl() for ij failed");
             exit(EXIT_FAILURE);
         }
         hashtbl_insert(consensus,profile,ij);
@@ -1176,7 +1178,7 @@ void select_profiles(Set *set) {
             set->num_sprof = i;
             break;
         }
-        prof->selected = 1;
+        prof->selected = true;
         coverage += prof->freq;
         if (coverage < target)
             cov = i+1;
@@ -1206,8 +1208,8 @@ void process_one_input(Set *set) {
     Profile *natprof;
     node *inode;
 
-    if (!(halfbrac = hashtbl_create(HASHSIZE,NULL))) {
-        fprintf(stderr, "ERROR: hashtbl_create() for halfbrac failed");
+    if (!(halfbrac = create_hashtbl(HASHSIZE, NULL))) {
+        fprintf(stderr, "ERROR: create_hashtbl() for halfbrac failed");
         exit(EXIT_FAILURE);
     }
     prof = (int*) malloc(sizeof(int)*ARRAYSIZE*size);
@@ -1282,7 +1284,7 @@ void process_one_input(Set *set) {
     //printf("now native %s, full profile %s\n",native,fullprofile);
     natprof = create_profile(native);
     make_bracket_rep(halfbrac,natprof);
-    hashtbl_destroy(halfbrac);
+    free_hashtbl(halfbrac);
 
     set->inputnode = createNode(native);
     set->inputnode->bracket = natprof->bracket;
@@ -1342,8 +1344,8 @@ void find_consensus(Set *set) {
     KEY *node,*bpnode;
     HASHTBL *ij,*final;
 
-    if (!(final = hashtbl_create(HASHSIZE,NULL))) {
-        fprintf(stderr, "ERROR: hashtbl_create() for final failed");
+    if (!(final = create_hashtbl(HASHSIZE, NULL))) {
+        fprintf(stderr, "ERROR: create_hashtbl() for final failed");
         exit(EXIT_FAILURE);
     }
 
@@ -1363,7 +1365,7 @@ void find_consensus(Set *set) {
                     hashtbl_remove(ij,bpnode->data);
             }
         } else {
-            hashtbl_destroy(ij);
+            free_hashtbl(ij);
             //insert dummy pointer so remove won't seg fault
             hashtbl_insert(consensus,node->data, malloc(sizeof(char)));
             hashtbl_remove(consensus,node->data);
@@ -1384,8 +1386,8 @@ int print_consensus(Set *set) {
     //foreach profile
     //for (node = hashtbl_getkeys(consensus); node; node = node->next) {
     for (l = 0; l < set->num_sprof; l++) {
-        if (!(temp = hashtbl_create(HASHSIZE,NULL))) {
-            fprintf(stderr, "ERROR: hashtbl_create() for temp failed");
+        if (!(temp = create_hashtbl(HASHSIZE, NULL))) {
+            fprintf(stderr, "ERROR: create_hashtbl() for temp failed");
             exit(EXIT_FAILURE);
         }
         sprintf(outfile,"Structure_%d.ct",++k);
@@ -1413,10 +1415,10 @@ int print_consensus(Set *set) {
             else
                 fprintf(fp,"\t%d %c\t%d   %d   0   %d\n",m+1,set->seq[m],m,m+2,m+1);
         }
-        hashtbl_destroy(temp);
+        free_hashtbl(temp);
         fclose(fp);
     }
-    hashtbl_destroy(consensus);
+    free_hashtbl(consensus);
     return 0;
 }
 
@@ -1578,8 +1580,7 @@ bool validate_stems(Stem* stem1, Stem* stem2) {
     return error <= STEM_VALID_PERCENT_ERROR;
 }
 
-
-// TODO: determine if this can be done within the loop in combine_stems
+// TODO: cleanup this function. This may involve moving some actions into add_to_fs_stem_group
 /**
  * Find which stems are functionally similar and can be interchanged
  *
@@ -1617,6 +1618,7 @@ void find_func_similar_stems(Set* set) {
                     remove_from_array_list(set->stems, j, data_out);
                     j--;
                 } else {
+                    // TODO: cleanup this section, examine better method
                     fs_stem_group_node = create_fs_stem_group_node();
                     add_to_fs_stem_group((FSStemGroup*)fs_stem_group_node->data, stem1);
                     add_to_fs_stem_group((FSStemGroup*)fs_stem_group_node->data, stem2);
@@ -2137,6 +2139,7 @@ void find_featured_stems(Set* set) {
                     printf("Featured stem %s with freq %d\n", stem->id, stem->freq);
                 }
             }
+            add_to_array_list(set->featured_stems, i, stem->id);
             stem->is_featured = 1;
             stem->binary = 1<<i;
             // TODO: find equivalent of helsum for stems and implement coverage tracking for this function
@@ -2203,6 +2206,21 @@ void make_stem_profiles(Set* set) {
     free(stem_structure_str);
     stem_structure_str = NULL;
     fclose(stem_struct_file);
+}
+
+/**
+ * Generates the string representation of a profile (featured stems in a structure) from a structure
+ *
+ * @param set the set to use for featured stems
+ * @param structure the structure to make a profile from
+ * @return the string representation of the profile
+ */
+char* stem_profile_from_stem_structure(Set* set, array_list_t* structure)   {
+    char* prof = (char*) malloc(sizeof(char) * MAX_STRUCT_FILE_LINE_LEN);
+    prof[0] = '\0';
+    for (int i = 0; i < structure->size; i++) {
+
+    }
 }
 
 /**
@@ -2303,7 +2321,8 @@ char* strcut(char** str, int index, int n) {
  }
 
 /**
-* Find the end of a component in a structure
+* Find the end of a component in a structure// TODO: determine if this can be done within the loop in combine_stems
+
 *
 * @param component the component to find
 * @param structure the structure to search in

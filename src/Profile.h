@@ -2,11 +2,12 @@
 #define PROFILE_H
 
 #include <stdio.h>
+#include <stdbool.h>
 
 typedef struct profile {
   int freq;
   int genfreq;
-  int selected;
+  bool selected;
   char *profile;
   char *bracket;
   //char *repstruct;
@@ -14,5 +15,6 @@ typedef struct profile {
 } Profile;
 
 Profile* create_profile(char *profile);
+void free_profile(void* ptr);
 
 #endif

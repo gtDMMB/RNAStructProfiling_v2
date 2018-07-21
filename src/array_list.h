@@ -36,7 +36,7 @@ array_list_t* create_array_list(void);
 array_list_t* shallow_copy_array_list(array_list_t*);
 
 /* Destroying */
-int destroy_array_list(array_list_t* arr, list_op free_func);
+void free_array_list(array_list_t *arr, list_op free_func);
 
 /* Adding */
 int add_to_array_list(array_list_t* arr, int index, void* data);
