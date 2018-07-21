@@ -1625,7 +1625,7 @@ void find_func_similar_stems(Set* set) {
                     fs_stem_group_node->freq = *freq;
                     remove_from_array_list(set->stems, i, data_out);
                     j--;
-                    remove_from_array_list(set->stems, j-1, data_out);
+                    remove_from_array_list(set->stems, j, data_out);
 
                     // Create and empty Stem DataNode to hold the FSStemGroup
                     DataNode* node = create_data_node(stem_type, create_stem());
