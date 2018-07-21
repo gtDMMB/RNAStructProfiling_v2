@@ -1593,8 +1593,8 @@ void find_func_similar_stems(Set* set) {
     void** data_out = (void**) malloc(sizeof(void**));
 
     for (int i = 0; i < set->stems->size; i++) {
-        Stem* stem1 = stem_list[i];
         for (int j = i + 1; j < set->stems->size; j++) {
+            Stem* stem1 = stem_list[i];
             Stem* stem2 = stem_list[j];
             if (check_func_similar_stems(set, stem1, stem2, freq)) {
                 if (stem1->components->size == 1
@@ -1625,7 +1625,7 @@ void find_func_similar_stems(Set* set) {
                     fs_stem_group_node->freq = *freq;
                     remove_from_array_list(set->stems, i, data_out);
                     j--;
-                    remove_from_array_list(set->stems, j, data_out);
+                    remove_from_array_list(set->stems, j-1, data_out);
 
                     // Create and empty Stem DataNode to hold the FSStemGroup
                     DataNode* node = create_data_node(stem_type, create_stem());
