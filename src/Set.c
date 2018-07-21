@@ -2139,7 +2139,9 @@ void find_featured_stems(Set* set) {
                     printf("Featured stem %s with freq %d\n", stem->id, stem->freq);
                 }
             }
-            add_to_array_list(set->featured_stems, i, stem->id);
+            char* stem_id_str = (char*) malloc(sizeof(char) * (strlen(stem->id) + 1));
+            strcpy(stem_id_str, stem->id);
+            add_to_array_list(set->featured_stems, i, stem_id_str);
             stem->is_featured = 1;
             stem->binary = 1<<i;
             // TODO: find equivalent of helsum for stems and implement coverage tracking for this function
@@ -2200,12 +2202,38 @@ void make_stem_profiles(Set* set) {
         }
         join(stem_structure_str, (char**) stem_structure->entries, " ", stem_structure->size);
         fprintf(stem_struct_file, "Structure %d: %s\n", i+1, stem_structure_str);
+        char* stem_prof_str = stem_profile_from_stem_structure(set, set->stem_structures[i]);
+        fprintf(stem_struct_file, "\t-> %s\n", stem_prof_str);
+        if (!stem_prof_exists(set, stem_prof_str)) {
+            Profile* stem_prof = create_profile(stem_prof_str);
+            set->stem_profiles[set->stem_prof_num] = stem_prof;
+            set->stem_prof_num++;
+        }
     }
     free(data_out);
     data_out = NULL;
     free(stem_structure_str);
     stem_structure_str = NULL;
     fclose(stem_struct_file);
+}
+
+/**
+ * Determine if a stem profile has already been added to set->stem_profiles. If found, the freq of the profile is
+ * incremented
+ *
+ * @param set the set to search in
+ * @param stem_prof_str the string representation of the profile to search for
+ * @return true if found, false otherwise
+ */
+bool stem_prof_exists(Set *set, char *stem_prof_str) {
+    for (int i = 0; i < set->stem_prof_num; i++) {
+        Profile* stem_prof = set->stem_profiles[i];
+        if (strcmp(stem_prof->profile, stem_prof_str) == 0) {
+            stem_prof->freq++;
+            return true;
+        }
+    }
+    return false;
 }
 
 /**
@@ -2216,11 +2244,22 @@ void make_stem_profiles(Set* set) {
  * @return the string representation of the profile
  */
 char* stem_profile_from_stem_structure(Set* set, array_list_t* structure)   {
-    char* prof = (char*) malloc(sizeof(char) * MAX_STRUCT_FILE_LINE_LEN);
-    prof[0] = '\0';
-    for (int i = 0; i < structure->size; i++) {
-
+    char* stem_prof_str = (char*) malloc(sizeof(char) * MAX_STRUCT_FILE_LINE_LEN);
+    stem_prof_str[0] = '\0';
+    int count = 0;
+    for (int i = 0; i < set->featured_stems->size; i++) {
+        char* featured_stem_id = (char*) set->featured_stems->entries[i];
+        for (int j = 0; j < structure->size; j++) {
+            char* stem_id = (char*) structure->entries[j];
+            if (strcmp(stem_id, featured_stem_id) == 0) {
+                strcat(stem_prof_str, stem_id);
+                strcat(stem_prof_str, " ");
+                count++;
+                break;
+            }
+        }
     }
+    return stem_prof_str;
 }
 
 /**

@@ -157,6 +157,7 @@ double set_num_fstems(Set *set);
 void find_featured_stems(Set* set);
 
 void make_stem_profiles(Set* set);
+bool stem_prof_exists(Set *set, char *stem_prof_str);
 char* stem_profile_from_stem_structure(Set* set, array_list_t* structure);
 char* strinsrt(char* sentence, char* word, int index);
 char* strcut(char** str, int index, int n);
