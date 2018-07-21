@@ -199,7 +199,7 @@ Do stem 7 and stem 8 occur infrequently enough to be functionally similar: No
 Do stem 7 and stem 16 occur infrequently enough to be functionally similar: Yes
 Do stem 9 and stem 12 occur infrequently enough to be functionally similar: Yes
 Joining stem 1 and functionally similar group 6
-Threshold to find featured stems: 16.1%
+Threshold to find featured stems: 12.2%
 Number of structures processed: 1000
 Featured stem A with freq 961
 Featured helix 2 with freq 919
@@ -208,7 +208,7 @@ Featured helix 4 with freq 891
 Featured stem B with freq 765
 Featured stem C with freq 323
 Featured helix 8 with freq 245
-Featured helix 10 with freq 161
+Featured helix 12 with freq 122
 Total number of featured stems: 8
 Total number of vertices: 11
 node: '1 2 3 4 5 6 7 '
