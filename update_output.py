@@ -65,6 +65,8 @@ output_dir = top_dir + '/output'
 if not os.path.isdir(output_dir):
    print('/output folder not found')
    exit(1)
+os.chdir(src_dir)
+subprocess.call('make clean>/dev/null;make>/dev/null', shell=True)
 os.chdir(output_dir)
 out_folder_names = sorted(next(os.walk('.'))[1])
 output_prompt = '1. All\n' + '\n'.join([str(x+2) + '. ' + (out_folder_names[x]).capitalize() for x in range(len(out_folder_names))]) + '\nSelect an output folder to update: '  
