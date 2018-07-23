@@ -97,6 +97,16 @@ int main(int argc, char *argv[]) {
                 i++;
             }
         }
+        else if (!strcmp(argv[i],"-ps")) {
+            if ((i + 1 <= argc - 2) && sscanf(argv[i+1],"%lf",&(opt->STEM_PROF_FREQ))) {
+                opt->STEM_PROF_FREQ = atof(argv[i+1]);
+                if (opt->STEM_PROF_FREQ < 0 || opt->STEM_PROF_FREQ > 100) {
+                    fprintf(stderr,"Error: invalid input %lf for frequency threshold\n",opt->STEM_PROF_FREQ);
+                    opt->STEM_PROF_FREQ = -1;
+                }
+                i++;
+            }
+        }
         else if (!strcmp(argv[i],"-c")) {
             if ((i + 1 <= argc - 2) && sscanf(argv[i+1],"%lf",&(opt->COVERAGE))) {
                 opt->COVERAGE = atof(argv[i+1]);
@@ -324,7 +334,24 @@ GTBOLTZMANN OPTIONS
     find_featured_stems(set);
     printf("Total number of featured stems: %d\n",set->num_fstems);
     make_stem_profiles(set);
+    printf("Total number of stem profiles: %d\n",set->stem_prof_num);
+    print_stem_profiles(set);
 
+
+    if (set->opt->NUM_S_STEM_PROF)
+        set->opt->STEM_PROF_FREQ = set_num_s_stem_prof(set);
+    else if (set->opt->STEM_PROF_FREQ == -1) {
+        //set->opt->PROF_FREQ = set_p_threshold(set,P_START);
+        set->opt->STEM_PROF_FREQ = set_stem_p_threshold_entropy(set);
+    }
+    if (set->opt->VERBOSE) {
+        if (set->opt->STEM_PROF_FREQ == -2) {
+            printf("No threshold set; every stem profile has frequency of 1\n");
+        } else
+            printf("setting p to %.1f\n",set->opt->STEM_PROF_FREQ);
+    }
+    select_stem_profiles(set);
+    printf("Total number of selected stem profiles: %d\n",set->num_s_stem_prof);
 
     if (set->opt->GRAPH) {
         fp = fopen(set->opt->OUTPUT,"w");

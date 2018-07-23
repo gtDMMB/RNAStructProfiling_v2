@@ -67,7 +67,7 @@ Set* make_Set(char *name) {
 
     set->num_fstems = 0;
     set->stem_prof_num = 0;
-    set->num_stem_sprof = 0;
+    set->num_s_stem_prof = 0;
     set->stem_profiles = (Profile**) malloc(sizeof(Profile*) * BASE_PROF_NUM);
     return set;
 }
@@ -2260,6 +2260,148 @@ char* stem_profile_from_stem_structure(Set* set, array_list_t* structure)   {
         }
     }
     return stem_prof_str;
+}
+
+void print_stem_profiles(Set *set) {
+    int i;
+    Profile **stem_profiles = set->stem_profiles;
+
+    find_stem_general_freq(set);
+    qsort(stem_profiles,int2size_t(set->stem_prof_num),sizeof(Profile*),profsort);
+    for (i = 0; i < set->stem_prof_num; i++)
+        if (set->opt->VERBOSE)
+            printf("Stem profile %s with freq %d (%d)\n",stem_profiles[i]->profile,stem_profiles[i]->freq,stem_profiles[i]->genfreq);
+}
+
+void find_stem_general_freq(Set *set) {
+    int i,j,val;
+
+    //  genfreq = (int*)malloc(sizeof(int)*set->prof_num);
+    for (i = 0; i < set->stem_prof_num-1; i++) {
+        set->stem_profiles[i]->genfreq += set->stem_profiles[i]->freq;
+        for (j = i+1; j < set->stem_prof_num; j++) {
+            val = stem_subset(set,set->stem_profiles[i]->profile,set->stem_profiles[j]->profile);
+            if (val == 1)
+                set->stem_profiles[i]->genfreq += set->stem_profiles[j]->freq;
+            else if (val == 2)
+                set->stem_profiles[j]->genfreq += set->stem_profiles[i]->freq;
+        }
+    }
+}
+
+/*tests whether one profile is a subset of profile one
+returns 1 if first profile is a subset, 2 if second is ,0 if none are*/
+int stem_subset(Set *set,char *one, char *two) {
+    unsigned long rep1,rep2;
+
+    rep1 = stem_binary_rep(set,one);
+    rep2 = stem_binary_rep(set,two);
+    if ((rep1 & rep2) == rep1)
+        return 1;
+    else if ((rep1 & rep2) == rep2)
+        return 2;
+
+    return 0;
+}
+
+unsigned long stem_binary_rep(Set *set,char *stem_profile) {
+    int i;
+    unsigned long sum = 0;
+    char* copy = mystrdup(stem_profile);
+    char* stem;
+
+    for (stem = strtok(copy," "); stem; stem = strtok(NULL," ")) {
+        for (i = 0; i < set->num_fstems; i++)
+            if (!strcmp(((Stem*)set->stems->entries[i])->id,stem))
+                break;
+        sum += ((Stem*)set->stems->entries[i])->binary;
+    }
+    free(copy);
+    copy = NULL;
+    return sum;
+}
+
+double set_num_s_stem_prof(Set *set) {
+    int marg;
+
+    if (set->opt->NUM_S_STEM_PROF > set->stem_prof_num) {
+        printf("Number of requested s stem prof %d greater than total number of stem profiles %d\n",set->opt->NUM_S_STEM_PROF, set->stem_prof_num);
+        set->opt->NUM_S_STEM_PROF = set->stem_prof_num;
+    }
+    set->num_s_stem_prof = set->opt->NUM_S_STEM_PROF;
+    marg = set->stem_profiles[set->opt->NUM_S_STEM_PROF-1]->freq;
+    return (100*(double) marg/(double) set->opt->NUMSTRUCTS);
+}
+
+/*If all profiles have frequency of 1, we default to displaying first 10
+ */
+double set_stem_p_threshold_entropy(Set *set) {
+    int i=0;
+    double ent =0,frac,last=0,norm,ave;
+    Profile **list = set->stem_profiles;
+
+    norm = (double)list[0]->freq;
+    //  find_general_freq(set);
+    if (norm == 1) {
+        set->num_s_stem_prof = 10;
+        return -2;
+    }
+    for (i=0; i < set->stem_prof_num; i++) {
+        if (list[i]->freq == 1) {
+            set->num_s_stem_prof = i;
+            return (100*(double) list[i-1]->freq/(double) set->opt->NUMSTRUCTS);
+        }
+        frac = (double)list[i]->freq/norm;
+        ent -= frac*log(frac);
+        if (frac != 1)
+            ent -= (1-frac)*log(1-frac);
+        ave = ent/(double)(i+1);
+        if ((ave > last) || (fabs(ave-last) < FLT_EPSILON*2)) {
+            last = ave;
+        }
+        else {
+            set->num_s_stem_prof = i;
+            return (100*(double) list[i-1]->freq/(double) set->opt->NUMSTRUCTS);
+        }
+    }
+    set->num_s_stem_prof = i;
+    return (100*(double) list[i-1]->freq/(double) set->opt->NUMSTRUCTS);
+}
+
+void select_stem_profiles(Set* set) {
+    int i,coverage=0,cov=0,target;
+    //double percent;
+    Profile *stem_prof;
+
+    if (set->num_s_stem_prof == 0)
+        set->num_s_stem_prof = set->stem_prof_num;
+    target = set->opt->COVERAGE*set->opt->NUMSTRUCTS;
+    for (i = 0; i < set->num_s_stem_prof; i++) {
+        stem_prof = set->stem_profiles[i];
+        //percent = ((double) stem_prof->freq)*100.0 / ((double)set->opt->NUMSTRUCTS);
+        //printf("%s has percent %.1f\n",node->data,percent);
+        if (((double)stem_prof->freq*100.0/((double)set->opt->NUMSTRUCTS)) < set->opt->STEM_PROF_FREQ) {
+            set->num_s_stem_prof = i;
+            break;
+        }
+        stem_prof->selected = true;
+        coverage += stem_prof->freq;
+        if (coverage < target)
+            cov = i+1;
+        if (set->opt->VERBOSE)
+            printf("Selected stem profile %swith freq %d (%d)\n",stem_prof->profile,stem_prof->freq,stem_prof->genfreq);
+    }
+    printf("Coverage by selected stem profiles: %.3f\n",(double)coverage/(double)set->opt->NUMSTRUCTS);
+    if (coverage < target) {
+        while (coverage < target) {
+            coverage += set->stem_profiles[i++]->freq;
+            if (i >= set->stem_prof_num)
+                fprintf(stderr,"in select_stem_profiles() exceeding number of stem profiles\n");
+        }
+        cov = i;
+    }
+    printf("Number of stem profiles needed to get %.2f coverage: %d\n",set->opt->COVERAGE, cov+1);
+    //printf("Number of structures represented by top %d stem profiles: %d/%d\n",stop,cov15,set->opt->NUMSTRUCTS);
 }
 
 /**

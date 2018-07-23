@@ -65,7 +65,7 @@ typedef struct {
     array_list_t* featured_stems;
 
     int num_fstems;
-    int num_stem_sprof;
+    int num_s_stem_prof;
     int stem_prof_num;
     Profile** stem_profiles;
     array_list_t** structures;
@@ -159,6 +159,15 @@ void find_featured_stems(Set* set);
 void make_stem_profiles(Set* set);
 bool stem_prof_exists(Set *set, char *stem_prof_str);
 char* stem_profile_from_stem_structure(Set* set, array_list_t* structure);
+void print_stem_profiles(Set* set);
+void find_stem_general_freq(Set* set);
+int stem_subset(Set *set,char *one, char *two);
+unsigned long stem_binary_rep(Set *set,char *stem_profile);
+double set_num_s_stem_prof(Set* set);
+double set_stem_p_threshold_entropy(Set* set);
+void select_stem_profiles(Set* set);
+
+
 char* strinsrt(char* sentence, char* word, int index);
 char* strcut(char** str, int index, int n);
 int component_start_i(DataNode *component, array_list_t *structure);

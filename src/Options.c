@@ -25,6 +25,7 @@ Options* make_options() {
   opt->NUM_FSTEMS = 0;
   opt->NUM_S_STEM_PROF = 0;
   opt->STEM_FREQ = -1;
+  opt->STEM_PROF_FREQ = -1;
   return opt;
 }
 
@@ -35,6 +36,7 @@ void print_options() {
   puts("-h DBL\t\tSet frequency threshold for hc features(in percentage, e.g. 10.5 for 10.5% threshold)");
   puts("-hs DBL\t\tSet frequency threshold for stem features(in percentage, e.g. 10.5 for 10.5% threshold)");
   puts("-p DBL\t\tSet frequency threshold for selected profiles (in percentage, e.g. 10.5 for 10.5% threshold)");
+  puts("-ps DBL\t\tSet frequency threshold for selected stem profiles (in percentage, e.g. 10.5 for 10.5% threshold)");
   puts("-c DBL\t\tSet minimum coverage requirement for featured helix classes and selected profiles (in percentage)");
   puts("-f INT\t\tSet number of featured helix classes");
   puts("-fs INT\t\tSet number of featured stems");

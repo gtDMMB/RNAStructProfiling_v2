@@ -66,6 +66,7 @@ typedef struct options {
     int NUM_FSTEMS;
     int NUM_S_STEM_PROF;
     double STEM_FREQ;
+    double STEM_PROF_FREQ;
 } Options;
 
 Options* make_options();
