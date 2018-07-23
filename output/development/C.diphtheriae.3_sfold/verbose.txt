@@ -212,6 +212,40 @@ Featured helix 6 with freq 373
 Featured stem A with freq 361
 Featured helix 7 with freq 346
 Total number of featured stems: 8
+Total number of stem profiles: 24
+Stem profile 1 2 3  with freq 411 (509)
+Stem profile 1 2 4 5 6 A 7  with freq 180 (180)
+Stem profile 1 2 3 6  with freq 65 (70)
+Stem profile 1 2 4 5 7  with freq 64 (336)
+Stem profile 1 2 4 5 6 A  with freq 59 (239)
+Stem profile 1 2 4 5 A 7  with freq 51 (231)
+Stem profile 1 2 4 5 6 7  with freq 41 (221)
+Stem profile 1 2 4 5  with freq 35 (457)
+Stem profile 1 2 3 A  with freq 28 (33)
+Stem profile 1 2 4 5 A  with freq 18 (308)
+Stem profile 1 2 4 5 6  with freq 9 (289)
+Stem profile 1 2 4 A  with freq 9 (321)
+Stem profile 1 2 4 6  with freq 5 (298)
+Stem profile 1 2 3 6 A  with freq 5 (5)
+Stem profile 1 2 5 6 A 7  with freq 4 (184)
+Stem profile 1 2 4 6 A  with freq 4 (243)
+Stem profile 1 2 5 A 7  with freq 3 (238)
+Stem profile 1 3  with freq 2 (511)
+Stem profile 1 2  with freq 2 (997)
+Stem profile 1 2 5 7  with freq 1 (345)
+Stem profile 1 2 4  with freq 1 (477)
+Stem profile 1 4 5  with freq 1 (458)
+Stem profile 1 2 5 6 7  with freq 1 (226)
+Stem profile 1 2 4 7  with freq 1 (336)
+setting p to 5.9
+Selected stem profile 1 2 3 with freq 411 (509)
+Selected stem profile 1 2 4 5 6 A 7 with freq 180 (180)
+Selected stem profile 1 2 3 6 with freq 65 (70)
+Selected stem profile 1 2 4 5 7 with freq 64 (336)
+Selected stem profile 1 2 4 5 6 A with freq 59 (239)
+Coverage by selected stem profiles: 0.779
+Number of stem profiles needed to get 0.50 coverage: 2
+Total number of selected stem profiles: 5
 Total number of vertices: 7
 node: '1 2 3 '
 node: '1 2 4 5 6 7 8 '

@@ -210,6 +210,50 @@ Featured stem C with freq 323
 Featured helix 8 with freq 245
 Featured helix 10 with freq 161
 Total number of featured stems: 8
+Total number of stem profiles: 34
+Stem profile A 2 3 4 B C  with freq 287 (288)
+Stem profile A 2 3 4 B 10  with freq 156 (156)
+Stem profile A 2 3 4 B 8  with freq 128 (129)
+Stem profile A 2 3 4 B  with freq 114 (686)
+Stem profile A 2 3 4 8  with freq 103 (234)
+Stem profile A 2  with freq 63 (881)
+Stem profile A 3 4 B  with freq 54 (741)
+Stem profile A  with freq 20 (961)
+Stem profile 2 3 C  with freq 16 (316)
+Stem profile A 2 3 4  with freq 7 (804)
+Stem profile A 2 3 4 C  with freq 6 (295)
+Stem profile 2 3 4 B 8  with freq 5 (134)
+Stem profile 2 3  with freq 5 (842)
+Stem profile 2 3 4 B C  with freq 5 (293)
+Stem profile A 2 4 B C  with freq 4 (292)
+Stem profile 2 3 4 B  with freq 3 (701)
+Stem profile 2 3 4 B 10  with freq 2 (158)
+Stem profile A 2 4  with freq 2 (815)
+Stem profile A 3 4  with freq 2 (863)
+Stem profile A 2 4 B 8  with freq 2 (131)
+Stem profile A 2 C  with freq 2 (301)
+Stem profile A 3 4 8  with freq 2 (236)
+Stem profile 2 3 4 8  with freq 1 (240)
+Stem profile A 2 3 4 8 10  with freq 1 (1)
+Stem profile A 2 3 4 B C 8  with freq 1 (1)
+Stem profile 3 4 B  with freq 1 (757)
+Stem profile A 2 4 8  with freq 1 (237)
+Stem profile A 2 4 B 10  with freq 1 (157)
+Stem profile A 2 4 B  with freq 1 (694)
+Stem profile A 3 4 B 10  with freq 1 (157)
+Stem profile 2 C  with freq 1 (323)
+Stem profile A 3  with freq 1 (865)
+Stem profile A 2 3 4 C 8  with freq 1 (2)
+Stem profile A 2 3  with freq 1 (804)
+setting p to 10.3
+Selected stem profile A 2 3 4 B C with freq 287 (288)
+Selected stem profile A 2 3 4 B 10 with freq 156 (156)
+Selected stem profile A 2 3 4 B 8 with freq 128 (129)
+Selected stem profile A 2 3 4 B with freq 114 (686)
+Selected stem profile A 2 3 4 8 with freq 103 (234)
+Coverage by selected stem profiles: 0.788
+Number of stem profiles needed to get 0.50 coverage: 3
+Total number of selected stem profiles: 5
 Total number of vertices: 11
 node: '1 2 3 4 5 6 7 '
 node: '1 2 3 4 5 6 7 9 '
