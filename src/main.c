@@ -76,33 +76,12 @@ int main(int argc, char *argv[]) {
                 i++;
             }
         }
-
-        else if (!strcmp(argv[i],"-hs")) {
-            if ((i + 1 <= argc - 2) && sscanf(argv[i+1],"%lf",&(opt->STEM_FREQ))) {
-                opt->STEM_FREQ = atof(argv[i+1]);
-                if (opt->STEM_FREQ < 0 || opt->STEM_FREQ > 100) {
-                    fprintf(stderr,"Error: invalid input %f for hc frequency threshold\n",opt->STEM_FREQ);
-                    opt->STEM_FREQ = -1;
-                }
-                i++;
-            }
-        }
         else if (!strcmp(argv[i],"-p")) {
             if ((i + 1 <= argc - 2) && sscanf(argv[i+1],"%lf",&(opt->PROF_FREQ))) {
                 opt->PROF_FREQ = atof(argv[i+1]);
                 if (opt->PROF_FREQ < 0 || opt->PROF_FREQ > 100) {
                     fprintf(stderr,"Error: invalid input %lf for frequency threshold\n",opt->PROF_FREQ);
                     opt->PROF_FREQ = -1;
-                }
-                i++;
-            }
-        }
-        else if (!strcmp(argv[i],"-ps")) {
-            if ((i + 1 <= argc - 2) && sscanf(argv[i+1],"%lf",&(opt->STEM_PROF_FREQ))) {
-                opt->STEM_PROF_FREQ = atof(argv[i+1]);
-                if (opt->STEM_PROF_FREQ < 0 || opt->STEM_PROF_FREQ > 100) {
-                    fprintf(stderr,"Error: invalid input %lf for frequency threshold\n",opt->STEM_PROF_FREQ);
-                    opt->STEM_PROF_FREQ = -1;
                 }
                 i++;
             }
@@ -119,21 +98,9 @@ int main(int argc, char *argv[]) {
                 i++;
             }
         }
-        else if (!strcmp(argv[i],"-fs")) {
-            if ((i + 1 <= argc - 2) && sscanf(argv[i+1],"%d",&(opt->NUM_FSTEMS))) {
-                opt->NUM_FSTEMS = atoi(argv[i+1]);
-                i++;
-            }
-        }
         else if (!strcmp(argv[i],"-s")) {
             if ((i + 1 <= argc - 2) && sscanf(argv[i+1],"%d",&(opt->NUM_SPROF))) {
                 opt->NUM_SPROF = atoi(argv[i+1]);
-                i++;
-            }
-        }
-        else if (!strcmp(argv[i],"-ss")) {
-            if ((i + 1 <= argc - 2) && sscanf(argv[i+1],"%d",&(opt->NUM_S_STEM_PROF))) {
-                opt->NUM_S_STEM_PROF = atoi(argv[i+1]);
                 i++;
             }
         }
@@ -177,6 +144,92 @@ int main(int argc, char *argv[]) {
                 i++;
             }
         }
+        // Consolidation options
+        else if (!strcmp(argv[i],"-sc")) {
+            opt->CONSOLIDATE = 0;
+        }
+        else if (!strcmp(argv[i],"-sd")) {
+            if ((i + 1 <= argc - 2) && sscanf(argv[i+1],"%d",&(opt->STEM_END_DELTA))) {
+                opt->STEM_END_DELTA = atoi(argv[i+1]);
+                if (opt->STEM_END_DELTA < 0 || opt->STEM_END_DELTA > 15) {
+                    fprintf(stderr,"Error: invalid input %d for stem end delta\n",opt->STEM_END_DELTA);
+                    opt->STEM_END_DELTA = 3;
+                }
+                i++;
+            }
+        }
+        else if (!strcmp(argv[i],"-se")) {
+            if ((i + 1 <= argc - 2) && sscanf(argv[i+1],"%lf",&(opt->STEM_VALID_PERCENT_ERROR))) {
+                opt->STEM_VALID_PERCENT_ERROR = atof(argv[i+1]);
+                if (opt->STEM_VALID_PERCENT_ERROR < 0 || opt->STEM_VALID_PERCENT_ERROR > 100) {
+                    fprintf(stderr,"Error: invalid input %f for stem valid percent error\n",opt->STEM_VALID_PERCENT_ERROR);
+                    opt->STEM_VALID_PERCENT_ERROR = 5;
+                }
+                i++;
+            }
+        }
+        else if (!strcmp(argv[i],"-smh")) {
+            if ((i + 1 <= argc - 2) && sscanf(argv[i+1],"%d",&(opt->STEM_NUM_CUTOFF))) {
+                opt->STEM_NUM_CUTOFF = atoi(argv[i+1]);
+                if (opt->STEM_NUM_CUTOFF < 0) {
+                    fprintf(stderr,"Error: invalid input %d for number of helices to consider for stems\n",opt->STEM_NUM_CUTOFF);
+                    opt->STEM_NUM_CUTOFF = 25;
+                }
+                i++;
+            }
+        }
+        else if (!strcmp(argv[i],"-fsd")) {
+            if ((i + 1 <= argc - 2) && sscanf(argv[i+1],"%d",&(opt->FUNC_SIMILAR_END_DELTA))) {
+                opt->FUNC_SIMILAR_END_DELTA = atoi(argv[i+1]);
+                i++;
+            }
+        }
+        else if (!strcmp(argv[i],"-fse")) {
+            if ((i + 1 <= argc - 2) && sscanf(argv[i+1],"%lf",&(opt->FUNC_SIMILAR_PERCENT_ERROR))) {
+                opt->FUNC_SIMILAR_PERCENT_ERROR = atof(argv[i+1]);
+                if (opt->FUNC_SIMILAR_PERCENT_ERROR < 0 || opt->FUNC_SIMILAR_PERCENT_ERROR > 100) {
+                    fprintf(stderr,"Error: invalid input %f for functionally similar stem group percent error\n",opt->FUNC_SIMILAR_PERCENT_ERROR);
+                    opt->FUNC_SIMILAR_PERCENT_ERROR = 1;
+                }
+                i++;
+            }
+        }
+        else if (!strcmp(argv[i],"-sh")) {
+            if ((i + 1 <= argc - 2) && sscanf(argv[i+1],"%lf",&(opt->STEM_FREQ))) {
+                opt->STEM_FREQ = atof(argv[i+1]);
+                if (opt->STEM_FREQ < 0 || opt->STEM_FREQ > 100) {
+                    fprintf(stderr,"Error: invalid input %f for hc frequency threshold\n",opt->STEM_FREQ);
+                    opt->STEM_FREQ = -1;
+                }
+                i++;
+            }
+        }
+        else if (!strcmp(argv[i],"-sf")) {
+            if ((i + 1 <= argc - 2) && sscanf(argv[i+1],"%d",&(opt->NUM_FSTEMS))) {
+                opt->NUM_FSTEMS = atoi(argv[i+1]);
+                i++;
+            }
+        }
+        else if (!strcmp(argv[i],"-sp")) {
+            if ((i + 1 <= argc - 2) && sscanf(argv[i+1],"%lf",&(opt->STEM_PROF_FREQ))) {
+                opt->STEM_PROF_FREQ = atof(argv[i+1]);
+                if (opt->STEM_PROF_FREQ < 0 || opt->STEM_PROF_FREQ > 100) {
+                    fprintf(stderr,"Error: invalid input %lf for frequency threshold\n",opt->STEM_PROF_FREQ);
+                    opt->STEM_PROF_FREQ = -1;
+                }
+                i++;
+            }
+        }
+        else if (!strcmp(argv[i],"-ss")) {
+            if ((i + 1 <= argc - 2) && sscanf(argv[i+1],"%d",&(opt->NUM_S_STEM_PROF))) {
+                opt->NUM_S_STEM_PROF = atoi(argv[i+1]);
+                i++;
+            }
+        }
+        else if (!strcmp(argv[i],"-sg")) {
+            opt->STEM_GRAPH = 0;
+        }
+
 /*
     else if (!strcmp(argv[i],"-k")) {
       if (i + 1 <= argc - 2) {
@@ -304,54 +357,55 @@ GTBOLTZMANN OPTIONS
         print_consensus(set);
     }
 
-
-    set->structures = (array_list_t**) malloc(sizeof(array_list_t*) * set->opt->NUMSTRUCTS);
-    set->stem_structures = (array_list_t**) malloc(sizeof(array_list_t*) * set->opt->NUMSTRUCTS);
-    add_structures_to_set(set);
-    //simplify set using stems
-    add_stems_to_set(set);
-    bool combined_stems = true;
-    // loop and combine stems until no more combinations can be made
-    while(combined_stems) {
-        combined_stems = combine_stems(set);
-        // find frequencies of all combined stems
+    if (set->opt->CONSOLIDATE) {
+        set->structures = (array_list_t**) malloc(sizeof(array_list_t*) * set->opt->NUMSTRUCTS);
+        set->stem_structures = (array_list_t**) malloc(sizeof(array_list_t*) * set->opt->NUMSTRUCTS);
+        add_structures_to_set(set);
+        //simplify set using stems
+        add_stems_to_set(set);
+        bool combined_stems = true;
+        // loop and combine stems until no more combinations can be made
+        while(combined_stems) {
+            combined_stems = combine_stems(set);
+            // find frequencies of all combined stems
+            update_freq_stems(set);
+        }
+        find_func_similar_stems(set);
+        // TODO: determine if this should also be in a loop
+        combine_stems_using_func_similar(set);
         update_freq_stems(set);
-    }
-    find_func_similar_stems(set);
-    // TODO: determine if this should also be in a loop
-    combine_stems_using_func_similar(set);
-    update_freq_stems(set);
-    reindex_stems(set);
-    generate_stem_key(set, argv[argc-1]);
-    if (set->opt->NUM_FSTEMS)
-        set->opt->STEM_FREQ = set_num_fstems(set);
-    else if (set->opt->STEM_FREQ==-1)
-        set->opt->STEM_FREQ = set_threshold_entropy_stems(set);
-    if (set->opt->VERBOSE) {
-        printf("Threshold to find featured stems: %.1lf%%\n",set->opt->STEM_FREQ);
-        printf("Number of structures processed: %d\n",set->opt->NUMSTRUCTS);
-    }
-    find_featured_stems(set);
-    printf("Total number of featured stems: %d\n",set->num_fstems);
-    make_stem_profiles(set);
-    printf("Total number of stem profiles: %d\n",set->stem_prof_num);
-    print_stem_profiles(set);
-    stem_profiles_make_bracket(set);
+        reindex_stems(set);
+        generate_stem_key(set, argv[argc-1]);
+        if (set->opt->NUM_FSTEMS)
+            set->opt->STEM_FREQ = set_num_fstems(set);
+        else if (set->opt->STEM_FREQ==-1)
+            set->opt->STEM_FREQ = set_threshold_entropy_stems(set);
+        if (set->opt->VERBOSE) {
+            printf("Threshold to find featured stems: %.1lf%%\n",set->opt->STEM_FREQ);
+            printf("Number of structures processed: %d\n",set->opt->NUMSTRUCTS);
+        }
+        find_featured_stems(set);
+        printf("Total number of featured stems: %d\n",set->num_fstems);
+        make_stem_profiles(set);
+        printf("Total number of stem profiles: %d\n",set->stem_prof_num);
+        print_stem_profiles(set);
+        stem_profiles_make_bracket(set);
 
-    if (set->opt->NUM_S_STEM_PROF)
-        set->opt->STEM_PROF_FREQ = set_num_s_stem_prof(set);
-    else if (set->opt->STEM_PROF_FREQ == -1) {
-        //set->opt->PROF_FREQ = set_p_threshold(set,P_START);
-        set->opt->STEM_PROF_FREQ = set_stem_p_threshold_entropy(set);
+        if (set->opt->NUM_S_STEM_PROF)
+            set->opt->STEM_PROF_FREQ = set_num_s_stem_prof(set);
+        else if (set->opt->STEM_PROF_FREQ == -1) {
+            //set->opt->PROF_FREQ = set_p_threshold(set,P_START);
+            set->opt->STEM_PROF_FREQ = set_stem_p_threshold_entropy(set);
+        }
+        if (set->opt->VERBOSE) {
+            if (set->opt->STEM_PROF_FREQ == -2) {
+                printf("No threshold set; every stem profile has frequency of 1\n");
+            } else
+                printf("setting p to %.1f\n",set->opt->STEM_PROF_FREQ);
+        }
+        select_stem_profiles(set);
+        printf("Total number of selected stem profiles: %d\n",set->num_s_stem_prof);
     }
-    if (set->opt->VERBOSE) {
-        if (set->opt->STEM_PROF_FREQ == -2) {
-            printf("No threshold set; every stem profile has frequency of 1\n");
-        } else
-            printf("setting p to %.1f\n",set->opt->STEM_PROF_FREQ);
-    }
-    select_stem_profiles(set);
-    printf("Total number of selected stem profiles: %d\n",set->num_s_stem_prof);
 
     if (set->opt->GRAPH) {
         fp = fopen(set->opt->OUTPUT,"w");

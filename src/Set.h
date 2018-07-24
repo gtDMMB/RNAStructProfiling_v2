@@ -129,7 +129,7 @@ void add_structures_to_set(Set* ste);
 void add_stems_to_set(Set* set);
 bool combine_stems(Set* set);
 void merge_stems(Stem* stem1, Stem* stem2);
-bool validate_stems(Stem* stem1, Stem* stem2);
+bool validate_stems(Stem* stem1, Stem* stem2, double valid_percent_error);
 bool check_ends_to_combine_stems(Stem* stem1, Stem* stem2, int end_delta, int* outer_stem);
 
 // Concerning functionally similar stems
@@ -138,7 +138,7 @@ bool check_func_similar_stems(Set*set, Stem* stem1, Stem* stem2, int* freq);
 bool validate_func_similar_stems(Set* set, Stem* stem1, Stem* stem2, int* freq);
 
 bool combine_stems_using_func_similar(Set* set);
-bool validate_stem_and_func_similar(FSStemGroup* stem_group, Stem* stem);
+bool validate_stem_and_func_similar(FSStemGroup* stem_group, Stem* stem, double valid_percent_error);
 void merge_stem_and_fs_stem_group(Stem* stem, FSStemGroup* stem_group, int outer_stem);
 
 bool stem_in_structure(Stem *stem, array_list_t* structure);

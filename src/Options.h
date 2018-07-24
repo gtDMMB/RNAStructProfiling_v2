@@ -63,10 +63,20 @@ typedef struct options {
     int REP_STRUCT;
     int TOPDOWN;
     int ALTTHRESH;
+
+    // Consolidation options
+    int CONSOLIDATE;
+
+    int STEM_END_DELTA;
+    double STEM_VALID_PERCENT_ERROR;
+    int STEM_NUM_CUTOFF;
+    double FUNC_SIMILAR_PERCENT_ERROR;
+    int FUNC_SIMILAR_END_DELTA;
     int NUM_FSTEMS;
     int NUM_S_STEM_PROF;
     double STEM_FREQ;
     double STEM_PROF_FREQ;
+    int STEM_GRAPH;
 } Options;
 
 Options* make_options();

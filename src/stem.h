@@ -10,20 +10,6 @@
 #ifndef STEM_H
 #define STEM_H
 
-// TODO: make these all options
-// how close the ends of two stems must be for them to be considered 1 stem
-#define STEM_END_DELTA 3
-// max allowable % diff between frequencies of two stems to be merged
-#define STEM_VALID_PERCENT_ERROR 5
-// TODO: better way to determine # helices to consider
-// max number of helices to consider for stems
-#define STEM_NUM_CUTOFF 25
-// max allowable % of structures containing two stems for them to be considered functionally similar
-#define FUNC_SIMILAR_PERCENT_ERROR 1
-// max difference between ends of two functionally similar stems
-#define FUNC_SIMILAR_END_DELTA 3
-
-
 typedef enum {
     hc_type,
     stem_type,
@@ -37,7 +23,6 @@ typedef struct {
 } DataNode;
 
 typedef struct {
-    // TODO: decide on id notation
     // stem id
     char* id;
     // stem defined in terms of its component helices and functionally similar stem groups
@@ -56,7 +41,6 @@ typedef struct {
     // a string with the above info
     char* ave_quad;
      */
-    // TODO: ensure this is ordered correctly when stems are merged
     // an array list of the component helices
     array_list_t* helices;
     // an ordered array list of the components (helices or functionally similar stem groups), ordered such that the

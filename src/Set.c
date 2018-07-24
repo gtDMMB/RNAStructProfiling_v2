@@ -85,9 +85,15 @@ void free_Set(Set* set) {
     free_array_list(set->stems, &free);
     free_array_list(set->featured_stem_ids, &free);
     for (int i = 0; i < set->opt->NUMSTRUCTS; i++) {
-        free_array_list(set->structures[i], &free);
-        free_array_list(set->stem_structures[i], &free);
+        if (set->structures != NULL) {
+            free_array_list(set->structures[i], &free);
+        }
+        if (set->stem_structures != NULL) {
+            free_array_list(set->stem_structures[i], &free);
+        }
     }
+    free(set->structures);
+    free(set->stem_structures);
     free(set);
     set = NULL;
 }
@@ -1465,7 +1471,7 @@ void add_structures_to_set(Set* set) {
  */
 void add_stems_to_set(Set* set) {
     // populate array_list of single helix stems
-    for (int i_hc = 0; i_hc < STEM_NUM_CUTOFF; i_hc++) {
+    for (int i_hc = 0; i_hc < set->opt->STEM_NUM_CUTOFF; i_hc++) {
         add_to_array_list(set->original_hc_stems, i_hc, create_stem_from_HC(set->helices[i_hc]));
         add_to_array_list(set->stems, i_hc, create_stem_from_HC(set->helices[i_hc]));
     }
@@ -1488,11 +1494,11 @@ bool combine_stems(Set* set) {
             Stem* stem1 = stem_list[i];
             Stem* stem2 = stem_list[j];
             // check that the stems occur at similar enough frequencies to be considered
-            if (!validate_stems(stem1, stem2)) {
+            if (!validate_stems(stem1, stem2, set->opt->STEM_VALID_PERCENT_ERROR)) {
                 continue;
             }
             int* outer_stem = (int*) malloc(sizeof(int));
-            combining = check_ends_to_combine_stems(stem1, stem2, STEM_END_DELTA, outer_stem);
+            combining = check_ends_to_combine_stems(stem1, stem2, set->opt->STEM_END_DELTA, outer_stem);
             if (combining) {
                 void **old_stem = (void**) malloc(sizeof(void**));
                 combined = true;
@@ -1561,13 +1567,13 @@ void merge_stems(Stem* stem1, Stem* stem2) {
  * @param stem2 second stem to validate
  * @return true if they occur within % error bound, false otherwise
  */
-bool validate_stems(Stem* stem1, Stem* stem2) {
+bool validate_stems(Stem* stem1, Stem* stem2, double valid_percent_error) {
     double f1 = stem1->freq;
     double f2 = stem2->freq;
     // TODO: check if we should divide by min or max
     double max = (f1 >= f2)? f1 : f2;
     double error = fabs((f2 - f1) / max) * 100;
-    return error <= STEM_VALID_PERCENT_ERROR;
+    return error <= valid_percent_error;
 }
 
 // TODO: cleanup this function. This may involve moving some actions into add_to_fs_stem_group
@@ -1659,7 +1665,7 @@ bool check_func_similar_stems(Set* set, Stem* stem1, Stem* stem2, int* freq) {
     int back1  = stem1->int_max_quad[1];
     int front2 = stem2->int_max_quad[0];
     int back2 = stem2->int_max_quad[1];
-    if (abs(front1 - front2) > FUNC_SIMILAR_END_DELTA || abs(back1-back2) > FUNC_SIMILAR_END_DELTA) {
+    if (abs(front1 - front2) > set->opt->FUNC_SIMILAR_END_DELTA || abs(back1-back2) > set->opt->FUNC_SIMILAR_END_DELTA) {
         return false;
     }
     // check for back portions
@@ -1667,7 +1673,7 @@ bool check_func_similar_stems(Set* set, Stem* stem1, Stem* stem2, int* freq) {
     back1  = stem1->int_max_quad[3];
     front2 = stem2->int_max_quad[2];
     back2  = stem2->int_max_quad[3];
-    if (abs(front1 - front2) > FUNC_SIMILAR_END_DELTA || abs(back1-back2) > FUNC_SIMILAR_END_DELTA) {
+    if (abs(front1 - front2) > set->opt->FUNC_SIMILAR_END_DELTA || abs(back1-back2) > set->opt->FUNC_SIMILAR_END_DELTA) {
         return false;
     }
     if (set->opt->VERBOSE) {
@@ -1722,7 +1728,7 @@ bool validate_func_similar_stems(Set* set, Stem* stem1, Stem* stem2, int* freq) 
     }
     free(hc_id);
     int min_count = (stem1_count <= stem2_count)? stem1_count : stem2_count;
-    return (100 * ((float) both_count / min_count)) <= FUNC_SIMILAR_PERCENT_ERROR;
+    return (100 * ((float) both_count / min_count)) <= set->opt->FUNC_SIMILAR_PERCENT_ERROR;
 }
 
 bool combine_stems_using_func_similar(Set* set) {
@@ -1740,18 +1746,18 @@ bool combine_stems_using_func_similar(Set* set) {
                     continue;
                 }
                 Stem* stem = stem_list[j];
-                if (!validate_stem_and_func_similar(stem_group, stem)) {
+                if (!validate_stem_and_func_similar(stem_group, stem, set->opt->STEM_VALID_PERCENT_ERROR)) {
                     continue;
                 }
                 for (int k = 0; k < stem_group->stems->size; k++) {
                     Stem* stem1 = stem;
                     Stem* stem2 = (Stem*) stem_group->stems->entries[k];
-                    combining = check_ends_to_combine_stems(stem1, stem2, FUNC_SIMILAR_END_DELTA, outer_stem);
+                    combining = check_ends_to_combine_stems(stem1, stem2, set->opt->FUNC_SIMILAR_END_DELTA, outer_stem);
                     if (!combining) {
                         break;
                     }
                 }
-                // combine if all stems in functionally similar group were within FUNC_SIMILAR_END_DELTA to the stem
+                // combine if all stems in functionally similar group were within set->opt->FUNC_SIMILAR_END_DELTA to the stem
                 if (combining) {
                     if (set->opt->VERBOSE) {
                         printf("Joining stem %s and functionally similar group %s\n", stem_list[j]->id, stem_group->id);
@@ -1840,13 +1846,13 @@ bool check_ends_to_combine_stems(Stem* stem1, Stem* stem2, int end_delta, int* o
  * @param stem stem to validate with stem_pair
  * @return true if they occur within % error bound, false otherwise
  */
-bool validate_stem_and_func_similar(FSStemGroup* stem_pair, Stem* stem) {
+bool validate_stem_and_func_similar(FSStemGroup* stem_pair, Stem* stem, double valid_percent_error) {
     double f1 = stem_pair->freq;
     double f2 = stem->freq;
     // TODO: check if we should divide by min or max
     double max = (f1 >= f2)? f1 : f2;
     double error = fabs((f2 - f1) / max) * 100;
-    return error <= STEM_VALID_PERCENT_ERROR;
+    return error <= valid_percent_error;
 }
 
 /**
