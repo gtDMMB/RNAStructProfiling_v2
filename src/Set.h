@@ -62,7 +62,7 @@ typedef struct {
     node *graph;
     array_list_t* original_hc_stems;
     array_list_t* stems;
-    array_list_t* featured_stems;
+    array_list_t* featured_stem_ids;
 
     int num_fstems;
     int num_s_stem_prof;
@@ -166,10 +166,9 @@ unsigned long stem_binary_rep(Set *set,char *stem_profile);
 double set_num_s_stem_prof(Set* set);
 double set_stem_p_threshold_entropy(Set* set);
 void select_stem_profiles(Set* set);
+void stem_profiles_make_bracket(Set* set);
+void make_stem_brackets(HASHTBL *brac, int i, int j, char* id);
 
-
-char* strinsrt(char* sentence, char* word, int index);
-char* strcut(char** str, int index, int n);
 int component_start_i(DataNode *component, array_list_t *structure);
 int component_end_i(DataNode *component, array_list_t *structure);
 int stem_start_i(Stem *stem, array_list_t *structure);

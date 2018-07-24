@@ -336,7 +336,7 @@ GTBOLTZMANN OPTIONS
     make_stem_profiles(set);
     printf("Total number of stem profiles: %d\n",set->stem_prof_num);
     print_stem_profiles(set);
-
+    stem_profiles_make_bracket(set);
 
     if (set->opt->NUM_S_STEM_PROF)
         set->opt->STEM_PROF_FREQ = set_num_s_stem_prof(set);

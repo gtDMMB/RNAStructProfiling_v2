@@ -63,7 +63,7 @@ Set* make_Set(char *name) {
 
     set->original_hc_stems = create_array_list();
     set->stems = create_array_list();
-    set->featured_stems = create_array_list();
+    set->featured_stem_ids = create_array_list();
 
     set->num_fstems = 0;
     set->stem_prof_num = 0;
@@ -83,7 +83,7 @@ void free_Set(Set* set) {
     free(set->treeindex);
     set->treeindex = NULL;
     free_array_list(set->stems, &free);
-    free_array_list(set->featured_stems, &free);
+    free_array_list(set->featured_stem_ids, &free);
     for (int i = 0; i < set->opt->NUMSTRUCTS; i++) {
         free_array_list(set->structures[i], &free);
         free_array_list(set->stem_structures[i], &free);
@@ -248,7 +248,6 @@ void process_structs(Set *set) {
     free_hashtbl(avetrip);
 }
 
-
 /*calculates joint for last value in prof vs everything else
 
 void calc_joint(Set *set, int *prof, int num) {
@@ -291,7 +290,6 @@ void calc_joint(Set *set, int *prof, int num) {
   return;
 }
 */
-
 void process_structs_sfold(Set *set) {
     FILE *fp;
     int i,j,k,*helixid,idcount=1,*lg,last = 0, toosmall = 0,numhelix=0,*profile=NULL,size=1;
@@ -555,7 +553,6 @@ void init_joint(Set *set) {
   }
 }
 */
-
 int compare(const void *v1, const void *v2) {
     return (*(int*)v1 - *(int*)v2);
 }
@@ -773,11 +770,6 @@ void make_profiles(Set *set) {
         if (set->opt->REP_STRUCT) {
             make_rep_struct(consensus,prof,trips);
         }
-
-        if (!(halfbrac = create_hashtbl(HASHSIZE, NULL))) {
-            fprintf(stderr, "ERROR: create_hashtbl() for halfbrac failed");
-            exit(EXIT_FAILURE);
-        }
         last = 0;
         lastfreq = 0;
         coverage += ((double)numhelix/(double)allhelix);
@@ -816,7 +808,6 @@ void calc_joint(Set *set, int *prof, int num) {
   return;
 }
 */
-
 void make_profiles_sfold(Set *set) {
     FILE *fp,*file;
     int num=0,*id = 0,i,j,k,last = -1, lastfreq = -1,*profile,totalhc=0,allhelix=0;
@@ -987,7 +978,6 @@ void make_bracket_rep(HASHTBL *brac,Profile *prof) {
     prof->bracket = profile;
     //free(val);
     free(array);
-    array = NULL;
 }
 
 //inserts bracket representation for i,j into a hash
@@ -1651,9 +1641,7 @@ void find_func_similar_stems(Set* set) {
         }
     }
     free(data_out);
-    data_out = NULL;
     free(freq);
-    freq = NULL;
 }
 
 /**
@@ -1698,7 +1686,6 @@ bool check_func_similar_stems(Set* set, Stem* stem1, Stem* stem2, int* freq) {
     return func_similar;
 }
 
-// TODO: examine more efficient method
 /**
  * Determine if two stems should be considered functionally similar
  *
@@ -1734,7 +1721,6 @@ bool validate_func_similar_stems(Set* set, Stem* stem1, Stem* stem2, int* freq) 
         }
     }
     free(hc_id);
-    hc_id = NULL;
     int min_count = (stem1_count <= stem2_count)? stem1_count : stem2_count;
     return (100 * ((float) both_count / min_count)) <= FUNC_SIMILAR_PERCENT_ERROR;
 }
@@ -1779,9 +1765,7 @@ bool combine_stems_using_func_similar(Set* set) {
         }
     }
     free(data_out);
-    data_out = NULL;
     free(outer_stem);
-    outer_stem = NULL;
     return combined;
 }
 
@@ -2017,7 +2001,6 @@ void get_alpha_id(int int_id, char* alpha_id) {
         int_id /= 26;
     }
     free(temp);
-    temp = NULL;
 }
 
 /**
@@ -2097,7 +2080,6 @@ double set_threshold_entropy_stems(Set *set) {
     return 0;
 }
 
-
 double set_num_fstems(Set *set) {
     int marg;
     double percent;
@@ -2141,9 +2123,9 @@ void find_featured_stems(Set* set) {
             }
             char* stem_id_str = (char*) malloc(sizeof(char) * (strlen(stem->id) + 1));
             strcpy(stem_id_str, stem->id);
-            add_to_array_list(set->featured_stems, i, stem_id_str);
+            add_to_array_list(set->featured_stem_ids, i, stem_id_str);
             stem->is_featured = 1;
-            stem->binary = 1<<i;
+            stem->binary = 1u<<(unsigned long)i;
             // TODO: find equivalent of helsum for stems and implement coverage tracking for this function
             //cov += (double)marg/(double)set->helsum;;
         }
@@ -2211,9 +2193,7 @@ void make_stem_profiles(Set* set) {
         }
     }
     free(data_out);
-    data_out = NULL;
     free(stem_structure_str);
-    stem_structure_str = NULL;
     fclose(stem_struct_file);
 }
 
@@ -2247,8 +2227,8 @@ char* stem_profile_from_stem_structure(Set* set, array_list_t* structure)   {
     char* stem_prof_str = (char*) malloc(sizeof(char) * MAX_STRUCT_FILE_LINE_LEN);
     stem_prof_str[0] = '\0';
     int count = 0;
-    for (int i = 0; i < set->featured_stems->size; i++) {
-        char* featured_stem_id = (char*) set->featured_stems->entries[i];
+    for (int i = 0; i < set->featured_stem_ids->size; i++) {
+        char* featured_stem_id = (char*) set->featured_stem_ids->entries[i];
         for (int j = 0; j < structure->size; j++) {
             char* stem_id = (char*) structure->entries[j];
             if (strcmp(stem_id, featured_stem_id) == 0) {
@@ -2317,7 +2297,6 @@ unsigned long stem_binary_rep(Set *set,char *stem_profile) {
         sum += ((Stem*)set->stems->entries[i])->binary;
     }
     free(copy);
-    copy = NULL;
     return sum;
 }
 
@@ -2375,7 +2354,7 @@ void select_stem_profiles(Set* set) {
 
     if (set->num_s_stem_prof == 0)
         set->num_s_stem_prof = set->stem_prof_num;
-    target = set->opt->COVERAGE*set->opt->NUMSTRUCTS;
+    target = (int) (set->opt->COVERAGE*set->opt->NUMSTRUCTS);
     for (i = 0; i < set->num_s_stem_prof; i++) {
         stem_prof = set->stem_profiles[i];
         //percent = ((double) stem_prof->freq)*100.0 / ((double)set->opt->NUMSTRUCTS);
@@ -2405,59 +2384,39 @@ void select_stem_profiles(Set* set) {
 }
 
 /**
- * Insert one string into another string
- *
- * @param sentence the string to have word inserted into
- * @param word the string to insert into sentence
- * @param index the index of sentence to insert before
- * @return new string if successful, NULL otherwise
+ * Create the bracket representation of the stem profiles in set
+ * @param set containing stem profiles
  */
-char* strinsrt(char* sentence, char* word, int index) {
-    if (sentence == NULL || word == NULL) {
-        return NULL;
+void stem_profiles_make_bracket(Set* set) {
+    for (int prof_i = 0; prof_i < set->stem_prof_num; prof_i++) {
+        Profile* stem_prof = set->stem_profiles[prof_i];
+        HASHTBL* halfbrac = create_hashtbl(HASHSIZE, NULL);
+        for (int stem_i = 0; stem_i < set->featured_stem_ids->size; stem_i++) {
+            Stem* stem = (Stem*) set->stems->entries[stem_i];
+            if (strstr(stem_prof->profile, stem->id) != NULL) {
+                int i = stem->int_max_quad[0];
+                int j = stem->int_max_quad[3];
+                make_stem_brackets(halfbrac,i,j, stem->id);
+            }
+        }
+        make_bracket_rep(halfbrac, stem_prof);
     }
-    size_t snt_len = strlen(sentence);
-    size_t wrd_len = strlen(word);
-    if (index < 0 || int2size_t(index) > snt_len) {
-        return NULL;
-    }
-    char* temp;
-    if (snt_len + wrd_len > (sizeof(char) * STRING_BUFFER) - 1) {
-        temp = (char*) malloc(sizeof(char) * snt_len + wrd_len + STRING_BUFFER);
-    } else {
-        temp = (char*) malloc(sizeof(char) * STRING_BUFFER);
-    }
-    strncpy(temp, sentence, int2size_t(index));
-    temp[index] = '\0';
-    strcat(temp, word);
-    strcat(temp, sentence + index);
-    return temp;
 }
 
-/**
- * Cut a substring out of a string
- *
- * @param str a pointer to the string to cut out of
- * @param index the index at which to start cutting
- * @param n the number of characters to remove
- * @return a pointer to the removed substring if successful, NULL otherwise
- */
-char* strcut(char** str, int index, int n) {
-    if (str == NULL || *str == NULL) {
-        return NULL;
-    }
-    size_t  str_len = strlen(*str);
-    if (index < 0 || int2size_t(index) > str_len - 1) {
-        return NULL;
-    }
-    char* removed = (char*) malloc(sizeof(char) * (n+1));
-    if (removed == NULL) {
-        return NULL;
-    }
-    strncpy(removed, *str + index, int2size_t(n));
-    removed[n] = '\0';
-    memmove(*str + index, *str + index + n, str_len - n);
-    return removed;
+//inserts bracket representation for i,j into a hash
+void make_stem_brackets(HASHTBL *brac, int i, int j, char* id) {
+    char key[ARRAYSIZE],*val;
+
+    sprintf(key,"%d",i);
+    val = (char*) malloc(sizeof(char)*ARRAYSIZE);
+    sprintf(val,"[%s",id);
+    //  printf("making bracket %s for %d\n",val,i);
+    hashtbl_insert(brac,key,val);
+    sprintf(key,"%d",j);
+    val = (char*) malloc(sizeof(char)*2);
+    val[0] = ']';
+    val[1] = '\0';
+    hashtbl_insert(brac,key,val);
 }
 
 /**
@@ -2502,7 +2461,7 @@ char* strcut(char** str, int index, int n) {
  }
 
 /**
-* Find the end of a component in a structure// TODO: determine if this can be done within the loop in combine_stems
+* Find the end of a component in a structure/
 
 *
 * @param component the component to find
