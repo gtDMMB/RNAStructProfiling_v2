@@ -27,6 +27,7 @@ Options* make_options() {
 
     opt->CONSOLIDATE = 1;
     opt->CONSOLIDATED_OUTPUT = (char*) malloc(sizeof(char) * NAME_STRING_BUFFER);
+    strcpy(opt->CONSOLIDATED_OUTPUT, DEF_CONSOLIDATED_OUTPUT_PREFIX);
     opt->STEM_END_DELTA = 3;
     opt->STEM_VALID_PERCENT_ERROR = 5;
     opt->STEM_NUM_CUTOFF = 25;
@@ -60,8 +61,8 @@ void print_options() {
 
     puts("\nConsolidation options (stems and functionally similar stem groups):");
     puts("-sc      Run without using consolidation of helix classes into stems");
-    puts("-sd INT Set the max distance between two stems' ends for them to be merged");
-    puts("-se DBL Set the maximum percent error in frequency for two stems to be merged");
+    puts("-sd INT  Set the max distance between two stems' ends for them to be merged");
+    puts("-se DBL  Set the maximum percent error in frequency for two stems to be merged");
     // TODO: better way to determine # helices to consider
     puts("-smh INT Set the max number of helices to consider for initial stem creation");
     puts("-fsd INT Set the max distance between two stem's ends for them to be considered functionally similar");

@@ -42,6 +42,7 @@ extern int REP_STRUCT;
 #define DEF_MIN_HEL_LEN 1
 /*default output file name*/
 #define DEF_OUTPUT "profile.dot"
+#define DEF_CONSOLIDATED_OUTPUT_PREFIX "consolidated_"
 #define NAME_STRING_BUFFER 256
 
 typedef struct options {

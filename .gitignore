@@ -4,4 +4,6 @@ cmake-build-debug/
 RNAprofile
 src/*.out
 src/*.txt
+src/*.dot
+src/*.samples
 output/development/runondev.sh

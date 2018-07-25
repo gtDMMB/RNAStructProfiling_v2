@@ -306,6 +306,7 @@ GTBOLTZMANN OPTIONS
         args[gtargs] = argv[argc-1];
         boltzmann_main(gtargs+1,args);
     }
+    strcat(set->opt->CONSOLIDATED_OUTPUT, set->opt->OUTPUT);
 
     input_seq(set,argv[argc-1]);
     if (opt->SFOLD)
