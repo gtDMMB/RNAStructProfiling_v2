@@ -65,9 +65,10 @@ int consolidated_initialize(Set *set) {
     for (i = 0; i < set->num_s_stem_prof; i++) {
         neighbors[i] = createNode(set->stem_profiles[i]->profile);
         neighbors[i]->sum = stem_binary_rep(set,neighbors[i]->label);
-        if (j<=0) {
+        if (j>0) {
+            diff[i] = rm_root(j,neighbors[i]->label);
+        } else
             diff[i] = neighbors[i]->label;
-        }
     }
     root->numNeighbors = set->num_s_stem_prof;
 
@@ -289,7 +290,7 @@ void consolidated_calc_gfreq(FILE *fp,Set *set) {
     if (!strcmp(set->consolidated_graph->label,""))
         set->consolidated_graph->bracket = (char*)"[]";
     else
-        consolidated_make_oval_bracket(set->graph);
+        consolidated_make_oval_bracket(set->consolidated_graph);
     fprintf(fp,"\"%s\" [label = \"%s\\n%d/%d\"];\n",set->consolidated_graph->label,set->consolidated_graph->bracket,set->consolidated_graph->sfreq,set->opt->NUMSTRUCTS);
     consolidated_graph[i] = set->consolidated_graph;
 }

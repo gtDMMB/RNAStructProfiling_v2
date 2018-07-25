@@ -364,6 +364,25 @@ GTBOLTZMANN OPTIONS
         print_consensus(set);
     }
 
+    if (set->opt->GRAPH) {
+        fp = fopen(set->opt->OUTPUT,"w");
+        init_graph(fp,set);
+        i = initialize(set);
+        if (set->opt->INPUT)
+            print_input(fp,set);
+        find_LCAs(fp,set,i);
+        calc_gfreq(fp,set);
+        //printGraph();
+        deleteHash = MemoryDFS(set->graph, GRAPHSIZE);
+        removeEdges(deleteHash);
+        //start_trans_reductn(set->graph);
+        //printGraph();
+        print_edges(fp,set);
+        fputs("}",fp);
+        fclose(fp);
+        free_hashtbl(deleteHash);
+    }
+
     if (set->opt->CONSOLIDATE) {
         set->structures = (array_list_t**) malloc(sizeof(array_list_t*) * set->opt->NUMSTRUCTS);
         set->stem_structures = (array_list_t**) malloc(sizeof(array_list_t*) * set->opt->NUMSTRUCTS);
@@ -427,24 +446,6 @@ GTBOLTZMANN OPTIONS
         }
     }
 
-    if (set->opt->GRAPH) {
-        fp = fopen(set->opt->OUTPUT,"w");
-        init_graph(fp,set);
-        i = initialize(set);
-        if (set->opt->INPUT)
-            print_input(fp,set);
-        find_LCAs(fp,set,i);
-        calc_gfreq(fp,set);
-        //printGraph();
-        deleteHash = MemoryDFS(set->graph, GRAPHSIZE);
-        removeEdges(deleteHash);
-        //start_trans_reductn(set->graph);
-        //printGraph();
-        print_edges(fp,set);
-        fputs("}",fp);
-        fclose(fp);
-        free_hashtbl(deleteHash);
-    }
     free_Set(set);
     exit(EXIT_SUCCESS);
 }
