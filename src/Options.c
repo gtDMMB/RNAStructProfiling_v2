@@ -1,10 +1,12 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 #include "Options.h"
 
 Options* make_options() {
     Options *opt = (Options*) malloc(sizeof(Options));
-    opt->OUTPUT = (char*) DEF_OUTPUT;
+    opt->OUTPUT = (char*) malloc(sizeof(char) * NAME_STRING_BUFFER);
+    strcpy(opt->OUTPUT, DEF_OUTPUT);
     opt->INPUT = NULL;
     opt->NATIVE = NULL;
     opt->MIN_HEL_LEN = DEF_MIN_HEL_LEN;
@@ -24,6 +26,7 @@ Options* make_options() {
     opt->ALTTHRESH = 1;
 
     opt->CONSOLIDATE = 1;
+    opt->CONSOLIDATED_OUTPUT = (char*) malloc(sizeof(char) * NAME_STRING_BUFFER);
     opt->STEM_END_DELTA = 3;
     opt->STEM_VALID_PERCENT_ERROR = 5;
     opt->STEM_NUM_CUTOFF = 25;

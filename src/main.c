@@ -124,7 +124,11 @@ int main(int argc, char *argv[]) {
         }
         else if (!strcmp(argv[i],"-o")) {
             if (i + 1 <= argc - 2) {
-                opt->OUTPUT = argv[i+1];
+                strcpy(opt->OUTPUT,argv[i+1]);
+                int len = (int) strlen(opt->OUTPUT);
+                if (len < 5 || strcmp(&(opt->OUTPUT[len-4]), ".dot") != 0) {
+                    strcat(opt->OUTPUT, ".dot");
+                }
                 name = mystrdup(argv[i+1]);
                 set->structfile = strcat(name,".samples");
                 args[3] = argv[i];
@@ -405,6 +409,26 @@ GTBOLTZMANN OPTIONS
         }
         select_stem_profiles(set);
         printf("Total number of selected stem profiles: %d\n",set->num_s_stem_prof);
+        /*
+        if (set->opt->STEM_GRAPH) {
+            fp = fopen(set->opt->CONSOLIDATED_OUTPUT,"w");
+            init_graph(fp,set);
+            i = initialize(set);
+            if (set->opt->INPUT)
+                print_input(fp,set);
+            find_LCAs(fp,set,i);
+            calc_gfreq(fp,set);
+            //printGraph();
+            deleteHash = MemoryDFS(set->graph);
+            removeEdges(deleteHash);
+            //start_trans_reductn(set->graph);
+            //printGraph();
+            print_edges(fp,set);
+            fputs("}",fp);
+            fclose(fp);
+            free_hashtbl(deleteHash);
+        }
+         */
     }
 
     if (set->opt->GRAPH) {

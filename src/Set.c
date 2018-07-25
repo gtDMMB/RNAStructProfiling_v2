@@ -700,13 +700,13 @@ void make_profiles(Set *set) {
     name = set->structfile;
     profile = (int*) malloc(sizeof(int)*ARRAYSIZE);
 
-    if (!(halfbrac = create_hashtbl(HASHSIZE, NULL))) {
-        fprintf(stderr, "ERROR: create_hashtbl() for halfbrac failed");
+    if (!(halfbrac = create_hashtbl(HASHSIZE,NULL))) {
+        fprintf(stderr, "ERROR: hashtbl_create() for halfbrac failed");
         exit(EXIT_FAILURE);
     }
     if (set->opt->REP_STRUCT) {
-        if (!(consensus = create_hashtbl(HASHSIZE, NULL))) {
-            fprintf(stderr, "ERROR: create_hashtbl() for consensus failed");
+        if (!(consensus = create_hashtbl(HASHSIZE,NULL))) {
+            fprintf(stderr, "ERROR: hashtbl_create() for consensus failed");
             exit(EXIT_FAILURE);
         }
         trips = (char*) malloc(sizeof(char)*tripsize*ARRAYSIZE);
@@ -776,6 +776,11 @@ void make_profiles(Set *set) {
         if (set->opt->REP_STRUCT) {
             make_rep_struct(consensus,prof,trips);
         }
+
+        if (!(halfbrac = create_hashtbl(HASHSIZE,NULL))) {
+            fprintf(stderr, "ERROR: hashtbl_create() for halfbrac failed");
+            exit(EXIT_FAILURE);
+        }
         last = 0;
         lastfreq = 0;
         coverage += ((double)numhelix/(double)allhelix);
@@ -791,7 +796,6 @@ void make_profiles(Set *set) {
         printf("Ave structure coverage by fbp: %.2f\n",bpcov/(double)set->opt->NUMSTRUCTS);
     }
     free(profile);
-    profile = NULL;
     fclose(fp);
     fclose(file);
 }

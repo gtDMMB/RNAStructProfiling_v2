@@ -42,6 +42,7 @@ extern int REP_STRUCT;
 #define DEF_MIN_HEL_LEN 1
 /*default output file name*/
 #define DEF_OUTPUT "profile.dot"
+#define NAME_STRING_BUFFER 256
 
 typedef struct options {
     /*all the options*/
@@ -66,7 +67,7 @@ typedef struct options {
 
     // Consolidation options
     int CONSOLIDATE;
-
+    char* CONSOLIDATED_OUTPUT;
     int STEM_END_DELTA;
     double STEM_VALID_PERCENT_ERROR;
     int STEM_NUM_CUTOFF;
