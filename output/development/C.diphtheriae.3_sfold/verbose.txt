@@ -194,6 +194,14 @@ Selected profile 1 2 3 6 with freq 65 (70)
 Coverage by selected profiles: 0.777
 Number of profiles needed to get 0.50 coverage: 2
 Total number of selected profiles: 4
+Total number of vertices: 7
+node: '1 2 3 '
+node: '1 2 4 5 6 7 8 '
+node: '1 2 4 5 7 '
+node: '1 2 3 6 '
+node: '1 2 '
+node: '1 2 6 '
+node: '1 '
 Do stem 6 and stem 12 occur infrequently enough to be functionally similar: No
 Do stem 7 and stem 14 occur infrequently enough to be functionally similar: No
 Do stem 8 and stem 18 occur infrequently enough to be functionally similar: Yes
@@ -246,11 +254,13 @@ Selected stem profile 1 2 4 5 6 A with freq 59 (239)
 Coverage by selected stem profiles: 0.779
 Number of stem profiles needed to get 0.50 coverage: 2
 Total number of selected stem profiles: 5
-Total number of vertices: 7
+Total number of vertices: 9
 node: '1 2 3 '
-node: '1 2 4 5 6 7 8 '
-node: '1 2 4 5 7 '
+node: '1 2 4 5 6 A 7 '
 node: '1 2 3 6 '
+node: '1 2 4 5 7 '
+node: '1 2 4 5 6 A '
 node: '1 2 '
 node: '1 2 6 '
+node: '1 2 4 5 '
 node: '1 '

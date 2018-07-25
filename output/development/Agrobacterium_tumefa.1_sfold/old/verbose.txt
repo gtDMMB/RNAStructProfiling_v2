@@ -220,6 +220,52 @@ Featured helix 12 with freq 268
 Featured helix 14 with freq 225
 Featured helix 15 with freq 196
 Total number of featured stems: 11
+Total number of stem profiles: 36
+Stem profile 1 A 2 D E 12  with freq 246 (246)
+Stem profile 1 A 2 B C 15  with freq 192 (192)
+Stem profile 1 A 2 B 10 14  with freq 128 (128)
+Stem profile 1 A 2 B C  with freq 115 (349)
+Stem profile 1 A B 10 14  with freq 95 (223)
+Stem profile 1 A 2 B C 10  with freq 42 (42)
+Stem profile 1 A 2 D E  with freq 34 (280)
+Stem profile 1 A B C 10  with freq 30 (72)
+Stem profile 1 A 2 C  with freq 23 (378)
+Stem profile 1 A 2 E 12  with freq 12 (259)
+Stem profile 1 A 2 B 10  with freq 9 (179)
+Stem profile 1 D  with freq 9 (305)
+Stem profile 1 A B 10  with freq 8 (312)
+Stem profile A B  with freq 8 (640)
+Stem profile 1 A 2 B  with freq 6 (492)
+Stem profile 1 A 2 D 12  with freq 5 (251)
+Stem profile  with freq 5 (1000)
+Stem profile A B C  with freq 5 (385)
+Stem profile 1 A D  with freq 4 (295)
+Stem profile 1 A 2 C 15  with freq 3 (195)
+Stem profile C  with freq 3 (418)
+Stem profile 1 A  with freq 2 (966)
+Stem profile 1 A 2 C E  with freq 2 (2)
+Stem profile 1 A D E 12  with freq 2 (248)
+Stem profile 1 A 10 14  with freq 1 (224)
+Stem profile 1 A B  with freq 1 (627)
+Stem profile 1 2 D E 12  with freq 1 (247)
+Stem profile 1 A B C  with freq 1 (380)
+Stem profile 1 C 10  with freq 1 (73)
+Stem profile 1 A D E  with freq 1 (283)
+Stem profile 1 A 2 C D  with freq 1 (1)
+Stem profile 1  with freq 1 (979)
+Stem profile 1 A 2 D  with freq 1 (287)
+Stem profile 1 A D 12  with freq 1 (254)
+Stem profile 1 A 2 E 12 15  with freq 1 (1)
+Stem profile 1 10 14  with freq 1 (224)
+setting p to 9.5
+Selected stem profile 1 A 2 D E 12 with freq 246 (246)
+Selected stem profile 1 A 2 B C 15 with freq 192 (192)
+Selected stem profile 1 A 2 B 10 14 with freq 128 (128)
+Selected stem profile 1 A 2 B C with freq 115 (349)
+Selected stem profile 1 A B 10 14 with freq 95 (223)
+Coverage by selected stem profiles: 0.776
+Number of stem profiles needed to get 0.50 coverage: 3
+Total number of selected stem profiles: 5
 Total number of vertices: 24
 node: '1 2 3 4 5 7 '
 node: '1 2 5 8 9 11 12 '
