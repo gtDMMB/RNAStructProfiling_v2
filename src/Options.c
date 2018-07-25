@@ -27,7 +27,6 @@ Options* make_options() {
 
     opt->CONSOLIDATE = 1;
     opt->CONSOLIDATED_OUTPUT = (char*) malloc(sizeof(char) * NAME_STRING_BUFFER);
-    strcpy(opt->CONSOLIDATED_OUTPUT, DEF_CONSOLIDATED_OUTPUT_PREFIX);
     opt->STEM_END_DELTA = 3;
     opt->STEM_VALID_PERCENT_ERROR = 5;
     opt->STEM_NUM_CUTOFF = 25;
@@ -37,7 +36,7 @@ Options* make_options() {
     opt->NUM_S_STEM_PROF = 0;
     opt->STEM_FREQ = -1;
     opt->STEM_PROF_FREQ = -1;
-    opt->STEM_GRAPH = 0;
+    opt->STEM_GRAPH = 1;
   return opt;
 }
 

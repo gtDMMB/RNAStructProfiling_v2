@@ -9,10 +9,10 @@ node** currentPath;
 int position;
 HASHTBL *deleteHash;
 
-HASHTBL* MemoryDFS(node* root) {
+HASHTBL* MemoryDFS(node* root, int graph_size) {
   int idx, num, counter, counter2;
   node* myroot;
-  currentPath = (node**)malloc(sizeof(node*)*GRAPHSIZE);
+  currentPath = (node**)malloc(sizeof(node*)*graph_size);
   position = 0;
   if (!(deleteHash = create_hashtbl(31, NULL))) {
     fprintf(stderr, "ERROR: create_hashtbl() for deleteHash failed");

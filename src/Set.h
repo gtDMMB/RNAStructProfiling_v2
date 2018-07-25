@@ -60,6 +60,7 @@ typedef struct {
     Options *opt;
     node *inputnode;
     node *graph;
+    node* consolidated_graph;
     array_list_t* original_hc_stems;
     array_list_t* stems;
     array_list_t* featured_stem_ids;

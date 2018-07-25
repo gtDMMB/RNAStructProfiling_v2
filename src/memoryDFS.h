@@ -4,7 +4,7 @@
 #include "graph.h"
 #include "hashtbl.h"
 
-HASHTBL* MemoryDFS(node* root);
+HASHTBL* MemoryDFS(node* root, int graph_size);
 void MDFSHelper(node* root, node* v);
 
 /* Returns 1 if the node was found, 0 otherwise */

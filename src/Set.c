@@ -61,6 +61,8 @@ Set* make_Set(char *name) {
     set->inputnode = NULL;
     set->graph = NULL;
 
+    set->consolidated_graph = NULL;
+
     set->original_hc_stems = create_array_list();
     set->stems = create_array_list();
     set->featured_stem_ids = create_array_list();

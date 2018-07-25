@@ -33,16 +33,16 @@ all: RNAprofile
 debug : CFLAGS += $(CDEBUG) -I../shared
 debug : RNAprofile
 
-RNAprofile: main.o hashtbl.o Set.o profile.o helix_class.o options.o graph.o stem.o array_list.o memoryDFS.o Profnode.o
-	$(CC) -o RNAprofile -Wall -g $(INCLUDE) hashtbl.o main.o Set.o profile.o helix_class.o options.o graph.o stem.o array_list.o memoryDFS.o profnode.o -lm  libgtfold.a -lgmp $(LIBS)
+RNAprofile: main.o hashtbl.o Set.o profile.o helix_class.o options.o graph.o consolidated_graph.o stem.o array_list.o memoryDFS.o Profnode.o
+	$(CC) -o RNAprofile -Wall -g $(INCLUDE) hashtbl.o main.o Set.o profile.o helix_class.o options.o graph.o consolidated_graph.o stem.o array_list.o memoryDFS.o profnode.o -lm  libgtfold.a -lgmp $(LIBS)
 
-main.o: main.c Set.h hashtbl.h Options.h graph.h memoryDFS.h ./include/boltzmann_main.h
+main.o: main.c Set.h hashtbl.h Options.h graph.h consolidated_graph.h memoryDFS.h ./include/boltzmann_main.h
 	$(CC) -o main.o -Wall -g $(INCLUDE) -c main.c
 
 hashtbl.o: hashtbl.c hashtbl.h
 	$(CC) -o hashtbl.o -Wall -g -c hashtbl.c
 
-Set.o: Set.c Set.h hashtbl.h helix_class.h Profile.h Options.h graph.h Profnode.h stem.h
+Set.o: Set.c Set.h hashtbl.h helix_class.h Profile.h Options.h graph.h consolidated_graph.h Profnode.h stem.h
 	$(CC) -o Set.o -Wall -g -c -lm Set.c
 
 profile.o: Profile.c Profile.h hashtbl.h
@@ -57,13 +57,16 @@ options.o: Options.c Options.h
 graph.o: graph.c graph.h Set.h
 	$(CC) -o graph.o -Wall -g -c graph.c
 
+consolidated_graph.o: consolidated_graph.c consolidated_graph.h Set.h
+	$(CC) -o consolidated_graph.o -Wall -g -c consolidated_graph.c
+
 stem.o: stem.c stem.h
 	$(CC) -o stem.o -Wall -g -c stem.c
 
 array_list.o: array_list.c array_list.h list.h
 	$(CC) -o array_list.o -Wall -g -c array_list.c
 
-memoryDFS.o: memoryDFS.c memoryDFS.h graph.h hashtbl.h
+memoryDFS.o: memoryDFS.c memoryDFS.h graph.h consolidated_graph.h hashtbl.h
 	$(CC) -o memoryDFS.o -Wall -g -c memoryDFS.c
 
 Profnode.o: Profnode.c Profnode.h

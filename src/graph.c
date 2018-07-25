@@ -204,7 +204,7 @@ void find_LCAs(FILE *fp,Set *set, int i) {
   set->graph->nsize = size;
 }
 
-//wraps around like mod function
+//wraps around like mod fu315:19nction
 int advance(int newk, int oldk) {
   int next = newk+1;
   if (next == oldk) {

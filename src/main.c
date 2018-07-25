@@ -8,6 +8,7 @@
 #include "boltzmann_main.h"
 #include "helix_class.h"
 #include "stem.h"
+#include "consolidated_graph.h"
 
 using namespace std;
 
@@ -306,7 +307,8 @@ GTBOLTZMANN OPTIONS
         args[gtargs] = argv[argc-1];
         boltzmann_main(gtargs+1,args);
     }
-    strcat(set->opt->CONSOLIDATED_OUTPUT, set->opt->OUTPUT);
+    strncpy(set->opt->CONSOLIDATED_OUTPUT, set->opt->OUTPUT, strlen(set->opt->OUTPUT) - 4);
+    strcat(set->opt->CONSOLIDATED_OUTPUT, "_consolidated.dot");
 
     input_seq(set,argv[argc-1]);
     if (opt->SFOLD)
@@ -410,26 +412,19 @@ GTBOLTZMANN OPTIONS
         }
         select_stem_profiles(set);
         printf("Total number of selected stem profiles: %d\n",set->num_s_stem_prof);
-        /*
         if (set->opt->STEM_GRAPH) {
             fp = fopen(set->opt->CONSOLIDATED_OUTPUT,"w");
-            init_graph(fp,set);
-            i = initialize(set);
-            if (set->opt->INPUT)
-                print_input(fp,set);
-            find_LCAs(fp,set,i);
-            calc_gfreq(fp,set);
-            //printGraph();
-            deleteHash = MemoryDFS(set->graph);
-            removeEdges(deleteHash);
-            //start_trans_reductn(set->graph);
-            //printGraph();
-            print_edges(fp,set);
+            consolidated_init_graph(fp,set);
+            i = consolidated_initialize(set);
+            consolidated_find_LCAs(fp,set,i);
+            consolidated_calc_gfreq(fp,set);
+            deleteHash = MemoryDFS(set->consolidated_graph, CONSOLIDATED_GRAPHSIZE);
+            consolidated_removeEdges(deleteHash);
+            consolidated_print_edges(fp,set);
             fputs("}",fp);
             fclose(fp);
             free_hashtbl(deleteHash);
         }
-         */
     }
 
     if (set->opt->GRAPH) {
@@ -441,7 +436,7 @@ GTBOLTZMANN OPTIONS
         find_LCAs(fp,set,i);
         calc_gfreq(fp,set);
         //printGraph();
-        deleteHash = MemoryDFS(set->graph);
+        deleteHash = MemoryDFS(set->graph, GRAPHSIZE);
         removeEdges(deleteHash);
         //start_trans_reductn(set->graph);
         //printGraph();
