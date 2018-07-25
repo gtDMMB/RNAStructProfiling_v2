@@ -24,8 +24,8 @@ def update_seq(seq_dir, src_dir):
    old_path = seq_dir + '/old'
    if not os.path.exists(old_path):
       os.makedirs(old_path)
-   out_file_names = ['/out','/verbose.txt','/structure.out','/stem_structure.out','/helices.txt','/key.txt']
-   for f in out_file_names + ['/out.png', '/comparison.txt']:
+   out_file_names = ['/out.dot','/out_consolidated.dot','/verbose.txt','/structure.out','/stem_structure.out','/helices.txt','/key.txt']
+   for f in out_file_names + ['/out.png', '/out_consolidated.png', '/comparison.txt']:
       if os.path.isfile(seq_dir + f):
          os.rename(seq_dir + f, old_path + f)
    os.chdir(src_dir)
@@ -40,6 +40,7 @@ def update_seq(seq_dir, src_dir):
          print('ERROR: sequence ' + seq_name)
    os.chdir(seq_dir)
    subprocess.call('dot -T png -o ' + out_file_names[0][1:] + '.png ' + out_file_names[0][1:] + ' > /dev/null', shell=True)
+   subprocess.call('dot -T png -o ' + out_file_names[1][1:] + '.png ' + out_file_names[1][1:] + ' > /dev/null', shell=True)
    return 0
 
 

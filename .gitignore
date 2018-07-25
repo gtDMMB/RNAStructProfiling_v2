@@ -2,6 +2,7 @@
 .idea/
 cmake-build-debug/
 RNAprofile
+src/*.png
 src/*.out
 src/*.txt
 src/*.dot
