@@ -39,8 +39,8 @@ def update_seq(seq_dir, src_dir):
       else:
          print('ERROR: sequence ' + seq_name)
    os.chdir(seq_dir)
-   subprocess.call('dot -T png -o ' + out_file_names[0][1:] + '.png ' + out_file_names[0][1:] + ' > /dev/null', shell=True)
-   subprocess.call('dot -T png -o ' + out_file_names[1][1:] + '.png ' + out_file_names[1][1:] + ' > /dev/null', shell=True)
+   subprocess.call('dot -T png -o ' + out_file_names[0][1:-4] + '.png ' + out_file_names[0][1:] + ' > /dev/null', shell=True)
+   subprocess.call('dot -T png -o ' + out_file_names[1][1:-4] + '.png ' + out_file_names[1][1:] + ' > /dev/null', shell=True)
    return 0
 
 
