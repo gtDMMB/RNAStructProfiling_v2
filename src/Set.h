@@ -18,7 +18,7 @@
 #define ARRAYSIZE 20
 #define INIT_SIZE 2
 #define STRING_BUFFER 256
-#define BASE_PROF_NUM 400
+#define BASE_PROF_NUM 1000
 
 // Max length of a line in the structure file TODO: make into an option
 #define MAX_STRUCT_FILE_LINE_LEN 512

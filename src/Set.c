@@ -355,7 +355,8 @@ void process_structs_sfold(Set *set) {
         exit(EXIT_FAILURE);
     }
     if (!(halfbrac = create_hashtbl(HASHSIZE, NULL))) {
-        fprintf(stderr, "ERROR: create_hashtbl() for halfbrac failed");
+        fprintf(stderr, "ER"
+                        "ROR: create_hashtbl() for halfbrac failed");
         exit(EXIT_FAILURE);
     }
     key = (char*) malloc(sizeof(char)*ARRAYSIZE);
@@ -1593,7 +1594,7 @@ void merge_stems(Stem* stem1, Stem* stem2) {
         add_to_array_list(stem1->helices, insert_index + i, stem2->helices->entries[i]);
     }
     for (int i = 0; i < stem2->components->size; i++) {
-        add_to_array_list(stem1->components, stem1->components->size + i, stem2->components->entries[i]);
+        add_to_array_list(stem1->components, stem1->components->size, stem2->components->entries[i]);
     }
     //stem_reset_id(stem1);
 }
