@@ -42,6 +42,9 @@ HC* create_HC(int id, char* max) {
 }
 
 void free_hc(void *ptr) {
+    if (ptr == NULL) {
+        return;
+    }
     HC* hc = (HC*) ptr;
     free(hc->id);
     hc->id = NULL;
@@ -52,7 +55,6 @@ void free_hc(void *ptr) {
     free(hc->max_quad);
     hc->max_quad = NULL;
     free(hc);
-    hc = NULL;
 }
 
 

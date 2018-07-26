@@ -34,6 +34,21 @@ node* createNode(char *name)
     return newNode;
 }
 
+// TODO: impement free_node properly
+void free_node(void* ptr) {
+    if (ptr == NULL) {
+        return;
+    }
+    node* graph_node = (node*) ptr;
+    free(graph_node->label);
+    free(graph_node->bracket);
+    for (int i = 0; i < graph_node->numNeighbors; i++) {
+        free_node(graph_node->neighbors[i]);
+    }
+    free(graph_node);
+    graph_node = NULL;
+}
+
 Set* make_Set(char *name) {
     Set *set = (Set*) malloc(sizeof(Set));
     set->seq = NULL;
@@ -52,7 +67,6 @@ Set* make_Set(char *name) {
     set->prof_num = 0;
     set->num_sprof = 0;
     set->profiles = (Profile**) malloc(sizeof(Profile*)*BASE_PROF_NUM);
-    set->proftree = (Profnode***) malloc(sizeof(Profnode**)*ARRAYSIZE*2);
     set->treeindex = (int*) malloc(sizeof(int)*ARRAYSIZE*2);
     set->treesize = 2;
     set->h_cutoff = 0;
@@ -74,16 +88,28 @@ Set* make_Set(char *name) {
     return set;
 }
 
-// TODO: use proper free function for stems
 void free_Set(Set* set) {
-    free(set->helices);
-    set->helices = NULL;
-    free(set->profiles);
-    set->profiles = NULL;
-    free(set->proftree);
-    set->proftree = NULL;
+    free(set->seq);
+    free(set->structfile);
+    if (set->helices != NULL) {
+        for (int i = 0; i < set->hc_num; i++) {
+            free_hc(set->helices[i]);
+            set->helices[i] = NULL;
+        }
+        free(set->helices);
+    }
+    // TODO: Free set->joint
+    if (set->profiles != NULL) {
+        for (int i = 0; i < set->prof_num; i++) {
+            free_profile(set->profiles[i]);
+        }
+        free(set->profiles);
+    }
     free(set->treeindex);
-    set->treeindex = NULL;
+    //free_node(set->inputnode);
+    //free_node(set->graph);
+    //free_node(set->consolidated_graph);
+    free_array_list(set->original_hc_stems, &free);
     free_array_list(set->stems, &free);
     free_array_list(set->featured_stem_ids, &free);
     for (int i = 0; i < set->opt->NUMSTRUCTS; i++) {
@@ -94,10 +120,16 @@ void free_Set(Set* set) {
             free_array_list(set->stem_structures[i], &free);
         }
     }
+    if (set->stem_profiles != NULL) {
+        for (int i = 0; i < set->stem_prof_num; i++) {
+            free_profile(set->stem_profiles[i]);
+        }
+        free(set->stem_profiles);
+    }
+    free_options(set->opt);
     free(set->structures);
     free(set->stem_structures);
     free(set);
-    set = NULL;
 }
 
 void input_seq(Set *set,char *seqfile) {
@@ -1002,7 +1034,7 @@ void make_brackets(HASHTBL *brac, int i, int j, int id) {
     //  printf("making bracket %s for %d\n",val,i);
     hashtbl_insert(brac,key,val);
     sprintf(key,"%d",j);
-    val = (char*) malloc(sizeof(char)*2);
+    val = (char*) malloc(sizeof(char)*ARRAYSIZE);
     val[0] = ']';
     val[1] = '\0';
     hashtbl_insert(brac,key,val);
@@ -1454,7 +1486,7 @@ void add_structures_to_set(Set* set) {
                         token_i++;
                         continue;
                     }
-                    char* temp = (char*) malloc(sizeof(char) * strlen(token));
+                    char* temp = (char*) malloc(sizeof(char) * (strlen(token) + 1));
                     strcpy(temp, token);
                     add_to_array_list(set->structures[struct_i], helix_i, temp);
                     helix_i++;
@@ -1903,9 +1935,11 @@ bool component_in_structure(DataNode* component, array_list_t* structure) {
         sprintf(hc_id_string, "%s", ((HC*)(component->data))->id);
         for (int i = 0; i < structure->size; i++) {
             if (strcmp((char*) structure->entries[i], hc_id_string) == 0) {
+                free(hc_id_string);
                 return true;
             }
         }
+        free(hc_id_string);
         return false;
     } else {
         printf("Error: non recognized DataNode* type");
@@ -2202,10 +2236,12 @@ void make_stem_profiles(Set* set) {
             Profile* stem_prof = create_profile(stem_prof_str);
             set->stem_profiles[set->stem_prof_num] = stem_prof;
             set->stem_prof_num++;
+        } else {
+            free(stem_prof_str);
         }
     }
-    free(data_out);
     free(stem_structure_str);
+    free(data_out);
     fclose(stem_struct_file);
 }
 
@@ -2425,7 +2461,7 @@ void make_stem_brackets(HASHTBL *brac, int i, int j, char* id) {
     //  printf("making bracket %s for %d\n",val,i);
     hashtbl_insert(brac,key,val);
     sprintf(key,"%d",j);
-    val = (char*) malloc(sizeof(char)*2);
+    val = (char*) malloc(sizeof(char)*ARRAYSIZE);
     val[0] = ']';
     val[1] = '\0';
     hashtbl_insert(brac,key,val);
@@ -2462,9 +2498,11 @@ void make_stem_brackets(HASHTBL *brac, int i, int j, char* id) {
          sprintf(hc_id_string, "%s", ((HC*)(component->data))->id);
          for (int i = 0; i < structure->size; i++) {
              if (strcmp((char*) structure->entries[i], hc_id_string) == 0) {
+                 free(hc_id_string);
                  return i;
              }
          }
+         free(hc_id_string);
          return index;
      } else {
          printf("Error: non recognized DataNode* type");
@@ -2505,9 +2543,11 @@ int component_end_i(DataNode *component, array_list_t *structure) {
         sprintf(hc_id_string, "%s", ((HC*)(component->data))->id);
         for (int i = 0; i < structure->size; i++) {
             if (strcmp((char*) structure->entries[i], hc_id_string) == 0) {
+                free(hc_id_string);
                 return i;
             }
         }
+        free(hc_id_string);
         return index;
     } else {
         printf("Error: non recognized DataNode* type");

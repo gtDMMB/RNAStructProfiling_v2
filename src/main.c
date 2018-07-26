@@ -54,14 +54,18 @@ int main(int argc, char *argv[]) {
         //printf("argv[%d] is %s\n",i,argv[i]);
         if (!strcmp(argv[i],"-e")) {
             if (i + 1 <= argc - 2) {
-                set->structfile = argv[i+1];
+                char* temp = (char*) malloc(sizeof(char) * (strlen(argv[i+1]) + 1));
+                strcpy(temp, argv[i+1]);
+                set->structfile = temp;
                 i++;
                 input = 1;
             }
         }
         if (!strcmp(argv[i],"-sfold")) {
             if (i + 1 <= argc - 2) {
-                set->structfile = argv[i+1];
+                char* temp = (char*) malloc(sizeof(char) * (strlen(argv[i+1]) + 1));
+                strcpy(temp, argv[i+1]);
+                set->structfile = temp;
                 i++;
                 input = 1;
                 opt->SFOLD = 1;
@@ -130,8 +134,10 @@ int main(int argc, char *argv[]) {
                 if (len < 5 || strcmp(&(opt->OUTPUT[len-4]), ".dot") != 0) {
                     strcat(opt->OUTPUT, ".dot");
                 }
-                name = mystrdup(argv[i+1]);
-                set->structfile = strcat(name,".samples");
+                name = (char*) malloc(sizeof(char) * (strlen(argv[i+1]) + 8 + 1));
+                strcpy(name, argv[i+1]);
+                strcat(name,".samples");
+                set->structfile = name;
                 args[3] = argv[i];
                 args[4] = argv[i+1];
                 i++;
@@ -308,6 +314,7 @@ GTBOLTZMANN OPTIONS
         boltzmann_main(gtargs+1,args);
     }
     strncpy(set->opt->CONSOLIDATED_OUTPUT, set->opt->OUTPUT, strlen(set->opt->OUTPUT) - 4);
+    set->opt->CONSOLIDATED_OUTPUT[strlen(set->opt->OUTPUT) - 4] = '\0';
     strcat(set->opt->CONSOLIDATED_OUTPUT, "_consolidated.dot");
 
     input_seq(set,argv[argc-1]);
@@ -381,6 +388,7 @@ GTBOLTZMANN OPTIONS
         fputs("}",fp);
         fclose(fp);
         free_hashtbl(deleteHash);
+        //free_node(graph);
     }
 
     if (set->opt->CONSOLIDATE) {
@@ -443,9 +451,9 @@ GTBOLTZMANN OPTIONS
             fputs("}",fp);
             fclose(fp);
             free_hashtbl(deleteHash);
+            //free_node(consolidated_graph);
         }
     }
-
     free_Set(set);
     exit(EXIT_SUCCESS);
 }

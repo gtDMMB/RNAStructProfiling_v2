@@ -18,7 +18,7 @@
 #define ARRAYSIZE 20
 #define INIT_SIZE 2
 #define STRING_BUFFER 256
-#define BASE_PROF_NUM 300
+#define BASE_PROF_NUM 400
 
 // Max length of a line in the structure file TODO: make into an option
 #define MAX_STRUCT_FILE_LINE_LEN 512
@@ -50,7 +50,6 @@ typedef struct {
     int prof_num;
     int num_sprof;
     Profile **profiles;
-    Profnode ***proftree;
     int *treeindex;
     int treesize;
     //Profile **freqprof;  //?
@@ -75,6 +74,7 @@ typedef struct {
 
 node* createNode(char *name);
 Set* make_Set(char *name);
+void free_node(void* ptr);
 void input_seq(Set *set,char *seqfile);
 void process_structs(Set *set);
 void process_structs_sfold(Set *set);
