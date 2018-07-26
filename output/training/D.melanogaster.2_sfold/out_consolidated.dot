@@ -1,0 +1,34 @@
+digraph G {
+	pad = 0.5;
+	nodesep = 0.5;
+"legend" [label = < <table border="0" cellborder="1" cellspacing="0"><tr><td>Stem</td><td>Quadruplet</td><td>Frequency</td></tr>
+<tr><td>A</td><td>97 106 239 248</td><td>994</td></tr>
+<tr><td>5</td><td>191 193 198 200</td><td>983</td></tr>
+<tr><td>B</td><td>110 124 218 233</td><td>968</td></tr>
+<tr><td>C</td><td>124 142 147 165</td><td>959</td></tr>
+<tr><td>D</td><td>183 185 206 207</td><td>938</td></tr>
+<tr><td>E</td><td>75 95 249 266</td><td>921</td></tr>
+<tr><td>12</td><td>105 108 234 237</td><td>853</td></tr>
+<tr><td>13</td><td>173 176 214 217</td><td>853</td></tr>
+<tr><td>F</td><td>63 69 267 273</td><td>708</td></tr>
+<tr><td>G</td><td>45 59 279 293</td><td>698</td></tr>
+<tr><td>19</td><td>3 8 31 36</td><td>469</td></tr>
+<tr><td>20</td><td>13 16 20 23</td><td>430</td></tr>
+<tr><td>22</td><td>9 10 28 29</td><td>399</td></tr>
+<tr><td>H</td><td>18 34 38 54</td><td>292</td></tr>
+<tr><td>25</td><td>268 274 278 284</td><td>278</td></tr>
+</table>>, shape = plaintext, fontsize=11];
+"A 5 B C D E 12 13 F G 19 20 22 " [shape = box];
+"A 5 B C D E 12 13 H 25 " [shape = box];
+"A 5 B C D E 12 13 F G " [shape = box];
+"A 5 B C D E 12 13 " [style = dashed];
+"A 5 B C D E 12 13 F G 19 20 22 " [label = "[19[22[20]]][G[F[E[A[12[B[C][13[D[5]]]]]]]]]\n232/232"];
+"A 5 B C D E 12 13 H 25 " [label = "[H][E[A[12[B[C][13[D[5]]]]]]][25]\n137/137"];
+"A 5 B C D E 12 13 F G " [label = "[G[F[E[A[12[B[C][13[D[5]]]]]]]]]\n130/477"];
+"A 5 B C D E 12 13 " [label = "[E[A[12[B[C][13[D[5]]]]]]]\n1/639"];
+"" [label = "[]\n0/1000"];
+"A 5 B C D E 12 13 F G " -> "A 5 B C D E 12 13 F G 19 20 22 " [label = "19 20 22 ", arrowhead = vee];
+"A 5 B C D E 12 13 " -> "A 5 B C D E 12 13 H 25 " [label = "H 25 ", arrowhead = vee];
+"A 5 B C D E 12 13 " -> "A 5 B C D E 12 13 F G " [label = "F G ", arrowhead = vee];
+"" -> "A 5 B C D E 12 13 " [label = "A 5 B C D E 12 13 ", arrowhead = vee];
+}

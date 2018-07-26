@@ -1,0 +1,123 @@
+digraph G {
+	pad = 0.5;
+	nodesep = 0.5;
+"legend" [label = < <table border="0" cellborder="1" cellspacing="0"><tr><td>Stem</td><td>Quadruplet</td><td>Frequency</td></tr>
+<tr><td>A</td><td>25 35 40 51</td><td>975</td></tr>
+<tr><td>2</td><td>61 69 83 91</td><td>897</td></tr>
+<tr><td>3</td><td>130 136 157 163</td><td>826</td></tr>
+<tr><td>4</td><td>140 143 150 153</td><td>826</td></tr>
+<tr><td>6</td><td>137 138 154 155</td><td>483</td></tr>
+<tr><td>7</td><td>71 72 81 82</td><td>474</td></tr>
+<tr><td>8</td><td>15 23 97 105</td><td>457</td></tr>
+<tr><td>B</td><td>15 24 48 58</td><td>357</td></tr>
+<tr><td>11</td><td>8 11 108 111</td><td>342</td></tr>
+<tr><td>12</td><td>115 117 171 173</td><td>331</td></tr>
+<tr><td>14</td><td>4 13 97 106</td><td>319</td></tr>
+<tr><td>15</td><td>125 128 170 173</td><td>304</td></tr>
+<tr><td>16</td><td>68 71 76 79</td><td>262</td></tr>
+<tr><td>17</td><td>2 6 179 183</td><td>245</td></tr>
+<tr><td>18</td><td>55 56 94 95</td><td>236</td></tr>
+</table>>, shape = plaintext, fontsize=11];
+"A 2 7 " [shape = box];
+"A 2 3 4 6 7 B 12 14 " [shape = box];
+"A 2 3 4 6 7 B 14 15 " [shape = box];
+"A " [shape = box];
+"A 2 3 4 6 B 12 14 " [shape = box];
+"A 2 16 " [shape = box];
+"A 2 3 4 7 B 12 14 " [shape = box];
+"A 2 3 4 6 B 12 14 16 " [shape = box];
+"A 2 3 4 7 B 14 15 " [shape = box];
+"A 2 3 4 6 7 8 11 15 17 18 " [shape = box];
+"A 2 3 4 B 12 14 " [shape = box];
+"A 2 3 4 6 7 8 11 15 17 " [shape = box];
+"A 2 3 4 7 8 11 12 17 " [shape = box];
+"A 2 " [style = dashed];
+"A 2 3 4 6 7 B 14 " [style = dashed];
+"A 2 3 4 7 B 14 " [style = dashed];
+"A 2 3 4 6 7 " [style = dashed];
+"A 2 3 4 7 12 " [style = dashed];
+"A 2 3 4 6 B 14 " [style = dashed];
+"A 2 3 4 6 7 15 " [style = dashed];
+"A 2 3 4 B 14 " [style = dashed];
+"A 2 3 4 7 " [style = dashed];
+"A 2 3 4 6 " [style = dashed];
+"A 2 3 4 12 " [style = dashed];
+"A 2 3 4 7 15 " [style = dashed];
+"A 2 3 4 " [style = dashed];
+"A 2 3 4 7 8 11 17 " [style = dashed];
+"A 2 7 " [label = "[A][2[7]]\n58/464"];
+"A 2 3 4 6 7 B 12 14 " [label = "[14[B[A]][2[7]]][12[3[6[4]]]]\n43/43"];
+"A 2 3 4 6 7 B 14 15 " [label = "[14[B[A]][2[7]]][15[3[6[4]]]]\n39/39"];
+"A " [label = "[A]\n39/975"];
+"A 2 3 4 6 B 12 14 " [label = "[14[B[A]][2]][12[3[6[4]]]]\n28/92"];
+"A 2 16 " [label = "[A][2[16]][6]\n25/202"];
+"A 2 3 4 7 B 12 14 " [label = "[14[B[A]][2[7]]][12[3[4]]]\n22/65"];
+"A 2 3 4 6 B 12 14 16 " [label = "[14[B[A]][2[16]]][12[3[6[4]]]]\n21/21"];
+"A 2 3 4 7 B 14 15 " [label = "[14[B[A]][2[7]]][15[3[4]]]\n19/59"];
+"A 2 3 4 6 7 8 11 15 17 18 " [label = "[17[11[8[A][18[2[7]]]]][15[3[6[4]]]]]\n18/18"];
+"A 2 3 4 B 12 14 " [label = "[14[B[A]][2]][12[3[4]]]\n17/142"];
+"A 2 3 4 6 7 8 11 15 17 " [label = "[17[11[8[A][2[7]]]][15[3[6[4]]]]]\n16/34"];
+"A 2 3 4 7 8 11 12 17 " [label = "[17[11[8[A][2[7]]]][12[3[4]]]]\n16/52"];
+"A 2 " [label = "[A][2]\n13/875"];
+"A 2 3 4 6 7 B 14 " [label = "[14[B[A]][2[7]]][3[6[4]]]\n11/93"];
+"A 2 3 4 7 B 14 " [label = "[14[B[A]][2[7]]][3[4]]\n10/146"];
+"A 2 3 4 6 7 " [label = "[A][2[7]][3[6[4]]]\n2/234"];
+"A 2 3 4 7 12 " [label = "[A][2[7]][12[3[4]]]\n0/155"];
+"A 2 3 4 6 B 14 " [label = "[14[B[A]][2]][3[6[4]]]\n5/183"];
+"A 2 3 4 6 7 15 " [label = "[A][2[7]][15[3[6[4]]]]\n0/98"];
+"A 2 3 4 B 14 " [label = "[14[B[A]][2]][3[4]]\n6/303"];
+"A 2 3 4 7 " [label = "[A][2[7]][3[4]]\n1/395"];
+"A 2 3 4 6 " [label = "[A][2][3[6[4]]]\n0/446"];
+"A 2 3 4 12 " [label = "[A][2][12[3[4]]]\n0/311"];
+"A 2 3 4 7 15 " [label = "[A][2[7]][15[3[4]]]\n1/161"];
+"A 2 3 4 " [label = "[A][2][3[4]]\n1/762"];
+"A 2 3 4 7 8 11 17 " [label = "[17[11[8[A][2[7]]]][3[4]]]\n0/107"];
+"" [label = "[]\n0/1000"];
+"A 2 7 " -> "A 2 3 4 7 " [label = "3 4 ", arrowhead = vee];
+"A " -> "A 2 " [label = "2 ", arrowhead = vee];
+"A 2 3 4 6 B 12 14 " -> "A 2 3 4 6 7 B 12 14 " [label = "7 ", arrowhead = vee];
+"A 2 3 4 6 B 12 14 " -> "A 2 3 4 6 B 12 14 16 " [label = "16 ", arrowhead = vee];
+"A 2 16 " -> "A 2 3 4 6 B 12 14 16 " [label = "3 4 6 B 12 14 ", arrowhead = vee];
+"A 2 3 4 7 B 12 14 " -> "A 2 3 4 6 7 B 12 14 " [label = "6 ", arrowhead = vee];
+"A 2 3 4 7 B 14 15 " -> "A 2 3 4 6 7 B 14 15 " [label = "6 ", arrowhead = vee];
+"A 2 3 4 B 12 14 " -> "A 2 3 4 6 B 12 14 " [label = "6 ", arrowhead = vee];
+"A 2 3 4 B 12 14 " -> "A 2 3 4 7 B 12 14 " [label = "7 ", arrowhead = vee];
+"A 2 3 4 6 7 8 11 15 17 " -> "A 2 3 4 6 7 8 11 15 17 18 " [label = "18 ", arrowhead = vee];
+"A 2 " -> "A 2 7 " [label = "7 ", arrowhead = vee];
+"A 2 " -> "A 2 3 4 " [label = "3 4 ", arrowhead = vee];
+"A 2 " -> "A 2 16 " [label = "16 ", arrowhead = vee];
+"A 2 3 4 6 7 B 14 " -> "A 2 3 4 6 7 B 12 14 " [label = "12 ", arrowhead = vee];
+"A 2 3 4 6 7 B 14 " -> "A 2 3 4 6 7 B 14 15 " [label = "15 ", arrowhead = vee];
+"A 2 3 4 7 B 14 " -> "A 2 3 4 7 B 14 15 " [label = "15 ", arrowhead = vee];
+"A 2 3 4 7 B 14 " -> "A 2 3 4 6 7 B 14 " [label = "6 ", arrowhead = vee];
+"A 2 3 4 7 B 14 " -> "A 2 3 4 7 B 12 14 " [label = "12 ", arrowhead = vee];
+"A 2 3 4 6 7 " -> "A 2 3 4 6 7 B 14 " [label = "B 14 ", arrowhead = vee];
+"A 2 3 4 6 7 " -> "A 2 3 4 6 7 15 " [label = "15 ", arrowhead = vee];
+"A 2 3 4 7 12 " -> "A 2 3 4 7 8 11 12 17 " [label = "8 11 17 ", arrowhead = vee];
+"A 2 3 4 7 12 " -> "A 2 3 4 7 B 12 14 " [label = "B 14 ", arrowhead = vee];
+"A 2 3 4 6 B 14 " -> "A 2 3 4 6 B 12 14 " [label = "12 ", arrowhead = vee];
+"A 2 3 4 6 B 14 " -> "A 2 3 4 6 7 B 14 " [label = "7 ", arrowhead = vee];
+"A 2 3 4 6 7 15 " -> "A 2 3 4 6 7 B 14 15 " [label = "B 14 ", arrowhead = vee];
+"A 2 3 4 6 7 15 " -> "A 2 3 4 6 7 8 11 15 17 " [label = "8 11 17 ", arrowhead = vee];
+"A 2 3 4 B 14 " -> "A 2 3 4 B 12 14 " [label = "12 ", arrowhead = vee];
+"A 2 3 4 B 14 " -> "A 2 3 4 7 B 14 " [label = "7 ", arrowhead = vee];
+"A 2 3 4 B 14 " -> "A 2 3 4 6 B 14 " [label = "6 ", arrowhead = vee];
+"A 2 3 4 7 " -> "A 2 3 4 7 B 14 " [label = "B 14 ", arrowhead = vee];
+"A 2 3 4 7 " -> "A 2 3 4 6 7 " [label = "6 ", arrowhead = vee];
+"A 2 3 4 7 " -> "A 2 3 4 7 12 " [label = "12 ", arrowhead = vee];
+"A 2 3 4 7 " -> "A 2 3 4 7 15 " [label = "15 ", arrowhead = vee];
+"A 2 3 4 7 " -> "A 2 3 4 7 8 11 17 " [label = "8 11 17 ", arrowhead = vee];
+"A 2 3 4 6 " -> "A 2 3 4 6 7 " [label = "7 ", arrowhead = vee];
+"A 2 3 4 6 " -> "A 2 3 4 6 B 14 " [label = "B 14 ", arrowhead = vee];
+"A 2 3 4 12 " -> "A 2 3 4 7 12 " [label = "7 ", arrowhead = vee];
+"A 2 3 4 12 " -> "A 2 3 4 B 12 14 " [label = "B 14 ", arrowhead = vee];
+"A 2 3 4 7 15 " -> "A 2 3 4 7 B 14 15 " [label = "B 14 ", arrowhead = vee];
+"A 2 3 4 7 15 " -> "A 2 3 4 6 7 15 " [label = "6 ", arrowhead = vee];
+"A 2 3 4 " -> "A 2 3 4 B 14 " [label = "B 14 ", arrowhead = vee];
+"A 2 3 4 " -> "A 2 3 4 7 " [label = "7 ", arrowhead = vee];
+"A 2 3 4 " -> "A 2 3 4 6 " [label = "6 ", arrowhead = vee];
+"A 2 3 4 " -> "A 2 3 4 12 " [label = "12 ", arrowhead = vee];
+"A 2 3 4 7 8 11 17 " -> "A 2 3 4 7 8 11 12 17 " [label = "12 ", arrowhead = vee];
+"A 2 3 4 7 8 11 17 " -> "A 2 3 4 6 7 8 11 15 17 " [label = "6 15 ", arrowhead = vee];
+"" -> "A " [label = "A ", arrowhead = vee];
+}

@@ -1,0 +1,83 @@
+digraph G {
+	pad = 0.5;
+	nodesep = 0.5;
+"legend" [label = < <table border="0" cellborder="1" cellspacing="0"><tr><td>Stem</td><td>Quadruplet</td><td>Frequency</td></tr>
+<tr><td>A</td><td>71 87 91 106</td><td>957</td></tr>
+<tr><td>B</td><td>55 65 110 120</td><td>940</td></tr>
+<tr><td>C</td><td>68 69 108 108</td><td>641</td></tr>
+<tr><td>D</td><td>1 11 147 157</td><td>621</td></tr>
+<tr><td>E</td><td>16 19 25 29</td><td>590</td></tr>
+<tr><td>8</td><td>45 49 126 130</td><td>573</td></tr>
+<tr><td>9</td><td>42 44 133 135</td><td>521</td></tr>
+<tr><td>10</td><td>32 35 142 145</td><td>505</td></tr>
+<tr><td>15</td><td>12 15 140 143</td><td>383</td></tr>
+<tr><td>F</td><td>31 39 127 135</td><td>382</td></tr>
+<tr><td>16</td><td>43 47 122 126</td><td>375</td></tr>
+<tr><td>17</td><td>3 10 152 159</td><td>371</td></tr>
+<tr><td>18</td><td>34 36 140 142</td><td>353</td></tr>
+</table>>, shape = plaintext, fontsize=11];
+"A B C D E 15 F 16 " [shape = box];
+"A B C 8 9 10 17 18 " [shape = box];
+"A B D E 15 F 16 " [shape = box];
+"A B C D E 8 9 10 18 " [shape = box];
+"A B C D 15 F 16 " [shape = box];
+"A B C E 8 9 10 17 18 " [shape = box];
+"A B C " [style = dashed];
+"A B C D E " [style = dashed];
+"A B C E " [style = dashed];
+"A B " [style = dashed];
+"A B C 8 9 10 18 " [style = dashed];
+"A B D E " [style = dashed];
+"A B D 15 F 16 " [style = dashed];
+"A B E " [style = dashed];
+"A B C D " [style = dashed];
+"A B C E 8 9 10 18 " [style = dashed];
+"A B D " [style = dashed];
+"A B C D E 15 F 16 " [label = "[D[15[E][F[16[B[C[A]]]]]]]\n191/191"];
+"A B C 8 9 10 17 18 " [label = "[17[10[18[9[8[B[C[A]]]]]]]]\n85/127"];
+"A B D E 15 F 16 " [label = "[D[15[E][F[16[B[A]]]]]]\n77/268"];
+"A B C D E 8 9 10 18 " [label = "[D[E][10[18[9[8[B[C[A]]]]]]]]\n61/61"];
+"A B C D 15 F 16 " [label = "[D[15[F[16[B[C[A]]]]]]]\n57/248"];
+"A B C E 8 9 10 17 18 " [label = "[17[E][10[18[9[8[B[C[A]]]]]]]]\n42/42"];
+"A B C " [label = "[B[C[A]]]\n0/630"];
+"A B C D E " [label = "[D[E][B[C[A]]]]\n0/291"];
+"A B C E " [label = "[E][B[C[A]]]\n0/377"];
+"A B " [label = "[B[A]]\n0/920"];
+"A B C 8 9 10 18 " [label = "[10[18[9[8[B[C[A]]]]]]]\n0/222"];
+"A B D E " [label = "[D[E][B[A]]]\n0/421"];
+"A B D 15 F 16 " [label = "[D[15[F[16[B[A]]]]]]\n22/347"];
+"A B E " [label = "[E][B[A]]\n0/553"];
+"A B C D " [label = "[D[B[C[A]]]]\n0/408"];
+"A B C E 8 9 10 18 " [label = "[E][10[18[9[8[B[C[A]]]]]]]\n1/104"];
+"A B D " [label = "[D[B[A]]]\n0/586"];
+"" [label = "[]\n0/1000"];
+"A B C 8 9 10 17 18 " -> "A B C E 8 9 10 17 18 " [label = "E ", arrowhead = vee];
+"A B D E 15 F 16 " -> "A B C D E 15 F 16 " [label = "C ", arrowhead = vee];
+"A B C D 15 F 16 " -> "A B C D E 15 F 16 " [label = "E ", arrowhead = vee];
+"A B C " -> "A B C E " [label = "E ", arrowhead = vee];
+"A B C " -> "A B C 8 9 10 18 " [label = "8 9 10 18 ", arrowhead = vee];
+"A B C " -> "A B C D " [label = "D ", arrowhead = vee];
+"A B C D E " -> "A B C D E 15 F 16 " [label = "15 F 16 ", arrowhead = vee];
+"A B C D E " -> "A B C D E 8 9 10 18 " [label = "8 9 10 18 ", arrowhead = vee];
+"A B C E " -> "A B C D E " [label = "D ", arrowhead = vee];
+"A B C E " -> "A B C E 8 9 10 18 " [label = "8 9 10 18 ", arrowhead = vee];
+"A B " -> "A B C " [label = "C ", arrowhead = vee];
+"A B " -> "A B E " [label = "E ", arrowhead = vee];
+"A B " -> "A B D " [label = "D ", arrowhead = vee];
+"A B C 8 9 10 18 " -> "A B C 8 9 10 17 18 " [label = "17 ", arrowhead = vee];
+"A B C 8 9 10 18 " -> "A B C E 8 9 10 18 " [label = "E ", arrowhead = vee];
+"A B D E " -> "A B D E 15 F 16 " [label = "15 F 16 ", arrowhead = vee];
+"A B D E " -> "A B C D E " [label = "C ", arrowhead = vee];
+"A B D 15 F 16 " -> "A B D E 15 F 16 " [label = "E ", arrowhead = vee];
+"A B D 15 F 16 " -> "A B C D 15 F 16 " [label = "C ", arrowhead = vee];
+"A B E " -> "A B C E " [label = "C ", arrowhead = vee];
+"A B E " -> "A B D E " [label = "D ", arrowhead = vee];
+"A B C D " -> "A B C D 15 F 16 " [label = "15 F 16 ", arrowhead = vee];
+"A B C D " -> "A B C D E " [label = "E ", arrowhead = vee];
+"A B C E 8 9 10 18 " -> "A B C D E 8 9 10 18 " [label = "D ", arrowhead = vee];
+"A B C E 8 9 10 18 " -> "A B C E 8 9 10 17 18 " [label = "17 ", arrowhead = vee];
+"A B D " -> "A B D 15 F 16 " [label = "15 F 16 ", arrowhead = vee];
+"A B D " -> "A B D E " [label = "E ", arrowhead = vee];
+"A B D " -> "A B C D " [label = "C ", arrowhead = vee];
+"" -> "A B " [label = "A B ", arrowhead = vee];
+}

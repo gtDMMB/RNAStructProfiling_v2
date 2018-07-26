@@ -1,0 +1,33 @@
+digraph G {
+	pad = 0.5;
+	nodesep = 0.5;
+"legend" [label = < <table border="0" cellborder="1" cellspacing="0"><tr><td>Stem</td><td>Quadruplet</td><td>Frequency</td></tr>
+<tr><td>A</td><td>20 32 131 142</td><td>1000</td></tr>
+<tr><td>4</td><td>38 43 109 114</td><td>1000</td></tr>
+<tr><td>5</td><td>44 49 70 75</td><td>1000</td></tr>
+<tr><td>6</td><td>54 57 62 65</td><td>1000</td></tr>
+<tr><td>8</td><td>114 118 123 127</td><td>1000</td></tr>
+<tr><td>B</td><td>79 88 96 105</td><td>999</td></tr>
+<tr><td>C</td><td>7 17 146 157</td><td>955</td></tr>
+<tr><td>12</td><td>1 5 160 164</td><td>568</td></tr>
+<tr><td>D</td><td>52 54 66 67</td><td>155</td></tr>
+<tr><td>E</td><td>5 5 158 159</td><td>79</td></tr>
+<tr><td>15</td><td>24 24 138 138</td><td>46</td></tr>
+<tr><td>16</td><td>34 34 129 129</td><td>40</td></tr>
+<tr><td>17</td><td>17 17 145 145</td><td>40</td></tr>
+</table>>, shape = plaintext, fontsize=11];
+"A 4 5 6 8 B C 12 " [shape = box];
+"A 4 5 6 8 B C " [shape = box];
+"A 4 5 6 8 B C 12 D " [shape = box];
+"A 4 5 6 8 B C D " [shape = box];
+"A 4 5 6 8 B C 12 " [label = "[12[C[A[4[5[6]][B][8]]]]\n418/547"];
+"A 4 5 6 8 B C " [label = "[C[A[4[5[6]][B][8]]]\n290/954"];
+"A 4 5 6 8 B C 12 D " [label = "[12[C[A[4[5[D[6]]][B][8]]]]\n72/77"];
+"A 4 5 6 8 B C D " [label = "[C[A[4[5[D[6]]][B][8]]]\n61/146"];
+"A 4 5 6 8 " [label = "[A[4[5[6]][8]]]\n0/1000"];
+"A 4 5 6 8 B C 12 " -> "A 4 5 6 8 B C 12 D " [label = "D ", arrowhead = vee];
+"A 4 5 6 8 B C " -> "A 4 5 6 8 B C 12 " [label = "12 ", arrowhead = vee];
+"A 4 5 6 8 B C " -> "A 4 5 6 8 B C D " [label = "D ", arrowhead = vee];
+"A 4 5 6 8 B C D " -> "A 4 5 6 8 B C 12 D " [label = "12 ", arrowhead = vee];
+"A 4 5 6 8 " -> "A 4 5 6 8 B C " [label = "B C ", arrowhead = vee];
+}
