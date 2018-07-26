@@ -12,7 +12,7 @@ typedef struct helix_class {
     //TODO: implement ave_quad
     /*
     // quadruplet, using avetrip instead of maxtrip
-    int int_ave_quad[4];
+    int double_ave_quad[4];
     // a string with the above info
     char* ave_quad;
      */

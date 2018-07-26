@@ -18,8 +18,6 @@ void consolidated_init_graph(FILE *fp, Set *set) {
     fprintf(fp,"\"legend\" [label = < <table border=\"0\" cellborder=\"1\" cellspacing=\"0\"><tr><td>Stem</td><td>Quadruplet</td><td>Frequency</td></tr>\n");
     for (i = 0; i < set->num_fstems; i++) {
         Stem* stem = (Stem*) set->stems->entries[i];
-        sprintf(stem->max_quad, "%d %d %d %d", stem->int_max_quad[0], stem->int_max_quad[1], stem->int_max_quad[2],
-                stem->int_max_quad[3]);
         fprintf(fp,"<tr><td>%s</td><td>%s</td><td>%d</td></tr>\n",stem->id,stem->max_quad,stem->freq);
     }
     fprintf(fp,"</table>>, shape = plaintext, fontsize=11];\n");

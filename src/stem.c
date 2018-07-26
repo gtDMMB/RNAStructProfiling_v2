@@ -129,6 +129,7 @@ Stem* create_stem() {
     stem->id = (char*) malloc(sizeof(char) * STRING_BUFFER);
     stem->hc_str = (char*) malloc(sizeof(char) * STRING_BUFFER);
     stem->max_quad = (char*) malloc(sizeof(char) * STRING_BUFFER);
+    stem->ave_quad = (char*) malloc(sizeof(char) * STRING_BUFFER);
     stem->is_featured = false;
     stem->binary = 0;
     return stem;
@@ -170,6 +171,7 @@ void free_stem(void* ptr) {
     stem->hc_str = NULL;
     free(stem->max_quad);
     stem->max_quad = NULL;
+    free(stem->ave_quad);
     free(stem);
     stem = NULL;
 }

@@ -147,6 +147,14 @@ bool component_in_structure(DataNode* component, array_list_t* structure);
 void update_freq_stems(Set* set);
 
 void reindex_stems(Set *set);
+void update_max_quads(Set* set);
+void update_ave_quads(Set* set);
+void find_double_max_quad(Stem *stem);
+void print_stems(Set* set);
+
+void get_ave_i_l(DataNode *component, double *i, double *l);
+void get_ave_j_k(DataNode *component, double *j, double *k);
+
 int stem_freq_compare(const void* s1, const void* s2);
 size_t int2size_t(int val);
 void get_alpha_id(int int_id, char* alpha_id);

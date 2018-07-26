@@ -31,16 +31,12 @@ typedef struct {
     int num_helices;
     // quadruplet, defined by the start and end nucleotides of each end of the stem (and thus of the outermost helix)
     int int_max_quad[4];
-    // TODO: update max quad properly when stems/helices are added
     // a string with the above info
     char* max_quad;
-    // TODO: implement ave_quad
-    /*
-    // quadruplet, using avetrip instead of maxtrip
-    int ave_quad[4];
+    // quadruplet, using average values of external HCs instead of max
+    double double_ave_quad[4];
     // a string with the above info
     char* ave_quad;
-     */
     // an array list of the component helices
     array_list_t* helices;
     // an ordered array list of the components (helices or functionally similar stem groups), ordered such that the

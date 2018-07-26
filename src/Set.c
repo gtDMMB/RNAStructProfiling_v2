@@ -2000,6 +2000,150 @@ void reindex_stems(Set *set) {
 }
 
 /**
+ * Update the max quad string to use int_max_quad's current values
+ *
+ * @param set the set to update stems in
+ */
+void update_max_quads(Set* set) {
+    for (int i = 0; i < set->stems->size; i++) {
+        Stem* stem = (Stem*) set->stems->entries[i];
+        sprintf(stem->max_quad, "%d %d %d %d", stem->int_max_quad[0], stem->int_max_quad[1], stem->int_max_quad[2],
+                stem->int_max_quad[3]);
+    }
+}
+
+/**
+ * Find the ave quads for stems in set and then update ave quad strings for those stems
+ *
+ * @param set the set to update stems in
+ */
+void update_ave_quads(Set* set) {
+    for (int i = 0; i < set->stems->size; i++) {
+        Stem* stem = (Stem*) set->stems->entries[i];
+        find_double_max_quad(stem);
+        sprintf(stem->ave_quad, "%.1f %.1f %.1f %.1f", stem->double_ave_quad[0], stem->double_ave_quad[1],
+                stem->double_ave_quad[2], stem->double_ave_quad[3]);
+    }
+}
+
+/**
+ * Find the int_max_quad of a stem
+ * @param stem
+ */
+void find_double_max_quad(Stem* stem) {
+    double* i = (double*) malloc(sizeof(double));
+    double* j = (double*) malloc(sizeof(double));
+    double* k = (double*) malloc(sizeof(double));
+    double* l = (double*) malloc(sizeof(double));
+    DataNode* outer_component = (DataNode*) stem->components->entries[0];
+    DataNode* inner_component = (DataNode*) stem->components->entries[stem->components->size - 1];
+    get_ave_i_l(outer_component, i, l);
+    get_ave_j_k(inner_component, j, k);
+    stem->double_ave_quad[0] = *i;
+    stem->double_ave_quad[1] = *j;
+    stem->double_ave_quad[2] = *k;
+    stem->double_ave_quad[3] = *l;
+    free(i);
+    free(j);
+    free(k);
+    free(l);
+}
+
+/**
+ * Get the average i amd l for a component, defined as the average i and average l if it is an HC, or weighted
+ * average by freq of component stems if it is a FSStemGroup
+ *
+ * @param component the outermost component of the stem to find ave i and l for
+ */
+void get_ave_i_l(DataNode *component, double *i, double *l) {
+    if (component->node_type == fs_stem_group_type) {
+        FSStemGroup* stem_group = (FSStemGroup*) component->data;
+        int total_freq = 0;
+        double* temp_i = (double*) malloc(sizeof(double));
+        double* temp_l = (double*) malloc(sizeof(double));
+        *temp_i = 0;
+        *temp_l = 0;
+        for (int index = 0; index < stem_group->stems->size; index++) {
+            Stem* stem = (Stem*) stem_group->stems->entries[index];
+            int stem_freq = stem->freq;
+            DataNode* stem_group_component = (DataNode*) stem->components->entries[0];
+            get_ave_i_l(stem_group_component, temp_i, temp_l);
+            *i += *temp_i * stem_freq;
+            *l += *temp_l * stem_freq;
+            total_freq += stem_freq;
+        }
+        free(temp_i);
+        free(temp_l);
+        *i /= total_freq;
+        *l /= total_freq;
+    } else if (component->node_type == hc_type) {
+        HC* hc = (HC*) component->data;
+        double k;
+        sscanf(hc->avetrip, "%lf %lf %lf", i, l, &k);
+        return;
+    } else {
+        printf("Error: component passed to get_ave_i_l() does not contain an HC or FSStemGroup");
+        exit(EXIT_FAILURE);
+    }
+}
+
+/**
+ * Get the average j amd k for a component, defined as the (ave_i + ave_k - 1) and average (ave_j - ave_k + 1) if it is
+ * an HC, or weighted average by freq of component stems if it is a FSStemGroup
+ *
+ * @param component the outermost component of the stem to find ave j and k for
+ */
+void get_ave_j_k(DataNode *component, double *j, double *k) {
+    if (component->node_type == fs_stem_group_type) {
+        FSStemGroup* stem_group = (FSStemGroup*) component->data;
+        int total_freq = 0;
+        double* temp_j = (double*) malloc(sizeof(double));
+        double* temp_k = (double*) malloc(sizeof(double));
+        *temp_j = 0;
+        *temp_k = 0;
+        for (int index = 0; index < stem_group->stems->size; index++) {
+            Stem* stem = (Stem*) stem_group->stems->entries[index];
+            int stem_freq = stem->freq;
+            DataNode* stem_group_component = (DataNode*) stem->components->entries[stem->components->size - 1];
+            get_ave_j_k(stem_group_component, temp_j, temp_k);
+            *j += *temp_j * stem_freq;
+            *k += *temp_k * stem_freq;
+            total_freq += stem_freq;
+        }
+        free(temp_j);
+        free(temp_k);
+        *j /= total_freq;
+        *k /= total_freq;
+    } else if (component->node_type == hc_type) {
+        HC* hc = (HC*) component->data;
+        double len;
+        sscanf(hc->avetrip, "%lf %lf %lf", j, k, &len);
+        *j += len - 1;
+        *k -= len + 1;
+        return;
+    } else {
+        printf("Error: component passed to get_ave_i_l() does not contain an HC or FSStemGroup");
+        exit(EXIT_FAILURE);
+    }
+}
+
+/**
+ * Print all stems to the command line output
+ *
+ * @param set the set to print stems of
+ */
+void print_stems(Set* set) {
+    for (int i = 0; i < set->stems->size; i++) {
+        Stem* stem = (Stem*) set->stems->entries[i];
+        if (stem_is_hc(stem)) {
+            //printf("Helix %s is %s (%s) with freq %d", stem->id, stem->max_quad, stem->ave_quad, stem->freq);
+        } else {
+            printf("Stem %s is %s (%s) with freq %d\n", stem->id, stem->max_quad, stem->ave_quad, stem->freq);
+        }
+    }
+}
+
+/**
  * Comparator function for qsort on Stems, sorting in descending order by frequency.
  *
  * @param s1 the first stem to compare
@@ -2163,9 +2307,9 @@ void find_featured_stems(Set* set) {
         if (percent >= set->opt->STEM_FREQ) {
             if (set->opt->VERBOSE) {
                 if (stem_is_hc(stem)) {
-                    printf("Featured helix %s with freq %d\n", stem->id, stem->freq);
+                    printf("Featured helix %s: %s with freq %d\n", stem->id, stem->max_quad, stem->freq);
                 } else {
-                    printf("Featured stem %s with freq %d\n", stem->id, stem->freq);
+                    printf("Featured stem %s: %s with freq %d\n", stem->id, stem->max_quad, stem->freq);
                 }
             }
             char* stem_id_str = (char*) malloc(sizeof(char) * (strlen(stem->id) + 1));

@@ -409,6 +409,11 @@ GTBOLTZMANN OPTIONS
         combine_stems_using_func_similar(set);
         update_freq_stems(set);
         reindex_stems(set);
+        update_max_quads(set);
+        update_ave_quads(set);
+        if(set->opt->VERBOSE) {
+            print_stems(set);
+        }
         generate_stem_key(set, argv[argc-1]);
         if (set->opt->NUM_FSTEMS)
             set->opt->STEM_FREQ = set_num_fstems(set);
