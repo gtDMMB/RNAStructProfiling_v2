@@ -1,0 +1,37 @@
+digraph G {
+	pad = 0.5;
+	nodesep = 0.5;
+"legend" [label = < <table border="0" cellborder="1" cellspacing="0"><tr><td>Stem</td><td>Quadruplet</td><td>Frequency</td></tr>
+<tr><td>1</td><td>25 32 142 149</td><td>1000</td></tr>
+<tr><td>2</td><td>39 44 108 113</td><td>1000</td></tr>
+<tr><td>3</td><td>116 122 129 135</td><td>1000</td></tr>
+<tr><td>5</td><td>45 48 71 74</td><td>994</td></tr>
+<tr><td>A</td><td>54 57 62 65</td><td>980</td></tr>
+<tr><td>B</td><td>81 89 97 105</td><td>978</td></tr>
+<tr><td>C</td><td>10 17 157 164</td><td>962</td></tr>
+<tr><td>9</td><td>20 22 151 153</td><td>878</td></tr>
+<tr><td>11</td><td>2 6 166 170</td><td>651</td></tr>
+<tr><td>12</td><td>1 6 170 175</td><td>259</td></tr>
+<tr><td>D</td><td>8 10 167 170</td><td>134</td></tr>
+<tr><td>E</td><td>24 24 149 151</td><td>109</td></tr>
+<tr><td>14</td><td>36 37 138 139</td><td>86</td></tr>
+<tr><td>15</td><td>50 52 64 66</td><td>86</td></tr>
+<tr><td>16</td><td>50 50 70 70</td><td>72</td></tr>
+</table>>, shape = plaintext, fontsize=11];
+"1 2 3 5 A B C 9 11 " [shape = box];
+"1 2 3 5 A B C 9 12 " [shape = box];
+"1 2 3 5 A B C 9 12 D " [shape = box];
+"1 2 3 5 A B C 9 11 14 " [shape = box];
+"1 2 3 5 A B C 9 " [style = dashed];
+"1 2 3 5 A B C 9 11 " [label = "[11[C[9[1[2[5[A]][B]][3]]]]]\n395/539"];
+"1 2 3 5 A B C 9 12 " [label = "[12[C[9[1[2[5[A]][B]][3]]]]]\n88/201"];
+"1 2 3 5 A B C 9 12 D " [label = "[12[D[C[9[1[2[5[A]][B]][3]]]]]]\n61/80"];
+"1 2 3 5 A B C 9 11 14 " [label = "[11[C[9[1[14[2[5[A]][B]][3]]]]]]\n40/55"];
+"1 2 3 5 A B C 9 " [label = "[C[9[1[2[5[A]][B]][3]]]]\n35/807"];
+"1 2 3 " [label = "[1[2][3]]\n0/1000"];
+"1 2 3 5 A B C 9 11 " -> "1 2 3 5 A B C 9 11 14 " [label = "14 ", arrowhead = vee];
+"1 2 3 5 A B C 9 12 " -> "1 2 3 5 A B C 9 12 D " [label = "D ", arrowhead = vee];
+"1 2 3 5 A B C 9 " -> "1 2 3 5 A B C 9 11 " [label = "11 ", arrowhead = vee];
+"1 2 3 5 A B C 9 " -> "1 2 3 5 A B C 9 12 " [label = "12 ", arrowhead = vee];
+"1 2 3 " -> "1 2 3 5 A B C 9 " [label = "5 A B C 9 ", arrowhead = vee];
+}

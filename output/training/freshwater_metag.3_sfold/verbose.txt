@@ -471,95 +471,30 @@ Selected profile 1 2 3 4 5 6 9 10 14 15 16 with freq 13 (13)
 Coverage by selected profiles: 0.518
 Number of profiles needed to get 0.50 coverage: 22
 Total number of selected profiles: 23
-Total number of vertices: 67
-node: '1 2 3 4 5 6 7 9 10 12 14 '
-node: '1 2 3 4 5 6 7 9 10 14 15 '
-node: '1 2 5 7 '
-node: '1 2 3 4 6 7 8 11 13 15 '
-node: '1 2 3 4 6 7 8 11 12 13 '
-node: '1 2 3 4 5 6 9 10 12 14 '
-node: '1 2 7 13 '
-node: '1 5 '
-node: '1 2 3 4 5 7 9 10 12 14 '
-node: '1 2 3 4 5 6 7 8 11 15 '
-node: '1 2 3 4 5 6 9 10 12 14 16 '
-node: '1 2 3 4 5 7 9 10 14 15 '
-node: '1 2 3 4 5 7 8 11 15 '
-node: '1 13 '
-node: '1 2 5 16 '
-node: '1 2 3 4 5 7 8 11 12 '
-node: '1 2 3 4 7 8 11 13 15 '
-node: '1 2 3 4 5 9 10 12 14 '
-node: '1 2 3 4 5 6 9 10 14 15 '
-node: '1 2 3 4 7 8 11 12 13 '
-node: '1 2 3 4 5 6 7 8 11 12 '
-node: '1 2 3 4 5 9 10 14 15 '
-node: '1 2 3 4 5 6 9 10 14 15 16 '
-node: '1 2 3 4 5 6 7 9 10 14 '
-node: '1 2 3 4 6 7 '
-node: '1 2 3 4 6 7 12 '
-node: '1 2 7 '
-node: '1 2 3 4 5 6 7 '
-node: '1 2 3 4 5 7 9 10 14 '
-node: '1 2 3 4 5 7 '
-node: '1 '
-node: '1 2 5 '
-node: '1 2 3 4 5 7 12 '
-node: '1 2 3 4 7 '
-node: '1 2 3 4 5 6 9 10 14 '
-node: '1 2 3 4 7 12 '
-node: '1 2 3 4 5 6 7 12 '
-node: '1 2 3 4 5 9 10 14 '
-node: '1 2 3 4 6 7 15 '
-node: '1 2 3 4 5 6 7 15 '
-node: '1 2 3 4 5 7 15 '
-node: '1 2 3 4 7 15 '
-node: '1 2 3 4 6 7 8 11 13 '
-node: '1 2 3 4 6 '
-node: '1 2 3 4 6 7 8 11 15 '
-node: '1 2 3 4 7 8 11 15 '
-node: '1 2 '
-node: '1 2 3 4 7 8 11 '
-node: '1 2 3 4 '
-node: '1 2 3 4 6 15 '
-node: '1 2 3 4 7 8 11 13 '
-node: '1 2 3 4 6 7 8 11 '
-node: '1 2 3 4 15 '
-node: '1 2 3 4 6 12 '
-node: '1 2 3 4 7 8 11 12 '
-node: '1 2 3 4 12 '
-node: '1 2 3 4 6 7 8 11 12 '
-node: '1 2 3 4 5 6 '
-node: '1 2 3 4 5 '
-node: '1 2 3 4 5 12 '
-node: '1 2 3 4 5 6 12 '
-node: '1 2 3 4 5 7 8 11 '
-node: '1 2 3 4 5 6 15 '
-node: '1 2 3 4 5 6 7 8 11 '
-node: '1 2 3 4 5 15 '
-node: '1 2 3 4 5 6 9 10 14 16 '
-node: ''
 Joining helices 10 and 9
 Joining helices 23 and 22
 Do stem 5 and stem 13 occur infrequently enough to be functionally similar: Yes
 Joining stem 1 and functionally similar group 5
+Stem A is 25 35 40 51 (26.0 35.0 38.0 48.7) with freq 975
+Stem B is 15 24 48 58 (15.5 23.4 46.6 57.5) with freq 357
+Stem C is 6 17 129 140 (6.4 16.9 127.1 139.6) with freq 169
 Threshold to find featured stems: 23.6%
 Number of structures processed: 1000
-Featured stem A with freq 975
-Featured helix 2 with freq 897
-Featured helix 3 with freq 826
-Featured helix 4 with freq 826
-Featured helix 6 with freq 483
-Featured helix 7 with freq 474
-Featured helix 8 with freq 457
-Featured stem B with freq 357
-Featured helix 11 with freq 342
-Featured helix 12 with freq 331
-Featured helix 14 with freq 319
-Featured helix 15 with freq 304
-Featured helix 16 with freq 262
-Featured helix 17 with freq 245
-Featured helix 18 with freq 236
+Featured stem A: 25 35 40 51 with freq 975
+Featured helix 2: 61 69 83 91 with freq 897
+Featured helix 3: 130 136 157 163 with freq 826
+Featured helix 4: 140 143 150 153 with freq 826
+Featured helix 6: 137 138 154 155 with freq 483
+Featured helix 7: 71 72 81 82 with freq 474
+Featured helix 8: 15 23 97 105 with freq 457
+Featured stem B: 15 24 48 58 with freq 357
+Featured helix 11: 8 11 108 111 with freq 342
+Featured helix 12: 115 117 171 173 with freq 331
+Featured helix 14: 4 13 97 106 with freq 319
+Featured helix 15: 125 128 170 173 with freq 304
+Featured helix 16: 68 71 76 79 with freq 262
+Featured helix 17: 2 6 179 183 with freq 245
+Featured helix 18: 55 56 94 95 with freq 236
 Total number of featured stems: 15
 Total number of stem profiles: 206
 Stem profile A 2 7  with freq 58 (464)

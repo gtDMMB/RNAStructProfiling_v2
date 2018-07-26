@@ -1,0 +1,34 @@
+digraph G {
+	pad = 0.5;
+	nodesep = 0.5;
+"legend" [label = < <table border="0" cellborder="1" cellspacing="0"><tr><td>Stem</td><td>Quadruplet</td><td>Frequency</td></tr>
+<tr><td>A</td><td>64 74 79 90</td><td>961</td></tr>
+<tr><td>2</td><td>1 7 100 106</td><td>919</td></tr>
+<tr><td>3</td><td>36 41 47 52</td><td>903</td></tr>
+<tr><td>4</td><td>17 21 26 30</td><td>891</td></tr>
+<tr><td>B</td><td>11 16 54 59</td><td>765</td></tr>
+<tr><td>C</td><td>9 10 97 99</td><td>323</td></tr>
+<tr><td>8</td><td>9 15 56 62</td><td>245</td></tr>
+<tr><td>10</td><td>9 9 61 61</td><td>161</td></tr>
+</table>>, shape = plaintext, fontsize=11];
+"A 2 3 4 B C " [shape = box];
+"A 2 3 4 B 10 " [shape = box];
+"A 2 3 4 B 8 " [shape = box];
+"A 2 3 4 B " [shape = box];
+"A 2 3 4 8 " [shape = box];
+"A 2 3 4 " [style = dashed];
+"A 2 3 4 B C " [label = "[2[C[B[4][3]][A]]]\n287/288"];
+"A 2 3 4 B 10 " [label = "[2[10[B[4][3]]][A]]\n156/156"];
+"A 2 3 4 B 8 " [label = "[2[8[B[4][3]]][A]]\n128/129"];
+"A 2 3 4 B " [label = "[2[B[4][3]][A]]\n114/686"];
+"A 2 3 4 8 " [label = "[2[8[4][3]][A]]\n103/234"];
+"A 2 3 4 " [label = "[2[4][3][A]]\n7/804"];
+"" [label = "[]\n0/1000"];
+"A 2 3 4 B " -> "A 2 3 4 B C " [label = "C ", arrowhead = vee];
+"A 2 3 4 B " -> "A 2 3 4 B 10 " [label = "10 ", arrowhead = vee];
+"A 2 3 4 B " -> "A 2 3 4 B 8 " [label = "8 ", arrowhead = vee];
+"A 2 3 4 8 " -> "A 2 3 4 B 8 " [label = "B ", arrowhead = vee];
+"A 2 3 4 " -> "A 2 3 4 8 " [label = "8 ", arrowhead = vee];
+"A 2 3 4 " -> "A 2 3 4 B " [label = "B ", arrowhead = vee];
+"" -> "A 2 3 4 " [label = "A 2 3 4 ", arrowhead = vee];
+}

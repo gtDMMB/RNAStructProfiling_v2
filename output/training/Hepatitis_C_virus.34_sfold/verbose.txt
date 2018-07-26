@@ -871,72 +871,6 @@ Selected profile 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 24 26 28 30 
 Coverage by selected profiles: 0.288
 Number of profiles needed to get 0.50 coverage: 71
 Total number of selected profiles: 18
-Total number of vertices: 65
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 20 29 31 '
-node: '1 2 13 31 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 23 25 27 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 21 22 23 25 27 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 22 29 31 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 24 25 26 28 30 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 20 21 23 27 29 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 22 24 25 26 28 32 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 24 25 26 28 32 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 20 21 23 27 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 22 24 25 26 28 30 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 23 27 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 22 31 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 21 22 23 27 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 24 25 30 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 21 22 24 25 30 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 20 31 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 24 26 28 30 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 20 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 29 31 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 20 29 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 31 '
-node: '1 2 13 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 21 23 25 27 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 25 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 25 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 21 23 27 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 25 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 21 25 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 22 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 22 25 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 21 23 27 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 21 22 25 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 29 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 20 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 24 25 26 28 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 24 25 26 28 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 24 25 26 28 30 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 24 25 30 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 24 25 30 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 20 21 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 21 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 24 25 26 28 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 22 24 25 26 28 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 22 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 24 25 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 22 24 25 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 24 26 28 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 24 25 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 24 26 28 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 22 24 25 30 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 24 26 28 30 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 21 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 21 22 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 21 24 25 30 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 24 30 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 24 30 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 24 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 24 '
-node: ''
 Joining helices 2 and 1
 Joining helices 11 and 3
 Joining helices 5 and 7
@@ -951,22 +885,27 @@ Do stem 19 and stem 25 occur infrequently enough to be functionally similar: No
 Do stem 20 and stem 22 occur infrequently enough to be functionally similar: Yes
 Do stem 23 and stem 24 occur infrequently enough to be functionally similar: No
 Joining stem 16 and functionally similar group 22
+Stem A is 183 192 198 207 (183.1 191.9 196.1 206.9) with freq 962
+Stem B is 104 122 159 177 (104.0 122.0 157.0 177.0) with freq 927
+Stem C is 125 132 147 154 (125.0 131.4 145.6 154.0) with freq 911
+Stem D is 65 94 210 242 (65.1 94.0 208.0 241.9) with freq 816
+Stem E is 98 102 178 182 (98.3 102.0 176.5 181.7) with freq 801
 Error: No threshold entropy found for stems
 Threshold to find featured stems: 0.0%
 Number of structures processed: 1000
-Featured stem A with freq 962
-Featured stem B with freq 927
-Featured stem C with freq 911
-Featured helix 13 with freq 903
-Featured stem D with freq 816
-Featured stem E with freq 801
-Featured helix 17 with freq 747
-Featured helix 18 with freq 518
-Featured helix 19 with freq 474
-Featured helix 21 with freq 411
-Featured helix 23 with freq 359
-Featured helix 24 with freq 353
-Featured helix 25 with freq 344
+Featured stem A: 183 192 198 207 with freq 962
+Featured stem B: 104 122 159 177 with freq 927
+Featured stem C: 125 132 147 154 with freq 911
+Featured helix 13: 130 134 141 145 with freq 903
+Featured stem D: 65 94 210 242 with freq 816
+Featured stem E: 98 102 178 182 with freq 801
+Featured helix 17: 13 18 26 31 with freq 747
+Featured helix 18: 3 5 39 41 with freq 518
+Featured helix 19: 7 8 36 37 with freq 474
+Featured helix 21: 53 55 251 253 with freq 411
+Featured helix 23: 61 62 244 245 with freq 359
+Featured helix 24: 62 63 244 245 with freq 353
+Featured helix 25: 10 10 34 34 with freq 344
 Total number of featured stems: 13
 Total number of stem profiles: 210
 Stem profile A B C 13 D E  with freq 83 (596)

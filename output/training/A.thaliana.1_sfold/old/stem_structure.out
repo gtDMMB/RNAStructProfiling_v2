@@ -1,0 +1,2001 @@
+Processing: /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/A.thaliana.1_sfold/input/A.thaliana.1_sfold.out
+Structure 1: D C 8 7 3 A 2 18
+	-> A 3 C 7 D 8 
+Structure 2: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 3: C 8 10 3 A B
+	-> A 3 B C 8 10 
+Structure 4: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 5: E 10 3 A B
+	-> A 3 B 10 E 
+Structure 6: D C 10 7 3 A B
+	-> A 3 B C 7 D 10 
+Structure 7: 33 C 7 3 A 2 18
+	-> A 3 C 7 
+Structure 8: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 9: C 10 3 A B
+	-> A 3 B C 10 
+Structure 10: D C 10 3 A B
+	-> A 3 B C D 10 
+Structure 11: C 7 21 3 A B
+	-> A 3 B C 7 
+Structure 12: D C 36 7 3 A B
+	-> A 3 B C 7 D 
+Structure 13: C 9 3 A 16 B
+	-> A 3 B C 9 
+Structure 14: D C 9 3 A 19 B
+	-> A 3 B C D 9 
+Structure 15: 25 A 28 31 29 46 47
+	-> A 
+Structure 16: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 17: 25 3 A 28 31 29 46 47
+	-> A 3 
+Structure 18: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 19: E 7 3 A B
+	-> A 3 B 7 E 
+Structure 20: E 37 10 3 A B
+	-> A 3 B 10 E 
+Structure 21: D C 9 3 A B 23
+	-> A 3 B C D 9 
+Structure 22: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 23: C 9 3 A B
+	-> A 3 B C 9 
+Structure 24: D C 7 34 3 A B
+	-> A 3 B C 7 D 
+Structure 25: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 26: C 9 10 3 A 32 B
+	-> A 3 B C 9 10 
+Structure 27: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 28: C 9 30 A B
+	-> A B C 9 
+Structure 29: C 9 3 A B
+	-> A 3 B C 9 
+Structure 30: D C 10 3 A B
+	-> A 3 B C D 10 
+Structure 31: E 10 3 A B
+	-> A 3 B 10 E 
+Structure 32: C 10 3 A 58 B
+	-> A 3 B C 10 
+Structure 33: C 9 30 A 67 B
+	-> A B C 9 
+Structure 34: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 35: D C 10 3 35 A B
+	-> A 3 B C D 10 
+Structure 36: 38 C 7 3 A B
+	-> A 3 B C 7 
+Structure 37: C 7 3 A B
+	-> A 3 B C 7 
+Structure 38: E C 9 3 A 19 B
+	-> A 3 B C 9 E 
+Structure 39: E C 9 3 A B
+	-> A 3 B C 9 E 
+Structure 40: C 9 3 A B
+	-> A 3 B C 9 
+Structure 41: C 7 3 A B
+	-> A 3 B C 7 
+Structure 42: C 8 3 A B
+	-> A 3 B C 8 
+Structure 43: C 7 3 A B
+	-> A 3 B C 7 
+Structure 44: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 45: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 46: C 7 3 A B
+	-> A 3 B C 7 
+Structure 47: C 7 3 A B
+	-> A 3 B C 7 
+Structure 48: D C 8 10 7 3 A B
+	-> A 3 B C 7 D 8 10 
+Structure 49: E C 9 7 3 A B
+	-> A 3 B C 7 9 E 
+Structure 50: C 8 10 7 3 A B
+	-> A 3 B C 7 8 10 
+Structure 51: D C 10 3 A B
+	-> A 3 B C D 10 
+Structure 52: 43 C 7 3 A 24 B
+	-> A 3 B C 7 
+Structure 53: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 54: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 55: 26 C 8 7 21 3 A B
+	-> A 3 B C 7 8 
+Structure 56: D C 9 3 A 16 B
+	-> A 3 B C D 9 
+Structure 57: E C 8 7 3 1 B
+	-> 3 B C 7 8 E 
+Structure 58: C 7 3 A B
+	-> A 3 B C 7 
+Structure 59: D C 9 10 3 A B
+	-> A 3 B C D 9 10 
+Structure 60: D C 10 3 A B
+	-> A 3 B C D 10 
+Structure 61: D C 8 10 7 3 A B
+	-> A 3 B C 7 D 8 10 
+Structure 62: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 63: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 64: C 36 7 3 A 27 B
+	-> A 3 B C 7 
+Structure 65: D C 8 7 34 3 A B
+	-> A 3 B C 7 D 8 
+Structure 66: C 10 7 3 A B
+	-> A 3 B C 7 10 
+Structure 67: D C 9 3 A 16 B
+	-> A 3 B C D 9 
+Structure 68: C 8 10 3 A B
+	-> A 3 B C 8 10 
+Structure 69: C 8 10 7 3 A B
+	-> A 3 B C 7 8 10 
+Structure 70: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 71: D C 9 3 A 16 B
+	-> A 3 B C D 9 
+Structure 72: D C 9 7 3 A B
+	-> A 3 B C 7 D 9 
+Structure 73: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 74: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 75: 43 9 30 35 A 46 59
+	-> A 9 
+Structure 76: E C 7 20 3 A B
+	-> A 3 B C 7 E 
+Structure 77: E 9 3 A 19 B
+	-> A 3 B 9 E 
+Structure 78: 25 A 28 31 29 44 54 18
+	-> A 
+Structure 79: D C 9 7 3 A B 18
+	-> A 3 B C 7 D 9 
+Structure 80: E C 7 3 A 24 B
+	-> A 3 B C 7 E 
+Structure 81: D C 7 21 3 A B
+	-> A 3 B C 7 D 
+Structure 82: D C 10 3 A 48 B
+	-> A 3 B C D 10 
+Structure 83: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 84: D C 8 7 34 3 A B
+	-> A 3 B C 7 D 8 
+Structure 85: C 8 10 3 A B
+	-> A 3 B C 8 10 
+Structure 86: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 87: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 88: C 9 3 A 16 B
+	-> A 3 B C 9 
+Structure 89: C 7 20 3 A B
+	-> A 3 B C 7 
+Structure 90: C 10 3 A B
+	-> A 3 B C 10 
+Structure 91: D C 9 35 A 27 B
+	-> A B C D 9 
+Structure 92: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 93: C 8 10 3 A B 18
+	-> A 3 B C 8 10 
+Structure 94: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 95: D C 7 3 A B 23
+	-> A 3 B C 7 D 
+Structure 96: 39 C 9 3 A 16 B
+	-> A 3 B C 9 
+Structure 97: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 98: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 99: C 9 3 A 16 2 18
+	-> A 3 C 9 
+Structure 100: C 8 7 21 3 A B
+	-> A 3 B C 7 8 
+Structure 101: D C 7 34 3 A B
+	-> A 3 B C 7 D 
+Structure 102: E C 9 3 A 19 B
+	-> A 3 B C 9 E 
+Structure 103: C 10 3 A B
+	-> A 3 B C 10 
+Structure 104: 25 35 A 28 31 29 44 4
+	-> A 
+Structure 105: D C 8 7 3 60 1 B
+	-> 3 B C 7 D 8 
+Structure 106: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 107: D C 10 3 A B
+	-> A 3 B C D 10 
+Structure 108: C 7 3 A B
+	-> A 3 B C 7 
+Structure 109: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 110: E C 8 7 3 A B
+	-> A 3 B C 7 8 E 
+Structure 111: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 112: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 113: C 7 3 A B
+	-> A 3 B C 7 
+Structure 114: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 115: 33 C 7 3 A B
+	-> A 3 B C 7 
+Structure 116: C 7 3 A B
+	-> A 3 B C 7 
+Structure 117: C 8 10 3 A B
+	-> A 3 B C 8 10 
+Structure 118: E C 8 7 21 3 A B
+	-> A 3 B C 7 8 E 
+Structure 119: C 7 3 A B
+	-> A 3 B C 7 
+Structure 120: C 9 3 35 A 16 B
+	-> A 3 B C 9 
+Structure 121: E C 8 10 3 A B
+	-> A 3 B C 8 10 E 
+Structure 122: C 10 3 A B
+	-> A 3 B C 10 
+Structure 123: D C 9 10 3 A B 23
+	-> A 3 B C D 9 10 
+Structure 124: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 125: C 8 10 3 A B
+	-> A 3 B C 8 10 
+Structure 126: C 9 10 3 A 27 B
+	-> A 3 B C 9 10 
+Structure 127: D C 10 7 3 A B
+	-> A 3 B C 7 D 10 
+Structure 128: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 129: D C 10 7 3 35 A B 23
+	-> A 3 B C 7 D 10 
+Structure 130: D C 7 20 3 A B
+	-> A 3 B C 7 D 
+Structure 131: D C 10 7 3 A B
+	-> A 3 B C 7 D 10 
+Structure 132: D C 7 3 A 2 18
+	-> A 3 C 7 D 
+Structure 133: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 134: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 135: D C 8 7 3 A B 23
+	-> A 3 B C 7 D 8 
+Structure 136: D C 9 10 3 A B
+	-> A 3 B C D 9 10 
+Structure 137: C 7 20 3 A B
+	-> A 3 B C 7 
+Structure 138: C 9 3 A 27 B
+	-> A 3 B C 9 
+Structure 139: 38 D C 7 3 A 27 B
+	-> A 3 B C 7 D 
+Structure 140: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 141: 25 68 1 69 70 71 61 2 18
+	-> 
+Structure 142: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 143: C 10 3 A B
+	-> A 3 B C 10 
+Structure 144: D C 9 3 A 16 B
+	-> A 3 B C D 9 
+Structure 145: C 7 3 A B
+	-> A 3 B C 7 
+Structure 146: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 147: C 8 7 45 3 A B
+	-> A 3 B C 7 8 
+Structure 148: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 149: E C 10 3 A 2 18
+	-> A 3 C 10 E 
+Structure 150: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 151: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 152: D C 7 34 3 A B
+	-> A 3 B C 7 D 
+Structure 153: 26 C 8 10 3 A B
+	-> A 3 B C 8 10 
+Structure 154: D C 10 7 3 A B
+	-> A 3 B C 7 D 10 
+Structure 155: 26 C 7 3 A 24 B
+	-> A 3 B C 7 
+Structure 156: C 8 10 7 3 A B
+	-> A 3 B C 7 8 10 
+Structure 157: D C 9 3 A 19 B
+	-> A 3 B C D 9 
+Structure 158: E 9 3 A 32 B
+	-> A 3 B 9 E 
+Structure 159: C 7 3 A B
+	-> A 3 B C 7 
+Structure 160: 38 C 8 10 3 A 27 B
+	-> A 3 B C 8 10 
+Structure 161: C 8 10 7 3 A B
+	-> A 3 B C 7 8 10 
+Structure 162: E C 7 3 1 32 B
+	-> 3 B C 7 E 
+Structure 163: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 164: C 9 3 A B
+	-> A 3 B C 9 
+Structure 165: D C 9 10 3 A 2 18
+	-> A 3 C D 9 10 
+Structure 166: C 7 3 A B
+	-> A 3 B C 7 
+Structure 167: 26 C 9 3 A B
+	-> A 3 B C 9 
+Structure 168: C 7 3 A B
+	-> A 3 B C 7 
+Structure 169: C 7 3 A B
+	-> A 3 B C 7 
+Structure 170: E 9 10 3 A B 49
+	-> A 3 B 9 10 E 
+Structure 171: 25 A 72 28 31 29 44 4
+	-> A 
+Structure 172: D C 8 10 7 3 A B
+	-> A 3 B C 7 D 8 10 
+Structure 173: C 7 3 A 27 B
+	-> A 3 B C 7 
+Structure 174: C 9 3 A B
+	-> A 3 B C 9 
+Structure 175: D C 9 10 3 A B
+	-> A 3 B C D 9 10 
+Structure 176: D C 10 3 A B
+	-> A 3 B C D 10 
+Structure 177: E 7 3 A B 49
+	-> A 3 B 7 E 
+Structure 178: C 7 3 A B
+	-> A 3 B C 7 
+Structure 179: C 10 3 A B
+	-> A 3 B C 10 
+Structure 180: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 181: E 9 3 A B
+	-> A 3 B 9 E 
+Structure 182: E 7 3 A B
+	-> A 3 B 7 E 
+Structure 183: C 9 10 3 A B
+	-> A 3 B C 9 10 
+Structure 184: E C 8 7 3 A B
+	-> A 3 B C 7 8 E 
+Structure 185: E C 9 3 A 16 B
+	-> A 3 B C 9 E 
+Structure 186: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 187: D C 9 3 A 16 B
+	-> A 3 B C D 9 
+Structure 188: C 7 3 A B
+	-> A 3 B C 7 
+Structure 189: D C 10 21 3 A B
+	-> A 3 B C D 10 
+Structure 190: C 7 3 A B
+	-> A 3 B C 7 
+Structure 191: E 37 10 3 A B
+	-> A 3 B 10 E 
+Structure 192: D C 9 3 A B
+	-> A 3 B C D 9 
+Structure 193: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 194: 26 C 8 10 7 3 A B
+	-> A 3 B C 7 8 10 
+Structure 195: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 196: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 197: C 7 3 A 24 B
+	-> A 3 B C 7 
+Structure 198: E C 8 7 3 A B
+	-> A 3 B C 7 8 E 
+Structure 199: D C 10 3 A B 23
+	-> A 3 B C D 10 
+Structure 200: C 8 7 62 3 A B 18
+	-> A 3 B C 7 8 
+Structure 201: 33 C 7 3 A B
+	-> A 3 B C 7 
+Structure 202: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 203: C 7 20 3 A B
+	-> A 3 B C 7 
+Structure 204: D C 9 3 A 16 B
+	-> A 3 B C D 9 
+Structure 205: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 206: 25 3 A 28 31 29 46 47
+	-> A 3 
+Structure 207: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 208: E C 9 3 A B
+	-> A 3 B C 9 E 
+Structure 209: E C 9 3 A 16 B
+	-> A 3 B C 9 E 
+Structure 210: 33 C 9 3 A 16 B
+	-> A 3 B C 9 
+Structure 211: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 212: E C 8 7 3 A B
+	-> A 3 B C 7 8 E 
+Structure 213: C 7 3 A B
+	-> A 3 B C 7 
+Structure 214: C 8 7 45 3 1 B
+	-> 3 B C 7 8 
+Structure 215: E C 8 7 3 A B
+	-> A 3 B C 7 8 E 
+Structure 216: E 7 3 A 24 B
+	-> A 3 B 7 E 
+Structure 217: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 218: E 7 3 A 58 B
+	-> A 3 B 7 E 
+Structure 219: E 10 3 A B
+	-> A 3 B 10 E 
+Structure 220: C 9 7 3 A B
+	-> A 3 B C 7 9 
+Structure 221: D C 9 3 A B 23
+	-> A 3 B C D 9 
+Structure 222: C 7 3 A B
+	-> A 3 B C 7 
+Structure 223: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 224: C 7 3 A B
+	-> A 3 B C 7 
+Structure 225: E C 7 45 3 A B
+	-> A 3 B C 7 E 
+Structure 226: D C 10 3 A B
+	-> A 3 B C D 10 
+Structure 227: D C 8 10 3 A B
+	-> A 3 B C D 8 10 
+Structure 228: E D C 8 3 A B
+	-> A 3 B C D 8 E 
+Structure 229: D C 9 10 7 3 A B
+	-> A 3 B C 7 D 9 10 
+Structure 230: C 7 21 3 A B
+	-> A 3 B C 7 
+Structure 231: C 7 3 A B
+	-> A 3 B C 7 
+Structure 232: E 37 10 3 A 55 B
+	-> A 3 B 10 E 
+Structure 233: D C 10 3 A B
+	-> A 3 B C D 10 
+Structure 234: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 235: E 9 10 3 A B
+	-> A 3 B 9 10 E 
+Structure 236: E 9 10 3 A 48 B
+	-> A 3 B 9 10 E 
+Structure 237: C 7 3 A B
+	-> A 3 B C 7 
+Structure 238: C 7 3 A B
+	-> A 3 B C 7 
+Structure 239: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 240: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 241: D C 7 3 A 24 B
+	-> A 3 B C 7 D 
+Structure 242: D C 7 3 A 51 B
+	-> A 3 B C 7 D 
+Structure 243: 33 C 7 3 A B
+	-> A 3 B C 7 
+Structure 244: C 10 3 A B
+	-> A 3 B C 10 
+Structure 245: C 10 3 A B
+	-> A 3 B C 10 
+Structure 246: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 247: D C 10 7 3 A B
+	-> A 3 B C 7 D 10 
+Structure 248: C 10 34 3 A B
+	-> A 3 B C 10 
+Structure 249: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 250: C 9 3 A B 23
+	-> A 3 B C 9 
+Structure 251: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 252: C 9 3 A B
+	-> A 3 B C 9 
+Structure 253: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 254: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 255: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 256: E C 8 10 3 A B
+	-> A 3 B C 8 10 E 
+Structure 257: C 7 3 A B
+	-> A 3 B C 7 
+Structure 258: D C 7 3 A 24 B
+	-> A 3 B C 7 D 
+Structure 259: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 260: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 261: C 10 3 A B
+	-> A 3 B C 10 
+Structure 262: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 263: D C 8 10 3 A 16 B
+	-> A 3 B C D 8 10 
+Structure 264: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 265: D C 10 34 3 A B
+	-> A 3 B C D 10 
+Structure 266: C 9 10 3 A B
+	-> A 3 B C 9 10 
+Structure 267: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 268: C 7 3 A 24 B
+	-> A 3 B C 7 
+Structure 269: C 8 7 3 A 48 B
+	-> A 3 B C 7 8 
+Structure 270: E C 9 10 3 A B
+	-> A 3 B C 9 10 E 
+Structure 271: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 272: E C 8 7 3 A B
+	-> A 3 B C 7 8 E 
+Structure 273: D C 9 10 3 A 2 18
+	-> A 3 C D 9 10 
+Structure 274: D C 8 7 34 3 A B
+	-> A 3 B C 7 D 8 
+Structure 275: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 276: C 7 3 A B
+	-> A 3 B C 7 
+Structure 277: C 7 3 A 24 B
+	-> A 3 B C 7 
+Structure 278: C 9 3 A 19 B
+	-> A 3 B C 9 
+Structure 279: 43 C 8 10 3 A B
+	-> A 3 B C 8 10 
+Structure 280: C 8 7 20 3 A B
+	-> A 3 B C 7 8 
+Structure 281: C 10 3 A B
+	-> A 3 B C 10 
+Structure 282: C 9 3 A 16 B
+	-> A 3 B C 9 
+Structure 283: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 284: E C 9 10 7 3 A B
+	-> A 3 B C 7 9 10 E 
+Structure 285: C 10 7 3 A B
+	-> A 3 B C 7 10 
+Structure 286: C 8 7 3 A 52 B
+	-> A 3 B C 7 8 
+Structure 287: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 288: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 289: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 290: C 10 3 A 50 B
+	-> A 3 B C 10 
+Structure 291: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 292: E 9 10 3 A 32 B
+	-> A 3 B 9 10 E 
+Structure 293: D C 10 3 A 19 24 B
+	-> A 3 B C D 10 
+Structure 294: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 295: 38 C 9 3 A 27 B
+	-> A 3 B C 9 
+Structure 296: E 9 10 3 A B 49
+	-> A 3 B 9 10 E 
+Structure 297: C 7 3 A B
+	-> A 3 B C 7 
+Structure 298: C 9 3 A 16 B
+	-> A 3 B C 9 
+Structure 299: C 7 3 A 32 B
+	-> A 3 B C 7 
+Structure 300: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 301: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 302: D C 7 3 A 51 B
+	-> A 3 B C 7 D 
+Structure 303: E 73 3 A 74 75 76 77
+	-> A 3 E 
+Structure 304: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 305: D C 9 3 A 19 B
+	-> A 3 B C D 9 
+Structure 306: C 7 20 3 A B 23
+	-> A 3 B C 7 
+Structure 307: E C 8 10 3 A B
+	-> A 3 B C 8 10 E 
+Structure 308: D C 10 7 3 A B 18
+	-> A 3 B C 7 D 10 
+Structure 309: D C 8 56 3 A B
+	-> A 3 B C D 8 
+Structure 310: 26 C 9 10 34 3 A B
+	-> A 3 B C 9 10 
+Structure 311: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 312: E 37 10 3 A B
+	-> A 3 B 10 E 
+Structure 313: C 9 3 A 2 18
+	-> A 3 C 9 
+Structure 314: C 9 30 A B
+	-> A B C 9 
+Structure 315: D C 7 21 3 A B
+	-> A 3 B C 7 D 
+Structure 316: C 7 3 A B
+	-> A 3 B C 7 
+Structure 317: D C 8 7 34 3 A B
+	-> A 3 B C 7 D 8 
+Structure 318: C 9 3 A 16 B
+	-> A 3 B C 9 
+Structure 319: E C 9 3 A B
+	-> A 3 B C 9 E 
+Structure 320: C 10 3 A B
+	-> A 3 B C 10 
+Structure 321: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 322: E C 10 3 A B
+	-> A 3 B C 10 E 
+Structure 323: E C 8 7 3 A B
+	-> A 3 B C 7 8 E 
+Structure 324: D C 9 3 A 16 B
+	-> A 3 B C D 9 
+Structure 325: E C 7 20 3 A B
+	-> A 3 B C 7 E 
+Structure 326: 26 C 7 3 A B
+	-> A 3 B C 7 
+Structure 327: D C 7 78 3 A B
+	-> A 3 B C 7 D 
+Structure 328: C 7 3 A B
+	-> A 3 B C 7 
+Structure 329: C 7 3 A 32 B
+	-> A 3 B C 7 
+Structure 330: E C 7 20 3 A B
+	-> A 3 B C 7 E 
+Structure 331: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 332: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 333: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 334: E C 8 10 3 A B
+	-> A 3 B C 8 10 E 
+Structure 335: D C 10 3 A B
+	-> A 3 B C D 10 
+Structure 336: E 9 10 3 A B 18
+	-> A 3 B 9 10 E 
+Structure 337: C 7 3 A B
+	-> A 3 B C 7 
+Structure 338: C 7 20 3 A B
+	-> A 3 B C 7 
+Structure 339: C 9 30 A B
+	-> A B C 9 
+Structure 340: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 341: C 10 7 3 A B 23
+	-> A 3 B C 7 10 
+Structure 342: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 343: C 7 3 A B
+	-> A 3 B C 7 
+Structure 344: C 9 3 A 19 B 18
+	-> A 3 B C 9 
+Structure 345: C 7 3 A 32 24 B
+	-> A 3 B C 7 
+Structure 346: 38 C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 347: D C 7 3 A 24 B
+	-> A 3 B C 7 D 
+Structure 348: C 7 20 3 A B
+	-> A 3 B C 7 
+Structure 349: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 350: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 351: 25 3 A 28 19 79 80 B
+	-> A 3 B 
+Structure 352: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 353: E 9 3 A B
+	-> A 3 B 9 E 
+Structure 354: C 7 3 A 24 B
+	-> A 3 B C 7 
+Structure 355: C 7 20 3 A B
+	-> A 3 B C 7 
+Structure 356: D C 10 3 A B
+	-> A 3 B C D 10 
+Structure 357: E 7 3 A B
+	-> A 3 B 7 E 
+Structure 358: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 359: C 9 10 3 A B
+	-> A 3 B C 9 10 
+Structure 360: E C 8 7 3 A B
+	-> A 3 B C 7 8 E 
+Structure 361: D C 40 3 A 29 2 18
+	-> A 3 C D 
+Structure 362: C 9 3 A 32 B
+	-> A 3 B C 9 
+Structure 363: D C 10 7 3 A B
+	-> A 3 B C 7 D 10 
+Structure 364: D C 8 7 3 A 27 B
+	-> A 3 B C 7 D 8 
+Structure 365: E C 10 3 A B
+	-> A 3 B C 10 E 
+Structure 366: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 367: C 9 3 A B 23
+	-> A 3 B C 9 
+Structure 368: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 369: 26 C 8 10 3 A B
+	-> A 3 B C 8 10 
+Structure 370: E 9 3 A B 49
+	-> A 3 B 9 E 
+Structure 371: C 7 3 A B
+	-> A 3 B C 7 
+Structure 372: C 10 7 3 A B
+	-> A 3 B C 7 10 
+Structure 373: E D C 9 3 A B
+	-> A 3 B C D 9 E 
+Structure 374: C 9 3 A 19 B
+	-> A 3 B C 9 
+Structure 375: C 7 3 A B
+	-> A 3 B C 7 
+Structure 376: C 8 10 3 A B
+	-> A 3 B C 8 10 
+Structure 377: D C 8 10 3 A B
+	-> A 3 B C D 8 10 
+Structure 378: C 8 10 20 3 A B
+	-> A 3 B C 8 10 
+Structure 379: E C 8 7 3 A B
+	-> A 3 B C 7 8 E 
+Structure 380: C 7 3 A B 18
+	-> A 3 B C 7 
+Structure 381: E C 10 3 A B
+	-> A 3 B C 10 E 
+Structure 382: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 383: C 9 3 A 16 B
+	-> A 3 B C 9 
+Structure 384: D C 8 10 3 A B
+	-> A 3 B C D 8 10 
+Structure 385: D C 8 9 3 A 19 B
+	-> A 3 B C D 8 9 
+Structure 386: C 7 3 A B
+	-> A 3 B C 7 
+Structure 387: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 388: D C 9 10 3 A B
+	-> A 3 B C D 9 10 
+Structure 389: C 7 3 A B
+	-> A 3 B C 7 
+Structure 390: C 7 3 A B
+	-> A 3 B C 7 
+Structure 391: 39 C 9 34 3 A B
+	-> A 3 B C 9 
+Structure 392: C 9 3 A B
+	-> A 3 B C 9 
+Structure 393: C 7 3 A B
+	-> A 3 B C 7 
+Structure 394: E 9 10 7 3 A B
+	-> A 3 B 7 9 10 E 
+Structure 395: C 7 3 A 41 B
+	-> A 3 B C 7 
+Structure 396: C 7 3 A B
+	-> A 3 B C 7 
+Structure 397: C 7 3 A B
+	-> A 3 B C 7 
+Structure 398: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 399: C 7 3 A B
+	-> A 3 B C 7 
+Structure 400: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 401: E 7 42 3 A 2 18
+	-> A 3 7 E 
+Structure 402: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 403: D C 8 10 20 3 A B
+	-> A 3 B C D 8 10 
+Structure 404: D C 9 7 3 A 2 18
+	-> A 3 C 7 D 9 
+Structure 405: E 7 3 A B 18
+	-> A 3 B 7 E 
+Structure 406: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 407: 33 C 9 7 3 35 A B
+	-> A 3 B C 7 9 
+Structure 408: C 7 3 A B
+	-> A 3 B C 7 
+Structure 409: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 410: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 411: D C 7 3 A 24 B
+	-> A 3 B C 7 D 
+Structure 412: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 413: C 8 10 7 3 A B
+	-> A 3 B C 7 8 10 
+Structure 414: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 415: E C 10 3 A B
+	-> A 3 B C 10 E 
+Structure 416: D C 8 7 20 3 A B
+	-> A 3 B C 7 D 8 
+Structure 417: D C 10 7 3 A B
+	-> A 3 B C 7 D 10 
+Structure 418: C 7 3 A B
+	-> A 3 B C 7 
+Structure 419: C 7 3 A B
+	-> A 3 B C 7 
+Structure 420: D C 9 7 3 A B
+	-> A 3 B C 7 D 9 
+Structure 421: 26 C 7 3 A B
+	-> A 3 B C 7 
+Structure 422: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 423: C 36 7 3 A B
+	-> A 3 B C 7 
+Structure 424: E C 7 21 3 A 52 B
+	-> A 3 B C 7 E 
+Structure 425: C 9 7 3 A B
+	-> A 3 B C 7 9 
+Structure 426: D C 9 3 A B
+	-> A 3 B C D 9 
+Structure 427: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 428: C 7 3 A B
+	-> A 3 B C 7 
+Structure 429: C 9 7 3 A B
+	-> A 3 B C 7 9 
+Structure 430: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 431: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 432: D C 7 20 3 A B
+	-> A 3 B C 7 D 
+Structure 433: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 434: D C 8 9 3 A 16 B
+	-> A 3 B C D 8 9 
+Structure 435: C 9 3 A B
+	-> A 3 B C 9 
+Structure 436: C 7 3 A 16 B
+	-> A 3 B C 7 
+Structure 437: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 438: D C 9 3 A 16 B
+	-> A 3 B C D 9 
+Structure 439: D C 9 3 A B
+	-> A 3 B C D 9 
+Structure 440: 43 25 A 28 31 29 44 4
+	-> A 
+Structure 441: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 442: C 10 21 3 A B
+	-> A 3 B C 10 
+Structure 443: C 7 3 A B
+	-> A 3 B C 7 
+Structure 444: E C 8 7 3 A B
+	-> A 3 B C 7 8 E 
+Structure 445: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 446: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 447: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 448: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 449: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 450: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 451: D C 7 3 1 B
+	-> 3 B C 7 D 
+Structure 452: D C 9 10 45 3 A B
+	-> A 3 B C D 9 10 
+Structure 453: C 9 7 3 A B
+	-> A 3 B C 7 9 
+Structure 454: D C 7 20 3 A B 18
+	-> A 3 B C 7 D 
+Structure 455: E C 9 21 3 A B
+	-> A 3 B C 9 E 
+Structure 456: E C 8 7 3 A B
+	-> A 3 B C 7 8 E 
+Structure 457: D C 10 3 A 16 B
+	-> A 3 B C D 10 
+Structure 458: C 10 7 3 A B
+	-> A 3 B C 7 10 
+Structure 459: D C 7 3 A 2 18
+	-> A 3 C 7 D 
+Structure 460: D C 10 3 A 24 B 18
+	-> A 3 B C D 10 
+Structure 461: C 7 3 A B
+	-> A 3 B C 7 
+Structure 462: C 9 3 A 19 B
+	-> A 3 B C 9 
+Structure 463: C 7 20 3 A B
+	-> A 3 B C 7 
+Structure 464: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 465: C 7 3 A B
+	-> A 3 B C 7 
+Structure 466: E 9 3 A 19 B
+	-> A 3 B 9 E 
+Structure 467: C 10 3 A B
+	-> A 3 B C 10 
+Structure 468: C 8 10 3 A B
+	-> A 3 B C 8 10 
+Structure 469: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 470: D E 9 3 A 19 2 18
+	-> A 3 D 9 E 
+Structure 471: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 472: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 473: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 474: D C 10 7 3 A B
+	-> A 3 B C 7 D 10 
+Structure 475: D C 8 10 7 3 A B
+	-> A 3 B C 7 D 8 10 
+Structure 476: C 8 7 3 A 27 B
+	-> A 3 B C 7 8 
+Structure 477: C 8 10 3 A B
+	-> A 3 B C 8 10 
+Structure 478: C 7 3 A B
+	-> A 3 B C 7 
+Structure 479: D C 8 7 3 A B 23
+	-> A 3 B C 7 D 8 
+Structure 480: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 481: C 9 3 A 16 B
+	-> A 3 B C 9 
+Structure 482: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 483: D C 9 3 A 16 50 B
+	-> A 3 B C D 9 
+Structure 484: E 9 30 A 53 B
+	-> A B 9 E 
+Structure 485: E C 8 7 21 3 A B
+	-> A 3 B C 7 8 E 
+Structure 486: C 9 10 3 A B 18
+	-> A 3 B C 9 10 
+Structure 487: D C 8 7 3 A 2 18
+	-> A 3 C 7 D 8 
+Structure 488: D C 8 7 40 3 A B
+	-> A 3 B C 7 D 8 
+Structure 489: D C 9 10 3 A 27 B
+	-> A 3 B C D 9 10 
+Structure 490: D C 9 3 A B
+	-> A 3 B C D 9 
+Structure 491: C 36 10 3 A B
+	-> A 3 B C 10 
+Structure 492: E 9 3 A 55 B 23
+	-> A 3 B 9 E 
+Structure 493: D C 9 3 A B
+	-> A 3 B C D 9 
+Structure 494: C 10 3 A B
+	-> A 3 B C 10 
+Structure 495: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 496: E 9 3 A 16 B
+	-> A 3 B 9 E 
+Structure 497: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 498: E C 9 3 A 19 B
+	-> A 3 B C 9 E 
+Structure 499: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 500: E C 9 3 A 16 2 18
+	-> A 3 C 9 E 
+Structure 501: C 7 3 A B
+	-> A 3 B C 7 
+Structure 502: D C 9 3 A B
+	-> A 3 B C D 9 
+Structure 503: C 10 3 A B
+	-> A 3 B C 10 
+Structure 504: D C 9 3 A B
+	-> A 3 B C D 9 
+Structure 505: 33 C 8 10 3 A B
+	-> A 3 B C 8 10 
+Structure 506: D C 10 3 A B
+	-> A 3 B C D 10 
+Structure 507: E C 10 21 3 A B
+	-> A 3 B C 10 E 
+Structure 508: D C 9 3 A 16 B
+	-> A 3 B C D 9 
+Structure 509: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 510: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 511: C 10 3 A B
+	-> A 3 B C 10 
+Structure 512: E 7 42 3 A B
+	-> A 3 B 7 E 
+Structure 513: E 9 3 A 19 B
+	-> A 3 B 9 E 
+Structure 514: E C 8 7 3 A B
+	-> A 3 B C 7 8 E 
+Structure 515: D C 10 3 A B
+	-> A 3 B C D 10 
+Structure 516: C 7 3 A B
+	-> A 3 B C 7 
+Structure 517: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 518: C 8 7 3 A 2 18
+	-> A 3 C 7 8 
+Structure 519: C 7 3 A 24 B
+	-> A 3 B C 7 
+Structure 520: D C 7 3 A 32 B
+	-> A 3 B C 7 D 
+Structure 521: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 522: C 7 3 A B
+	-> A 3 B C 7 
+Structure 523: C 10 3 A B
+	-> A 3 B C 10 
+Structure 524: 25 A 28 41 B
+	-> A B 
+Structure 525: D C 9 3 A 48 B
+	-> A 3 B C D 9 
+Structure 526: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 527: E C 10 3 A B
+	-> A 3 B C 10 E 
+Structure 528: D C 8 10 3 A B
+	-> A 3 B C D 8 10 
+Structure 529: D C 8 7 3 60 1 B
+	-> 3 B C 7 D 8 
+Structure 530: D C 8 10 7 3 A 55 B
+	-> A 3 B C 7 D 8 10 
+Structure 531: C 7 3 A B
+	-> A 3 B C 7 
+Structure 532: C 7 20 3 A B
+	-> A 3 B C 7 
+Structure 533: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 534: D C 9 3 A 19 B
+	-> A 3 B C D 9 
+Structure 535: C 9 7 3 A B
+	-> A 3 B C 7 9 
+Structure 536: C 7 3 A B
+	-> A 3 B C 7 
+Structure 537: C 9 3 A 16 B
+	-> A 3 B C 9 
+Structure 538: D C 9 3 A 19 B
+	-> A 3 B C D 9 
+Structure 539: C 7 3 A B
+	-> A 3 B C 7 
+Structure 540: D C 36 7 3 A B
+	-> A 3 B C 7 D 
+Structure 541: C 9 3 A B
+	-> A 3 B C 9 
+Structure 542: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 543: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 544: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 545: C 10 3 A B 23
+	-> A 3 B C 10 
+Structure 546: C 8 10 7 3 A B
+	-> A 3 B C 7 8 10 
+Structure 547: D C 8 10 30 A B
+	-> A B C D 8 10 
+Structure 548: C 9 3 A 81 19 B
+	-> A 3 B C 9 
+Structure 549: C 9 30 3 A B
+	-> A 3 B C 9 
+Structure 550: C 7 3 A B
+	-> A 3 B C 7 
+Structure 551: E 7 3 A B
+	-> A 3 B 7 E 
+Structure 552: C 7 21 3 A B
+	-> A 3 B C 7 
+Structure 553: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 554: C 9 3 A B
+	-> A 3 B C 9 
+Structure 555: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 556: D C 8 7 3 A B 18
+	-> A 3 B C 7 D 8 
+Structure 557: D C 9 10 3 A B
+	-> A 3 B C D 9 10 
+Structure 558: E 9 3 A B
+	-> A 3 B 9 E 
+Structure 559: C 10 3 A B
+	-> A 3 B C 10 
+Structure 560: D C 8 7 3 A 27 B
+	-> A 3 B C 7 D 8 
+Structure 561: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 562: D C 9 10 3 A B
+	-> A 3 B C D 9 10 
+Structure 563: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 564: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 565: D C 7 20 3 A B
+	-> A 3 B C 7 D 
+Structure 566: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 567: D C 10 3 A B
+	-> A 3 B C D 10 
+Structure 568: C 7 3 A B
+	-> A 3 B C 7 
+Structure 569: E 37 10 3 A B
+	-> A 3 B 10 E 
+Structure 570: 25 35 A 28 31 29 B
+	-> A B 
+Structure 571: C 10 7 3 A B
+	-> A 3 B C 7 10 
+Structure 572: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 573: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 574: E C 8 7 3 A B
+	-> A 3 B C 7 8 E 
+Structure 575: C 7 42 3 A B
+	-> A 3 B C 7 
+Structure 576: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 577: C 7 3 A B
+	-> A 3 B C 7 
+Structure 578: D C 9 3 A B
+	-> A 3 B C D 9 
+Structure 579: C 9 7 3 A B
+	-> A 3 B C 7 9 
+Structure 580: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 581: C 7 3 A B
+	-> A 3 B C 7 
+Structure 582: C 9 3 A 16 B
+	-> A 3 B C 9 
+Structure 583: D C 8 10 21 3 A B
+	-> A 3 B C D 8 10 
+Structure 584: 63 C 7 3 A B
+	-> A 3 B C 7 
+Structure 585: C 7 45 3 A B
+	-> A 3 B C 7 
+Structure 586: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 587: D C 9 3 A B
+	-> A 3 B C D 9 
+Structure 588: E C 10 3 A B 23
+	-> A 3 B C 10 E 
+Structure 589: E 9 3 A 19 B
+	-> A 3 B 9 E 
+Structure 590: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 591: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 592: 39 C 10 3 A B
+	-> A 3 B C 10 
+Structure 593: C 7 3 A B
+	-> A 3 B C 7 
+Structure 594: E C 8 7 21 3 A B
+	-> A 3 B C 7 8 E 
+Structure 595: E C 8 10 3 A B
+	-> A 3 B C 8 10 E 
+Structure 596: C 7 20 3 A B
+	-> A 3 B C 7 
+Structure 597: C 8 10 3 A B
+	-> A 3 B C 8 10 
+Structure 598: C 8 10 3 A B
+	-> A 3 B C 8 10 
+Structure 599: 33 C 10 3 A B
+	-> A 3 B C 10 
+Structure 600: E 7 3 A 64 B
+	-> A 3 B 7 E 
+Structure 601: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 602: D C 10 3 A B
+	-> A 3 B C D 10 
+Structure 603: C 7 3 A B
+	-> A 3 B C 7 
+Structure 604: D C 9 3 A B
+	-> A 3 B C D 9 
+Structure 605: C 7 3 A B
+	-> A 3 B C 7 
+Structure 606: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 607: C 7 3 A B
+	-> A 3 B C 7 
+Structure 608: D C 9 3 A B
+	-> A 3 B C D 9 
+Structure 609: E C 9 3 A B
+	-> A 3 B C 9 E 
+Structure 610: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 611: D C 9 10 3 A B
+	-> A 3 B C D 9 10 
+Structure 612: C 8 9 3 A 27 B
+	-> A 3 B C 8 9 
+Structure 613: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 614: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 615: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 616: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 617: E C 9 3 A B
+	-> A 3 B C 9 E 
+Structure 618: 26 C 7 3 A B
+	-> A 3 B C 7 
+Structure 619: E C 7 3 A 50 B
+	-> A 3 B C 7 E 
+Structure 620: D C 9 3 A B
+	-> A 3 B C D 9 
+Structure 621: E C 7 3 A 41 B
+	-> A 3 B C 7 E 
+Structure 622: D C 10 7 3 A B
+	-> A 3 B C 7 D 10 
+Structure 623: E C 9 3 A 19 B 18
+	-> A 3 B C 9 E 
+Structure 624: C 8 10 7 3 A B
+	-> A 3 B C 7 8 10 
+Structure 625: C 7 3 A 24 B
+	-> A 3 B C 7 
+Structure 626: C 9 3 A 19 B
+	-> A 3 B C 9 
+Structure 627: E 7 3 A 64 B
+	-> A 3 B 7 E 
+Structure 628: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 629: C 8 10 3 A B
+	-> A 3 B C 8 10 
+Structure 630: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 631: C 9 3 A B
+	-> A 3 B C 9 
+Structure 632: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 633: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 634: D C 10 3 A B
+	-> A 3 B C D 10 
+Structure 635: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 636: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 637: D C 8 10 3 A B
+	-> A 3 B C D 8 10 
+Structure 638: C 9 30 1 65 B
+	-> B C 9 
+Structure 639: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 640: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 641: 25 82 83 A 84 27 B
+	-> A B 
+Structure 642: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 643: E C 8 7 40 3 A B
+	-> A 3 B C 7 8 E 
+Structure 644: D C 8 10 3 A 2 18
+	-> A 3 C D 8 10 
+Structure 645: C 9 3 A B
+	-> A 3 B C 9 
+Structure 646: C 9 3 A B
+	-> A 3 B C 9 
+Structure 647: C 7 3 A 32 B
+	-> A 3 B C 7 
+Structure 648: C 8 3 A B
+	-> A 3 B C 8 
+Structure 649: E C 7 21 3 A B
+	-> A 3 B C 7 E 
+Structure 650: C 7 3 A B
+	-> A 3 B C 7 
+Structure 651: D C 7 20 3 A B
+	-> A 3 B C 7 D 
+Structure 652: C 7 3 A B 18
+	-> A 3 B C 7 
+Structure 653: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 654: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 655: D C 10 3 A B
+	-> A 3 B C D 10 
+Structure 656: C 7 3 A B
+	-> A 3 B C 7 
+Structure 657: E C 8 7 3 A B
+	-> A 3 B C 7 8 E 
+Structure 658: E C 9 30 3 A B
+	-> A 3 B C 9 E 
+Structure 659: C 7 3 A B
+	-> A 3 B C 7 
+Structure 660: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 661: C 7 20 3 A B 18
+	-> A 3 B C 7 
+Structure 662: C 10 3 A B 85
+	-> A 3 B C 10 
+Structure 663: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 664: D C 8 10 3 A B
+	-> A 3 B C D 8 10 
+Structure 665: 26 86 7 3 A 46 59
+	-> A 3 7 
+Structure 666: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 667: E C 10 3 A B
+	-> A 3 B C 10 E 
+Structure 668: C 8 7 3 A 2 18
+	-> A 3 C 7 8 
+Structure 669: D C 9 3 A 19 B
+	-> A 3 B C D 9 
+Structure 670: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 671: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 672: D C 36 7 3 A B
+	-> A 3 B C 7 D 
+Structure 673: E 9 3 A B
+	-> A 3 B 9 E 
+Structure 674: 38 C 10 3 A B
+	-> A 3 B C 10 
+Structure 675: C 8 9 3 A 16 B
+	-> A 3 B C 8 9 
+Structure 676: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 677: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 678: E C 10 3 A B
+	-> A 3 B C 10 E 
+Structure 679: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 680: C 9 3 A B
+	-> A 3 B C 9 
+Structure 681: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 682: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 683: D C 9 30 87 88 1 65 B
+	-> B C D 9 
+Structure 684: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 685: D C 10 3 A B
+	-> A 3 B C D 10 
+Structure 686: E 9 3 A 16 B
+	-> A 3 B 9 E 
+Structure 687: D C 8 10 3 A B
+	-> A 3 B C D 8 10 
+Structure 688: D C 10 7 3 A B
+	-> A 3 B C 7 D 10 
+Structure 689: E 37 10 3 A B
+	-> A 3 B 10 E 
+Structure 690: D C 8 10 3 A 52 B
+	-> A 3 B C D 8 10 
+Structure 691: C 8 7 3 A B 18
+	-> A 3 B C 7 8 
+Structure 692: C 7 20 3 A B
+	-> A 3 B C 7 
+Structure 693: C 10 3 A B 23
+	-> A 3 B C 10 
+Structure 694: C 10 3 1 57 B
+	-> 3 B C 10 
+Structure 695: E C 7 21 3 A B
+	-> A 3 B C 7 E 
+Structure 696: E C 10 3 A B
+	-> A 3 B C 10 E 
+Structure 697: C 9 3 A 19 B
+	-> A 3 B C 9 
+Structure 698: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 699: C 7 3 A B
+	-> A 3 B C 7 
+Structure 700: E 9 10 3 A B 49
+	-> A 3 B 9 10 E 
+Structure 701: E C 8 7 3 A B
+	-> A 3 B C 7 8 E 
+Structure 702: C 9 3 A B
+	-> A 3 B C 9 
+Structure 703: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 704: C 7 3 A B
+	-> A 3 B C 7 
+Structure 705: D C 9 30 A 66 53 B
+	-> A B C D 9 
+Structure 706: C 7 40 3 A B
+	-> A 3 B C 7 
+Structure 707: D C 7 20 3 A B
+	-> A 3 B C 7 D 
+Structure 708: C 8 7 3 A 32 B
+	-> A 3 B C 7 8 
+Structure 709: C 7 3 A B
+	-> A 3 B C 7 
+Structure 710: 25 3 A 28 31 29 B
+	-> A 3 B 
+Structure 711: C 9 3 A 16 B
+	-> A 3 B C 9 
+Structure 712: C 7 3 A B
+	-> A 3 B C 7 
+Structure 713: 38 C 7 3 A B
+	-> A 3 B C 7 
+Structure 714: C 7 3 A 2 18
+	-> A 3 C 7 
+Structure 715: E C 9 10 7 3 A B
+	-> A 3 B C 7 9 10 E 
+Structure 716: C 7 3 A B
+	-> A 3 B C 7 
+Structure 717: E C 8 56 20 3 A B
+	-> A 3 B C 8 E 
+Structure 718: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 719: D C 10 7 3 A B
+	-> A 3 B C 7 D 10 
+Structure 720: E C 10 62 3 A 24 B
+	-> A 3 B C 10 E 
+Structure 721: E C 8 7 3 A B
+	-> A 3 B C 7 8 E 
+Structure 722: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 723: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 724: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 725: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 726: C 9 21 3 A B
+	-> A 3 B C 9 
+Structure 727: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 728: E 10 3 A 41 B
+	-> A 3 B 10 E 
+Structure 729: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 730: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 731: C 8 10 3 A B
+	-> A 3 B C 8 10 
+Structure 732: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 733: E C 9 3 A B
+	-> A 3 B C 9 E 
+Structure 734: 39 C 7 3 A 27 B
+	-> A 3 B C 7 
+Structure 735: C 9 3 A 16 B
+	-> A 3 B C 9 
+Structure 736: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 737: D C 7 21 3 A B
+	-> A 3 B C 7 D 
+Structure 738: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 739: E C 10 3 1 B
+	-> 3 B C 10 E 
+Structure 740: C 7 3 A B
+	-> A 3 B C 7 
+Structure 741: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 742: E 7 3 A 50 B
+	-> A 3 B 7 E 
+Structure 743: C 7 3 A B
+	-> A 3 B C 7 
+Structure 744: C 8 10 3 A 48 B
+	-> A 3 B C 8 10 
+Structure 745: C 9 3 A 16 B
+	-> A 3 B C 9 
+Structure 746: D C 8 7 20 3 A B
+	-> A 3 B C 7 D 8 
+Structure 747: D C 7 3 A B 23
+	-> A 3 B C 7 D 
+Structure 748: C 9 3 A 16 B
+	-> A 3 B C 9 
+Structure 749: E C 8 7 3 A B
+	-> A 3 B C 7 8 E 
+Structure 750: 39 C 7 3 A B
+	-> A 3 B C 7 
+Structure 751: D C 7 3 A B 23
+	-> A 3 B C 7 D 
+Structure 752: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 753: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 754: D C 9 3 A B
+	-> A 3 B C D 9 
+Structure 755: C 7 3 A B
+	-> A 3 B C 7 
+Structure 756: 26 C 9 3 A 16 B
+	-> A 3 B C 9 
+Structure 757: D C 9 10 3 A B
+	-> A 3 B C D 9 10 
+Structure 758: D C 9 7 3 A B
+	-> A 3 B C 7 D 9 
+Structure 759: 25 3 A 28 31 29 44 4
+	-> A 3 
+Structure 760: E C 10 3 A 24 B
+	-> A 3 B C 10 E 
+Structure 761: C 7 3 A B
+	-> A 3 B C 7 
+Structure 762: E C 9 3 A B
+	-> A 3 B C 9 E 
+Structure 763: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 764: D C 10 3 A B
+	-> A 3 B C D 10 
+Structure 765: E C 10 3 A B
+	-> A 3 B C 10 E 
+Structure 766: C 9 10 3 A B
+	-> A 3 B C 9 10 
+Structure 767: D C 9 3 A 57 B
+	-> A 3 B C D 9 
+Structure 768: C 10 7 3 A B
+	-> A 3 B C 7 10 
+Structure 769: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 770: E C 8 10 7 3 A B
+	-> A 3 B C 7 8 10 E 
+Structure 771: E 9 3 A 19 B
+	-> A 3 B 9 E 
+Structure 772: C 9 30 A 53 B 23
+	-> A B C 9 
+Structure 773: C 8 7 3 A 51 2 18
+	-> A 3 C 7 8 
+Structure 774: E C 9 3 A 19 B
+	-> A 3 B C 9 E 
+Structure 775: E C 9 3 A 19 B
+	-> A 3 B C 9 E 
+Structure 776: D C 9 10 3 A B
+	-> A 3 B C D 9 10 
+Structure 777: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 778: C 7 3 A B
+	-> A 3 B C 7 
+Structure 779: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 780: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 781: C 7 3 A B
+	-> A 3 B C 7 
+Structure 782: C 9 3 A 19 B
+	-> A 3 B C 9 
+Structure 783: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 784: C 7 21 3 A B
+	-> A 3 B C 7 
+Structure 785: C 10 3 1 2 18
+	-> 3 C 10 
+Structure 786: D C 9 10 3 A B
+	-> A 3 B C D 9 10 
+Structure 787: E C 8 7 3 A B
+	-> A 3 B C 7 8 E 
+Structure 788: D C 8 10 3 A B
+	-> A 3 B C D 8 10 
+Structure 789: 43 C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 790: C 7 3 A B
+	-> A 3 B C 7 
+Structure 791: C 9 3 A 16 B
+	-> A 3 B C 9 
+Structure 792: E 9 10 3 A 16 B
+	-> A 3 B 9 10 E 
+Structure 793: E 37 10 42 3 A B 23
+	-> A 3 B 10 E 
+Structure 794: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 795: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 796: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 797: 43 C 9 10 20 3 A B
+	-> A 3 B C 9 10 
+Structure 798: D C 9 3 A B
+	-> A 3 B C D 9 
+Structure 799: C 9 3 A 16 B
+	-> A 3 B C 9 
+Structure 800: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 801: 25 3 A 28 31 29 B
+	-> A 3 B 
+Structure 802: D C 9 3 A B
+	-> A 3 B C D 9 
+Structure 803: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 804: E C 10 3 A B
+	-> A 3 B C 10 E 
+Structure 805: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 806: D C 8 3 A B
+	-> A 3 B C D 8 
+Structure 807: D C 9 3 A 16 B 18
+	-> A 3 B C D 9 
+Structure 808: E 9 3 A 19 B
+	-> A 3 B 9 E 
+Structure 809: 26 C 7 3 A B
+	-> A 3 B C 7 
+Structure 810: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 811: D C 8 7 20 3 A B
+	-> A 3 B C 7 D 8 
+Structure 812: 63 C 7 3 A B
+	-> A 3 B C 7 
+Structure 813: C 7 40 3 A B 23
+	-> A 3 B C 7 
+Structure 814: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 815: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 816: D C 9 3 A B
+	-> A 3 B C D 9 
+Structure 817: C 8 10 3 A B
+	-> A 3 B C 8 10 
+Structure 818: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 819: E C 9 21 3 A B
+	-> A 3 B C 9 E 
+Structure 820: C 7 3 A B 89
+	-> A 3 B C 7 
+Structure 821: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 822: E C 9 3 A B 23
+	-> A 3 B C 9 E 
+Structure 823: D C 7 3 A 24 B
+	-> A 3 B C 7 D 
+Structure 824: C 9 3 A B
+	-> A 3 B C 9 
+Structure 825: C 10 3 A B
+	-> A 3 B C 10 
+Structure 826: C 7 3 A B
+	-> A 3 B C 7 
+Structure 827: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 828: E C 8 7 3 A 27 B
+	-> A 3 B C 7 8 E 
+Structure 829: C 7 40 3 A B
+	-> A 3 B C 7 
+Structure 830: C 7 20 3 A B 18
+	-> A 3 B C 7 
+Structure 831: C 7 3 A B
+	-> A 3 B C 7 
+Structure 832: E 9 3 A 19 B
+	-> A 3 B 9 E 
+Structure 833: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 834: E C 9 10 3 A B
+	-> A 3 B C 9 10 E 
+Structure 835: C 8 7 3 A 2 18
+	-> A 3 C 7 8 
+Structure 836: 26 C 9 3 A B
+	-> A 3 B C 9 
+Structure 837: C 7 3 A B
+	-> A 3 B C 7 
+Structure 838: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 839: D C 9 3 A B
+	-> A 3 B C D 9 
+Structure 840: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 841: C 7 3 A B
+	-> A 3 B C 7 
+Structure 842: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 843: D C 9 3 A B
+	-> A 3 B C D 9 
+Structure 844: D C 8 10 3 A B
+	-> A 3 B C D 8 10 
+Structure 845: 33 C 10 3 A B
+	-> A 3 B C 10 
+Structure 846: C 9 3 A 16 B
+	-> A 3 B C 9 
+Structure 847: D C 9 3 A B
+	-> A 3 B C D 9 
+Structure 848: E 10 7 3 A B
+	-> A 3 B 7 10 E 
+Structure 849: E 9 7 3 A B
+	-> A 3 B 7 9 E 
+Structure 850: D C 10 3 A B
+	-> A 3 B C D 10 
+Structure 851: E C 8 7 3 A B
+	-> A 3 B C 7 8 E 
+Structure 852: D C 9 7 3 A 50 18
+	-> A 3 C 7 D 9 
+Structure 853: C 7 3 A B
+	-> A 3 B C 7 
+Structure 854: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 855: C 9 3 A 16 B
+	-> A 3 B C 9 
+Structure 856: D C 9 10 7 3 A B
+	-> A 3 B C 7 D 9 10 
+Structure 857: C 8 10 3 A 27 B
+	-> A 3 B C 8 10 
+Structure 858: D C 8 10 3 A B
+	-> A 3 B C D 8 10 
+Structure 859: D C 8 10 3 A B
+	-> A 3 B C D 8 10 
+Structure 860: 33 C 9 3 A 19 B
+	-> A 3 B C 9 
+Structure 861: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 862: C 9 10 3 A B
+	-> A 3 B C 9 10 
+Structure 863: C 8 7 10 3 A B
+	-> A 3 B C 7 8 10 
+Structure 864: E C 8 7 3 A B
+	-> A 3 B C 7 8 E 
+Structure 865: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 866: D C 7 3 A B 23
+	-> A 3 B C 7 D 
+Structure 867: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 868: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 869: E 9 10 3 A B
+	-> A 3 B 9 10 E 
+Structure 870: C 8 10 3 A B
+	-> A 3 B C 8 10 
+Structure 871: C 9 3 A B
+	-> A 3 B C 9 
+Structure 872: D C 8 10 7 3 A B 23
+	-> A 3 B C 7 D 8 10 
+Structure 873: 39 C 7 3 A B
+	-> A 3 B C 7 
+Structure 874: C 7 3 A B
+	-> A 3 B C 7 
+Structure 875: C 7 3 A B
+	-> A 3 B C 7 
+Structure 876: C 7 3 A B
+	-> A 3 B C 7 
+Structure 877: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 878: C 8 10 3 A B
+	-> A 3 B C 8 10 
+Structure 879: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 880: D C 8 10 3 A B
+	-> A 3 B C D 8 10 
+Structure 881: C 8 7 3 A 32 B
+	-> A 3 B C 7 8 
+Structure 882: C 9 3 A 16 B
+	-> A 3 B C 9 
+Structure 883: C 8 7 45 3 A B
+	-> A 3 B C 7 8 
+Structure 884: 26 C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 885: 25 A 28 90 29 54 47
+	-> A 
+Structure 886: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 887: E 9 3 A 16 B
+	-> A 3 B 9 E 
+Structure 888: C 7 21 3 A B
+	-> A 3 B C 7 
+Structure 889: D C 9 10 7 3 A B
+	-> A 3 B C 7 D 9 10 
+Structure 890: C 10 3 A B
+	-> A 3 B C 10 
+Structure 891: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 892: E 9 3 A 16 B
+	-> A 3 B 9 E 
+Structure 893: D C 9 3 A 19 B
+	-> A 3 B C D 9 
+Structure 894: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 895: C 7 3 A B
+	-> A 3 B C 7 
+Structure 896: D C 9 3 A 16 B
+	-> A 3 B C D 9 
+Structure 897: C 7 3 A B
+	-> A 3 B C 7 
+Structure 898: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 899: D C 10 3 A B
+	-> A 3 B C D 10 
+Structure 900: C 9 3 A B
+	-> A 3 B C 9 
+Structure 901: E 9 10 7 3 A B
+	-> A 3 B 7 9 10 E 
+Structure 902: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 903: C 8 10 3 A B
+	-> A 3 B C 8 10 
+Structure 904: 26 C 9 3 A 19 B
+	-> A 3 B C 9 
+Structure 905: D C 9 3 A 16 B
+	-> A 3 B C D 9 
+Structure 906: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 907: C 9 3 A B
+	-> A 3 B C 9 
+Structure 908: C 7 3 A B
+	-> A 3 B C 7 
+Structure 909: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 910: C 7 3 A B
+	-> A 3 B C 7 
+Structure 911: C 10 3 A B
+	-> A 3 B C 10 
+Structure 912: D C 7 20 3 A B
+	-> A 3 B C 7 D 
+Structure 913: C 7 3 A B
+	-> A 3 B C 7 
+Structure 914: C 7 3 A B
+	-> A 3 B C 7 
+Structure 915: E C 9 3 A B
+	-> A 3 B C 9 E 
+Structure 916: C 8 10 7 3 A B
+	-> A 3 B C 7 8 10 
+Structure 917: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 918: C 9 3 A 51 B
+	-> A 3 B C 9 
+Structure 919: C 8 10 7 3 A B
+	-> A 3 B C 7 8 10 
+Structure 920: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 921: C 7 42 3 A B
+	-> A 3 B C 7 
+Structure 922: C 7 3 A B
+	-> A 3 B C 7 
+Structure 923: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 924: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 925: C 9 10 3 A 19 B
+	-> A 3 B C 9 10 
+Structure 926: C 7 3 A B
+	-> A 3 B C 7 
+Structure 927: D C 8 10 3 A B
+	-> A 3 B C D 8 10 
+Structure 928: D C 7 20 3 A B
+	-> A 3 B C 7 D 
+Structure 929: E C 9 3 A 16 B
+	-> A 3 B C 9 E 
+Structure 930: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 931: D C 9 3 A 19 B
+	-> A 3 B C D 9 
+Structure 932: 39 C 9 3 A 16 B
+	-> A 3 B C 9 
+Structure 933: D C 8 7 40 3 A B
+	-> A 3 B C 7 D 8 
+Structure 934: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 935: 25 A 28 61 B
+	-> A B 
+Structure 936: C 9 3 A 16 B
+	-> A 3 B C 9 
+Structure 937: E C 7 3 A 27 B
+	-> A 3 B C 7 E 
+Structure 938: 26 C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 939: E C 10 3 A B
+	-> A 3 B C 10 E 
+Structure 940: C 8 10 3 A B
+	-> A 3 B C 8 10 
+Structure 941: C 9 3 A B
+	-> A 3 B C 9 
+Structure 942: E C 7 21 3 A B
+	-> A 3 B C 7 E 
+Structure 943: C 7 3 A B
+	-> A 3 B C 7 
+Structure 944: C 7 42 3 A B
+	-> A 3 B C 7 
+Structure 945: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 946: D C 9 7 3 A B
+	-> A 3 B C 7 D 9 
+Structure 947: C 10 3 A B
+	-> A 3 B C 10 
+Structure 948: E C 9 3 A 16 B
+	-> A 3 B C 9 E 
+Structure 949: C 9 10 3 A B
+	-> A 3 B C 9 10 
+Structure 950: E 9 10 3 A B
+	-> A 3 B 9 10 E 
+Structure 951: C 8 10 3 A B
+	-> A 3 B C 8 10 
+Structure 952: D C 7 20 3 A B
+	-> A 3 B C 7 D 
+Structure 953: C 9 3 A 16 B
+	-> A 3 B C 9 
+Structure 954: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 955: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 956: C 10 3 A B
+	-> A 3 B C 10 
+Structure 957: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 958: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 959: E C 8 7 3 A B
+	-> A 3 B C 7 8 E 
+Structure 960: D C 8 10 3 A 57 B
+	-> A 3 B C D 8 10 
+Structure 961: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 962: C 7 3 A B
+	-> A 3 B C 7 
+Structure 963: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 964: 25 A 28 31 29 54 47
+	-> A 
+Structure 965: C 7 3 A B
+	-> A 3 B C 7 
+Structure 966: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 967: 25 A 28 31 29 44 4
+	-> A 
+Structure 968: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 969: E C 9 10 3 A B
+	-> A 3 B C 9 10 E 
+Structure 970: D C 10 3 A B
+	-> A 3 B C D 10 
+Structure 971: E C 7 21 3 A B 18
+	-> A 3 B C 7 E 
+Structure 972: C 7 3 A B
+	-> A 3 B C 7 
+Structure 973: D C 8 7 3 A B
+	-> A 3 B C 7 D 8 
+Structure 974: C 7 3 A B
+	-> A 3 B C 7 
+Structure 975: D C 9 30 A 66 53 B
+	-> A B C D 9 
+Structure 976: C 7 3 A 41 B
+	-> A 3 B C 7 
+Structure 977: C 7 3 A 41 B
+	-> A 3 B C 7 
+Structure 978: 33 C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 979: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 980: C 36 10 3 A 41 B
+	-> A 3 B C 10 
+Structure 981: D C 9 3 A B
+	-> A 3 B C D 9 
+Structure 982: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 983: D C 9 3 A B
+	-> A 3 B C D 9 
+Structure 984: E 9 3 A 16 B
+	-> A 3 B 9 E 
+Structure 985: C 8 7 3 A B
+	-> A 3 B C 7 8 
+Structure 986: C 56 20 3 A B
+	-> A 3 B C 
+Structure 987: E C 7 3 A B
+	-> A 3 B C 7 E 
+Structure 988: 26 C 9 3 A 16 B
+	-> A 3 B C 9 
+Structure 989: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 990: C 9 10 3 A B
+	-> A 3 B C 9 10 
+Structure 991: C 7 3 A 24 B
+	-> A 3 B C 7 
+Structure 992: C 9 30 A B
+	-> A B C 9 
+Structure 993: E C 8 7 3 A B
+	-> A 3 B C 7 8 E 
+Structure 994: E C 10 3 A 52 B
+	-> A 3 B C 10 E 
+Structure 995: D C 9 3 A 16 B
+	-> A 3 B C D 9 
+Structure 996: E C 9 3 A 19 B
+	-> A 3 B C 9 E 
+Structure 997: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 998: D C 9 3 A B
+	-> A 3 B C D 9 
+Structure 999: D C 7 3 A B
+	-> A 3 B C 7 D 
+Structure 1000: C 10 42 3 A B
+	-> A 3 B C 10 

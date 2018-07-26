@@ -785,68 +785,37 @@ Selected profile 1 2 3 4 5 6 7 8 9 10 11 12 15 with freq 13 (108)
 Coverage by selected profiles: 0.275
 Number of profiles needed to get 0.50 coverage: 42
 Total number of selected profiles: 12
-Total number of vertices: 35
-node: '1 2 7 10 19 20 '
-node: '19 20 '
-node: '1 2 3 4 5 6 8 9 13 14 16 17 21 '
-node: '1 19 20 '
-node: '1 13 14 16 19 20 21 '
-node: '2 7 10 19 20 '
-node: '1 2 3 4 5 6 8 9 11 12 13 14 16 17 '
-node: '1 2 3 4 5 6 8 9 10 11 12 17 22 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 15 17 18 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 15 22 '
-node: '1 2 3 4 5 6 7 8 9 13 14 15 16 17 18 21 '
-node: '1 2 3 4 5 6 7 8 9 10 11 12 15 '
-node: '1 2 '
-node: '1 2 10 '
-node: '1 2 7 10 '
-node: '1 2 7 '
-node: ''
-node: '1 '
-node: '1 13 14 16 21 '
-node: '2 '
-node: '1 2 3 4 5 6 8 9 13 14 16 17 '
-node: '1 2 3 4 5 6 8 9 17 '
-node: '1 2 3 4 5 6 8 9 '
-node: '1 13 14 16 '
-node: '2 10 '
-node: '2 7 10 '
-node: '2 7 '
-node: '1 2 3 4 5 6 8 9 11 12 17 '
-node: '1 2 3 4 5 6 8 9 11 12 '
-node: '1 2 3 4 5 6 8 9 10 11 12 17 '
-node: '1 2 3 4 5 6 8 9 10 11 12 22 '
-node: '1 2 3 4 5 6 8 9 10 11 12 '
-node: '1 2 3 4 5 6 7 8 9 15 17 18 '
-node: '1 2 3 4 5 6 7 8 9 15 '
-node: ''
 Joining helices 4 and 3
 Joining helices 9 and 8
 Joining helices 20 and 19
 Joining helices 23 and 25
 Do stem 12 and stem 21 occur infrequently enough to be functionally similar: Yes
 Do stem 13 and stem 16 occur infrequently enough to be functionally similar: No
+Stem A is 2 9 61 65 (4.4 7.5 59.5 64.6) with freq 703
+Stem B is 102 110 170 179 (102.0 109.5 168.5 179.0) with freq 686
+Stem C is 113 118 162 166 (113.3 118.0 160.0 165.7) with freq 532
+Stem D is 145 156 163 173 (145.2 156.0 161.0 172.8) with freq 283
+Stem E is 59 64 71 76 (59.0 64.0 69.0 76.0) with freq 181
 Threshold to find featured stems: 21.5%
 Number of structures processed: 1000
-Featured helix 1 with freq 817
-Featured helix 2 with freq 799
-Featured stem A with freq 703
-Featured stem B with freq 686
-Featured helix 5 with freq 644
-Featured helix 6 with freq 640
-Featured helix 7 with freq 577
-Featured stem C with freq 532
-Featured helix 10 with freq 529
-Featured helix 11 with freq 500
-Featured helix 13 with freq 446
-Featured helix 14 with freq 378
-Featured helix 15 with freq 375
-Featured helix 16 with freq 361
-Featured helix 17 with freq 350
-Featured helix 18 with freq 309
-Featured stem D with freq 283
-Featured helix 22 with freq 215
+Featured helix 1: 28 30 35 37 with freq 817
+Featured helix 2: 80 83 88 91 with freq 799
+Featured stem A: 2 9 61 65 with freq 703
+Featured stem B: 102 110 170 179 with freq 686
+Featured helix 5: 110 111 168 169 with freq 644
+Featured helix 6: 74 79 186 191 with freq 640
+Featured helix 7: 131 134 140 143 with freq 577
+Featured stem C: 113 118 162 166 with freq 532
+Featured helix 10: 17 24 48 55 with freq 529
+Featured helix 11: 1 5 66 70 with freq 500
+Featured helix 13: 26 26 39 39 with freq 446
+Featured helix 14: 7 14 51 58 with freq 378
+Featured helix 15: 129 130 145 146 with freq 375
+Featured helix 16: 23 23 42 42 with freq 361
+Featured helix 17: 120 121 159 160 with freq 350
+Featured helix 18: 147 150 156 159 with freq 309
+Featured stem D: 145 156 163 173 with freq 283
+Featured helix 22: 11 11 60 60 with freq 215
 Total number of featured stems: 18
 Total number of stem profiles: 349
 Stem profile 1 2 7 10 D  with freq 52 (71)
