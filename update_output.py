@@ -94,7 +94,7 @@ os.chdir(src_dir)
 subprocess.call('make clean>/dev/null;make>/dev/null', shell=True)
 if out_folder_choice == -1:
    for name in out_folder_names:
-      update_out_folder(name)
+      update_out_folder(name, args)
 else:
    update_out_folder(out_folder_names[out_folder_choice], args)
 exit(0)
