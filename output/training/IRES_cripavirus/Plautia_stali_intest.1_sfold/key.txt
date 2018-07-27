@@ -1,0 +1,3 @@
+seq is in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/IRES_cripavirus/Plautia_stali_intest.1_sfold/input/Plautia_stali_intest.1_sfold.txt
+A: 5 3 
+B: 11 12 

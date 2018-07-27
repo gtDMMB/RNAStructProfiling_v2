@@ -1,0 +1,2001 @@
+Processing /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/tRNA/M.fuscata.1_sfold/input/M.fuscata.1_sfold.out
+Structure 1: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 2: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 3: 1 16 15 
+	-> 1 
+Structure 4: 1 6 7 10 2 3 
+	-> 1 2 3 6 7 
+Structure 5: 1 14 9 2 3 
+	-> 1 2 3 
+Structure 6: 1 4 5 10 2 8 
+	-> 1 2 4 5 8 
+Structure 7: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 8: 1 9 2 3 
+	-> 1 2 3 
+Structure 9: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 10: 1 21 9 2 3 27 
+	-> 1 2 3 
+Structure 11: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 12: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 13: 1 6 5 10 2 3 
+	-> 1 2 3 5 6 
+Structure 14: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 15: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 16: 1 20 15 
+	-> 1 
+Structure 17: 1 14 33 9 2 8 
+	-> 1 2 8 
+Structure 18: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 19: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 20: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 21: 1 9 2 3 
+	-> 1 2 3 
+Structure 22: 1 13 9 12 2 3 
+	-> 1 2 3 
+Structure 23: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 24: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 25: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 26: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 27: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 28: 1 4 5 2 8 
+	-> 1 2 4 5 8 
+Structure 29: 34 35 11 2 3 
+	-> 2 3 
+Structure 30: 1 17 7 2 3 
+	-> 1 2 3 7 
+Structure 31: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 32: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 33: 1 9 2 3 
+	-> 1 2 3 
+Structure 34: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 35: 1 11 22 2 3 
+	-> 1 2 3 
+Structure 36: 1 4 5 12 2 8 
+	-> 1 2 4 5 8 
+Structure 37: 1 11 7 10 2 3 
+	-> 1 2 3 7 
+Structure 38: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 39: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 40: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 41: 1 4 5 2 8 
+	-> 1 2 4 5 8 
+Structure 42: 1 4 5 10 2 3 
+	-> 1 2 3 4 5 
+Structure 43: 1 19 2 3 
+	-> 1 2 3 
+Structure 44: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 45: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 46: 1 6 5 10 2 8 
+	-> 1 2 5 6 8 
+Structure 47: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 48: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 49: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 50: 1 28 9 2 3 
+	-> 1 2 3 
+Structure 51: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 52: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 53: 1 11 2 3 
+	-> 1 2 3 
+Structure 54: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 55: 1 4 5 2 8 
+	-> 1 2 4 5 8 
+Structure 56: 1 4 16 15 
+	-> 1 4 
+Structure 57: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 58: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 59: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 60: 1 4 18 10 2 3 
+	-> 1 2 3 4 
+Structure 61: 1 19 2 8 
+	-> 1 2 8 
+Structure 62: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 63: 1 14 9 2 3 
+	-> 1 2 3 
+Structure 64: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 65: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 66: 1 9 2 3 
+	-> 1 2 3 
+Structure 67: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 68: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 69: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 70: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 71: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 72: 1 28 9 2 3 
+	-> 1 2 3 
+Structure 73: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 74: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 75: 1 9 2 3 
+	-> 1 2 3 
+Structure 76: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 77: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 78: 1 4 18 2 8 
+	-> 1 2 4 8 
+Structure 79: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 80: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 81: 1 36 9 15 
+	-> 1 
+Structure 82: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 83: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 84: 1 11 2 3 
+	-> 1 2 3 
+Structure 85: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 86: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 87: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 88: 1 13 9 2 8 
+	-> 1 2 8 
+Structure 89: 1 6 12 2 3 
+	-> 1 2 3 6 
+Structure 90: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 91: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 92: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 93: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 94: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 95: 1 4 7 2 8 
+	-> 1 2 4 7 8 
+Structure 96: 1 4 5 12 2 3 
+	-> 1 2 3 4 5 
+Structure 97: 1 4 5 12 2 3 
+	-> 1 2 3 4 5 
+Structure 98: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 99: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 100: 1 9 37 2 3 
+	-> 1 2 3 
+Structure 101: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 102: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 103: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 104: 1 6 7 2 3 
+	-> 1 2 3 6 7 
+Structure 105: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 106: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 107: 1 13 20 8 
+	-> 1 8 
+Structure 108: 1 4 5 2 8 
+	-> 1 2 4 5 8 
+Structure 109: 1 4 17 5 2 3 
+	-> 1 2 3 4 5 
+Structure 110: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 111: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 112: 1 19 2 3 
+	-> 1 2 3 
+Structure 113: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 114: 1 11 2 3 
+	-> 1 2 3 
+Structure 115: 1 4 23 5 2 3 
+	-> 1 2 3 4 5 
+Structure 116: 1 4 5 2 8 
+	-> 1 2 4 5 8 
+Structure 117: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 118: 1 6 5 12 2 3 
+	-> 1 2 3 5 6 
+Structure 119: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 120: 1 4 5 2 3 31 
+	-> 1 2 3 4 5 
+Structure 121: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 122: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 123: 1 4 5 12 2 8 
+	-> 1 2 4 5 8 
+Structure 124: 1 4 5 12 2 3 
+	-> 1 2 3 4 5 
+Structure 125: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 126: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 127: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 128: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 129: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 130: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 131: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 132: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 133: 1 4 16 15 
+	-> 1 4 
+Structure 134: 1 4 5 2 8 
+	-> 1 2 4 5 8 
+Structure 135: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 136: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 137: 1 4 18 10 2 3 
+	-> 1 2 3 4 
+Structure 138: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 139: 1 4 5 10 2 8 
+	-> 1 2 4 5 8 
+Structure 140: 1 4 16 
+	-> 1 4 
+Structure 141: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 142: 1 9 2 3 
+	-> 1 2 3 
+Structure 143: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 144: 1 19 2 3 
+	-> 1 2 3 
+Structure 145: 1 11 2 3 
+	-> 1 2 3 
+Structure 146: 1 19 2 8 
+	-> 1 2 8 
+Structure 147: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 148: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 149: 1 5 2 3 
+	-> 1 2 3 5 
+Structure 150: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 151: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 152: 1 6 16 15 
+	-> 1 6 
+Structure 153: 1 4 5 12 2 3 
+	-> 1 2 3 4 5 
+Structure 154: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 155: 1 6 5 12 2 3 
+	-> 1 2 3 5 6 
+Structure 156: 1 4 5 12 2 3 
+	-> 1 2 3 4 5 
+Structure 157: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 158: 1 11 12 2 3 
+	-> 1 2 3 
+Structure 159: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 160: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 161: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 162: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 163: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 164: 1 4 24 2 3 
+	-> 1 2 3 4 
+Structure 165: 1 9 2 3 
+	-> 1 2 3 
+Structure 166: 1 4 16 15 
+	-> 1 4 
+Structure 167: 1 6 5 12 2 3 
+	-> 1 2 3 5 6 
+Structure 168: 1 4 5 10 2 3 
+	-> 1 2 3 4 5 
+Structure 169: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 170: 1 28 9 2 8 
+	-> 1 2 8 
+Structure 171: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 172: 1 5 2 3 
+	-> 1 2 3 5 
+Structure 173: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 174: 1 14 9 2 3 
+	-> 1 2 3 
+Structure 175: 1 14 38 9 2 3 
+	-> 1 2 3 
+Structure 176: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 177: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 178: 1 4 5 10 2 3 
+	-> 1 2 3 4 5 
+Structure 179: 1 6 7 2 3 
+	-> 1 2 3 6 7 
+Structure 180: 1 6 7 10 2 3 
+	-> 1 2 3 6 7 
+Structure 181: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 182: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 183: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 184: 1 4 18 2 3 
+	-> 1 2 3 4 
+Structure 185: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 186: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 187: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 188: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 189: 1 13 32 9 2 8 
+	-> 1 2 8 
+Structure 190: 1 11 2 3 
+	-> 1 2 3 
+Structure 191: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 192: 1 21 9 2 3 
+	-> 1 2 3 
+Structure 193: 1 6 5 12 2 3 
+	-> 1 2 3 5 6 
+Structure 194: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 195: 1 6 2 8 
+	-> 1 2 6 8 
+Structure 196: 1 6 18 10 2 3 
+	-> 1 2 3 6 
+Structure 197: 1 4 23 2 3 
+	-> 1 2 3 4 
+Structure 198: 1 13 9 2 8 
+	-> 1 2 8 
+Structure 199: 1 11 17 7 10 2 3 
+	-> 1 2 3 7 
+Structure 200: 1 14 9 2 3 
+	-> 1 2 3 
+Structure 201: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 202: 1 16 15 
+	-> 1 
+Structure 203: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 204: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 205: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 206: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 207: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 208: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 209: 1 6 5 12 2 3 
+	-> 1 2 3 5 6 
+Structure 210: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 211: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 212: 1 9 2 3 
+	-> 1 2 3 
+Structure 213: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 214: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 215: 1 5 12 2 3 
+	-> 1 2 3 5 
+Structure 216: 1 4 5 12 2 3 
+	-> 1 2 3 4 5 
+Structure 217: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 218: 1 11 17 2 3 
+	-> 1 2 3 
+Structure 219: 1 6 5 2 8 
+	-> 1 2 5 6 8 
+Structure 220: 1 16 15 
+	-> 1 
+Structure 221: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 222: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 223: 1 9 2 8 
+	-> 1 2 8 
+Structure 224: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 225: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 226: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 227: 1 19 2 3 
+	-> 1 2 3 
+Structure 228: 1 29 9 2 3 
+	-> 1 2 3 
+Structure 229: 1 4 16 15 
+	-> 1 4 
+Structure 230: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 231: 1 11 2 8 
+	-> 1 2 8 
+Structure 232: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 233: 1 6 7 2 3 
+	-> 1 2 3 6 7 
+Structure 234: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 235: 1 11 22 2 8 
+	-> 1 2 8 
+Structure 236: 1 6 2 8 
+	-> 1 2 6 8 
+Structure 237: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 238: 1 4 18 2 3 
+	-> 1 2 3 4 
+Structure 239: 1 14 9 2 3 
+	-> 1 2 3 
+Structure 240: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 241: 1 6 5 10 2 3 
+	-> 1 2 3 5 6 
+Structure 242: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 243: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 244: 1 4 5 12 2 3 
+	-> 1 2 3 4 5 
+Structure 245: 1 4 5 12 2 3 
+	-> 1 2 3 4 5 
+Structure 246: 1 4 10 2 3 
+	-> 1 2 3 4 
+Structure 247: 1 19 2 3 
+	-> 1 2 3 
+Structure 248: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 249: 1 4 5 10 2 3 
+	-> 1 2 3 4 5 
+Structure 250: 1 11 2 3 
+	-> 1 2 3 
+Structure 251: 1 4 7 2 8 
+	-> 1 2 4 7 8 
+Structure 252: 1 11 2 3 
+	-> 1 2 3 
+Structure 253: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 254: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 255: 1 9 2 3 
+	-> 1 2 3 
+Structure 256: 1 14 9 2 3 
+	-> 1 2 3 
+Structure 257: 1 4 5 10 2 3 
+	-> 1 2 3 4 5 
+Structure 258: 1 4 2 3 27 
+	-> 1 2 3 4 
+Structure 259: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 260: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 261: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 262: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 263: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 264: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 265: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 266: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 267: 1 14 9 2 3 
+	-> 1 2 3 
+Structure 268: 1 6 16 15 
+	-> 1 6 
+Structure 269: 1 19 2 3 
+	-> 1 2 3 
+Structure 270: 1 4 12 2 3 
+	-> 1 2 3 4 
+Structure 271: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 272: 1 6 12 2 3 
+	-> 1 2 3 6 
+Structure 273: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 274: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 275: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 276: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 277: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 278: 1 4 12 2 3 
+	-> 1 2 3 4 
+Structure 279: 1 4 5 2 8 
+	-> 1 2 4 5 8 
+Structure 280: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 281: 1 19 2 3 
+	-> 1 2 3 
+Structure 282: 1 4 16 39 15 
+	-> 1 4 
+Structure 283: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 284: 1 11 2 3 
+	-> 1 2 3 
+Structure 285: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 286: 1 4 5 10 2 3 
+	-> 1 2 3 4 5 
+Structure 287: 1 4 2 3 8 
+	-> 1 2 3 4 8 
+Structure 288: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 289: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 290: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 291: 1 6 5 10 2 3 
+	-> 1 2 3 5 6 
+Structure 292: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 293: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 294: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 295: 1 11 2 3 
+	-> 1 2 3 
+Structure 296: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 297: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 298: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 299: 1 29 9 2 3 
+	-> 1 2 3 
+Structure 300: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 301: 1 4 2 3 30 
+	-> 1 2 3 4 
+Structure 302: 1 21 28 9 2 3 
+	-> 1 2 3 
+Structure 303: 1 11 2 3 
+	-> 1 2 3 
+Structure 304: 1 6 20 8 
+	-> 1 6 8 
+Structure 305: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 306: 1 29 9 2 3 
+	-> 1 2 3 
+Structure 307: 1 6 7 2 3 
+	-> 1 2 3 6 7 
+Structure 308: 1 4 12 2 3 
+	-> 1 2 3 4 
+Structure 309: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 310: 1 4 24 2 3 
+	-> 1 2 3 4 
+Structure 311: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 312: 1 6 7 2 3 
+	-> 1 2 3 6 7 
+Structure 313: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 314: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 315: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 316: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 317: 1 4 18 2 3 
+	-> 1 2 3 4 
+Structure 318: 1 4 16 15 
+	-> 1 4 
+Structure 319: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 320: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 321: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 322: 1 4 5 10 2 3 
+	-> 1 2 3 4 5 
+Structure 323: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 324: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 325: 1 4 5 2 8 
+	-> 1 2 4 5 8 
+Structure 326: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 327: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 328: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 329: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 330: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 331: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 332: 1 14 9 10 2 3 
+	-> 1 2 3 
+Structure 333: 1 11 2 3 
+	-> 1 2 3 
+Structure 334: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 335: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 336: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 337: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 338: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 339: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 340: 1 4 5 12 2 8 
+	-> 1 2 4 5 8 
+Structure 341: 1 4 5 2 8 
+	-> 1 2 4 5 8 
+Structure 342: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 343: 1 13 40 10 2 3 
+	-> 1 2 3 
+Structure 344: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 345: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 346: 41 42 19 
+	-> 
+Structure 347: 1 14 7 2 3 
+	-> 1 2 3 7 
+Structure 348: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 349: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 350: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 351: 1 6 5 10 2 3 
+	-> 1 2 3 5 6 
+Structure 352: 1 6 7 2 3 
+	-> 1 2 3 6 7 
+Structure 353: 1 6 18 2 3 
+	-> 1 2 3 6 
+Structure 354: 1 11 4 2 3 
+	-> 1 2 3 4 
+Structure 355: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 356: 1 4 5 10 2 3 
+	-> 1 2 3 4 5 
+Structure 357: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 358: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 359: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 360: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 361: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 362: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 363: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 364: 1 6 5 10 2 3 
+	-> 1 2 3 5 6 
+Structure 365: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 366: 1 4 7 2 8 
+	-> 1 2 4 7 8 
+Structure 367: 1 4 17 2 3 
+	-> 1 2 3 4 
+Structure 368: 1 21 9 2 3 
+	-> 1 2 3 
+Structure 369: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 370: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 371: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 372: 1 11 24 2 8 
+	-> 1 2 8 
+Structure 373: 1 6 7 10 2 3 
+	-> 1 2 3 6 7 
+Structure 374: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 375: 1 4 12 2 8 
+	-> 1 2 4 8 
+Structure 376: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 377: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 378: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 379: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 380: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 381: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 382: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 383: 1 4 24 2 3 
+	-> 1 2 3 4 
+Structure 384: 1 9 2 3 
+	-> 1 2 3 
+Structure 385: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 386: 1 5 2 3 
+	-> 1 2 3 5 
+Structure 387: 1 11 2 3 
+	-> 1 2 3 
+Structure 388: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 389: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 390: 1 14 9 2 3 
+	-> 1 2 3 
+Structure 391: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 392: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 393: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 394: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 395: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 396: 1 6 10 2 3 
+	-> 1 2 3 6 
+Structure 397: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 398: 1 14 20 8 
+	-> 1 8 
+Structure 399: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 400: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 401: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 402: 1 4 18 2 3 
+	-> 1 2 3 4 
+Structure 403: 1 13 9 2 8 
+	-> 1 2 8 
+Structure 404: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 405: 1 4 7 10 2 8 
+	-> 1 2 4 7 8 
+Structure 406: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 407: 1 11 7 10 2 3 
+	-> 1 2 3 7 
+Structure 408: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 409: 43 1 11 22 2 3 
+	-> 1 2 3 
+Structure 410: 1 4 5 10 2 3 
+	-> 1 2 3 4 5 
+Structure 411: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 412: 1 19 2 3 
+	-> 1 2 3 
+Structure 413: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 414: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 415: 1 11 4 2 8 
+	-> 1 2 4 8 
+Structure 416: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 417: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 418: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 419: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 420: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 421: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 422: 1 21 9 2 3 
+	-> 1 2 3 
+Structure 423: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 424: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 425: 1 6 20 8 
+	-> 1 6 8 
+Structure 426: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 427: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 428: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 429: 1 4 5 2 8 
+	-> 1 2 4 5 8 
+Structure 430: 1 4 5 10 2 3 
+	-> 1 2 3 4 5 
+Structure 431: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 432: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 433: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 434: 1 6 16 15 
+	-> 1 6 
+Structure 435: 1 9 2 3 
+	-> 1 2 3 
+Structure 436: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 437: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 438: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 439: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 440: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 441: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 442: 1 4 5 2 8 
+	-> 1 2 4 5 8 
+Structure 443: 1 6 2 8 
+	-> 1 2 6 8 
+Structure 444: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 445: 1 7 10 2 3 
+	-> 1 2 3 7 
+Structure 446: 1 9 2 3 
+	-> 1 2 3 
+Structure 447: 1 4 2 3 27 
+	-> 1 2 3 4 
+Structure 448: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 449: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 450: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 451: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 452: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 453: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 454: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 455: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 456: 1 14 9 2 3 
+	-> 1 2 3 
+Structure 457: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 458: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 459: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 460: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 461: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 462: 1 6 5 10 2 3 
+	-> 1 2 3 5 6 
+Structure 463: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 464: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 465: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 466: 1 6 5 10 2 3 
+	-> 1 2 3 5 6 
+Structure 467: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 468: 1 13 9 12 2 3 
+	-> 1 2 3 
+Structure 469: 1 14 9 12 2 3 
+	-> 1 2 3 
+Structure 470: 1 4 5 10 2 3 
+	-> 1 2 3 4 5 
+Structure 471: 1 13 9 2 8 
+	-> 1 2 8 
+Structure 472: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 473: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 474: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 475: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 476: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 477: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 478: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 479: 1 13 32 9 2 3 
+	-> 1 2 3 
+Structure 480: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 481: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 482: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 483: 1 4 23 2 8 
+	-> 1 2 4 8 
+Structure 484: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 485: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 486: 1 6 5 2 8 
+	-> 1 2 5 6 8 
+Structure 487: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 488: 1 6 5 10 2 3 
+	-> 1 2 3 5 6 
+Structure 489: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 490: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 491: 1 6 7 2 3 30 
+	-> 1 2 3 6 7 
+Structure 492: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 493: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 494: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 495: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 496: 1 11 2 3 
+	-> 1 2 3 
+Structure 497: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 498: 1 4 5 12 2 8 
+	-> 1 2 4 5 8 
+Structure 499: 1 14 9 12 2 3 
+	-> 1 2 3 
+Structure 500: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 501: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 502: 1 44 4 2 8 
+	-> 1 2 4 8 
+Structure 503: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 504: 1 16 15 
+	-> 1 
+Structure 505: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 506: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 507: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 508: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 509: 1 14 9 2 3 
+	-> 1 2 3 
+Structure 510: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 511: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 512: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 513: 1 19 2 3 
+	-> 1 2 3 
+Structure 514: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 515: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 516: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 517: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 518: 1 9 2 8 
+	-> 1 2 8 
+Structure 519: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 520: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 521: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 522: 1 4 10 2 3 
+	-> 1 2 3 4 
+Structure 523: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 524: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 525: 1 14 9 2 3 
+	-> 1 2 3 
+Structure 526: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 527: 1 14 9 2 3 
+	-> 1 2 3 
+Structure 528: 1 4 5 2 8 
+	-> 1 2 4 5 8 
+Structure 529: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 530: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 531: 1 4 5 2 8 
+	-> 1 2 4 5 8 
+Structure 532: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 533: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 534: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 535: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 536: 1 6 7 10 2 3 
+	-> 1 2 3 6 7 
+Structure 537: 1 45 6 2 3 
+	-> 1 2 3 6 
+Structure 538: 1 4 5 10 2 3 
+	-> 1 2 3 4 5 
+Structure 539: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 540: 1 6 2 8 
+	-> 1 2 6 8 
+Structure 541: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 542: 1 4 12 2 3 
+	-> 1 2 3 4 
+Structure 543: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 544: 1 13 9 2 8 
+	-> 1 2 8 
+Structure 545: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 546: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 547: 1 6 7 2 3 
+	-> 1 2 3 6 7 
+Structure 548: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 549: 1 11 2 3 
+	-> 1 2 3 
+Structure 550: 1 11 17 2 3 
+	-> 1 2 3 
+Structure 551: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 552: 1 11 17 2 3 
+	-> 1 2 3 
+Structure 553: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 554: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 555: 1 11 2 8 
+	-> 1 2 8 
+Structure 556: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 557: 1 9 2 8 
+	-> 1 2 8 
+Structure 558: 1 19 2 3 
+	-> 1 2 3 
+Structure 559: 1 6 2 3 8 
+	-> 1 2 3 6 8 
+Structure 560: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 561: 1 9 25 26 8 
+	-> 1 8 
+Structure 562: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 563: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 564: 1 14 9 2 3 
+	-> 1 2 3 
+Structure 565: 1 11 17 5 10 2 3 
+	-> 1 2 3 5 
+Structure 566: 1 19 9 2 3 
+	-> 1 2 3 
+Structure 567: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 568: 1 4 5 10 2 3 
+	-> 1 2 3 4 5 
+Structure 569: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 570: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 571: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 572: 1 4 18 2 8 
+	-> 1 2 4 8 
+Structure 573: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 574: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 575: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 576: 1 46 9 2 3 
+	-> 1 2 3 
+Structure 577: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 578: 1 6 12 2 3 
+	-> 1 2 3 6 
+Structure 579: 1 14 9 2 3 
+	-> 1 2 3 
+Structure 580: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 581: 1 11 2 3 
+	-> 1 2 3 
+Structure 582: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 583: 1 9 2 3 
+	-> 1 2 3 
+Structure 584: 1 14 9 2 3 
+	-> 1 2 3 
+Structure 585: 1 9 2 3 
+	-> 1 2 3 
+Structure 586: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 587: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 588: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 589: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 590: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 591: 1 6 5 12 2 3 
+	-> 1 2 3 5 6 
+Structure 592: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 593: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 594: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 595: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 596: 1 4 5 10 2 3 
+	-> 1 2 3 4 5 
+Structure 597: 1 11 2 3 
+	-> 1 2 3 
+Structure 598: 1 4 7 10 2 8 
+	-> 1 2 4 7 8 
+Structure 599: 1 4 10 2 3 
+	-> 1 2 3 4 
+Structure 600: 1 9 2 3 
+	-> 1 2 3 
+Structure 601: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 602: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 603: 1 5 2 8 
+	-> 1 2 5 8 
+Structure 604: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 605: 1 11 2 3 
+	-> 1 2 3 
+Structure 606: 1 11 2 8 
+	-> 1 2 8 
+Structure 607: 1 19 9 2 3 
+	-> 1 2 3 
+Structure 608: 1 6 7 10 2 3 
+	-> 1 2 3 6 7 
+Structure 609: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 610: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 611: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 612: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 613: 1 4 10 2 3 
+	-> 1 2 3 4 
+Structure 614: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 615: 1 6 7 10 2 8 
+	-> 1 2 6 7 8 
+Structure 616: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 617: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 618: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 619: 1 11 2 3 
+	-> 1 2 3 
+Structure 620: 1 9 2 3 
+	-> 1 2 3 
+Structure 621: 1 4 16 15 
+	-> 1 4 
+Structure 622: 1 11 5 10 2 3 
+	-> 1 2 3 5 
+Structure 623: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 624: 1 11 2 3 
+	-> 1 2 3 
+Structure 625: 1 11 17 2 3 
+	-> 1 2 3 
+Structure 626: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 627: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 628: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 629: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 630: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 631: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 632: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 633: 1 11 2 8 
+	-> 1 2 8 
+Structure 634: 1 47 6 18 2 3 
+	-> 1 2 3 6 
+Structure 635: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 636: 1 13 9 2 3 31 
+	-> 1 2 3 
+Structure 637: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 638: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 639: 1 4 5 2 8 
+	-> 1 2 4 5 8 
+Structure 640: 1 9 2 3 
+	-> 1 2 3 
+Structure 641: 1 2 3 
+	-> 1 2 3 
+Structure 642: 1 13 9 2 8 
+	-> 1 2 8 
+Structure 643: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 644: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 645: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 646: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 647: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 648: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 649: 1 11 2 3 
+	-> 1 2 3 
+Structure 650: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 651: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 652: 1 4 18 10 2 3 
+	-> 1 2 3 4 
+Structure 653: 1 23 18 2 3 
+	-> 1 2 3 
+Structure 654: 1 11 17 2 3 
+	-> 1 2 3 
+Structure 655: 1 4 12 2 3 
+	-> 1 2 3 4 
+Structure 656: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 657: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 658: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 659: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 660: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 661: 1 9 2 3 
+	-> 1 2 3 
+Structure 662: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 663: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 664: 1 6 7 2 3 
+	-> 1 2 3 6 7 
+Structure 665: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 666: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 667: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 668: 1 11 5 10 2 3 
+	-> 1 2 3 5 
+Structure 669: 48 6 2 3 
+	-> 2 3 6 
+Structure 670: 1 6 5 10 2 3 
+	-> 1 2 3 5 6 
+Structure 671: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 672: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 673: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 674: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 675: 1 9 2 8 
+	-> 1 2 8 
+Structure 676: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 677: 1 11 5 2 3 
+	-> 1 2 3 5 
+Structure 678: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 679: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 680: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 681: 1 11 17 5 2 8 
+	-> 1 2 5 8 
+Structure 682: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 683: 1 11 4 2 3 
+	-> 1 2 3 4 
+Structure 684: 1 14 23 2 3 
+	-> 1 2 3 
+Structure 685: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 686: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 687: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 688: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 689: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 690: 1 11 17 2 3 
+	-> 1 2 3 
+Structure 691: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 692: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 693: 1 11 7 10 2 3 
+	-> 1 2 3 7 
+Structure 694: 1 4 5 2 8 
+	-> 1 2 4 5 8 
+Structure 695: 1 11 7 2 3 
+	-> 1 2 3 7 
+Structure 696: 1 6 7 12 2 3 
+	-> 1 2 3 6 7 
+Structure 697: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 698: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 699: 1 14 9 2 3 
+	-> 1 2 3 
+Structure 700: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 701: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 702: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 703: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 704: 1 11 22 2 8 
+	-> 1 2 8 
+Structure 705: 1 4 16 49 15 
+	-> 1 4 
+Structure 706: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 707: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 708: 1 14 9 2 
+	-> 1 2 
+Structure 709: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 710: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 711: 1 4 10 2 8 
+	-> 1 2 4 8 
+Structure 712: 1 4 7 2 8 
+	-> 1 2 4 7 8 
+Structure 713: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 714: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 715: 1 6 7 2 8 
+	-> 1 2 6 7 8 
+Structure 716: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 717: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 718: 1 9 2 3 
+	-> 1 2 3 
+Structure 719: 1 4 24 2 3 
+	-> 1 2 3 4 
+Structure 720: 1 6 18 2 3 
+	-> 1 2 3 6 
+Structure 721: 1 14 9 2 3 
+	-> 1 2 3 
+Structure 722: 1 9 2 3 
+	-> 1 2 3 
+Structure 723: 4 2 3 
+	-> 2 3 4 
+Structure 724: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 725: 1 19 2 3 
+	-> 1 2 3 
+Structure 726: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 727: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 728: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 729: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 730: 1 14 9 2 3 
+	-> 1 2 3 
+Structure 731: 1 23 2 3 
+	-> 1 2 3 
+Structure 732: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 733: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 734: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 735: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 736: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 737: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 738: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 739: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 740: 1 4 18 10 2 3 
+	-> 1 2 3 4 
+Structure 741: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 742: 1 4 7 2 8 
+	-> 1 2 4 7 8 
+Structure 743: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 744: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 745: 1 4 5 12 2 3 
+	-> 1 2 3 4 5 
+Structure 746: 1 4 7 2 8 
+	-> 1 2 4 7 8 
+Structure 747: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 748: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 749: 1 4 25 26 8 
+	-> 1 4 8 
+Structure 750: 1 4 5 2 8 
+	-> 1 2 4 5 8 
+Structure 751: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 752: 1 6 7 2 3 
+	-> 1 2 3 6 7 
+Structure 753: 1 4 5 12 2 3 
+	-> 1 2 3 4 5 
+Structure 754: 1 4 12 2 3 
+	-> 1 2 3 4 
+Structure 755: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 756: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 757: 1 9 12 2 3 
+	-> 1 2 3 
+Structure 758: 1 11 4 2 3 
+	-> 1 2 3 4 
+Structure 759: 1 5 2 3 
+	-> 1 2 3 5 
+Structure 760: 1 6 5 12 2 3 
+	-> 1 2 3 5 6 
+Structure 761: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 762: 1 19 2 3 
+	-> 1 2 3 
+Structure 763: 1 4 5 10 2 3 
+	-> 1 2 3 4 5 
+Structure 764: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 765: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 766: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 767: 1 6 25 26 8 
+	-> 1 6 8 
+Structure 768: 1 21 9 2 3 
+	-> 1 2 3 
+Structure 769: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 770: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 771: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 772: 1 4 5 10 2 3 
+	-> 1 2 3 4 5 
+Structure 773: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 774: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 775: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 776: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 777: 1 6 7 2 8 
+	-> 1 2 6 7 8 
+Structure 778: 1 4 16 15 
+	-> 1 4 
+Structure 779: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 780: 1 6 7 2 3 
+	-> 1 2 3 6 7 
+Structure 781: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 782: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 783: 1 16 15 
+	-> 1 
+Structure 784: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 785: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 786: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 787: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 788: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 789: 1 6 18 2 3 
+	-> 1 2 3 6 
+Structure 790: 1 4 5 12 2 3 
+	-> 1 2 3 4 5 
+Structure 791: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 792: 1 14 9 2 3 
+	-> 1 2 3 
+Structure 793: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 794: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 795: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 796: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 797: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 798: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 799: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 800: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 801: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 802: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 803: 1 6 7 10 2 3 
+	-> 1 2 3 6 7 
+Structure 804: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 805: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 806: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 807: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 808: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 809: 1 4 5 12 2 3 
+	-> 1 2 3 4 5 
+Structure 810: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 811: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 812: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 813: 1 11 2 8 
+	-> 1 2 8 
+Structure 814: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 815: 1 2 3 27 
+	-> 1 2 3 
+Structure 816: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 817: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 818: 1 50 51 20 15 
+	-> 1 
+Structure 819: 1 4 16 15 
+	-> 1 4 
+Structure 820: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 821: 1 11 17 2 3 
+	-> 1 2 3 
+Structure 822: 1 14 9 2 3 
+	-> 1 2 3 
+Structure 823: 1 4 5 12 2 3 
+	-> 1 2 3 4 5 
+Structure 824: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 825: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 826: 1 4 16 15 
+	-> 1 4 
+Structure 827: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 828: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 829: 1 4 5 2 52 8 
+	-> 1 2 4 5 8 
+Structure 830: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 831: 1 11 22 2 8 
+	-> 1 2 8 
+Structure 832: 1 21 9 2 3 
+	-> 1 2 3 
+Structure 833: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 834: 1 14 9 2 3 
+	-> 1 2 3 
+Structure 835: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 836: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 837: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 838: 1 14 9 2 8 
+	-> 1 2 8 
+Structure 839: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 840: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 841: 1 4 2 3 30 
+	-> 1 2 3 4 
+Structure 842: 1 4 5 2 8 
+	-> 1 2 4 5 8 
+Structure 843: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 844: 1 23 5 2 3 
+	-> 1 2 3 5 
+Structure 845: 1 4 5 10 2 3 
+	-> 1 2 3 4 5 
+Structure 846: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 847: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 848: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 849: 1 4 5 2 8 
+	-> 1 2 4 5 8 
+Structure 850: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 851: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 852: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 853: 1 29 9 2 3 
+	-> 1 2 3 
+Structure 854: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 855: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 856: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 857: 1 11 17 25 26 8 
+	-> 1 8 
+Structure 858: 1 9 10 2 3 
+	-> 1 2 3 
+Structure 859: 1 4 5 12 2 3 
+	-> 1 2 3 4 5 
+Structure 860: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 861: 1 20 15 
+	-> 1 
+Structure 862: 1 11 17 2 3 
+	-> 1 2 3 
+Structure 863: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 864: 1 6 5 12 2 8 
+	-> 1 2 5 6 8 
+Structure 865: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 866: 1 11 2 3 
+	-> 1 2 3 
+Structure 867: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 868: 1 6 2 3 8 
+	-> 1 2 3 6 8 
+Structure 869: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 870: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 871: 1 11 2 3 
+	-> 1 2 3 
+Structure 872: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 873: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 874: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 875: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 876: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 877: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 878: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 879: 1 6 53 
+	-> 1 6 
+Structure 880: 1 9 2 3 
+	-> 1 2 3 
+Structure 881: 1 16 15 
+	-> 1 
+Structure 882: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 883: 1 11 17 18 2 3 
+	-> 1 2 3 
+Structure 884: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 885: 1 9 2 3 
+	-> 1 2 3 
+Structure 886: 1 11 7 10 2 3 
+	-> 1 2 3 7 
+Structure 887: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 888: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 889: 1 4 5 12 2 3 
+	-> 1 2 3 4 5 
+Structure 890: 1 4 18 10 2 8 
+	-> 1 2 4 8 
+Structure 891: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 892: 1 6 12 2 3 
+	-> 1 2 3 6 
+Structure 893: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 894: 1 4 5 10 2 3 
+	-> 1 2 3 4 5 
+Structure 895: 1 11 22 2 3 
+	-> 1 2 3 
+Structure 896: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 897: 1 4 5 2 8 
+	-> 1 2 4 5 8 
+Structure 898: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 899: 1 14 9 2 3 
+	-> 1 2 3 
+Structure 900: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 901: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 902: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 903: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 904: 1 11 2 3 
+	-> 1 2 3 
+Structure 905: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 906: 1 16 15 
+	-> 1 
+Structure 907: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 908: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 909: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 910: 1 6 5 12 2 3 
+	-> 1 2 3 5 6 
+Structure 911: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 912: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 913: 1 4 5 2 8 
+	-> 1 2 4 5 8 
+Structure 914: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 915: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 916: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 917: 1 4 10 2 3 
+	-> 1 2 3 4 
+Structure 918: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 919: 54 4 2 3 
+	-> 2 3 4 
+Structure 920: 1 11 2 3 
+	-> 1 2 3 
+Structure 921: 1 20 15 
+	-> 1 
+Structure 922: 1 4 18 2 3 
+	-> 1 2 3 4 
+Structure 923: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 924: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 925: 1 6 5 2 8 
+	-> 1 2 5 6 8 
+Structure 926: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 927: 1 4 7 10 2 8 
+	-> 1 2 4 7 8 
+Structure 928: 1 6 7 10 2 3 
+	-> 1 2 3 6 7 
+Structure 929: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 930: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 931: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 932: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 933: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 934: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 935: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 936: 1 9 2 3 
+	-> 1 2 3 
+Structure 937: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 938: 1 6 7 2 3 
+	-> 1 2 3 6 7 
+Structure 939: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 940: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 941: 1 4 5 12 2 3 
+	-> 1 2 3 4 5 
+Structure 942: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 943: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 944: 1 9 2 3 
+	-> 1 2 3 
+Structure 945: 1 19 2 8 
+	-> 1 2 8 
+Structure 946: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 947: 1 4 7 2 8 
+	-> 1 2 4 7 8 
+Structure 948: 1 6 5 10 2 3 
+	-> 1 2 3 5 6 
+Structure 949: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 950: 1 6 5 10 2 3 
+	-> 1 2 3 5 6 
+Structure 951: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 952: 1 4 16 15 
+	-> 1 4 
+Structure 953: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 954: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 955: 1 11 22 2 3 
+	-> 1 2 3 
+Structure 956: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 957: 1 9 12 2 3 
+	-> 1 2 3 
+Structure 958: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 959: 1 4 2 8 
+	-> 1 2 4 8 
+Structure 960: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 961: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 962: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 963: 1 9 2 3 
+	-> 1 2 3 
+Structure 964: 1 11 17 2 8 
+	-> 1 2 8 
+Structure 965: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 966: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 967: 1 4 7 10 2 3 
+	-> 1 2 3 4 7 
+Structure 968: 1 4 12 2 3 
+	-> 1 2 3 4 
+Structure 969: 1 13 9 2 3 
+	-> 1 2 3 
+Structure 970: 1 11 17 5 2 8 
+	-> 1 2 5 8 
+Structure 971: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 972: 1 6 55 7 2 3 
+	-> 1 2 3 6 7 
+Structure 973: 1 4 7 2 8 
+	-> 1 2 4 7 8 
+Structure 974: 1 6 25 26 8 
+	-> 1 6 8 
+Structure 975: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 976: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 977: 1 16 15 
+	-> 1 
+Structure 978: 1 6 16 15 
+	-> 1 6 
+Structure 979: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 980: 1 11 2 3 
+	-> 1 2 3 
+Structure 981: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 982: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 983: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 984: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 985: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 986: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 987: 1 6 20 15 
+	-> 1 6 
+Structure 988: 1 11 56 17 2 3 
+	-> 1 2 3 
+Structure 989: 1 4 2 3 
+	-> 1 2 3 4 
+Structure 990: 1 4 7 2 3 
+	-> 1 2 3 4 7 
+Structure 991: 1 4 5 12 2 3 
+	-> 1 2 3 4 5 
+Structure 992: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 993: 1 6 2 3 
+	-> 1 2 3 6 
+Structure 994: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 995: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 996: 1 4 5 2 3 
+	-> 1 2 3 4 5 
+Structure 997: 1 6 5 2 3 
+	-> 1 2 3 5 6 
+Structure 998: 1 4 12 2 3 
+	-> 1 2 3 4 
+Structure 999: 1 11 2 3 
+	-> 1 2 3 
+Structure 1000: 1 6 5 10 2 3 
+	-> 1 2 3  

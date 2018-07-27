@@ -1,0 +1,42 @@
+digraph G {
+	pad = 0.5;
+	nodesep = 0.5;
+"legend" [label = < <table border="0" cellborder="1" cellspacing="0"><tr><td>Stem</td><td>Quadruplet</td><td>Frequency</td></tr>
+<tr><td>1</td><td>54 57 64 67</td><td>1000</td></tr>
+<tr><td>2</td><td>47 50 70 73</td><td>990</td></tr>
+<tr><td>3</td><td>40 44 77 81</td><td>902</td></tr>
+<tr><td>4</td><td>5 8 80 83</td><td>721</td></tr>
+<tr><td>5</td><td>13 17 36 40</td><td>648</td></tr>
+<tr><td>6</td><td>20 22 31 33</td><td>471</td></tr>
+<tr><td>7</td><td>17 19 25 27</td><td>224</td></tr>
+<tr><td>A</td><td>11 16 18 22</td><td>184</td></tr>
+<tr><td>8</td><td>30 35 85 90</td><td>181</td></tr>
+<tr><td>B</td><td>21 24 28 30</td><td>175</td></tr>
+</table>>, shape = plaintext, fontsize=11];
+"1 2 3 4 5 6 " [shape = box];
+"1 2 3 A 8 " [shape = box];
+"1 2 3 4 5 7 " [shape = box];
+"1 2 3 4 5 6 B " [shape = box];
+"1 2 3 4 7 " [shape = box];
+"1 2 3 " [style = dashed];
+"1 2 3 4 5 " [style = dashed];
+"1 2 3 4 " [style = dashed];
+"1 2 3 4 5 6 " [label = "[4[5[6]][2[1]]]]\n311/395"];
+"1 2 3 A 8 " [label = "[A][8[3[2[1]]]]\n142/142"];
+"1 2 3 4 5 7 " [label = "[4[5[7]][2[1]]]]\n123/123"];
+"1 2 3 4 5 6 B " [label = "[4[5[6[B]]][2[1]]]]\n84/84"];
+"1 2 3 4 7 " [label = "[4[7][3[2[1]]]]\n71/194"];
+"1 2 3 " [label = "[3[2[1]]]\n11/893"];
+"1 2 3 4 5 " [label = "[4[5][2[1]]]]\n1/558"];
+"1 2 3 4 " [label = "[4[2[1]]]]\n0/655"];
+"1 " [label = "[1]]\n0/1000"];
+"1 2 3 4 5 6 " -> "1 2 3 4 5 6 B " [label = "B ", arrowhead = vee];
+"1 2 3 4 7 " -> "1 2 3 4 5 7 " [label = "5 ", arrowhead = vee];
+"1 2 3 " -> "1 2 3 A 8 " [label = "A 8 ", arrowhead = vee];
+"1 2 3 " -> "1 2 3 4 " [label = "4 ", arrowhead = vee];
+"1 2 3 4 5 " -> "1 2 3 4 5 6 " [label = "6 ", arrowhead = vee];
+"1 2 3 4 5 " -> "1 2 3 4 5 7 " [label = "7 ", arrowhead = vee];
+"1 2 3 4 " -> "1 2 3 4 7 " [label = "7 ", arrowhead = vee];
+"1 2 3 4 " -> "1 2 3 4 5 " [label = "5 ", arrowhead = vee];
+"1 " -> "1 2 3 " [label = "2 3 ", arrowhead = vee];
+}

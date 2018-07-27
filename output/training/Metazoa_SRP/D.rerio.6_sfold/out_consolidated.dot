@@ -1,0 +1,96 @@
+digraph G {
+	pad = 0.5;
+	nodesep = 0.5;
+"legend" [label = < <table border="0" cellborder="1" cellspacing="0"><tr><td>Stem</td><td>Quadruplet</td><td>Frequency</td></tr>
+<tr><td>A</td><td>127 144 149 166</td><td>993</td></tr>
+<tr><td>6</td><td>120 126 220 226</td><td>982</td></tr>
+<tr><td>B</td><td>77 89 256 268</td><td>973</td></tr>
+<tr><td>C</td><td>95 108 241 253</td><td>970</td></tr>
+<tr><td>D</td><td>107 116 231 239</td><td>957</td></tr>
+<tr><td>E</td><td>175 178 215 219</td><td>827</td></tr>
+<tr><td>11</td><td>66 72 269 275</td><td>672</td></tr>
+<tr><td>F</td><td>22 35 43 56</td><td>550</td></tr>
+<tr><td>G</td><td>182 187 204 209</td><td>530</td></tr>
+<tr><td>17</td><td>188 189 201 202</td><td>485</td></tr>
+<tr><td>18</td><td>180 181 214 215</td><td>452</td></tr>
+<tr><td>19</td><td>4 11 62 69</td><td>396</td></tr>
+<tr><td>21</td><td>183 187 192 196</td><td>261</td></tr>
+<tr><td>22</td><td>92 95 251 254</td><td>260</td></tr>
+<tr><td>23</td><td>198 200 208 210</td><td>256</td></tr>
+<tr><td>24</td><td>179 181 209 211</td><td>255</td></tr>
+<tr><td>25</td><td>191 191 200 200</td><td>246</td></tr>
+</table>>, shape = plaintext, fontsize=11];
+"A 6 B C D E 11 F 18 21 23 " [shape = box];
+"A 6 B C D E 11 F 18 " [shape = box];
+"A 6 B C D E 11 F G 17 24 " [shape = box];
+"A 6 B C D E 11 F G 17 24 25 " [shape = box];
+"A 6 B C D E 18 19 21 23 " [shape = box];
+"A 6 B C D E 18 19 " [shape = box];
+"A 6 B C D E 11 F 18 21 22 23 " [shape = box];
+"A 6 B C D 11 F G 17 " [shape = box];
+"A 6 B C D E G 17 19 24 " [shape = box];
+"A 6 B C D E 11 F 18 22 " [shape = box];
+"A 6 B C D 11 F G 17 25 " [shape = box];
+"A 6 B C D E 11 F " [style = dashed];
+"A 6 B C D E 18 21 23 " [style = dashed];
+"A 6 B C D E 18 " [style = dashed];
+"A 6 B C D 11 F " [style = dashed];
+"A 6 B C D E " [style = dashed];
+"A 6 B C D E G 17 24 " [style = dashed];
+"A 6 B C D " [style = dashed];
+"A 6 B C D E 19 " [style = dashed];
+"A 6 B C D G 17 " [style = dashed];
+"A 6 B C D E 11 F 18 21 23 " [label = "[F][11[B[C[D[6[A][E[18[21][23]]]]]]]]\n72/100"];
+"A 6 B C D E 11 F 18 " [label = "[F][11[B[C[D[6[A][E[18]]]]]]]\n55/218"];
+"A 6 B C D E 11 F G 17 24 " [label = "[F][11[B[C[D[6[A][E[24[G[17]]]]]]]]]\n40/101"];
+"A 6 B C D E 11 F G 17 24 25 " [label = "[F][11[B[C[D[6[A][E[24[G[17[25]]]]]]]]]]\n31/43"];
+"A 6 B C D E 18 19 21 23 " [label = "[19][B[C[D[6[A][E[18[21][23]]]]]]]\n27/67"];
+"A 6 B C D E 18 19 " [label = "[19][B[C[D[6[A][E[18]]]]]]\n26/159"];
+"A 6 B C D E 11 F 18 21 22 23 " [label = "[F][11[B[22[C[D[6[A][E[18[21][23]]]]]]]]]\n23/25"];
+"A 6 B C D 11 F G 17 " [label = "[F][11[B[C[D[6[A][G[17]]]]]]]\n23/219"];
+"A 6 B C D E G 17 19 24 " [label = "[19][B[C[D[6[A][E[24[G[17]]]]]]]]\n22/74"];
+"A 6 B C D E 11 F 18 22 " [label = "[F][11[B[22[C[D[6[A][E[18]]]]]]]]\n19/52"];
+"A 6 B C D 11 F G 17 25 " [label = "[F][11[B[C[D[6[A][G[17[25]]]]]]]]\n19/99"];
+"A 6 B C D E 11 F " [label = "[F][11[B[C[D[6[A][E]]]]]]\n8/387"];
+"A 6 B C D E 18 21 23 " [label = "[B[C[D[6[A][E[18[21][23]]]]]]]\n0/187"];
+"A 6 B C D E 18 " [label = "[B[C[D[6[A][E[18]]]]]]\n0/412"];
+"A 6 B C D 11 F " [label = "[F][11[B[C[D[6[A]]]]]]\n0/458"];
+"A 6 B C D E " [label = "[B[C[D[6[A][E]]]]]\n0/747"];
+"A 6 B C D E G 17 24 " [label = "[B[C[D[6[A][E[24[G[17]]]]]]]]\n0/188"];
+"A 6 B C D " [label = "[B[C[D[6[A]]]]]\n0/884"];
+"A 6 B C D E 19 " [label = "[19][B[C[D[6[A][E]]]]]\n4/294"];
+"A 6 B C D G 17 " [label = "[B[C[D[6[A][G[17]]]]]]\n0/430"];
+"" [label = "[]\n0/1000"];
+"A 6 B C D E 11 F 18 21 23 " -> "A 6 B C D E 11 F 18 21 22 23 " [label = "22 ", arrowhead = vee];
+"A 6 B C D E 11 F 18 " -> "A 6 B C D E 11 F 18 21 23 " [label = "21 23 ", arrowhead = vee];
+"A 6 B C D E 11 F 18 " -> "A 6 B C D E 11 F 18 22 " [label = "22 ", arrowhead = vee];
+"A 6 B C D E 11 F G 17 24 " -> "A 6 B C D E 11 F G 17 24 25 " [label = "25 ", arrowhead = vee];
+"A 6 B C D E 18 19 " -> "A 6 B C D E 18 19 21 23 " [label = "21 23 ", arrowhead = vee];
+"A 6 B C D 11 F G 17 " -> "A 6 B C D E 11 F G 17 24 " [label = "E 24 ", arrowhead = vee];
+"A 6 B C D 11 F G 17 " -> "A 6 B C D 11 F G 17 25 " [label = "25 ", arrowhead = vee];
+"A 6 B C D E 11 F 18 22 " -> "A 6 B C D E 11 F 18 21 22 23 " [label = "21 23 ", arrowhead = vee];
+"A 6 B C D 11 F G 17 25 " -> "A 6 B C D E 11 F G 17 24 25 " [label = "E 24 ", arrowhead = vee];
+"A 6 B C D E 11 F " -> "A 6 B C D E 11 F G 17 24 " [label = "G 17 24 ", arrowhead = vee];
+"A 6 B C D E 11 F " -> "A 6 B C D E 11 F 18 " [label = "18 ", arrowhead = vee];
+"A 6 B C D E 18 21 23 " -> "A 6 B C D E 11 F 18 21 23 " [label = "11 F ", arrowhead = vee];
+"A 6 B C D E 18 21 23 " -> "A 6 B C D E 18 19 21 23 " [label = "19 ", arrowhead = vee];
+"A 6 B C D E 18 " -> "A 6 B C D E 18 19 " [label = "19 ", arrowhead = vee];
+"A 6 B C D E 18 " -> "A 6 B C D E 18 21 23 " [label = "21 23 ", arrowhead = vee];
+"A 6 B C D E 18 " -> "A 6 B C D E 11 F 18 " [label = "11 F ", arrowhead = vee];
+"A 6 B C D 11 F " -> "A 6 B C D 11 F G 17 " [label = "G 17 ", arrowhead = vee];
+"A 6 B C D 11 F " -> "A 6 B C D E 11 F " [label = "E ", arrowhead = vee];
+"A 6 B C D E " -> "A 6 B C D E 11 F " [label = "11 F ", arrowhead = vee];
+"A 6 B C D E " -> "A 6 B C D E 18 " [label = "18 ", arrowhead = vee];
+"A 6 B C D E " -> "A 6 B C D E G 17 24 " [label = "G 17 24 ", arrowhead = vee];
+"A 6 B C D E " -> "A 6 B C D E 19 " [label = "19 ", arrowhead = vee];
+"A 6 B C D E G 17 24 " -> "A 6 B C D E 11 F G 17 24 " [label = "11 F ", arrowhead = vee];
+"A 6 B C D E G 17 24 " -> "A 6 B C D E G 17 19 24 " [label = "19 ", arrowhead = vee];
+"A 6 B C D " -> "A 6 B C D 11 F " [label = "11 F ", arrowhead = vee];
+"A 6 B C D " -> "A 6 B C D E " [label = "E ", arrowhead = vee];
+"A 6 B C D " -> "A 6 B C D G 17 " [label = "G 17 ", arrowhead = vee];
+"A 6 B C D E 19 " -> "A 6 B C D E G 17 19 24 " [label = "G 17 24 ", arrowhead = vee];
+"A 6 B C D E 19 " -> "A 6 B C D E 18 19 " [label = "18 ", arrowhead = vee];
+"A 6 B C D G 17 " -> "A 6 B C D 11 F G 17 " [label = "11 F ", arrowhead = vee];
+"A 6 B C D G 17 " -> "A 6 B C D E G 17 24 " [label = "E 24 ", arrowhead = vee];
+"" -> "A 6 B C D " [label = "A 6 B C D ", arrowhead = vee];
+}

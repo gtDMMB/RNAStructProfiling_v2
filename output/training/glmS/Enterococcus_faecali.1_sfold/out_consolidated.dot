@@ -1,0 +1,59 @@
+digraph G {
+	pad = 0.5;
+	nodesep = 0.5;
+"legend" [label = < <table border="0" cellborder="1" cellspacing="0"><tr><td>Stem</td><td>Quadruplet</td><td>Frequency</td></tr>
+<tr><td>1</td><td>20 25 30 35</td><td>941</td></tr>
+<tr><td>2</td><td>108 113 118 123</td><td>893</td></tr>
+<tr><td>A</td><td>48 56 61 69</td><td>868</td></tr>
+<tr><td>B</td><td>41 46 72 75</td><td>853</td></tr>
+<tr><td>5</td><td>93 98 133 138</td><td>725</td></tr>
+<tr><td>6</td><td>4 7 144 147</td><td>622</td></tr>
+<tr><td>C</td><td>16 17 77 79</td><td>562</td></tr>
+<tr><td>D</td><td>11 15 81 84</td><td>462</td></tr>
+<tr><td>12</td><td>7 8 140 141</td><td>194</td></tr>
+<tr><td>13</td><td>9 14 133 138</td><td>177</td></tr>
+<tr><td>14</td><td>8 10 87 89</td><td>159</td></tr>
+</table>>, shape = plaintext, fontsize=11];
+"1 2 A B 5 6 C D " [shape = box];
+"1 2 A B 5 6 C D 14 " [shape = box];
+"1 2 5 6 " [shape = box];
+"1 A B 12 13 " [shape = box];
+"1 2 A B C 12 13 " [shape = box];
+"1 2 A B 5 " [shape = box];
+"1 A B " [style = dashed];
+"1 2 A B C " [style = dashed];
+"1 " [style = dashed];
+"1 2 " [style = dashed];
+"1 2 5 " [style = dashed];
+"1 2 A B " [style = dashed];
+"1 2 A B 5 6 C D " [label = "[6[D[C[1][B[A]]]][5[2]]]\n241/356"];
+"1 2 A B 5 6 C D 14 " [label = "[6[14[D[C[1][B[A]]]]][5[2]]]\n114/114"];
+"1 2 5 6 " [label = "[6[1][5[2]]]\n91/542"];
+"1 A B 12 13 " [label = "[12[13[1][B[A]][2]]]\n51/164"];
+"1 2 A B C 12 13 " [label = "[12[13[C[1][B[A]]][2]]]\n48/57"];
+"1 2 A B 5 " [label = "[1][B[A]][5[2]]\n45/554"];
+"1 A B " [label = "[1][B[A]]\n3/796"];
+"1 2 A B C " [label = "[C[1][B[A]]][2]\n8/522"];
+"1 " [label = "[1]\n1/941"];
+"1 2 " [label = "[1][2]\n2/835"];
+"1 2 5 " [label = "[1][5[2]]\n4/672"];
+"1 2 A B " [label = "[1][B[A]][2]\n29/703"];
+"" [label = "[]\n0/1000"];
+"1 2 A B 5 6 C D " -> "1 2 A B 5 6 C D 14 " [label = "14 ", arrowhead = vee];
+"1 2 5 6 " -> "1 2 A B 5 6 C D " [label = "A B C D ", arrowhead = vee];
+"1 A B 12 13 " -> "1 2 A B C 12 13 " [label = "2 C ", arrowhead = vee];
+"1 2 A B 5 " -> "1 2 A B 5 6 C D " [label = "6 C D ", arrowhead = vee];
+"1 A B " -> "1 A B 12 13 " [label = "12 13 ", arrowhead = vee];
+"1 A B " -> "1 2 A B " [label = "2 ", arrowhead = vee];
+"1 2 A B C " -> "1 2 A B 5 6 C D " [label = "5 6 D ", arrowhead = vee];
+"1 2 A B C " -> "1 2 A B C 12 13 " [label = "12 13 ", arrowhead = vee];
+"1 " -> "1 A B " [label = "A B ", arrowhead = vee];
+"1 " -> "1 2 " [label = "2 ", arrowhead = vee];
+"1 2 " -> "1 2 5 " [label = "5 ", arrowhead = vee];
+"1 2 " -> "1 2 A B " [label = "A B ", arrowhead = vee];
+"1 2 5 " -> "1 2 5 6 " [label = "6 ", arrowhead = vee];
+"1 2 5 " -> "1 2 A B 5 " [label = "A B ", arrowhead = vee];
+"1 2 A B " -> "1 2 A B 5 " [label = "5 ", arrowhead = vee];
+"1 2 A B " -> "1 2 A B C " [label = "C ", arrowhead = vee];
+"" -> "1 " [label = "1 ", arrowhead = vee];
+}

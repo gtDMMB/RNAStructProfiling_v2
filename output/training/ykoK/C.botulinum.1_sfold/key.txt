@@ -1,0 +1,6 @@
+seq is in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/ykoK/C.botulinum.1_sfold/input/C.botulinum.1_sfold.txt
+A: 4 6 
+B: 7 8 
+C: 1 9 2 
+D: ( 12 / 13 ) 
+E: ( 14 / 18 / 24 ) 

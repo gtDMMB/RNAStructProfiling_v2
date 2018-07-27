@@ -1,0 +1,36 @@
+digraph G {
+	pad = 0.5;
+	nodesep = 0.5;
+"legend" [label = < <table border="0" cellborder="1" cellspacing="0"><tr><td>Stem</td><td>Quadruplet</td><td>Frequency</td></tr>
+<tr><td>1</td><td>5 10 116 121</td><td>1000</td></tr>
+<tr><td>2</td><td>63 65 70 72</td><td>998</td></tr>
+<tr><td>A</td><td>17 19 26 29</td><td>989</td></tr>
+<tr><td>B</td><td>95 99 104 108</td><td>975</td></tr>
+<tr><td>3</td><td>35 38 58 61</td><td>966</td></tr>
+<tr><td>4</td><td>75 79 87 91</td><td>953</td></tr>
+<tr><td>C</td><td>12 14 32 33</td><td>953</td></tr>
+<tr><td>6</td><td>42 44 51 53</td><td>867</td></tr>
+<tr><td>D</td><td>93 95 107 109</td><td>855</td></tr>
+<tr><td>12</td><td>3 3 122 122</td><td>307</td></tr>
+<tr><td>13</td><td>37 39 56 58</td><td>306</td></tr>
+<tr><td>14</td><td>15 15 30 30</td><td>256</td></tr>
+<tr><td>15</td><td>81 81 85 85</td><td>134</td></tr>
+</table>>, shape = plaintext, fontsize=11];
+"1 2 A B 3 4 C 6 D " [shape = box];
+"1 2 A B 3 4 C 6 D 13 " [shape = box];
+"1 2 A B 3 4 C 6 D 12 " [shape = box];
+"1 2 A B 3 4 C 6 D 14 " [shape = box];
+"1 2 A B 3 4 C 6 D 12 13 " [shape = box];
+"1 2 A B 3 4 C 6 D " [label = "[1[C[A]][3[6]][2][4][D[B]]]\n215/726"];
+"1 2 A B 3 4 C 6 D 13 " [label = "[1[C[A]][3[13[6]]][2][4][D[B]]]\n115/252"];
+"1 2 A B 3 4 C 6 D 12 " [label = "[12[1[C[A]][3[6]][2][4][D[B]]]]\n82/220"];
+"1 2 A B 3 4 C 6 D 14 " [label = "[1[C[14[A]]][3[6]][2][4][D[B]]]\n77/186"];
+"1 2 A B 3 4 C 6 D 12 13 " [label = "[12[1[C[A]][3[13[6]]][2][4][D[B]]]]\n48/82"];
+"1 " [label = "[1]\n0/1000"];
+"1 2 A B 3 4 C 6 D " -> "1 2 A B 3 4 C 6 D 13 " [label = "13 ", arrowhead = vee];
+"1 2 A B 3 4 C 6 D " -> "1 2 A B 3 4 C 6 D 12 " [label = "12 ", arrowhead = vee];
+"1 2 A B 3 4 C 6 D " -> "1 2 A B 3 4 C 6 D 14 " [label = "14 ", arrowhead = vee];
+"1 2 A B 3 4 C 6 D 13 " -> "1 2 A B 3 4 C 6 D 12 13 " [label = "12 ", arrowhead = vee];
+"1 2 A B 3 4 C 6 D 12 " -> "1 2 A B 3 4 C 6 D 12 13 " [label = "13 ", arrowhead = vee];
+"1 " -> "1 2 A B 3 4 C 6 D " [label = "2 A B 3 4 C 6 D ", arrowhead = vee];
+}

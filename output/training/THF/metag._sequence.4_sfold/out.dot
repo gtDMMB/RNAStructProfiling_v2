@@ -1,0 +1,66 @@
+digraph G {
+	pad = 0.5;
+	nodesep = 0.5;
+"legend" [label = < <table border="0" cellborder="1" cellspacing="0"><tr><td>Helix</td><td>Triplet</td><td>Frequency</td></tr>
+<tr><td>1</td><td>10 84 11</td><td>1000</td></tr>
+<tr><td>2</td><td>35 47 4</td><td>874</td></tr>
+<tr><td>3</td><td>61 70 3</td><td>575</td></tr>
+<tr><td>4</td><td>29 55 5</td><td>536</td></tr>
+<tr><td>5</td><td>5 89 2</td><td>438</td></tr>
+<tr><td>6</td><td>3 95 3</td><td>393</td></tr>
+<tr><td>7</td><td>45 79 11</td><td>387</td></tr>
+<tr><td>8</td><td>31 50 4</td><td>385</td></tr>
+<tr><td>9</td><td>26 57 2</td><td>377</td></tr>
+<tr><td>10</td><td>57 67 3</td><td>265</td></tr>
+</table>>, shape = plaintext, fontsize=11];
+"1 2 3 4 5 9 " [shape = box];
+"1 2 3 4 6 9 " [shape = box];
+"1 2 5 7 8 10 " [shape = box];
+"1 2 6 7 8 10 " [shape = box];
+"1 2 3 4 9 " [shape = box];
+"1 2 3 4 6 " [shape = box];
+"1 2 3 4 5 " [shape = box];
+"1 2 5 7 8 " [shape = box];
+"1 2 7 8 10 " [shape = box];
+"1 2 5 " [style = dashed];
+"1 2 " [style = dashed];
+"1 2 3 4 " [style = dashed];
+"1 2 6 " [style = dashed];
+"1 2 7 8 " [style = dashed];
+"1 2 3 4 5 9 " [label = "[5[1[9[4[2]]][3]]]\n144/153"];
+"1 2 3 4 6 9 " [label = "[6[1[9[4[2]]][3]]]\n116/125"];
+"1 2 5 7 8 10 " [label = "[5[1[8[2]][7[10]]]]\n89/94"];
+"1 2 6 7 8 10 " [label = "[6[1[8[2]][7[10]]]]\n89/94"];
+"1 2 3 4 9 " [label = "[1[9[4[2]]][3]]\n72/342"];
+"1 2 3 4 6 " [label = "[6[1[4[2]][3]]]\n52/183"];
+"1 2 3 4 5 " [label = "[5[1[4[2]][3]]]\n51/210"];
+"1 2 5 7 8 " [label = "[5[1[8[2]][7]]]\n37/135"];
+"1 2 7 8 10 " [label = "[1[8[2]][7[10]]]\n37/220"];
+"1 2 5 " [label = "[5[1[2]]]\n0/380"];
+"1 2 " [label = "[1[2]]\n0/874"];
+"1 2 3 4 " [label = "[1[4[2]][3]]\n27/478"];
+"1 2 6 " [label = "[6[1[2]]]\n0/342"];
+"1 2 7 8 " [label = "[1[8[2]][7]]\n26/321"];
+"1 " [label = "[1]\n4/1000"];
+"1 2 3 4 9 " -> "1 2 3 4 5 9 " [label = "5 ", arrowhead = vee];
+"1 2 3 4 9 " -> "1 2 3 4 6 9 " [label = "6 ", arrowhead = vee];
+"1 2 3 4 6 " -> "1 2 3 4 6 9 " [label = "9 ", arrowhead = vee];
+"1 2 3 4 5 " -> "1 2 3 4 5 9 " [label = "9 ", arrowhead = vee];
+"1 2 5 7 8 " -> "1 2 5 7 8 10 " [label = "10 ", arrowhead = vee];
+"1 2 7 8 10 " -> "1 2 5 7 8 10 " [label = "5 ", arrowhead = vee];
+"1 2 7 8 10 " -> "1 2 6 7 8 10 " [label = "6 ", arrowhead = vee];
+"1 2 5 " -> "1 2 3 4 5 " [label = "3 4 ", arrowhead = vee];
+"1 2 5 " -> "1 2 5 7 8 " [label = "7 8 ", arrowhead = vee];
+"1 2 " -> "1 2 5 " [label = "5 ", arrowhead = vee];
+"1 2 " -> "1 2 3 4 " [label = "3 4 ", arrowhead = vee];
+"1 2 " -> "1 2 6 " [label = "6 ", arrowhead = vee];
+"1 2 " -> "1 2 7 8 " [label = "7 8 ", arrowhead = vee];
+"1 2 3 4 " -> "1 2 3 4 6 " [label = "6 ", arrowhead = vee];
+"1 2 3 4 " -> "1 2 3 4 9 " [label = "9 ", arrowhead = vee];
+"1 2 3 4 " -> "1 2 3 4 5 " [label = "5 ", arrowhead = vee];
+"1 2 6 " -> "1 2 6 7 8 10 " [label = "7 8 10 ", arrowhead = vee];
+"1 2 6 " -> "1 2 3 4 6 " [label = "3 4 ", arrowhead = vee];
+"1 2 7 8 " -> "1 2 5 7 8 " [label = "5 ", arrowhead = vee];
+"1 2 7 8 " -> "1 2 7 8 10 " [label = "10 ", arrowhead = vee];
+"1 " -> "1 2 " [label = "2 ", arrowhead = vee];
+}

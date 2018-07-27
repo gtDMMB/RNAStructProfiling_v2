@@ -1,0 +1,29 @@
+digraph G {
+	pad = 0.5;
+	nodesep = 0.5;
+"legend" [label = < <table border="0" cellborder="1" cellspacing="0"><tr><td>Stem</td><td>Quadruplet</td><td>Frequency</td></tr>
+<tr><td>3</td><td>53 58 63 68</td><td>1000</td></tr>
+<tr><td>5</td><td>38 43 114 119</td><td>996</td></tr>
+<tr><td>A</td><td>8 17 141 151</td><td>988</td></tr>
+<tr><td>B</td><td>81 90 101 110</td><td>975</td></tr>
+<tr><td>C</td><td>20 32 126 137</td><td>959</td></tr>
+<tr><td>10</td><td>45 47 74 76</td><td>939</td></tr>
+<tr><td>11</td><td>4 7 155 158</td><td>872</td></tr>
+<tr><td>D</td><td>48 50 71 73</td><td>663</td></tr>
+<tr><td>E</td><td>33 35 123 125</td><td>98</td></tr>
+</table>>, shape = plaintext, fontsize=11];
+"3 5 A B C 10 11 D " [shape = box];
+"3 5 A B C 10 11 " [shape = box];
+"3 5 A B C 10 D " [shape = box];
+"3 5 A B C 10 " [style = dashed];
+"3 5 A B C 10 11 D " [label = "[11[A[C[5[10[D[3]]][B]]]]]\n465/513"];
+"3 5 A B C 10 11 " [label = "[11[A[C[5[10[3]][B]]]]]\n237/776"];
+"3 5 A B C 10 D " [label = "[A[C[5[10[D[3]]][B]]]]\n66/591"];
+"3 5 A B C 10 " [label = "[A[C[5[10[3]][B]]]]\n32/890"];
+"3 " [label = "[3]\n0/1000"];
+"3 5 A B C 10 11 " -> "3 5 A B C 10 11 D " [label = "D ", arrowhead = vee];
+"3 5 A B C 10 D " -> "3 5 A B C 10 11 D " [label = "11 ", arrowhead = vee];
+"3 5 A B C 10 " -> "3 5 A B C 10 11 " [label = "11 ", arrowhead = vee];
+"3 5 A B C 10 " -> "3 5 A B C 10 D " [label = "D ", arrowhead = vee];
+"3 " -> "3 5 A B C 10 " [label = "5 A B C 10 ", arrowhead = vee];
+}

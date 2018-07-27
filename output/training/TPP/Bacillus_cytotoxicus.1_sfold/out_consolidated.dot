@@ -1,0 +1,46 @@
+digraph G {
+	pad = 0.5;
+	nodesep = 0.5;
+"legend" [label = < <table border="0" cellborder="1" cellspacing="0"><tr><td>Stem</td><td>Quadruplet</td><td>Frequency</td></tr>
+<tr><td>1</td><td>68 72 77 81</td><td>1000</td></tr>
+<tr><td>2</td><td>8 16 52 60</td><td>967</td></tr>
+<tr><td>3</td><td>17 20 25 28</td><td>925</td></tr>
+<tr><td>4</td><td>62 65 84 87</td><td>914</td></tr>
+<tr><td>5</td><td>5 10 90 95</td><td>816</td></tr>
+<tr><td>6</td><td>34 39 45 50</td><td>687</td></tr>
+<tr><td>7</td><td>1 2 99 100</td><td>475</td></tr>
+<tr><td>8</td><td>30 34 43 47</td><td>231</td></tr>
+<tr><td>9</td><td>1 5 91 95</td><td>180</td></tr>
+</table>>, shape = plaintext, fontsize=11];
+"1 2 3 4 5 6 7 " [shape = box];
+"1 2 3 4 5 6 " [shape = box];
+"1 2 3 4 6 9 " [shape = box];
+"1 2 3 4 5 7 8 " [shape = box];
+"1 2 3 4 5 8 " [shape = box];
+"1 2 3 4 6 " [style = dashed];
+"1 2 3 4 5 7 " [style = dashed];
+"1 2 3 4 5 " [style = dashed];
+"1 2 3 4 " [style = dashed];
+"1 2 3 4 5 6 7 " [label = "[7[5[2[3][6]][4[1]]]]\n264/264"];
+"1 2 3 4 5 6 " [label = "[5[2[3][6]][4[1]]]\n216/480"];
+"1 2 3 4 6 9 " [label = "[9[2[3][6]][4[1]]]\n120/120"];
+"1 2 3 4 5 7 8 " [label = "[7[5[2[3][8]][4[1]]]]\n105/105"];
+"1 2 3 4 5 8 " [label = "[5[2[3][8]][4[1]]]\n63/168"];
+"1 2 3 4 6 " [label = "[2[3][6]][4[1]]\n2/603"];
+"1 2 3 4 5 7 " [label = "[7[5[2[3]][4[1]]]]\n5/374"];
+"1 2 3 4 5 " [label = "[5[2[3]][4[1]]]\n2/655"];
+"1 2 3 4 " [label = "[2[3]][4[1]]\n0/817"];
+"1 " [label = "[1]\n0/1000"];
+"1 2 3 4 5 6 " -> "1 2 3 4 5 6 7 " [label = "7 ", arrowhead = vee];
+"1 2 3 4 5 8 " -> "1 2 3 4 5 7 8 " [label = "7 ", arrowhead = vee];
+"1 2 3 4 6 " -> "1 2 3 4 6 9 " [label = "9 ", arrowhead = vee];
+"1 2 3 4 6 " -> "1 2 3 4 5 6 " [label = "5 ", arrowhead = vee];
+"1 2 3 4 5 7 " -> "1 2 3 4 5 6 7 " [label = "6 ", arrowhead = vee];
+"1 2 3 4 5 7 " -> "1 2 3 4 5 7 8 " [label = "8 ", arrowhead = vee];
+"1 2 3 4 5 " -> "1 2 3 4 5 8 " [label = "8 ", arrowhead = vee];
+"1 2 3 4 5 " -> "1 2 3 4 5 7 " [label = "7 ", arrowhead = vee];
+"1 2 3 4 5 " -> "1 2 3 4 5 6 " [label = "6 ", arrowhead = vee];
+"1 2 3 4 " -> "1 2 3 4 6 " [label = "6 ", arrowhead = vee];
+"1 2 3 4 " -> "1 2 3 4 5 " [label = "5 ", arrowhead = vee];
+"1 " -> "1 2 3 4 " [label = "2 3 4 ", arrowhead = vee];
+}

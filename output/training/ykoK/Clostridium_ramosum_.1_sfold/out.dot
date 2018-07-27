@@ -1,0 +1,34 @@
+digraph G {
+	pad = 0.5;
+	nodesep = 0.5;
+"legend" [label = < <table border="0" cellborder="1" cellspacing="0"><tr><td>Helix</td><td>Triplet</td><td>Frequency</td></tr>
+<tr><td>1</td><td>26 127 7</td><td>1000</td></tr>
+<tr><td>2</td><td>53 68 6</td><td>1000</td></tr>
+<tr><td>3</td><td>86 100 5</td><td>983</td></tr>
+<tr><td>4</td><td>20 132 3</td><td>980</td></tr>
+<tr><td>5</td><td>81 105 4</td><td>978</td></tr>
+<tr><td>6</td><td>13 140 5</td><td>964</td></tr>
+<tr><td>7</td><td>38 114 6</td><td>944</td></tr>
+<tr><td>8</td><td>45 76 4</td><td>903</td></tr>
+<tr><td>9</td><td>9 145 3</td><td>859</td></tr>
+<tr><td>10</td><td>48 72 2</td><td>821</td></tr>
+<tr><td>11</td><td>1 155 3</td><td>280</td></tr>
+<tr><td>12</td><td>34 119 2</td><td>219</td></tr>
+<tr><td>13</td><td>23 130 2</td><td>135</td></tr>
+<tr><td>14</td><td>8 148 3</td><td>132</td></tr>
+<tr><td>15</td><td>37 116 1</td><td>76</td></tr>
+</table>>, shape = plaintext, fontsize=11];
+"1 2 3 4 5 6 7 8 9 10 " [shape = box];
+"1 2 3 4 5 6 7 8 9 10 11 " [shape = box];
+"1 2 3 4 5 6 7 8 9 10 12 " [shape = box];
+"1 2 3 4 5 6 7 8 9 10 13 " [shape = box];
+"1 2 3 4 5 6 7 8 9 10 " [label = "[9[6[4[1[7[8[10[2]]][5[3]]]]]]]\n297/647"];
+"1 2 3 4 5 6 7 8 9 10 11 " [label = "[11[9[6[4[1[7[8[10[2]]][5[3]]]]]]]]\n110/168"];
+"1 2 3 4 5 6 7 8 9 10 12 " [label = "[9[6[4[1[12[7[8[10[2]]][5[3]]]]]]]]\n80/147"];
+"1 2 3 4 5 6 7 8 9 10 13 " [label = "[9[6[4[13[1[7[8[10[2]]][5[3]]]]]]]]\n50/84"];
+"1 2 " [label = "[1[2]]\n0/1000"];
+"1 2 3 4 5 6 7 8 9 10 " -> "1 2 3 4 5 6 7 8 9 10 11 " [label = "11 ", arrowhead = vee];
+"1 2 3 4 5 6 7 8 9 10 " -> "1 2 3 4 5 6 7 8 9 10 12 " [label = "12 ", arrowhead = vee];
+"1 2 3 4 5 6 7 8 9 10 " -> "1 2 3 4 5 6 7 8 9 10 13 " [label = "13 ", arrowhead = vee];
+"1 2 " -> "1 2 3 4 5 6 7 8 9 10 " [label = "3 4 5 6 7 8 9 10 ", arrowhead = vee];
+}

@@ -1,0 +1,64 @@
+digraph G {
+	pad = 0.5;
+	nodesep = 0.5;
+"legend" [label = < <table border="0" cellborder="1" cellspacing="0"><tr><td>Stem</td><td>Quadruplet</td><td>Frequency</td></tr>
+<tr><td>1</td><td>10 20 74 84</td><td>1000</td></tr>
+<tr><td>A</td><td>35 40 44 48</td><td>918</td></tr>
+<tr><td>3</td><td>61 63 68 70</td><td>575</td></tr>
+<tr><td>4</td><td>29 33 51 55</td><td>536</td></tr>
+<tr><td>B</td><td>5 7 88 91</td><td>513</td></tr>
+<tr><td>C</td><td>26 28 56 58</td><td>480</td></tr>
+<tr><td>D</td><td>31 34 47 50</td><td>419</td></tr>
+<tr><td>6</td><td>3 5 93 95</td><td>393</td></tr>
+<tr><td>7</td><td>45 55 69 79</td><td>387</td></tr>
+<tr><td>E</td><td>7 9 84 88</td><td>277</td></tr>
+<tr><td>10</td><td>57 59 65 67</td><td>265</td></tr>
+</table>>, shape = plaintext, fontsize=11];
+"1 A 3 4 B C " [shape = box];
+"1 A 3 4 C 6 " [shape = box];
+"1 A 3 4 C " [shape = box];
+"1 A 3 4 B C E " [shape = box];
+"1 A D 6 7 10 " [shape = box];
+"1 A B D 7 10 " [shape = box];
+"1 A 3 4 B C 6 " [shape = box];
+"1 A B D 7 E 10 " [shape = box];
+"1 A " [style = dashed];
+"1 A B " [style = dashed];
+"1 A 6 " [style = dashed];
+"1 A B E " [style = dashed];
+"1 A D 7 10 " [style = dashed];
+"1 A 3 4 B C " [label = "[B[1[C[4[A]]][3]]]\n120/250"];
+"1 A 3 4 C 6 " [label = "[6[1[C[4[A]]][3]]]\n97/180"];
+"1 A 3 4 C " [label = "[1[C[4[A]]][3]]\n71/474"];
+"1 A 3 4 B C E " [label = "[B[E[1[C[4[A]]][3]]]]\n66/72"];
+"1 A D 6 7 10 " [label = "[6[1[D[A[7]][10]]]]\n65/94"];
+"1 A B D 7 10 " [label = "[B[1[D[A[7]][10]]]]\n56/107"];
+"1 A 3 4 B C 6 " [label = "[6[B[1[C[4[A]]][3]]]]\n45/54"];
+"1 A B D 7 E 10 " [label = "[B[E[1[D[A[7]][10]]]]]\n33/40"];
+"1 A " [label = "[1[A]]\n0/918"];
+"1 A B " [label = "[B[1[A]]]\n0/467"];
+"1 A 6 " [label = "[6[1[A]]]\n0/364"];
+"1 A B E " [label = "[B[E[1[A]]]]\n0/150"];
+"1 A D 7 10 " [label = "[1[D[A[7]][10]]]\n24/220"];
+"1 " [label = "[1]\n2/1000"];
+"1 A 3 4 B C " -> "1 A 3 4 B C E " [label = "E ", arrowhead = vee];
+"1 A 3 4 B C " -> "1 A 3 4 B C 6 " [label = "6 ", arrowhead = vee];
+"1 A 3 4 C 6 " -> "1 A 3 4 B C 6 " [label = "B ", arrowhead = vee];
+"1 A 3 4 C " -> "1 A 3 4 B C " [label = "B ", arrowhead = vee];
+"1 A 3 4 C " -> "1 A 3 4 C 6 " [label = "6 ", arrowhead = vee];
+"1 A B D 7 10 " -> "1 A B D 7 E 10 " [label = "E ", arrowhead = vee];
+"1 A " -> "1 A B " [label = "B ", arrowhead = vee];
+"1 A " -> "1 A 6 " [label = "6 ", arrowhead = vee];
+"1 A " -> "1 A D 7 10 " [label = "D 7 10 ", arrowhead = vee];
+"1 A " -> "1 A 3 4 C " [label = "3 4 C ", arrowhead = vee];
+"1 A B " -> "1 A 3 4 B C " [label = "3 4 C ", arrowhead = vee];
+"1 A B " -> "1 A B D 7 10 " [label = "D 7 10 ", arrowhead = vee];
+"1 A B " -> "1 A B E " [label = "E ", arrowhead = vee];
+"1 A 6 " -> "1 A 3 4 C 6 " [label = "3 4 C ", arrowhead = vee];
+"1 A 6 " -> "1 A D 6 7 10 " [label = "D 7 10 ", arrowhead = vee];
+"1 A B E " -> "1 A 3 4 B C E " [label = "3 4 C ", arrowhead = vee];
+"1 A B E " -> "1 A B D 7 E 10 " [label = "D 7 10 ", arrowhead = vee];
+"1 A D 7 10 " -> "1 A D 6 7 10 " [label = "6 ", arrowhead = vee];
+"1 A D 7 10 " -> "1 A B D 7 10 " [label = "B ", arrowhead = vee];
+"1 " -> "1 A " [label = "A ", arrowhead = vee];
+}
