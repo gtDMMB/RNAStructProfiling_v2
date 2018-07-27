@@ -1,7 +1,8 @@
-# usage: place this file in the root directory of RNAStructProfiling.
-#        run program and follow prompts
-#        currently only Linux is supported
-#        additional OS support can be achieved using sys.platform to detect OS
+#  Python version: 2.7
+#  usage: place this file in the root directory of RNAStructProfiling.
+#         run program and follow prompts
+#         currently only Linux is supported
+#         additional OS support can be achieved using sys.platform to detect OS
 #           and chaniging commands/directory naming to that convention
 
 import os
@@ -57,12 +58,17 @@ def update_seq(seq_dir, src_dir, args):
 def update_out_folder(out_folder_name, args):
    out_folder_dir = output_dir + '/' + out_folder_name
    os.chdir(out_folder_dir)
-   seq_names = sorted(next(os.walk('.'))[1])
-   for s in seq_names:
-      if update_seq(out_folder_dir + '/' + s, src_dir, args) == 0:
-         print('SUCCESS: ' + s)
-      else:
-         print('FAILURE: ' + s)
+   class_names = sorted(next(os.walk('.'))[1])
+   for c in class_names:
+      class_folder_dir = out_folder_dir + '/' + c
+      os.chdir(class_folder_dir)
+      seq_names = sorted(next(os.walk('.'))[1])
+      for s in seq_names:
+         if update_seq(class_folder_dir + '/' + s, src_dir, args) == 0:
+            print('SUCCESS: ' + c + '/' + s)
+         else:
+            print('FAILURE: ' + c + '/' + s)
+      print('Done: ' +  out_folder_name + '/' + c)
    print('Done: ' +  out_folder_name)
    return 0
 

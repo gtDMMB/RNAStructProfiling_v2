@@ -1,6 +1,0 @@
-seq is in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/Lactobacillus_iners_.1_sfold/input/Lactobacillus_iners_.1_sfold.txt
-A: ( 7 / 21 ) 
-B: 6 4 
-C: ( 8 10 / 13 ) 
-D: ( 17 / 19 ) 
-E: ( 18 / 22 ) 

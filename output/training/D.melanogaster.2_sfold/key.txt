@@ -1,9 +1,0 @@
-seq is in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/D.melanogaster.2_sfold/input/D.melanogaster.2_sfold.txt
-A: 2 4 
-B: 8 3 
-C: 10 1 
-D: ( 18 / 21 ) 
-E: 11 6 7 9 
-F: 14 15 
-G: 16 17 
-H: 24 23 
