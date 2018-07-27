@@ -473,7 +473,7 @@ GTBOLTZMANN OPTIONS
                 free_hashtbl(deleteHash);
             }
             fclose(fp);
-            if (! set->opt->GRAPH) {
+            if (! set->opt->STEM_GRAPH) {
                 remove(set->opt->CONSOLIDATED_OUTPUT);
             }
             //free_node(consolidated_graph);
