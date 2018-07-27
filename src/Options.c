@@ -52,7 +52,7 @@ void print_options() {
     puts("-l INT        Set minimum helix length");
     puts("-u INT        Set number of structures to profile");
     /*puts("-m INT        Set PNOISE");*/
-    puts("-o NAME       Prefix of output files");
+    puts("-o NAME       Prefix of output files (generates [NAME].dot and [NAME]_consolidated.dot)");
     puts("-i FILE       File containing external structure to be inserted into summary profile graph");
     puts("-n FILE       File containing native structure to be inserted into summary profile graph");
     puts("-v            Run in verbose mode");
@@ -60,16 +60,16 @@ void print_options() {
 
     puts("\nConsolidation options (stems and functionally similar stem groups):");
     puts("-sc      Run without using consolidation of helix classes into stems");
-    puts("-sd INT  Set the max distance between two stems' ends for them to be merged");
-    puts("-se DBL  Set the maximum percent error in frequency for two stems to be merged");
+    puts("-sd  INT Set the max distance between two stems' ends for them to be merged");
+    puts("-se  DBL Set the maximum percent error in frequency for two stems to be merged");
     // TODO: better way to determine # helices to consider
     puts("-smh INT Set the max number of helices to consider for initial stem creation");
     puts("-fsd INT Set the max distance between two stem's ends for them to be considered functionally similar");
     puts("-fse DBL Set the maximum percent error in frequency for two stems to be considered functionally similar (how often the can occur in the same structure)");
-    puts("-sh DBL  Set frequency threshold for stem features(in percentage, e.g. 10.5 for 10.5% threshold)");
-    puts("-sf INT  Set number of featured stems");
-    puts("-sp DBL  Set frequency threshold for selected stem profiles (in percentage, e.g. 10.5 for 10.5% threshold)");
-    puts("-ss INT  Set number of selected stem profiles");
+    puts("-sh  DBL Set frequency threshold for stem features(in percentage, e.g. 10.5 for 10.5% threshold)");
+    puts("-sf  INT Set number of featured stems");
+    puts("-sp  DBL Set frequency threshold for selected stem profiles (in percentage, e.g. 10.5 for 10.5% threshold)");
+    puts("-ss  INT Set number of selected stem profiles");
     puts("-sg      Run without generating summary stem profile graph");
 
     //puts("-t         Run with top-down alternate algorithm");

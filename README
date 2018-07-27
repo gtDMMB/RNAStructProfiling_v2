@@ -6,6 +6,7 @@ Compiler dependencies: To compile and install RNAStructProfilingConsolidation, y
 --GMP (version 6.0.0 from gmplib.org)
 Parallelization requirements: For parallelization, the compiler needs to implement the OpenMP API.
 (GNU gcc 4.7, for example, implements the OpenMP API. See http://openmp.org/wp/openmp-compilers for details.)
+Graphing requirements: Graphviz must be installed
 
 To download source code, click on "zip" link on the RNAStructProfilingConsolidation github
 page (https://github.gatech.edu/hwilco6/RNAStructProfilingConsolidation).
@@ -19,20 +20,34 @@ and follow the rest of directions.
 
 To compile on a Unix/Linux machine, make sure the following files are in the
 same directory:
---main.c
---profile.h
---profile.c
---summaryGraph.c
---summaryGraph.h
---hashtbl.c
---hashtbl.h
---Makefile
+--array_list.c
+--array_list.h
+--consolidated_graph.c
+--consolidated_graph.h
 --graph.c
 --graph.h
+--hashtbl.c
+--hashtbl.h
+--helix_class.c
+--helix_class.h
+--libgtfold.a
+--list.h
+--main.c
 --memoryDFS.c
 --memoryDFS.h
---libgtfold.a
+--Options.c
+--Options.h
+--profile.c
+--profile.h
+--Profnode.c
+--Profnode.h
+--Set.c
+--Set.h
+--stem.c
+--stem.h
+--Makefile
 --include folder with header files
+--data folder with GTparams
 
 Open a terminal window, navigate to the directory that contains
 the above files, and type 'make' to compile the program.
@@ -55,7 +70,19 @@ Common options:
  input sample structures
 -g = disable graph making component of program (if only interested in helix and
  profile stats)
--o [file name] = produces the output graphviz dot file called [file name];
- 'profile.dot' used by default
+-o [file name] = produces the output graphviz dot files called [file name].dot
+ and [file name]_consolidated.dot; 'profile.dot' used by default
 -e [file] gtboltzmann style structure file as input
 -sfold [file] Sfold style structure file as input
+
+Consolidation options:
+-sc = run without consolidation
+-sg = disavle graph making component of consolidation (if only interested in
+ stem and stem profile stats)
+-smh = max number of helices to consider for initial stem creation
+-sh [percent] = filter out all stems that occur in less than [sh] percent of the
+ input sample structures
+-sp  = [percent] = filter out all stem profiles that occur less than [sp] percent
+ of the input sample structures
+
+For a more extensive list of options, run ./RNAprofile --help
