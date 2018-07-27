@@ -64,6 +64,7 @@ dot -T jpeg -o [graph file].jpeg [file name]
 
 Common options:
 -v = verbose output that gives all helix classes and profiles with frequencies
+-gc = set maximum graph size in number of vertices. -1 for no limit
 -h [percent] = filter out all helix classes that occur in less than [h] percent
  of the input sample structures
 -p [percent] = filter out all profiles that occur less than [p] percent of the
@@ -77,9 +78,9 @@ Common options:
 
 Consolidation options:
 -sc = run without consolidation
--sg = disavle graph making component of consolidation (if only interested in
+-sg = disable graph making component of consolidation (if only interested in
  stem and stem profile stats)
--smh = max number of helices to consider for initial stem creation
+-snh = max number of helices to consider for initial stem creation
 -sh [percent] = filter out all stems that occur in less than [sh] percent of the
  input sample structures
 -sp  = [percent] = filter out all stem profiles that occur less than [sp] percent
