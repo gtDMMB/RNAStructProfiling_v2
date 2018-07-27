@@ -112,17 +112,6 @@ Selected profile 1 2 3 4 5 8 with freq 63 (168)
 Coverage by selected profiles: 0.768
 Number of profiles needed to get 0.50 coverage: 3
 Total number of selected profiles: 5
-Total number of vertices: 10
-node: '1 2 3 4 5 6 7 '
-node: '1 2 3 4 5 6 '
-node: '1 2 3 4 6 9 '
-node: '1 2 3 4 5 7 8 '
-node: '1 2 3 4 5 8 '
-node: '1 2 3 4 6 '
-node: '1 2 3 4 5 7 '
-node: '1 2 3 4 5 '
-node: '1 2 3 4 '
-node: '1 '
 Do stem 4 and stem 10 occur infrequently enough to be functionally similar: No
 Do stem 7 and stem 11 occur infrequently enough to be functionally similar: No
 Do stem 7 and stem 23 occur infrequently enough to be functionally similar: No

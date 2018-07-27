@@ -1,0 +1,19 @@
+digraph G {
+	pad = 0.5;
+	nodesep = 0.5;
+"legend" [label = < <table border="0" cellborder="1" cellspacing="0"><tr><td>Stem</td><td>Quadruplet</td><td>Frequency</td></tr>
+<tr><td>1</td><td>2 7 108 113</td><td>1000</td></tr>
+<tr><td>2</td><td>12 19 56 63</td><td>1000</td></tr>
+<tr><td>A</td><td>65 83 89 107</td><td>1000</td></tr>
+<tr><td>8</td><td>83 84 89 90</td><td>961</td></tr>
+<tr><td>B</td><td>22 35 39 52</td><td>958</td></tr>
+<tr><td>9</td><td>19 21 55 57</td><td>535</td></tr>
+</table>>, shape = plaintext, fontsize=11];
+"1 2 A 8 B 9 " [shape = box];
+"1 2 A 8 B " [shape = box];
+"1 2 A 8 B 9 " [label = "[1[2[9[B]]][A[8]]]\n494/494"];
+"1 2 A 8 B " [label = "[1[2[B]][A[8]]]\n426/920"];
+"1 2 A " [label = "[1[2][A]]\n0/1000"];
+"1 2 A 8 B " -> "1 2 A 8 B 9 " [label = "9 ", arrowhead = vee];
+"1 2 A " -> "1 2 A 8 B " [label = "8 B ", arrowhead = vee];
+}

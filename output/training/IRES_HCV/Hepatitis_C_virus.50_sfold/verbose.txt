@@ -413,16 +413,6 @@ Selected profile 1 2 3 4 5 6 7 8 9 12 13 20 22 23 24 with freq 38 (150)
 Coverage by selected profiles: 0.491
 Number of profiles needed to get 0.50 coverage: 7
 Total number of selected profiles: 5
-Total number of vertices: 9
-node: '1 2 3 4 10 11 14 15 16 18 19 21 '
-node: '1 2 3 4 5 6 7 8 9 12 13 17 20 22 23 24 '
-node: '1 2 3 5 6 7 8 9 12 13 17 20 22 23 '
-node: '1 2 3 4 10 11 14 15 16 18 19 '
-node: '1 2 3 4 5 6 7 8 9 12 13 20 22 23 24 '
-node: '1 2 3 4 '
-node: '1 2 3 '
-node: '1 2 3 5 6 7 8 9 12 13 20 22 23 '
-node: ''
 Joining helices 8 and 7
 Joining helices 9 and 13
 Joining helices 16 and 14

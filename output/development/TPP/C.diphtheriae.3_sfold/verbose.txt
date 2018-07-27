@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/development/C.diphtheriae.3_sfold/input/C.diphtheriae.3_sfold.txt is ACGAGAUGCCCGGGUGCCAUGUGCUUGCUGUACGUGGCUGAGACGGCUGUUUGGCCGAACCGUAGAACCUGAUCUGGGUAAUACCAGCGAUAGGAAGACUUCAUACUGUGACU with length 113
+seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/development/TPP/C.diphtheriae.3_sfold/input/C.diphtheriae.3_sfold.txt is ACGAGAUGCCCGGGUGCCAUGUGCUUGCUGUACGUGGCUGAGACGGCUGUUUGGCCGAACCGUAGAACCUGAUCUGGGUAAUACCAGCGAUAGGAAGACUUCAUACUGUGACU with length 113
 Helix 1 is 16 38 9 (16.0 38.0 9.0) with freq 1000
 Helix 2 is 44 57 5 (44.0 57.0 4.8) with freq 997
 Helix 3 is 7 80 9 (7.2 79.8 8.3) with freq 511

@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/development/Agrobacterium_tumefa.1_sfold/input/Agrobacterium_tumefa.1_sfold.txt is AGCUCUUCCGAGGGGAGCACCAGACGGUGCUGAGAUGGUGGUGAACCGGACCCUUGAACCUGAUCCGGGUCAUGCCGGCGUAGGAACGGAACUGUCGUGCGCU with length 103
+seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/development/TPP/Agrobacterium_tumefa.1_sfold/input/Agrobacterium_tumefa.1_sfold.txt is AGCUCUUCCGAGGGGAGCACCAGACGGUGCUGAGAUGGUGGUGAACCGGACCCUUGAACCUGAUCCGGGUCAUGCCGGCGUAGGAACGGAACUGUCGUGCGCU with length 103
 Helix 1 is 16 31 6 (16.2 30.8 5.7) with freq 979
 Helix 2 is 9 56 6 (9.6 55.4 5.4) with freq 821
 Helix 3 is 65 78 4 (65.0 78.0 3.9) with freq 645

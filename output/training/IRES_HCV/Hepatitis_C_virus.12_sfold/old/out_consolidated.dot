@@ -1,0 +1,54 @@
+digraph G {
+	pad = 0.5;
+	nodesep = 0.5;
+"legend" [label = < <table border="0" cellborder="1" cellspacing="0"><tr><td>Stem</td><td>Quadruplet</td><td>Frequency</td></tr>
+<tr><td>A</td><td>97 105 120 128</td><td>979</td></tr>
+<tr><td>B</td><td>77 95 132 150</td><td>964</td></tr>
+<tr><td>C</td><td>156 165 171 180</td><td>927</td></tr>
+<tr><td>10</td><td>103 107 114 118</td><td>903</td></tr>
+<tr><td>11</td><td>213 219 224 230</td><td>894</td></tr>
+<tr><td>D</td><td>1 6 272 277</td><td>877</td></tr>
+<tr><td>E</td><td>48 63 190 204</td><td>856</td></tr>
+<tr><td>15</td><td>31 35 236 240</td><td>842</td></tr>
+<tr><td>16</td><td>15 18 260 263</td><td>835</td></tr>
+<tr><td>17</td><td>19 23 250 254</td><td>823</td></tr>
+<tr><td>18</td><td>63 67 183 187</td><td>792</td></tr>
+<tr><td>19</td><td>71 73 153 155</td><td>792</td></tr>
+<tr><td>22</td><td>44 47 206 209</td><td>676</td></tr>
+<tr><td>F</td><td>26 29 242 245</td><td>616</td></tr>
+<tr><td>24</td><td>37 39 232 234</td><td>445</td></tr>
+</table>>, shape = plaintext, fontsize=11];
+"A B C 10 11 D E 15 16 17 18 19 22 F 24 " [shape = box];
+"A B C 10 11 D E 15 16 17 18 19 22 F " [shape = box];
+"A B C 10 11 D E 15 16 17 18 19 22 24 " [shape = box];
+"A B C 10 11 D E 15 16 17 18 19 F 24 " [shape = box];
+"A B C 10 11 D E 15 16 17 18 19 22 " [shape = box];
+"A B C 10 11 D E 15 16 17 18 19 F " [shape = box];
+"A B C 10 D 16 17 " [shape = box];
+"A B C 10 11 D E 15 16 17 18 19 24 " [style = dashed];
+"A B C 10 11 D E 15 16 17 18 19 " [style = dashed];
+"A B C 10 11 D E 15 16 17 18 19 22 F 24 " [label = "[D[16[17[F[15[24[22[E[18[19[B[A[10]]]][C]]]][11]]]]]]]\n115/115"];
+"A B C 10 11 D E 15 16 17 18 19 22 F " [label = "[D[16[17[F[15[22[E[18[19[B[A[10]]]][C]]]][11]]]]]]\n101/216"];
+"A B C 10 11 D E 15 16 17 18 19 22 24 " [label = "[D[16[17[15[24[22[E[18[19[B[A[10]]]][C]]]][11]]]]]]\n44/159"];
+"A B C 10 11 D E 15 16 17 18 19 F 24 " [label = "[D[16[17[F[15[24[E[18[19[B[A[10]]]][C]]][11]]]]]]]\n43/158"];
+"A B C 10 11 D E 15 16 17 18 19 22 " [label = "[D[16[17[15[22[E[18[19[B[A[10]]]][C]]]][11]]]]]\n43/303"];
+"A B C 10 11 D E 15 16 17 18 19 F " [label = "[D[16[17[F[15[E[18[19[B[A[10]]]][C]]][11]]]]]]\n39/298"];
+"A B C 10 D 16 17 " [label = "[D[16[17[B[A[10]]][C]]]]\n33/580"];
+"A B C 10 11 D E 15 16 17 18 19 24 " [label = "[D[16[17[15[24[E[18[19[B[A[10]]]][C]]][11]]]]]]\n17/219"];
+"A B C 10 11 D E 15 16 17 18 19 " [label = "[D[16[17[15[E[18[19[B[A[10]]]][C]]][11]]]]]\n11/413"];
+"" [label = "[]\n0/1000"];
+"A B C 10 11 D E 15 16 17 18 19 22 F " -> "A B C 10 11 D E 15 16 17 18 19 22 F 24 " [label = "24 ", arrowhead = vee];
+"A B C 10 11 D E 15 16 17 18 19 22 24 " -> "A B C 10 11 D E 15 16 17 18 19 22 F 24 " [label = "F ", arrowhead = vee];
+"A B C 10 11 D E 15 16 17 18 19 F 24 " -> "A B C 10 11 D E 15 16 17 18 19 22 F 24 " [label = "22 ", arrowhead = vee];
+"A B C 10 11 D E 15 16 17 18 19 22 " -> "A B C 10 11 D E 15 16 17 18 19 22 F " [label = "F ", arrowhead = vee];
+"A B C 10 11 D E 15 16 17 18 19 22 " -> "A B C 10 11 D E 15 16 17 18 19 22 24 " [label = "24 ", arrowhead = vee];
+"A B C 10 11 D E 15 16 17 18 19 F " -> "A B C 10 11 D E 15 16 17 18 19 22 F " [label = "22 ", arrowhead = vee];
+"A B C 10 11 D E 15 16 17 18 19 F " -> "A B C 10 11 D E 15 16 17 18 19 F 24 " [label = "24 ", arrowhead = vee];
+"A B C 10 D 16 17 " -> "A B C 10 11 D E 15 16 17 18 19 " [label = "11 E 15 18 19 ", arrowhead = vee];
+"A B C 10 11 D E 15 16 17 18 19 24 " -> "A B C 10 11 D E 15 16 17 18 19 22 24 " [label = "22 ", arrowhead = vee];
+"A B C 10 11 D E 15 16 17 18 19 24 " -> "A B C 10 11 D E 15 16 17 18 19 F 24 " [label = "F ", arrowhead = vee];
+"A B C 10 11 D E 15 16 17 18 19 " -> "A B C 10 11 D E 15 16 17 18 19 F " [label = "F ", arrowhead = vee];
+"A B C 10 11 D E 15 16 17 18 19 " -> "A B C 10 11 D E 15 16 17 18 19 24 " [label = "24 ", arrowhead = vee];
+"A B C 10 11 D E 15 16 17 18 19 " -> "A B C 10 11 D E 15 16 17 18 19 22 " [label = "22 ", arrowhead = vee];
+"" -> "A B C 10 D 16 17 " [label = "A B C 10 D 16 17 ", arrowhead = vee];
+}

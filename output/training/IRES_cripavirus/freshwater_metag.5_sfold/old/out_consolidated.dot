@@ -1,0 +1,29 @@
+digraph G {
+	pad = 0.5;
+	nodesep = 0.5;
+"legend" [label = < <table border="0" cellborder="1" cellspacing="0"><tr><td>Stem</td><td>Quadruplet</td><td>Frequency</td></tr>
+<tr><td>1</td><td>1 8 60 67</td><td>1000</td></tr>
+<tr><td>A</td><td>13 23 46 55</td><td>999</td></tr>
+<tr><td>3</td><td>8 12 55 59</td><td>893</td></tr>
+<tr><td>B</td><td>30 34 40 43</td><td>374</td></tr>
+<tr><td>C</td><td>22 27 38 41</td><td>172</td></tr>
+<tr><td>D</td><td>22 25 42 45</td><td>162</td></tr>
+</table>>, shape = plaintext, fontsize=11];
+"1 A 3 " [shape = box];
+"1 A 3 B " [shape = box];
+"1 A 3 C " [shape = box];
+"1 A 3 D " [shape = box];
+"1 A 3 C D " [shape = box];
+"1 A 3 " [label = "[1[3[A]]]\n350/892"];
+"1 A 3 B " [label = "[1[3[A[B]]]]\n289/330"];
+"1 A 3 C " [label = "[1[3[A[C]]]]\n107/153"];
+"1 A 3 D " [label = "[1[3[A[D]]]]\n59/146"];
+"1 A 3 C D " [label = "[1[3[A[D]]]]]\n46/46"];
+"1 " [label = "[1]\n0/1000"];
+"1 A 3 " -> "1 A 3 B " [label = "B ", arrowhead = vee];
+"1 A 3 " -> "1 A 3 C " [label = "C ", arrowhead = vee];
+"1 A 3 " -> "1 A 3 D " [label = "D ", arrowhead = vee];
+"1 A 3 C " -> "1 A 3 C D " [label = "D ", arrowhead = vee];
+"1 A 3 D " -> "1 A 3 C D " [label = "C ", arrowhead = vee];
+"1 " -> "1 A 3 " [label = "A 3 ", arrowhead = vee];
+}

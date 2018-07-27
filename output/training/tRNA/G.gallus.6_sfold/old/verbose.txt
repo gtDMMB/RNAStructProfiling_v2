@@ -1,0 +1,137 @@
+seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/tRNA/G.gallus.6_sfold/input/G.gallus.6_sfold.txt is GAGGCCUUAGCUUAAUUAAAGCGUCUGAUUUGCAUUCAGGAGAUACAGGUUAAUGUCCUGUUGGUCUUA with length 69
+Helix 1 is 1 68 6 (1.1 67.9 5.9) with freq 1000
+Helix 2 is 10 22 4 (10.0 22.0 3.9) with freq 940
+Helix 3 is 45 61 5 (45.1 60.9 4.8) with freq 888
+Helix 4 is 24 40 5 (24.3 39.7 4.6) with freq 880
+Helix 5 is 37 60 5 (37.0 60.0 5.0) with freq 106
+Helix 6 is 43 54 2 (43.0 54.0 2.0) with freq 104
+Helix 7 is 48 57 3 (50.0 55.0 1.0) with freq 53
+Helix 8 is 22 42 1 (22.0 42.0 1.0) with freq 26
+Helix 9 is 10 33 2 (10.0 33.0 2.0) with freq 15
+Helix 10 is 24 41 3 (24.1 40.9 1.9) with freq 13
+Helix 11 is 14 30 5 (14.2 29.8 4.8) with freq 13
+Helix 12 is 30 34 1 (30.0 34.0 1.0) with freq 11
+Helix 13 is 27 36 3 (28.2 34.8 1.8) with freq 11
+Helix 14 is 21 33 3 (21.0 33.0 3.0) with freq 10
+Helix 15 is 51 55 1 (51.0 55.0 1.0) with freq 8
+Helix 16 is 28 44 4 (28.1 43.9 3.9) with freq 7
+Helix 17 is 33 39 1 (33.0 39.0 1.0) with freq 7
+Helix 18 is 42 62 4 (42.0 62.0 1.1) with freq 7
+Helix 19 is 26 34 2 (26.4 33.6 1.6) with freq 7
+Helix 20 is 43 62 1 (43.0 62.0 1.0) with freq 5
+Helix 21 is 12 53 6 (12.3 52.7 5.3) with freq 3
+Helix 22 is 7 43 2 (8.0 42.0 1.0) with freq 2
+Helix 23 is 12 19 2 (12.5 18.5 1.0) with freq 2
+Helix 24 is 23 44 4 (24.0 43.0 2.5) with freq 2
+Helix 25 is 7 42 2 (7.5 41.5 1.5) with freq 2
+Helix 26 is 10 56 2 (10.5 55.5 1.5) with freq 2
+Helix 27 is 20 44 1 (20.0 44.0 1.0) with freq 2
+Helix 28 is 44 52 2 (44.0 52.0 1.5) with freq 2
+Helix 29 is 23 50 5 (25.0 48.0 3.0) with freq 2
+Helix 30 is 36 43 2 (36.0 43.0 2.0) with freq 1
+Helix 31 is 8 43 1 (8.0 43.0 1.0) with freq 1
+Helix 32 is 29 40 4 (29.0 40.0 3.0) with freq 1
+Helix 33 is 44 63 2 (45.0 62.0 1.0) with freq 1
+Helix 34 is 25 32 1 (25.0 32.0 1.0) with freq 1
+Helix 35 is 24 42 1 (24.0 42.0 1.0) with freq 1
+Helix 36 is 7 28 4 (8.0 27.0 2.0) with freq 1
+Helix 37 is 18 30 2 (18.0 30.0 2.0) with freq 1
+Helix 38 is 41 51 2 (42.0 50.0 1.0) with freq 1
+Helix 39 is 11 42 3 (11.0 42.0 3.0) with freq 1
+Helix 40 is 23 33 2 (23.0 33.0 2.0) with freq 1
+Helix 41 is 8 23 1 (8.0 23.0 1.0) with freq 1
+Helix 42 is 2 68 3 (2.0 68.0 3.0) with freq 1
+Helix 43 is 19 44 1 (19.0 44.0 1.0) with freq 1
+Helix 44 is 32 61 3 (32.0 61.0 1.0) with freq 1
+Helix 45 is 8 60 3 (8.0 60.0 3.0) with freq 1
+Helix 46 is 33 63 2 (34.0 62.0 1.0) with freq 1
+Helix 47 is 45 50 1 (45.0 50.0 1.0) with freq 1
+0.50 coverage of helices after first 3 HC
+Total number of helix classes: 47
+Threshold to find frequent helices: 10.4%
+Number of structures processed: 1000
+Featured helix 1: 1 68 6 with freq 1000
+Featured helix 2: 10 22 4 with freq 940
+Featured helix 3: 45 61 5 with freq 888
+Featured helix 4: 24 40 5 with freq 880
+Featured helix 5: 37 60 5 with freq 106
+Featured helix 6: 43 54 2 with freq 104
+Coverage by featured helix classes: 0.945
+Total number of featured helix classes: 6
+Ave number of HC per structure: 4.2
+Ave structure coverage by fhc: 0.95
+Ave structure coverage by fbp: 0.98
+Total number of profiles: 10
+Profile 1 2 3 4  with freq 844 (844)
+Profile 1 2 5 6  with freq 81 (81)
+Profile 1 3 4  with freq 32 (876)
+Profile 1 5 6  with freq 23 (104)
+Profile 1 2 3  with freq 10 (854)
+Profile 1 4  with freq 3 (880)
+Profile 1 3  with freq 2 (888)
+Profile 1 2 5  with freq 2 (83)
+Profile 1 2  with freq 2 (938)
+Profile 1 2 4  with freq 1 (845)
+setting p to 3.2
+Selected profile 1 2 3 4 with freq 844 (844)
+Selected profile 1 2 5 6 with freq 81 (81)
+Selected profile 1 3 4 with freq 32 (876)
+Coverage by selected profiles: 0.957
+Number of profiles needed to get 0.50 coverage: 1
+Total number of selected profiles: 3
+Total number of vertices: 6
+node: '1 2 3 4 '
+node: '1 2 5 6 '
+node: '1 3 4 '
+node: '1 2 '
+node: '1 '
+node: '1 '
+Joining helices 5 and 6
+Joining helices 13 and 12
+Joining helices 16 and 17
+Do stem 2 and stem 23 occur infrequently enough to be functionally similar: No
+Do stem 4 and stem 10 occur infrequently enough to be functionally similar: No
+Do stem 7 and stem 15 occur infrequently enough to be functionally similar: Yes
+Do stem 10 and stem 24 occur infrequently enough to be functionally similar: Yes
+Do stem 13 and stem 19 occur infrequently enough to be functionally similar: No
+Do stem 18 and stem 20 occur infrequently enough to be functionally similar: Yes
+Do stem 22 and stem 25 occur infrequently enough to be functionally similar: Yes
+Stem A is 37 44 53 60 (37.0 44.0 51.0 60.0) with freq 104
+Stem B is 48 51 55 57 (50.1 50.1 53.0 55.0) with freq 61
+Stem C is 23 26 39 44 (24.1 25.1 38.2 41.2) with freq 15
+Stem D is 42 45 59 62 (42.4 42.5 59.9 62.0) with freq 12
+Stem E is 28 33 39 44 (28.1 33.0 37.0 43.9) with freq 7
+Stem F is 7 8 41 43 (7.8 8.0 39.5 41.8) with freq 4
+Stem G is 27 30 34 36 (28.2 30.0 32.0 34.8) with freq 0
+Threshold to find featured stems: 10.4%
+Number of structures processed: 1000
+Featured helix 1: 1 6 63 68 with freq 1000
+Featured helix 2: 10 13 19 22 with freq 940
+Featured helix 3: 45 49 57 61 with freq 888
+Featured helix 4: 24 28 36 40 with freq 880
+Featured stem A: 37 44 53 60 with freq 104
+Total number of featured stems: 5
+Total number of stem profiles: 9
+Stem profile 1 2 3 4  with freq 844 (844)
+Stem profile 1 2 A  with freq 81 (81)
+Stem profile 1 3 4  with freq 32 (876)
+Stem profile 1 A  with freq 23 (104)
+Stem profile 1 2 3  with freq 10 (854)
+Stem profile 1 2  with freq 4 (936)
+Stem profile 1 4  with freq 3 (880)
+Stem profile 1 3  with freq 2 (888)
+Stem profile 1 2 4  with freq 1 (845)
+setting p to 3.2
+Selected stem profile 1 2 3 4 with freq 844 (844)
+Selected stem profile 1 2 A with freq 81 (81)
+Selected stem profile 1 3 4 with freq 32 (876)
+Coverage by selected stem profiles: 0.957
+Number of stem profiles needed to get 0.50 coverage: 1
+Total number of selected stem profiles: 3
+Total number of vertices: 6
+node: '1 2 3 4 '
+node: '1 2 A '
+node: '1 3 4 '
+node: '1 2 '
+node: '1 '
+node: '1 '

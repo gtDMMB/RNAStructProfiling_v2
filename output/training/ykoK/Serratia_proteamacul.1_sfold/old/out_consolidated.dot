@@ -1,0 +1,42 @@
+digraph G {
+	pad = 0.5;
+	nodesep = 0.5;
+"legend" [label = < <table border="0" cellborder="1" cellspacing="0"><tr><td>Stem</td><td>Quadruplet</td><td>Frequency</td></tr>
+<tr><td>1</td><td>55 58 63 66</td><td>1000</td></tr>
+<tr><td>2</td><td>117 123 128 134</td><td>1000</td></tr>
+<tr><td>4</td><td>1 2 172 173</td><td>971</td></tr>
+<tr><td>A</td><td>20 32 139 150</td><td>970</td></tr>
+<tr><td>6</td><td>37 44 110 117</td><td>970</td></tr>
+<tr><td>7</td><td>10 16 156 162</td><td>958</td></tr>
+<tr><td>8</td><td>5 10 165 170</td><td>898</td></tr>
+<tr><td>B</td><td>82 90 98 106</td><td>771</td></tr>
+<tr><td>11</td><td>44 49 71 76</td><td>750</td></tr>
+<tr><td>C</td><td>53 53 67 68</td><td>726</td></tr>
+<tr><td>12</td><td>32 34 138 140</td><td>566</td></tr>
+<tr><td>D</td><td>15 18 155 156</td><td>345</td></tr>
+<tr><td>16</td><td>44 51 89 96</td><td>198</td></tr>
+<tr><td>17</td><td>70 75 82 87</td><td>193</td></tr>
+<tr><td>18</td><td>98 100 104 106</td><td>119</td></tr>
+</table>>, shape = plaintext, fontsize=11];
+"1 2 4 A 6 7 8 B 11 C 12 " [shape = box];
+"1 2 4 A 6 7 8 B 11 C " [shape = box];
+"1 2 4 A 6 7 8 B 11 C 12 D " [shape = box];
+"1 2 4 A 6 7 8 B 11 C D " [shape = box];
+"1 2 4 A 6 7 8 B 11 12 " [shape = box];
+"1 2 4 A 6 7 8 B 11 " [shape = box];
+"1 2 4 A 6 7 8 B 11 C 12 " [label = "[4[8[7[A[12[6[11[C[1]]][B]]]]]]]]\n179/273"];
+"1 2 4 A 6 7 8 B 11 C " [label = "[4[8[7[A[6[11[C[1]]][B]]]]]]]\n114/457"];
+"1 2 4 A 6 7 8 B 11 C 12 D " [label = "[4[8[7[D[A[12[6[11[C[1]]][B]]]]]]]]]\n94/94"];
+"1 2 4 A 6 7 8 B 11 C D " [label = "[4[8[7[D[A[6[11[C[1]]][B]]]]]]]]\n70/164"];
+"1 2 4 A 6 7 8 B 11 12 " [label = "[4[8[7[A[12[6[11[1]][B]]]]]]]]\n49/350"];
+"1 2 4 A 6 7 8 B 11 " [label = "[4[8[7[A[6[11[1]][B]]]]]]]\n46/602"];
+"1 2 " [label = "[1]]\n0/1000"];
+"1 2 4 A 6 7 8 B 11 C 12 " -> "1 2 4 A 6 7 8 B 11 C 12 D " [label = "D ", arrowhead = vee];
+"1 2 4 A 6 7 8 B 11 C " -> "1 2 4 A 6 7 8 B 11 C 12 " [label = "12 ", arrowhead = vee];
+"1 2 4 A 6 7 8 B 11 C " -> "1 2 4 A 6 7 8 B 11 C D " [label = "D ", arrowhead = vee];
+"1 2 4 A 6 7 8 B 11 C D " -> "1 2 4 A 6 7 8 B 11 C 12 D " [label = "12 ", arrowhead = vee];
+"1 2 4 A 6 7 8 B 11 12 " -> "1 2 4 A 6 7 8 B 11 C 12 " [label = "C ", arrowhead = vee];
+"1 2 4 A 6 7 8 B 11 " -> "1 2 4 A 6 7 8 B 11 C " [label = "C ", arrowhead = vee];
+"1 2 4 A 6 7 8 B 11 " -> "1 2 4 A 6 7 8 B 11 12 " [label = "12 ", arrowhead = vee];
+"1 2 " -> "1 2 4 A 6 7 8 B 11 " [label = "4 A 6 7 8 B 11 ", arrowhead = vee];
+}

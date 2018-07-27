@@ -1,0 +1,7 @@
+seq is in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/IRES_cripavirus/freshwater_metag.5_sfold/input/freshwater_metag.5_sfold.txt
+A: ( 2 / 13 11 ) 
+B: ( 4 / 16 / 24 ) 
+C: ( 5 / 17 ) 
+D: ( 6 / 8 / 21 / 25 ) 
+E: ( 10 / 19 ) 
+F: ( 15 / 23 ) 

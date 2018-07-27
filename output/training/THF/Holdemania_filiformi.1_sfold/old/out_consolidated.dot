@@ -1,0 +1,56 @@
+digraph G {
+	pad = 0.5;
+	nodesep = 0.5;
+"legend" [label = < <table border="0" cellborder="1" cellspacing="0"><tr><td>Stem</td><td>Quadruplet</td><td>Frequency</td></tr>
+<tr><td>A</td><td>10 20 74 84</td><td>961</td></tr>
+<tr><td>3</td><td>29 36 48 55</td><td>773</td></tr>
+<tr><td>B</td><td>36 40 44 48</td><td>726</td></tr>
+<tr><td>C</td><td>5 7 88 91</td><td>595</td></tr>
+<tr><td>D</td><td>26 28 56 58</td><td>563</td></tr>
+<tr><td>E</td><td>61 65 68 72</td><td>469</td></tr>
+<tr><td>5</td><td>3 5 93 95</td><td>466</td></tr>
+</table>>, shape = plaintext, fontsize=11];
+"A 3 B C D E " [shape = box];
+"A 3 B D E 5 " [shape = box];
+"A C " [shape = box];
+"A 5 " [shape = box];
+"A 3 B C D " [shape = box];
+"A 3 B C D E 5 " [shape = box];
+"A 3 B C " [shape = box];
+"A 3 B 5 " [shape = box];
+"A 3 B D E " [style = dashed];
+"A " [style = dashed];
+"A 3 B " [style = dashed];
+"A 3 B D " [style = dashed];
+"A 3 B C D E " [label = "[C[A[D[3[B]]][E]]]\n179/240"];
+"A 3 B D E 5 " [label = "[5[A[D[3[B]]][E]]]\n121/182"];
+"A C " [label = "[C[A]]\n93/588"];
+"A 5 " [label = "[5[A]]\n72/454"];
+"A 3 B C D " [label = "[C[A[D[3[B]]]]]\n61/323"];
+"A 3 B C D E 5 " [label = "[5[C[A[D[3[B]]][E]]]]\n61/61"];
+"A 3 B C " [label = "[C[A[3[B]]]]\n55/444"];
+"A 3 B 5 " [label = "[5[A[3[B]]]]\n46/339"];
+"A 3 B D E " [label = "[A[D[3[B]]][E]]\n27/388"];
+"A " [label = "[A]\n16/961"];
+"A 3 B " [label = "[A[3[B]]]\n12/711"];
+"A 3 B D " [label = "[A[D[3[B]]]]\n15/513"];
+"" [label = "[]\n19/1000"];
+"A 3 B C D E " -> "A 3 B C D E 5 " [label = "5 ", arrowhead = vee];
+"A 3 B D E 5 " -> "A 3 B C D E 5 " [label = "C ", arrowhead = vee];
+"A C " -> "A 3 B C " [label = "3 B ", arrowhead = vee];
+"A 5 " -> "A 3 B 5 " [label = "3 B ", arrowhead = vee];
+"A 3 B C D " -> "A 3 B C D E " [label = "E ", arrowhead = vee];
+"A 3 B C " -> "A 3 B C D " [label = "D ", arrowhead = vee];
+"A 3 B 5 " -> "A 3 B D E 5 " [label = "D E ", arrowhead = vee];
+"A 3 B D E " -> "A 3 B C D E " [label = "C ", arrowhead = vee];
+"A 3 B D E " -> "A 3 B D E 5 " [label = "5 ", arrowhead = vee];
+"A " -> "A 5 " [label = "5 ", arrowhead = vee];
+"A " -> "A 3 B " [label = "3 B ", arrowhead = vee];
+"A " -> "A C " [label = "C ", arrowhead = vee];
+"A 3 B " -> "A 3 B 5 " [label = "5 ", arrowhead = vee];
+"A 3 B " -> "A 3 B D " [label = "D ", arrowhead = vee];
+"A 3 B " -> "A 3 B C " [label = "C ", arrowhead = vee];
+"A 3 B D " -> "A 3 B C D " [label = "C ", arrowhead = vee];
+"A 3 B D " -> "A 3 B D E " [label = "E ", arrowhead = vee];
+"" -> "A " [label = "A ", arrowhead = vee];
+}

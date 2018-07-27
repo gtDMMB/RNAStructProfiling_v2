@@ -1,0 +1,53 @@
+digraph G {
+	pad = 0.5;
+	nodesep = 0.5;
+"legend" [label = < <table border="0" cellborder="1" cellspacing="0"><tr><td>Stem</td><td>Quadruplet</td><td>Frequency</td></tr>
+<tr><td>1</td><td>4 9 171 176</td><td>983</td></tr>
+<tr><td>2</td><td>84 88 95 99</td><td>944</td></tr>
+<tr><td>3</td><td>1 6 175 180</td><td>909</td></tr>
+<tr><td>4</td><td>51 56 61 66</td><td>788</td></tr>
+<tr><td>5</td><td>13 17 161 165</td><td>569</td></tr>
+<tr><td>6</td><td>82 86 101 105</td><td>543</td></tr>
+<tr><td>A</td><td>66 76 113 123</td><td>502</td></tr>
+<tr><td>10</td><td>30 33 105 108</td><td>488</td></tr>
+<tr><td>11</td><td>45 48 69 72</td><td>484</td></tr>
+<tr><td>12</td><td>79 80 107 108</td><td>482</td></tr>
+<tr><td>B</td><td>36 48 134 147</td><td>481</td></tr>
+<tr><td>15</td><td>141 146 152 157</td><td>445</td></tr>
+<tr><td>C</td><td>38 44 75 81</td><td>430</td></tr>
+<tr><td>17</td><td>12 12 167 167</td><td>424</td></tr>
+<tr><td>D</td><td>20 28 113 122</td><td>405</td></tr>
+<tr><td>20</td><td>19 20 157 158</td><td>362</td></tr>
+<tr><td>21</td><td>137 139 159 161</td><td>353</td></tr>
+<tr><td>22</td><td>25 27 149 151</td><td>322</td></tr>
+<tr><td>23</td><td>22 22 155 155</td><td>321</td></tr>
+<tr><td>24</td><td>124 126 131 133</td><td>291</td></tr>
+</table>>, shape = plaintext, fontsize=11];
+"1 2 3 4 10 11 15 C D 21 " [shape = box];
+"1 2 3 4 5 6 A 12 B 17 20 22 23 24 " [shape = box];
+"1 2 3 5 6 A 12 B 17 20 22 23 " [shape = box];
+"1 2 3 4 10 11 15 C D " [shape = box];
+"1 2 3 4 5 6 A 12 B 20 22 23 24 " [shape = box];
+"1 2 3 4 " [style = dashed];
+"1 2 3 " [style = dashed];
+"1 2 3 5 6 A 12 B 20 22 23 " [style = dashed];
+"1 2 3 4 10 11 15 C D 21 " [label = "[3[1[5[D[10[C[11[4]]][2]]][21[15]]]]]\n234/259"];
+"1 2 3 4 5 6 A 12 B 17 20 22 23 24 " [label = "[3[1[17[5[20[23[22[B[4[A[12[6[2]]]][24]]]]]]]]]\n112/112"];
+"1 2 3 5 6 A 12 B 17 20 22 23 " [label = "[3[1[17[5[20[23[22[B[A[12[6[2]]]]]]]]]]]]\n59/173"];
+"1 2 3 4 10 11 15 C D " [label = "[3[1[5[D[10[C[11[4]]][2]]][15]]]]\n48/311"];
+"1 2 3 4 5 6 A 12 B 20 22 23 24 " [label = "[3[1[5[20[23[22[B[4[A[12[6[2]]]][24]]]]]]]]\n38/150"];
+"1 2 3 4 " [label = "[3[1[5[4][2]]]]\n0/685"];
+"1 2 3 " [label = "[3[1[5[2]]]]\n0/851"];
+"1 2 3 5 6 A 12 B 20 22 23 " [label = "[3[1[5[20[23[22[B[A[12[6[2]]]]]]]]]]]\n16/228"];
+"" [label = "[]\n0/1000"];
+"1 2 3 5 6 A 12 B 17 20 22 23 " -> "1 2 3 4 5 6 A 12 B 17 20 22 23 24 " [label = "4 24 ", arrowhead = vee];
+"1 2 3 4 10 11 15 C D " -> "1 2 3 4 10 11 15 C D 21 " [label = "21 ", arrowhead = vee];
+"1 2 3 4 5 6 A 12 B 20 22 23 24 " -> "1 2 3 4 5 6 A 12 B 17 20 22 23 24 " [label = "17 ", arrowhead = vee];
+"1 2 3 4 " -> "1 2 3 4 10 11 15 C D " [label = "10 11 15 C D ", arrowhead = vee];
+"1 2 3 4 " -> "1 2 3 4 5 6 A 12 B 20 22 23 24 " [label = "5 6 A 12 B 20 22 23 24 ", arrowhead = vee];
+"1 2 3 " -> "1 2 3 4 " [label = "4 ", arrowhead = vee];
+"1 2 3 " -> "1 2 3 5 6 A 12 B 20 22 23 " [label = "5 6 A 12 B 20 22 23 ", arrowhead = vee];
+"1 2 3 5 6 A 12 B 20 22 23 " -> "1 2 3 5 6 A 12 B 17 20 22 23 " [label = "17 ", arrowhead = vee];
+"1 2 3 5 6 A 12 B 20 22 23 " -> "1 2 3 4 5 6 A 12 B 20 22 23 24 " [label = "4 24 ", arrowhead = vee];
+"" -> "1 2 3 " [label = "1 2 3 ", arrowhead = vee];
+}

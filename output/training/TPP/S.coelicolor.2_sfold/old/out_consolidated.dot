@@ -1,0 +1,56 @@
+digraph G {
+	pad = 0.5;
+	nodesep = 0.5;
+"legend" [label = < <table border="0" cellborder="1" cellspacing="0"><tr><td>Stem</td><td>Quadruplet</td><td>Frequency</td></tr>
+<tr><td>1</td><td>16 22 28 34</td><td>999</td></tr>
+<tr><td>2</td><td>40 46 50 56</td><td>991</td></tr>
+<tr><td>3</td><td>11 14 59 62</td><td>933</td></tr>
+<tr><td>4</td><td>97 100 106 109</td><td>569</td></tr>
+<tr><td>5</td><td>1 2 111 112</td><td>478</td></tr>
+<tr><td>6</td><td>4 6 106 108</td><td>364</td></tr>
+<tr><td>7</td><td>74 77 84 87</td><td>332</td></tr>
+<tr><td>A</td><td>68 70 91 94</td><td>323</td></tr>
+<tr><td>8</td><td>67 71 75 79</td><td>314</td></tr>
+<tr><td>9</td><td>73 77 100 104</td><td>307</td></tr>
+<tr><td>B</td><td>84 85 92 94</td><td>307</td></tr>
+<tr><td>10</td><td>4 7 82 85</td><td>304</td></tr>
+<tr><td>11</td><td>79 80 97 98</td><td>290</td></tr>
+<tr><td>C</td><td>8 11 64 66</td><td>274</td></tr>
+<tr><td>14</td><td>65 66 79 80</td><td>264</td></tr>
+<tr><td>16</td><td>82 82 95 95</td><td>217</td></tr>
+</table>>, shape = plaintext, fontsize=11];
+"1 2 3 4 5 8 10 14 " [shape = box];
+"1 2 3 4 7 A " [shape = box];
+"1 2 3 6 9 B 11 C 16 " [shape = box];
+"1 2 3 6 9 B 11 16 " [shape = box];
+"1 2 3 4 5 7 A " [shape = box];
+"1 2 3 4 5 7 A C " [shape = box];
+"1 2 3 4 " [style = dashed];
+"1 2 3 " [style = dashed];
+"1 2 3 4 5 " [style = dashed];
+"1 2 3 C " [style = dashed];
+"1 2 3 4 5 8 10 14 " [label = "[5[10[3[1][2]][14[8]]][4]]\n186/186"];
+"1 2 3 4 7 A " [label = "[3[1][2]][A[7]][4]\n104/251"];
+"1 2 3 6 9 B 11 C 16 " [label = "[6[C[3[1][2]]][9[11[16[B]]]]]\n71/103"];
+"1 2 3 6 9 B 11 16 " [label = "[6[3[1][2]][9[11[16[B]]]]]\n70/193"];
+"1 2 3 4 5 7 A " [label = "[5[3[1][2]][A[7]][4]]\n64/107"];
+"1 2 3 4 5 7 A C " [label = "[5[C[3[1][2]]][A[7]][4]]\n43/43"];
+"1 2 3 4 " [label = "[3[1][2]][4]\n0/540"];
+"1 2 3 " [label = "[3[1][2]]\n2/933"];
+"1 2 3 4 5 " [label = "[5[3[1][2]][4]]\n0/351"];
+"1 2 3 C " [label = "[C[3[1][2]]]\n3/268"];
+"" [label = "[]\n0/1000"];
+"1 2 3 4 7 A " -> "1 2 3 4 5 7 A " [label = "5 ", arrowhead = vee];
+"1 2 3 6 9 B 11 16 " -> "1 2 3 6 9 B 11 C 16 " [label = "C ", arrowhead = vee];
+"1 2 3 4 5 7 A " -> "1 2 3 4 5 7 A C " [label = "C ", arrowhead = vee];
+"1 2 3 4 " -> "1 2 3 4 7 A " [label = "7 A ", arrowhead = vee];
+"1 2 3 4 " -> "1 2 3 4 5 " [label = "5 ", arrowhead = vee];
+"1 2 3 " -> "1 2 3 4 " [label = "4 ", arrowhead = vee];
+"1 2 3 " -> "1 2 3 C " [label = "C ", arrowhead = vee];
+"1 2 3 " -> "1 2 3 6 9 B 11 16 " [label = "6 9 B 11 16 ", arrowhead = vee];
+"1 2 3 4 5 " -> "1 2 3 4 5 8 10 14 " [label = "8 10 14 ", arrowhead = vee];
+"1 2 3 4 5 " -> "1 2 3 4 5 7 A " [label = "7 A ", arrowhead = vee];
+"1 2 3 C " -> "1 2 3 6 9 B 11 C 16 " [label = "6 9 B 11 16 ", arrowhead = vee];
+"1 2 3 C " -> "1 2 3 4 5 7 A C " [label = "4 5 7 A ", arrowhead = vee];
+"" -> "1 2 3 " [label = "1 2 3 ", arrowhead = vee];
+}

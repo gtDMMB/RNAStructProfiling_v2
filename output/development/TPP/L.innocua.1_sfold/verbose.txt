@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/development/L.innocua.1_sfold/input/L.innocua.1_sfold.txt is CGUUACCACAGGGGGGGCUUCUUAGCUGAGAUUGAAUCCGCGUGUUUUUGGAUUCUGACCCUUUGAACCUGUUCGUUAAUACGAGCGUAGGGAUUGUGGCGAUUGCAUUUC with length 111
+seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/development/TPP/L.innocua.1_sfold/input/L.innocua.1_sfold.txt is CGUUACCACAGGGGGGGCUUCUUAGCUGAGAUUGAAUCCGCGUGUUUUUGGAUUCUGACCCUUUGAACCUGUUCGUUAAUACGAGCGUAGGGAUUGUGGCGAUUGCAUUUC with length 111
 Helix 1 is 34 55 7 (34.0 55.0 6.8) with freq 1000
 Helix 2 is 70 87 7 (70.8 86.2 6.0) with freq 989
 Helix 3 is 16 27 4 (16.5 26.5 3.3) with freq 750
