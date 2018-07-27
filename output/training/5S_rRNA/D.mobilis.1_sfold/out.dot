@@ -1,0 +1,23 @@
+digraph G {
+	pad = 0.5;
+	nodesep = 0.5;
+"legend" [label = < <table border="0" cellborder="1" cellspacing="0"><tr><td>Helix</td><td>Triplet</td><td>Frequency</td></tr>
+<tr><td>1</td><td>2 113 6</td><td>1000</td></tr>
+<tr><td>2</td><td>12 63 8</td><td>1000</td></tr>
+<tr><td>3</td><td>65 107 10</td><td>1000</td></tr>
+<tr><td>4</td><td>76 96 8</td><td>1000</td></tr>
+<tr><td>5</td><td>33 41 3</td><td>997</td></tr>
+<tr><td>6</td><td>27 47 4</td><td>996</td></tr>
+<tr><td>7</td><td>22 52 3</td><td>965</td></tr>
+<tr><td>8</td><td>83 90 2</td><td>961</td></tr>
+<tr><td>9</td><td>19 57 3</td><td>535</td></tr>
+<tr><td>10</td><td>1 115 1</td><td>29</td></tr>
+</table>>, shape = plaintext, fontsize=11];
+"1 2 3 4 5 6 7 8 9 " [shape = box];
+"1 2 3 4 5 6 7 8 " [shape = box];
+"1 2 3 4 5 6 7 8 9 " [label = "[1[2[9[7[6[5]]]]][3[4[8]]]]\n482/494"];
+"1 2 3 4 5 6 7 8 " [label = "[1[2[7[6[5]]]][3[4[8]]]]\n410/920"];
+"1 2 3 4 " [label = "[1[2][3[4]]]\n0/1000"];
+"1 2 3 4 5 6 7 8 " -> "1 2 3 4 5 6 7 8 9 " [label = "9 ", arrowhead = vee];
+"1 2 3 4 " -> "1 2 3 4 5 6 7 8 " [label = "5 6 7 8 ", arrowhead = vee];
+}
