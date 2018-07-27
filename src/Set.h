@@ -18,7 +18,7 @@
 #define ARRAYSIZE 20
 #define INIT_SIZE 2
 #define STRING_BUFFER 256
-#define BASE_PROF_NUM 1000
+#define BASE_PROF_NUM 400
 
 // Max length of a line in the structure file TODO: make into an option
 #define MAX_STRUCT_FILE_LINE_LEN 512
@@ -48,6 +48,7 @@ typedef struct {
     int **joint;
     int prof_size;
     int prof_num;
+    int prof_cap;
     int num_sprof;
     Profile **profiles;
     int *treeindex;
@@ -60,13 +61,13 @@ typedef struct {
     node *inputnode;
     node *graph;
     node* consolidated_graph;
-    array_list_t* original_hc_stems;
     array_list_t* stems;
     array_list_t* featured_stem_ids;
 
     int num_fstems;
     int num_s_stem_prof;
     int stem_prof_num;
+    int stem_prof_cap;
     Profile** stem_profiles;
     array_list_t** structures;
     array_list_t** stem_structures;
@@ -127,7 +128,7 @@ void free_Set(Set *set);
 void add_structures_to_set(Set* ste);
 
 // Concerning stems
-void add_stems_to_set(Set* set);
+void add_initial_stems(Set *set);
 bool combine_stems(Set* set);
 void merge_stems(Stem* stem1, Stem* stem2);
 bool validate_stems(Stem* stem1, Stem* stem2, double valid_percent_error);
@@ -147,6 +148,8 @@ bool component_in_structure(DataNode* component, array_list_t* structure);
 void update_freq_stems(Set* set);
 
 void reindex_stems(Set *set);
+void add_hc_stems(Set* set);
+
 void update_max_quads(Set* set);
 void update_ave_quads(Set* set);
 void find_double_max_quad(Stem *stem);

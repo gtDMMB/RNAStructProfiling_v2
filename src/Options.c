@@ -24,6 +24,7 @@ Options* make_options() {
     opt->REP_STRUCT = 0;
     opt->TOPDOWN = 0;
     opt->ALTTHRESH = 1;
+    opt->GRAPH_SIZE_CAP = DEF_GRAPH_SIZE_CAP;
 
     opt->CONSOLIDATE = 1;
     opt->CONSOLIDATED_OUTPUT = (char*) malloc(sizeof(char) * NAME_STRING_BUFFER);
@@ -44,6 +45,7 @@ void print_options() {
     puts("OPTIONS");
     puts("-e [FILE]     External structure as input, following gtboltzmann format (dot bracket, energy, set of triplets on same line)");
     puts("-sfold [FILE] External structure as input, following Sfold format ('Structure xx' followed by a triplet per line");
+    puts("-gc INT       Set graph size cutoff. Graph will not be generated if it has > [gc] vertices. -1 for no limit");
     puts("-h DBL        Set frequency threshold for hc features(in percentage, e.g. 10.5 for 10.5% threshold)");
     puts("-p DBL        Set frequency threshold for selected profiles (in percentage, e.g. 10.5 for 10.5% threshold)");
     puts("-c DBL        Set minimum coverage requirement for featured helix classes and selected profiles (in percentage)");
@@ -63,7 +65,7 @@ void print_options() {
     puts("-sd  INT Set the max distance between two stems' ends for them to be merged");
     puts("-se  DBL Set the maximum percent error in frequency for two stems to be merged");
     // TODO: better way to determine # helices to consider
-    puts("-smh INT Set the max number of helices to consider for initial stem creation");
+    puts("-snh INT Set the max number of helices to consider for initial stem creation");
     puts("-fsd INT Set the max distance between two stem's ends for them to be considered functionally similar");
     puts("-fse DBL Set the maximum percent error in frequency for two stems to be considered functionally similar (how often the can occur in the same structure)");
     puts("-sh  DBL Set frequency threshold for stem features(in percentage, e.g. 10.5 for 10.5% threshold)");

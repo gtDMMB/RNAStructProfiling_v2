@@ -43,6 +43,7 @@ extern int REP_STRUCT;
 /*default output file name*/
 #define DEF_OUTPUT "profile.dot"
 #define NAME_STRING_BUFFER 256
+#define DEF_GRAPH_SIZE_CAP (-1)
 
 typedef struct options {
     /*all the options*/
@@ -64,6 +65,7 @@ typedef struct options {
     int REP_STRUCT;
     int TOPDOWN;
     int ALTTHRESH;
+    int GRAPH_SIZE_CAP;
 
     // Consolidation options
     int CONSOLIDATE;

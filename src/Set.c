@@ -77,12 +77,13 @@ Set* make_Set(char *name) {
 
     set->consolidated_graph = NULL;
 
-    set->original_hc_stems = create_array_list();
+    create_array_list();
     set->stems = create_array_list();
     set->featured_stem_ids = create_array_list();
 
     set->num_fstems = 0;
     set->stem_prof_num = 0;
+    set->stem_prof_cap = BASE_PROF_NUM;
     set->num_s_stem_prof = 0;
     set->stem_profiles = (Profile**) malloc(sizeof(Profile*) * BASE_PROF_NUM);
     return set;
@@ -98,7 +99,6 @@ void free_Set(Set* set) {
         }
         free(set->helices);
     }
-    // TODO: Free set->joint
     if (set->profiles != NULL) {
         for (int i = 0; i < set->prof_num; i++) {
             free_profile(set->profiles[i]);
@@ -109,7 +109,6 @@ void free_Set(Set* set) {
     //free_node(set->inputnode);
     //free_node(set->graph);
     //free_node(set->consolidated_graph);
-    free_array_list(set->original_hc_stems, &free);
     free_array_list(set->stems, &free);
     free_array_list(set->featured_stem_ids, &free);
     for (int i = 0; i < set->opt->NUMSTRUCTS; i++) {
@@ -1504,14 +1503,13 @@ void add_structures_to_set(Set* set) {
 }
 
 /**
- * Find all stems in the set and add them to set->stems
+ * Find first n HCs in the set and add them to set->stems, where n is determined by -snh option
  *
  * @param set the set to add stems to
  */
-void add_stems_to_set(Set* set) {
+void add_initial_stems(Set *set) {
     // populate array_list of single helix stems
-    for (int i_hc = 0; i_hc < set->opt->STEM_NUM_CUTOFF; i_hc++) {
-        add_to_array_list(set->original_hc_stems, i_hc, create_stem_from_HC(set->helices[i_hc]));
+    for (int i_hc = 0; i_hc < min(set->opt->STEM_NUM_CUTOFF, set->hc_num); i_hc++) {
         add_to_array_list(set->stems, i_hc, create_stem_from_HC(set->helices[i_hc]));
     }
 }
@@ -2000,6 +1998,18 @@ void reindex_stems(Set *set) {
 }
 
 /**
+ * Add remaining helix classes to set->stems after consolidating chosen number of stems
+ *
+ * @param set the set to add hc stems in
+ */
+void add_hc_stems(Set* set) {
+    for (int i_hc = min(set->opt->STEM_NUM_CUTOFF, set->hc_num); i_hc < set->hc_num; i_hc++) {
+        add_to_array_list(set->stems, set->stems->size, create_stem_from_HC(set->helices[i_hc]));
+    }
+}
+
+
+/**
  * Update the max quad string to use int_max_quad's current values
  *
  * @param set the set to update stems in
@@ -2378,6 +2388,10 @@ void make_stem_profiles(Set* set) {
         char* stem_prof_str = stem_profile_from_stem_structure(set, set->stem_structures[i]);
         fprintf(stem_struct_file, "\t-> %s\n", stem_prof_str);
         if (!stem_prof_exists(set, stem_prof_str)) {
+            if (set->stem_prof_cap < set->stem_prof_num + 1) {
+                set->stem_prof_cap += 300;
+                set->stem_profiles = (Profile**) realloc(set->stem_profiles, sizeof(Profile*) * set->stem_prof_cap);
+            }
             Profile* stem_prof = create_profile(stem_prof_str);
             set->stem_profiles[set->stem_prof_num] = stem_prof;
             set->stem_prof_num++;

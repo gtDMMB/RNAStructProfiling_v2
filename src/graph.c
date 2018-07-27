@@ -81,8 +81,7 @@ int initialize(Set *set) {
     neighbors[i]->sum = binary_rep(set,neighbors[i]->label);
     diff[i] = set->inputnode->label;
     root->numNeighbors = set->num_sprof+1;
-  }
-   else
+  } else
     root->numNeighbors = set->num_sprof;
 
   root->neighbors = neighbors;
@@ -201,6 +200,10 @@ void find_LCAs(FILE *fp,Set *set, int i) {
   set->graph->numNeighbors = k;
   if (set->graph->sfreq == 0) k++;
   printf("Total number of vertices: %d\n",k);
+  if (set->opt->GRAPH_SIZE_CAP >=0 && k > set->opt->GRAPH_SIZE_CAP) {
+    set->opt->GRAPH = 0;
+    printf("Number of vertices in graph exceeds cap of %d. Use -gc option to change (-1 for no cap).\n", set->opt->GRAPH_SIZE_CAP);
+  }
   set->graph->nsize = size;
 }
 

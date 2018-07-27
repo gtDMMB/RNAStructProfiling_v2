@@ -193,6 +193,10 @@ void consolidated_find_LCAs(FILE *fp,Set *set, int i) {
         k++;
     }
     printf("Total number of vertices: %d\n",k);
+    if (set->opt->GRAPH_SIZE_CAP >=0 && k > set->opt->GRAPH_SIZE_CAP) {
+        set->opt->STEM_GRAPH = 0;
+        printf("Number of vertices in stem graph exceeds cap of %d. Use -gc option to change (-1 for no cap).\n", set->opt->GRAPH_SIZE_CAP);
+    }
     set->consolidated_graph->nsize = size;
 }
 

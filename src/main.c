@@ -154,6 +154,15 @@ int main(int argc, char *argv[]) {
                 opt->NATIVE = argv[i+1];
                 i++;
             }
+        } else if (!strcmp(argv[i],"-gc")) {
+            if ((i + 1 <= argc - 2) && sscanf(argv[i+1],"%d",&(opt->GRAPH_SIZE_CAP))) {
+                opt->GRAPH_SIZE_CAP = atoi(argv[i+1]);
+                if (opt->GRAPH_SIZE_CAP < -1) {
+                    fprintf(stderr,"Error: invalid input %d for graph size cap\n",opt->STEM_NUM_CUTOFF);
+                    opt->GRAPH_SIZE_CAP = DEF_GRAPH_SIZE_CAP;
+                }
+                i++;
+            }
         }
         // Consolidation options
         else if (!strcmp(argv[i],"-sc")) {
@@ -378,16 +387,21 @@ GTBOLTZMANN OPTIONS
         if (set->opt->INPUT)
             print_input(fp,set);
         find_LCAs(fp,set,i);
-        calc_gfreq(fp,set);
-        //printGraph();
-        deleteHash = MemoryDFS(set->graph, GRAPHSIZE);
-        removeEdges(deleteHash);
-        //start_trans_reductn(set->graph);
-        //printGraph();
-        print_edges(fp,set);
-        fputs("}",fp);
+        if (set->opt->GRAPH) {
+            calc_gfreq(fp,set);
+            //printGraph();
+            deleteHash = MemoryDFS(set->graph, GRAPHSIZE);
+            removeEdges(deleteHash);
+            //start_trans_reductn(set->graph);
+            //printGraph();
+            print_edges(fp,set);
+            fputs("}",fp);
+            free_hashtbl(deleteHash);
+        }
         fclose(fp);
-        free_hashtbl(deleteHash);
+        if (! set->opt->GRAPH) {
+            remove(set->opt->OUTPUT);
+        }
         //free_node(graph);
     }
 
@@ -396,7 +410,7 @@ GTBOLTZMANN OPTIONS
         set->stem_structures = (array_list_t**) malloc(sizeof(array_list_t*) * set->opt->NUMSTRUCTS);
         add_structures_to_set(set);
         //simplify set using stems
-        add_stems_to_set(set);
+        add_initial_stems(set);
         bool combined_stems = true;
         // loop and combine stems until no more combinations can be made
         while(combined_stems) {
@@ -409,6 +423,7 @@ GTBOLTZMANN OPTIONS
         combine_stems_using_func_similar(set);
         update_freq_stems(set);
         reindex_stems(set);
+        add_hc_stems(set);
         update_max_quads(set);
         update_ave_quads(set);
         if(set->opt->VERBOSE) {
@@ -449,13 +464,18 @@ GTBOLTZMANN OPTIONS
             consolidated_init_graph(fp,set);
             i = consolidated_initialize(set);
             consolidated_find_LCAs(fp,set,i);
-            consolidated_calc_gfreq(fp,set);
-            deleteHash = MemoryDFS(set->consolidated_graph, CONSOLIDATED_GRAPHSIZE);
-            consolidated_removeEdges(deleteHash);
-            consolidated_print_edges(fp,set);
-            fputs("}",fp);
+            if (set->opt->STEM_GRAPH) {
+                consolidated_calc_gfreq(fp, set);
+                deleteHash = MemoryDFS(set->consolidated_graph, CONSOLIDATED_GRAPHSIZE);
+                consolidated_removeEdges(deleteHash);
+                consolidated_print_edges(fp, set);
+                fputs("}", fp);
+                free_hashtbl(deleteHash);
+            }
             fclose(fp);
-            free_hashtbl(deleteHash);
+            if (! set->opt->GRAPH) {
+                remove(set->opt->CONSOLIDATED_OUTPUT);
+            }
             //free_node(consolidated_graph);
         }
     }
