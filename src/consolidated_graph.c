@@ -143,8 +143,12 @@ void consolidated_find_LCAs(FILE *fp,Set *set, int i) {
     unsigned long num;
     char *stem_profile,**diff;
     node **vertices = set->consolidated_graph->neighbors;
-
     k = set->consolidated_graph->numNeighbors;
+    if (set->opt->GRAPH_SIZE_CAP >=0 && k > set->opt->GRAPH_SIZE_CAP) {
+        set->opt->STEM_GRAPH = 0;
+        printf("Number of vertices in stem graph exceeds cap of %d. Use -gc option to change (-1 for no cap).\n", set->opt->GRAPH_SIZE_CAP);
+        return;
+    }
     size = set->consolidated_graph->nsize;
     diff = set->consolidated_graph->diff;
     start = 0;
@@ -192,11 +196,12 @@ void consolidated_find_LCAs(FILE *fp,Set *set, int i) {
     if (set->consolidated_graph->sfreq == 0) {
         k++;
     }
-    printf("Total number of vertices: %d\n",k);
     if (set->opt->GRAPH_SIZE_CAP >=0 && k > set->opt->GRAPH_SIZE_CAP) {
         set->opt->STEM_GRAPH = 0;
         printf("Number of vertices in stem graph exceeds cap of %d. Use -gc option to change (-1 for no cap).\n", set->opt->GRAPH_SIZE_CAP);
+        return;
     }
+    printf("Total number of vertices: %d\n",k);
     set->consolidated_graph->nsize = size;
 }
 

@@ -406,6 +406,7 @@ GTBOLTZMANN OPTIONS
     }
 
     if (set->opt->CONSOLIDATE) {
+        printf("Consolidating...\n");
         set->structures = (array_list_t**) malloc(sizeof(array_list_t*) * set->opt->NUMSTRUCTS);
         set->stem_structures = (array_list_t**) malloc(sizeof(array_list_t*) * set->opt->NUMSTRUCTS);
         add_structures_to_set(set);

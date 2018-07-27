@@ -150,6 +150,11 @@ void find_LCAs(FILE *fp,Set *set, int i) {
   node **vertices = set->graph->neighbors;
 
   k = set->graph->numNeighbors;
+  if (set->opt->GRAPH_SIZE_CAP >=0 && k > set->opt->GRAPH_SIZE_CAP) {
+    set->opt->GRAPH = 0;
+    printf("Number of vertices in graph exceeds cap of %d. Use -gc option to change (-1 for no cap).\n", set->opt->GRAPH_SIZE_CAP);
+    return;
+  }
   size = set->graph->nsize;
   diff = set->graph->diff;
   start = 0;
@@ -198,12 +203,15 @@ void find_LCAs(FILE *fp,Set *set, int i) {
   set->graph->neighbors = vertices;
   set->graph->diff = diff;
   set->graph->numNeighbors = k;
-  if (set->graph->sfreq == 0) k++;
-  printf("Total number of vertices: %d\n",k);
-  if (set->opt->GRAPH_SIZE_CAP >=0 && k > set->opt->GRAPH_SIZE_CAP) {
-    set->opt->GRAPH = 0;
-    printf("Number of vertices in graph exceeds cap of %d. Use -gc option to change (-1 for no cap).\n", set->opt->GRAPH_SIZE_CAP);
+  if (set->graph->sfreq == 0) {
+      k++;
   }
+  if (set->opt->GRAPH_SIZE_CAP >=0 && k > set->opt->GRAPH_SIZE_CAP) {
+      set->opt->GRAPH = 0;
+      printf("Number of vertices in graph exceeds cap of %d. Use -gc option to change (-1 for no cap).\n", set->opt->GRAPH_SIZE_CAP);
+      return;
+  }
+  printf("Total number of vertices: %d\n",k);
   set->graph->nsize = size;
 }
 

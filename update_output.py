@@ -10,9 +10,10 @@ import subprocess
 
 def check_outputs(output_names, args):
    temp = []
-   if '-g' not in args:
+   options = args.split()
+   if '-g' not in options:
       temp += [output_names[0]]
-   if '-sg' not in args:
+   if '-sg' not in options:
       temp += [output_names[1]]
    return temp
 
