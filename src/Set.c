@@ -46,7 +46,6 @@ void free_node(void* ptr) {
         free_node(graph_node->neighbors[i]);
     }
     free(graph_node);
-    graph_node = NULL;
 }
 
 Set* make_Set(char *name) {
@@ -58,11 +57,6 @@ Set* make_Set(char *name) {
     set->helsum = 0;
     set->num_fhc = 0;
     set->helices = (HC**) malloc(sizeof(HC*)*ARRAYSIZE*10);
-/*
-  set->joint = (HASHTBL**) malloc(sizeof(HASHTBL*)*ARRAYSIZE*5);
-  for (i=0; i < ARRAYSIZE*5; i++)
-    set->joint[i] = NULL;
-  */
     set->prof_size = 5;
     set->prof_num = 0;
     set->num_sprof = 0;
@@ -106,9 +100,11 @@ void free_Set(Set* set) {
         free(set->profiles);
     }
     free(set->treeindex);
+    // TODO: make free_node work
     //free_node(set->inputnode);
     //free_node(set->graph);
     //free_node(set->consolidated_graph);
+    // TODO: fix memory leak caused by use of wrong free function. Using proper free function resulted in double free, likely due to the same stems/helices being used across multiple stems somewhere
     free_array_list(set->stems, &free);
     free_array_list(set->featured_stem_ids, &free);
     for (int i = 0; i < set->opt->NUMSTRUCTS; i++) {
