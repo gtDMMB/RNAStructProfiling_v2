@@ -294,40 +294,42 @@ void found_edge(node *child,node *parent) {
   //printf("Found %d is child of %d\n",child,parent);
 }
 
- void calc_gfreq(FILE *fp,Set *set) {
-  int i,j;
-  unsigned long *sum;
-  node *vert;
+void calc_gfreq(FILE *fp,Set *set) {
+    int i,j;
+    unsigned long *sum;
+    node *vert;
 
-  GRAPHSIZE = set->graph->numNeighbors + 1;
-  graph = (node**)malloc(sizeof(node*)*GRAPHSIZE);
-  sum = (long unsigned int*) malloc(sizeof(unsigned long)*set->prof_num);
-  for (i = 0; i < set->prof_num; i++) {
-    sum[i] = binary_rep(set,set->profiles[i]->profile);
-    if (!strcmp(set->profiles[i]->profile," "))
-      set->graph->sfreq = set->profiles[i]->freq;
-  }
-
-  for (i = 0; i < set->graph->numNeighbors; i++) {
-    vert = set->graph->neighbors[i];
-    graph[i] = vert;
-    for (j = 0; j < set->prof_num; j++) {
-      if (sum[j] == vert->sum) {
-	vert->sfreq = set->profiles[j]->freq;
-	vert->bracket = set->profiles[j]->bracket;
-      }	
-      if ((sum[j] & vert->sum) == vert->sum) 
-	vert->gfreq += set->profiles[j]->freq;
+    GRAPHSIZE = set->graph->numNeighbors + 1;
+    graph = (node**)malloc(sizeof(node*)*GRAPHSIZE);
+    sum = (long unsigned int*) malloc(sizeof(unsigned long)*set->prof_num);
+    for (i = 0; i < set->prof_num; i++) {
+        sum[i] = binary_rep(set,set->profiles[i]->profile);
+        if (!strcmp(set->profiles[i]->profile," "))
+            set->graph->sfreq = set->profiles[i]->freq;
     }
-    if (vert->sfreq == 0)
-      make_oval_bracket(vert);
-    fprintf(fp,"\"%s\" [label = \"%s\\n%d/%d\"];\n",vert->label,vert->bracket,vert->sfreq,vert->gfreq);
-  }
-  //if (set->graph->sfreq == 0) {
+
+    for (i = 0; i < set->graph->numNeighbors; i++) {
+        vert = set->graph->neighbors[i];
+        graph[i] = vert;
+        for (j = 0; j < set->prof_num; j++) {
+            if (sum[j] == vert->sum) {
+                vert->sfreq = set->profiles[j]->freq;
+                vert->bracket = set->profiles[j]->bracket;
+            }
+            if ((sum[j] & vert->sum) == vert->sum)
+                vert->gfreq += set->profiles[j]->freq;
+        }
+        if (vert->sfreq == 0)
+            make_oval_bracket(vert);
+        fprintf(fp,"\"%s\" [label = \"%s\\n%d/%d\"];\n",vert->label,vert->bracket,vert->sfreq,vert->gfreq);
+    }
+    free(sum);
+
+    //if (set->graph->sfreq == 0) {
     if (!strcmp(set->graph->label,""))
-      set->graph->bracket = (char*)"[]";
+        set->graph->bracket = (char*)"[]";
     else
-      make_oval_bracket(set->graph);
+        make_oval_bracket(set->graph);
     fprintf(fp,"\"%s\" [label = \"%s\\n%d/%d\"];\n",set->graph->label,set->graph->bracket,set->graph->sfreq,set->opt->NUMSTRUCTS);
     graph[i] = set->graph;
     //}
@@ -347,7 +349,7 @@ void make_oval_bracket(node *vert) {
     df[i++] = atoi(val);
   }
   cbrac = mystrdup(child->bracket);
-  pbrac = (char*) malloc(sizeof(char)*strlen(cbrac));
+  pbrac = (char*) malloc(sizeof(char)*(strlen(cbrac) + 2));
   skip = (int*) malloc(sizeof(int)*i);
   helices = (int*) malloc(sizeof(int)*(strlen(cbrac)/3 + 1));
   for (val = strtok(cbrac,"[]"); val; val = strtok(NULL,"[]")) {
@@ -374,7 +376,7 @@ void make_oval_bracket(node *vert) {
     else if (cbrac[j] == ']') {
       count--;
       if (m == 0 || count != skip[m-1])
-	pbrac = strcat(pbrac,"]");
+	strcat(pbrac,"]");
       else 
 	m--;
     }

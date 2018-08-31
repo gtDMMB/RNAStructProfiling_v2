@@ -222,7 +222,7 @@ void consolidated_make_oval_bracket(node *vert) {
         strcpy(df[i++],val);
     }
     cbrac = mystrdup(child->bracket);
-    pbrac = (char*) malloc(sizeof(char)*strlen(cbrac));
+    pbrac = (char*) malloc(sizeof(char)*(strlen(cbrac) + 2));
     skip = (int*) malloc(sizeof(int)*i);
     stems = (char**) malloc(sizeof(char*)*(strlen(cbrac)/3 + 1));
     for (int index = 0; int2size_t(index) < (strlen(cbrac)/3 + 1); index++) {
@@ -294,6 +294,7 @@ void consolidated_calc_gfreq(FILE *fp,Set *set) {
             consolidated_make_oval_bracket(vert);
         fprintf(fp,"\"%s\" [label = \"%s\\n%d/%d\"];\n",vert->label,vert->bracket,vert->sfreq,vert->gfreq);
     }
+    free(sum);
     if (!strcmp(set->consolidated_graph->label,""))
         set->consolidated_graph->bracket = (char*)"[]";
     else
