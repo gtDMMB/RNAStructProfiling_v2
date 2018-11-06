@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/glmS/Listeria_monocytogen.1_sfold/input/Listeria_monocytogen.1_sfold.txt is AAUUGAAUAGAAGCGCCAGAACUGAUUGGGACGAAAAUGCUUGAAGGUGAAAUCCCUGAAAAGUAUCGAUCAGUUGACGAGGAGGAGAUUAAUCGAAGUUUCGGCGGGAGUCUCCCGGCUGUGCAUGCAGUCGUUAAGUCUUACUUACAAAUCAUUUGGGUGACCAAGUGGACAGAGUAGUAAUGAAACAUGCUU with length 195
+seq in /nethome/akirkpatrick3/Research/RNA/profiling/RNAStructProfilingConsolidation/output/training/glmS/Listeria_monocytogen.1_sfold/input/Listeria_monocytogen.1_sfold.txt is AAUUGAAUAGAAGCGCCAGAACUGAUUGGGACGAAAAUGCUUGAAGGUGAAAUCCCUGAAAAGUAUCGAUCAGUUGACGAGGAGGAGAUUAAUCGAAGUUUCGGCGGGAGUCUCCCGGCUGUGCAUGCAGUCGUUAAGUCUUACUUACAAAUCAUUUGGGUGACCAAGUGGACAGAGUAGUAAUGAAACAUGCUU with length 195
 Helix 1 is 152 171 8 (152.3 170.7 7.7) with freq 1000
 Helix 2 is 37 66 6 (37.5 65.5 5.4) with freq 984
 Helix 3 is 20 75 10 (20.3 74.7 9.1) with freq 980
@@ -329,6 +329,22 @@ Selected profile 1 2 3 4 5 6 7 12 13 16 with freq 48 (145)
 Coverage by selected profiles: 0.638
 Number of profiles needed to get 0.50 coverage: 4
 Total number of selected profiles: 6
+Total number of vertices: 14
+node: '1 2 3 4 5 6 7 8 9 10 11 14 '
+node: '1 2 3 4 5 6 7 8 9 10 11 '
+node: '1 2 3 4 5 6 7 12 13 15 16 '
+node: '1 2 3 4 5 6 7 8 12 13 15 '
+node: '1 2 3 4 5 6 8 9 10 11 14 '
+node: '1 2 3 4 5 6 7 12 13 16 '
+node: '1 2 3 4 5 6 7 '
+node: '1 2 3 4 5 6 7 8 '
+node: '1 2 3 4 5 6 8 9 10 11 '
+node: '1 2 3 4 5 6 7 12 13 15 '
+node: '1 2 3 4 5 6 '
+node: '1 2 3 4 5 6 8 '
+node: '1 2 3 4 5 6 7 12 13 '
+node: '1 '
+Consolidating...
 Do stem 11 and stem 14 occur infrequently enough to be functionally similar: No
 Do stem 11 and stem 21 occur infrequently enough to be functionally similar: Yes
 Stem A is 12 17 117 120 (14.7 16.7 115.1 119.1) with freq 578

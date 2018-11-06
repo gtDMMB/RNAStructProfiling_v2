@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/ykoK/Clostridium_ramosum_.1_sfold/input/Clostridium_ramosum_.1_sfold.txt is UAAAAGAAUCGGUAGGUGAGACUACCAUAGGGAUACGGGUUGCUACCGCAAAGCAGUGGAGACACUGUGCGCUGGUCAACAGUUCUUGUCGUGAAGGCAAAAACUAAUGCAAUUACAUGGCCCUAUGAUGUUGAAGCUUGAACGAGAUAAAGUUA with length 155
+seq in /nethome/akirkpatrick3/Research/RNA/profiling/RNAStructProfilingConsolidation/output/training/ykoK/Clostridium_ramosum_.1_sfold/input/Clostridium_ramosum_.1_sfold.txt is UAAAAGAAUCGGUAGGUGAGACUACCAUAGGGAUACGGGUUGCUACCGCAAAGCAGUGGAGACACUGUGCGCUGGUCAACAGUUCUUGUCGUGAAGGCAAAAACUAAUGCAAUUACAUGGCCCUAUGAUGUUGAAGCUUGAACGAGAUAAAGUUA with length 155
 Helix 1 is 26 127 7 (26.0 127.0 7.0) with freq 1000
 Helix 2 is 53 68 6 (53.0 68.0 6.0) with freq 1000
 Helix 3 is 86 100 5 (86.1 99.9 4.9) with freq 983
@@ -223,6 +223,13 @@ Selected profile 1 2 3 4 5 6 7 8 9 10 13 with freq 50 (84)
 Coverage by selected profiles: 0.537
 Number of profiles needed to get 0.50 coverage: 4
 Total number of selected profiles: 4
+Total number of vertices: 5
+node: '1 2 3 4 5 6 7 8 9 10 '
+node: '1 2 3 4 5 6 7 8 9 10 11 '
+node: '1 2 3 4 5 6 7 8 9 10 12 '
+node: '1 2 3 4 5 6 7 8 9 10 13 '
+node: '1 2 '
+Consolidating...
 Joining helices 5 and 3
 Joining helices 19 and 20
 Do stem 4 and stem 13 occur infrequently enough to be functionally similar: No

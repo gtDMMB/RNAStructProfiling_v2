@@ -413,25 +413,6 @@ Selected profile 1 2 3 4 5 6 10 11 with freq 30 (54)
 Coverage by selected profiles: 0.458
 Number of profiles needed to get 0.50 coverage: 10
 Total number of selected profiles: 7
-Total number of vertices: 18
-node: '1 2 3 4 5 6 7 8 9 '
-node: '1 2 5 6 '
-node: '1 2 3 4 5 6 8 9 10 '
-node: '1 2 3 4 5 6 7 11 '
-node: '1 3 4 7 12 13 '
-node: '1 2 3 4 5 6 7 8 11 '
-node: '1 2 3 4 5 6 10 11 '
-node: '1 2 3 4 5 6 8 9 '
-node: '1 2 3 4 5 6 7 '
-node: '1 3 4 7 '
-node: '1 2 3 4 5 6 7 8 '
-node: '1 2 3 4 5 6 '
-node: '1 '
-node: '1 3 4 '
-node: '1 2 3 4 5 6 8 '
-node: '1 2 3 4 5 6 10 '
-node: '1 2 3 4 5 6 11 '
-node: ''
 Joining helices 4 and 3
 Joining helices 16 and 18
 Joining helices 22 and 23

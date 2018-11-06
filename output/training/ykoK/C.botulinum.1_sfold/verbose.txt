@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/ykoK/C.botulinum.1_sfold/input/C.botulinum.1_sfold.txt is UAAGUACCUCGGUAGGUGAGGUUACUACAAGGAUACGGGUUGCUACCGUGAAAGAGUGGAAACAUUCUAAACAGGUUAGCAGGUUUUGCCGAACAAAGAAGGCUUAAUCUAAUGCAACUACAUUGCCUUGCAGAGCCAAAACUUGAACGAGAAAGUAUAGA with length 161
+seq in /nethome/akirkpatrick3/Research/RNA/profiling/RNAStructProfilingConsolidation/output/training/ykoK/C.botulinum.1_sfold/input/C.botulinum.1_sfold.txt is UAAGUACCUCGGUAGGUGAGGUUACUACAAGGAUACGGGUUGCUACCGUGAAAGAGUGGAAACAUUCUAAACAGGUUAGCAGGUUUUGCCGAACAAAGAAGGCUUAAUCUAAUGCAACUACAUUGCCUUGCAGAGCCAAAACUUGAACGAGAAAGUAUAGA with length 161
 Helix 1 is 20 137 4 (20.0 137.0 4.0) with freq 1000
 Helix 2 is 28 130 5 (28.0 130.0 5.0) with freq 1000
 Helix 3 is 53 68 6 (53.1 67.9 5.9) with freq 1000
@@ -155,6 +155,14 @@ Selected profile 1 2 3 4 5 6 7 8 9 10 12 with freq 52 (460)
 Coverage by selected profiles: 0.701
 Number of profiles needed to get 0.50 coverage: 2
 Total number of selected profiles: 4
+Total number of vertices: 6
+node: '1 2 3 4 5 6 7 8 9 10 11 12 '
+node: '1 2 3 4 5 6 7 8 9 10 11 '
+node: '1 2 3 4 5 6 7 8 9 10 11 13 '
+node: '1 2 3 4 5 6 7 8 9 10 12 '
+node: '1 2 3 4 5 6 7 8 9 10 '
+node: '1 2 3 '
+Consolidating...
 Joining helices 1 and 9
 Joining helices 4 and 6
 Joining helices 7 and 8

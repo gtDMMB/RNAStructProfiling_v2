@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/5S_rRNA/B.methanolicus.2_sfold/input/B.methanolicus.2_sfold.txt is UGGUGGCGUUGGCGAGAAGGUCACACCCGUUCCCAUGCCGAACACGGAAGUUAAGCUUCUCAGCGCCGAUGGUAGUUGGGGCAUUGCCCCUGCGAGAGUAGGACGCUGCCAGGC with length 114
+seq in /nethome/akirkpatrick3/Research/RNA/profiling/RNAStructProfilingConsolidation/output/training/5S_rRNA/B.methanolicus.2_sfold/input/B.methanolicus.2_sfold.txt is UGGUGGCGUUGGCGAGAAGGUCACACCCGUUCCCAUGCCGAACACGGAAGUUAAGCUUCUCAGCGCCGAUGGUAGUUGGGGCAUUGCCCCUGCGAGAGUAGGACGCUGCCAGGC with length 114
 Helix 1 is 1 111 10 (2.8 109.2 4.8) with freq 979
 Helix 2 is 89 102 5 (89.1 101.9 4.9) with freq 969
 Helix 3 is 11 88 5 (11.0 88.0 3.2) with freq 907
@@ -207,6 +207,22 @@ Selected profile 1 2 3 4 5 6 with freq 34 (796)
 Coverage by selected profiles: 0.802
 Number of profiles needed to get 0.50 coverage: 5
 Total number of selected profiles: 11
+Total number of vertices: 13
+node: '1 2 3 4 5 6 7 8 9 10 '
+node: '1 2 3 4 5 6 7 8 10 '
+node: '1 2 3 '
+node: '1 2 3 4 5 6 7 8 9 11 '
+node: '1 2 3 4 5 6 7 8 9 '
+node: '1 2 3 4 5 6 7 8 11 '
+node: '1 2 3 4 5 6 7 8 '
+node: '1 2 3 4 5 6 7 9 10 '
+node: '1 2 3 4 5 6 9 '
+node: '1 2 3 4 5 6 7 10 '
+node: '1 2 3 4 5 6 '
+node: '1 2 3 4 5 6 7 9 '
+node: '1 2 3 4 5 6 7 '
+node: ''
+Consolidating...
 Joining helices 5 and 4
 Joining helices 17 and 18
 Joining helices 21 and 19

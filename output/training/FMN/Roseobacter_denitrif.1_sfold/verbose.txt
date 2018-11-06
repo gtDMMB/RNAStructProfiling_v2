@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/FMN/Roseobacter_denitrif.1_sfold/input/Roseobacter_denitrif.1_sfold.txt is GCGUAUUCUCAGGGCGGGGUGAAAUUCCCCACCGGCGGUAUGUGGGGCGUGACCUUACGAGCCCGCGAGCGGCCUUUCCCGAACUGAAGGGUUUCAGCAGAUCUGGUGAGAUGCCAGAGCCGACGGUCAUAGUCCGGAUGAAAGAGAAUGCGA with length 153
+seq in /nethome/akirkpatrick3/Research/RNA/profiling/RNAStructProfilingConsolidation/output/training/FMN/Roseobacter_denitrif.1_sfold/input/Roseobacter_denitrif.1_sfold.txt is GCGUAUUCUCAGGGCGGGGUGAAAUUCCCCACCGGCGGUAUGUGGGGCGUGACCUUACGAGCCCGCGAGCGGCCUUUCCCGAACUGAAGGGUUUCAGCAGAUCUGGUGAGAUGCCAGAGCCGACGGUCAUAGUCCGGAUGAAAGAGAAUGCGA with length 153
 Helix 1 is 2 152 9 (2.1 151.9 8.9) with freq 1000
 Helix 2 is 41 67 6 (41.1 66.9 5.9) with freq 933
 Helix 3 is 48 59 4 (48.0 59.0 3.7) with freq 924
@@ -377,6 +377,30 @@ Selected profile 1 6 7 10 with freq 26 (264)
 Coverage by selected profiles: 0.580
 Number of profiles needed to get 0.50 coverage: 9
 Total number of selected profiles: 11
+Total number of vertices: 22
+node: '1 2 3 4 5 7 8 9 10 '
+node: '1 2 3 4 5 6 7 8 9 10 13 14 15 16 '
+node: '1 2 3 4 5 6 7 10 '
+node: '1 2 3 4 5 6 8 9 11 12 13 14 15 16 '
+node: '1 2 3 4 5 8 9 11 12 '
+node: '1 2 3 4 5 6 7 '
+node: '1 2 3 4 5 6 11 12 '
+node: '1 2 3 4 5 7 10 '
+node: '1 2 3 4 5 7 '
+node: '1 2 3 4 5 11 '
+node: '1 6 7 10 '
+node: '1 2 3 4 5 8 9 '
+node: '1 2 3 4 5 '
+node: '1 7 10 '
+node: '1 2 3 4 5 6 8 9 13 14 15 16 '
+node: '1 2 3 4 5 6 '
+node: '1 6 '
+node: '1 2 3 4 5 11 12 '
+node: '1 '
+node: '1 6 7 '
+node: '1 7 '
+node: '1 '
+Consolidating...
 Joining helices 2 and 3
 Joining helices 5 and 4
 Joining helices 9 and 8

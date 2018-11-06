@@ -1,0 +1,100 @@
+seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/5S_rRNA/D.mobilis.1_sfold/input/D.mobilis.1_sfold.txt is ACCCGGCCAUAGUGGCCGGGCAACACCCGGUCUCGUUUCGAACCCGGAAGUUAAGCCGGCCACGUCAGAACGGCCGUGAGGUCCGAGAGGCCUCGCAGCCGUUCUGAGCUGGGAU with length 115
+Helix 1 is 2 113 6 (2.0 113.0 6.0) with freq 1000
+Helix 2 is 12 63 8 (12.0 63.0 7.4) with freq 1000
+Helix 3 is 65 107 10 (65.2 106.8 9.8) with freq 1000
+Helix 4 is 76 96 8 (76.0 96.0 6.1) with freq 1000
+Helix 5 is 33 41 3 (33.0 41.0 2.6) with freq 997
+Helix 6 is 27 47 4 (27.0 47.0 4.0) with freq 996
+Helix 7 is 22 52 3 (22.1 51.9 2.9) with freq 965
+Helix 8 is 83 90 2 (83.0 90.0 2.0) with freq 961
+Helix 9 is 19 57 3 (20.0 56.0 2.0) with freq 535
+Helix 10 is 1 115 1 (1.0 115.0 1.0) with freq 29
+Helix 11 is 25 51 2 (25.1 50.9 1.9) with freq 23
+Helix 12 is 8 108 1 (8.0 108.0 1.0) with freq 11
+Helix 13 is 29 44 3 (29.7 43.3 2.2) with freq 9
+Helix 14 is 26 47 2 (26.0 47.0 2.0) with freq 4
+Helix 15 is 8 106 2 (8.0 106.0 1.0) with freq 3
+Helix 16 is 9 65 2 (9.3 64.7 1.7) with freq 3
+Helix 17 is 23 52 1 (23.0 52.0 1.0) with freq 2
+Helix 18 is 31 41 2 (31.0 41.0 2.0) with freq 2
+Helix 19 is 19 52 3 (20.0 51.0 2.0) with freq 1
+Helix 20 is 11 65 1 (11.0 65.0 1.0) with freq 1
+Helix 21 is 10 107 1 (10.0 107.0 1.0) with freq 1
+0.50 coverage of helices after first 5 HC
+Total number of helix classes: 21
+Threshold to find frequent helices: 2.9%
+Number of structures processed: 1000
+Featured helix 1: 2 113 6 with freq 1000
+Featured helix 2: 12 63 8 with freq 1000
+Featured helix 3: 65 107 10 with freq 1000
+Featured helix 4: 76 96 8 with freq 1000
+Featured helix 5: 33 41 3 with freq 997
+Featured helix 6: 27 47 4 with freq 996
+Featured helix 7: 22 52 3 with freq 965
+Featured helix 8: 83 90 2 with freq 961
+Featured helix 9: 19 57 3 with freq 535
+Featured helix 10: 1 115 1 with freq 29
+Coverage by featured helix classes: 0.993
+Total number of featured helix classes: 10
+Ave number of HC per structure: 8.5
+Ave structure coverage by fhc: 0.99
+Ave structure coverage by fbp: 1.00
+Total number of profiles: 13
+Profile 1 2 3 4 5 6 7 8 9  with freq 482 (494)
+Profile 1 2 3 4 5 6 7 8  with freq 410 (920)
+Profile 1 2 3 4 5 6 8 9  with freq 22 (516)
+Profile 1 2 3 4 5 6 7  with freq 21 (958)
+Profile 1 2 3 4 5 6 7 8 10  with freq 16 (28)
+Profile 1 2 3 4 5 6 7 9  with freq 16 (510)
+Profile 1 2 3 4 5 6 7 8 9 10  with freq 12 (12)
+Profile 1 2 3 4 5 6 8  with freq 12 (954)
+Profile 1 2 3 4 5 7 8  with freq 4 (924)
+Profile 1 2 3 4 6 7 8 9  with freq 2 (496)
+Profile 1 2 3 4 6 7 8  with freq 1 (923)
+Profile 1 2 3 4 5 6 9  with freq 1 (533)
+Profile 1 2 3 4 5 6 7 10  with freq 1 (28)
+setting p to 41.0
+Selected profile 1 2 3 4 5 6 7 8 9 with freq 482 (494)
+Selected profile 1 2 3 4 5 6 7 8 with freq 410 (920)
+Coverage by selected profiles: 0.892
+Number of profiles needed to get 0.50 coverage: 2
+Total number of selected profiles: 2
+Joining helices 3 and 4
+Joining helices 6 and 5
+Joining stems 7 and 6
+Do stem 11 and stem 17 occur infrequently enough to be functionally similar: No
+Do stem 12 and stem 15 occur infrequently enough to be functionally similar: Yes
+Do stem 15 and stem 21 occur infrequently enough to be functionally similar: Yes
+Do stem 13 and stem 18 occur infrequently enough to be functionally similar: No
+Do stem 16 and stem 20 occur infrequently enough to be functionally similar: Yes
+Stem A is 65 83 89 107 (65.2 81.1 88.9 106.8) with freq 1000
+Stem B is 22 35 39 52 (22.1 34.6 37.4 51.9) with freq 958
+Stem C is 8 10 105 108 (8.1 8.1 105.5 107.5) with freq 15
+Stem D is 9 11 64 65 (9.7 10.2 62.2 64.8) with freq 4
+Threshold to find featured stems: 53.5%
+Number of structures processed: 1000
+Featured helix 1: 2 7 108 113 with freq 1000
+Featured helix 2: 12 19 56 63 with freq 1000
+Featured stem A: 65 83 89 107 with freq 1000
+Featured helix 8: 83 84 89 90 with freq 961
+Featured stem B: 22 35 39 52 with freq 958
+Featured helix 9: 19 21 55 57 with freq 535
+Total number of featured stems: 6
+Total number of stem profiles: 7
+Stem profile 1 2 A 8 B 9  with freq 494 (494)
+Stem profile 1 2 A 8 B  with freq 426 (920)
+Stem profile 1 2 A 8 9  with freq 24 (518)
+Stem profile 1 2 A B  with freq 22 (958)
+Stem profile 1 2 A 8  with freq 17 (961)
+Stem profile 1 2 A B 9  with freq 16 (510)
+Stem profile 1 2 A 9  with freq 1 (534)
+setting p to 42.6
+Selected stem profile 1 2 A 8 B 9 with freq 494 (494)
+Selected stem profile 1 2 A 8 B with freq 426 (920)
+Coverage by selected stem profiles: 0.920
+Number of stem profiles needed to get 0.50 coverage: 2
+Total number of selected stem profiles: 2
+Total number of vertices: 3
+node: '1 2 A 8 B 9 '
+node: '1 2 A 8 B '
+node: '1 2 A '

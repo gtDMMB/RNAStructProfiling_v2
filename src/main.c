@@ -36,7 +36,7 @@ int main(int argc, char *argv[]) {
         puts("\t./RNAprofile -e <output samples file> -v <seq_file>\n");
         exit(EXIT_FAILURE);
     }
-    set = make_Set((char*)"output.samples");
+    set = make_Set("output.samples");
     /* set = make_Set(argv[2]); */
     opt = set->opt;
     args = (char**)malloc(sizeof(char*)*16);
@@ -471,6 +471,7 @@ GTBOLTZMANN OPTIONS
                 consolidated_removeEdges(deleteHash);
                 consolidated_print_edges(fp, set);
                 fputs("}", fp);
+
                 free_hashtbl(deleteHash);
             }
             fclose(fp);

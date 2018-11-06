@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/U1/P.polycephalum.1_sfold/input/P.polycephalum.1_sfold.txt is ACCUGGCCGGGGGAAGUCGGUGAUCAAGACGGCCGAGUCCCUAGUUGGGGAACCUCUCCUGCACUUGAGAGGGGCUCCUUCUAUGAUUGCCUUCGGGUAACUCAACGGCAUAAUUUGUGAUAGCGUGGGGUGCGCUUGUCGCGCCCUGCA with length 150
+seq in /nethome/akirkpatrick3/Research/RNA/profiling/RNAStructProfilingConsolidation/output/training/U1/P.polycephalum.1_sfold/input/P.polycephalum.1_sfold.txt is ACCUGGCCGGGGGAAGUCGGUGAUCAAGACGGCCGAGUCCCUAGUUGGGGAACCUCUCCUGCACUUGAGAGGGGCUCCUUCUAUGAUUGCCUUCGGGUAACUCAACGGCAUAAUUUGUGAUAGCGUGGGGUGCGCUUGUCGCGCCCUGCA with length 150
 Helix 1 is 87 100 5 (87.1 99.9 4.9) with freq 1000
 Helix 2 is 6 109 4 (6.0 109.0 3.9) with freq 998
 Helix 3 is 47 78 4 (47.0 78.0 4.0) with freq 997
@@ -166,6 +166,14 @@ Selected profile 1 2 3 4 5 6 7 8 9 13 with freq 50 (97)
 Coverage by selected profiles: 0.604
 Number of profiles needed to get 0.50 coverage: 4
 Total number of selected profiles: 5
+Total number of vertices: 6
+node: '1 2 3 4 5 6 7 8 9 '
+node: '1 2 3 4 5 6 7 8 9 10 '
+node: '1 2 3 4 5 6 7 8 '
+node: '1 2 3 4 5 6 7 8 9 11 '
+node: '1 2 3 4 5 6 7 8 9 13 '
+node: '1 '
+Consolidating...
 Joining helices 8 and 1
 Joining helices 3 and 4
 Joining helices 7 and 5

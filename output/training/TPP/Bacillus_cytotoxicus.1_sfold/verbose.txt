@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/TPP/Bacillus_cytotoxicus.1_sfold/input/Bacillus_cytotoxicus.1_sfold.txt is UCUAUCCACUAGGGGUGCCGAUAUUGGCUGAGAUUAAAGUUUAUCUUUGAGACCCUUAGUACCUGAUCUGGUUCGUACCAGCGUAGGGAAGUGGAAAUGACAAAAU with length 106
+seq in /nethome/akirkpatrick3/Research/RNA/profiling/RNAStructProfilingConsolidation/output/training/TPP/Bacillus_cytotoxicus.1_sfold/input/Bacillus_cytotoxicus.1_sfold.txt is UCUAUCCACUAGGGGUGCCGAUAUUGGCUGAGAUUAAAGUUUAUCUUUGAGACCCUUAGUACCUGAUCUGGUUCGUACCAGCGUAGGGAAGUGGAAAUGACAAAAU with length 106
 Helix 1 is 68 81 5 (68.0 81.0 4.8) with freq 1000
 Helix 2 is 8 60 9 (9.8 58.2 7.0) with freq 967
 Helix 3 is 17 28 4 (17.0 28.0 3.6) with freq 925
@@ -112,6 +112,18 @@ Selected profile 1 2 3 4 5 8 with freq 63 (168)
 Coverage by selected profiles: 0.768
 Number of profiles needed to get 0.50 coverage: 3
 Total number of selected profiles: 5
+Total number of vertices: 10
+node: '1 2 3 4 5 6 7 '
+node: '1 2 3 4 5 6 '
+node: '1 2 3 4 6 9 '
+node: '1 2 3 4 5 7 8 '
+node: '1 2 3 4 5 8 '
+node: '1 2 3 4 6 '
+node: '1 2 3 4 5 7 '
+node: '1 2 3 4 5 '
+node: '1 2 3 4 '
+node: '1 '
+Consolidating...
 Do stem 4 and stem 10 occur infrequently enough to be functionally similar: No
 Do stem 7 and stem 11 occur infrequently enough to be functionally similar: No
 Do stem 7 and stem 23 occur infrequently enough to be functionally similar: No

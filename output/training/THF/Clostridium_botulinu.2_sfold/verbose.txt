@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/THF/Clostridium_botulinu.2_sfold/input/Clostridium_botulinu.2_sfold.txt is AACAGAGUAGGUAAUUACACGUUAAGGUUUAGAGGACGGGAAGUUGUCUCUAAAAGAAAAAUCUUUAAAAGAUUUGCGAUGUGUUACCGCAUUCCGCUGUU with length 101
+seq in /nethome/akirkpatrick3/Research/RNA/profiling/RNAStructProfilingConsolidation/output/training/THF/Clostridium_botulinu.2_sfold/input/Clostridium_botulinu.2_sfold.txt is AACAGAGUAGGUAAUUACACGUUAAGGUUUAGAGGACGGGAAGUUGUCUCUAAAAGAAAAAUCUUUAAAAGAUUUGCGAUGUGUUACCGCAUUCCGCUGUU with length 101
 Helix 1 is 28 54 8 (28.4 53.6 6.4) with freq 982
 Helix 2 is 10 88 6 (10.0 88.0 4.7) with freq 970
 Helix 3 is 1 101 5 (1.2 100.8 4.5) with freq 946
@@ -159,6 +159,24 @@ Selected profile 1 2 3 4 6 10 with freq 29 (70)
 Coverage by selected profiles: 0.751
 Number of profiles needed to get 0.50 coverage: 4
 Total number of selected profiles: 8
+Total number of vertices: 16
+node: '1 2 3 4 5 6 '
+node: '1 2 3 4 5 6 7 '
+node: '1 2 3 4 5 8 9 '
+node: '1 2 3 4 5 7 8 9 '
+node: '1 2 3 4 5 6 11 '
+node: '1 2 3 4 6 7 10 '
+node: '1 2 3 4 5 8 9 11 '
+node: '1 2 3 4 6 10 '
+node: '1 2 3 4 5 '
+node: '1 2 3 4 6 '
+node: '1 2 3 4 5 7 '
+node: '1 2 3 4 6 7 '
+node: '1 2 3 4 '
+node: '1 2 3 4 7 '
+node: '1 2 3 4 5 11 '
+node: ''
+Consolidating...
 Joining helices 8 and 9
 Joining helices 20 and 21
 Do stem 6 and stem 8 occur infrequently enough to be functionally similar: Yes

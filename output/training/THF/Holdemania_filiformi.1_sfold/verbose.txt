@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/THF/Holdemania_filiformi.1_sfold/input/Holdemania_filiformi.1_sfold.txt is AACAGAGUAGGUUCCUGCGCGUUAAGUGCUUUCUGAACGGGGAGUUGUCAGAAGGACGAAAAGGUUUCUUGCGGUGCAGGUUCCGCAUCCCGCUGAC with length 97
+seq in /nethome/akirkpatrick3/Research/RNA/profiling/RNAStructProfilingConsolidation/output/training/THF/Holdemania_filiformi.1_sfold/input/Holdemania_filiformi.1_sfold.txt is AACAGAGUAGGUUCCUGCGCGUUAAGUGCUUUCUGAACGGGGAGUUGUCAGAAGGACGAAAAGGUUUCUUGCGGUGCAGGUUCCGCAUCCCGCUGAC with length 97
 Helix 1 is 14 80 7 (14.0 80.0 6.9) with freq 977
 Helix 2 is 10 84 2 (10.0 84.0 2.0) with freq 961
 Helix 3 is 29 55 8 (29.2 54.8 7.3) with freq 773
@@ -257,6 +257,45 @@ Selected profile 1 2 3 4 5 8 with freq 22 (87)
 Coverage by selected profiles: 0.515
 Number of profiles needed to get 0.50 coverage: 13
 Total number of selected profiles: 13
+Total number of vertices: 36
+node: '1 2 3 4 6 7 8 '
+node: '1 2 6 10 '
+node: '1 2 3 4 5 7 8 '
+node: '1 2 5 10 '
+node: '1 2 3 4 5 7 '
+node: '1 2 3 5 7 8 9 '
+node: '1 2 3 6 7 8 9 '
+node: '1 2 3 4 5 11 12 '
+node: '1 2 3 4 6 7 '
+node: '1 2 3 4 6 11 12 '
+node: '1 2 3 4 6 8 '
+node: '1 2 3 4 6 '
+node: '1 2 3 4 5 8 '
+node: '1 2 6 '
+node: '1 2 3 4 7 8 '
+node: '1 2 '
+node: '1 2 3 4 7 '
+node: '1 2 3 7 8 '
+node: '1 2 3 6 7 8 '
+node: '1 2 3 4 '
+node: '1 2 3 4 8 '
+node: '1 2 10 '
+node: '1 2 5 '
+node: '1 2 3 5 7 8 '
+node: '1 2 3 4 5 '
+node: '1 2 3 5 7 '
+node: '1 2 3 7 '
+node: '1 2 3 7 8 9 '
+node: '1 2 3 5 '
+node: '1 2 3 '
+node: '1 2 3 8 '
+node: '1 2 3 5 8 '
+node: '1 2 3 6 7 '
+node: '1 2 3 6 '
+node: '1 2 3 6 8 '
+node: '1 2 3 4 11 12 '
+node: ''
+Consolidating...
 Joining helices 2 and 1
 Joining helices 11 and 12
 Joining helices 15 and 16

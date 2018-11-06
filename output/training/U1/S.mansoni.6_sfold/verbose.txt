@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/U1/S.mansoni.6_sfold/input/S.mansoni.6_sfold.txt is AAACUUACCUGGCGCCGGGUUCAGGGUGAUCAGGAAUGCUCUGACCCCGGGUGGAGGCUCACCAUUGCACUUCGGUGGGUUGAAACUCGCGACGAACCCUAAUUGGGUGCGCUCGGGCGUGUAGUUUUUGUCAGUGGGGAGGUCUUCGGAUCAUCCCUU with length 159
+seq in /nethome/akirkpatrick3/Research/RNA/profiling/RNAStructProfilingConsolidation/output/training/U1/S.mansoni.6_sfold/input/S.mansoni.6_sfold.txt is AAACUUACCUGGCGCCGGGUUCAGGGUGAUCAGGAAUGCUCUGACCCCGGGUGGAGGCUCACCAUUGCACUUCGGUGGGUUGAAACUCGCGACGAACCCUAAUUGGGUGCGCUCGGGCGUGUAGUUUUUGUCAGUGGGGAGGUCUUCGGAUCAUCCCUU with length 159
 Helix 1 is 141 152 4 (141.0 152.0 4.0) with freq 999
 Helix 2 is 21 44 8 (21.0 44.0 7.3) with freq 998
 Helix 3 is 96 108 4 (96.0 108.0 4.0) with freq 994
@@ -291,6 +291,16 @@ Selected profile 1 2 3 4 5 6 12 13 14 15 with freq 67 (146)
 Coverage by selected profiles: 0.632
 Number of profiles needed to get 0.50 coverage: 3
 Total number of selected profiles: 4
+Total number of vertices: 8
+node: '1 2 3 4 5 6 7 8 9 10 '
+node: '1 2 3 4 5 6 7 8 9 10 11 '
+node: '1 2 3 4 5 7 8 9 16 '
+node: '1 2 3 4 5 6 12 13 14 15 '
+node: '1 2 3 4 5 7 8 9 '
+node: '1 2 3 4 5 6 '
+node: '1 2 3 4 5 '
+node: ''
+Consolidating...
 Joining helices 4 and 2
 Joining helices 7 and 8
 Joining helices 21 and 19

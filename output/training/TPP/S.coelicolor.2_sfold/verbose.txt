@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/TPP/S.coelicolor.2_sfold/input/S.coelicolor.2_sfold.txt is CAAGGCACUCGCGGGAGCCCGGACGCACCGGGCUGAGAGGGAGGCUGGCGGCCUCCGACCGUACGAACCUGAUCCGGGUCAUGCCGGCGAAGGGAGGGGCUGGACGCCCAUG with length 112
+seq in /nethome/akirkpatrick3/Research/RNA/profiling/RNAStructProfilingConsolidation/output/training/TPP/S.coelicolor.2_sfold/input/S.coelicolor.2_sfold.txt is CAAGGCACUCGCGGGAGCCCGGACGCACCGGGCUGAGAGGGAGGCUGGCGGCCUCCGACCGUACGAACCUGAUCCGGGUCAUGCCGGCGAAGGGAGGGGCUGGACGCCCAUG with length 112
 Helix 1 is 16 34 7 (16.2 33.8 6.8) with freq 999
 Helix 2 is 40 56 7 (40.0 56.0 6.4) with freq 991
 Helix 3 is 11 62 4 (11.2 61.8 3.8) with freq 933
@@ -293,6 +293,17 @@ Selected profile 1 2 3 4 5 7 12 with freq 54 (89)
 Coverage by selected profiles: 0.477
 Number of profiles needed to get 0.50 coverage: 7
 Total number of selected profiles: 5
+Total number of vertices: 9
+node: '1 2 3 4 5 8 10 14 '
+node: '1 2 3 4 7 12 '
+node: '1 2 3 6 9 11 13 16 '
+node: '1 2 3 6 9 11 13 15 16 '
+node: '1 2 3 4 5 7 12 '
+node: '1 2 3 4 '
+node: '1 2 3 '
+node: '1 2 3 4 5 '
+node: ''
+Consolidating...
 Do stem 11 and stem 16 occur infrequently enough to be functionally similar: No
 Do stem 12 and stem 20 occur infrequently enough to be functionally similar: Yes
 Do stem 13 and stem 16 occur infrequently enough to be functionally similar: No

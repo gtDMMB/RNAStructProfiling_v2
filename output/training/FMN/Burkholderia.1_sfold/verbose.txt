@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/FMN/Burkholderia.1_sfold/input/Burkholderia.1_sfold.txt is GAACGUUCUCGGGGCGGGGUGAAAUUCCCCACCGGCGGUAAUCGCGCGAUUGCGCGUAGCCCGCGAGCGCUUGCCGGCACGCAUGUGCCCGGCAAGGUCAGCAGACCCGGUUGGAUUCCGGGGCCGACGGUCAAAGUCCGGAUGAGAGAGAGCGGGG with length 157
+seq in /nethome/akirkpatrick3/Research/RNA/profiling/RNAStructProfilingConsolidation/output/training/FMN/Burkholderia.1_sfold/input/Burkholderia.1_sfold.txt is GAACGUUCUCGGGGCGGGGUGAAAUUCCCCACCGGCGGUAAUCGCGCGAUUGCGCGUAGCCCGCGAGCGCUUGCCGGCACGCAUGUGCCCGGCAAGGUCAGCAGACCCGGUUGGAUUCCGGGGCCGACGGUCAAAGUCCGGAUGAGAGAGAGCGGGG with length 157
 Helix 1 is 70 96 8 (70.1 95.9 6.9) with freq 1000
 Helix 2 is 4 154 7 (4.0 154.0 6.9) with freq 998
 Helix 3 is 76 89 5 (77.0 88.0 3.9) with freq 995
@@ -385,6 +385,24 @@ Selected profile 1 2 3 4 5 9 11 with freq 34 (135)
 Coverage by selected profiles: 0.502
 Number of profiles needed to get 0.50 coverage: 8
 Total number of selected profiles: 8
+Total number of vertices: 16
+node: '1 2 3 4 6 7 8 11 12 13 '
+node: '1 2 3 4 6 7 8 12 13 '
+node: '1 2 3 4 5 9 10 14 15 16 '
+node: '1 2 3 4 5 9 11 14 15 '
+node: '1 2 3 4 6 7 8 10 12 13 '
+node: '1 2 3 4 5 9 10 16 '
+node: '1 2 3 4 5 6 9 10 14 15 16 '
+node: '1 2 3 4 5 9 11 '
+node: '1 2 3 4 '
+node: '1 2 3 4 11 '
+node: '1 2 3 4 6 '
+node: '1 2 3 4 5 9 14 15 '
+node: '1 2 3 4 10 '
+node: '1 2 3 4 5 9 '
+node: '1 2 3 4 6 10 '
+node: '1 '
+Consolidating...
 Do stem 8 and stem 9 occur infrequently enough to be functionally similar: No
 Do stem 10 and stem 11 occur infrequently enough to be functionally similar: No
 Do stem 10 and stem 23 occur infrequently enough to be functionally similar: Yes

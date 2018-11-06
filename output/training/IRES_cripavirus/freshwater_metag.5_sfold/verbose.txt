@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/IRES_cripavirus/freshwater_metag.5_sfold/input/freshwater_metag.5_sfold.txt is GCGAGAUGUGAUCUUGCUUUCUUAUACAAAUUUUGACGUAAAUAAAAAGAAAGUAUUGCUGUCUUGC with length 67
+seq in /nethome/akirkpatrick3/Research/RNA/profiling/RNAStructProfilingConsolidation/output/training/IRES_cripavirus/freshwater_metag.5_sfold/input/freshwater_metag.5_sfold.txt is GCGAGAUGUGAUCUUGCUUUCUUAUACAAAUUUUGACGUAAAUAAAAAGAAAGUAUUGCUGUCUUGC with length 67
 Helix 1 is 1 67 8 (1.0 67.0 7.0) with freq 1000
 Helix 2 is 15 55 9 (15.5 54.5 8.2) with freq 975
 Helix 3 is 8 59 5 (9.2 57.8 1.9) with freq 893
@@ -74,6 +74,12 @@ Selected profile 1 2 3 5 with freq 124 (124)
 Coverage by selected profiles: 0.868
 Number of profiles needed to get 0.50 coverage: 2
 Total number of selected profiles: 3
+Total number of vertices: 4
+node: '1 2 3 '
+node: '1 2 3 4 '
+node: '1 2 3 5 '
+node: '1 '
+Consolidating...
 Joining helices 13 and 11
 Do stem 2 and stem 13 occur infrequently enough to be functionally similar: Yes
 Do stem 4 and stem 9 occur infrequently enough to be functionally similar: No

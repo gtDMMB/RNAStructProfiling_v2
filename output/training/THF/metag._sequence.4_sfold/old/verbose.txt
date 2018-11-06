@@ -156,22 +156,6 @@ Selected profile 1 2 7 8 10 with freq 37 (220)
 Coverage by selected profiles: 0.687
 Number of profiles needed to get 0.50 coverage: 5
 Total number of selected profiles: 9
-Total number of vertices: 14
-node: '1 2 3 4 5 9 '
-node: '1 2 3 4 6 9 '
-node: '1 2 5 7 8 10 '
-node: '1 2 6 7 8 10 '
-node: '1 2 3 4 9 '
-node: '1 2 3 4 6 '
-node: '1 2 3 4 5 '
-node: '1 2 5 7 8 '
-node: '1 2 7 8 10 '
-node: '1 2 5 '
-node: '1 2 '
-node: '1 2 3 4 '
-node: '1 2 6 '
-node: '1 2 7 8 '
-node: '1 '
 Joining helices 17 and 18
 Do stem 2 and stem 21 occur infrequently enough to be functionally similar: Yes
 Do stem 5 and stem 14 occur infrequently enough to be functionally similar: Yes

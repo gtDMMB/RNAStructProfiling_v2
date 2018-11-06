@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/FMN/L.innocua.1_sfold/input/L.innocua.1_sfold.txt is GUUCAUCUUCGGGGCAGGGUGCAAUUCCCGACCGGUGGUUAAAGUCCACGAUCUGCUUUCUUAGCAGUUGACUCUGGUGUAAUUCCAGGACCGACAGUAUAGUCUGGAUGGGAGAAGAUGUUG with length 123
+seq in /nethome/akirkpatrick3/Research/RNA/profiling/RNAStructProfilingConsolidation/output/training/FMN/L.innocua.1_sfold/input/L.innocua.1_sfold.txt is GUUCAUCUUCGGGGCAGGGUGCAAUUCCCGACCGGUGGUUAAAGUCCACGAUCUGCUUUCUUAGCAGUUGACUCUGGUGUAAUUCCAGGACCGACAGUAUAGUCUGGAUGGGAGAAGAUGUUG with length 123
 Helix 1 is 4 120 7 (4.0 120.0 7.0) with freq 1000
 Helix 2 is 53 67 5 (53.1 66.9 4.8) with freq 994
 Helix 3 is 25 114 6 (26.2 112.8 4.6) with freq 925
@@ -216,6 +216,17 @@ Selected profile 1 2 3 4 5 6 7 8 with freq 70 (394)
 Coverage by selected profiles: 0.585
 Number of profiles needed to get 0.50 coverage: 3
 Total number of selected profiles: 4
+Total number of vertices: 9
+node: '1 2 3 4 5 6 7 8 9 '
+node: '1 2 3 4 5 7 8 9 10 11 '
+node: '1 2 3 4 5 6 12 '
+node: '1 2 3 4 5 6 7 8 '
+node: '1 2 3 4 5 7 8 9 '
+node: '1 2 3 4 5 6 '
+node: '1 2 3 4 5 '
+node: '1 2 3 4 5 7 8 '
+node: '1 '
+Consolidating...
 Joining helices 11 and 10
 Joining helices 20 and 21
 Do stem 5 and stem 24 occur infrequently enough to be functionally similar: No

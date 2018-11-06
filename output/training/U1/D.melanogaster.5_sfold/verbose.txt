@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/U1/D.melanogaster.5_sfold/input/D.melanogaster.5_sfold.txt is AUACUUACCUGGCGUAGAGGUUAACCGUGAUCACGAAGGCGGUUCCUCCGGAGUGAGGCUUGGCCAUUGCACCUCGGCUGAGUUGACCUCUGCGAUUAUUCCUAAUGUGAAUAACUCGUGCGUGUAAUUUUUGUUAGCCGGGAAUGGCGUUCGCGCCGUCCCGAC with length 165
+seq in /nethome/akirkpatrick3/Research/RNA/profiling/RNAStructProfilingConsolidation/output/training/U1/D.melanogaster.5_sfold/input/D.melanogaster.5_sfold.txt is AUACUUACCUGGCGUAGAGGUUAACCGUGAUCACGAAGGCGGUUCCUCCGGAGUGAGGCUUGGCCAUUGCACCUCGGCUGAGUUGACCUCUGCGAUUAUUCCUAAUGUGAAUAACUCGUGCGUGUAAUUUUUGUUAGCCGGGAAUGGCGUUCGCGCCGUCCCGAC with length 165
 Helix 1 is 13 94 13 (13.3 93.7 12.1) with freq 1000
 Helix 2 is 144 159 6 (144.5 158.5 5.5) with freq 1000
 Helix 3 is 139 163 5 (139.0 163.0 4.5) with freq 988
@@ -414,6 +414,24 @@ Selected profile 1 2 3 4 5 6 7 17 19 20 21 22 with freq 23 (34)
 Coverage by selected profiles: 0.408
 Number of profiles needed to get 0.50 coverage: 17
 Total number of selected profiles: 11
+Total number of vertices: 16
+node: '1 2 3 4 5 6 7 8 9 10 11 '
+node: '1 2 3 4 5 6 7 12 13 14 15 18 '
+node: '1 2 3 4 5 6 7 8 9 10 11 16 '
+node: '1 2 3 4 5 6 7 8 9 10 11 22 '
+node: '1 2 3 4 5 6 7 17 19 20 21 '
+node: '1 2 3 4 5 6 7 12 13 14 15 16 18 '
+node: '1 2 3 4 6 8 9 10 11 '
+node: '1 2 3 4 5 6 7 12 13 14 15 18 22 '
+node: '1 2 3 4 5 6 7 17 20 21 '
+node: '1 2 3 4 5 6 7 17 20 21 22 '
+node: '1 2 3 4 5 6 7 17 19 20 21 22 '
+node: '1 2 3 4 5 6 7 '
+node: '1 2 3 4 6 '
+node: '1 2 3 4 5 6 7 16 '
+node: '1 2 3 4 5 6 7 22 '
+node: '1 2 '
+Consolidating...
 Joining helices 3 and 2
 Joining helices 5 and 7
 Joining helices 10 and 11

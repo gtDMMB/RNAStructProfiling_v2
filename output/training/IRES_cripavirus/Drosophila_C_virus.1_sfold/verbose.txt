@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/IRES_cripavirus/Drosophila_C_virus.1_sfold/input/Drosophila_C_virus.1_sfold.txt is GUUAAGAUGUGAUCUUGCUUCCUUAUACAAUUUUGAGAGGUUAAUAAGAAGGAAGUAGUGCUAUCUUAAUAAUUAGGUUAACUAUUUAGUUUUACUGUUCAGGAUGCCUAUUGGCAGCCCCAUAAUAUCCAGGACACCCUCUCUGCUUCUUAUAUGAUUAGGUUGUCAUUUAGAAUAAGAAAAUAACCUGCUAACUUUCAA with length 201
+seq in /nethome/akirkpatrick3/Research/RNA/profiling/RNAStructProfilingConsolidation/output/training/IRES_cripavirus/Drosophila_C_virus.1_sfold/input/Drosophila_C_virus.1_sfold.txt is GUUAAGAUGUGAUCUUGCUUCCUUAUACAAUUUUGAGAGGUUAAUAAGAAGGAAGUAGUGCUAUCUUAAUAAUUAGGUUAACUAUUUAGUUUUACUGUUCAGGAUGCCUAUUGGCAGCCCCAUAAUAUCCAGGACACCCUCUCUGCUUCUUAUAUGAUUAGGUUGUCAUUUAGAAUAAGAAAAUAACCUGCUAACUUUCAA with length 201
 Helix 1 is 1 70 9 (1.2 69.8 8.5) with freq 998
 Helix 2 is 15 58 10 (15.5 57.5 9.4) with freq 993
 Helix 3 is 74 190 7 (74.2 189.8 6.6) with freq 945
@@ -457,6 +457,38 @@ Selected profile 1 2 3 4 5 8 9 10 11 12 13 with freq 22 (24)
 Coverage by selected profiles: 0.399
 Number of profiles needed to get 0.50 coverage: 17
 Total number of selected profiles: 10
+Total number of vertices: 30
+node: '1 2 3 4 5 6 7 8 9 10 11 '
+node: '1 2 3 4 5 7 8 9 10 11 13 '
+node: '1 2 3 4 5 6 7 10 11 '
+node: '1 2 3 4 5 6 7 8 9 10 '
+node: '1 2 3 4 5 6 8 9 10 11 12 '
+node: '1 2 3 6 7 11 '
+node: '1 2 3 4 5 6 7 10 '
+node: '1 2 3 4 5 7 8 9 10 11 '
+node: '1 2 3 6 7 '
+node: '1 2 3 4 5 8 9 10 11 12 13 '
+node: '1 2 3 4 5 6 8 9 10 11 '
+node: '1 2 3 4 5 8 9 10 11 '
+node: '1 2 3 4 5 7 10 11 '
+node: '1 2 3 4 5 7 8 9 10 '
+node: '1 2 3 7 11 '
+node: '1 2 3 4 5 7 10 '
+node: '1 2 3 7 '
+node: '1 2 3 4 5 8 9 10 11 13 '
+node: '1 2 3 4 5 6 10 11 '
+node: '1 2 3 4 5 10 11 '
+node: '1 2 3 4 5 6 8 9 10 '
+node: '1 2 3 4 5 8 9 10 '
+node: '1 2 3 6 11 '
+node: '1 2 3 4 5 6 10 '
+node: '1 2 3 6 '
+node: '1 2 3 4 5 8 9 10 11 12 '
+node: '1 2 3 11 '
+node: '1 2 3 4 5 10 '
+node: '1 2 3 '
+node: ''
+Consolidating...
 Joining helices 9 and 8
 Do stem 11 and stem 16 occur infrequently enough to be functionally similar: Yes
 Do stem 13 and stem 15 occur infrequently enough to be functionally similar: No

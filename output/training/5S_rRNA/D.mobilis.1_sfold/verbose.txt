@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/5S_rRNA/D.mobilis.1_sfold/input/D.mobilis.1_sfold.txt is ACCCGGCCAUAGUGGCCGGGCAACACCCGGUCUCGUUUCGAACCCGGAAGUUAAGCCGGCCACGUCAGAACGGCCGUGAGGUCCGAGAGGCCUCGCAGCCGUUCUGAGCUGGGAU with length 115
+seq in /nethome/akirkpatrick3/Research/RNA/profiling/RNAStructProfilingConsolidation/output/training/5S_rRNA/D.mobilis.1_sfold/input/D.mobilis.1_sfold.txt is ACCCGGCCAUAGUGGCCGGGCAACACCCGGUCUCGUUUCGAACCCGGAAGUUAAGCCGGCCACGUCAGAACGGCCGUGAGGUCCGAGAGGCCUCGCAGCCGUUCUGAGCUGGGAU with length 115
 Helix 1 is 2 113 6 (2.0 113.0 6.0) with freq 1000
 Helix 2 is 12 63 8 (12.0 63.0 7.4) with freq 1000
 Helix 3 is 65 107 10 (65.2 106.8 9.8) with freq 1000
@@ -59,6 +59,11 @@ Selected profile 1 2 3 4 5 6 7 8 with freq 410 (920)
 Coverage by selected profiles: 0.892
 Number of profiles needed to get 0.50 coverage: 2
 Total number of selected profiles: 2
+Total number of vertices: 3
+node: '1 2 3 4 5 6 7 8 9 '
+node: '1 2 3 4 5 6 7 8 '
+node: '1 2 3 4 '
+Consolidating...
 Joining helices 3 and 4
 Joining helices 6 and 5
 Joining stems 7 and 6

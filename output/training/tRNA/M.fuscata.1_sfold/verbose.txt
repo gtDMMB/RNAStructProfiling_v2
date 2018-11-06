@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/tRNA/M.fuscata.1_sfold/input/M.fuscata.1_sfold.txt is GUAGAUAUAGUUUAACUAAAACACUAGAUUGUGAAUCUAACCAUAGAGACUCACCACCUCUUAUUUACC with length 69
+seq in /nethome/akirkpatrick3/Research/RNA/profiling/RNAStructProfilingConsolidation/output/training/tRNA/M.fuscata.1_sfold/input/M.fuscata.1_sfold.txt is GUAGAUAUAGUUUAACUAAAACACUAGAUUGUGAAUCUAACCAUAGAGACUCACCACCUCUUAUUUACC with length 69
 Helix 1 is 1 68 7 (1.1 67.9 6.7) with freq 995
 Helix 2 is 31 54 4 (31.0 54.0 3.9) with freq 958
 Helix 3 is 36 49 3 (36.0 49.0 2.9) with freq 832
@@ -114,6 +114,19 @@ Selected profile 1 2 4 8 with freq 45 (84)
 Coverage by selected profiles: 0.830
 Number of profiles needed to get 0.50 coverage: 3
 Total number of selected profiles: 7
+Total number of vertices: 10
+node: '1 2 3 4 '
+node: '1 2 3 4 5 '
+node: '1 2 3 '
+node: '1 2 3 4 7 '
+node: '1 2 3 6 '
+node: '1 2 3 5 6 '
+node: '1 2 4 8 '
+node: '1 2 4 '
+node: '1 2 3 5 '
+node: '1 2 '
+node: ''
+Consolidating...
 Joining helices 24 and 25
 Do stem 3 and stem 8 occur infrequently enough to be functionally similar: No
 Do stem 4 and stem 17 occur infrequently enough to be functionally similar: No

@@ -1,196 +1,196 @@
 Processing: /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/Metazoa_SRP/D.rerio.6_sfold/input/D.rerio.6_sfold.out
 Structure 1: 35 32 33 F 36 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 32 33 35 36 
 Structure 2: 44 45 54 F 11 B C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 23 
 Structure 3: 35 32 33 F 53 114 11 B 22 C D 6 A E 21 23
-	-> A 6 B C D E 11 F 21 22 23 
+	-> A 6 B C D E 11 F 21 22 23 32 33 35 
 Structure 4: 35 32 33 F 53 114 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 32 33 35 
 Structure 5: 19 26 40 47 51 55 11 B C D 6 A 28 E 24 G 17 29
-	-> A 6 B C D E 11 G 17 19 24 
+	-> A 6 B C D E 11 G 17 19 24 26 28 29 
 Structure 6: 43 19 30 26 F B C D 6 A 39 G 17 48
-	-> A 6 B C D F G 17 19 
+	-> A 6 B C D F G 17 19 26 30 
 Structure 7: 58 129 133 134 135 155 143 144 40 51 55 1 C 7 6 A 28 E G 17
-	-> A 6 C E G 17 
+	-> A 6 C E G 17 28 
 Structure 8: 145 19 30 34 31 37 27 57 B C D 6 A 28 E 24 G 17 29
-	-> A 6 B C D E G 17 19 24 
+	-> A 6 B C D E G 17 19 24 27 28 29 30 31 34 
 Structure 9: 35 32 33 40 47 51 55 36 11 41 B 22 C D 6 A E 18 21 23
-	-> A 6 B C D E 11 18 21 22 23 
+	-> A 6 B C D E 11 18 21 22 23 32 33 35 36 
 Structure 10: 56 19 30 52 34 31 27 57 B C D 6 A 195 E 18 21 23
-	-> A 6 B C D E 18 19 21 23 
+	-> A 6 B C D E 18 19 21 23 27 30 31 34 
 Structure 11: 146 147 124 26 66 72 53 112 11 B 22 C D 6 A E 18 21 23
-	-> A 6 B C D E 11 18 21 22 23 
+	-> A 6 B C D E 11 18 21 22 23 26 
 Structure 12: 19 26 40 47 51 55 11 B 22 C D 6 A E G 17 25
-	-> A 6 B C D E 11 G 17 19 22 25 
+	-> A 6 B C D E 11 G 17 19 22 25 26 
 Structure 13: 56 19 26 40 61 73 117 B 22 C D 6 A 39 G 17 25
-	-> A 6 B C D G 17 19 22 25 
+	-> A 6 B C D G 17 19 22 25 26 
 Structure 14: 49 45 F 36 11 B C D 6 A E 18 G 25
-	-> A 6 B C D E 11 F G 18 25 
+	-> A 6 B C D E 11 F G 18 25 36 
 Structure 15: 58 19 30 52 34 31 37 66 72 41 B C D 6 A 28 E 24 G 17 48
-	-> A 6 B C D E G 17 19 24 
+	-> A 6 B C D E G 17 19 24 28 30 31 34 
 Structure 16: 35 32 33 F 65 36 11 B 22 C D 42 6 A E 18 21 23 148
-	-> A 6 B C D E 11 F 18 21 22 23 
+	-> A 6 B C D E 11 F 18 21 22 23 32 33 35 36 
 Structure 17: 43 56 19 26 40 47 51 55 B C D 6 A 39 G 48
-	-> A 6 B C D G 19 
+	-> A 6 B C D G 19 26 
 Structure 18: 43 19 30 45 54 F B C D 42 6 A 28 39 38 29 67
-	-> A 6 B C D F 19 
+	-> A 6 B C D F 19 28 29 30 
 Structure 19: 35 32 33 F 53 36 11 B C D 6 A 76 39 G 17 48
-	-> A 6 B C D 11 F G 17 
+	-> A 6 B C D 11 F G 17 32 33 35 36 
 Structure 20: 84 62 26 F 36 11 B C D 6 A E 18 38 48
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 26 36 
 Structure 21: 43 19 26 40 61 77 B 22 C D 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 22 23 
+	-> A 6 B C D E 18 19 21 22 23 26 
 Structure 22: 35 32 33 F 53 36 11 B 22 C D 6 A E 24 G 17 25
-	-> A 6 B C D E 11 F G 17 22 24 25 
+	-> A 6 B C D E 11 F G 17 22 24 25 32 33 35 36 
 Structure 23: 49 45 F 63 36 11 B 22 C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 22 
+	-> A 6 B C D E 11 F 18 22 29 36 
 Structure 24: 58 19 26 40 47 51 71 41 B C D 6 A 39 G 17 25
-	-> A 6 B C D G 17 19 25 
+	-> A 6 B C D G 17 19 25 26 
 Structure 25: 56 19 30 34 31 66 72 57 B C D 6 A 28 39 G 17 25
-	-> A 6 B C D G 17 19 25 
+	-> A 6 B C D G 17 19 25 28 30 31 34 
 Structure 26: 44 46 F 11 41 B C D 6 A 39 G 17 25
 	-> A 6 B C D 11 F G 17 25 
 Structure 27: 19 26 40 47 51 55 11 B 22 C D 6 A E 18 21 23 148
-	-> A 6 B C D E 11 18 19 21 22 23 
+	-> A 6 B C D E 11 18 19 21 22 23 26 
 Structure 28: 105 101 79 106 64 F 11 B C D 42 6 A 76 39 G 17 25
 	-> A 6 B C D 11 F G 17 25 
 Structure 29: 49 45 F 36 11 B 22 2 D 6 A 28 E 21 23
-	-> A 6 B D E 11 F 21 22 23 
+	-> A 6 B D E 11 F 21 22 23 28 36 
 Structure 30: 19 30 52 34 31 37 27 11 B C D 6 A E 24 G 17 25
-	-> A 6 B C D E 11 G 17 19 24 25 
+	-> A 6 B C D E 11 G 17 19 24 25 27 30 31 34 
 Structure 31: 44 118 F 11 B C D 6 A E 24 G 17 29
-	-> A 6 B C D E 11 F G 17 24 
+	-> A 6 B C D E 11 F G 17 24 29 
 Structure 32: 43 19 26 40 61 77 B C D 6 A E 18 G 17 25
-	-> A 6 B C D E G 17 18 19 25 
+	-> A 6 B C D E G 17 18 19 25 26 
 Structure 33: 35 32 33 F 119 11 B C D 6 A E 21 23
-	-> A 6 B C D E 11 F 21 23 
+	-> A 6 B C D E 11 F 21 23 32 33 35 
 Structure 34: 43 19 26 F B C D 6 A E 24 G 17 25
-	-> A 6 B C D E F G 17 19 24 25 
+	-> A 6 B C D E F G 17 19 24 25 26 
 Structure 35: 156 59 26 F 11 41 B C D 42 6 A 76 39 G 17 25
-	-> A 6 B C D 11 F G 17 25 
+	-> A 6 B C D 11 F G 17 25 26 
 Structure 36: 59 69 83 70 27 11 B 22 C 78 80 42 6 A E 24 G 17
-	-> A 6 B C E 11 G 17 22 24 
+	-> A 6 B C E 11 G 17 22 24 27 
 Structure 37: 43 19 26 40 47 51 71 B C D 42 6 A E 18 21 23 67
-	-> A 6 B C D E 18 19 21 23 
+	-> A 6 B C D E 18 19 21 23 26 
 Structure 38: 49 46 F 36 11 B C D 6 A E 18 G 17
-	-> A 6 B C D E 11 F G 17 18 
+	-> A 6 B C D E 11 F G 17 18 36 
 Structure 39: 43 19 30 34 31 37 27 B 22 C 78 80 6 A 39 G 17
-	-> A 6 B C G 17 19 22 
+	-> A 6 B C G 17 19 22 27 30 31 34 
 Structure 40: 59 62 26 F 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 26 
 Structure 41: 43 19 30 52 34 31 37 27 B C D 6 A E 18 38 29 67
-	-> A 6 B C D E 18 19 
+	-> A 6 B C D E 18 19 27 29 30 31 34 
 Structure 42: 58 19 64 54 F 41 B C D 6 A 39 G 17 48
 	-> A 6 B C D F G 17 19 
 Structure 43: 19 26 40 61 11 B C 7 6 A E 18 21 23 148
-	-> A 6 B C E 11 18 19 21 23 
+	-> A 6 B C E 11 18 19 21 23 26 
 Structure 44: 43 19 30 52 34 31 37 27 B C D 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 23 
+	-> A 6 B C D E 18 19 21 23 27 30 31 34 
 Structure 45: 84 94 69 107 70 27 36 11 41 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 18 21 23 
+	-> A 6 B C D E 11 18 21 23 27 36 
 Structure 46: 106 45 F 11 41 B C D 6 A E 24 G 68 48
 	-> A 6 B C D E 11 F G 24 
 Structure 47: 99 19 30 34 31 66 72 11 B C 78 80 42 6 A E 18 38 29
-	-> A 6 B C E 11 18 19 
+	-> A 6 B C E 11 18 19 29 30 31 34 
 Structure 48: 30 52 34 31 37 27 36 11 B C D 6 A 28 E 24 G 17
-	-> A 6 B C D E 11 G 17 24 
+	-> A 6 B C D E 11 G 17 24 27 28 30 31 34 36 
 Structure 49: 35 32 33 F 36 11 B 22 2 D 6 A E 18 21 23
-	-> A 6 B D E 11 F 18 21 22 23 
+	-> A 6 B D E 11 F 18 21 22 23 32 33 35 36 
 Structure 50: 35 32 33 196 F 53 112 11 B C D 42 6 A E 24 G 17 29
-	-> A 6 B C D E 11 F G 17 24 
+	-> A 6 B C D E 11 F G 17 24 29 32 33 35 
 Structure 51: 84 94 26 F 11 B 22 C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 22 
+	-> A 6 B C D E 11 F 18 22 26 29 
 Structure 52: 43 19 30 34 31 37 27 B C D 6 A E 18 38 29
-	-> A 6 B C D E 18 19 
+	-> A 6 B C D E 18 19 27 29 30 31 34 
 Structure 53: 35 32 33 F 36 11 B C D 6 A E 24 G 17 25
-	-> A 6 B C D E 11 F G 17 24 25 
+	-> A 6 B C D E 11 F G 17 24 25 32 33 35 36 
 Structure 54: 136 106 45 54 F 11 B C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 23 
 Structure 55: 19 26 40 61 73 117 11 B 22 C D 6 A E 24 G 17 25
-	-> A 6 B C D E 11 G 17 19 22 24 25 
+	-> A 6 B C D E 11 G 17 19 22 24 25 26 
 Structure 56: 35 32 33 F 53 11 B C D 42 6 A E 18 G 17 48
-	-> A 6 B C D E 11 F G 17 18 
+	-> A 6 B C D E 11 F G 17 18 32 33 35 
 Structure 57: 101 19 26 40 47 51 55 11 B 22 C D 6 A 28 39 G 17 48
-	-> A 6 B C D 11 G 17 19 22 
+	-> A 6 B C D 11 G 17 19 22 26 28 
 Structure 58: 35 32 33 95 102 103 157 11 B C D 42 6 A E 18 38 29
-	-> A 6 B C D E 11 18 
+	-> A 6 B C D E 11 18 29 32 33 35 
 Structure 59: 43 19 26 40 61 74 71 B 22 2 D 6 A E 18 21 23
-	-> A 6 B D E 18 19 21 22 23 
+	-> A 6 B D E 18 19 21 22 23 26 
 Structure 60: 104 125 197 198 40 47 51 55 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 18 
+	-> A 6 B C D E 11 18 29 
 Structure 61: 58 129 19 30 52 34 31 37 27 72 41 B C D 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 23 
+	-> A 6 B C D E 18 19 21 23 27 30 31 34 
 Structure 62: 43 19 30 34 31 37 27 B 22 C D 6 A 28 39 38 29 67
-	-> A 6 B C D 19 22 
+	-> A 6 B C D 19 22 27 28 29 30 31 34 
 Structure 63: 44 60 46 F 11 B 170 22 C D 42 6 A E 18 38 120
 	-> A 6 B C D E 11 F 18 22 
 Structure 64: 35 32 33 F 53 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 32 33 35 
 Structure 65: 136 26 40 47 51 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 18 21 23 
+	-> A 6 B C D E 11 18 21 23 26 
 Structure 66: 44 46 F 11 B 22 C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 22 23 
 Structure 67: 35 32 33 F 53 11 B C D 6 A 39 G 17 25
-	-> A 6 B C D 11 F G 17 25 
+	-> A 6 B C D 11 F G 17 25 32 33 35 
 Structure 68: 43 19 26 40 47 51 55 B C D 6 A 28 39 21 23
-	-> A 6 B C D 19 21 23 
+	-> A 6 B C D 19 21 23 26 28 
 Structure 69: 44 45 54 F 11 B 22 C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 22 23 
 Structure 70: 35 32 33 F 36 11 B C D 6 A 39 G 17 29
-	-> A 6 B C D 11 F G 17 
+	-> A 6 B C D 11 F G 17 29 32 33 35 36 
 Structure 71: 35 32 33 F 119 199 11 B 22 C D 6 A 28 39 G 17 25
-	-> A 6 B C D 11 F G 17 22 25 
+	-> A 6 B C D 11 F G 17 22 25 28 32 33 35 
 Structure 72: 56 19 26 40 47 74 71 57 B C D 6 A E 21 23
-	-> A 6 B C D E 19 21 23 
+	-> A 6 B C D E 19 21 23 26 
 Structure 73: 19 30 26 F 57 B C D 6 A E 24 G 68 48
-	-> A 6 B C D E F G 19 24 
+	-> A 6 B C D E F G 19 24 26 30 
 Structure 74: 44 46 F 11 B 22 C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 22 23 
 Structure 75: 56 19 26 40 61 73 117 57 B 22 C D 6 A E 38 29
-	-> A 6 B C D E 19 22 
+	-> A 6 B C D E 19 22 26 29 
 Structure 76: 43 19 64 54 F B C D 6 A E 18 38 29
-	-> A 6 B C D E F 18 19 
+	-> A 6 B C D E F 18 19 29 
 Structure 77: 58 19 30 52 34 31 66 41 B C D 6 A E 24 G 17
-	-> A 6 B C D E G 17 19 24 
+	-> A 6 B C D E G 17 19 24 30 31 34 
 Structure 78: 58 19 26 40 61 73 41 B C D 6 A 28 E 39 21 23
-	-> A 6 B C D E 19 21 23 
+	-> A 6 B C D E 19 21 23 26 28 
 Structure 79: 200 19 26 40 61 73 77 11 41 B C D 6 A E 18 G 17
-	-> A 6 B C D E 11 G 17 18 19 
+	-> A 6 B C D E 11 G 17 18 19 26 
 Structure 80: 84 94 69 83 70 27 11 B 22 2 D 6 A 28 E 24 G 25
-	-> A 6 B D E 11 G 22 24 25 
+	-> A 6 B D E 11 G 22 24 25 27 28 
 Structure 81: 35 32 33 40 47 51 36 11 B 22 C D 6 A 28 E 24 G 17 25
-	-> A 6 B C D E 11 G 17 22 24 25 
+	-> A 6 B C D E 11 G 17 22 24 25 28 32 33 35 36 
 Structure 82: 35 32 33 F 53 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 32 33 35 
 Structure 83: 43 19 26 40 61 77 B C D 6 A E 24 G 17 25
-	-> A 6 B C D E G 17 19 24 25 
+	-> A 6 B C D E G 17 19 24 25 26 
 Structure 84: 44 45 F 11 B C D 88 110 A 89 85 86 201
 	-> A B C D 11 F 
 Structure 85: 35 32 33 F 36 11 B C D 6 A 76 39 G 17 48
-	-> A 6 B C D 11 F G 17 
+	-> A 6 B C D 11 F G 17 32 33 35 36 
 Structure 86: 35 32 33 144 40 47 51 55 11 B C D 6 A E 24 G 17 25
-	-> A 6 B C D E 11 G 17 24 25 
+	-> A 6 B C D E 11 G 17 24 25 32 33 35 
 Structure 87: 49 171 40 61 73 117 11 B C D 6 A E 18 21 23
 	-> A 6 B C D E 11 18 21 23 
 Structure 88: 43 19 26 40 61 77 57 B C D 6 A 28 E G 17 25
-	-> A 6 B C D E G 17 19 25 
+	-> A 6 B C D E G 17 19 25 26 28 
 Structure 89: 49 202 46 F 36 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 36 
 Structure 90: 35 32 33 F 36 11 41 B C D 6 A E 21 23
-	-> A 6 B C D E 11 F 21 23 
+	-> A 6 B C D E 11 F 21 23 32 33 35 36 
 Structure 91: 49 45 54 F 36 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 36 
 Structure 92: 58 129 133 134 135 143 144 40 61 73 77 1 C D 6 A E 96 G 17 25
 	-> A 6 C D E G 17 25 
 Structure 93: 59 62 26 F 11 B C D 88 A 89 85 86 126 90
-	-> A B C D 11 F 
+	-> A B C D 11 F 26 
 Structure 94: 43 19 64 F B C D 6 A E 18 21 158
 	-> A 6 B C D E F 18 19 21 
 Structure 95: 19 26 40 47 51 55 11 B C D 6 A 76 39 38 29
-	-> A 6 B C D 11 19 
+	-> A 6 B C D 11 19 26 29 
 Structure 96: 35 32 33 F 53 11 B C D 88 110 A 89 85 86 90
-	-> A B C D 11 F 
+	-> A B C D 11 F 32 33 35 
 Structure 97: 44 45 54 F 11 B 22 172 C D 6 A E 159 21 23
 	-> A 6 B C D E 11 F 21 22 23 
 Structure 98: 44 45 54 F 11 B C D 6 A E 24 G 17 25 75
@@ -198,1309 +198,1309 @@ Structure 98: 44 45 54 F 11 B C D 6 A E 24 G 17 25 75
 Structure 99: 44 60 46 91 F 11 B 22 C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 22 23 
 Structure 100: 44 45 54 F 11 B C D 42 6 A E 18 G 17 29
-	-> A 6 B C D E 11 F G 17 18 
+	-> A 6 B C D E 11 F G 17 18 29 
 Structure 101: 19 30 52 34 31 37 27 41 B C D 42 6 A E 18 130 23
-	-> A 6 B C D E 18 19 23 
+	-> A 6 B C D E 18 19 23 27 30 31 34 
 Structure 102: 35 32 33 F 65 11 41 B 22 C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 22 
+	-> A 6 B C D E 11 F 18 22 29 32 33 35 
 Structure 103: 58 129 133 134 135 F 203 1 C D 6 A E 18 38 87 108 160
 	-> A 6 C D E F 18 
 Structure 104: 81 44 45 54 F 11 41 B C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 23 
 Structure 105: 62 26 F 53 11 B C D 42 6 A 28 39 G 17 48
-	-> A 6 B C D 11 F G 17 
+	-> A 6 B C D 11 F G 17 26 28 
 Structure 106: 56 19 64 54 F 57 B C D 6 A E 18 G 17 29
-	-> A 6 B C D E F G 17 18 19 
+	-> A 6 B C D E F G 17 18 19 29 
 Structure 107: 58 19 26 40 47 74 71 41 B 22 C D 6 A E 18 38 29
-	-> A 6 B C D E 18 19 22 
+	-> A 6 B C D E 18 19 22 26 29 
 Structure 108: 49 45 54 F 36 11 B 22 C D 6 A E 21 23
-	-> A 6 B C D E 11 F 21 22 23 
+	-> A 6 B C D E 11 F 21 22 23 36 
 Structure 109: 35 32 33 F 53 11 B C D 42 6 A 28 E 24 G 17
-	-> A 6 B C D E 11 F G 17 24 
+	-> A 6 B C D E 11 F G 17 24 28 32 33 35 
 Structure 110: 109 97 26 98 115 92 93 204 111 1 22 C D 6 A E 24 G 17
-	-> A 6 C D E G 17 22 24 
+	-> A 6 C D E G 17 22 24 26 
 Structure 111: 99 79 106 26 40 47 51 55 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 18 21 23 
+	-> A 6 B C D E 11 18 21 23 26 
 Structure 112: 19 26 40 61 73 77 11 B C D 6 A E 18 G 17 25
-	-> A 6 B C D E 11 G 17 18 19 25 
+	-> A 6 B C D E 11 G 17 18 19 25 26 
 Structure 113: 43 19 30 52 34 31 173 66 72 B C D 6 A E 18 21 23 161
-	-> A 6 B C D E 18 19 21 23 
+	-> A 6 B C D E 18 19 21 23 30 31 34 
 Structure 114: 19 30 26 F 162 11 41 B 22 C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 19 21 22 23 
+	-> A 6 B C D E 11 F 18 19 21 22 23 26 30 
 Structure 115: 44 46 F 11 B C D 6 A E 24 G 17 137
 	-> A 6 B C D E 11 F G 17 24 
 Structure 116: 32 33 F 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 32 33 
 Structure 117: 44 60 46 F 11 B C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 23 
 Structure 118: 81 44 45 F 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 
 Structure 119: 49 45 54 F 36 11 B C D 6 A 28 E 39 G 17
-	-> A 6 B C D E 11 F G 17 
+	-> A 6 B C D E 11 F G 17 28 36 
 Structure 120: 44 60 46 F 11 B 22 C D 6 A E 18 G 17 48
 	-> A 6 B C D E 11 F G 17 18 22 
 Structure 121: 58 19 30 34 31 37 27 41 B C D 6 A E 18 G 17 25
-	-> A 6 B C D E G 17 18 19 25 
+	-> A 6 B C D E G 17 18 19 25 27 30 31 34 
 Structure 122: 56 19 30 34 31 37 27 57 B 22 C D 6 A 28 E G 17 25
-	-> A 6 B C D E G 17 19 22 25 
+	-> A 6 B C D E G 17 19 22 25 27 28 30 31 34 
 Structure 123: 35 32 33 F 65 36 11 B C D 6 A 28 39 G 17 25
-	-> A 6 B C D 11 F G 17 25 
+	-> A 6 B C D 11 F G 17 25 28 32 33 35 36 
 Structure 124: 43 19 30 34 31 37 27 B C D 6 A E 38 29
-	-> A 6 B C D E 19 
+	-> A 6 B C D E 19 27 29 30 31 34 
 Structure 125: 44 46 F 11 B C D 6 A E 21 23
 	-> A 6 B C D E 11 F 21 23 
 Structure 126: 149 19 26 40 47 51 55 11 B C D 6 A 28 E 150 121
-	-> A 6 B C D E 11 19 
+	-> A 6 B C D E 11 19 26 28 
 Structure 127: 49 46 54 F 36 11 B 22 C D 6 A 28 39 38 87 108 29
-	-> A 6 B C D 11 F 22 
+	-> A 6 B C D 11 F 22 28 29 36 
 Structure 128: 59 62 69 107 138 70 27 11 B 22 C D 6 A E 38 29
-	-> A 6 B C D E 11 22 
+	-> A 6 B C D E 11 22 27 29 
 Structure 129: 35 32 33 95 102 103 113 11 B C D 42 6 A E 18 21 23
-	-> A 6 B C D E 11 18 21 23 
+	-> A 6 B C D E 11 18 21 23 32 33 35 
 Structure 130: 44 45 54 F 11 B 22 2 D 6 A E G 17 48
 	-> A 6 B D E 11 F G 17 22 
 Structure 131: 59 62 26 F 11 B 22 C D 6 A E 18 G 17 25
-	-> A 6 B C D E 11 F G 17 18 22 25 
+	-> A 6 B C D E 11 F G 17 18 22 25 26 
 Structure 132: 35 32 33 95 102 205 103 113 11 41 B C D 6 A E 21 23
-	-> A 6 B C D E 11 21 23 
+	-> A 6 B C D E 11 21 23 32 33 35 
 Structure 133: 58 19 26 40 47 74 71 11 B C D 42 6 A E 18 38 29
-	-> A 6 B C D E 11 18 19 
+	-> A 6 B C D E 11 18 19 26 29 
 Structure 134: 58 19 30 52 34 31 37 27 41 B C D 6 A 28 39 G 17
-	-> A 6 B C D G 17 19 
+	-> A 6 B C D G 17 19 27 28 30 31 34 
 Structure 135: 35 32 33 40 47 51 55 36 11 41 B C D 6 A 28 E G 17 25
-	-> A 6 B C D E 11 G 17 25 
+	-> A 6 B C D E 11 G 17 25 28 32 33 35 36 
 Structure 136: 43 19 30 34 31 37 27 B C D 6 A 39 G 17 25
-	-> A 6 B C D G 17 19 25 
+	-> A 6 B C D G 17 19 25 27 30 31 34 
 Structure 137: 44 60 46 F 11 B 22 C D 6 A 28 39 G 68 48
-	-> A 6 B C D 11 F G 22 
+	-> A 6 B C D 11 F G 22 28 
 Structure 138: 106 46 F 11 B C 7 42 6 A 28 E 24 G 17
-	-> A 6 B C E 11 F G 17 24 
+	-> A 6 B C E 11 F G 17 24 28 
 Structure 139: 43 131 19 30 52 34 31 37 27 B C D 6 A E 24 G 17
-	-> A 6 B C D E G 17 19 24 
+	-> A 6 B C D E G 17 19 24 27 30 31 34 
 Structure 140: 58 19 30 52 34 31 66 27 41 B C D 6 A 28 39 15 21 121
-	-> A 6 B C D 19 21 
+	-> A 6 B C D 19 21 27 28 30 31 34 
 Structure 141: 99 79 19 26 F 11 B C D 6 A 76 39 G 17 48
-	-> A 6 B C D 11 F G 17 19 
+	-> A 6 B C D 11 F G 17 19 26 
 Structure 142: 19 30 34 31 37 27 57 B C D 6 A 28 E 96 G 17
-	-> A 6 B C D E G 17 19 
+	-> A 6 B C D E G 17 19 27 28 30 31 34 
 Structure 143: 174 92 93 122 111 1 C D 6 A E 18 38 29
-	-> A 6 C D E 18 
+	-> A 6 C D E 18 29 
 Structure 144: 59 26 F 11 B 22 C D 6 A E 96 G 17 25
-	-> A 6 B C D E 11 F G 17 22 25 
+	-> A 6 B C D E 11 F G 17 22 25 26 
 Structure 145: 58 19 30 34 31 151 37 27 41 B 22 C D 6 A 39 G 17 48
-	-> A 6 B C D G 17 19 22 
+	-> A 6 B C D G 17 19 22 27 30 31 34 
 Structure 146: 44 45 54 F 11 B C 7 42 6 A E 24 15 206
 	-> A 6 B C E 11 F 24 
 Structure 147: 44 60 46 F 11 41 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 
 Structure 148: 49 45 F 112 11 B 22 C D 42 6 A E G 29
-	-> A 6 B C D E 11 F G 22 
+	-> A 6 B C D E 11 F G 22 29 
 Structure 149: 44 45 54 F 63 11 41 B C D 6 A 28 E 24 G 17 48
-	-> A 6 B C D E 11 F G 17 24 
+	-> A 6 B C D E 11 F G 17 24 28 
 Structure 150: 35 32 33 F 65 11 B C D 6 A 28 E 24 G 17 48
-	-> A 6 B C D E 11 F G 17 24 
+	-> A 6 B C D E 11 F G 17 24 28 32 33 35 
 Structure 151: 35 32 33 F 53 114 11 B C D 6 A E 21 23
-	-> A 6 B C D E 11 F 21 23 
+	-> A 6 B C D E 11 F 21 23 32 33 35 
 Structure 152: 35 32 33 F 53 11 B C D 42 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 32 33 35 
 Structure 153: 43 19 45 F B C D 6 A 39 38 29
-	-> A 6 B C D F 19 
+	-> A 6 B C D F 19 29 
 Structure 154: 44 45 F 11 B C 10 78 80 6 A 28 E G 17 25
-	-> A 6 B C E 11 F G 17 25 
+	-> A 6 B C E 11 F G 17 25 28 
 Structure 155: 49 45 F 36 11 B C D 42 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 36 
 Structure 156: 49 46 F 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 
 Structure 157: 44 60 46 F 63 11 41 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 
 Structure 158: 56 19 26 40 47 51 55 57 B 22 C D 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 22 23 
+	-> A 6 B C D E 18 19 21 22 23 26 
 Structure 159: 35 32 33 F 65 36 11 B 22 C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 22 23 
+	-> A 6 B C D E 11 F 18 21 22 23 32 33 35 36 
 Structure 160: 43 19 26 40 47 74 71 B 22 C D 42 6 A E 18 G 17 25
-	-> A 6 B C D E G 17 18 19 22 25 
+	-> A 6 B C D E G 17 18 19 22 25 26 
 Structure 161: 19 207 45 54 F 11 B 22 C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 19 21 22 23 
 Structure 162: 19 30 34 31 37 27 11 B 22 C D 6 A E 18 G 17 25
-	-> A 6 B C D E 11 G 17 18 19 22 25 
+	-> A 6 B C D E 11 G 17 18 19 22 25 27 30 31 34 
 Structure 163: 44 45 F 11 B C D 6 A 28 39 G 17 48
-	-> A 6 B C D 11 F G 17 
+	-> A 6 B C D 11 F G 17 28 
 Structure 164: 35 32 33 95 102 103 113 11 41 B C D 6 A 28 E 24 G 17 25
-	-> A 6 B C D E 11 G 17 24 25 
+	-> A 6 B C D E 11 G 17 24 25 28 32 33 35 
 Structure 165: 49 46 F 11 B C 78 80 42 6 A 28 E 24 G 17 25
-	-> A 6 B C E 11 F G 17 24 25 
+	-> A 6 B C E 11 F G 17 24 25 28 
 Structure 166: 43 19 30 34 31 66 B C D 6 A E 96 G 17 75
-	-> A 6 B C D E G 17 19 
+	-> A 6 B C D E G 17 19 30 31 34 
 Structure 167: 19 30 34 31 37 27 11 B 22 C D 42 6 A E 18 21 23
-	-> A 6 B C D E 11 18 19 21 22 23 
+	-> A 6 B C D E 11 18 19 21 22 23 27 30 31 34 
 Structure 168: 56 19 64 91 F 57 B C D 6 A E 18 G 17 25
 	-> A 6 B C D E F G 17 18 19 25 
 Structure 169: 56 19 30 52 34 31 37 27 57 B 22 C D 6 A E 24 G 17 48
-	-> A 6 B C D E G 17 19 22 24 
+	-> A 6 B C D E G 17 19 22 24 27 30 31 34 
 Structure 170: 175 19 26 40 47 51 77 208 57 B C D 6 A 28 E 24 G 17 48
-	-> A 6 B C D E G 17 19 24 
+	-> A 6 B C D E G 17 19 24 26 28 
 Structure 171: 58 19 30 52 34 31 37 27 41 B C D 6 A E G 17
-	-> A 6 B C D E G 17 19 
+	-> A 6 B C D E G 17 19 27 30 31 34 
 Structure 172: 81 44 45 54 F 11 B C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 23 
 Structure 173: 56 19 30 34 31 37 27 209 B C D 42 6 A E 18 G 17 25
-	-> A 6 B C D E G 17 18 19 25 
+	-> A 6 B C D E G 17 18 19 25 27 30 31 34 
 Structure 174: 35 32 33 F 112 11 B C D 6 A 28 E G 17 48
-	-> A 6 B C D E 11 F G 17 
+	-> A 6 B C D E 11 F G 17 28 32 33 35 
 Structure 175: 35 32 33 40 47 51 55 36 11 B C D 6 A 28 E 24 G 17 25
-	-> A 6 B C D E 11 G 17 24 25 
+	-> A 6 B C D E 11 G 17 24 25 28 32 33 35 36 
 Structure 176: 49 45 54 F 100 11 B C D 6 A 28 39 G 17 25
-	-> A 6 B C D 11 F G 17 25 
+	-> A 6 B C D 11 F G 17 25 28 
 Structure 177: 58 19 30 52 34 31 37 27 41 B C D 6 A 28 E 24 G 17 25
-	-> A 6 B C D E G 17 19 24 25 
+	-> A 6 B C D E G 17 19 24 25 27 28 30 31 34 
 Structure 178: 35 32 33 40 47 51 55 36 11 41 B 22 2 D 6 A E G 17
-	-> A 6 B D E 11 G 17 22 
+	-> A 6 B D E 11 G 17 22 32 33 35 36 
 Structure 179: 44 46 F 11 41 B 22 C D 6 A 28 E G 17 25
-	-> A 6 B C D E 11 F G 17 22 25 
+	-> A 6 B C D E 11 F G 17 22 25 28 
 Structure 180: 35 32 33 F 53 36 11 B C D 42 6 A E G 17 25
-	-> A 6 B C D E 11 F G 17 25 
+	-> A 6 B C D E 11 F G 17 25 32 33 35 36 
 Structure 181: 35 32 33 F 210 36 11 B C D 42 6 A E 18 G 17 29
-	-> A 6 B C D E 11 F G 17 18 
+	-> A 6 B C D E 11 F G 17 18 29 32 33 35 36 
 Structure 182: 19 30 34 31 37 27 41 B C D 6 A 28 E 24 G 17
-	-> A 6 B C D E G 17 19 24 
+	-> A 6 B C D E G 17 19 24 27 28 30 31 34 
 Structure 183: 44 46 54 F 11 B C D 6 A E 24 G 17 25
 	-> A 6 B C D E 11 F G 17 24 25 
 Structure 184: 44 45 F 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 
 Structure 185: 19 26 40 47 51 55 41 B C D 6 A 28 E 24 G 17
-	-> A 6 B C D E G 17 19 24 
+	-> A 6 B C D E G 17 19 24 26 28 
 Structure 186: 49 45 F 11 B C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 23 
 Structure 187: 99 136 19 30 34 31 37 27 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 18 19 21 23 
+	-> A 6 B C D E 11 18 19 21 23 27 30 31 34 
 Structure 188: 35 32 33 F 63 53 11 B C D 6 A 39 15 21 121
-	-> A 6 B C D 11 F 21 
+	-> A 6 B C D 11 F 21 32 33 35 
 Structure 189: 49 46 54 F 36 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 36 
 Structure 190: 101 19 26 40 47 51 55 11 41 B C D 6 A 28 E 24 G 17 25
-	-> A 6 B C D E 11 G 17 19 24 25 
+	-> A 6 B C D E 11 G 17 19 24 25 26 28 
 Structure 191: 35 32 33 95 102 103 113 11 B C D 6 A E 24 G 17
-	-> A 6 B C D E 11 G 17 24 
+	-> A 6 B C D E 11 G 17 24 32 33 35 
 Structure 192: 35 32 33 F 53 11 41 B C D 42 6 A 39 G 68 25
-	-> A 6 B C D 11 F G 25 
+	-> A 6 B C D 11 F G 25 32 33 35 
 Structure 193: 81 44 60 46 F 11 B 22 C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 22 23 
 Structure 194: 35 32 33 F 63 53 114 11 B C D 6 A 28 E 21 23
-	-> A 6 B C D E 11 F 21 23 
+	-> A 6 B C D E 11 F 21 23 28 32 33 35 
 Structure 195: 43 19 26 40 47 51 55 B C D 6 A E 18 G 17
-	-> A 6 B C D E G 17 18 19 
+	-> A 6 B C D E G 17 18 19 26 
 Structure 196: 35 32 33 F 53 11 B C D 42 6 A 28 39 G 17 48
-	-> A 6 B C D 11 F G 17 
+	-> A 6 B C D 11 F G 17 28 32 33 35 
 Structure 197: 56 19 26 40 61 176 57 B C D 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 23 
+	-> A 6 B C D E 18 19 21 23 26 
 Structure 198: 211 147 124 26 27 53 114 11 41 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 18 21 23 
+	-> A 6 B C D E 11 18 21 23 26 27 
 Structure 199: 43 19 26 40 47 51 55 B C 7 42 6 A 28 E 24 G 17 75
-	-> A 6 B C E G 17 19 24 
+	-> A 6 B C E G 17 19 24 26 28 
 Structure 200: 35 32 33 F 36 11 B C D 6 A E 18 38 87 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 32 33 35 36 
 Structure 201: 49 127 31 37 27 72 65 36 11 B C D 6 A 39 G 17 48
-	-> A 6 B C D 11 G 17 
+	-> A 6 B C D 11 G 17 27 31 36 
 Structure 202: 44 45 54 F 11 B C D 6 A E 24 G 17 48
 	-> A 6 B C D E 11 F G 17 24 
 Structure 203: 97 123 212 213 98 92 93 214 111 1 C D 6 A 28 39 G 17
-	-> A 6 C D G 17 
+	-> A 6 C D G 17 28 
 Structure 204: 43 19 26 40 47 51 55 B C D 42 6 A E 18 38 29
-	-> A 6 B C D E 18 19 
+	-> A 6 B C D E 18 19 26 29 
 Structure 205: 43 19 26 40 47 51 55 B 22 C D 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 22 23 
+	-> A 6 B C D E 18 19 21 22 23 26 
 Structure 206: 81 44 60 46 F 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 
 Structure 207: 59 62 26 F 63 11 B C D 42 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 26 29 
 Structure 208: 19 64 54 F 41 B C D 42 6 163 A 28 E 24 G 68 25
-	-> A 6 B C D E F G 19 24 25 
+	-> A 6 B C D E F G 19 24 25 28 
 Structure 209: 19 64 54 F 11 B 22 C D 6 A E 18 G 17 25
 	-> A 6 B C D E 11 F G 17 18 19 22 25 
 Structure 210: 35 32 33 F 63 119 164 11 B C D 6 A E 21 23
-	-> A 6 B C D E 11 F 21 23 
+	-> A 6 B C D E 11 F 21 23 32 33 35 
 Structure 211: 58 19 30 34 31 37 27 41 B 22 C D 6 A 76 39 G 17 29
-	-> A 6 B C D G 17 19 22 
+	-> A 6 B C D G 17 19 22 27 29 30 31 34 
 Structure 212: 35 32 33 F 53 36 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 32 33 35 36 
 Structure 213: 35 32 33 F 36 11 B 22 2 D 42 6 A E 18 21 23
-	-> A 6 B D E 11 F 18 21 22 23 
+	-> A 6 B D E 11 F 18 21 22 23 32 33 35 36 
 Structure 214: 49 45 54 F 11 B 22 2 D 6 A E G 17 25
 	-> A 6 B D E 11 F G 17 22 25 
 Structure 215: 56 19 30 52 34 31 37 27 57 B C D 42 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 23 
+	-> A 6 B C D E 18 19 21 23 27 30 31 34 
 Structure 216: 35 32 33 F 65 36 11 B C D 6 A 39 G 17 25
-	-> A 6 B C D 11 F G 17 25 
+	-> A 6 B C D 11 F G 17 25 32 33 35 36 
 Structure 217: 19 26 40 47 51 55 11 B 22 C D 6 A E 24 G 25
-	-> A 6 B C D E 11 G 19 22 24 25 
+	-> A 6 B C D E 11 G 19 22 24 25 26 
 Structure 218: 32 33 118 F 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 32 33 
 Structure 219: 177 178 118 F 36 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 36 
 Structure 220: 56 19 26 40 47 74 71 57 B C D 42 6 A E G 17 48
-	-> A 6 B C D E G 17 19 
+	-> A 6 B C D E G 17 19 26 
 Structure 221: 43 19 26 40 47 51 55 B C D 6 A 28 39 G 17 25
-	-> A 6 B C D G 17 19 25 
+	-> A 6 B C D G 17 19 25 26 28 
 Structure 222: 56 19 26 40 61 73 71 57 B C D 6 A E 18 G 17 29
-	-> A 6 B C D E G 17 18 19 
+	-> A 6 B C D E G 17 18 19 26 29 
 Structure 223: 44 60 46 F 11 B C D 6 A E 18 G 68 48
 	-> A 6 B C D E 11 F G 18 
 Structure 224: 43 19 26 40 47 51 71 B 22 139 2 78 80 6 A 28 39 G 17 25
-	-> A 6 B G 17 19 22 25 
+	-> A 6 B G 17 19 22 25 26 28 
 Structure 225: 215 19 26 F 63 41 B 22 C D 42 6 A E 18 21 23
-	-> A 6 B C D E F 18 19 21 22 23 
+	-> A 6 B C D E F 18 19 21 22 23 26 
 Structure 226: 58 19 45 54 F 41 B C D 42 6 A 28 39 G 17 25
-	-> A 6 B C D F G 17 19 25 
+	-> A 6 B C D F G 17 19 25 28 
 Structure 227: 35 32 33 F 65 36 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 32 33 35 36 
 Structure 228: 35 32 33 95 40 47 51 55 11 B C D 6 A 28 39 G 17 75
-	-> A 6 B C D 11 G 17 
+	-> A 6 B C D 11 G 17 28 32 33 35 
 Structure 229: 58 19 26 40 47 51 55 41 B 22 C D 6 A 28 39 21 23
-	-> A 6 B C D 19 21 22 23 
+	-> A 6 B C D 19 21 22 23 26 28 
 Structure 230: 43 19 30 34 31 37 27 B C D 6 A E 96 G 17 25
-	-> A 6 B C D E G 17 19 25 
+	-> A 6 B C D E G 17 19 25 27 30 31 34 
 Structure 231: 43 131 19 64 54 F 63 B C 78 80 88 110 A 89 85 86 126 90
 	-> A B C F 19 
 Structure 232: 35 32 33 F 162 11 B 22 2 D 6 A E 18 38 29
-	-> A 6 B D E 11 F 18 22 
+	-> A 6 B D E 11 F 18 22 29 32 33 35 
 Structure 233: 58 19 26 40 47 51 55 41 B C D 6 A 28 E 24 G 17 48
-	-> A 6 B C D E G 17 19 24 
+	-> A 6 B C D E G 17 19 24 26 28 
 Structure 234: 35 32 33 F 53 11 B 22 C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 22 23 
+	-> A 6 B C D E 11 F 18 21 22 23 32 33 35 
 Structure 235: 49 46 F 11 41 B C D 6 A E 18 G 17 25
 	-> A 6 B C D E 11 F G 17 18 25 
 Structure 236: 49 46 F 36 11 41 B 22 C D 42 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 22 23 
+	-> A 6 B C D E 11 F 18 21 22 23 36 
 Structure 237: 44 60 46 F 11 B C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 23 
 Structure 238: 145 19 26 F 57 B C D 6 A 28 E 96 G 17 48
-	-> A 6 B C D E F G 17 19 
+	-> A 6 B C D E F G 17 19 26 28 
 Structure 239: 49 45 F 36 11 41 216 1 C D 6 A E 18 38 29
-	-> A 6 C D E 11 F 18 
+	-> A 6 C D E 11 F 18 29 36 
 Structure 240: 43 19 30 34 31 27 B C D 42 6 A E 18 G 17 25 67
-	-> A 6 B C D E G 17 18 19 25 
+	-> A 6 B C D E G 17 18 19 25 27 30 31 34 
 Structure 241: 19 26 40 47 51 55 41 B C D 6 A E 18 38 29
-	-> A 6 B C D E 18 19 
+	-> A 6 B C D E 18 19 26 29 
 Structure 242: 44 45 F 11 41 B C D 6 A E 24 G 17 48
 	-> A 6 B C D E 11 F G 17 24 
 Structure 243: 35 32 33 F 65 36 11 B C D 6 A E 21 23
-	-> A 6 B C D E 11 F 21 23 
+	-> A 6 B C D E 11 F 21 23 32 33 35 36 
 Structure 244: 97 123 26 98 217 92 93 140 152 1 C D 6 A E 18 21 23
-	-> A 6 C D E 18 21 23 
+	-> A 6 C D E 18 21 23 26 
 Structure 245: 109 97 26 98 115 92 93 122 111 1 C D 6 A 153 E 18 21 23
-	-> A 6 C D E 18 21 23 
+	-> A 6 C D E 18 21 23 26 
 Structure 246: 35 32 33 F 53 36 11 B C D 6 A 28 39 G 17 25
-	-> A 6 B C D 11 F G 17 25 
+	-> A 6 B C D 11 F G 17 25 28 32 33 35 36 
 Structure 247: 81 44 60 46 F 11 B C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 23 
 Structure 248: 58 19 30 52 34 31 37 27 41 B 22 C D 6 A E 18 38 29
-	-> A 6 B C D E 18 19 22 
+	-> A 6 B C D E 18 19 22 27 29 30 31 34 
 Structure 249: 94 69 83 70 27 53 11 B C D 42 6 A E 18 G 17 25
-	-> A 6 B C D E 11 G 17 18 25 
+	-> A 6 B C D E 11 G 17 18 25 27 
 Structure 250: 56 19 26 40 61 73 57 B 22 C D 6 A E 24 G 17 25
-	-> A 6 B C D E G 17 19 22 24 25 
+	-> A 6 B C D E G 17 19 22 24 25 26 
 Structure 251: 175 59 62 26 F 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 26 
 Structure 252: 35 32 33 F 53 11 B C D 42 6 A E 96 24 G 17
-	-> A 6 B C D E 11 F G 17 24 
+	-> A 6 B C D E 11 F G 17 24 32 33 35 
 Structure 253: 56 19 30 34 31 37 27 57 B 22 2 D 6 A E 18 38 29
-	-> A 6 B D E 18 19 22 
+	-> A 6 B D E 18 19 22 27 29 30 31 34 
 Structure 254: 19 45 F 11 B 22 C D 42 6 A 28 E 24 G 17 29
-	-> A 6 B C D E 11 F G 17 19 22 24 
+	-> A 6 B C D E 11 F G 17 19 22 24 28 29 
 Structure 255: 19 30 52 34 31 37 27 72 57 B C D 6 A 28 E 24 G 17 25
-	-> A 6 B C D E G 17 19 24 25 
+	-> A 6 B C D E G 17 19 24 25 27 28 30 31 34 
 Structure 256: 49 45 54 F 100 11 B C D 88 110 A 89 85 86 126 90
 	-> A B C D 11 F 
 Structure 257: 44 45 F 11 B C D 42 6 A E 18 G 17 25
 	-> A 6 B C D E 11 F G 17 18 25 
 Structure 258: 43 19 30 34 31 37 27 B 22 C D 6 A E 24 G 17 25
-	-> A 6 B C D E G 17 19 22 24 25 
+	-> A 6 B C D E G 17 19 22 24 25 27 30 31 34 
 Structure 259: 44 60 46 F 11 B C D 6 A 28 E G 68 48
-	-> A 6 B C D E 11 F G 
+	-> A 6 B C D E 11 F G 28 
 Structure 260: 59 69 83 70 27 11 B C D 6 A 28 E 24 G 17 25
-	-> A 6 B C D E 11 G 17 24 25 
+	-> A 6 B C D E 11 G 17 24 25 27 28 
 Structure 261: 44 45 F 11 B C D 6 A 28 E 24 G 17 25
-	-> A 6 B C D E 11 F G 17 24 25 
+	-> A 6 B C D E 11 F G 17 24 25 28 
 Structure 262: 104 59 62 26 F 11 B C D 6 A 76 39 G 17 25
-	-> A 6 B C D 11 F G 17 25 
+	-> A 6 B C D 11 F G 17 25 26 
 Structure 263: 35 32 33 F 11 B C D 6 A 28 E 21 23
-	-> A 6 B C D E 11 F 21 23 
+	-> A 6 B C D E 11 F 21 23 28 32 33 35 
 Structure 264: 35 32 33 F 53 112 11 B 22 C D 6 A 28 39 38 29
-	-> A 6 B C D 11 F 22 
+	-> A 6 B C D 11 F 22 28 29 32 33 35 
 Structure 265: 49 46 F 11 B C D 6 A E 24 G 17 25
 	-> A 6 B C D E 11 F G 17 24 25 
 Structure 266: 125 19 26 40 47 51 55 41 B 22 C D 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 22 23 
+	-> A 6 B C D E 18 19 21 22 23 26 
 Structure 267: 35 32 33 F 119 11 B 22 C D 88 A 89 85 86 90
-	-> A B C D 11 F 22 
+	-> A B C D 11 F 22 32 33 35 
 Structure 268: 49 46 F 36 11 41 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 36 
 Structure 269: 35 32 33 F 53 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 32 33 35 
 Structure 270: 44 60 46 F 11 B C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 23 
 Structure 271: 81 44 45 54 F 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 
 Structure 272: 44 60 46 F 11 B 22 C D 42 6 A E 24 G 17 48
 	-> A 6 B C D E 11 F G 17 22 24 
 Structure 273: 125 19 26 40 61 73 77 41 B C D 6 A E 18 38 29
-	-> A 6 B C D E 18 19 
+	-> A 6 B C D E 18 19 26 29 
 Structure 274: 49 46 F 11 B 22 C D 6 A E 39 G 17 25
 	-> A 6 B C D E 11 F G 17 22 25 
 Structure 275: 43 19 26 40 47 51 55 B 22 C D 42 6 A E G 17 25
-	-> A 6 B C D E G 17 19 22 25 
+	-> A 6 B C D E G 17 19 22 25 26 
 Structure 276: 35 32 33 40 47 74 71 100 11 B C D 6 A 28 E 24 G 17 25
-	-> A 6 B C D E 11 G 17 24 25 
+	-> A 6 B C D E 11 G 17 24 25 28 32 33 35 
 Structure 277: 59 62 69 107 138 70 27 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 18 
+	-> A 6 B C D E 11 18 27 29 
 Structure 278: 44 45 54 F 11 B C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 23 
 Structure 279: 19 26 40 47 51 55 11 B 22 C D 6 A E 18 21 23
-	-> A 6 B C D E 11 18 19 21 22 23 
+	-> A 6 B C D E 11 18 19 21 22 23 26 
 Structure 280: 19 30 127 31 37 27 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 18 19 21 23 
+	-> A 6 B C D E 11 18 19 21 23 27 30 31 
 Structure 281: 104 59 62 26 F 63 11 B C D 6 A 28 39 24 G 17 25
-	-> A 6 B C D 11 F G 17 24 25 
+	-> A 6 B C D 11 F G 17 24 25 26 28 
 Structure 282: 19 64 54 F 41 B C D 6 A E 18 21 23
 	-> A 6 B C D E F 18 19 21 23 
 Structure 283: 84 94 69 83 70 27 36 11 41 B C D 42 6 A 28 E 38 29
-	-> A 6 B C D E 11 
+	-> A 6 B C D E 11 27 28 29 36 
 Structure 284: 79 106 26 F 11 B C D 6 A E G 17 75
-	-> A 6 B C D E 11 F G 17 
+	-> A 6 B C D E 11 F G 17 26 
 Structure 285: 59 62 26 F 11 B 22 C D 6 A 28 39 150 23
-	-> A 6 B C D 11 F 22 23 
+	-> A 6 B C D 11 F 22 23 26 28 
 Structure 286: 30 34 31 37 27 11 B C D 42 6 A E 24 G 17
-	-> A 6 B C D E 11 G 17 24 
+	-> A 6 B C D E 11 G 17 24 27 30 31 34 
 Structure 287: 109 97 123 26 98 115 92 93 140 152 179 1 C D 6 A 28 39 G 17 48
-	-> A 6 C D G 17 
+	-> A 6 C D G 17 26 28 
 Structure 288: 49 45 54 F 11 B C D 42 6 A E 24 G 68 48
 	-> A 6 B C D E 11 F G 24 
 Structure 289: 49 46 F 36 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 36 
 Structure 290: 105 101 106 64 54 F 11 B C D 6 A 28 E 24 G 17 48
-	-> A 6 B C D E 11 F G 17 24 
+	-> A 6 B C D E 11 F G 17 24 28 
 Structure 291: 35 32 33 F 53 36 11 B C D 6 A E 24 G 17 25
-	-> A 6 B C D E 11 F G 17 24 25 
+	-> A 6 B C D E 11 F G 17 24 25 32 33 35 36 
 Structure 292: 19 26 F 11 B 22 2 D 6 A 39 G 17
-	-> A 6 B D 11 F G 17 19 22 
+	-> A 6 B D 11 F G 17 19 22 26 
 Structure 293: 56 19 26 40 61 117 57 B C D 6 A 28 E 24 G 17 137
-	-> A 6 B C D E G 17 19 24 
+	-> A 6 B C D E G 17 19 24 26 28 
 Structure 294: 43 19 30 34 31 151 66 B 22 C D 42 6 A 28 E 38 121
-	-> A 6 B C D E 19 22 
+	-> A 6 B C D E 19 22 28 30 31 34 
 Structure 295: 44 46 F 132 11 B C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 23 
 Structure 296: 49 46 F 36 11 B C D 6 A 28 E 24 G 17 25
-	-> A 6 B C D E 11 F G 17 24 25 
+	-> A 6 B C D E 11 F G 17 24 25 28 36 
 Structure 297: 145 19 26 40 61 73 41 B C D 6 A E 24 G 17 25
-	-> A 6 B C D E G 17 19 24 25 
+	-> A 6 B C D E G 17 19 24 25 26 
 Structure 298: 43 19 30 34 31 37 27 B C D 6 A 28 E 24 G 17 25
-	-> A 6 B C D E G 17 19 24 25 
+	-> A 6 B C D E G 17 19 24 25 27 28 30 31 34 
 Structure 299: 43 19 64 54 F B C D 6 A E 24 G 17 25 67
 	-> A 6 B C D E F G 17 19 24 25 
 Structure 300: 19 26 40 61 73 41 B C D 6 A E 96 G 17
-	-> A 6 B C D E G 17 19 
+	-> A 6 B C D E G 17 19 26 
 Structure 301: 58 19 26 40 47 74 71 41 B 22 C D 6 A E 24 21 121
-	-> A 6 B C D E 19 21 22 24 
+	-> A 6 B C D E 19 21 22 24 26 
 Structure 302: 35 32 33 F 63 65 11 B C D 6 A 28 E 24 G 17 25
-	-> A 6 B C D E 11 F G 17 24 25 
+	-> A 6 B C D E 11 F G 17 24 25 28 32 33 35 
 Structure 303: 44 45 54 F 11 B C D 6 A E G 17 25
 	-> A 6 B C D E 11 F G 17 25 
 Structure 304: 58 19 30 52 34 31 37 27 41 B C D 6 A 28 39 G 17 48
-	-> A 6 B C D G 17 19 
+	-> A 6 B C D G 17 19 27 28 30 31 34 
 Structure 305: 58 19 30 52 34 31 37 27 41 B C D 6 A 39 G 17 137
-	-> A 6 B C D G 17 19 
+	-> A 6 B C D G 17 19 27 30 31 34 
 Structure 306: 56 19 30 34 31 37 27 57 B C D 6 A 39 218 150 23
-	-> A 6 B C D 19 23 
+	-> A 6 B C D 19 23 27 30 31 34 
 Structure 307: 49 45 F 36 11 B 22 C D 6 A E 24 G 17 25
-	-> A 6 B C D E 11 F G 17 22 24 25 
+	-> A 6 B C D E 11 F G 17 22 24 25 36 
 Structure 308: 35 32 33 F 11 B C D 6 A 28 E 24 G 17
-	-> A 6 B C D E 11 F G 17 24 
+	-> A 6 B C D E 11 F G 17 24 28 32 33 35 
 Structure 309: 35 32 33 F 36 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 32 33 35 36 
 Structure 310: 59 62 26 F 11 B 22 C D 6 A 28 E 24 G 17 25
-	-> A 6 B C D E 11 F G 17 22 24 25 
+	-> A 6 B C D E 11 F G 17 22 24 25 26 28 
 Structure 311: 147 124 26 66 72 36 11 B C 78 80 6 A E 96 24 G 17 25
-	-> A 6 B C E 11 G 17 24 25 
+	-> A 6 B C E 11 G 17 24 25 26 36 
 Structure 312: 35 32 33 F 36 11 B 22 2 D 6 A 28 E 39 24 G 17 25
-	-> A 6 B D E 11 F G 17 22 24 25 
+	-> A 6 B D E 11 F G 17 22 24 25 28 32 33 35 36 
 Structure 313: 32 33 F 100 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 32 33 
 Structure 314: 58 19 26 40 61 73 117 41 B C D 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 23 
+	-> A 6 B C D E 18 19 21 23 26 
 Structure 315: 104 125 19 26 F 41 B 22 C D 6 A E 18 G 17 25
-	-> A 6 B C D E F G 17 18 19 22 25 
+	-> A 6 B C D E F G 17 18 19 22 25 26 
 Structure 316: 35 32 33 F 219 36 11 B C D 42 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 32 33 35 36 
 Structure 317: 43 19 46 54 F 63 B C D 6 A 28 E 24 G 17
-	-> A 6 B C D E F G 17 19 24 
+	-> A 6 B C D E F G 17 19 24 28 
 Structure 318: 35 32 33 F 63 53 36 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 32 33 35 36 
 Structure 319: 35 32 33 F 36 11 B C D 6 A E 24 G 17 25
-	-> A 6 B C D E 11 F G 17 24 25 
+	-> A 6 B C D E 11 F G 17 24 25 32 33 35 36 
 Structure 320: 49 45 54 F 36 11 B 22 C D 6 A E 18 G 17 25
-	-> A 6 B C D E 11 F G 17 18 22 25 
+	-> A 6 B C D E 11 F G 17 18 22 25 36 
 Structure 321: 43 19 30 52 34 31 37 27 B 22 C D 6 A 39 G 17 25
-	-> A 6 B C D G 17 19 22 25 
+	-> A 6 B C D G 17 19 22 25 27 30 31 34 
 Structure 322: 35 32 33 F 53 36 11 B C D 6 A E 21 23
-	-> A 6 B C D E 11 F 21 23 
+	-> A 6 B C D E 11 F 21 23 32 33 35 36 
 Structure 323: 145 19 26 40 47 51 55 57 B C D 6 A 28 E 24 G 25
-	-> A 6 B C D E G 19 24 25 
+	-> A 6 B C D E G 19 24 25 26 28 
 Structure 324: 43 19 30 34 31 37 27 B 22 C D 6 A 28 E 21 23
-	-> A 6 B C D E 19 21 22 23 
+	-> A 6 B C D E 19 21 22 23 27 28 30 31 34 
 Structure 325: 49 45 F 100 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 
 Structure 326: 97 220 26 98 92 93 122 111 1 C D 6 A 28 E 24 G 17 75
-	-> A 6 C D E G 17 24 
+	-> A 6 C D E G 17 24 26 28 
 Structure 327: 43 19 30 52 34 31 37 66 B 22 C D 6 A E 18 38 29
-	-> A 6 B C D E 18 19 22 
+	-> A 6 B C D E 18 19 22 29 30 31 34 
 Structure 328: 59 62 69 107 70 27 11 B C D 6 A E 18 G 17 25
-	-> A 6 B C D E 11 G 17 18 25 
+	-> A 6 B C D E 11 G 17 18 25 27 
 Structure 329: 104 125 19 64 34 31 37 27 41 B 22 C D 6 A E 38 120
-	-> A 6 B C D E 19 22 
+	-> A 6 B C D E 19 22 27 31 34 
 Structure 330: 19 26 40 47 74 77 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 18 19 
+	-> A 6 B C D E 11 18 19 26 29 
 Structure 331: 49 45 F 36 11 B C D 6 A E 18 G 17
-	-> A 6 B C D E 11 F G 17 18 
+	-> A 6 B C D E 11 F G 17 18 36 
 Structure 332: 19 26 40 47 51 55 11 B C D 6 A 28 39 21 23
-	-> A 6 B C D 11 19 21 23 
+	-> A 6 B C D 11 19 21 23 26 28 
 Structure 333: 109 97 26 98 115 92 93 140 152 1 22 C D 6 A E 24 G 17 25 180
-	-> A 6 C D E G 17 22 24 25 
+	-> A 6 C D E G 17 22 24 25 26 
 Structure 334: 35 32 33 F 36 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 32 33 35 36 
 Structure 335: 44 46 F 11 B C 7 6 A 28 39 G 68 25
-	-> A 6 B C 11 F G 25 
+	-> A 6 B C 11 F G 25 28 
 Structure 336: 56 19 30 34 31 37 27 57 B C D 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 23 
+	-> A 6 B C D E 18 19 21 23 27 30 31 34 
 Structure 337: 35 32 33 F 63 11 B C D 6 A E 24 G 17
-	-> A 6 B C D E 11 F G 17 24 
+	-> A 6 B C D E 11 F G 17 24 32 33 35 
 Structure 338: 43 19 64 91 F 63 B 22 C D 6 A E 18 21 23 67
 	-> A 6 B C D E F 18 19 21 22 23 
 Structure 339: 35 32 33 F 36 11 B C D 6 A 28 E 24 G 17 25
-	-> A 6 B C D E 11 F G 17 24 25 
+	-> A 6 B C D E 11 F G 17 24 25 28 32 33 35 36 
 Structure 340: 35 32 33 F 63 53 36 11 B 22 C D 42 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 22 
+	-> A 6 B C D E 11 F 18 22 29 32 33 35 36 
 Structure 341: 58 19 26 40 47 51 77 41 B C D 6 A E 18 38 29
-	-> A 6 B C D E 18 19 
+	-> A 6 B C D E 18 19 26 29 
 Structure 342: 35 32 33 F 53 112 11 41 B C D 88 110 A 89 85 86 90
-	-> A B C D 11 F 
+	-> A B C D 11 F 32 33 35 
 Structure 343: 44 45 F 63 11 B C D 6 221 3 4 222 E G 17 25
 	-> 6 B C D E 11 F G 17 25 
 Structure 344: 35 32 33 95 40 47 51 55 36 11 41 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 18 
+	-> A 6 B C D E 11 18 29 32 33 35 36 
 Structure 345: 105 101 79 106 26 40 47 51 55 11 B C D 6 A E 24 G 17
-	-> A 6 B C D E 11 G 17 24 
+	-> A 6 B C D E 11 G 17 24 26 
 Structure 346: 56 19 30 52 34 31 37 27 57 B C D 6 A E 18 G 17 25
-	-> A 6 B C D E G 17 18 19 25 
+	-> A 6 B C D E G 17 18 19 25 27 30 31 34 
 Structure 347: 43 19 26 40 47 51 55 B C D 6 A E 24 G 17
-	-> A 6 B C D E G 17 19 24 
+	-> A 6 B C D E G 17 19 24 26 
 Structure 348: 44 60 46 F 11 B C D 6 163 A E 24 G 17 48
 	-> A 6 B C D E 11 F G 17 24 
 Structure 349: 35 32 33 F 36 11 B C D 6 A 28 E G 17
-	-> A 6 B C D E 11 F G 17 
+	-> A 6 B C D E 11 F G 17 28 32 33 35 36 
 Structure 350: 49 45 F 36 11 B 22 C D 6 A E 24 G 17 29
-	-> A 6 B C D E 11 F G 17 22 24 
+	-> A 6 B C D E 11 F G 17 22 24 29 36 
 Structure 351: 44 46 F 11 B C D 6 A E 21 23
 	-> A 6 B C D E 11 F 21 23 
 Structure 352: 44 45 F 11 B C D 6 A E 24 G 17 48
 	-> A 6 B C D E 11 F G 17 24 
 Structure 353: 44 60 46 F 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 
 Structure 354: 56 19 30 34 31 37 27 57 B C D 42 6 A E 18 38 29
-	-> A 6 B C D E 18 19 
+	-> A 6 B C D E 18 19 27 29 30 31 34 
 Structure 355: 46 F 36 11 B 22 C 78 80 6 A 153 E 24 G 17 25
-	-> A 6 B C E 11 F G 17 22 24 25 
+	-> A 6 B C E 11 F G 17 22 24 25 36 
 Structure 356: 35 32 33 F 63 100 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 32 33 35 
 Structure 357: 35 32 33 F 36 11 B C D 42 6 A E 24 G 17 48
-	-> A 6 B C D E 11 F G 17 24 
+	-> A 6 B C D E 11 F G 17 24 32 33 35 36 
 Structure 358: 59 62 26 F 11 B 22 2 D 6 A E 18 21 23
-	-> A 6 B D E 11 F 18 21 22 23 
+	-> A 6 B D E 11 F 18 21 22 23 26 
 Structure 359: 35 32 33 F 36 11 B C D 6 A E 24 G 17 25
-	-> A 6 B C D E 11 F G 17 24 25 
+	-> A 6 B C D E 11 F G 17 24 25 32 33 35 36 
 Structure 360: 35 32 33 F 53 11 B C D 6 A E 24 G 17 48
-	-> A 6 B C D E 11 F G 17 24 
+	-> A 6 B C D E 11 F G 17 24 32 33 35 
 Structure 361: 19 64 54 F 11 B C D 6 A E 24 G 17 48
 	-> A 6 B C D E 11 F G 17 19 24 
 Structure 362: 43 19 30 34 31 37 27 B C D 6 A E 18 G 17 25
-	-> A 6 B C D E G 17 18 19 25 
+	-> A 6 B C D E G 17 18 19 25 27 30 31 34 
 Structure 363: 58 19 64 F 41 B 22 C D 6 A E 18 21 23
 	-> A 6 B C D E F 18 19 21 22 23 
 Structure 364: 81 44 60 46 F 11 B C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 23 
 Structure 365: 35 32 33 F 53 112 36 11 B C D 6 A E 18 G 17
-	-> A 6 B C D E 11 F G 17 18 
+	-> A 6 B C D E 11 F G 17 18 32 33 35 36 
 Structure 366: 35 32 33 F 36 11 B C D 6 A E 18 G 17 25
-	-> A 6 B C D E 11 F G 17 18 25 
+	-> A 6 B C D E 11 F G 17 18 25 32 33 35 36 
 Structure 367: 44 45 F 11 B C D 6 A E G 17 25
 	-> A 6 B C D E 11 F G 17 25 
 Structure 368: 44 45 F 11 B C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 23 
 Structure 369: 58 19 26 40 61 176 41 B C D 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 23 
+	-> A 6 B C D E 18 19 21 23 26 
 Structure 370: 109 97 123 26 98 92 93 111 1 C D 6 A E 18 21 23
-	-> A 6 C D E 18 21 23 
+	-> A 6 C D E 18 21 23 26 
 Structure 371: 35 32 33 F 36 11 B 22 C D 6 A 39 G 17 25
-	-> A 6 B C D 11 F G 17 22 25 
+	-> A 6 B C D 11 F G 17 22 25 32 33 35 36 
 Structure 372: 35 32 33 F 36 11 B C D 6 A 28 39 24 G 17
-	-> A 6 B C D 11 F G 17 24 
+	-> A 6 B C D 11 F G 17 24 28 32 33 35 36 
 Structure 373: 19 30 52 34 31 66 72 223 224 B C D 6 A E 18 38 29
-	-> A 6 B C D E 18 19 
+	-> A 6 B C D E 18 19 29 30 31 34 
 Structure 374: 49 46 91 F 11 B 22 C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 22 23 
 Structure 375: 43 19 26 40 47 74 71 B C D 42 6 A 28 39 24 G 17 25
-	-> A 6 B C D G 17 19 24 25 
+	-> A 6 B C D G 17 19 24 25 26 28 
 Structure 376: 59 62 26 F 11 B C D 42 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 26 
 Structure 377: 56 19 30 52 34 31 37 27 57 B 22 C D 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 22 23 
+	-> A 6 B C D E 18 19 21 22 23 27 30 31 34 
 Structure 378: 56 19 26 40 47 51 71 57 B C D 6 A E 18 38 29
-	-> A 6 B C D E 18 19 
+	-> A 6 B C D E 18 19 26 29 
 Structure 379: 35 32 33 181 F 132 65 36 11 B 22 C D 6 A 39 G 17 75
-	-> A 6 B C D 11 F G 17 22 
+	-> A 6 B C D 11 F G 17 22 32 33 35 36 
 Structure 380: 81 44 60 46 91 F 11 B C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 23 
 Structure 381: 35 32 33 F 65 36 11 B C D 6 A E 18 G 68 25
-	-> A 6 B C D E 11 F G 18 25 
+	-> A 6 B C D E 11 F G 18 25 32 33 35 36 
 Structure 382: 59 69 107 70 27 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 18 21 23 
+	-> A 6 B C D E 11 18 21 23 27 
 Structure 383: 59 62 26 F 11 B C D 6 A E 24 G 17 25
-	-> A 6 B C D E 11 F G 17 24 25 
+	-> A 6 B C D E 11 F G 17 24 25 26 
 Structure 384: 43 19 64 91 F B C D 6 A E 18 G 17 48
 	-> A 6 B C D E F G 17 18 19 
 Structure 385: 56 19 30 26 F 57 B 22 C D 42 6 A E 18 21 23
-	-> A 6 B C D E F 18 19 21 22 23 
+	-> A 6 B C D E F 18 19 21 22 23 26 30 
 Structure 386: 49 182 46 91 F 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 
 Structure 387: 101 19 30 26 F 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 19 21 23 
+	-> A 6 B C D E 11 F 18 19 21 23 26 30 
 Structure 388: 43 19 26 40 61 73 117 B C D 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 23 
+	-> A 6 B C D E 18 19 21 23 26 
 Structure 389: 43 19 45 F B C D 6 A 28 39 G 68 25
-	-> A 6 B C D F G 19 25 
+	-> A 6 B C D F G 19 25 28 
 Structure 390: 58 19 30 52 34 31 37 27 41 B C D 6 A E 18 38 87 108 29
-	-> A 6 B C D E 18 19 
+	-> A 6 B C D E 18 19 27 29 30 31 34 
 Structure 391: 35 32 33 40 47 51 55 36 11 B C D 42 6 A E 18 21 23
-	-> A 6 B C D E 11 18 21 23 
+	-> A 6 B C D E 11 18 21 23 32 33 35 36 
 Structure 392: 35 32 33 F 63 53 112 11 B C D 6 A 76 39 24 G 17 25
-	-> A 6 B C D 11 F G 17 24 25 
+	-> A 6 B C D 11 F G 17 24 25 32 33 35 
 Structure 393: 35 32 33 F 53 36 11 B C D 6 A E 24 G 17
-	-> A 6 B C D E 11 F G 17 24 
+	-> A 6 B C D E 11 F G 17 24 32 33 35 36 
 Structure 394: 43 131 19 30 52 34 31 37 27 B C D 42 6 A E 18 21 225
-	-> A 6 B C D E 18 19 21 
+	-> A 6 B C D E 18 19 21 27 30 31 34 
 Structure 395: 109 97 123 26 98 183 92 93 122 111 1 C 7 6 A E 18 38 29
-	-> A 6 C E 18 
+	-> A 6 C E 18 26 29 
 Structure 396: 43 19 26 40 47 51 55 B C D 6 A E 18 38 29
-	-> A 6 B C D E 18 19 
+	-> A 6 B C D E 18 19 26 29 
 Structure 397: 165 32 33 F 36 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 32 33 36 
 Structure 398: 35 32 33 F 36 11 B C D 6 A 39 G 17 25
-	-> A 6 B C D 11 F G 17 25 
+	-> A 6 B C D 11 F G 17 25 32 33 35 36 
 Structure 399: 58 19 26 40 47 51 55 41 B 22 C D 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 22 23 
+	-> A 6 B C D E 18 19 21 22 23 26 
 Structure 400: 44 60 46 F 11 B C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 23 
 Structure 401: 128 79 19 26 40 47 51 55 11 41 B C D 6 A E 24 G 17
-	-> A 6 B C D E 11 G 17 19 24 
+	-> A 6 B C D E 11 G 17 19 24 26 
 Structure 402: 43 19 26 40 47 51 55 B C 78 80 6 A E 18 G 17 180 67
-	-> A 6 B C E G 17 18 19 
+	-> A 6 B C E G 17 18 19 26 
 Structure 403: 56 19 64 34 31 37 27 72 57 B C D 6 A 28 E 39 G 17 25
-	-> A 6 B C D E G 17 19 25 
+	-> A 6 B C D E G 17 19 25 27 28 31 34 
 Structure 404: 35 32 33 F 53 11 B C D 42 6 A E 18 G 17
-	-> A 6 B C D E 11 F G 17 18 
+	-> A 6 B C D E 11 F G 17 18 32 33 35 
 Structure 405: 49 45 F 65 36 11 B C D 6 A E 24 G 17 25
-	-> A 6 B C D E 11 F G 17 24 25 
+	-> A 6 B C D E 11 F G 17 24 25 36 
 Structure 406: 35 32 33 F 53 114 11 B C D 6 A E 18 G 17 25
-	-> A 6 B C D E 11 F G 17 18 25 
+	-> A 6 B C D E 11 F G 17 18 25 32 33 35 
 Structure 407: 58 129 133 134 135 155 143 40 47 74 71 1 C D 6 A E 18 38 29
-	-> A 6 C D E 18 
+	-> A 6 C D E 18 29 
 Structure 408: 35 32 33 F 65 36 11 41 B C D 42 6 A E 24 G 17 25
-	-> A 6 B C D E 11 F G 17 24 25 
+	-> A 6 B C D E 11 F G 17 24 25 32 33 35 36 
 Structure 409: 19 26 40 47 51 55 11 B C D 6 A 76 39 24 G 17 25
-	-> A 6 B C D 11 G 17 19 24 25 
+	-> A 6 B C D 11 G 17 19 24 25 26 
 Structure 410: 56 19 30 34 31 37 27 57 B C D 6 A E 24 G 17 48
-	-> A 6 B C D E G 17 19 24 
+	-> A 6 B C D E G 17 19 24 27 30 31 34 
 Structure 411: 35 32 33 F 119 11 B C D 6 A E 24 G 17 25
-	-> A 6 B C D E 11 F G 17 24 25 
+	-> A 6 B C D E 11 F G 17 24 25 32 33 35 
 Structure 412: 43 19 30 52 34 31 37 27 72 B C D 6 A 28 E 24 G 17 25
-	-> A 6 B C D E G 17 19 24 25 
+	-> A 6 B C D E G 17 19 24 25 27 28 30 31 34 
 Structure 413: 165 32 33 118 F 36 11 B 22 C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 22 
+	-> A 6 B C D E 11 F 18 22 29 32 33 36 
 Structure 414: 49 46 F 36 11 B C D 42 6 A 39 G 17 25
-	-> A 6 B C D 11 F G 17 25 
+	-> A 6 B C D 11 F G 17 25 36 
 Structure 415: 101 79 45 F 11 B C D 6 A E 24 G 17 29
-	-> A 6 B C D E 11 F G 17 24 
+	-> A 6 B C D E 11 F G 17 24 29 
 Structure 416: 44 60 46 F 11 B 22 C D 42 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 22 23 
 Structure 417: 105 79 30 52 34 31 37 27 11 B C D 6 A E 24 G 17 25
-	-> A 6 B C D E 11 G 17 24 25 
+	-> A 6 B C D E 11 G 17 24 25 27 30 31 34 
 Structure 418: 59 26 F 11 B C D 6 A E 24 G 68 48
-	-> A 6 B C D E 11 F G 24 
+	-> A 6 B C D E 11 F G 24 26 
 Structure 419: 44 60 46 F 11 B C D 6 A E 38 29
-	-> A 6 B C D E 11 F 
+	-> A 6 B C D E 11 F 29 
 Structure 420: 44 46 F 11 B 22 C D 6 A 28 E G 17 29
-	-> A 6 B C D E 11 F G 17 22 
+	-> A 6 B C D E 11 F G 17 22 28 29 
 Structure 421: 166 F 65 36 11 B C D 6 A E G 68 48
-	-> A 6 B C D E 11 F G 
+	-> A 6 B C D E 11 F G 36 
 Structure 422: 43 19 30 52 34 31 37 27 B C D 6 A E 24 G 17 25
-	-> A 6 B C D E G 17 19 24 25 
+	-> A 6 B C D E G 17 19 24 25 27 30 31 34 
 Structure 423: 35 32 33 F 53 11 B C D 6 A E 21 23
-	-> A 6 B C D E 11 F 21 23 
+	-> A 6 B C D E 11 F 21 23 32 33 35 
 Structure 424: 56 19 30 34 31 37 66 72 57 B C D 6 A 28 E 21 23
-	-> A 6 B C D E 19 21 23 
+	-> A 6 B C D E 19 21 23 28 30 31 34 
 Structure 425: 49 46 F 11 B C D 6 A E 18 G 68 25
 	-> A 6 B C D E 11 F G 18 25 
 Structure 426: 35 32 33 F 36 11 B C D 6 A 28 E 96 G 17 25
-	-> A 6 B C D E 11 F G 17 25 
+	-> A 6 B C D E 11 F G 17 25 28 32 33 35 36 
 Structure 427: 49 45 91 F 11 B C D 6 A E 24 G 17 29
-	-> A 6 B C D E 11 F G 17 24 
+	-> A 6 B C D E 11 F G 17 24 29 
 Structure 428: 49 46 F 36 11 B C D 42 6 A 28 E 24 G 17 25
-	-> A 6 B C D E 11 F G 17 24 25 
+	-> A 6 B C D E 11 F G 17 24 25 28 36 
 Structure 429: 49 45 54 F 36 11 B 22 C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 22 
+	-> A 6 B C D E 11 F 18 22 29 36 
 Structure 430: 109 184 97 123 26 98 115 92 93 140 179 1 C D 6 A 28 E 24 G 17 25
-	-> A 6 C D E G 17 24 25 
+	-> A 6 C D E G 17 24 25 26 28 
 Structure 431: 49 46 F 11 B C D 6 A E 24 G 17 75
 	-> A 6 B C D E 11 F G 17 24 
 Structure 432: 43 19 30 52 34 31 66 72 B C D 6 A 28 E 24 G 17 137
-	-> A 6 B C D E G 17 19 24 
+	-> A 6 B C D E G 17 19 24 28 30 31 34 
 Structure 433: 35 32 33 40 47 51 77 36 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 18 
+	-> A 6 B C D E 11 18 29 32 33 35 36 
 Structure 434: 58 19 30 34 31 37 27 41 B C D 6 A 28 39 21 23
-	-> A 6 B C D 19 21 23 
+	-> A 6 B C D 19 21 23 27 28 30 31 34 
 Structure 435: 19 30 34 31 37 66 72 11 B C D 6 A 167 28 39 G 17 25
-	-> A 6 B C D 11 G 17 19 25 
+	-> A 6 B C D 11 G 17 19 25 28 30 31 34 
 Structure 436: 35 32 33 F 65 36 11 B 22 C D 6 A E 24 G 17
-	-> A 6 B C D E 11 F G 17 22 24 
+	-> A 6 B C D E 11 F G 17 22 24 32 33 35 36 
 Structure 437: 104 149 19 30 52 34 31 37 27 11 B C D 6 A 28 E G 17 25
-	-> A 6 B C D E 11 G 17 19 25 
+	-> A 6 B C D E 11 G 17 19 25 27 28 30 31 34 
 Structure 438: 35 32 33 F 119 164 11 B 22 C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 22 23 
+	-> A 6 B C D E 11 F 18 21 22 23 32 33 35 
 Structure 439: 59 69 83 70 27 11 B 22 139 2 D 6 A 76 39 G 29
-	-> A 6 B D 11 G 22 
+	-> A 6 B D 11 G 22 27 29 
 Structure 440: 56 19 30 52 34 31 37 27 57 B C D 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 23 
+	-> A 6 B C D E 18 19 21 23 27 30 31 34 
 Structure 441: 49 45 F 36 11 B C D 6 A 28 39 G 17 25
-	-> A 6 B C D 11 F G 17 25 
+	-> A 6 B C D 11 F G 17 25 28 36 
 Structure 442: 19 30 52 34 31 37 27 11 B C D 6 A E 18 G 17 25
-	-> A 6 B C D E 11 G 17 18 19 25 
+	-> A 6 B C D E 11 G 17 18 19 25 27 30 31 34 
 Structure 443: 35 32 33 F 65 11 B 22 C D 6 A 28 E 24 G 17 75
-	-> A 6 B C D E 11 F G 17 22 24 
+	-> A 6 B C D E 11 F G 17 22 24 28 32 33 35 
 Structure 444: 43 56 19 30 26 F B C D 6 A E 24 G 17 29
-	-> A 6 B C D E F G 17 19 24 
+	-> A 6 B C D E F G 17 19 24 26 29 30 
 Structure 445: 44 45 F 11 41 B C D 88 A 89 85 86 90
 	-> A B C D 11 F 
 Structure 446: 58 19 30 52 34 31 37 27 41 226 1 22 C D 88 110 A 89 85 86 90
-	-> A C D 19 22 
+	-> A C D 19 22 27 30 31 34 
 Structure 447: 49 45 F 11 B C D 42 6 A 28 E 21 23
-	-> A 6 B C D E 11 F 21 23 
+	-> A 6 B C D E 11 F 21 23 28 
 Structure 448: 43 19 64 34 31 37 27 B C D 6 A E 38 29
-	-> A 6 B C D E 19 
+	-> A 6 B C D E 19 27 29 31 34 
 Structure 449: 59 62 26 F 11 B C D 6 A E 24 G 17
-	-> A 6 B C D E 11 F G 17 24 
+	-> A 6 B C D E 11 F G 17 24 26 
 Structure 450: 35 32 33 F 100 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 32 33 35 
 Structure 451: 49 45 54 F 36 11 41 B 22 C D 6 A 28 39 G 17 25
-	-> A 6 B C D 11 F G 17 22 25 
+	-> A 6 B C D 11 F G 17 22 25 28 36 
 Structure 452: 19 30 34 31 27 11 B 22 C 78 80 6 A 39 G 17 48
-	-> A 6 B C 11 G 17 19 22 
+	-> A 6 B C 11 G 17 19 22 27 30 31 34 
 Structure 453: 43 19 26 40 47 51 77 B 141 C D 6 A E 24 G 17 25
-	-> A 6 B C D E G 17 19 24 25 
+	-> A 6 B C D E G 17 19 24 25 26 
 Structure 454: 58 19 26 40 47 51 55 41 B C 10 78 80 6 A E 18 38 29
-	-> A 6 B C E 18 19 
+	-> A 6 B C E 18 19 26 29 
 Structure 455: 43 19 26 40 61 73 77 B C D 6 A 28 39 G 17 25
-	-> A 6 B C D G 17 19 25 
+	-> A 6 B C D G 17 19 25 26 28 
 Structure 456: 58 19 64 F 41 B C D 6 A 28 E 24 G 68 48
-	-> A 6 B C D E F G 19 24 
+	-> A 6 B C D E F G 19 24 28 
 Structure 457: F 53 11 41 B 22 C D 6 A 28 39 G 17 48
-	-> A 6 B C D 11 F G 17 22 
+	-> A 6 B C D 11 F G 17 22 28 
 Structure 458: 44 45 54 F 11 B C D 6 A E 18 G 17 25
 	-> A 6 B C D E 11 F G 17 18 25 
 Structure 459: 30 52 127 31 37 27 36 11 41 B C D 88 110 A 89 85 86 90
-	-> A B C D 11 
+	-> A B C D 11 27 30 31 36 
 Structure 460: 49 45 F 36 11 B C D 6 A 39 21 23
-	-> A 6 B C D 11 F 21 23 
+	-> A 6 B C D 11 F 21 23 36 
 Structure 461: 35 32 33 F 53 11 41 B 22 C D 6 A E 24 G 17 25
-	-> A 6 B C D E 11 F G 17 22 24 25 
+	-> A 6 B C D E 11 F G 17 22 24 25 32 33 35 
 Structure 462: 35 32 33 F 65 36 11 B C D 6 A 28 E 24 G 17
-	-> A 6 B C D E 11 F G 17 24 
+	-> A 6 B C D E 11 F G 17 24 28 32 33 35 36 
 Structure 463: 59 62 26 F 11 B 22 C D 6 A 28 39 G 17 25
-	-> A 6 B C D 11 F G 17 22 25 
+	-> A 6 B C D 11 F G 17 22 25 26 28 
 Structure 464: 19 45 54 F 11 B C D 6 A E 18 38 120 29
-	-> A 6 B C D E 11 F 18 19 
+	-> A 6 B C D E 11 F 18 19 29 
 Structure 465: 59 26 F 11 B C D 42 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 26 
 Structure 466: 43 19 30 34 31 37 27 B C D 6 A E 18 38 87 108
-	-> A 6 B C D E 18 19 
+	-> A 6 B C D E 18 19 27 30 31 34 
 Structure 467: 58 19 26 F 63 41 B C D 6 A 28 E 24 G 17 29
-	-> A 6 B C D E F G 17 19 24 
+	-> A 6 B C D E F G 17 19 24 26 28 29 
 Structure 468: 35 32 33 F 53 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 32 33 35 
 Structure 469: 43 19 64 54 F B C D 6 A 39 G 17 227
 	-> A 6 B C D F G 17 19 
 Structure 470: 43 19 26 40 47 51 55 B C D 6 A E 24 16 17
-	-> A 6 B C D E 17 19 24 
+	-> A 6 B C D E 17 19 24 26 
 Structure 471: 59 26 F 11 B C 78 80 42 6 A E 18 G 17
-	-> A 6 B C E 11 F G 17 18 
+	-> A 6 B C E 11 F G 17 18 26 
 Structure 472: 147 124 26 27 53 36 11 B C D 6 A 28 E G 17 25
-	-> A 6 B C D E 11 G 17 25 
+	-> A 6 B C D E 11 G 17 25 26 27 28 36 
 Structure 473: 35 32 33 F 65 36 11 B C D 42 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 32 33 35 36 
 Structure 474: 43 19 30 34 31 37 27 B C D 6 A E 24 G 68 48
-	-> A 6 B C D E G 19 24 
+	-> A 6 B C D E G 19 24 27 30 31 34 
 Structure 475: 43 19 46 F B 22 C D 42 6 A 28 E 24 G 17 25
-	-> A 6 B C D E F G 17 19 22 24 25 
+	-> A 6 B C D E F G 17 19 22 24 25 28 
 Structure 476: 49 45 F 36 11 B C 78 80 6 A 39 G 29
-	-> A 6 B C 11 F G 
+	-> A 6 B C 11 F G 29 36 
 Structure 477: 49 46 F 132 36 11 B C D 3 4 228 229 85 86 90
-	-> B C D 11 F 
+	-> B C D 11 F 36 
 Structure 478: 105 59 62 69 107 70 27 11 B 22 2 D 42 6 A E 18 G 17
-	-> A 6 B D E 11 G 17 18 22 
+	-> A 6 B D E 11 G 17 18 22 27 
 Structure 479: 30 34 31 37 27 36 11 B C 7 6 A E 18 38 29
-	-> A 6 B C E 11 18 
+	-> A 6 B C E 11 18 27 29 30 31 34 36 
 Structure 480: 35 32 33 F 53 36 11 B 22 C D 42 6 A E 24 G 17 48
-	-> A 6 B C D E 11 F G 17 22 24 
+	-> A 6 B C D E 11 F G 17 22 24 32 33 35 36 
 Structure 481: 59 62 26 F 11 B C D 88 110 A 89 85 86 90
-	-> A B C D 11 F 
+	-> A B C D 11 F 26 
 Structure 482: 35 32 33 F 53 11 B C D 6 A 76 39 G 17 25 75
-	-> A 6 B C D 11 F G 17 25 
+	-> A 6 B C D 11 F G 17 25 32 33 35 
 Structure 483: 35 32 33 F 53 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 32 33 35 
 Structure 484: 35 32 33 F 53 36 11 B C D 6 A 28 E G 68 48
-	-> A 6 B C D E 11 F G 
+	-> A 6 B C D E 11 F G 28 32 33 35 36 
 Structure 485: 35 32 33 F 65 36 11 B C D 6 A 76 39 96 24 G 17 25
-	-> A 6 B C D 11 F G 17 24 25 
+	-> A 6 B C D 11 F G 17 24 25 32 33 35 36 
 Structure 486: 44 60 46 F 11 B C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 23 
 Structure 487: 79 19 26 40 47 51 55 11 B 22 C D 6 A E 18 21 23 148
-	-> A 6 B C D E 11 18 19 21 22 23 
+	-> A 6 B C D E 11 18 19 21 22 23 26 
 Structure 488: 35 32 33 F 53 36 11 B C 7 6 A E 24 G 17 25
-	-> A 6 B C E 11 F G 17 24 25 
+	-> A 6 B C E 11 F G 17 24 25 32 33 35 36 
 Structure 489: 58 19 26 F 41 B 22 C D 6 A E 18 G 68 48
-	-> A 6 B C D E F G 18 19 22 
+	-> A 6 B C D E F G 18 19 22 26 
 Structure 490: 79 26 40 47 51 55 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 18 
+	-> A 6 B C D E 11 18 26 29 
 Structure 491: 43 19 30 34 31 37 27 B C D 6 A E 38 29
-	-> A 6 B C D E 19 
+	-> A 6 B C D E 19 27 29 30 31 34 
 Structure 492: 35 32 33 F 11 B C D 6 A 39 G 17 25
-	-> A 6 B C D 11 F G 17 25 
+	-> A 6 B C D 11 F G 17 25 32 33 35 
 Structure 493: 35 32 33 F 11 B C D 6 A E 18 G 17
-	-> A 6 B C D E 11 F G 17 18 
+	-> A 6 B C D E 11 F G 17 18 32 33 35 
 Structure 494: 44 118 F 11 B 22 C D 42 6 A 28 E 24 G 17 48
-	-> A 6 B C D E 11 F G 17 22 24 
+	-> A 6 B C D E 11 F G 17 22 24 28 
 Structure 495: 58 19 26 40 47 51 41 B 22 C D 42 6 A E 18 38 87 29
-	-> A 6 B C D E 18 19 22 
+	-> A 6 B C D E 18 19 22 26 29 
 Structure 496: 44 46 F 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 
 Structure 497: 43 19 64 34 31 66 185 B 22 C D 6 A 39 G 17 75 67
-	-> A 6 B C D G 17 19 22 
+	-> A 6 B C D G 17 19 22 31 34 
 Structure 498: 49 45 F 36 11 B 22 C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 22 23 
+	-> A 6 B C D E 11 F 18 21 22 23 36 
 Structure 499: 58 19 30 34 31 37 27 11 B 22 C D 230 6 A E G 17 48
-	-> A 6 B C D E 11 G 17 19 22 
+	-> A 6 B C D E 11 G 17 19 22 27 30 31 34 
 Structure 500: 49 45 F 36 11 41 B 22 C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 22 
+	-> A 6 B C D E 11 F 18 22 29 36 
 Structure 501: 19 30 34 31 37 27 11 B C D 6 A 28 39 24 G 17 25
-	-> A 6 B C D 11 G 17 19 24 25 
+	-> A 6 B C D 11 G 17 19 24 25 27 28 30 31 34 
 Structure 502: 49 231 46 F 11 B C D 6 A E 24 G 17 25
 	-> A 6 B C D E 11 F G 17 24 25 
 Structure 503: 59 62 69 83 70 27 11 B 22 C D 6 A E 24 G 17 75
-	-> A 6 B C D E 11 G 17 22 24 
+	-> A 6 B C D E 11 G 17 22 24 27 
 Structure 504: 19 26 40 47 74 71 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 18 19 21 23 
+	-> A 6 B C D E 11 18 19 21 23 26 
 Structure 505: 58 19 30 34 31 37 27 41 B C 10 78 80 42 6 A 28 39 154 142 130
-	-> A 6 B C 19 
+	-> A 6 B C 19 27 28 30 31 34 
 Structure 506: 35 32 33 181 F 53 11 B 22 C D 6 A E 18 G 68 25
-	-> A 6 B C D E 11 F G 18 22 25 
+	-> A 6 B C D E 11 F G 18 22 25 32 33 35 
 Structure 507: 43 19 30 34 31 37 27 B C D 6 A E 18 G 17 67
-	-> A 6 B C D E G 17 18 19 
+	-> A 6 B C D E G 17 18 19 27 30 31 34 
 Structure 508: 19 26 40 47 51 11 B C D 6 A E 24 G 17 48
-	-> A 6 B C D E 11 G 17 19 24 
+	-> A 6 B C D E 11 G 17 19 24 26 
 Structure 509: 19 46 F 11 B C D 6 A E 18 38 120
 	-> A 6 B C D E 11 F 18 19 
 Structure 510: 43 19 30 52 34 31 37 27 B C D 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 23 
+	-> A 6 B C D E 18 19 21 23 27 30 31 34 
 Structure 511: 59 62 69 83 70 27 11 B 22 C D 6 A 39 24 G 17 29
-	-> A 6 B C D 11 G 17 22 24 
+	-> A 6 B C D 11 G 17 22 24 27 29 
 Structure 512: 43 19 26 40 47 74 71 B 22 C D 6 A 153 E 18 38 87 29 67
-	-> A 6 B C D E 18 19 22 
+	-> A 6 B C D E 18 19 22 26 29 
 Structure 513: 35 32 33 F 53 11 41 B C D 6 A E 18 G 17
-	-> A 6 B C D E 11 F G 17 18 
+	-> A 6 B C D E 11 F G 17 18 32 33 35 
 Structure 514: 30 52 34 31 37 27 36 11 B C D 6 A E 21 23
-	-> A 6 B C D E 11 21 23 
+	-> A 6 B C D E 11 21 23 27 30 31 34 36 
 Structure 515: 44 60 46 54 F 11 B C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 23 
 Structure 516: 49 45 54 F 36 11 B C D 6 A 28 E G 17
-	-> A 6 B C D E 11 F G 17 
+	-> A 6 B C D E 11 F G 17 28 36 
 Structure 517: 35 32 33 F 63 53 36 11 B 22 C D 6 A 39 G 17 29
-	-> A 6 B C D 11 F G 17 22 
+	-> A 6 B C D 11 F G 17 22 29 32 33 35 36 
 Structure 518: 146 168 124 26 27 53 11 B C D 6 A 28 E 24 G 17
-	-> A 6 B C D E 11 G 17 24 
+	-> A 6 B C D E 11 G 17 24 26 27 28 
 Structure 519: 43 19 45 54 F B C D 6 A E 18 G 17 75
 	-> A 6 B C D E F G 17 18 19 
 Structure 520: 56 19 30 52 34 31 37 27 B C D 6 A 28 39 G 17 75
-	-> A 6 B C D G 17 19 
+	-> A 6 B C D G 17 19 27 28 30 31 34 
 Structure 521: 49 45 F 63 11 B C D 6 A 28 39 G 17 25
-	-> A 6 B C D 11 F G 17 25 
+	-> A 6 B C D 11 F G 17 25 28 
 Structure 522: 49 46 F 132 36 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 36 
 Structure 523: 44 46 F 11 41 B C D 6 A E 24 G 17 25
 	-> A 6 B C D E 11 F G 17 24 25 
 Structure 524: 49 45 54 F 36 11 B 22 C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 22 23 
+	-> A 6 B C D E 11 F 18 21 22 23 36 
 Structure 525: 43 19 26 40 47 51 55 B C D 6 A E 21 23 67
-	-> A 6 B C D E 19 21 23 
+	-> A 6 B C D E 19 21 23 26 
 Structure 526: 49 46 F 36 11 B C 7 6 A 28 E 21 23
-	-> A 6 B C E 11 F 21 23 
+	-> A 6 B C E 11 F 21 23 28 36 
 Structure 527: 43 19 26 F B C D 6 A E 18 21 23 67
-	-> A 6 B C D E F 18 19 21 23 
+	-> A 6 B C D E F 18 19 21 23 26 
 Structure 528: 19 30 34 31 37 27 11 B C D 6 232 A E 18 21 23
-	-> A 6 B C D E 11 18 19 21 23 
+	-> A 6 B C D E 11 18 19 21 23 27 30 31 34 
 Structure 529: 43 19 30 34 31 37 27 B C D 42 6 3 4 28 E 39 G 17 25
-	-> 6 B C D E G 17 19 25 
+	-> 6 B C D E G 17 19 25 27 28 30 31 34 
 Structure 530: 35 32 33 F 53 11 B C D 6 A 28 E 24 G 17 75
-	-> A 6 B C D E 11 F G 17 24 
+	-> A 6 B C D E 11 F G 17 24 28 32 33 35 
 Structure 531: 35 32 33 F 36 11 B 22 C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 22 23 
+	-> A 6 B C D E 11 F 18 21 22 23 32 33 35 36 
 Structure 532: 43 19 64 34 31 37 27 B C D 6 A 28 E 24 G 17 48
-	-> A 6 B C D E G 17 19 24 
+	-> A 6 B C D E G 17 19 24 27 28 31 34 
 Structure 533: 44 45 54 F 11 B C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 23 
 Structure 534: 169 45 F 11 B 22 C D 42 6 A E 24 G 17 25
 	-> A 6 B C D E 11 F G 17 22 24 25 
 Structure 535: 56 19 30 34 31 37 27 57 B C D 42 6 A 28 E 24 G 17 25
-	-> A 6 B C D E G 17 19 24 25 
+	-> A 6 B C D E G 17 19 24 25 27 28 30 31 34 
 Structure 536: 35 32 33 95 102 103 157 11 41 B 22 C D 42 6 A E 18 21 23
-	-> A 6 B C D E 11 18 21 22 23 
+	-> A 6 B C D E 11 18 21 22 23 32 33 35 
 Structure 537: 56 19 30 52 34 31 27 57 B C D 42 6 A E 96 G 17
-	-> A 6 B C D E G 17 19 
+	-> A 6 B C D E G 17 19 27 30 31 34 
 Structure 538: 99 128 106 26 40 47 51 55 11 B 22 C 186 D 6 A E 18 G 17 29
-	-> A 6 B C D E 11 G 17 18 22 
+	-> A 6 B C D E 11 G 17 18 22 26 29 
 Structure 539: 35 32 33 95 102 103 157 11 B C D 6 A E 18 G 17
-	-> A 6 B C D E 11 G 17 18 
+	-> A 6 B C D E 11 G 17 18 32 33 35 
 Structure 540: 43 19 30 52 34 31 37 27 B 22 C D 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 22 23 
+	-> A 6 B C D E 18 19 21 22 23 27 30 31 34 
 Structure 541: 109 97 26 98 115 92 93 140 152 1 C D 6 A E 18 38 29
-	-> A 6 C D E 18 
+	-> A 6 C D E 18 26 29 
 Structure 542: 58 19 26 40 47 74 71 41 B C D 6 A E 18 38 29
-	-> A 6 B C D E 18 19 
+	-> A 6 B C D E 18 19 26 29 
 Structure 543: 43 19 30 52 34 31 37 27 B 22 C D 6 A E 21 23 67
-	-> A 6 B C D E 19 21 22 23 
+	-> A 6 B C D E 19 21 22 23 27 30 31 34 
 Structure 544: 49 46 F 63 36 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 36 
 Structure 545: 35 32 33 95 102 103 113 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 18 21 23 
+	-> A 6 B C D E 11 18 21 23 32 33 35 
 Structure 546: 58 19 30 34 31 151 66 41 B C D 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 23 
+	-> A 6 B C D E 18 19 21 23 30 31 34 
 Structure 547: 35 32 33 F 53 11 B C D 42 6 A E 24 G 17
-	-> A 6 B C D E 11 F G 17 24 
+	-> A 6 B C D E 11 F G 17 24 32 33 35 
 Structure 548: 49 F 11 B C D 42 6 A E 38 29
-	-> A 6 B C D E 11 F 
+	-> A 6 B C D E 11 F 29 
 Structure 549: 56 19 26 40 47 51 55 57 B C D 42 6 A E 18 38 29
-	-> A 6 B C D E 18 19 
+	-> A 6 B C D E 18 19 26 29 
 Structure 550: 19 26 40 47 74 71 11 B C D 6 A 28 E G 17
-	-> A 6 B C D E 11 G 17 19 
+	-> A 6 B C D E 11 G 17 19 26 28 
 Structure 551: 56 19 30 52 34 31 37 27 57 B C D 6 A E G 17 25
-	-> A 6 B C D E G 17 19 25 
+	-> A 6 B C D E G 17 19 25 27 30 31 34 
 Structure 552: 44 60 46 F 11 B C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 23 
 Structure 553: 43 19 26 40 47 74 71 B C D 6 A E 18 38 87 108 29 67
-	-> A 6 B C D E 18 19 
+	-> A 6 B C D E 18 19 26 29 
 Structure 554: 104 59 62 26 F 63 11 41 B C D 6 A 28 E 24 G 17
-	-> A 6 B C D E 11 F G 17 24 
+	-> A 6 B C D E 11 F G 17 24 26 28 
 Structure 555: 56 19 64 54 F 57 B C D 6 A 76 39 G 17 29
-	-> A 6 B C D F G 17 19 
+	-> A 6 B C D F G 17 19 29 
 Structure 556: 19 26 40 61 77 57 B 22 C D 6 A 28 E G 17
-	-> A 6 B C D E G 17 19 22 
+	-> A 6 B C D E G 17 19 22 26 28 
 Structure 557: 49 45 F 132 36 11 B C D 42 6 A E 21 23
-	-> A 6 B C D E 11 F 21 23 
+	-> A 6 B C D E 11 F 21 23 36 
 Structure 558: 35 32 33 F 53 11 B C D 6 A E 24 G 17 48
-	-> A 6 B C D E 11 F G 17 24 
+	-> A 6 B C D E 11 F G 17 24 32 33 35 
 Structure 559: 104 125 19 30 34 31 27 41 B C D 6 A 28 E 24 G 17 48
-	-> A 6 B C D E G 17 19 24 
+	-> A 6 B C D E G 17 19 24 27 28 30 31 34 
 Structure 560: 59 62 26 F 11 B C D 6 A E 18 G 17 25
-	-> A 6 B C D E 11 F G 17 18 25 
+	-> A 6 B C D E 11 F G 17 18 25 26 
 Structure 561: 19 30 34 31 37 27 11 B C D 42 6 A 39 154 142 130
-	-> A 6 B C D 11 19 
+	-> A 6 B C D 11 19 27 30 31 34 
 Structure 562: 43 19 30 52 34 31 37 27 B 22 C D 6 A 28 39 G 17 48
-	-> A 6 B C D G 17 19 22 
+	-> A 6 B C D G 17 19 22 27 28 30 31 34 
 Structure 563: 35 32 33 40 61 77 11 B C D 6 A E 18 G 17 25
-	-> A 6 B C D E 11 G 17 18 25 
+	-> A 6 B C D E 11 G 17 18 25 32 33 35 
 Structure 564: 59 26 F 11 B 22 C D 6 A 28 39 G 17 48
-	-> A 6 B C D 11 F G 17 22 
+	-> A 6 B C D 11 F G 17 22 26 28 
 Structure 565: 43 19 26 40 47 51 55 B C D 6 A E 24 G 17 75
-	-> A 6 B C D E G 17 19 24 
+	-> A 6 B C D E G 17 19 24 26 
 Structure 566: 49 46 F 11 B 22 C D 6 A 28 E 24 G 17
-	-> A 6 B C D E 11 F G 17 22 24 
+	-> A 6 B C D E 11 F G 17 22 24 28 
 Structure 567: 136 106 30 34 31 37 27 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 18 21 23 
+	-> A 6 B C D E 11 18 21 23 27 30 31 34 
 Structure 568: 35 32 33 F 53 36 11 B 22 C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 22 
+	-> A 6 B C D E 11 F 18 22 29 32 33 35 36 
 Structure 569: 19 30 34 31 37 27 11 41 B 22 C D 6 A E 18 21 23
-	-> A 6 B C D E 11 18 19 21 22 23 
+	-> A 6 B C D E 11 18 19 21 22 23 27 30 31 34 
 Structure 570: 43 19 30 52 34 31 37 27 B 22 C D 6 A E 18 38 120 67
-	-> A 6 B C D E 18 19 22 
+	-> A 6 B C D E 18 19 22 27 30 31 34 
 Structure 571: 35 32 33 F 65 36 11 B 22 C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 22 23 
+	-> A 6 B C D E 11 F 18 21 22 23 32 33 35 36 
 Structure 572: 49 46 F 36 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 36 
 Structure 573: 32 33 F 36 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 32 33 36 
 Structure 574: 44 60 46 54 F 11 41 B C D 6 A 39 G 17 29
-	-> A 6 B C D 11 F G 17 
+	-> A 6 B C D 11 F G 17 29 
 Structure 575: 35 32 33 F 36 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 32 33 35 36 
 Structure 576: 19 64 F 11 B C D 42 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 19 21 23 
 Structure 577: 43 19 45 91 F B C D 6 A E 24 G 17
 	-> A 6 B C D E F G 17 19 24 
 Structure 578: 58 19 26 40 47 74 71 41 B 22 C D 6 A E 18 38 29
-	-> A 6 B C D E 18 19 22 
+	-> A 6 B C D E 18 19 22 26 29 
 Structure 579: 35 32 33 F 36 11 B C D 42 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 32 33 35 36 
 Structure 580: 49 F 53 11 B C D 6 A E 18 G 68 48
 	-> A 6 B C D E 11 F G 18 
 Structure 581: 84 94 69 83 70 27 36 11 B 22 C D 6 A E 24 G 17 25
-	-> A 6 B C D E 11 G 17 22 24 25 
+	-> A 6 B C D E 11 G 17 22 24 25 27 36 
 Structure 582: 32 33 91 F 36 11 B 22 C D 6 A E 24 G 17 25
-	-> A 6 B C D E 11 F G 17 22 24 25 
+	-> A 6 B C D E 11 F G 17 22 24 25 32 33 36 
 Structure 583: 58 19 26 40 61 73 41 B C D 6 A E 24 G 68 48
-	-> A 6 B C D E G 19 24 
+	-> A 6 B C D E G 19 24 26 
 Structure 584: 35 32 33 F 53 11 B C D 6 A E 18 G 17 48
-	-> A 6 B C D E 11 F G 17 18 
+	-> A 6 B C D E 11 F G 17 18 32 33 35 
 Structure 585: 56 19 30 34 31 37 27 57 B C D 6 A E 18 38 29
-	-> A 6 B C D E 18 19 
+	-> A 6 B C D E 18 19 27 29 30 31 34 
 Structure 586: 44 45 54 F 11 B C D 6 A E 18 38 87 108 160
 	-> A 6 B C D E 11 F 18 
 Structure 587: 58 19 30 52 34 31 37 27 41 B 22 C D 6 A E 18 38 29
-	-> A 6 B C D E 18 19 22 
+	-> A 6 B C D E 18 19 22 27 29 30 31 34 
 Structure 588: 19 30 52 34 31 37 66 27 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 18 19 21 23 
+	-> A 6 B C D E 11 18 19 21 23 27 30 31 34 
 Structure 589: 58 19 30 34 31 37 27 41 233 1 C D 6 A E 18 38 29
-	-> A 6 C D E 18 19 
+	-> A 6 C D E 18 19 27 29 30 31 34 
 Structure 590: 35 32 33 F 65 36 11 B C D 6 A E 38 29
-	-> A 6 B C D E 11 F 
+	-> A 6 B C D E 11 F 29 32 33 35 36 
 Structure 591: 35 32 33 F 53 11 B 22 C D 6 A E 24 G 17 75
-	-> A 6 B C D E 11 F G 17 22 24 
+	-> A 6 B C D E 11 F G 17 22 24 32 33 35 
 Structure 592: 136 106 234 187 118 F 11 B C D 6 A E 24 G 17 25
 	-> A 6 B C D E 11 F G 17 24 25 
 Structure 593: 35 32 33 F 53 11 B 22 C D 6 A E 24 G 17 25
-	-> A 6 B C D E 11 F G 17 22 24 25 
+	-> A 6 B C D E 11 F G 17 22 24 25 32 33 35 
 Structure 594: 19 30 52 34 31 66 11 B C D 6 A 28 E 24 G 17 29
-	-> A 6 B C D E 11 G 17 19 24 
+	-> A 6 B C D E 11 G 17 19 24 28 29 30 31 34 
 Structure 595: 30 52 34 31 37 27 36 11 B C D 6 A E 21 23
-	-> A 6 B C D E 11 21 23 
+	-> A 6 B C D E 11 21 23 27 30 31 34 36 
 Structure 596: 58 19 30 34 31 37 27 41 B C D 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 23 
+	-> A 6 B C D E 18 19 21 23 27 30 31 34 
 Structure 597: 128 79 19 30 52 34 31 66 11 B C D 42 6 A E 18 21 23
-	-> A 6 B C D E 11 18 19 21 23 
+	-> A 6 B C D E 11 18 19 21 23 30 31 34 
 Structure 598: 235 19 30 34 31 27 41 1 C D 6 A E 24 G 17 25
-	-> A 6 C D E G 17 19 24 25 
+	-> A 6 C D E G 17 19 24 25 27 30 31 34 
 Structure 599: 56 19 30 52 34 31 37 27 72 57 B C D 6 A E 18 G 17 25
-	-> A 6 B C D E G 17 18 19 25 
+	-> A 6 B C D E G 17 18 19 25 27 30 31 34 
 Structure 600: 59 69 107 70 27 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 18 21 23 
+	-> A 6 B C D E 11 18 21 23 27 
 Structure 601: 59 62 69 83 70 27 11 B 22 C D 6 A E G 17 25
-	-> A 6 B C D E 11 G 17 22 25 
+	-> A 6 B C D E 11 G 17 22 25 27 
 Structure 602: 99 79 19 30 52 34 31 37 27 11 B C D 6 A E 24 G 17
-	-> A 6 B C D E 11 G 17 19 24 
+	-> A 6 B C D E 11 G 17 19 24 27 30 31 34 
 Structure 603: 99 79 19 26 40 47 51 55 11 B 22 2 D 42 6 A E 24 G 17
-	-> A 6 B D E 11 G 17 19 22 24 
+	-> A 6 B D E 11 G 17 19 22 24 26 
 Structure 604: 35 32 33 95 102 103 113 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 18 
+	-> A 6 B C D E 11 18 29 32 33 35 
 Structure 605: 35 32 33 F 53 36 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 32 33 35 36 
 Structure 606: 99 101 79 19 30 52 34 31 37 27 11 B C D 6 A 28 E 24 G 17
-	-> A 6 B C D E 11 G 17 19 24 
+	-> A 6 B C D E 11 G 17 19 24 27 28 30 31 34 
 Structure 607: 109 97 123 26 98 115 92 93 122 111 1 C D 6 A E 24 G 17 25
-	-> A 6 C D E G 17 24 25 
+	-> A 6 C D E G 17 24 25 26 
 Structure 608: 43 19 30 52 34 31 37 27 B C 7 6 A 28 39 G 17 48
-	-> A 6 B C G 17 19 
+	-> A 6 B C G 17 19 27 28 30 31 34 
 Structure 609: 49 182 46 F 11 B 22 C D 6 A E 18 G 17 29
-	-> A 6 B C D E 11 F G 17 18 22 
+	-> A 6 B C D E 11 F G 17 18 22 29 
 Structure 610: 19 64 54 F 11 B C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 19 21 23 
 Structure 611: 49 46 F 11 B C D 42 6 A E G 17 75
 	-> A 6 B C D E 11 F G 17 
 Structure 612: 49 45 F 36 11 41 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 36 
 Structure 613: 44 45 54 F 11 B C D 88 A 89 85 86 126 90
 	-> A B C D 11 F 
 Structure 614: 44 46 F 11 41 B C D 6 A E 24 G 17 25
 	-> A 6 B C D E 11 F G 17 24 25 
 Structure 615: 35 32 33 F 11 B C D 6 A E 24 G 68 25
-	-> A 6 B C D E 11 F G 24 25 
+	-> A 6 B C D E 11 F G 24 25 32 33 35 
 Structure 616: 84 94 69 83 70 27 114 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 18 21 23 
+	-> A 6 B C D E 11 18 21 23 27 
 Structure 617: 19 26 40 47 51 55 41 B 22 139 2 D 6 A E 18 38 29
-	-> A 6 B D E 18 19 22 
+	-> A 6 B D E 18 19 22 26 29 
 Structure 618: 49 45 54 F 100 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 
 Structure 619: 35 32 33 40 47 51 100 11 B 22 C D 6 A 28 39 G 68 25
-	-> A 6 B C D 11 G 22 25 
+	-> A 6 B C D 11 G 22 25 28 32 33 35 
 Structure 620: 49 F 11 B C D 6 A E 24 G 17 48
 	-> A 6 B C D E 11 F G 17 24 
 Structure 621: 35 32 33 F 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 32 33 35 
 Structure 622: 56 19 30 34 31 37 27 57 B C D 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 23 
+	-> A 6 B C D E 18 19 21 23 27 30 31 34 
 Structure 623: 44 60 46 F 11 B C D 6 A E 18 G 17 75
 	-> A 6 B C D E 11 F G 17 18 
 Structure 624: 49 45 F 11 B C D 6 A E 24 G 17 25
 	-> A 6 B C D E 11 F G 17 24 25 
 Structure 625: 59 26 F 11 B 22 C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 22 
+	-> A 6 B C D E 11 F 18 22 26 29 
 Structure 626: 30 34 31 37 27 36 11 B C D 6 A 28 E 24 G 17 25
-	-> A 6 B C D E 11 G 17 24 25 
+	-> A 6 B C D E 11 G 17 24 25 27 28 30 31 34 36 
 Structure 627: 44 45 54 F 11 B C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 23 
 Structure 628: 58 19 30 127 31 37 27 41 B C D 6 A E G 17
-	-> A 6 B C D E G 17 19 
+	-> A 6 B C D E G 17 19 27 30 31 
 Structure 629: 81 44 60 46 F 11 B C D 6 3 4 E 18 38 29
-	-> 6 B C D E 11 F 18 
+	-> 6 B C D E 11 F 18 29 
 Structure 630: 43 19 26 40 61 74 71 B C D 6 A 28 E 24 G 17 48 67
-	-> A 6 B C D E G 17 19 24 
+	-> A 6 B C D E G 17 19 24 26 28 
 Structure 631: 35 32 33 40 61 73 55 11 41 B C D 42 6 A E G 17 75
-	-> A 6 B C D E 11 G 17 
+	-> A 6 B C D E 11 G 17 32 33 35 
 Structure 632: 43 19 30 34 31 37 27 B C D 6 A E 18 G 17
-	-> A 6 B C D E G 17 18 19 
+	-> A 6 B C D E G 17 18 19 27 30 31 34 
 Structure 633: 105 19 30 34 31 37 27 41 B C D 6 A E 24 G 17 25
-	-> A 6 B C D E G 17 19 24 25 
+	-> A 6 B C D E G 17 19 24 25 27 30 31 34 
 Structure 634: 35 32 33 F 63 65 36 11 B 22 C D 6 A 167 E 24 G 17 25
-	-> A 6 B C D E 11 F G 17 22 24 25 
+	-> A 6 B C D E 11 F G 17 22 24 25 32 33 35 36 
 Structure 635: 56 19 30 52 34 31 37 27 B C D 6 A 28 39 G 17 25
-	-> A 6 B C D G 17 19 25 
+	-> A 6 B C D G 17 19 25 27 28 30 31 34 
 Structure 636: 44 45 F 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 
 Structure 637: 59 62 69 83 70 27 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 18 21 23 
+	-> A 6 B C D E 11 18 21 23 27 
 Structure 638: 49 45 F 11 B C D 6 A E 38 29
-	-> A 6 B C D E 11 F 
+	-> A 6 B C D E 11 F 29 
 Structure 639: 49 45 F 63 36 11 B 22 C D 6 A E 150 121
-	-> A 6 B C D E 11 F 22 
+	-> A 6 B C D E 11 F 22 36 
 Structure 640: 59 62 26 F 11 B C D 6 A E 24 G 17 25
-	-> A 6 B C D E 11 F G 17 24 25 
+	-> A 6 B C D E 11 F G 17 24 25 26 
 Structure 641: 169 45 54 F 63 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 
 Structure 642: 19 26 40 61 73 11 B C D 6 A 39 24 G 17
-	-> A 6 B C D 11 G 17 19 24 
+	-> A 6 B C D 11 G 17 19 24 26 
 Structure 643: 236 44 60 F 11 B C D 6 A E 18 G 17 29
-	-> A 6 B C D E 11 F G 17 18 
+	-> A 6 B C D E 11 F G 17 18 29 
 Structure 644: 43 19 30 34 31 37 27 B C D 6 A E 18 38 29
-	-> A 6 B C D E 18 19 
+	-> A 6 B C D E 18 19 27 29 30 31 34 
 Structure 645: 35 32 33 F 65 36 11 B C D 6 A 39 21 23
-	-> A 6 B C D 11 F 21 23 
+	-> A 6 B C D 11 F 21 23 32 33 35 36 
 Structure 646: 43 56 19 64 54 F B C D 6 A E 18 21 23
 	-> A 6 B C D E F 18 19 21 23 
 Structure 647: 19 30 52 34 31 37 27 11 B C 7 6 A 28 39 G 17 48
-	-> A 6 B C 11 G 17 19 
+	-> A 6 B C 11 G 17 19 27 28 30 31 34 
 Structure 648: 35 32 33 F 63 53 112 11 B 22 C D 6 A E 24 G 17 25
-	-> A 6 B C D E 11 F G 17 22 24 25 
+	-> A 6 B C D E 11 F G 17 22 24 25 32 33 35 
 Structure 649: 43 56 19 30 34 31 66 72 B C D 6 A E 21 23 67
-	-> A 6 B C D E 19 21 23 
+	-> A 6 B C D E 19 21 23 30 31 34 
 Structure 650: 19 30 34 31 37 27 11 B C D 42 6 A E 21 23
-	-> A 6 B C D E 11 19 21 23 
+	-> A 6 B C D E 11 19 21 23 27 30 31 34 
 Structure 651: 56 19 30 52 34 31 37 27 57 B C D 6 A E 24 G 48
-	-> A 6 B C D E G 19 24 
+	-> A 6 B C D E G 19 24 27 30 31 34 
 Structure 652: 35 32 33 F 53 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 32 33 35 
 Structure 653: 35 32 237 F 53 112 11 B C D 6 A E 39 24 G 17 25
-	-> A 6 B C D E 11 F G 17 24 25 
+	-> A 6 B C D E 11 F G 17 24 25 32 35 
 Structure 654: 44 116 46 F 11 41 B C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 23 
 Structure 655: 35 32 33 F 36 11 B 22 C D 6 A E 96 G 17 48
-	-> A 6 B C D E 11 F G 17 22 
+	-> A 6 B C D E 11 F G 17 22 32 33 35 36 
 Structure 656: 19 30 34 31 37 27 41 B 22 C D 6 A E 18 G 17
-	-> A 6 B C D E G 17 18 19 22 
+	-> A 6 B C D E G 17 18 19 22 27 30 31 34 
 Structure 657: 56 19 30 127 31 66 57 B C D 188 6 A 76 39 G 17 48
-	-> A 6 B C D G 17 19 
+	-> A 6 B C D G 17 19 30 31 
 Structure 658: 49 45 54 F 63 11 B 22 C D 6 A 28 39 G 17 25
-	-> A 6 B C D 11 F G 17 22 25 
+	-> A 6 B C D 11 F G 17 22 25 28 
 Structure 659: 58 19 30 52 34 31 37 27 41 B 22 C D 42 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 22 23 
+	-> A 6 B C D E 18 19 21 22 23 27 30 31 34 
 Structure 660: 56 19 26 40 47 51 55 57 B 141 C D 6 A E 24 G 48
-	-> A 6 B C D E G 19 24 
+	-> A 6 B C D E G 19 24 26 
 Structure 661: 49 45 54 F 100 11 B C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 23 
 Structure 662: 238 60 46 F 11 B 22 C D 42 6 A E 18 38 120 29
-	-> A 6 B C D E 11 F 18 22 
+	-> A 6 B C D E 11 F 18 22 29 
 Structure 663: 56 19 26 40 47 51 77 57 B C D 6 A E 24 G 17 25
-	-> A 6 B C D E G 17 19 24 25 
+	-> A 6 B C D E G 17 19 24 25 26 
 Structure 664: 44 60 46 F 11 B C D 6 A E 18 130 23
 	-> A 6 B C D E 11 F 18 23 
 Structure 665: 109 184 97 26 98 115 92 93 122 111 1 C D 42 6 A 28 39 24 G 17 25
-	-> A 6 C D G 17 24 25 
+	-> A 6 C D G 17 24 25 26 28 
 Structure 666: 35 32 33 F 36 11 B 22 2 D 6 A 28 39 G 17 25
-	-> A 6 B D 11 F G 17 22 25 
+	-> A 6 B D 11 F G 17 22 25 28 32 33 35 36 
 Structure 667: 35 32 33 F 119 11 B 22 139 2 D 6 A 28 E 24 G 17 25
-	-> A 6 B D E 11 F G 17 22 24 25 
+	-> A 6 B D E 11 F G 17 22 24 25 28 32 33 35 
 Structure 668: 30 52 34 31 37 27 36 11 B 22 C D 6 A 28 E 21 23
-	-> A 6 B C D E 11 21 22 23 
+	-> A 6 B C D E 11 21 22 23 27 28 30 31 34 36 
 Structure 669: 49 45 54 F 11 B C D 6 189 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 23 
 Structure 670: 49 45 54 F 36 11 B C D 6 A 28 E G 17 25
-	-> A 6 B C D E 11 F G 17 25 
+	-> A 6 B C D E 11 F G 17 25 28 36 
 Structure 671: 105 19 26 40 47 51 55 41 B C D 6 A E G 17 48 161
-	-> A 6 B C D E G 17 19 
+	-> A 6 B C D E G 17 19 26 
 Structure 672: 59 69 107 70 27 11 41 B 22 C D 6 A E 18 G 68 25
-	-> A 6 B C D E 11 G 18 22 25 
+	-> A 6 B C D E 11 G 18 22 25 27 
 Structure 673: 58 19 30 34 31 37 27 41 B C D 42 6 A E 18 38 87 29
-	-> A 6 B C D E 18 19 
+	-> A 6 B C D E 18 19 27 29 30 31 34 
 Structure 674: 19 26 40 47 51 55 11 B 22 C D 6 A 28 E 38 29
-	-> A 6 B C D E 11 19 22 
+	-> A 6 B C D E 11 19 22 26 28 29 
 Structure 675: 43 19 26 40 47 74 71 B 22 C D 6 A E 24 G 17 25
-	-> A 6 B C D E G 17 19 22 24 25 
+	-> A 6 B C D E G 17 19 22 24 25 26 
 Structure 676: 56 19 26 40 47 51 55 57 B 22 C D 6 A E 24 G 17 29
-	-> A 6 B C D E G 17 19 22 24 
+	-> A 6 B C D E G 17 19 22 24 26 29 
 Structure 677: 30 34 31 37 27 36 11 B 22 C D 42 6 A 39 24 G 17 48
-	-> A 6 B C D 11 G 17 22 24 
+	-> A 6 B C D 11 G 17 22 24 27 30 31 34 36 
 Structure 678: 56 19 30 34 31 37 27 57 B C D 6 A E 18 38 29
-	-> A 6 B C D E 18 19 
+	-> A 6 B C D E 18 19 27 29 30 31 34 
 Structure 679: 56 19 30 34 31 37 27 B C D 42 6 A E 24 G 25
-	-> A 6 B C D E G 19 24 25 
+	-> A 6 B C D E G 19 24 25 27 30 31 34 
 Structure 680: 43 19 30 34 31 37 27 B 22 172 C D 6 A E 18 38 29 161
-	-> A 6 B C D E 18 19 22 
+	-> A 6 B C D E 18 19 22 27 29 30 31 34 
 Structure 681: 109 97 123 26 98 183 92 93 122 111 1 C 78 80 6 A E 24 G 17 25
-	-> A 6 C E G 17 24 25 
+	-> A 6 C E G 17 24 25 26 
 Structure 682: 59 69 107 70 27 11 B C D 6 A E 18 G 17 25
-	-> A 6 B C D E 11 G 17 18 25 
+	-> A 6 B C D E 11 G 17 18 25 27 
 Structure 683: 35 32 33 F 36 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 32 33 35 36 
 Structure 684: 19 26 40 47 51 55 11 B 22 C D 6 A 28 E 24 G 17 29
-	-> A 6 B C D E 11 G 17 19 22 24 
+	-> A 6 B C D E 11 G 17 19 22 24 26 28 29 
 Structure 685: 156 59 62 69 107 70 66 11 B 22 C D 6 A E 24 G 68 48
 	-> A 6 B C D E 11 G 22 24 
 Structure 686: 35 32 33 F 53 36 11 41 B 22 C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 22 23 
+	-> A 6 B C D E 11 F 18 21 22 23 32 33 35 36 
 Structure 687: 94 26 F 36 11 B 22 C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 22 
+	-> A 6 B C D E 11 F 18 22 26 29 36 
 Structure 688: 104 149 19 30 34 31 37 27 41 B C D 6 A E G 17 25
-	-> A 6 B C D E G 17 19 25 
+	-> A 6 B C D E G 17 19 25 27 30 31 34 
 Structure 689: 81 44 60 46 F 11 B 22 C D 6 A 28 E 24 G 17
-	-> A 6 B C D E 11 F G 17 22 24 
+	-> A 6 B C D E 11 F G 17 22 24 28 
 Structure 690: 19 30 52 34 31 66 72 11 B C D 6 A E 159 21 23
-	-> A 6 B C D E 11 19 21 23 
+	-> A 6 B C D E 11 19 21 23 30 31 34 
 Structure 691: 146 168 124 239 240 241 242 53 11 B C D 3 4 243 167 28 E G 17 25
-	-> B C D E 11 G 17 25 
+	-> B C D E 11 G 17 25 28 
 Structure 692: 59 62 26 F 63 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 26 29 
 Structure 693: 44 45 F 11 41 B C D 6 A 28 39 G 17 48
-	-> A 6 B C D 11 F G 17 
+	-> A 6 B C D 11 F G 17 28 
 Structure 694: 43 19 26 40 47 51 71 B C D 42 6 A E 24 G 17 25 67
-	-> A 6 B C D E G 17 19 24 25 
+	-> A 6 B C D E G 17 19 24 25 26 
 Structure 695: 58 19 64 34 31 37 27 41 B 22 C D 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 22 23 
+	-> A 6 B C D E 18 19 21 22 23 27 31 34 
 Structure 696: 56 19 26 40 47 51 55 57 B C D 88 110 A 89 85 86 126 90
-	-> A B C D 19 
+	-> A B C D 19 26 
 Structure 697: 44 60 46 F 11 B C D 42 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 
 Structure 698: 43 19 30 52 34 31 37 27 B 22 C D 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 22 23 
+	-> A 6 B C D E 18 19 21 22 23 27 30 31 34 
 Structure 699: 35 32 33 40 47 74 71 36 11 B 22 C D 6 A 28 E 96 G 17 48
-	-> A 6 B C D E 11 G 17 22 
+	-> A 6 B C D E 11 G 17 22 28 32 33 35 36 
 Structure 700: 58 19 30 34 31 37 27 41 B 22 C D 42 6 A E 18 38 29
-	-> A 6 B C D E 18 19 22 
+	-> A 6 B C D E 18 19 22 27 29 30 31 34 
 Structure 701: 81 44 45 54 F 11 B C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 23 
 Structure 702: 101 19 30 34 31 37 27 11 B C D 42 6 A 244 24 G 17 48
-	-> A 6 B C D 11 G 17 19 24 
+	-> A 6 B C D 11 G 17 19 24 27 30 31 34 
 Structure 703: 35 32 33 F 53 11 B C D 6 A E 24 G 17 25
-	-> A 6 B C D E 11 F G 17 24 25 
+	-> A 6 B C D E 11 F G 17 24 25 32 33 35 
 Structure 704: 56 19 26 40 47 51 77 57 B C D 6 A E 18 G 68 48
-	-> A 6 B C D E G 18 19 
+	-> A 6 B C D E G 18 19 26 
 Structure 705: 35 32 33 F 65 36 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 32 33 35 36 
 Structure 706: 19 30 34 31 37 27 57 B 22 C D 6 A E 38 29
-	-> A 6 B C D E 19 22 
+	-> A 6 B C D E 19 22 27 29 30 31 34 
 Structure 707: 44 187 118 F 11 B C D 6 A 28 E 24 G 17
-	-> A 6 B C D E 11 F G 17 24 
+	-> A 6 B C D E 11 F G 17 24 28 
 Structure 708: 43 19 30 52 34 31 37 27 B 22 C D 6 A E 24 G 17 48 67
-	-> A 6 B C D E G 17 19 22 24 
+	-> A 6 B C D E G 17 19 22 24 27 30 31 34 
 Structure 709: 59 62 26 F 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 26 29 
 Structure 710: 59 62 69 83 70 66 11 B 22 C D 42 6 A E 18 38 120 29
-	-> A 6 B C D E 11 18 22 
+	-> A 6 B C D E 11 18 22 29 
 Structure 711: 43 19 30 34 31 37 27 B 22 2 D 6 A E 18 38 29
-	-> A 6 B D E 18 19 22 
+	-> A 6 B D E 18 19 22 27 29 30 31 34 
 Structure 712: 59 26 F 11 B C D 6 A E 24 G 17
-	-> A 6 B C D E 11 F G 17 24 
+	-> A 6 B C D E 11 F G 17 24 26 
 Structure 713: 35 32 33 F 65 100 11 B C D 6 A E 24 G 17
-	-> A 6 B C D E 11 F G 17 24 
+	-> A 6 B C D E 11 F G 17 24 32 33 35 
 Structure 714: 43 19 30 52 34 31 37 27 72 B 141 C D 6 A E 18 38 29 67
-	-> A 6 B C D E 18 19 
+	-> A 6 B C D E 18 19 27 29 30 31 34 
 Structure 715: 35 32 33 F 53 36 11 B C D 6 A E 38 29
-	-> A 6 B C D E 11 F 
+	-> A 6 B C D E 11 F 29 32 33 35 36 
 Structure 716: 44 46 91 F 11 B 22 2 D 6 A E 18 G 17 25
 	-> A 6 B D E 11 F G 17 18 22 25 
 Structure 717: 35 32 33 F 65 36 11 B C D 6 A E 18 G 17 25
-	-> A 6 B C D E 11 F G 17 18 25 
+	-> A 6 B C D E 11 F G 17 18 25 32 33 35 36 
 Structure 718: 84 62 26 F 36 11 41 B 22 C D 6 A E 21 23
-	-> A 6 B C D E 11 F 21 22 23 
+	-> A 6 B C D E 11 F 21 22 23 26 36 
 Structure 719: 105 79 19 30 34 31 66 72 11 B 22 C D 6 A 76 39 G 17 25
-	-> A 6 B C D 11 G 17 19 22 25 
+	-> A 6 B C D 11 G 17 19 22 25 30 31 34 
 Structure 720: 44 60 46 F 11 B C D 6 A 28 39 G 17 48
-	-> A 6 B C D 11 F G 17 
+	-> A 6 B C D 11 F G 17 28 
 Structure 721: 35 32 33 F 65 36 11 B C D 6 A E 24 G 17 25
-	-> A 6 B C D E 11 F G 17 24 25 
+	-> A 6 B C D E 11 F G 17 24 25 32 33 35 36 
 Structure 722: 19 30 52 34 31 37 27 11 B C D 6 A E 24 G 17 25 75
-	-> A 6 B C D E 11 G 17 19 24 25 
+	-> A 6 B C D E 11 G 17 19 24 25 27 30 31 34 
 Structure 723: 35 32 33 F 53 11 B 170 C D 6 A 28 E 24 G 17 25
-	-> A 6 B C D E 11 F G 17 24 25 
+	-> A 6 B C D E 11 F G 17 24 25 28 32 33 35 
 Structure 724: 58 19 30 52 34 31 37 27 41 B 22 C D 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 22 23 
+	-> A 6 B C D E 18 19 21 22 23 27 30 31 34 
 Structure 725: 56 19 30 52 34 31 37 27 57 B 22 C D 42 6 A E 18 G 17 25
-	-> A 6 B C D E G 17 18 19 22 25 
+	-> A 6 B C D E G 17 18 19 22 25 27 30 31 34 
 Structure 726: 35 32 33 F 63 65 36 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 32 33 35 36 
 Structure 727: 19 30 34 31 37 27 41 B C D 42 6 A 39 G 17 48
-	-> A 6 B C D G 17 19 
+	-> A 6 B C D G 17 19 27 30 31 34 
 Structure 728: 49 45 F 11 41 B 22 C D 42 6 A E 24 G 17 25
 	-> A 6 B C D E 11 F G 17 22 24 25 
 Structure 729: 43 19 30 52 34 31 37 27 B C D 6 A E 18 38 29
-	-> A 6 B C D E 18 19 
+	-> A 6 B C D E 18 19 27 29 30 31 34 
 Structure 730: 35 32 33 F 53 11 B C D 6 A 28 E G 17 29
-	-> A 6 B C D E 11 F G 17 
+	-> A 6 B C D E 11 F G 17 28 29 32 33 35 
 Structure 731: 84 32 33 F 36 11 B C D 6 A 28 E 24 G 17
-	-> A 6 B C D E 11 F G 17 24 
+	-> A 6 B C D E 11 F G 17 24 28 32 33 36 
 Structure 732: 84 245 33 F 11 B 22 C D 6 A E 24 G 17
-	-> A 6 B C D E 11 F G 17 22 24 
+	-> A 6 B C D E 11 F G 17 22 24 33 
 Structure 733: 35 32 33 F 53 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 32 33 35 
 Structure 734: 44 127 31 37 27 11 B C D 88 110 A 89 85 86 126 90
-	-> A B C D 11 
+	-> A B C D 11 27 31 
 Structure 735: 44 46 F 11 B C D 6 A E 18 G 17 48
 	-> A 6 B C D E 11 F G 17 18 
 Structure 736: 81 44 60 46 F 11 41 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 
 Structure 737: 44 45 F 11 41 B C D 6 246 3 4 247 248 249 250 158
 	-> 6 B C D 11 F 
 Structure 738: 56 19 30 34 31 66 72 57 B 22 C D 42 6 A E 18 38 29
-	-> A 6 B C D E 18 19 22 
+	-> A 6 B C D E 18 19 22 29 30 31 34 
 Structure 739: 56 19 30 52 34 31 37 27 57 B C D 6 A E 18 38 29
-	-> A 6 B C D E 18 19 
+	-> A 6 B C D E 18 19 27 29 30 31 34 
 Structure 740: 49 45 54 F 36 11 B C D 6 A E 24 251 16 17 48
-	-> A 6 B C D E 11 F 17 24 
+	-> A 6 B C D E 11 F 17 24 36 
 Structure 741: 81 44 45 F 11 B 22 C D 42 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 22 23 
 Structure 742: 190 30 52 34 31 37 27 72 11 B 22 C D 6 A E 18 38 29
-	-> A 6 B C D E 11 18 22 
+	-> A 6 B C D E 11 18 22 27 29 30 31 34 
 Structure 743: 19 30 34 31 37 27 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 18 19 21 23 
+	-> A 6 B C D E 11 18 19 21 23 27 30 31 34 
 Structure 744: 43 19 30 26 F B 22 C D 6 A 76 39 G 68 48
-	-> A 6 B C D F G 19 22 
+	-> A 6 B C D F G 19 22 26 30 
 Structure 745: 35 32 33 F 119 164 11 B C 10 78 80 42 6 A E 24 G 17 25
-	-> A 6 B C E 11 F G 17 24 25 
+	-> A 6 B C E 11 F G 17 24 25 32 33 35 
 Structure 746: 35 32 33 F 36 11 B 22 C D 6 A E 39 G 17 48
-	-> A 6 B C D E 11 F G 17 22 
+	-> A 6 B C D E 11 F G 17 22 32 33 35 36 
 Structure 747: 35 32 33 F 63 36 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 32 33 35 36 
 Structure 748: 84 94 69 83 70 252 36 11 41 B 22 C D 42 6 A E 18 21 23
-	-> A 6 B C D E 11 18 21 22 23 
+	-> A 6 B C D E 11 18 21 22 23 36 
 Structure 749: 49 45 54 F 63 36 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 36 
 Structure 750: 43 19 26 40 61 73 B C D 42 6 A 28 E G 17 29 67
-	-> A 6 B C D E G 17 19 
+	-> A 6 B C D E G 17 19 26 28 29 
 Structure 751: 43 19 30 34 31 37 27 B C D 6 A E 24 16 17 25
-	-> A 6 B C D E 17 19 24 25 
+	-> A 6 B C D E 17 19 24 25 27 30 31 34 
 Structure 752: 44 46 F 63 11 41 B C D 6 A E 18 142 130
 	-> A 6 B C D E 11 F 18 
 Structure 753: 44 116 46 F 11 B C D 6 A E 24 G 17
@@ -1508,494 +1508,494 @@ Structure 753: 44 116 46 F 11 B C D 6 A E 24 G 17
 Structure 754: 99 128 79 64 F 11 B C D 6 A E G 17 25
 	-> A 6 B C D E 11 F G 17 25 
 Structure 755: 56 19 26 40 47 51 55 57 B C D 88 A 89 85 86 126 90
-	-> A B C D 19 
+	-> A B C D 19 26 
 Structure 756: 19 30 26 F 11 B 22 2 D 6 A 39 G 17
-	-> A 6 B D 11 F G 17 19 22 
+	-> A 6 B D 11 F G 17 19 22 26 30 
 Structure 757: 35 32 33 40 61 73 36 11 B C D 6 A 28 E G 17 25
-	-> A 6 B C D E 11 G 17 25 
+	-> A 6 B C D E 11 G 17 25 28 32 33 35 36 
 Structure 758: 49 45 54 F 36 11 B C D 6 A E 18 38 87 108 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 36 
 Structure 759: 19 30 34 31 37 27 11 B C D 6 A E 24 G 17 48
-	-> A 6 B C D E 11 G 17 19 24 
+	-> A 6 B C D E 11 G 17 19 24 27 30 31 34 
 Structure 760: 43 19 26 40 47 74 55 B 22 C D 6 A 28 E 24 G 17 67
-	-> A 6 B C D E G 17 19 22 24 
+	-> A 6 B C D E G 17 19 22 24 26 28 
 Structure 761: 44 60 46 91 F 11 B C D 6 A E 18 38 87 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 
 Structure 762: 99 79 45 54 F 11 B C D 6 A 28 39 G 17
-	-> A 6 B C D 11 F G 17 
+	-> A 6 B C D 11 F G 17 28 
 Structure 763: 58 19 26 40 61 73 41 B 22 C D 6 A 28 39 G 17
-	-> A 6 B C D G 17 19 22 
+	-> A 6 B C D G 17 19 22 26 28 
 Structure 764: 43 19 30 127 31 37 27 B C D 6 A E 24 G 17 48
-	-> A 6 B C D E G 17 19 24 
+	-> A 6 B C D E G 17 19 24 27 30 31 
 Structure 765: 104 149 19 26 40 61 73 117 11 B 22 C D 6 A E 18 38 29
-	-> A 6 B C D E 11 18 19 22 
+	-> A 6 B C D E 11 18 19 22 26 29 
 Structure 766: 56 19 30 52 34 31 37 27 57 B C D 6 A E 18 38 29
-	-> A 6 B C D E 18 19 
+	-> A 6 B C D E 18 19 27 29 30 31 34 
 Structure 767: 35 32 33 95 102 103 113 11 B 22 C D 6 A E 24 G 17 25
-	-> A 6 B C D E 11 G 17 22 24 25 
+	-> A 6 B C D E 11 G 17 22 24 25 32 33 35 
 Structure 768: 35 32 33 F 36 11 B C 7 6 A 28 39 G 17 25 75
-	-> A 6 B C 11 F G 17 25 
+	-> A 6 B C 11 F G 17 25 28 32 33 35 36 
 Structure 769: 99 101 79 30 34 31 37 27 11 B C D 6 A E 18 G 17 25
-	-> A 6 B C D E 11 G 17 18 25 
+	-> A 6 B C D E 11 G 17 18 25 27 30 31 34 
 Structure 770: 49 46 F 36 11 B C 253 186 D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 36 
 Structure 771: 49 45 54 F 11 B 22 C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 22 
+	-> A 6 B C D E 11 F 18 22 29 
 Structure 772: 81 44 60 46 F 11 B 22 C D 6 A 28 E 24 G 17 25
-	-> A 6 B C D E 11 F G 17 22 24 25 
+	-> A 6 B C D E 11 F G 17 22 24 25 28 
 Structure 773: 58 129 133 134 135 155 143 144 40 51 55 1 C D 6 A E 24 G 17 25
 	-> A 6 C D E G 17 24 25 
 Structure 774: 58 19 30 34 31 37 27 11 B 22 2 D 6 A E 18 21 23
-	-> A 6 B D E 11 18 19 21 22 23 
+	-> A 6 B D E 11 18 19 21 22 23 27 30 31 34 
 Structure 775: 43 19 26 40 61 77 B 22 C D 6 A 39 38 29 67
-	-> A 6 B C D 19 22 
+	-> A 6 B C D 19 22 26 29 
 Structure 776: 59 62 69 138 70 27 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 18 21 23 
+	-> A 6 B C D E 11 18 21 23 27 
 Structure 777: 35 32 33 95 102 103 113 11 B C D 6 A E 18 38 87 108 160
-	-> A 6 B C D E 11 18 
+	-> A 6 B C D E 11 18 32 33 35 
 Structure 778: 35 32 33 F 132 11 B C D 6 A 76 39 G 17 25
-	-> A 6 B C D 11 F G 17 25 
+	-> A 6 B C D 11 F G 17 25 32 33 35 
 Structure 779: 43 19 30 52 34 31 37 27 B C D 6 A 28 E 24 G 17 48
-	-> A 6 B C D E G 17 19 24 
+	-> A 6 B C D E G 17 19 24 27 28 30 31 34 
 Structure 780: 56 19 26 F 57 B C D 6 A E 21 23
-	-> A 6 B C D E F 19 21 23 
+	-> A 6 B C D E F 19 21 23 26 
 Structure 781: 81 44 45 F 11 B C D 6 A E 18 G 17 29
-	-> A 6 B C D E 11 F G 17 18 
+	-> A 6 B C D E 11 F G 17 18 29 
 Structure 782: 81 44 60 46 91 F 11 B C D 42 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 23 
 Structure 783: 35 32 33 F 53 11 B 141 C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 32 33 35 
 Structure 784: 19 254 64 F 11 B C D 42 6 A E 24 G 17 29
-	-> A 6 B C D E 11 F G 17 19 24 
+	-> A 6 B C D E 11 F G 17 19 24 29 
 Structure 785: 35 32 33 F 53 114 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 32 33 35 
 Structure 786: 101 191 19 64 91 F 63 11 B C D 6 A 39 G 68 25
 	-> A 6 B C D 11 F G 19 25 
 Structure 787: 44 45 F 11 B C D 6 A 76 39 G 17
 	-> A 6 B C D 11 F G 17 
 Structure 788: 35 32 33 F 65 36 11 B C D 6 A E 18 G 17 25
-	-> A 6 B C D E 11 F G 17 18 25 
+	-> A 6 B C D E 11 F G 17 18 25 32 33 35 36 
 Structure 789: 44 60 46 F 11 41 B C D 42 6 A E 18 G 17 25
 	-> A 6 B C D E 11 F G 17 18 25 
 Structure 790: 56 19 30 34 31 66 57 B C D 6 A E 18 G 17 25
-	-> A 6 B C D E G 17 18 19 25 
+	-> A 6 B C D E G 17 18 19 25 30 31 34 
 Structure 791: 49 45 54 F 11 B C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 23 
 Structure 792: 35 32 33 F 36 11 B 22 C D 6 A 28 39 G 17 25
-	-> A 6 B C D 11 F G 17 22 25 
+	-> A 6 B C D 11 F G 17 22 25 28 32 33 35 36 
 Structure 793: 19 26 40 47 51 55 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 18 19 
+	-> A 6 B C D E 11 18 19 26 29 
 Structure 794: 44 60 46 F 11 B 22 C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 22 
+	-> A 6 B C D E 11 F 18 22 29 
 Structure 795: 35 32 33 F 11 41 B C D 6 A 28 E G 17 25
-	-> A 6 B C D E 11 F G 17 25 
+	-> A 6 B C D E 11 F G 17 25 28 32 33 35 
 Structure 796: 44 60 46 F 11 B 22 C D 42 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 22 23 
 Structure 797: 94 69 107 70 27 36 11 B C D 6 A 28 E 24 G 17 29
-	-> A 6 B C D E 11 G 17 24 
+	-> A 6 B C D E 11 G 17 24 27 28 29 36 
 Structure 798: 58 19 26 40 61 77 41 B C D 6 A E 18 G 17 48
-	-> A 6 B C D E G 17 18 19 
+	-> A 6 B C D E G 17 18 19 26 
 Structure 799: 19 30 34 31 37 27 41 B C D 6 A E G 17 25
-	-> A 6 B C D E G 17 19 25 
+	-> A 6 B C D E G 17 19 25 27 30 31 34 
 Structure 800: 59 166 26 F 11 B C D 42 6 A E 18 38 87 108 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 26 29 
 Structure 801: 35 32 33 F 65 36 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 32 33 35 36 
 Structure 802: 44 116 255 171 40 47 74 71 11 B C D 6 A E G 17 75
 	-> A 6 B C D E 11 G 17 
 Structure 803: 19 30 34 31 37 66 185 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 18 19 
+	-> A 6 B C D E 11 18 19 29 30 31 34 
 Structure 804: 43 19 26 40 61 73 77 B C D 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 23 
+	-> A 6 B C D E 18 19 21 23 26 
 Structure 805: 105 128 30 34 31 37 27 11 B C D 6 A 28 E G 17 48
-	-> A 6 B C D E 11 G 17 
+	-> A 6 B C D E 11 G 17 27 28 30 31 34 
 Structure 806: 35 32 33 F 53 36 11 B 22 C D 6 A E 24 G 17
-	-> A 6 B C D E 11 F G 17 22 24 
+	-> A 6 B C D E 11 F G 17 22 24 32 33 35 36 
 Structure 807: 35 32 33 F 53 11 B C D 6 A E 18 G 17 25
-	-> A 6 B C D E 11 F G 17 18 25 
+	-> A 6 B C D E 11 F G 17 18 25 32 33 35 
 Structure 808: 35 32 33 F 100 11 B C D 6 A 28 39 96 G 17 25
-	-> A 6 B C D 11 F G 17 25 
+	-> A 6 B C D 11 F G 17 25 28 32 33 35 
 Structure 809: 56 19 26 40 47 51 77 57 B C D 6 A E 18 G 17 75
-	-> A 6 B C D E G 17 18 19 
+	-> A 6 B C D E G 17 18 19 26 
 Structure 810: 35 32 33 F 65 11 B C D 6 A 28 39 G 17 29
-	-> A 6 B C D 11 F G 17 
+	-> A 6 B C D 11 F G 17 28 29 32 33 35 
 Structure 811: 44 46 F 11 B C D 6 A 28 39 24 G 17 29
-	-> A 6 B C D 11 F G 17 24 
+	-> A 6 B C D 11 F G 17 24 28 29 
 Structure 812: 35 32 33 F 53 11 B C D 6 A E 18 38 120 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 32 33 35 
 Structure 813: 35 32 33 F 36 11 B C D 6 A E 24 G 17 48
-	-> A 6 B C D E 11 F G 17 24 
+	-> A 6 B C D E 11 F G 17 24 32 33 35 36 
 Structure 814: 44 116 46 F 11 B C D 6 A 28 E 24 G 17
-	-> A 6 B C D E 11 F G 17 24 
+	-> A 6 B C D E 11 F G 17 24 28 
 Structure 815: 44 45 F 11 B C D 6 A 28 39 G 17
-	-> A 6 B C D 11 F G 17 
+	-> A 6 B C D 11 F G 17 28 
 Structure 816: 56 19 26 40 47 51 55 57 B C D 6 A 28 39 24 G 17 25
-	-> A 6 B C D G 17 19 24 25 
+	-> A 6 B C D G 17 19 24 25 26 28 
 Structure 817: 59 62 69 83 70 27 11 B 22 C D 6 A E 18 21 23
-	-> A 6 B C D E 11 18 21 22 23 
+	-> A 6 B C D E 11 18 21 22 23 27 
 Structure 818: 49 45 F 36 11 B 22 C D 42 6 A 28 E 24 G 17
-	-> A 6 B C D E 11 F G 17 22 24 
+	-> A 6 B C D E 11 F G 17 22 24 28 36 
 Structure 819: 43 19 26 40 47 51 55 B C 192 7 6 A E 18 21 23
-	-> A 6 B C E 18 19 21 23 
+	-> A 6 B C E 18 19 21 23 26 
 Structure 820: 19 26 40 47 51 55 41 B C D 6 A E 24 21 121
-	-> A 6 B C D E 19 21 24 
+	-> A 6 B C D E 19 21 24 26 
 Structure 821: 44 116 46 F 11 B C D 6 A 28 39 21 23
-	-> A 6 B C D 11 F 21 23 
+	-> A 6 B C D 11 F 21 23 28 
 Structure 822: 43 19 30 52 34 31 37 27 B C D 6 A E 18 21 23 67
-	-> A 6 B C D E 18 19 21 23 
+	-> A 6 B C D E 18 19 21 23 27 30 31 34 
 Structure 823: 35 32 33 F 63 53 11 B C D 42 6 A E 24 G 17 25
-	-> A 6 B C D E 11 F G 17 24 25 
+	-> A 6 B C D E 11 F G 17 24 25 32 33 35 
 Structure 824: 19 26 40 47 74 71 11 B C D 6 A E 18 G 17
-	-> A 6 B C D E 11 G 17 18 19 
+	-> A 6 B C D E 11 G 17 18 19 26 
 Structure 825: 35 32 33 95 102 103 113 11 B 22 C D 6 A E 18 21 23
-	-> A 6 B C D E 11 18 21 22 23 
+	-> A 6 B C D E 11 18 21 22 23 32 33 35 
 Structure 826: 256 174 53 11 B C D 6 A E 18 21 23
 	-> A 6 B C D E 11 18 21 23 
 Structure 827: 59 62 26 F 11 B C D 6 A 28 39 G 17 48
-	-> A 6 B C D 11 F G 17 
+	-> A 6 B C D 11 F G 17 26 28 
 Structure 828: 35 32 33 F 53 11 B 22 C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 22 
+	-> A 6 B C D E 11 F 18 22 29 32 33 35 
 Structure 829: 99 45 F 36 11 B 22 C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 22 23 
+	-> A 6 B C D E 11 F 18 21 22 23 36 
 Structure 830: 49 257 46 F 11 B 22 C D 6 A 28 E 24 G 17
-	-> A 6 B C D E 11 F G 17 22 24 
+	-> A 6 B C D E 11 F G 17 22 24 28 
 Structure 831: 165 32 33 F 65 11 B C D 6 A 28 E 38 29
-	-> A 6 B C D E 11 F 
+	-> A 6 B C D E 11 F 28 29 32 33 
 Structure 832: 56 19 30 26 F B C D 6 A 28 39 G 17 25
-	-> A 6 B C D F G 17 19 25 
+	-> A 6 B C D F G 17 19 25 26 28 30 
 Structure 833: 56 19 30 52 34 31 66 B 22 C D 6 A E 18 38 29
-	-> A 6 B C D E 18 19 22 
+	-> A 6 B C D E 18 19 22 29 30 31 34 
 Structure 834: 81 44 F 11 41 B C D 6 A 28 E G 17 25
-	-> A 6 B C D E 11 F G 17 25 
+	-> A 6 B C D E 11 F G 17 25 28 
 Structure 835: 30 34 31 37 27 72 36 11 B C D 6 A 39 G 68 25
-	-> A 6 B C D 11 G 25 
+	-> A 6 B C D 11 G 25 27 30 31 34 36 
 Structure 836: 104 125 190 30 34 31 37 27 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 18 21 23 
+	-> A 6 B C D E 11 18 21 23 27 30 31 34 
 Structure 837: 19 45 F 11 B 22 C D 6 A E 18 38 87 108 29
-	-> A 6 B C D E 11 F 18 19 22 
+	-> A 6 B C D E 11 F 18 19 22 29 
 Structure 838: 35 32 33 F 36 11 B C D 6 A E 18 G 17 29
-	-> A 6 B C D E 11 F G 17 18 
+	-> A 6 B C D E 11 F G 17 18 29 32 33 35 36 
 Structure 839: 99 101 79 19 30 52 34 31 66 11 B C D 42 6 A 39 24 G 17 48
-	-> A 6 B C D 11 G 17 19 24 
+	-> A 6 B C D 11 G 17 19 24 30 31 34 
 Structure 840: 43 19 30 34 31 37 27 B 22 C D 6 A 28 39 G 17 25
-	-> A 6 B C D G 17 19 22 25 
+	-> A 6 B C D G 17 19 22 25 27 28 30 31 34 
 Structure 841: 105 59 193 F 36 11 B C D 42 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 36 
 Structure 842: 43 19 30 52 34 31 37 27 B C D 6 A E 18 G 17 25
-	-> A 6 B C D E G 17 18 19 25 
+	-> A 6 B C D E G 17 18 19 25 27 30 31 34 
 Structure 843: 49 46 F 11 B 22 C D 6 A 28 E G 17 25
-	-> A 6 B C D E 11 F G 17 22 25 
+	-> A 6 B C D E 11 F G 17 22 25 28 
 Structure 844: 56 19 26 40 61 71 57 B C D 6 A 39 G 17 48
-	-> A 6 B C D G 17 19 
+	-> A 6 B C D G 17 19 26 
 Structure 845: 49 46 54 F 36 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 36 
 Structure 846: 35 32 33 F 53 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 32 33 35 
 Structure 847: 56 19 30 34 258 66 72 57 B C D 88 110 A 89 85 86 90
-	-> A B C D 19 
+	-> A B C D 19 30 34 
 Structure 848: 104 19 45 F 41 1 C D 6 A E 21 23
 	-> A 6 C D E F 19 21 23 
 Structure 849: 35 32 33 40 47 51 55 36 11 B C D 6 A 28 E G 17 25
-	-> A 6 B C D E 11 G 17 25 
+	-> A 6 B C D E 11 G 17 25 28 32 33 35 36 
 Structure 850: 43 19 30 34 31 37 27 B C D 6 A E 18 21 23 67
-	-> A 6 B C D E 18 19 21 23 
+	-> A 6 B C D E 18 19 21 23 27 30 31 34 
 Structure 851: 44 60 46 F 11 B C D 42 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 
 Structure 852: 49 45 F 36 11 B C D 42 6 A E 24 G 17 48
-	-> A 6 B C D E 11 F G 17 24 
+	-> A 6 B C D E 11 F G 17 24 36 
 Structure 853: 81 44 60 46 F 11 B 22 C D 6 A E 18 G 17 48
 	-> A 6 B C D E 11 F G 17 18 22 
 Structure 854: 43 19 30 34 31 27 B 22 C D 6 A 76 39 G 17 29
-	-> A 6 B C D G 17 19 22 
+	-> A 6 B C D G 17 19 22 27 29 30 31 34 
 Structure 855: 35 32 33 40 47 51 55 36 11 B 22 C D 6 A E 24 G 17 29
-	-> A 6 B C D E 11 G 17 22 24 
+	-> A 6 B C D E 11 G 17 22 24 29 32 33 35 36 
 Structure 856: 43 131 19 30 34 31 27 B C D 6 163 A E 18 21 23 67
-	-> A 6 B C D E 18 19 21 23 
+	-> A 6 B C D E 18 19 21 23 27 30 31 34 
 Structure 857: 59 62 69 107 70 27 11 41 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 18 21 23 
+	-> A 6 B C D E 11 18 21 23 27 
 Structure 858: 35 32 33 F 53 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 32 33 35 
 Structure 859: 84 94 26 F 36 11 B C D 42 6 A E 18 G 108 29
-	-> A 6 B C D E 11 F G 18 
+	-> A 6 B C D E 11 F G 18 26 29 36 
 Structure 860: 44 60 46 F 11 B 22 C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 22 
+	-> A 6 B C D E 11 F 18 22 29 
 Structure 861: 35 32 33 95 102 103 113 11 B C 7 6 A E 154 142 130
-	-> A 6 B C E 11 
+	-> A 6 B C E 11 32 33 35 
 Structure 862: 35 32 33 F 53 11 41 B 22 C D 6 A E 18 259 38 29
-	-> A 6 B C D E 11 F 18 22 
+	-> A 6 B C D E 11 F 18 22 29 32 33 35 
 Structure 863: 59 62 26 F 11 B C D 6 A E 24 G 48
-	-> A 6 B C D E 11 F G 24 
+	-> A 6 B C D E 11 F G 24 26 
 Structure 864: 56 19 30 52 34 31 37 27 57 B C D 6 A E 18 38 29
-	-> A 6 B C D E 18 19 
+	-> A 6 B C D E 18 19 27 29 30 31 34 
 Structure 865: 43 19 30 26 F B C D 6 A E 18 G 25 67
-	-> A 6 B C D E F G 18 19 25 
+	-> A 6 B C D E F G 18 19 25 26 30 
 Structure 866: 19 26 40 47 51 55 11 B C D 6 A 28 E 24 G 17 137
-	-> A 6 B C D E 11 G 17 19 24 
+	-> A 6 B C D E 11 G 17 19 24 26 28 
 Structure 867: 44 46 F 11 B C D 6 A E 24 G 17 75
 	-> A 6 B C D E 11 F G 17 24 
 Structure 868: 19 26 40 47 51 55 11 B C 78 80 6 A E 18 38 29
-	-> A 6 B C E 11 18 19 
+	-> A 6 B C E 11 18 19 26 29 
 Structure 869: 35 32 33 F 53 11 B 22 C D 42 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 22 
+	-> A 6 B C D E 11 F 18 22 29 32 33 35 
 Structure 870: 58 19 30 52 34 31 37 27 41 B C D 6 A E 18 G 68 48
-	-> A 6 B C D E G 18 19 
+	-> A 6 B C D E G 18 19 27 30 31 34 
 Structure 871: 49 45 54 F 36 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 36 
 Structure 872: 43 19 30 34 31 37 27 B C D 6 A E 24 G 17 25 67
-	-> A 6 B C D E G 17 19 24 25 
+	-> A 6 B C D E G 17 19 24 25 27 30 31 34 
 Structure 873: 44 46 F 11 B C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 23 
 Structure 874: 56 19 26 40 47 51 55 57 B 22 C D 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 22 23 
+	-> A 6 B C D E 18 19 21 22 23 26 
 Structure 875: 35 32 33 F 65 36 11 B C D 6 A E 18 38 87 108 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 32 33 35 36 
 Structure 876: 35 32 33 F 53 11 B 22 C D 6 A 39 24 G 17
-	-> A 6 B C D 11 F G 17 22 24 
+	-> A 6 B C D 11 F G 17 22 24 32 33 35 
 Structure 877: 35 32 33 F 36 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 32 33 35 36 
 Structure 878: 260 166 26 F 11 41 B 22 C 78 7 6 A 28 E 24 G 17 25
-	-> A 6 B C E 11 F G 17 22 24 25 
+	-> A 6 B C E 11 F G 17 22 24 25 26 28 
 Structure 879: 44 60 46 F 11 41 B C D 42 6 A 28 39 G 17 25
-	-> A 6 B C D 11 F G 17 25 
+	-> A 6 B C D 11 F G 17 25 28 
 Structure 880: 43 19 64 54 F B C D 6 A E 24 G 17 25
 	-> A 6 B C D E F G 17 19 24 25 
 Structure 881: 43 19 26 40 47 74 71 B C D 6 A E 18 G 17 29
-	-> A 6 B C D E G 17 18 19 
+	-> A 6 B C D E G 17 18 19 26 29 
 Structure 882: 84 94 69 138 70 27 11 B C D 6 A 28 39 21 23
-	-> A 6 B C D 11 21 23 
+	-> A 6 B C D 11 21 23 27 28 
 Structure 883: 104 19 64 34 31 37 27 41 B C 7 6 A E 18 38 29
-	-> A 6 B C E 18 19 
+	-> A 6 B C E 18 19 27 29 31 34 
 Structure 884: 19 30 52 34 31 37 27 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 18 19 21 23 
+	-> A 6 B C D E 11 18 19 21 23 27 30 31 34 
 Structure 885: 81 44 45 F 11 B C D 6 A 28 E 21 23
-	-> A 6 B C D E 11 F 21 23 
+	-> A 6 B C D E 11 F 21 23 28 
 Structure 886: 35 32 33 F 11 B 22 C D 6 3 4 E 24 G 17 25
-	-> 6 B C D E 11 F G 17 22 24 25 
+	-> 6 B C D E 11 F G 17 22 24 25 32 33 35 
 Structure 887: 58 19 26 40 47 51 55 41 B C D 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 23 
+	-> A 6 B C D E 18 19 21 23 26 
 Structure 888: 84 177 178 261 F 11 B C D 6 A 28 39 G 17 29
-	-> A 6 B C D 11 F G 17 
+	-> A 6 B C D 11 F G 17 28 29 
 Structure 889: 49 45 54 F 36 11 B C D 42 6 A E 24 G 17
-	-> A 6 B C D E 11 F G 17 24 
+	-> A 6 B C D E 11 F G 17 24 36 
 Structure 890: 58 19 30 52 34 31 37 27 41 B 22 C D 6 A 28 E 24 G 17 25
-	-> A 6 B C D E G 17 19 22 24 25 
+	-> A 6 B C D E G 17 19 22 24 25 27 28 30 31 34 
 Structure 891: 44 F 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 
 Structure 892: 59 26 F 162 11 B C D 42 6 A E 38 29
-	-> A 6 B C D E 11 F 
+	-> A 6 B C D E 11 F 26 29 
 Structure 893: 49 46 F 36 11 B C D 6 A 28 39 G 17
-	-> A 6 B C D 11 F G 17 
+	-> A 6 B C D 11 F G 17 28 36 
 Structure 894: 58 19 30 52 34 31 37 27 41 B C 78 80 6 A E 18 21 23
-	-> A 6 B C E 18 19 21 23 
+	-> A 6 B C E 18 19 21 23 27 30 31 34 
 Structure 895: 19 30 34 31 37 27 11 B 22 C D 6 A E 24 G 17 25
-	-> A 6 B C D E 11 G 17 19 22 24 25 
+	-> A 6 B C D E 11 G 17 19 22 24 25 27 30 31 34 
 Structure 896: 79 30 52 34 31 37 27 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 18 
+	-> A 6 B C D E 11 18 27 29 30 31 34 
 Structure 897: 58 19 30 34 31 37 27 41 B 22 C 78 80 42 6 A E 18 21 23
-	-> A 6 B C E 18 19 21 22 23 
+	-> A 6 B C E 18 19 21 22 23 27 30 31 34 
 Structure 898: 49 45 F 36 11 B C D 6 A 76 39 G 17 29
-	-> A 6 B C D 11 F G 17 
+	-> A 6 B C D 11 F G 17 29 36 
 Structure 899: 35 32 33 F 53 11 B C D 6 A 76 39 21 23
-	-> A 6 B C D 11 F 21 23 
+	-> A 6 B C D 11 F 21 23 32 33 35 
 Structure 900: 49 45 54 F 11 B 22 C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 22 
+	-> A 6 B C D E 11 F 18 22 29 
 Structure 901: 44 60 46 91 F 11 41 B C D 6 189 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 23 
 Structure 902: 35 32 33 F 65 11 B C D 6 A 28 E 21 23
-	-> A 6 B C D E 11 F 21 23 
+	-> A 6 B C D E 11 F 21 23 28 32 33 35 
 Structure 903: 94 69 83 70 27 11 B C D 6 A E 159 G 17 25
-	-> A 6 B C D E 11 G 17 25 
+	-> A 6 B C D E 11 G 17 25 27 
 Structure 904: 44 46 F 11 B 22 C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 22 23 
 Structure 905: 49 34 31 37 27 53 114 11 B C D 6 A 153 E 18 21 23
-	-> A 6 B C D E 11 18 21 23 
+	-> A 6 B C D E 11 18 21 23 27 31 34 
 Structure 906: 44 45 F 11 B C D 6 A 76 39 G 17
 	-> A 6 B C D 11 F G 17 
 Structure 907: 35 32 33 F 11 B C D 42 6 A E 24 G 17
-	-> A 6 B C D E 11 F G 17 24 
+	-> A 6 B C D E 11 F G 17 24 32 33 35 
 Structure 908: 19 26 40 61 73 77 41 B C D 6 A E 18 G 17 25
-	-> A 6 B C D E G 17 18 19 25 
+	-> A 6 B C D E G 17 18 19 25 26 
 Structure 909: 35 32 33 F 53 11 B C D 6 A E 18 G 68 48
-	-> A 6 B C D E 11 F G 18 
+	-> A 6 B C D E 11 F G 18 32 33 35 
 Structure 910: 35 32 33 F 53 36 11 B 141 C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 32 33 35 36 
 Structure 911: 43 19 26 40 47 51 74 71 B C D 6 A E 18 38 29
-	-> A 6 B C D E 18 19 
+	-> A 6 B C D E 18 19 26 29 
 Structure 912: 105 79 19 26 40 47 51 55 11 41 B C D 6 A 28 E G 17 48
-	-> A 6 B C D E 11 G 17 19 
+	-> A 6 B C D E 11 G 17 19 26 28 
 Structure 913: 156 59 193 F 11 B C D 42 6 A E 24 G 17 25
 	-> A 6 B C D E 11 F G 17 24 25 
 Structure 914: 43 19 26 40 47 51 55 B 22 2 D 6 A E 24 G 17 25 67
-	-> A 6 B D E G 17 19 22 24 25 
+	-> A 6 B D E G 17 19 22 24 25 26 
 Structure 915: 56 19 30 34 31 37 27 57 B C D 6 A E 24 G 17
-	-> A 6 B C D E G 17 19 24 
+	-> A 6 B C D E G 17 19 24 27 30 31 34 
 Structure 916: 35 32 33 F 36 11 B C D 6 A 76 39 G 17 48
-	-> A 6 B C D 11 F G 17 
+	-> A 6 B C D 11 F G 17 32 33 35 36 
 Structure 917: 56 19 26 F 57 B C D 6 A 28 39 G 17 25
-	-> A 6 B C D F G 17 19 25 
+	-> A 6 B C D F G 17 19 25 26 28 
 Structure 918: 56 19 26 F 57 B C D 6 A E 18 38 29
-	-> A 6 B C D E F 18 19 
+	-> A 6 B C D E F 18 19 26 29 
 Structure 919: 43 19 30 34 31 37 27 B C D 6 A 28 E 24 G 17 25
-	-> A 6 B C D E G 17 19 24 25 
+	-> A 6 B C D E G 17 19 24 25 27 28 30 31 34 
 Structure 920: 56 19 26 40 61 57 B 22 C D 6 A 28 E 24 G 17 29
-	-> A 6 B C D E G 17 19 22 24 
+	-> A 6 B C D E G 17 19 22 24 26 28 29 
 Structure 921: 19 30 52 34 31 151 37 27 41 B C D 42 6 A E 154 142 263 264
-	-> A 6 B C D E 19 
+	-> A 6 B C D E 19 27 30 31 34 
 Structure 922: 19 64 F 11 41 B C D 6 A E 18 G 17
 	-> A 6 B C D E 11 F G 17 18 19 
 Structure 923: 44 116 46 F 11 B C D 6 A 194 76 39 G 17 48
 	-> A 6 B C D 11 F G 17 
 Structure 924: 43 19 30 52 34 31 66 72 B C D 42 6 A 28 E 24 G 17 48
-	-> A 6 B C D E G 17 19 24 
+	-> A 6 B C D E G 17 19 24 28 30 31 34 
 Structure 925: 44 116 46 F 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 
 Structure 926: 59 62 26 F 11 41 B C D 6 A 28 E G 17 25 75
-	-> A 6 B C D E 11 F G 17 25 
+	-> A 6 B C D E 11 F G 17 25 26 28 
 Structure 927: 49 46 F 36 11 B C D 6 A 28 E 39 21 23
-	-> A 6 B C D E 11 F 21 23 
+	-> A 6 B C D E 11 F 21 23 28 36 
 Structure 928: 44 60 46 F 11 B C D 6 A 28 39 G 17 25 48
-	-> A 6 B C D 11 F G 17 25 
+	-> A 6 B C D 11 F G 17 25 28 
 Structure 929: 56 19 30 34 31 37 27 72 57 B C D 42 6 A 28 E 21 23
-	-> A 6 B C D E 19 21 23 
+	-> A 6 B C D E 19 21 23 27 28 30 31 34 
 Structure 930: 44 45 F 11 B 22 C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 22 23 
 Structure 931: 56 19 64 F 57 B C D 6 A E 24 G 17 48
 	-> A 6 B C D E F G 17 19 24 
 Structure 932: 84 26 F 63 36 11 B C 78 80 42 6 A 39 G 17
-	-> A 6 B C 11 F G 17 
+	-> A 6 B C 11 F G 17 26 36 
 Structure 933: 35 32 33 F 63 100 11 B C D 42 6 A 39 G 17 48
-	-> A 6 B C D 11 F G 17 
+	-> A 6 B C D 11 F G 17 32 33 35 
 Structure 934: 128 19 30 52 34 31 37 27 11 B C D 188 6 A 194 E 24 15 21 29
-	-> A 6 B C D E 11 19 21 24 
+	-> A 6 B C D E 11 19 21 24 27 29 30 31 34 
 Structure 935: 81 44 45 54 F 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 
 Structure 936: 35 32 33 F 63 36 11 B C D 6 A E G 17 48
-	-> A 6 B C D E 11 F G 17 
+	-> A 6 B C D E 11 F G 17 32 33 35 36 
 Structure 937: 43 19 30 34 31 37 27 B 22 C D 42 6 A E 18 21 23 67
-	-> A 6 B C D E 18 19 21 22 23 
+	-> A 6 B C D E 18 19 21 22 23 27 30 31 34 
 Structure 938: 191 19 30 34 31 37 27 11 B C D 6 A E 18 G 17
-	-> A 6 B C D E 11 G 17 18 19 
+	-> A 6 B C D E 11 G 17 18 19 27 30 31 34 
 Structure 939: 44 116 46 F 11 B C D 6 A E 18 38 87 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 
 Structure 940: 56 19 26 40 47 51 55 57 B 22 2 D 6 A 28 E 24 G 17 48
-	-> A 6 B D E G 17 19 22 24 
+	-> A 6 B D E G 17 19 22 24 26 28 
 Structure 941: 84 94 69 83 70 27 36 11 B 22 C D 6 A E 18 21 23
-	-> A 6 B C D E 11 18 21 22 23 
+	-> A 6 B C D E 11 18 21 22 23 27 36 
 Structure 942: 43 19 26 40 47 51 55 B C D 6 A 39 24 G 17 29
-	-> A 6 B C D G 17 19 24 
+	-> A 6 B C D G 17 19 24 26 29 
 Structure 943: 59 62 26 F 11 B C D 42 6 A E 24 G 17 25
-	-> A 6 B C D E 11 F G 17 24 25 
+	-> A 6 B C D E 11 F G 17 24 25 26 
 Structure 944: 56 19 30 34 31 37 27 57 B C D 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 23 
+	-> A 6 B C D E 18 19 21 23 27 30 31 34 
 Structure 945: 43 19 26 40 47 51 55 B C 78 80 265 6 A E 18 21 158
-	-> A 6 B C E 18 19 21 
+	-> A 6 B C E 18 19 21 26 
 Structure 946: 105 101 79 106 26 40 61 73 77 11 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 18 
+	-> A 6 B C D E 11 18 26 29 
 Structure 947: 44 45 54 F 11 B C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 23 
 Structure 948: 49 46 F 36 11 B C D 6 A 28 E 24 G 17 25
-	-> A 6 B C D E 11 F G 17 24 25 
+	-> A 6 B C D E 11 F G 17 24 25 28 36 
 Structure 949: 19 64 54 F 11 B C D 6 A 28 E 24 G 17 48
-	-> A 6 B C D E 11 F G 17 19 24 
+	-> A 6 B C D E 11 F G 17 19 24 28 
 Structure 950: 169 45 54 F 11 B 22 C D 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 22 23 
 Structure 951: 43 19 64 91 F B C D 6 A 28 39 24 G 17 25
-	-> A 6 B C D F G 17 19 24 25 
+	-> A 6 B C D F G 17 19 24 25 28 
 Structure 952: 19 64 54 F 11 B C D 6 A E 24 G 17 29
-	-> A 6 B C D E 11 F G 17 19 24 
+	-> A 6 B C D E 11 F G 17 19 24 29 
 Structure 953: 44 60 46 F 63 11 B 22 C D 6 A E 24 G 17 25
 	-> A 6 B C D E 11 F G 17 22 24 25 
 Structure 954: 19 30 34 31 37 27 11 B 22 2 D 6 A E 24 G 17
-	-> A 6 B D E 11 G 17 19 22 24 
+	-> A 6 B D E 11 G 17 19 22 24 27 30 31 34 
 Structure 955: 43 19 30 52 34 31 37 27 B C 192 7 6 A E 18 21 23 67
-	-> A 6 B C E 18 19 21 23 
+	-> A 6 B C E 18 19 21 23 27 30 31 34 
 Structure 956: 49 45 54 F 36 11 B C D 6 A 28 39 G 17
-	-> A 6 B C D 11 F G 17 
+	-> A 6 B C D 11 F G 17 28 36 
 Structure 957: 109 97 26 98 115 92 93 122 111 1 C D 6 A E 18 G 17 29
-	-> A 6 C D E G 17 18 
+	-> A 6 C D E G 17 18 26 29 
 Structure 958: 49 46 F 100 11 B C D 6 A 28 39 G 68 25
-	-> A 6 B C D 11 F G 25 
+	-> A 6 B C D 11 F G 25 28 
 Structure 959: 49 46 F 11 B C D 42 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 23 
 Structure 960: 99 128 79 19 30 52 34 31 37 27 11 B C D 42 6 A E 18 G 17 25
-	-> A 6 B C D E 11 G 17 18 19 25 
+	-> A 6 B C D E 11 G 17 18 19 25 27 30 31 34 
 Structure 961: 49 118 F 36 11 B C D 6 A 28 E G 17 25
-	-> A 6 B C D E 11 F G 17 25 
+	-> A 6 B C D E 11 F G 17 25 28 36 
 Structure 962: 35 32 33 F 65 36 11 B C D 6 A 28 E G 17 25
-	-> A 6 B C D E 11 F G 17 25 
+	-> A 6 B C D E 11 F G 17 25 28 32 33 35 36 
 Structure 963: 35 32 33 F 53 11 B C D 6 A 28 E 24 G 17 29
-	-> A 6 B C D E 11 F G 17 24 
+	-> A 6 B C D E 11 F G 17 24 28 29 32 33 35 
 Structure 964: 44 116 F 11 41 B C D 6 A E 38 29
-	-> A 6 B C D E 11 F 
+	-> A 6 B C D E 11 F 29 
 Structure 965: 43 19 26 40 47 51 55 B C D 6 A E 24 G 17 29
-	-> A 6 B C D E G 17 19 24 
+	-> A 6 B C D E G 17 19 24 26 29 
 Structure 966: 59 26 F 11 B C D 6 A E 21 23
-	-> A 6 B C D E 11 F 21 23 
+	-> A 6 B C D E 11 F 21 23 26 
 Structure 967: 43 19 64 34 31 173 27 B 22 C D 6 A E 18 G 17
-	-> A 6 B C D E G 17 18 19 22 
+	-> A 6 B C D E G 17 18 19 22 27 31 34 
 Structure 968: 19 30 34 31 37 27 11 B 22 139 2 D 42 6 A 39 G 68 48
-	-> A 6 B D 11 G 19 22 
+	-> A 6 B D 11 G 19 22 27 30 31 34 
 Structure 969: 49 45 F 36 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 36 
 Structure 970: 43 19 26 40 61 73 B C D 42 6 A 28 E G 17 25
-	-> A 6 B C D E G 17 19 25 
+	-> A 6 B C D E G 17 19 25 26 28 
 Structure 971: 49 46 F 63 11 B C D 6 A 28 E 24 G 17 48
-	-> A 6 B C D E 11 F G 17 24 
+	-> A 6 B C D E 11 F G 17 24 28 
 Structure 972: 44 45 F 11 41 B C D 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 29 
 Structure 973: 56 19 30 52 34 31 37 27 57 B 22 C 7 6 A E 24 G 17 48
-	-> A 6 B C E G 17 19 22 24 
+	-> A 6 B C E G 17 19 22 24 27 30 31 34 
 Structure 974: 43 19 30 34 31 37 27 B 22 2 78 80 6 A E 18 21 23 67
-	-> A 6 B E 18 19 21 22 23 
+	-> A 6 B E 18 19 21 22 23 27 30 31 34 
 Structure 975: 43 19 30 34 31 66 72 B C D 42 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 23 
+	-> A 6 B C D E 18 19 21 23 30 31 34 
 Structure 976: 58 19 26 F 41 B C D 6 A 28 E 24 G 17 25
-	-> A 6 B C D E F G 17 19 24 25 
+	-> A 6 B C D E F G 17 19 24 25 26 28 
 Structure 977: 81 44 46 F 11 B C D 6 A 76 39 G 17 48
 	-> A 6 B C D 11 F G 17 
 Structure 978: 35 32 33 F 53 11 B C 7 42 6 A E 18 21 23
-	-> A 6 B C E 11 F 18 21 23 
+	-> A 6 B C E 11 F 18 21 23 32 33 35 
 Structure 979: 146 168 124 26 66 65 36 11 41 B C D 42 6 A 28 39 21 23
-	-> A 6 B C D 11 21 23 
+	-> A 6 B C D 11 21 23 26 28 36 
 Structure 980: 43 19 64 34 31 37 27 B C D 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 23 
+	-> A 6 B C D E 18 19 21 23 27 31 34 
 Structure 981: 49 46 F 36 11 B 22 C D 6 A E 39 G 17 75
-	-> A 6 B C D E 11 F G 17 22 
+	-> A 6 B C D E 11 F G 17 22 36 
 Structure 982: 59 62 69 138 70 27 11 B C D 6 A E 15 21 121
-	-> A 6 B C D E 11 21 
+	-> A 6 B C D E 11 21 27 
 Structure 983: 58 19 30 52 34 31 37 27 41 B C D 6 A E 18 G 17 25
-	-> A 6 B C D E G 17 18 19 25 
+	-> A 6 B C D E G 17 18 19 25 27 30 31 34 
 Structure 984: 58 19 30 34 31 37 27 41 1 C D 6 A E 18 21 23
-	-> A 6 C D E 18 19 21 23 
+	-> A 6 C D E 18 19 21 23 27 30 31 34 
 Structure 985: 56 131 19 30 52 34 31 37 27 57 B C D 6 A 28 E 24 G 17 29
-	-> A 6 B C D E G 17 19 24 
+	-> A 6 B C D E G 17 19 24 27 28 29 30 31 34 
 Structure 986: 43 19 64 54 F B 22 C D 6 A E 18 21 23 67
 	-> A 6 B C D E F 18 19 21 22 23 
 Structure 987: 84 94 69 83 70 27 11 B C D 6 A 39 G 17 25
-	-> A 6 B C D 11 G 17 25 
+	-> A 6 B C D 11 G 17 25 27 
 Structure 988: 43 19 30 34 31 66 72 B C D 6 A E 18 G 17 25
-	-> A 6 B C D E G 17 18 19 25 
+	-> A 6 B C D E G 17 18 19 25 30 31 34 
 Structure 989: 43 19 30 34 31 37 27 B C D 42 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 23 
+	-> A 6 B C D E 18 19 21 23 27 30 31 34 
 Structure 990: 35 32 33 F 36 11 B C D 6 A 28 E 24 G 17 25
-	-> A 6 B C D E 11 F G 17 24 25 
+	-> A 6 B C D E 11 F G 17 24 25 28 32 33 35 36 
 Structure 991: 43 19 30 52 34 31 37 27 B 22 2 D 6 A E 18 38 29
-	-> A 6 B D E 18 19 22 
+	-> A 6 B D E 18 19 22 27 29 30 31 34 
 Structure 992: 43 131 19 30 34 31 37 27 B C D 6 A E 18 38 29
-	-> A 6 B C D E 18 19 
+	-> A 6 B C D E 18 19 27 29 30 31 34 
 Structure 993: 56 19 30 52 34 31 37 27 B C D 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 23 
+	-> A 6 B C D E 18 19 21 23 27 30 31 34 
 Structure 994: 49 45 54 F 36 11 41 B C D 6 A E G 68 48
-	-> A 6 B C D E 11 F G 
+	-> A 6 B C D E 11 F G 36 
 Structure 995: 44 45 F 11 B C D 42 6 A E 18 21 23
 	-> A 6 B C D E 11 F 18 21 23 
 Structure 996: 49 45 54 F 36 11 B C D 6 A E 18 21 23
-	-> A 6 B C D E 11 F 18 21 23 
+	-> A 6 B C D E 11 F 18 21 23 36 
 Structure 997: 43 19 26 F B 22 C D 6 A 28 39 G 17
-	-> A 6 B C D F G 17 19 22 
+	-> A 6 B C D F G 17 19 22 26 28 
 Structure 998: 59 26 F 11 B C D 42 6 A E 18 38 29
-	-> A 6 B C D E 11 F 18 
+	-> A 6 B C D E 11 F 18 26 29 
 Structure 999: 43 56 19 26 40 47 74 71 57 B 22 C D 6 A 266 E 18 21 23
-	-> A 6 B C D E 18 19 21 22 23 
+	-> A 6 B C D E 18 19 21 22 23 26 
 Structure 1000: 43 19 26 40 47 74 71 B C D 6 A E 18 21 23
-	-> A 6 B C D E 18 19 21 23 
+	-> A 6 B C D E 18 19 21 23 26 

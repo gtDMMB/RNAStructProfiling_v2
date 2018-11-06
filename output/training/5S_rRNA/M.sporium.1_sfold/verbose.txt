@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/5S_rRNA/M.sporium.1_sfold/input/M.sporium.1_sfold.txt is CCUGGUGGCUUUAGCGAAGCGAUCAGACCCGAUCCCAUCCCGAACUCGGCCGUCAAACGCUCCAGCGCCAAUGGUACUAUGUCUCAAGACCUGGGAGAGUAGGUCGUCGCCAGGC with length 115
+seq in /nethome/akirkpatrick3/Research/RNA/profiling/RNAStructProfilingConsolidation/output/training/5S_rRNA/M.sporium.1_sfold/input/M.sporium.1_sfold.txt is CCUGGUGGCUUUAGCGAAGCGAUCAGACCCGAUCCCAUCCCGAACUCGGCCGUCAAACGCUCCAGCGCCAAUGGUACUAUGUCUCAAGACCUGGGAGAGUAGGUCGUCGCCAGGC with length 115
 Helix 1 is 1 114 9 (1.0 114.0 7.9) with freq 1000
 Helix 2 is 58 67 3 (58.0 67.0 3.0) with freq 903
 Helix 3 is 49 75 5 (49.3 74.7 4.6) with freq 874
@@ -266,6 +266,21 @@ Selected profile 1 with freq 42 (1000)
 Coverage by selected profiles: 0.673
 Number of profiles needed to get 0.50 coverage: 7
 Total number of selected profiles: 10
+Total number of vertices: 12
+node: '1 2 3 5 '
+node: '1 2 3 4 5 7 '
+node: '1 2 3 4 5 6 7 8 '
+node: '1 2 3 4 5 6 7 8 9 '
+node: '1 2 3 4 5 6 7 '
+node: '1 2 3 4 5 6 8 '
+node: '1 2 3 4 5 '
+node: '1 2 3 4 5 6 8 9 '
+node: '1 2 3 4 5 6 7 9 '
+node: '1 '
+node: '1 2 3 4 5 6 '
+node: '1 2 3 4 5 6 9 '
+node: '1 '
+Consolidating...
 Joining helices 23 and 22
 Do stem 18 and stem 19 occur infrequently enough to be functionally similar: No
 Stem A is 26 32 46 54 (26.0 31.8 44.2 54.0) with freq 59

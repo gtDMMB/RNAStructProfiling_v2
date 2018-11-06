@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/glmS/Staphylococcus_haemo.1_sfold/input/Staphylococcus_haemo.1_sfold.txt is AUAAAUUAUAAAGCGCCAGGGCAAAAUAUAAGUGUACCUAUAAUCAAAAGUUAAAUAUGAGAGCUUUUGUAGGGCAAUUUAUUUCUUUGCAGACGAGGAGAAUAGUCAUCGAAAAUAUCGGCGGAUGCUAUUCCGGAUGAGGCUCAUUCGUUAGCUUAUUAUUUAAAACAUUUAGGUAACUAAAUGCACAAAAAUAAUAAGAAUGCCUAAA with length 211
+seq in /nethome/akirkpatrick3/Research/RNA/profiling/RNAStructProfilingConsolidation/output/training/glmS/Staphylococcus_haemo.1_sfold/input/Staphylococcus_haemo.1_sfold.txt is AUAAAUUAUAAAGCGCCAGGGCAAAAUAUAAGUGUACCUAUAAUCAAAAGUUAAAUAUGAGAGCUUUUGUAGGGCAAUUUAUUUCUUUGCAGACGAGGAGAAUAGUCAUCGAAAAUAUCGGCGGAUGCUAUUCCGGAUGAGGCUCAUUCGUUAGCUUAUUAUUUAAAACAUUUAGGUAACUAAAUGCACAAAAAUAAUAAGAAUGCCUAAA with length 211
 Helix 1 is 169 186 7 (169.0 186.0 6.9) with freq 1000
 Helix 2 is 155 201 10 (155.7 200.3 9.0) with freq 994
 Helix 3 is 45 69 8 (45.8 68.2 6.9) with freq 987
@@ -324,6 +324,23 @@ Selected profile 1 2 3 4 5 6 7 8 9 10 11 13 with freq 26 (193)
 Coverage by selected profiles: 0.533
 Number of profiles needed to get 0.50 coverage: 10
 Total number of selected profiles: 11
+Total number of vertices: 15
+node: '1 2 3 4 5 6 7 8 9 10 11 15 '
+node: '1 2 3 4 5 6 7 8 9 10 11 17 18 '
+node: '1 2 3 4 5 6 7 8 9 10 11 13 15 '
+node: '1 2 3 4 5 6 7 8 9 10 11 13 17 18 '
+node: '1 2 3 4 5 6 7 8 9 10 12 16 19 '
+node: '1 2 3 4 5 6 7 8 9 10 11 14 15 '
+node: '1 2 3 4 5 6 7 8 9 10 11 '
+node: '1 2 3 4 5 6 7 8 9 10 12 16 '
+node: '1 2 3 4 5 6 7 8 9 10 12 13 16 19 '
+node: '1 2 3 4 5 6 7 8 9 10 11 14 17 18 '
+node: '1 2 3 4 5 6 7 8 9 10 11 13 '
+node: '1 2 3 4 5 6 7 8 9 10 '
+node: '1 2 3 4 5 6 7 8 9 10 13 '
+node: '1 2 3 4 5 6 7 8 9 10 11 14 '
+node: '1 '
+Consolidating...
 Joining helices 5 and 6
 Do stem 10 and stem 21 occur infrequently enough to be functionally similar: Yes
 Do stem 12 and stem 20 occur infrequently enough to be functionally similar: Yes

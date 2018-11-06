@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/FMN/Desulfitobacterium_h.2_sfold/input/Desulfitobacterium_h.2_sfold.txt is GAAUACCUCUGGGGAUUGGUGAAAUUCCAUACCGGCGGUCAAGCCCGCGAGCCAUUAUGGCAGAUCUGGUGUAAUUCCAGAGCCGACAGUAAAGUCUGGAUGAGAAGAGGAAAUU with length 115
+seq in /nethome/akirkpatrick3/Research/RNA/profiling/RNAStructProfilingConsolidation/output/training/FMN/Desulfitobacterium_h.2_sfold/input/Desulfitobacterium_h.2_sfold.txt is GAAUACCUCUGGGGAUUGGUGAAAUUCCAUACCGGCGGUCAAGCCCGCGAGCCAUUAUGGCAGAUCUGGUGUAAUUCCAGAGCCGACAGUAAAGUCUGGAUGAGAAGAGGAAAUU with length 115
 Helix 1 is 6 110 5 (6.0 110.0 4.8) with freq 997
 Helix 2 is 35 48 4 (35.0 48.0 3.9) with freq 973
 Helix 3 is 51 61 4 (51.0 61.0 3.3) with freq 953
@@ -172,6 +172,14 @@ Selected profile 1 2 3 4 7 9 with freq 85 (85)
 Coverage by selected profiles: 0.806
 Number of profiles needed to get 0.50 coverage: 2
 Total number of selected profiles: 4
+Total number of vertices: 6
+node: '1 2 3 4 5 6 '
+node: '1 2 3 4 5 6 8 '
+node: '1 2 3 4 5 6 10 '
+node: '1 2 3 4 7 9 '
+node: '1 2 3 4 '
+node: ''
+Consolidating...
 Do stem 2 and stem 19 occur infrequently enough to be functionally similar: No
 Do stem 7 and stem 11 occur infrequently enough to be functionally similar: No
 Do stem 7 and stem 17 occur infrequently enough to be functionally similar: Yes

@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/5S_rRNA/Glycine_max_soybean.1_sfold/input/Glycine_max_soybean.1_sfold.txt is AGGUGCGAUCAUACCAGCACUAAUGCACCGGAUCCCAUCAGAACUCCGCAGUUAAGCGUGCUUGGGCGAGAGUAGUACUAGGAUGGGUGACCUCCUGGGAAGUCCUCGUGUUGCACCUC with length 119
+seq in /nethome/akirkpatrick3/Research/RNA/profiling/RNAStructProfilingConsolidation/output/training/5S_rRNA/Glycine_max_soybean.1_sfold/input/Glycine_max_soybean.1_sfold.txt is AGGUGCGAUCAUACCAGCACUAAUGCACCGGAUCCCAUCAGAACUCCGCAGUUAAGCGUGCUUGGGCGAGAGUAGUACUAGGAUGGGUGACCUCCUGGGAAGUCCUCGUGUUGCACCUC with length 119
 Helix 1 is 1 118 9 (1.1 117.9 8.3) with freq 1000
 Helix 2 is 78 98 6 (78.2 97.8 5.8) with freq 1000
 Helix 3 is 85 92 2 (85.0 92.0 2.0) with freq 1000
@@ -183,6 +183,23 @@ Selected profile 1 2 3 4 5 6 7 10 13 with freq 40 (133)
 Coverage by selected profiles: 0.577
 Number of profiles needed to get 0.50 coverage: 7
 Total number of selected profiles: 8
+Total number of vertices: 14
+node: '1 2 3 4 5 6 7 8 9 10 '
+node: '1 2 3 4 5 6 7 9 10 '
+node: '1 2 3 4 5 6 7 8 9 11 '
+node: '1 2 3 12 '
+node: '1 2 3 4 5 6 7 8 10 13 '
+node: '1 2 3 4 5 6 7 9 11 '
+node: '1 2 3 4 5 6 7 8 10 '
+node: '1 2 3 4 5 6 7 10 13 '
+node: '1 2 3 4 5 6 7 8 9 '
+node: '1 2 3 '
+node: '1 2 3 4 5 6 7 9 '
+node: '1 2 3 4 5 6 7 10 '
+node: '1 2 3 4 5 6 7 8 '
+node: '1 2 3 4 5 6 7 '
+node: '1 2 3 '
+Consolidating...
 Joining helices 2 and 3
 Joining helices 15 and 16
 Joining stems 15 and 18

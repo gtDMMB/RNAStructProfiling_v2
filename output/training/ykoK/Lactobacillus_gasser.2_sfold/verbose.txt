@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/ykoK/Lactobacillus_gasser.2_sfold/input/Lactobacillus_gasser.2_sfold.txt is CAAAUAAACUGUUAGGUGAGACUCCUACGUGAACAUAUGCUGUCGCCCAGCAACAUCCAGAGAUGCCAACGGGUCAAACAGGGAUCGUCGAUAUAAGGCCCUCCCCAGCCAGCUAGUUAUUUUUAAUAACCUUACGUCACGUAGUGUUAAAACUGAACGACGAGUAUAAAAA with length 172
+seq in /nethome/akirkpatrick3/Research/RNA/profiling/RNAStructProfilingConsolidation/output/training/ykoK/Lactobacillus_gasser.2_sfold/input/Lactobacillus_gasser.2_sfold.txt is CAAAUAAACUGUUAGGUGAGACUCCUACGUGAACAUAUGCUGUCGCCCAGCAACAUCCAGAGAUGCCAACGGGUCAAACAGGGAUCGUCGAUAUAAGGCCCUCCCCAGCCAGCUAGUUAUUUUUAAUAACCUUACGUCACGUAGUGUUAAAACUGAACGACGAGUAUAAAAA with length 172
 Helix 1 is 25 144 8 (25.1 143.9 7.6) with freq 995
 Helix 2 is 87 99 3 (87.0 99.0 3.0) with freq 995
 Helix 3 is 81 105 4 (81.1 104.9 3.9) with freq 975
@@ -401,6 +401,17 @@ Selected profile 1 2 3 4 5 6 7 8 9 10 11 15 with freq 23 (39)
 Coverage by selected profiles: 0.409
 Number of profiles needed to get 0.50 coverage: 15
 Total number of selected profiles: 8
+Total number of vertices: 9
+node: '1 2 3 4 5 6 7 8 9 10 11 '
+node: '1 2 3 4 5 6 7 8 9 10 '
+node: '1 2 3 4 5 6 7 8 9 10 11 13 '
+node: '1 2 3 4 5 6 7 8 9 10 13 '
+node: '1 2 3 4 5 6 7 8 9 10 11 14 '
+node: '1 2 3 4 5 6 7 8 9 10 14 '
+node: '1 2 3 4 5 6 7 8 9 10 15 '
+node: '1 2 3 4 5 6 7 8 9 10 11 15 '
+node: ''
+Consolidating...
 Joining helices 3 and 2
 Do stem 7 and stem 20 occur infrequently enough to be functionally similar: No
 Do stem 10 and stem 16 occur infrequently enough to be functionally similar: Yes

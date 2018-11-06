@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/development/L.innocua.1_sfold/input/L.innocua.1_sfold.txt is CGUUACCACAGGGGGGGCUUCUUAGCUGAGAUUGAAUCCGCGUGUUUUUGGAUUCUGACCCUUUGAACCUGUUCGUUAAUACGAGCGUAGGGAUUGUGGCGAUUGCAUUUC with length 111
+seq in /nethome/akirkpatrick3/Research/RNA/profiling/RNAStructProfilingConsolidation/output/development/TPP/L.innocua.1_sfold/input/L.innocua.1_sfold.txt is CGUUACCACAGGGGGGGCUUCUUAGCUGAGAUUGAAUCCGCGUGUUUUUGGAUUCUGACCCUUUGAACCUGUUCGUUAAUACGAGCGUAGGGAUUGUGGCGAUUGCAUUUC with length 111
 Helix 1 is 34 55 7 (34.0 55.0 6.8) with freq 1000
 Helix 2 is 70 87 7 (70.8 86.2 6.0) with freq 989
 Helix 3 is 16 27 4 (16.5 26.5 3.3) with freq 750
@@ -160,6 +160,23 @@ Selected profile 1 2 5 7 8 11 with freq 52 (83)
 Coverage by selected profiles: 0.604
 Number of profiles needed to get 0.50 coverage: 5
 Total number of selected profiles: 6
+Total number of vertices: 15
+node: '1 2 3 4 5 6 '
+node: '1 2 3 4 6 9 '
+node: '1 2 3 4 5 6 10 '
+node: '1 2 3 4 5 7 8 '
+node: '1 2 3 5 7 8 '
+node: '1 2 5 7 8 11 '
+node: '1 2 3 4 6 '
+node: '1 2 3 4 5 '
+node: '1 2 3 5 '
+node: '1 2 5 '
+node: '1 2 3 4 '
+node: '1 2 3 '
+node: '1 2 '
+node: '1 2 5 7 8 '
+node: '1 '
+Consolidating...
 Do stem 4 and stem 12 occur infrequently enough to be functionally similar: No
 Do stem 4 and stem 14 occur infrequently enough to be functionally similar: Yes
 Do stem 4 and stem 15 occur infrequently enough to be functionally similar: Yes

@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/TPP/Sulfitobacter.1_sfold/input/Sulfitobacter.1_sfold.txt is AUCUAUCCGUCGGGGUGCCCUAGGGGGCUGAGAGGUGCGUGCACCGACCCGUCGAACCUGAUCCGGGCAAUACCGGCGUAGGGAACGGGUAUCUUUGUGCA with length 101
+seq in /nethome/akirkpatrick3/Research/RNA/profiling/RNAStructProfilingConsolidation/output/training/TPP/Sulfitobacter.1_sfold/input/Sulfitobacter.1_sfold.txt is AUCUAUCCGUCGGGGUGCCCUAGGGGGCUGAGAGGUGCGUGCACCGACCCGUCGAACCUGAUCCGGGCAAUACCGGCGUAGGGAACGGGUAUCUUUGUGCA with length 101
 Helix 1 is 63 76 4 (63.0 76.0 4.0) with freq 996
 Helix 2 is 57 82 4 (57.0 82.0 3.9) with freq 924
 Helix 3 is 17 28 4 (17.0 28.0 4.0) with freq 862
@@ -157,6 +157,14 @@ Selected profile 1 2 8 with freq 97 (223)
 Coverage by selected profiles: 0.778
 Number of profiles needed to get 0.50 coverage: 2
 Total number of selected profiles: 3
+Total number of vertices: 5
+node: '1 2 3 4 5 6 '
+node: '1 2 3 4 5 7 '
+node: '1 2 8 '
+node: '1 2 3 4 5 '
+node: '1 2 '
+node: ''
+Consolidating...
 Joining helices 12 and 13
 Do stem 2 and stem 14 occur infrequently enough to be functionally similar: No
 Do stem 3 and stem 12 occur infrequently enough to be functionally similar: Yes

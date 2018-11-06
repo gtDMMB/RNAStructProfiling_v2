@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/TPP/Photorhabdus_lumines.2_sfold/input/Photorhabdus_lumines.2_sfold.txt is GCCAUCUCAACGGGGUGCUGGCUGUUUAAAACAGCCUUGCUGAGAGUAAACCCGCCGAACCUGAUCCGGCUAAUACCGGCGUAGGGAUUUGAGCUGCUAACUAUU with length 105
+seq in /nethome/akirkpatrick3/Research/RNA/profiling/RNAStructProfilingConsolidation/output/training/TPP/Photorhabdus_lumines.2_sfold/input/Photorhabdus_lumines.2_sfold.txt is GCCAUCUCAACGGGGUGCUGGCUGUUUAAAACAGCCUUGCUGAGAGUAAACCCGCCGAACCUGAUCCGGCUAAUACCGGCGUAGGGAUUUGAGCUGCUAACUAUU with length 105
 Helix 1 is 66 79 4 (66.0 79.0 3.9) with freq 998
 Helix 2 is 20 36 7 (20.0 36.0 6.3) with freq 995
 Helix 3 is 6 93 5 (6.0 93.0 4.5) with freq 966
@@ -226,6 +226,47 @@ Selected profile 1 2 3 4 5 6 7 11 with freq 23 (30)
 Coverage by selected profiles: 0.673
 Number of profiles needed to get 0.50 coverage: 11
 Total number of selected profiles: 17
+Total number of vertices: 39
+node: '1 2 3 4 5 7 9 '
+node: '1 2 3 4 5 7 8 '
+node: '1 2 3 4 5 6 7 9 '
+node: '1 2 3 4 5 6 7 8 '
+node: '1 2 3 4 6 7 8 '
+node: '1 2 3 4 5 8 10 '
+node: '1 2 3 4 6 7 9 '
+node: '1 2 3 4 5 6 8 10 '
+node: '1 2 3 4 5 7 11 '
+node: '1 2 3 4 6 9 10 '
+node: '1 2 3 4 6 8 10 '
+node: '1 2 3 4 5 9 10 '
+node: '1 2 3 4 5 6 8 '
+node: '1 2 3 4 5 8 '
+node: '1 2 3 4 5 6 9 10 '
+node: '1 2 3 4 6 8 '
+node: '1 2 3 4 5 6 7 11 '
+node: '1 2 3 4 5 7 '
+node: '1 2 3 4 7 '
+node: '1 2 3 4 5 '
+node: '1 2 3 4 7 9 '
+node: '1 2 3 4 9 '
+node: '1 2 3 4 '
+node: '1 2 3 4 5 9 '
+node: '1 2 3 4 7 8 '
+node: '1 2 3 4 8 '
+node: '1 2 3 4 5 6 7 '
+node: '1 2 3 4 6 7 '
+node: '1 2 3 4 5 6 '
+node: '1 2 3 4 6 9 '
+node: '1 2 3 4 6 '
+node: '1 2 3 4 5 6 9 '
+node: '1 2 3 4 10 '
+node: '1 2 3 4 8 10 '
+node: '1 2 3 4 5 10 '
+node: '1 2 3 4 6 10 '
+node: '1 2 3 4 5 6 10 '
+node: '1 2 3 4 9 10 '
+node: ''
+Consolidating...
 Do stem 4 and stem 14 occur infrequently enough to be functionally similar: No
 Do stem 5 and stem 6 occur infrequently enough to be functionally similar: No
 Do stem 5 and stem 21 occur infrequently enough to be functionally similar: Yes

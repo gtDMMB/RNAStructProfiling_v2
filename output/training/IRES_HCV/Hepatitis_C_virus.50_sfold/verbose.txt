@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/IRES_HCV/Hepatitis_C_virus.50_sfold/input/Hepatitis_C_virus.50_sfold.txt is UGCAGGCUUCAGGACCCCCAGUCCCGGGAGAGCCAUAGUGGUCUGCGGAACCGGUGAGUACACCGGAAUCGCCAGGACGACCGGGUCCUUUCUUGGAUCAACCCGCUCAAUGCCUGGAGAUUUGGGCGUGCCCCCGCGAGACUGCUAGCCGAGUAGUGUUGGGUCGCGAAAGGCCUUGUGG with length 181
+seq in /nethome/akirkpatrick3/Research/RNA/profiling/RNAStructProfilingConsolidation/output/training/IRES_HCV/Hepatitis_C_virus.50_sfold/input/Hepatitis_C_virus.50_sfold.txt is UGCAGGCUUCAGGACCCCCAGUCCCGGGAGAGCCAUAGUGGUCUGCGGAACCGGUGAGUACACCGGAAUCGCCAGGACGACCGGGUCCUUUCUUGGAUCAACCCGCUCAAUGCCUGGAGAUUUGGGCGUGCCCCCGCGAGACUGCUAGCCGAGUAGUGUUGGGUCGCGAAAGGCCUUGUGG with length 181
 Helix 1 is 4 176 6 (4.5 175.5 4.9) with freq 983
 Helix 2 is 84 99 5 (85.3 97.7 3.7) with freq 944
 Helix 3 is 1 180 6 (1.7 179.3 2.9) with freq 909
@@ -413,6 +413,17 @@ Selected profile 1 2 3 4 5 6 7 8 9 12 13 20 22 23 24 with freq 38 (150)
 Coverage by selected profiles: 0.491
 Number of profiles needed to get 0.50 coverage: 7
 Total number of selected profiles: 5
+Total number of vertices: 9
+node: '1 2 3 4 10 11 14 15 16 18 19 21 '
+node: '1 2 3 4 5 6 7 8 9 12 13 17 20 22 23 24 '
+node: '1 2 3 5 6 7 8 9 12 13 17 20 22 23 '
+node: '1 2 3 4 10 11 14 15 16 18 19 '
+node: '1 2 3 4 5 6 7 8 9 12 13 20 22 23 24 '
+node: '1 2 3 4 '
+node: '1 2 3 '
+node: '1 2 3 5 6 7 8 9 12 13 20 22 23 '
+node: ''
+Consolidating...
 Joining helices 8 and 7
 Joining helices 9 and 13
 Joining helices 16 and 14

@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/Metazoa_SRP/D.rerio.6_sfold/input/D.rerio.6_sfold.txt is GCCGGGUUCAGUGGCGCGCGCCUGUAAUCCAAGCUACUGGGAGGCUGAGGUUGCGGAUUGCUUGAGCUCAGGGCUUCUGGACUGCAGUGGACUAUGUUGAUCGGGUGUCCACACUAAGUUCGGUAUUGAUAUGGUGCUCCUGGGGGAGCUUGGGACCACCAGGUCGUGUAAUGAGGGGUGAACCGGCCCAGGUUGGCGACGGAGCAGGUCAAAUCCCCCGUGCUGAUCAGUAGUGGGAUCACACCUGACAAUAGACACUGCAGUGCAGCCUGAGUGACACAG with length 282
+seq in /nethome/akirkpatrick3/Research/RNA/profiling/RNAStructProfilingConsolidation/output/training/Metazoa_SRP/D.rerio.6_sfold/input/D.rerio.6_sfold.txt is GCCGGGUUCAGUGGCGCGCGCCUGUAAUCCAAGCUACUGGGAGGCUGAGGUUGCGGAUUGCUUGAGCUCAGGGCUUCUGGACUGCAGUGGACUAUGUUGAUCGGGUGUCCACACUAAGUUCGGUAUUGAUAUGGUGCUCCUGGGGGAGCUUGGGACCACCAGGUCGUGUAAUGAGGGGUGAACCGGCCCAGGUUGGCGACGGAGCAGGUCAAAUCCCCCGUGCUGAUCAGUAGUGGGAUCACACCUGACAAUAGACACUGCAGUGCAGCCUGAGUGACACAG with length 282
 Helix 1 is 81 264 9 (81.0 264.0 9.0) with freq 1000
 Helix 2 is 101 248 8 (101.0 248.0 7.3) with freq 1000
 Helix 3 is 132 161 5 (132.0 161.0 5.0) with freq 1000
@@ -926,6 +926,52 @@ Selected profile 1 2 3 4 5 6 7 8 9 10 11 12 13 14 18 29 32 33 35 36 38 with freq
 Coverage by selected profiles: 0.144
 Number of profiles needed to get 0.50 coverage: 125
 Total number of selected profiles: 10
+Total number of vertices: 44
+node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 18 21 23 '
+node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 18 29 38 '
+node: '1 2 3 4 5 6 7 8 9 10 14 18 19 27 29 30 31 34 37 38 '
+node: '1 2 3 4 5 6 7 8 9 10 14 18 19 21 23 27 30 31 34 37 '
+node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 18 21 22 23 '
+node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 18 21 23 32 33 35 36 '
+node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 18 21 23 36 '
+node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 18 21 23 32 33 35 '
+node: '1 2 3 4 5 6 7 8 9 10 14 18 19 26 29 38 '
+node: '1 2 3 4 5 6 7 8 9 10 11 12 13 14 18 29 32 33 35 36 38 '
+node: '1 2 3 4 5 18 '
+node: '1 5 6 11 14 18 '
+node: '1 5 11 14 18 21 23 '
+node: '3 4 18 21 23 '
+node: '1 2 3 18 21 23 '
+node: '3 18 21 23 '
+node: '1 2 3 4 5 11 14 18 '
+node: '3 4 6 18 '
+node: '1 5 18 29 '
+node: '1 5 18 '
+node: '3 4 15 18 '
+node: '1 2 3 15 18 '
+node: '3 15 18 '
+node: '1 2 3 4 5 18 29 '
+node: '3 4 15 18 29 '
+node: '1 5 11 14 18 19 27 30 31 '
+node: '18 '
+node: '1 18 '
+node: '1 5 11 14 18 19 29 '
+node: '6 18 29 '
+node: '18 21 23 '
+node: '1 18 21 23 '
+node: '1 5 11 14 18 19 '
+node: '3 15 18 21 23 '
+node: '3 4 18 '
+node: '3 4 15 18 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 '
+node: '1 2 3 18 '
+node: '3 18 '
+node: '3 15 18 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 '
+node: '3 4 18 29 '
+node: '1 5 11 14 18 '
+node: '6 18 '
+node: '18 29 '
+node: '1 2 3 4 '
+Consolidating...
 Joining helices 8 and 1
 Joining helices 3 and 4
 Joining helices 10 and 7

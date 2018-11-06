@@ -1,4 +1,4 @@
-seq in /home/hwilco/Documents/RNA Research/RNAStructProfiling-master/output/training/tRNA/C.glabrata.12_sfold/input/C.glabrata.12_sfold.txt is GGAAAAUUCACCAUAGGUAAGGUAAAUUAUUUGCUAUGUAAUUGAAUUUAUUAUUCUUAUGAGUUCGAAUCUCAUAUUUUCCG with length 83
+seq in /nethome/akirkpatrick3/Research/RNA/profiling/RNAStructProfilingConsolidation/output/training/tRNA/C.glabrata.12_sfold/input/C.glabrata.12_sfold.txt is GGAAAAUUCACCAUAGGUAAGGUAAAUUAUUUGCUAUGUAAUUGAAUUUAUUAUUCUUAUGAGUUCGAAUCUCAUAUUUUCCG with length 83
 Helix 1 is 1 82 7 (1.0 82.0 6.1) with freq 989
 Helix 2 is 42 68 10 (42.5 67.5 9.4) with freq 722
 Helix 3 is 16 35 6 (17.0 34.0 4.8) with freq 539
@@ -125,6 +125,14 @@ Selected profile 1 2 3 with freq 90 (478)
 Coverage by selected profiles: 0.862
 Number of profiles needed to get 0.50 coverage: 2
 Total number of selected profiles: 4
+Total number of vertices: 6
+node: '1 2 3 4 '
+node: '1 5 6 '
+node: '1 2 '
+node: '1 2 3 '
+node: '1 '
+node: ''
+Consolidating...
 Do stem 3 and stem 13 occur infrequently enough to be functionally similar: Yes
 Do stem 11 and stem 25 occur infrequently enough to be functionally similar: Yes
 Do stem 15 and stem 19 occur infrequently enough to be functionally similar: Yes
